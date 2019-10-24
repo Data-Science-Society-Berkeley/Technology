@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { Card, Header, Form, Input, Icon } from "semantic-ui-react";
+import { Card, Header, Form, Input, Icon,Button } from "semantic-ui-react";
 import { withRouter, BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
 import carsData from './carsData';
 import Car from './Car'
@@ -36,12 +36,19 @@ class MasterCar extends Component {
       }
     });
   };
+// creates a new blank car entry for the user
 createCar = () => {
 console.log("Someone told me to create a car")
     this.setState({
         cars:this.state.cars.concat([<Car/>])
     });
 };
+// TODO implement this function
+// this function makes sure that when they click save and continue that every form is properly filled out
+validateForm = () => {
+    console.log("validating the vehicle entries")
+    // loops through each member of our array and ensures its filled out, then sends them all to the backend to update the database
+}
 render() {
     console.log("called car render")
     console.log(this.state)
@@ -53,6 +60,7 @@ render() {
         </div>
             </div>
             <AddCar createCar={this.createCar}/>
+        <Button label="Save and Continue" onClick={this.validateForm}/>
         </div>
     )
 }
