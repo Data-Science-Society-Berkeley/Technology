@@ -131,7 +131,7 @@ class ToDoList extends Component {
   deleteTask = id => {
     axios
       .delete(endpoint + "/api/deleteTask/" + id, {
-        headers: {
+        headrrs: {
           "Content-Type": "application/x-www-form-urlencoded"
         }
       })

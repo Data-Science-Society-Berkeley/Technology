@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from "react";
 import { Button } from 'semantic-ui-react'
 
 const style = {
@@ -9,7 +9,17 @@ const style = {
         marginLeft: '-50px',
     },
 }
-
-const AddCar = () => <Button style={style.button}>Add Car</Button>
-
+class AddCar extends Component{
+  constructor(props) {
+    super(props);
+  }
+  onSubmit = () => {
+          this.props.createCar();
+  };
+    render() {
+        return (
+            <Button style={style.button} label="Add Car" onClick={this.onSubmit}/>
+        )
+    }
+}
 export default AddCar

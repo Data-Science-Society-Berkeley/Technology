@@ -5,8 +5,7 @@ import { withRouter, BrowserRouter as Router, Switch, Route, Link  } from 'react
 import carsData from './carsData';
 import Car from './Car'
 import AddCar from './AddCar'
-let endpoint = "http://localhost:8080/";
-const carComponents = carsData.map(car => <Car key={car.id} name={car.name} Recovery={car.Recovery} Uber={car.Uber} Usage={car.Usage} Vin={car.Vin}/>)
+let endpoint = "http://localhost:8080";
 class MasterCar extends Component {
   constructor(props) {
     super(props);
@@ -15,8 +14,8 @@ class MasterCar extends Component {
       };
   }
   componentDidMount() {
-    console.log("random")
-    //this.getCars();
+    console.log("vehicle comp mounted")
+    this.getCars();
   }
  // this method does the get request to the server so that we can see our vehicles
   getCars = () => {
@@ -26,7 +25,7 @@ class MasterCar extends Component {
         this.setState({
           cars: res.data.map(car => {
             return (
-                <Car key={car.id} name={car.name} Recovery={car.Recovery} Uber={car.Uber} Usage={car.Usage} Vin={car.Vin}/>
+                <Car key={car.id} name={car.CarName} Recovery={car.Recovery} Uber={car.Uber} Usage={car.Usage} Vin={car.Vin}/>
             );
           })
         });
@@ -37,14 +36,23 @@ class MasterCar extends Component {
       }
     });
   };
+createCar = () => {
+console.log("Someone told me to create a car")
+    this.setState({
+        cars:this.state.cars.concat([<Car/>])
+    });
+};
 render() {
     console.log("called car render")
+    console.log(this.state)
     return (
       <div>
-         <div class="mainPage">
-            {carComponents}
+         <div className="mainPage">
+        <div className="row">
+          <Card.Group>{this.state.cars}</Card.Group>
+        </div>
             </div>
-            <AddCar />
+            <AddCar createCar={this.createCar}/>
         </div>
     )
 }
