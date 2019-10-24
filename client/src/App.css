@@ -20,9 +20,25 @@ html, body {
     text-align: center;
     background-color: inherit;
 }
-
-/*
-.row {
-  padding-bottom: 50px;
+.carCard {
+  margin: auto;
+  color: black;
+  border-style: solid;
+  border-width: thin;
+  margin-left: '2em'; 
+  height: contain;
+  width: 300px;
+  background: white;
+  text-align: center;
 }
-*/
+
+.textSegment {
+  width: 250px;
+}
+
+.mainPage {
+  column-count: 2;
+  /* column-fill: balance; */
+  column-span: 0;
+}
+
