@@ -49,4 +49,4 @@ render() {
     )
 }
 }
-export default  withRouter(MasterCar);
+export default  withRouter(MasterCar)
