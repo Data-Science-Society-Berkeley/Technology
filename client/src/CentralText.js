@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Image,Grid,Card, Header, Form, Input, Icon } from "semantic-ui-react";
+import { BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
+
 import Formx from "./Formx"
 let endpoint = "http://localhost:8080/";
 const gridoffset = {
@@ -24,7 +26,10 @@ class CentralText extends Component {
   constructor(props) {
     super(props);
   }
-  render() {
+    sendData(data) {
+        this.props.buttonClick(data);
+    };
+    render() {
     return (
 <Grid divided='vertically' style={gridoffset}>
     <Grid.Row columns={2}>
@@ -48,7 +53,7 @@ class CentralText extends Component {
     </Grid.Column>
     </Grid.Row>
     <Grid.Row>
-        <Formx/>
+        <Formx buttonClick={this.sendData.bind(this)}/>
     </Grid.Row>
     </Grid>
     </Grid.Column>

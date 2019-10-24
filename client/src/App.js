@@ -1,4 +1,4 @@
-import React, { Fragment  } from 'react';
+import React, { Fragment, Component  } from 'react';
 import "./App.css";
 import { Container } from "semantic-ui-react";
 import ToDoList from "./To-Do-List";
@@ -7,16 +7,33 @@ import Login from './Login';
 import Menu from './Menu';
 import Helmet from 'react-helmet';
 import CentralText from './CentralText';
-function App() {
-return (
-    <div>
-    {/*
-      We should replace Menu with a functional component*/}
-    <Menu />
-    <CentralText />
-    </div>
-
-);
+import { withRouter, BrowserRouter as Router, Switch, Route, Link, Redirect  } from 'react-router-dom';
+const Notfound = () => <Redirect to="/register"/>
+class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      zipcode: "",
+    };
+  }
+    sendData(data) {
+      this.setState({
+      zipcode:data
+    });
+    };
+render () {
+    const { redirect  } = this.state;
+    if (this.state.zipcode) {
+               return <Redirect to='/quote'/>;
+    }
+    return (
+        <Router>
+<Menu />
+<Switch>
+    <Route exact path ='/quote' render={(props) => <ToDoList {...props} />} />
+    <Route exact path ='/' render={(props) => <CentralText {...props} buttonClick={this.sendData.bind(this)} />} />
+    </Switch>
+    </Router>
+)};
 }
-
-export default App;
+export default withRouter(App);

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Card, Header, Form, Input, Icon } from "semantic-ui-react";
+import {withRouter} from 'react-router';
 
 let endpoint = "http://localhost:8080";
 
@@ -144,7 +145,7 @@ class ToDoList extends Component {
       <div>
         <div className="row">
           <Header className="header" as="h2">
-            TO DO LIST
+             Ozone Insurance
           </Header>
         </div>
         <div className="row">
@@ -168,4 +169,4 @@ class ToDoList extends Component {
   }
 }
 
-export default ToDoList;
+export default withRouter(ToDoList);
