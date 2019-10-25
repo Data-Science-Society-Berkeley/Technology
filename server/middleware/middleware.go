@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-
+    "reflect"
 	"go-to-do-app/server/models"
 	"github.com/gorilla/mux"
 
@@ -55,25 +55,45 @@ func init() {
 
 	fmt.Println("Collection instance created!")
 }
-
-// GetAllTask get all the task route
-func GetAllTask(w http.ResponseWriter, r *http.Request) {
+func GetCars(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
 	w.Header().Set("Access-Control-Allow-Origin", "*")
-	payload := getAllTask()
+	payload := getAllCars()
 	json.NewEncoder(w).Encode(payload)
+	fmt.Println("Fetching Cars")
+}
+func GetDrivers(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	payload := getAllDrivers()
+	json.NewEncoder(w).Encode(payload)
+	fmt.Println("Fetching Drivers")
 }
 
-// CreateTask create task route
-func CreateTask(w http.ResponseWriter, r *http.Request) {
+// Create create task route
+func CreateCar(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Access-Control-Allow-Methods", "POST")
 	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
-	var task models.ToDoList
+	var task models.Car
 	_ = json.NewDecoder(r.Body).Decode(&task)
 	// fmt.Println(task, r.Body)
-	insertOneTask(task)
+	insertOneCar(task)
+	fmt.Println("Creating Cars")
+	json.NewEncoder(w).Encode(task)
+}
+// Create create driver route
+func CreateDriver(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Methods", "POST")
+	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+	var task models.Driver
+	_ = json.NewDecoder(r.Body).Decode(&task)
+	// fmt.Println(task, r.Body)
+	insertOneDriver(task)
+	fmt.Println("Creating Drivers")
 	json.NewEncoder(w).Encode(task)
 }
 
@@ -110,7 +130,7 @@ func DeleteTask(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Access-Control-Allow-Methods", "DELETE")
 	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 	params := mux.Vars(r)
-	deleteOneTask(params["id"])
+	deleteOneCar(params["id"])
 	json.NewEncoder(w).Encode(params["id"])
 	// json.NewEncoder(w).Encode("Task not found")
 
@@ -126,9 +146,9 @@ func DeleteAllTask(w http.ResponseWriter, r *http.Request) {
 
 }
 
-// get all task from the DB and return it
-func getAllTask() []primitive.M {
-	cur, err := collection.Find(context.Background(), bson.D{{}})
+// get all cars from the DB and return them
+func getAllCars() []primitive.M {
+    cur, err := collection.Find(context.Background(), bson.D{{}})
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -140,7 +160,7 @@ func getAllTask() []primitive.M {
 		if e != nil {
 			log.Fatal(e)
 		}
-		// fmt.Println("cur..>", cur, "result", reflect.TypeOf(result), reflect.TypeOf(result["_id"]))
+		fmt.Println("cur..>", cur, "result", reflect.TypeOf(result), reflect.TypeOf(result["_id"]))
 		results = append(results, result)
 
 	}
@@ -148,20 +168,57 @@ func getAllTask() []primitive.M {
 	if err := cur.Err(); err != nil {
 		log.Fatal(err)
 	}
+	fmt.Println("private method got called to fetch cars")
+    fmt.Println(context.Background())
+	cur.Close(context.Background())
+	return results
+}
+// get all cars from the DB and return them
+func getAllDrivers() []primitive.M {
+    cur, err := collection.Find(context.Background(), bson.D{{}})
+	if err != nil {
+		log.Fatal(err)
+	}
 
+	var results []primitive.M
+	for cur.Next(context.Background()) {
+		var result bson.M
+		e := cur.Decode(&result)
+		if e != nil {
+			log.Fatal(e)
+		}
+		fmt.Println("cur..>", cur, "result", reflect.TypeOf(result), reflect.TypeOf(result["_id"]))
+		results = append(results, result)
+
+	}
+
+	if err := cur.Err(); err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("private method got called to fetch drivers")
 	cur.Close(context.Background())
 	return results
 }
 
+
 // Insert one task in the DB
-func insertOneTask(task models.ToDoList) {
+func insertOneCar(task models.Car) {
 	insertResult, err := collection.InsertOne(context.Background(), task)
 
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Println("Inserted a Single Record ", insertResult.InsertedID)
+	fmt.Println("Inserted a Single Car", insertResult.InsertedID)
+}
+// Insert one Driver in the DB
+func insertOneDriver(task models.Driver) {
+	insertResult, err := collection.InsertOne(context.Background(), task)
+
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("Inserted a Single Car", insertResult.InsertedID)
 }
 
 // task complete method, update task's status to true
@@ -193,9 +250,9 @@ func undoTask(task string) {
 }
 
 // delete one task from the DB, delete by ID
-func deleteOneTask(task string) {
-	fmt.Println(task)
-	id, _ := primitive.ObjectIDFromHex(task)
+func deleteOneCar(car string) {
+	fmt.Println(car)
+	id, _ := primitive.ObjectIDFromHex(car)
 	filter := bson.M{"_id": id}
 	d, err := collection.DeleteOne(context.Background(), filter)
 	if err != nil {
