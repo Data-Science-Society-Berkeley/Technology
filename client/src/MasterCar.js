@@ -43,14 +43,6 @@ console.log("Someone told me to create a car")
         cars:this.state.cars.concat([<Car/>])
     });
 };
-// TODO implement this function
-// this function makes sure that when they click save and continue that every form is properly filled out
-validateForm = () => {
-    console.log("validating the vehicle entries")
-    // loops through each member of our array and ensures its filled out, then sends them all to the backend to update the database
-    //
-    this.props.routeChange()
-}
 render() {
     console.log("called car render")
     console.log(this.state)
@@ -62,7 +54,6 @@ render() {
         </div>
             <AddCar createCar={this.createCar}/>
             </div>
-        <Button label="Save and Continue" onClick={this.validateForm}/>
         </div>
     )
 }

@@ -50,28 +50,19 @@ console.log("Someone told me to create a car")
         drivers:this.state.drivers.concat([<Driver/>])
     });
 };
-// TODO implement this function
-// this function makes sure that when they click save and continue that every form is properly filled out
-validateForm = () => {
-    console.log("validating the driver entries")
-    // loops through each member of our array and ensures its filled out, then sends them all to the backend to update the database
-    //
-    this.props.routeChange()
-}
 render() {
     console.log("called driver render")
     console.log(this.state)
     return (
     <div className="driver">
-      <div>
         <Form style={formFormat}>
-          <Card.Group>{this.state.drivers}</Card.Group>
+          <div>
+            <Card.Group>{this.state.drivers}</Card.Group>
+          </div>
+          <div>
             <AddDriver createDriver={this.createDriver}/>
+          </div>
         </Form>
-        </div>
-        <div>
-        <Button label="Save and Continue" onClick={this.validateForm}/>
-        </div>
         </div>
     )
 }

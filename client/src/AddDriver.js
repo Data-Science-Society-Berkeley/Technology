@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-import { Button } from 'semantic-ui-react'
+import { Header,Button,Form } from 'semantic-ui-react'
 
 const style = {
     button: {
+        width: "500px",
         background: "White",
-        position: 'absolute',
-        left: '50%',
-        marginLeft: '-50px',
+        margin:"auto",
+        display: "inlineBlock",
+        marginTop: "40px",
+        height:"125px"
     },
 }
 class AddDriver extends Component{
@@ -18,7 +20,15 @@ class AddDriver extends Component{
   };
     render() {
         return (
-            <Button style={style.button} label="Add Driver" onClick={this.onSubmit}/>
+            <div style={style.button}>
+            <div style = {{marginLeft:"20px",marginRight:"20px"}}>
+            <Header> </Header>
+            <div>
+            Your coverage depends on it, so please add all eligible drivers to your quote. Once added, you can include or (in most states) exclude them from your quote.
+            </div>
+            <Button type='submit' fluid onClick={this.onSubmit}> Add Another Driver </Button>
+            </div>
+            </div>
         )
     }
 }

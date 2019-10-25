@@ -1,9 +1,10 @@
 import React, { Fragment, Component  } from 'react';
 import "./App.css";
-import { Container } from "semantic-ui-react";
+import { Button,Container } from "semantic-ui-react";
 import Login from './Login';
 import MasterDriver from './MasterDriver';
 import MasterCar from './MasterCar';
+import Footer from './footer'
 import Menu from './Menu';
 import CentralText from './CentralText';
 import { withRouter, BrowserRouter as Router, Switch, Route, Link, Redirect  } from 'react-router-dom';
@@ -19,6 +20,7 @@ class App extends Component {
       zipcode: "",
       quote: true,
       vehicleCompletion: false,
+      driverCompletion: false,
     };
   }
     // our send data function sets the state correctly to use the data passed on by the child component
@@ -27,21 +29,31 @@ class App extends Component {
       zipcode:data
     });
     };
+    //TODO this also needs to validate all the forms of the kids
+    // Requires Learning how to have access to your child components and call functions inside them
     moveDriver(){
         console.log("Moving to the Driver Info Page")
         this.setState({
             vehicleCompletion:true,
         });
     };
+    //TODO this also needs to validate all the forms of the kids
+    // Requires Learning how to have access to your child components and call functions inside them
     moveToRate(){
         console.log("Moving to the Rate Info Page")
-        //this.setState({
-        //    vehicleCompletion:true,
-        //});
+        this.setState({
+            driverCompletion:true,
+        });
     };
 render () {
     const { redirect  } = this.state;
     // redirecting to the driver page, because the zipcode has been entered and the this.state.vehicleCompletion is True
+    if (this.state.zipcode && this.state.driverCompletion){
+      this.setState({
+      driverCompletion:false,
+    });
+        return <Redirect to='/quote/rate'/>;
+    }
     if (this.state.zipcode && this.state.vehicleCompletion){
       this.setState({
       vehicleCompletion:false,
@@ -65,9 +77,10 @@ render () {
     // We define the index page that will always load whenever the user uses the site
     <Route exact path ='/' render={(props) => <CentralText {...props} buttonClick={this.sendData.bind(this)} />} />
     // We define the quote route, for when the user enters a zipcode and clicks submit, this route will get matched and render the correct page for this.
-    <Route exact path ='/quote/vehicles' render={(props) => <MasterCar {...props} routeChange={this.moveDriver.bind(this)} />}/>
-    <Route exact path ='/quote/drivers' render={(props) => <MasterDriver {...props} routeChange={this.moveToRate.bind(this)} style={mydriverboundry} />}/>
+    <Route exact path ='/quote/vehicles' render={(props) => <MasterCar {...props} />}/>
+    <Route exact path ='/quote/drivers' render={(props) => <MasterDriver {...props}style={mydriverboundry} />}/>
     </Switch>
+    <Footer forward={this.moveDriver.bind(this)} back={this.backVehicles}/>
     </div>
     </Router>
 )};
