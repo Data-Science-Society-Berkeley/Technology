@@ -1,17 +1,17 @@
 body {
-  height: 100vh;
   margin: 0 auto;
-/*  margin-top: 50px; */
   color: coral;
+  width: 100%;
+  height: 100%;
   font-family: "Open Sans", sans-serif;
 }
-html, body {
-      width: 100%;
-        height: 100%;
-
+.myroot{
+height:100vh; 
 }
-.header {
-  text-align: center;
+.driver{
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
 .centraltext {
     margin: auto;
@@ -22,14 +22,10 @@ html, body {
 }
 .carCard {
   margin: auto;
-  color: black;
-  border-style: solid;
-  border-width: thin;
-  margin-left: '2em'; 
-  height: contain;
-  width: 300px;
+  margin-top: 40px;
+  width: 500px;
   background: white;
-  text-align: center;
+display: inline-block; 
 }
 
 .textSegment {
@@ -39,6 +35,9 @@ html, body {
 .mainPage {
   column-count: 2;
   /* column-fill: balance; */
+  width: 100%;
+  height: 100%;
   column-span: 0;
 }
+
 
