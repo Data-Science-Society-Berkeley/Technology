@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Footer from './footer'
 import axios from "axios";
 import { Card, Header, Form, Input, Icon,Button,Container } from "semantic-ui-react";
 import { withRouter, BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
@@ -50,6 +51,9 @@ console.log("Someone told me to create a car")
         drivers:this.state.drivers.concat([<Driver/>])
     });
 };
+moveDriver = () =>{
+    this.props.routeChange()
+}
 render() {
     console.log("called driver render")
     console.log(this.state)
@@ -63,6 +67,7 @@ render() {
             <AddDriver createDriver={this.createDriver}/>
           </div>
         </Form>
+    <Footer forward={this.moveDriver.bind(this)} back={this.backVehicles}/>
         </div>
     )
 }

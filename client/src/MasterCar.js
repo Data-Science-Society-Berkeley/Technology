@@ -3,6 +3,7 @@ import axios from "axios";
 import { Card, Header, Form, Input, Icon,Button } from "semantic-ui-react";
 import { withRouter, BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
 import carsData from './carsData';
+import Footer from './footer'
 import Car from './Car'
 import AddCar from './AddCar'
 let endpoint = "http://localhost:8080";
@@ -43,6 +44,9 @@ console.log("Someone told me to create a car")
         cars:this.state.cars.concat([<Car/>])
     });
 };
+moveDriver = () =>{
+    this.props.routeChange()
+}
 render() {
     console.log("called car render")
     console.log(this.state)
@@ -54,6 +58,7 @@ render() {
         </div>
             <AddCar createCar={this.createCar}/>
             </div>
+    <Footer forward={this.moveDriver.bind(this)} back={this.backVehicles}/>
         </div>
     )
 }

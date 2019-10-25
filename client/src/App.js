@@ -77,10 +77,9 @@ render () {
     // We define the index page that will always load whenever the user uses the site
     <Route exact path ='/' render={(props) => <CentralText {...props} buttonClick={this.sendData.bind(this)} />} />
     // We define the quote route, for when the user enters a zipcode and clicks submit, this route will get matched and render the correct page for this.
-    <Route exact path ='/quote/vehicles' render={(props) => <MasterCar {...props} />}/>
-    <Route exact path ='/quote/drivers' render={(props) => <MasterDriver {...props}style={mydriverboundry} />}/>
+    <Route exact path ='/quote/vehicles' render={(props) => <MasterCar {...props} routeChange={this.moveDriver.bind(this)} />}/>
+    <Route exact path ='/quote/drivers' render={(props) => <MasterDriver {...props} routeChange={this.moveToRate.bind(this)} style={mydriverboundry} />}/>
     </Switch>
-    <Footer forward={this.moveDriver.bind(this)} back={this.backVehicles}/>
     </div>
     </Router>
 )};
