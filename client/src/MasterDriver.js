@@ -15,10 +15,11 @@ class MasterDriver extends Component {
   constructor(props) {
     super(props);
       this.state = {
-          drivers:[]
+          drivers:[<Driver/>]
       };
   }
   componentDidMount() {
+    //TODO encode logic of having the default driver using their earlier entered data as opposed to just loading this.getDrivers()
     console.log("driver comp mounted")
     this.getDrivers();
   }
@@ -39,7 +40,7 @@ class MasterDriver extends Component {
         });
       } else {
         this.setState({
-          drivers: []
+          drivers: [<Driver/>]
         });
       }
     });

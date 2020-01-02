@@ -76,7 +76,7 @@ render (){
                 onClick={this.handleItemClick} > Male </Menu.Item>
                 <Menu.Item className='header'    active={this.state.activeItem === 'Female'}
                 onClick={this.handleItemClick} name='Female'> Female </Menu.Item>
-                <Menu.Item className='header' name='Other'    active={activeItem === 'Other'}
+                <Menu.Item className='header' name='Other'    active={this.state.activeItem === 'Other'}
                 onClick={this.handleItemClick}> Other </Menu.Item>
               </Menu>
           </Form.Field>

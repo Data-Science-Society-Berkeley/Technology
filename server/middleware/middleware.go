@@ -9,7 +9,7 @@ import (
     "reflect"
 	"go-to-do-app/server/models"
 	"github.com/gorilla/mux"
-
+	api "github.com/johnaoss/golinkedinapi"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
@@ -55,6 +55,15 @@ func init() {
 
 	fmt.Println("Collection instance created!")
 }
+func Linkedin(w http.ResponseWriter, r *http.Request){
+	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	login := api.GetLoginURL(w,r)
+	html := "Your login is <a href=\"" + login + "\">Login here!</a>"
+	json.NewEncoder(w).Encode(html)
+	fmt.Println(login)
+	fmt.Println("Signing into LinkedIn")
+}
 func GetCars(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
 	w.Header().Set("Access-Control-Allow-Origin", "*")
@@ -65,9 +74,14 @@ func GetCars(w http.ResponseWriter, r *http.Request) {
 func GetDrivers(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
 	w.Header().Set("Access-Control-Allow-Origin", "*")
-	payload := getAllDrivers()
-	json.NewEncoder(w).Encode(payload)
-	fmt.Println("Fetching Drivers")
+	userData,err := api.GetProfileData(w,r)
+	if err != nil{
+		fmt.Println(err)
+	}
+	fmt.Println(userData)
+	html :=userData.FirstName
+	fmt.Println(html)
+	http.Redirect(w, r,"http://localhost:3000" , http.StatusSeeOther)
 }
 
 // Create create task route

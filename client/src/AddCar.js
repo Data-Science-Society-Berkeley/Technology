@@ -1,25 +1,34 @@
 import React, { Component } from "react";
-import { Button } from 'semantic-ui-react'
+import { Header, Button, Form } from "semantic-ui-react";
 
 const style = {
-    button: {
-        background: "White",
-        position: 'absolute',
-        left: '50%',
-        marginLeft: '-50px',
-    },
-}
-class AddCar extends Component{
+  button: {
+    width: "500px",
+    background: "White",
+    margin: "auto",
+    display: "inlineBlock",
+    marginTop: "40px"
+  }
+};
+class AddCar extends Component {
   constructor(props) {
     super(props);
   }
   onSubmit = () => {
-          this.props.createCar();
+    this.props.createCar();
   };
-    render() {
-        return (
-            <Button style={style.button} label="Add Car" onClick={this.onSubmit}/>
-        )
-    }
+  render() {
+    return (
+      <div style={style.button}>
+        <div style={{ marginLeft: "0px", marginRight: "0px" }}>
+          <Header> </Header>
+          <Button type="submit" fluid onClick={this.onSubmit}>
+            {" "}
+            Create a List?{" "}
+          </Button>
+        </div>
+      </div>
+    );
+  }
 }
-export default AddCar
+export default AddCar;

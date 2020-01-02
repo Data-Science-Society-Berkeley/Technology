@@ -47,10 +47,13 @@ class Formx extends Component {
       < div style={white} >
         <Form>
             <Form.Field style={center} onChange={this.onChange} >
-            <input placeholder='Zipcode'/>
+            <input placeholder='Username'/>
+            </Form.Field>
+            <Form.Field style={center}>
+            <input placeholder='Password'/>
             </Form.Field>
         </Form>
-        <Button size= "medium" type='submit' onClick={this.onSubmit} label="Submit" />
+        <Button size= "medium" type='submit' onClick={this.onSubmit}>Submit </Button>
      < /div>
     </div>
     )
