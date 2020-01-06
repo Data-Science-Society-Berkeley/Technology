@@ -13,6 +13,13 @@ type Car struct {
 	Vin   string          `json:"task,omitempty"`
 	Status bool               `json:"status,omitempty"`
 }
+type User struct {
+	ID     primitive.ObjectID `json:"_id,omitempty" bson:"_id,omitempty"`
+	Email   string          `json:"email,omitempty"`
+	Name  bool           `json:"name,omitempty"`
+	// TODO Should make usage have a defined type instead of string
+	Password   string          `password:"task,omitempty"`
+}
 type Driver struct {
 	ID     primitive.ObjectID `json:"_id,omitempty" bson:"_id,omitempty"`
 	FullName   string          `json:"task,omitempty"`

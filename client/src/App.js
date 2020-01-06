@@ -8,8 +8,13 @@ import MasterCar from './MasterCar';
 import MasterRate from './MasterRate';
 import Footer from './footer'
 import Navbar from './Menu';
+import BestDeals from './bestdeals';
+
+import InMenu from './inMen';
+
 import CentralText from './CentralText';
 import { withRouter, BrowserRouter as Router, Switch, Route, Link, Redirect  } from 'react-router-dom';
+import NavBar from './Menu';
 const mydriverboundry = {
     margin: "auto",
 };
@@ -61,12 +66,22 @@ render () {
     return (
         <Router>
         <div className="myroot">
-<Navbar login={this.login.bind(this)}/>
 <Switch>
-    // We define the index page that will always load whenever the user uses the site
-    <Route exact path ='/' render={(props) => <CentralText {...props} buttonClick={this.sendData.bind(this)} />} />
-    // We define the quote route, for when the user enters a zipcode and clicks submit, this route will get matched and render the correct page for this.
-    <Route exact path ='/login' render={(props) => <Registration {...props} />}/>
+    <Route exact path ='/' render={(props) => 
+    <div>
+    <NavBar {...props} login={this.login.bind(this)}/>
+    <CentralText {...props} buttonClick={this.sendData.bind(this)} />
+    </div>
+    } 
+    />
+    <Route exact path ='/lumber' render={(props) => 
+    <div>
+    <InMenu {...props} />
+    <BestDeals {...props} buttonClick={this.sendData.bind(this)} />
+    </div>
+    }/>
+    <Route exact path ='/register' render={(props) => <Registration {...props} />}/>
+    <Route exact path ='/login' render={(props) => <Login {...props} />}/>
     <Route exact path ='/quote/vehicles' render={(props) => <MasterCar {...props} routeChange={this.moveDriver.bind(this)} />}/>
     <Route exact path ='/quote/drivers' render={(props) => <MasterDriver {...props} routeChange={this.moveToRate.bind(this)} style={mydriverboundry} />}/>
     <Route exact path ='/quote/rate' render={(props) => <MasterRate {...props} routeChange={this.moveToRate.bind(this)} style={mydriverboundry} />}/>

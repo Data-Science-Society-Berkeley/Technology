@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 
 import { Container, Image, Menu,Button  } from 'semantic-ui-react';
 const mynav = {
@@ -23,7 +24,9 @@ const greenBut = {
   background: "#759E33",
   color: "white",
 };
-
+const lip = {
+  color: "#759E33",
+};
 class NavBar extends Component {
   constructor(props) {
     super(props);
@@ -33,7 +36,10 @@ class NavBar extends Component {
       <div className='NavBar'>
       <Menu style={mynav} borderless={true}>
           <Menu.Item style={navbar} className=".ui.table" >
+          <Link to={"/"} style={lip}>
         Lumber.io
+        </Link>
+
         </Menu.Item>
           <Menu.Menu position="right">
             <Menu.Item style={navbar}>
@@ -46,7 +52,9 @@ class NavBar extends Component {
             Contact
             </Menu.Item>
             <Menu.Item header >
-            <Button content='Login/Sign In' style={greenBut} onClick={this.props.login}/>
+              <Link to={"login"} style={lip}>
+            <Button content='Login/Sign In' style={greenBut} />
+            </Link>
             </Menu.Item>
             </Menu.Menu>
       </Menu>

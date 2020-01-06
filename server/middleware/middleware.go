@@ -83,19 +83,44 @@ func GetDrivers(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(html)
 	http.Redirect(w, r,"http://localhost:3000" , http.StatusSeeOther)
 }
-
-// Create create task route
-func CreateCar(w http.ResponseWriter, r *http.Request) {
+func Login(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Access-Control-Allow-Methods", "POST")
 	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
-	var task models.Car
-	_ = json.NewDecoder(r.Body).Decode(&task)
-	// fmt.Println(task, r.Body)
-	insertOneCar(task)
-	fmt.Println("Creating Cars")
-	json.NewEncoder(w).Encode(task)
+	var user models.User
+    err := json.NewDecoder(r.Body).Decode(&user)
+    if err != nil{
+        fmt.Println(err)
+    }
+     fmt.Println(user, r.Body)
+     fetched,err := findOneUser(user)
+     if (err != nil){
+        w.WriteHeader(http.StatusForbidden)
+        w.Write([]byte("500 - Something bad happened!"))
+        return
+    }
+    //TODO add logic to hash the password and give the user some unique token so we ensure hes logged in
+	fmt.Println("Login User")
+	json.NewEncoder(w).Encode(fetched)
+}
+
+// Create create task route
+func AddUser(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Methods", "POST")
+	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+	var user models.User
+    err := json.NewDecoder(r.Body).Decode(&user)
+    if err != nil{
+        fmt.Println(err)
+    }
+     fmt.Println(user, r.Body)
+	insertOneUser(user)
+    //TODO add logic to hash the password and give the user some unique token so we ensure hes logged in
+	fmt.Println("Creating User")
+	json.NewEncoder(w).Encode(user)
 }
 // Create create driver route
 func CreateDriver(w http.ResponseWriter, r *http.Request) {
@@ -214,16 +239,29 @@ func getAllDrivers() []primitive.M {
 	return results
 }
 
+func findOneUser(user models.User)(primitive.D,error) {
+	fmt.Println(user)
+    result := bson.D{}
+    query := &bson.M{"name": user.Name,"password": user.Password} 
+    err := collection.FindOne(context.Background(), query).Decode(&result)
+	if err != nil {
+		return result,err
+        //log.Fatal(err)
+	}
+	fmt.Println("Found a Single User", result)
+    return result,nil
+}
 
 // Insert one task in the DB
-func insertOneCar(task models.Car) {
-	insertResult, err := collection.InsertOne(context.Background(), task)
+func insertOneUser(user models.User) {
+	fmt.Println(user)
+    insertResult, err := collection.InsertOne(context.Background(), user)
 
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Println("Inserted a Single Car", insertResult.InsertedID)
+	fmt.Println("Inserted a Single User", insertResult.InsertedID)
 }
 // Insert one Driver in the DB
 func insertOneDriver(task models.Driver) {
