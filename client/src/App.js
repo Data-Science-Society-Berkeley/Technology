@@ -2,12 +2,15 @@ import React, { Fragment, Component  } from 'react';
 import "./App.css";
 import { Button,Container, Menu } from "semantic-ui-react";
 import Login from './Login';
+import Profile from './Profile';
 import Registration from './Register';
 import MasterDriver from './MasterDriver';
 import MasterCar from './MasterCar';
 import MasterRate from './MasterRate';
 import Footer from './footer'
 import Navbar from './Menu';
+import Orders from './Order';
+
 import BestDeals from './bestdeals';
 
 import InMenu from './inMen';
@@ -78,6 +81,21 @@ render () {
     <div>
     <InMenu {...props} />
     <BestDeals {...props} buttonClick={this.sendData.bind(this)} />
+    <Footer/>
+    </div>
+    }/>
+    <Route exact path ='/profile' render={(props) => 
+    <div>
+    <InMenu {...props} />
+    <Profile {...props} buttonClick={this.sendData.bind(this)} />
+    <Footer/>
+    </div>
+    }/>
+      <Route exact path ='/orders' render={(props) => 
+    <div>
+    <InMenu {...props} />
+    <Orders {...props}/>
+    <Footer/>
     </div>
     }/>
     <Route exact path ='/register' render={(props) => <Registration {...props} />}/>

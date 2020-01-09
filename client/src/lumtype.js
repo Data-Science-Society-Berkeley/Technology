@@ -58,6 +58,11 @@ const  headline = {
   fontWeight: "300",
   letterSpacing: "1.5px",
   lineHeight: "42px",
+    textAlign: "left",
+
+};
+const  icon_style = {
+  color: "#3F691A",
 };
 const description_formatting = {
   marginLeft: "13px",
@@ -81,7 +86,9 @@ class Type extends Component {
     };
   }
 
-  
+  //<div style={{marginLeft:"13px",marginTop:"10px",marginRight:"36px",width:"318px",height:"49px"}}>
+  //Selling for 10,000
+//</div>
   //TODO friend options should after the first dropdown be dynamically rendered from our backend, because we know what brands had cars in 2020 or 2019, and keep narrowing
   //more and more
   yearError() {
@@ -99,39 +106,37 @@ class Type extends Component {
   }
   render() {
     return (
-      <Card style={{marginLeft:"43px",width:"367px",height:"477px"}}>
+      <Card style={{marginLeft:"43px",width:"367px",height:"397px"}}>
         <Header as="h3" textAlign={'center'} style={header}> Essential </Header>
-        <div>
-        <div  textAlign={'center'} style={headline}>SOFT WOOD BUNDLE</div>
-        <div style={{marginLeft:"191px",marginTop:"64px",marginLeft:"191px",marginRight:"0px",width:"127px",height:"17px"}}> View more detail</div>
-        </div>
-        <div style={{marginLeft:"13px",marginTop:"0px",marginRight:"36px",width:"318px",height:"49px"}}>
-          Selling for 10,000
-        </div>
-        <Divider section />
-        <Card.Description style={description_formatting} className="the-best-lumber-are">
+        <div  textAlign={'left'} style={headline}>SOFT WOOD BUNDLE        <span style={{fontFamily:"Rubik",letterSpacing:".43px",lineHeight:"17px",fontSize:"12px",width:"127px",height:"17px",marginRight:"0px"}} >      View more detail &gt; </span> </div>
+        <div style={{marginLeft:"13px",marginTop:"10px",marginRight:"36px",width:"318px",height:"49px",textAlign:"left"}}>
+          Selling for 
+          <div style={{color:"#3F691A",fontFamily:"Rubik",fontSize:"21px",fontWeight:"500",letterSpacing:".43px",lineHeight:"24px"}}>$10,000 <Icon color={'grey'} name='question circle outline'/>
+          </div>
+          </div>
+       
+        <Divider section style={{marginTop:"15px",marginBottom:"15px"}}/>
+          <div style={description_formatting}>
           Key Traits
           <List>
             <List.Item>
-            <List.Icon name='circle' />
+            <List.Icon style={icon_style} name='square full' />
     <List.Content>Find the best price</List.Content>
             </List.Item>
             <List.Item>
-            <List.Icon name='circle' />
+            <List.Icon style={icon_style} name='square full' />
     <List.Content>Ability to track your orders</List.Content>
             </List.Item>
             <List.Item>
-            <List.Icon name='circle' />
+            <List.Icon style={icon_style} name='square full' />
     <List.Content>24 hours phone support </List.Content>
             </List.Item>
-
-            <List.Item>
-            <List.Icon name='circle' />
-    <List.Content>and much more</List.Content>
-            </List.Item>
-
           </List>
-          </Card.Description>
+          </div>
+          <Divider section style={{marginTop:"0px",marginBottom:"0px"}}/>
+          <Button style={{paddingLeft:"16px",paddingTop:"13px",paddingBottom:"13px",paddingRight:"16px",marginLeft:"24px",marginTop:"15px",marginRight:"24px",marginBottom:"16px",width:"319px",height:"42px",background:"#3F691A",color:"#FFFFFF"}}> SELECT </Button>
+
+
 
     </Card>
     );

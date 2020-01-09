@@ -31,8 +31,7 @@ const call = {
     fontSize: "20px",	
     letterSpacing: "0.71px",
     marginTop: "29px",
-    marginBottom: "0px",
-    marginLeft: "602px",
+    marginLeft: "352px",
     marginRight: "24px",
     lineHeight: "24px",
     whiteSpace: "nowrap",
@@ -40,12 +39,9 @@ const call = {
 const greenBut = {
   height: "86px",	
 };
-const lip = {
-  color: "#759E33",
-};
 const gridS = {
-  height: "152px",	
-  width: "100%",	
+  height: "74px",	
+  width: "1366px",	
 };
 const tabs = {
   height: "60px",	
@@ -71,7 +67,8 @@ const boxedText = {
       width: "310px",
       boxSizing: "border-box",
       border: "2px solid #3F691A",
-      marginBottom: "5px",
+      marginTop: "5px",
+      marginBottom: "16px",
       
   };
   const insideTextL = {
@@ -105,11 +102,18 @@ const insideTextR = {
 };
 const buttonStyle = {
   marginRight: "24px",
-  marginLeft: "500px",
+  marginLeft: "225px",
   marginTop: "5px",
   marginBottom: "20px",
   height: "45px",	
   width: "136px",
+  fontFamily: "Rubik Regular",
+  fontSize: "16px",
+  letterSpacing: "0.57px",
+  lineHeight: "19px",
+  background: "#F6F7F6",
+  color: "#595959",
+  fontWeight: "300",
 };
 const phone= {
   color: "#3F691A",
@@ -120,6 +124,7 @@ class InMenu extends Component {
   }
   render() {
     return (
+      <div>
         <Grid fluid padded={false} columns={2} style={gridS}>
           <Grid.Row fluid stye={greenBut}>
           <Grid.Column>
@@ -132,30 +137,30 @@ class InMenu extends Component {
               </Grid.Column>
 
       </Grid.Row>
-      <Grid.Row fluid padded={false} divided>
-      <Grid.Column style={tabs}>
-        <Link to={"/mybestorders"}>
+      </Grid>
+      <Menu  style={{marginTop: '19px', boxShadow: "none",
+  border: "none",}}>
+      <Menu.Item style={tabs}>
+        <Link to={"/lumber"}>
         <div style={tabText}>
             My best deals
             </div>
             </Link>
-      </Grid.Column >
-      <Grid.Column style={tabs}>
+      </Menu.Item >
+      <Menu.Item style={tabs}>
       <Link to={"/orders"}>
         <div style={tabText}>
             My Orders
             </div>
             </Link>
-
-      </Grid.Column >
-      <Grid.Column style={tabs}>
+      </Menu.Item >
+      <Menu.Item style={tabs}>
       <Link to={"/profile"}>
         <div style={tabText}>
             Edit Profile
             </div>
             </Link>
-
-      </Grid.Column >
+      </Menu.Item >
 
       <Grid.Column style={rightText} fluid >
         <table style={boxedText}>
@@ -173,9 +178,8 @@ class InMenu extends Component {
             Log Out
           </Button>
       </Grid.Column >
-
-      </Grid.Row>
-      </Grid>
+      </Menu>
+      </div>
     )
 
 }
