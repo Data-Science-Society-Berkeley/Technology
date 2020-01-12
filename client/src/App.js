@@ -8,8 +8,10 @@ import MasterDriver from './MasterDriver';
 import MasterCar from './MasterCar';
 import MasterRate from './MasterRate';
 import Footer from './footer'
-import Navbar from './Menu';
+import Info from './Info';
 import Orders from './Order';
+import Checkout from './checkout';
+
 
 import BestDeals from './bestdeals';
 
@@ -98,11 +100,19 @@ render () {
     <Footer/>
     </div>
     }/>
+       <Route path ='/soft:id' render={(props) => 
+    <div style={{background: "#F6F7F6",width: "1366px"}}>
+    <Info {...props} />
+    </div>
+    }/>
+        <Route path ='/check:id' render={(props) => 
+        <div>
+            <Checkout {...props} buttonClick={this.sendData.bind(this)} />
+        </div>
+    }/>
     <Route exact path ='/register' render={(props) => <Registration {...props} />}/>
     <Route exact path ='/login' render={(props) => <Login {...props} />}/>
     <Route exact path ='/quote/vehicles' render={(props) => <MasterCar {...props} routeChange={this.moveDriver.bind(this)} />}/>
-    <Route exact path ='/quote/drivers' render={(props) => <MasterDriver {...props} routeChange={this.moveToRate.bind(this)} style={mydriverboundry} />}/>
-    <Route exact path ='/quote/rate' render={(props) => <MasterRate {...props} routeChange={this.moveToRate.bind(this)} style={mydriverboundry} />}/>
     </Switch>
     </div>
     </Router>

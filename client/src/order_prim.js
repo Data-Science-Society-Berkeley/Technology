@@ -156,25 +156,26 @@ class Order extends Component {
       <Card style={{marginLeft:"43px",width:"1290px",height:"234px"}}>
           <Menu borderless>
         <Menu.Item>
-          <div>Order Placed
+          <div class="order-placed" >Order Placed
             <br/>
           December 26th, 2019</div>
         </Menu.Item>
         <Menu.Item>
-          <div>Total
+          <div class="order-placed">Total
             <br/>
           CDN $9000.96</div>
         </Menu.Item>
         <Menu.Item>
-          <div> Ship to
-            <br/>
-          John Doe <Icon name='question circle outline' /> </div>
+          <div>
+          <div class="order-placed"> Ship to </div>
+          <div class="order-item">John Doe <Icon name='question circle outline' /> </div>
+          </div>
         </Menu.Item>
         </Menu>
         <Grid>
           <Grid.Row columns={2}>
             <Grid.Column>
-        <div style={description_formatting} > Arriving Wednesday </div>
+        <div class="arriving" style={description_formatting} > Arriving Wednesday </div>
         <div  style={headline}>Softwood Bundle </div>
         <div  style={seller}>Sold by IamCanadaMill </div>
         </Grid.Column>

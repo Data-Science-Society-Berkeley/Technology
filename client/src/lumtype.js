@@ -18,6 +18,8 @@ import {
   Divider,
   List
 } from "semantic-ui-react";
+import { Link} from 'react-router-dom';
+
 import Formx from "./Formx";
 const style = {
   hang: {
@@ -104,11 +106,19 @@ class Type extends Component {
   checkError() {
     console.log("I got called!!");
   }
+  // The link from the View more info should be a variable link later...
   render() {
     return (
       <Card style={{marginLeft:"43px",width:"367px",height:"397px"}}>
         <Header as="h3" textAlign={'center'} style={header}> Essential </Header>
-        <div  textAlign={'left'} style={headline}>SOFT WOOD BUNDLE        <span style={{fontFamily:"Rubik",letterSpacing:".43px",lineHeight:"17px",fontSize:"12px",width:"127px",height:"17px",marginRight:"0px"}} >      View more detail &gt; </span> </div>
+        <div  textAlign={'left'} style={headline}>SOFT WOOD BUNDLE       
+         <Link to="/softwood">
+         <span style={{fontFamily:"Rubik",letterSpacing:".43px",lineHeight:"17px",fontSize:"12px",width:"127px",height:"17px",marginRight:"0px",  color: "#3F691A",
+}} >     
+          View more detail &gt; </span>
+          </Link>
+           </div>
+          
         <div style={{marginLeft:"13px",marginTop:"10px",marginRight:"36px",width:"318px",height:"49px",textAlign:"left"}}>
           Selling for 
           <div style={{color:"#3F691A",fontFamily:"Rubik",fontSize:"21px",fontWeight:"500",letterSpacing:".43px",lineHeight:"24px"}}>$10,000 <Icon color={'grey'} name='question circle outline'/>
@@ -134,7 +144,9 @@ class Type extends Component {
           </List>
           </div>
           <Divider section style={{marginTop:"0px",marginBottom:"0px"}}/>
+          <Link to="/softwood">
           <Button style={{paddingLeft:"16px",paddingTop:"13px",paddingBottom:"13px",paddingRight:"16px",marginLeft:"24px",marginTop:"15px",marginRight:"24px",marginBottom:"16px",width:"319px",height:"42px",background:"#3F691A",color:"#FFFFFF"}}> SELECT </Button>
+          </Link>
 
 
 
