@@ -16,7 +16,8 @@ import {
   Container,
   Label,
   Divider,
-  List
+  List,
+  Popup,
 } from "semantic-ui-react";
 import { Link} from 'react-router-dom';
 
@@ -65,6 +66,9 @@ const  headline = {
 };
 const  icon_style = {
   color: "#3F691A",
+};
+const  custom_line_height = {
+  lineHeight: "17px",
 };
 const description_formatting = {
   marginLeft: "13px",
@@ -118,10 +122,12 @@ class Type extends Component {
           View more detail &gt; </span>
           </Link>
            </div>
-          
-        <div style={{marginLeft:"13px",marginTop:"10px",marginRight:"36px",width:"318px",height:"49px",textAlign:"left"}}>
+
+        <div class="lumber-text" style={{lineHeight: "17px",marginLeft:"13px",marginTop:"10px",marginRight:"36px",width:"318px",height:"49px",textAlign:"left"}}>
           Selling for 
-          <div style={{color:"#3F691A",fontFamily:"Rubik",fontSize:"21px",fontWeight:"500",letterSpacing:".43px",lineHeight:"24px"}}>$10,000 <Icon color={'grey'} name='question circle outline'/>
+          <div style={{color:"#3F691A",fontFamily:"Rubik",fontSize:"21px",fontWeight:"500",letterSpacing:".43px",lineHeight:"24px"}}>$10,000 
+          <Popup className="pop-up" content='On average, a lumber trader would take 7-12% commision from each trade. You save by using lumber.io'
+                       trigger={<Icon color={'grey'} name="question circle outline" />} />
           </div>
           </div>
        
@@ -131,15 +137,15 @@ class Type extends Component {
           <List>
             <List.Item>
             <List.Icon style={icon_style} name='square full' />
-    <List.Content>Find the best price</List.Content>
+    <List.Content style={custom_line_height} className='lumber-text'>Find the best price</List.Content>
+            </List.Item>
+            <List.Item >
+            <List.Icon style={icon_style} name='square full' />
+    <List.Content style={custom_line_height} className='lumber-text'>Ability to track your orders</List.Content>
             </List.Item>
             <List.Item>
             <List.Icon style={icon_style} name='square full' />
-    <List.Content>Ability to track your orders</List.Content>
-            </List.Item>
-            <List.Item>
-            <List.Icon style={icon_style} name='square full' />
-    <List.Content>24 hours phone support </List.Content>
+    <List.Content style={custom_line_height} className='lumber-text'>24 hours phone support </List.Content>
             </List.Item>
           </List>
           </div>

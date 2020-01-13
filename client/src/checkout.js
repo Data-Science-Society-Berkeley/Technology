@@ -129,7 +129,6 @@ const tabText = {
     fontSize: "16px",	
     letterSpacing: "0.57px",	
     lineHeight: "19px",	
-    marginLeft: "48px",
     marginTop: "21px",
     marginBottom: "20px",
     textAlign: "center"};
@@ -140,14 +139,20 @@ const buttonStyle = {
       marginBottom: "20px",
       height: "45px",	
       width: "136px",
-      fontFamily: "Rubik Regular",
+      fontFamily: "Rubik",
       fontSize: "16px",
       letterSpacing: "0.57px",
       lineHeight: "19px",
       background: "#F6F7F6",
       color: "#595959",
-      fontWeight: "300",
+      fontWeight: "400",
     };
+const border_select = {
+      borderBottom: "2px solid #3F691A",
+      marginLeft: "32px",
+    };
+// Link to the home page, but keep signed in when clicking on Lumber.io but log out purely
+// when using the logout button
 function MenuBar(props) {
   return (
     <div>
@@ -165,14 +170,19 @@ function MenuBar(props) {
   </Grid>
   <Menu  fluid style={{marginTop: '19px', boxShadow: "none",border: "none",}}>
   <Menu.Item style={tabs}>
+  <div style={border_select}>
     <div style={tabText}>
         Summary
         </div>
+        </div>
+
   </Menu.Item >
   <div style={{width: '1160px'}}>
+  <Link to={"/"}>
   <Button style={buttonStyle} floated='right'>
             Log Out
           </Button>
+  </Link>
         </div>
   </Menu>
   </div>
@@ -186,7 +196,6 @@ class Checkout extends Component {
 
     };
       this.join=this.join.bind(this);
-
   }
   updateEmail = (value) => {
     // TODO if its an invalid email we can prompt them for an error later
@@ -201,10 +210,11 @@ class Checkout extends Component {
     sendData(data) {
         this.props.buttonClick(data);
     };
-    render() {
+    render() {    
     return (
 <div>
 <MenuBar/>
+<div style={{ marginTop: "0px",marginRight: "0px", background: "#F6F7F6",width: "1450px"}}>
 <Grid fluid divided='vertically' style={gridoffset}>
             <Grid.Row columns={2}>
                 <Grid.Column>
@@ -305,6 +315,7 @@ class Checkout extends Component {
                     </Grid.Column>
             </Grid.Row>
   </Grid>
+  </div>
     </div>
 )
 

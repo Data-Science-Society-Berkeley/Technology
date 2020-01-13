@@ -80,33 +80,39 @@ render () {
     } 
     />
     <Route exact path ='/lumber' render={(props) => 
-    <div>
+    <div >
     <InMenu {...props} />
+    <div style={{ marginTop: "0px",marginRight: "0px", background: "#F6F7F6",width: "1450px"}}>
     <BestDeals {...props} buttonClick={this.sendData.bind(this)} />
     <Footer/>
+    </div>
     </div>
     }/>
     <Route exact path ='/profile' render={(props) => 
     <div>
     <InMenu {...props} />
+    <div style={{ marginTop: "0px",marginRight: "0px", background: "#F6F7F6",width: "1450px"}}>
     <Profile {...props} buttonClick={this.sendData.bind(this)} />
     <Footer/>
+    </div>
     </div>
     }/>
       <Route exact path ='/orders' render={(props) => 
     <div>
     <InMenu {...props} />
+    <div style={{ marginTop: "0px",marginRight: "0px", background: "#F6F7F6",width: "1450px"}}>
     <Orders {...props}/>
     <Footer/>
     </div>
+    </div>
     }/>
        <Route path ='/soft:id' render={(props) => 
-    <div style={{background: "#F6F7F6",width: "1366px"}}>
+    <div style={{ marginTop: "0px",marginRight: "0px", background: "#F6F7F6",width: "1450px"}}>
     <Info {...props} />
     </div>
     }/>
         <Route path ='/check:id' render={(props) => 
-        <div>
+        <div >
             <Checkout {...props} buttonClick={this.sendData.bind(this)} />
         </div>
     }/>

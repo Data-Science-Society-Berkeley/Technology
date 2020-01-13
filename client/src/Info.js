@@ -135,11 +135,18 @@ class Info extends Component {
     sendData(data) {
         this.props.buttonClick(data);
     };
+    //TODO the icon should acutally by a 48 by 48 right now it is 30 by 30
     render() {
     return (
         <div>
-        <div class="info-header" > <u>SOFT WOOD BUNDLE </u></div>
+        <div class="info-top">
+        <div class="info-header" > <u>SOFT WOOD BUNDLE </u> </div>
+       <Link to="/lumber"><Icon className="info-exit" size='big' name="close"/> </Link>
+        </div>
+        <div>
         <Link to="/checkout"><Button className="info-button">SELECT THIS BUNDLE </Button></Link>
+        
+        </div>
         <Grid style={third_offset}>
             <Grid.Row columns={1} style={{marginTop:"0px"}}>
             <Card padded={false} fluid style={{width:"1287px",height: "100%"}}>

@@ -46,6 +46,8 @@ const leftTable = {
     fontSize: "16px",
     letterSpacing: "0.57px",
     lineHeight: "19px",
+    marginLeft: "10px",
+
 };
 const rightTable = {
     width : "201px",
@@ -101,9 +103,11 @@ class BestDeals extends Component {
                                     </div>
                             </Table.Cell>
                             <Table.Cell>
+                            <Link to='/info-individual'>
                             <div style={rightTable}>
-                                Individual Purchase (coming soon, click to learn more)
+                                 Individual Purchase (coming soon, click to learn more) 
                                 </div>
+                                </Link>
                             </Table.Cell>
                             </Table.Row>
                 </Table.Body>

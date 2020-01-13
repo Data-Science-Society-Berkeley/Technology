@@ -110,9 +110,12 @@ class Profile extends Component {
     this.state = {
         //cars:[<Car identifier={0} stateLink={this.updateState.bind(this)} />],
         types:[],
-
+        favorites:[["Hardwood",true],["Softwood",false],["Maple",true],["Oak",false]],
     };
+      this.setStyle = this.setStyle.bind(this);
       this.join=this.join.bind(this);
+      this.setButton=this.setButton.bind(this);
+      console.log(this.state.favorites)
 
   }
   updateEmail = (value) => {
@@ -128,7 +131,31 @@ class Profile extends Component {
     sendData(data) {
         this.props.buttonClick(data);
     };
+    setButton = (e, data) => {
+      // access to e.target here
+      console.log(data,data.index);
+      const fav = this.state.favorites.slice()
+      fav[data.index][1] = !fav[data.index][1]
+      this.setState({favorites: fav})
+  }
+    setStyle(){
+      //TODO ensure first guys margin is effectively 24 
+      const favorites = this.state.favorites;
+      console.log(favorites,favorites[0])
+      var result = [];
+      for (var i = 0; i < favorites.length; ++i) {
+          var margin_left = i == 0? "24px":"16px"
+          console.log(favorites[i][1])
+          if (favorites[i][1]){
+            result.push(<Button style={{marginLeft:margin_left,background:"#3F691A"}} index={i} onClick={this.setButton} className="success-check-wood" icon='check circle outline' content={favorites[i][0]} />);
+          } else {
+            result.push(<Button style={{marginLeft:margin_left,background:"#FFFFFF"}} index={i} onClick={this.setButton} className="fail-check-wood"  content={favorites[i][0]}  /> );
+          }
+      }
+      return result
+    }
     render() {
+      let return_array = this.setStyle()
     return (
 <div>
 <Grid fluid divided='vertically' style={gridoffset}>
@@ -179,10 +206,7 @@ class Profile extends Component {
                         Lumber Preferences
                     </div>
                     <div>
-                    <Button style={{marginLeft:"24px",background:"#3F691A"}} compact className="success-check-wood" icon='check circle outline' content='Hardwood' />
-                    <Button style={{marginLeft:"16px",background:"#FFFFFF"}} className="fail-check-wood"  content='Softwood' /> 
-                    <Button style={{marginLeft:"16px",background:"#3F691A"}} className="success-check-wood" icon='check circle outline' content='Maple' /> 
-                    <Button style={{marginLeft:"16px",background:"#FFFFFF"}} className="fail-check-wood" content='Oak' />
+                      {return_array}
                     </div>
         <Form.Field>
             <div class="lumber-preferences" style={{marginBottom:"6.83px"}}> 

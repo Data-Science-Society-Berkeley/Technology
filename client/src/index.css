@@ -8,8 +8,13 @@ body {
 }
 body {
 background:white;  /* fallback for old browsers */
-height:100vh; 
-overflow-x: scroll; 
+min-height:100vh; 
+width: 1450px;
+overflow-x: scroll;
+margin-top: 0 !important;
+padding: 0;
+display: inline-block;
+
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

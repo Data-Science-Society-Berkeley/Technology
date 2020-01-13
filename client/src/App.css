@@ -66,15 +66,6 @@
     font-size: 20px;	
     letter-spacing: 0.71px;	
     line-height: 34px;}
-    .button-text {	height: 16px;	
-      width: 88px;	
-      color: #FFFFFF;	
-      font-family: Rubik;	
-      font-size: 14.22px;	
-      font-weight: 500;	
-      letter-spacing: 1.25px;	
-      line-height: 16px;	
-      text-align: center;}
 .ui.grid>.rowitem.call-778-329-3030-fo {	
     height: 24px;	
     width: 333px;	
@@ -112,6 +103,15 @@
         font-size: 16px;	
         letter-spacing: 0.57px;	
         line-height: 19px;}
+.lumber-text {
+          height: 17px;
+          width: 318px;
+          color: #595959;
+          font-family: Rubik;
+          font-size: 12px;
+          letter-spacing: 0.43px;
+          line-height: 17px;
+        }
  /*
  All below are the edit profile css styles
  */     
@@ -284,6 +284,7 @@ Order Page
 extra info page attributes
 */
 .info-header {
+  display: inline-block;
 	height: 59px;
 	width: 909px;
 	color: #3F691A;
@@ -292,6 +293,21 @@ extra info page attributes
 	font-weight: 300;
 	letter-spacing: 2.14px;
   line-height: 36px;
+ 
+}
+.info-exit {
+	height: 48px;
+	width: 48px;
+  color: #3F691A;
+  margin-left: 500px;
+  margin-right: 36px;
+  margin-bottom: 31px;
+  float: right;
+}
+.info-top{
+  display: inline-block;
+  width: 1366px;
+  height: 59px;
   margin-left: 43px;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -532,3 +548,82 @@ For the Checkout Page
   background-color: #E9F5E9;
   box-shadow: 0 2px 4px 0 #CCCCCC;
 }
+.log-out {
+	color: #595959;
+	font-family: Rubik;
+	font-size: 16px;
+	letter-spacing: 0.57px;
+	line-height: 19px;
+	text-align: center;
+}
+/*
+Log in Pop over
+*/
+.sign-in {
+	height: 34.67px;
+	width: 346px;
+	color: #595959;
+	font-family: Rubik;
+	font-size: 13px;
+	letter-spacing: 0.46px;
+  line-height: 34px;
+  margin-left: 38px;
+  margin-bottom: 18.33px;
+  margin-right: 178px;
+}
+.ui.menu.menu-text {
+	height: 60px;
+	width: 224px;
+	color: #3F691A;
+	font-family: Rubik;
+	font-size: 16px;
+	letter-spacing: 0.57px;
+	line-height: 34px;
+	text-align: center;
+}
+.ui.menu.two.item .item.menu-text {
+	color: #3F691A;
+	font-family: Rubik;
+	font-size: 16px;
+	letter-spacing: 0.57px;
+	line-height: 34px;
+	text-align: center;
+}
+.ui.button.reg-choices {
+    color: #3F691A;
+    font-family: Rubik;
+    font-size: 13px;
+    letter-spacing: 0.46px;
+    line-height: 15px;
+    text-align: center;
+}
+.ui.button.cho-reg-choices {
+	color: #FFFFFF;
+	font-family: Rubik;
+	font-size: 13px;
+	letter-spacing: 0.46px;
+	line-height: 15px;
+  text-align: center;
+  margin-bottom: 16px;
+  background-color: #0F4210;
+}
+.ui.button.button-text {	
+  color: #FFFFFF;	
+  font-family: Rubik;	
+  font-size: 14.22px;	
+  font-weight: 500;	
+  letter-spacing: 1.25px;	
+  line-height: 16px;	
+  background-color: #3F691A;
+  text-align: center;
+}
+.register {
+    height: 17px;
+    width: 432px;
+    color:#707070;
+    font-family: Rubik;
+    font-size: 12px;
+    letter-spacing: 0.43px;
+    line-height: 17px;
+  }
+  
