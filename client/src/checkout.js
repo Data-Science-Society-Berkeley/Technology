@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import {Grid,Card,Divider,Icon,Button,Menu,Popup  } from "semantic-ui-react";
+import {Grid,Card,Divider,Icon,Button,Menu,Popup,Portal  } from "semantic-ui-react";
 import { Link  } from 'react-router-dom';
 let endpoint = "http://localhost:8080/";
 const gridoffset = {
@@ -193,9 +193,24 @@ class Checkout extends Component {
     super(props);
     this.state = {
         orderInfo:[],
-
+        emailOpen: false,
+        address:{
+          name:"First Name Last Name",
+          unit:"1234-00",
+          streetName:"crescent street",
+          cityName:"Toronto",
+          stateName:"Ontario 1A2 3B4",
+          countryName:"Canada",
+          phoneNum:"7781231234",
+          prompt:false,
+        },
     };
       this.join=this.join.bind(this);
+      this.closeEmail=this.closeEmail.bind(this);
+
+  }
+  handleOpen = () => {
+    this.setState({ emailOpen: true })
   }
   updateEmail = (value) => {
     // TODO if its an invalid email we can prompt them for an error later
@@ -210,6 +225,14 @@ class Checkout extends Component {
     sendData(data) {
         this.props.buttonClick(data);
     };
+    closeEmail = () => {
+      this.setState({ emailOpen: false })
+    }  
+    closeAdd = () => {
+      var temp = this.state.address
+      temp.prompt = true
+      this.setState({ address: temp })
+    }  
     render() {    
     return (
 <div>
@@ -238,15 +261,15 @@ class Checkout extends Component {
                   </div>
                   <Divider style={{marginTop:"0px",marginLeft:"21px",marginRight:"24px",marginBottom:"18px"}}/>
                   <div class='address'>
-                    First Name Last Name
+                    {this.state.address.name}
                     <br/>
-                    1234-00 crescent street
+                    {this.state.address.unit} {this.state.address.streetName}
                     <br/>
-                    Toronto, Ontario 1A2 3B4
+                    {this.state.address.cityName}, {  this.state.address.stateName}
                     <br/>
-                    Canada
+                    {this.state.address.countryName}
                     <br/>
-                    Phone 7781231234
+                    Phone: {this.state.address.phoneNum}
                     <br/>
                     <br/>
                     <span style={{marginLeft:"0px"}} class='change-order'>Add Delivery Instructions</span>
@@ -279,7 +302,7 @@ class Checkout extends Component {
                     <Grid.Column>
                     <Card style={{marginTop:"0px",marginLeft:"16px",marginRight:"285px",width:"398px",marginBottom:"0px",height:"396px"}}>
                     <Card.Header>
-                    <Button className="checkout-button"> PLACE YOUR ORDER </Button>
+                    <Button onClick={this.handleOpen} className="checkout-button"> PLACE YOUR ORDER </Button>
                     </Card.Header>
                     <div className="checkout-header">
                       Order Summary
@@ -316,6 +339,115 @@ class Checkout extends Component {
             </Grid.Row>
   </Grid>
   </div>
+  <Portal
+      open={this.state.emailOpen}
+      >
+             <div
+            style={{
+                height: '100%',
+                width: '1366px',
+                left: '0px',
+                position: 'fixed',
+                top: '0px',
+                background: 'rgba(0,0,0,0.5)',
+                zIndex: 1,
+                overflowX:'hidden',
+              }}>
+            <Card
+              style={{
+                height: '326px',
+                width: '403px',
+                marginLeft: '519px',
+                marginRight: '518px',
+                position: 'relative',
+                top: '196px',
+                background: '#FFFFFF',
+                zIndex: 1,
+              }}
+            >   
+            <Icon  onClick={this.closeEmail}  style={{color:'#AAAAAA',marginLeft: '40px',marginRight: '346px',marginTop: '27px'}}
+            size={'small'}name='close'/>    
+               <Icon style={{color:'#AAAAAA',marginLeft: '167px',marginRight: '166px',marginTop: '22px'}}
+            size={'huge'}name='mail outline'/>        
+            <div className='email-head'>
+            We sent you an email!  
+            </div>  
+            <div className='email-text'>
+              The finer details of your order have been emailed to you!
+              </div>
+              <Button  className="button-text"
+                style={{width:"96px",height: "36px",marginLeft:"150px",marginRight:"157px",
+                marginTop:"2px",marginBottom:"12px",paddingRight:"16px",paddingLeft:"16px"}}  
+                 onClick={this.closeEmail} >
+                  <div className='email-but'>
+                    GOT IT
+                    </div>
+                </Button>
+            </Card>      
+            </div>
+        </Portal>
+        <Portal
+      open={!this.state.address.prompt}
+      >
+             <div
+            style={{
+                height: '100%',
+                width: '1366px',
+                left: '0px',
+                position: 'fixed',
+                top: '0px',
+                background: 'rgba(0,0,0,0.5)',
+                zIndex: 1,
+                overflowX:'hidden',
+              }}>
+            <Card
+              style={{
+                height: '326px',
+                width: '403px',
+                marginLeft: '519px',
+                marginRight: '518px',
+                position: 'relative',
+                top: '196px',
+                background: '#FFFFFF',
+                zIndex: 1,
+                
+              }}
+            >   
+            <div style={{marginLeft: '23px',marginRight: '24px',marginTop: '20px'}}>
+              <span className='shipping' >Choose a shipping address</span>
+              <Icon  onClick={this.closeAdd}  style={{color:'#AAAAAA',marginLeft: '63px',marginTop: '4px'}}
+              size={'small'}name='close'/>    
+            </div>
+            <div  style={{marginLeft: '26px',marginTop: '22px'} }class='address'>
+                    {this.state.address.name}
+                    <br/>
+                    {this.state.address.unit} {this.state.address.streetName}
+                    <br/>
+                    {this.state.address.cityName}, {  this.state.address.stateName}
+                    <br/>
+                    {this.state.address.countryName}
+                    <br/>
+                    Phone: {this.state.address.phoneNum}
+                </div>
+            <Card.Header>
+            <Button  className="address"
+                style={{width:"270px",height: "36px",marginLeft:"67px",marginRight:"66px",
+                marginTop:"30px",
+                paddingRight:"16px",paddingLeft:"16px",paddingTop:"10px"}}  
+                 onClick={this.closeAdd} content="DELIVER TO THIS ADDRESS">
+                </Button>
+              <Button  className="change-add"
+                style={{width:"271px",height: "36px",marginLeft:"67px",marginRight:"66px",
+                marginTop:"15.5px",marginBottom:"42.5px",paddingRight:"16px",paddingLeft:"16px"}}  
+                  >
+                  <div>
+                    CHANGE ADDRESS INFO
+                    </div>
+                </Button>
+                </Card.Header>
+            </Card>      
+            </div>
+        </Portal>
     </div>
 )
 
