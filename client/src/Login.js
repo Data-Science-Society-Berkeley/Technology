@@ -64,7 +64,7 @@ const form_formatting = { marginLeft: "41px", marginRight: "91px", };
 //TODO make the bottom card on the left side reactive like the top one...
 
 let endpoint = "http://localhost:8080";
-
+//axios.defaults.withCredentials = true
 class Login extends Component {
   constructor(props) {
     super(props)
@@ -80,7 +80,6 @@ class Login extends Component {
     this.loginUser= this.loginUser.bind(this)
   }
   loginUser = () => {
-    console.log(4)
     let email = this.state.email
     let password = this.state.password
     axios
@@ -90,14 +89,21 @@ class Login extends Component {
     email,password
       },
       {
+        withCredentials: true,
         headers: {
           "Content-Type": "application/x-www-form-urlencoded"
         }
       }
     )
     .then(res => {
-      console.log(res);
-      this.props.history.push('lumber')
+      //console.log(res.status);
+      //console.log(res);
+      if (res.status == 200){
+        this.props.history.push("home")
+      } else {
+        // throw an error for the program //TODO TEST THIS works
+        // TODO when logout, clear the cookie from cache and browser..
+      }
     });
   };
   onEChange = (value) => {
@@ -125,7 +131,7 @@ class Login extends Component {
       });
       } 
       if (validated){
-        console.log(3)
+        console.log(36)
         var response = this.loginUser()
         // if token not valid 
         // if response not valid throw an error on the page

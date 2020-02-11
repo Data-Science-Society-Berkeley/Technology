@@ -17,13 +17,13 @@ class Footer extends Component {
   }
   render() {
     return (
-      <Segment vertical style={{ width: '1366px',marginTop: '0px',marginBottom: '0px',height: '244px',background: '#1F370E' }}>
+      <Segment vertical style={{ width: '1366px',marginTop: '0px',marginBottom: '0px',height: '244px',background: '#0099ff' }}>
       <Container>
         <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={3}>
               <div  class='lumber-io' >
-              LUMBER.IO
+              Marketing
                   </div>
               <List link inverted>
                 <List.Item as='a' style={footer}> About </List.Item>
@@ -31,7 +31,7 @@ class Footer extends Component {
             </Grid.Column>
             <Grid.Column width={3}>
             <div  class='info' >
-                INFO
+                Information
             </div>
               <List link inverted>
                 <List.Item as='a' style={footer}> Terms of Use</List.Item>
@@ -42,7 +42,7 @@ class Footer extends Component {
             </Grid.Column>
             <Grid.Column width={3}>
             <div  class='info' >
-                SUPPORT
+                Support
             </div>
             <List link inverted>
               <List.Item as='a' style={footer}> Help Desk </List.Item>

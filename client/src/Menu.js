@@ -19,16 +19,15 @@ const mynav = {
     border: "none"
 };
 // since menu has 10 margin
-const form_formatting = { marginLeft: "36px", marginRight: "32px",marginTop: "10px" };
-const pref_formatting = { marginLeft: "37px", marginRight: "20px",marginTop: "25px" };
+const form_formatting = { marginLeft: "36px", marginRight: "32px",marginTop: "25px" };
+const pref_formatting = { marginLeft: "37px", marginRight: "20px",marginTop: "45px" };
 
 const submit = {
   marginRight: "519px",
   marginBottom: "42px",
-  background: "#3F691A"
+  background: "blue"
 };
 const navbar = {
-  color: "#759E33",
   fontFamily: "Overpass",	
   fontSize: "16px",	
   fontWeight: 600,
@@ -36,11 +35,11 @@ const navbar = {
   marginLeft: "100px",
 };
 const greenBut = {
-  background: "#759E33",
+  background: "blue",
   color: "white",
 };
 const lip = {
-  color: "#759E33",
+  color: "black",
 };
 class NavBar extends Component {
   constructor(props) {
@@ -67,8 +66,7 @@ class NavBar extends Component {
     errSeller: false,
     errBuyer: false,
 
-    favorites:[["Hardwood",false],["Softwood",false],["Maple",false],["Oak",false],
-    ["Spruce",false],["Pine",false],["Fir",false],["Cedar",false],["Other",false]],
+    favorites:[["Twitter",false],["Google",false],["Pinterest",false],["Instagram",false]],
     lengths:[["1 x 3",false],["1 x 4",false],["1 x 6",false],["1 x 8",false],
     ["2 x 2",false],["2 x 4",false],["2 x 6",false]],
 
@@ -87,11 +85,14 @@ class NavBar extends Component {
     let email = this.state.email
     let name = this.state.name
     let password = this.state.password
+    let buyer = this.state.buyer
+    let lumber = this.state.lumber
+    let length = this.state.length
     axios
     .post(
       endpoint + "/api/register",
       {
-    email,name,password
+    email,password,buyer,lumber,length
       },
       {
         headers: {
@@ -101,6 +102,11 @@ class NavBar extends Component {
     )
     .then(res => {
       console.log(res);
+      if (res.status == 200){
+          this.setState({ 
+            open: false,
+          })
+        }
     });
   };
   onEChange = (value) => {
@@ -156,18 +162,6 @@ class NavBar extends Component {
           errPassword: true
       });
       } 
-      // if (!this.state["preferredLumber"]){
-      //   validated = false
-      //   this.setState({
-      //     errLumber: true
-      // });
-      //} 
-      // if (!this.state["preferredLength"]){
-      //   validated = false
-      //   this.setState({
-      //     errLength: true
-      // });
-      // }
       if (this.state["Location"].length === 0){
         validated = false
         this.setState({
@@ -181,13 +175,7 @@ class NavBar extends Component {
       });
       } 
       if (validated){
-        var response = this.registerUser()
-        // if token not valid 
-        // if response not valid throw an error on the page
-        this.setState({ 
-          open: false,
-        })
-        this.props.history.push("lumber")
+        this.registerUser()
       }
     }
     
@@ -225,9 +213,9 @@ class NavBar extends Component {
 
         console.log(favorites[i][1])
         if (favorites[i][1]){
-          result.push(<Button style={{marginLeft:margin_left,marginRight:margin_right,marginBottom:"16px",height:"36px",background:"#0F4210"}} index={i} type={"lum"} onClick={this.setButton} className="cho-reg-choices" icon='check circle outline' content={favorites[i][0]} />);
+          result.push(<Button style={{marginLeft:margin_left,marginRight:margin_right,marginBottom:"16px",height:"36px",background:"blue",color:"white"}} index={i} type={"lum"} onClick={this.setButton} className="cho-reg-choices" icon='check circle outline' content={favorites[i][0]} />);
         } else {
-          result.push(<Button style={{marginLeft:margin_left,marginRight:margin_right,marginBottom:"16px",height:"36px",background:"#FFFFFF"}} index={i} type={"lum"} onClick={this.setButton} className="reg-choices"  content={favorites[i][0]}  /> );
+          result.push(<Button style={{marginLeft:margin_left,marginRight:margin_right,marginBottom:"16px",height:"36px",background:"#FFFFFF",color:"#6699ff"}} index={i} type={"lum"} onClick={this.setButton} className="reg-choices"  content={favorites[i][0]}  /> );
         }
     }
     return result
@@ -249,7 +237,7 @@ class NavBar extends Component {
   loadCard(){
     if (this.state.activeItem == 'register'){
       return  <Form style={form_formatting}>
-      <Form.Field style={{marginTop:"16px"}}>
+      <Form.Field style={{marginTop:"0px"}}>
         <div class="email-address"  style={{marginBottom:"6.5px"}}>Email Address:</div>
         <Form.Input  
         error={this.state.errEmail}
@@ -271,7 +259,7 @@ class NavBar extends Component {
         <PasswordStrengthBar onChangeScore={this.onStrengthChange} style={{marginTop:"5px",marginBottom:"0px"}} password={this.state.password} />
       </Form.Field>
       <Form.Field style={{marginTop:"16px"}}>
-        <div class="email-address"  style={{marginBottom:"6.5px"}}>Location</div>
+        <div class="email-address"  style={{marginBottom:"6.5px"}}>Company Name</div>
         <Form.Input 
              error={this.state.errLoc}
              value={this.state.Location}
@@ -294,32 +282,28 @@ class NavBar extends Component {
                 name={'buyer'}
                 value={this.state.buyer}
                 onChange={this.onTypeChange}
-                label='Buyer' />
+                label='Channel' />
                 </Form.Input>
                 <Form.Input
                 error={this.state.errSeller}
                 >
                 <Form.Checkbox 
-                name={'seller'}
+                name={'Client'}
                 value={this.state.seller}
                 onChange={this.onTypeChange}
-                label='Seller' />
+                label='Client' />
                 </Form.Input>
                 </Form.Group>
                 <Form.Field style={{marginTop:"16px",marginLeft:"3px"}}>
-                <div class="email-address"  style={{marginBottom:"6.5px"}}>Preferred Lumber:</div>
+                <div class="email-address"  style={{marginBottom:"6.5px"}}>Preferred Social Handles:</div>
                 {return_lum}
                 </Form.Field>
-                <Form.Field style={{marginTop:"16px"}}>
-                <div class="email-address"  style={{marginBottom:"6.5px"}}>Preferred Length:</div>
-                {return_len}
-                </Form.Field>
                 <Button  className="button-text"
-                style={{width:"120px",height: "42px",marginLeft:"0px",marginTop:"2px",marginBottom:"16px"}}   onClick={this.validateForm}  
+                style={{width:"120px",height: "42px",marginLeft:"0px",marginTop:"20px",marginBottom:"16px"}}   onClick={this.validateForm}  
                 content="REGISTER">
                 </Button>
                 <Card.Content>
-                <div style={{marginLeft:"4px",marginBottom:"18px"}} className="register">By clicking Register, you agree to our <Link style={{color:"#3F691A"}}>
+                <div style={{marginLeft:"4px",marginBottom:"18px"}} className="register">By clicking Register, you agree to our <Link style={{color:"#6699ff"}}>
                   Terms of Use and Privacy Policy</Link></div>
                 </Card.Content>
       </Form>
@@ -332,7 +316,7 @@ class NavBar extends Component {
       <Menu style={mynav} borderless={true}>
           <Menu.Item style={navbar} className=".ui.table" >
           <Link to={"/"} style={lip}>
-        Lumber.io
+        Company name
         </Link>
 
         </Menu.Item>
@@ -352,7 +336,7 @@ class NavBar extends Component {
             closeOnTriggerClick
             openOnTriggerClick
             trigger={
-              <Button content='Login/Sign In' style={greenBut} />
+              <Button content='Sign In' style={greenBut} />
             }
             onOpen={this.handleOpen}
             onClose={this.handleClose}
@@ -388,12 +372,12 @@ class NavBar extends Component {
              {displaycard}
              <Divider style={{marginTop:"0px",marginBottom:"5px"}}/>
     <div style={{display:"flex",height:"55px"}}>
-      <div class="sign-in"> Already have an account? <Link to='/login' style={{color:"#3F691A"}}><u>Sign in</u></Link></div>
+      <div class="sign-in"> Already have an account? <Link to='/login' style={{color:"blue"}}><u>Sign in</u></Link></div>
       <Button floated='right' size="large" 
       style={{background:"#FFFFFF",float:"right",height:"42px",width: "120px",marginBottom:"13px",	
       boxShadow: "0 2px 3px 0 rgba(0,0,0,0.2)"}}
       onClick={this.handleClose}>
-<div className="button-text" style={{color:"#3F691A"}}>CANCEL</div></Button>
+<div className="button-text" style={{color:"blue"}}>CANCEL</div></Button>
       </div>
             </Card>
             </div>

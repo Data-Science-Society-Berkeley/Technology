@@ -118,7 +118,7 @@
 .edit-profile {
           height: 35px;
           width: 129px;
-          color: #3F691A;
+          color: #6699ff;
           font-family: Rubik;
           font-size: 20px;
           letter-spacing: 0.71px;
@@ -155,7 +155,7 @@
 .ui.button.group {
     height: 42px;
     width: 172px;
-    background: #1F370E;
+    background: #6699ff;
     color: #FFFFFF;
     font-family: Rubik;
     font-size: 14.22px;
@@ -287,7 +287,7 @@ extra info page attributes
   display: inline-block;
 	height: 59px;
 	width: 909px;
-	color: #3F691A;
+	color: black;
 	font-family: Rubik;
 	font-size: 60px;
 	font-weight: 300;
@@ -298,7 +298,7 @@ extra info page attributes
 .info-exit {
 	height: 48px;
 	width: 48px;
-  color: #3F691A;
+  color: #6699ff;
   margin-left: 500px;
   margin-right: 36px;
   margin-bottom: 31px;
@@ -316,7 +316,7 @@ extra info page attributes
  {
 	height: 42px;
 	width: 240px;
-  background: #3F691A;
+  background: #6699FF;
 	font-family: Rubik;
 	font-size: 60px;
 	font-weight: 300;
@@ -345,7 +345,7 @@ extra info page attributes
   text-align: left;
 }
 .info-expand {
-	color: #3F691A;
+	color: #black;
 	font-family: Rubik;
 	font-size: 20px;
 	font-weight: 500;
@@ -574,7 +574,7 @@ Log in Pop over
 .ui.menu.menu-text {
 	height: 60px;
 	width: 224px;
-	color: #3F691A;
+	color: rgb(26, 80, 105);
 	font-family: Rubik;
 	font-size: 16px;
 	letter-spacing: 0.57px;
@@ -582,7 +582,7 @@ Log in Pop over
 	text-align: center;
 }
 .ui.menu.two.item .item.menu-text {
-	color: #3F691A;
+  color: rgb(26, 80, 105);
 	font-family: Rubik;
 	font-size: 16px;
 	letter-spacing: 0.57px;
@@ -606,7 +606,7 @@ Log in Pop over
 	line-height: 15px;
   text-align: center;
   margin-bottom: 16px;
-  background-color: #0F4210;
+  background-color: rgb(15, 56, 66);
   font-weight: 300;	
 
 }
@@ -617,13 +617,13 @@ Log in Pop over
   font-weight: 500;	
   letter-spacing: 1.25px;	
   line-height: 16px;	
-  background-color: #3F691A;
+  background-color: rgb(26, 31, 105);
   text-align: center;
 }
 .register {
     height: 17px;
     width: 432px;
-    color:#707070;
+    color: #6699ff;
     font-family: Rubik;
     font-size: 12px;
     letter-spacing: 0.43px;

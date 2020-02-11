@@ -95,6 +95,7 @@ class Registration extends Component {
     let email = this.state.email
     let name = this.state.name
     let password = this.state.password
+    console.log(password)
     axios
     .post(
       endpoint + "/api/register",

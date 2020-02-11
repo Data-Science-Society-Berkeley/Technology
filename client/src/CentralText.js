@@ -4,7 +4,7 @@ import { Image,Grid,Card, Header, Form, Input, Icon, Button } from "semantic-ui-
 import { BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
 
 import Formx from "./Formx"
-let endpoint = "http://localhost:8080/";
+let endpoint = "http://localhost:8080";
 const gridoffset = {
           marginTop: "150px",
           textAlign:"center",
@@ -25,7 +25,7 @@ const submit = {
     margin: "0 auto",
 };
 const greenBut = {
-    background: "#759E33",
+    background: "blue",
     color: "white",
   };
 class CentralText extends Component {
@@ -40,12 +40,25 @@ class CentralText extends Component {
   updateEmail = (value) => {
     // TODO if its an invalid email we can prompt them for an error later
     this.setState({ email: value.target.value });
-    console.log(value.target.value)
   };
   join(){
-      // this function makes a call to our backend with the current email in the box
-      // TODO call the backend from here
-      console.log(this.state["email"])
+      console.log(14)
+      let email = this.state.email
+      axios
+      .post(
+        endpoint + "/api/joinnow",
+        {
+      email
+        },
+        {
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+          }
+        }
+      )
+      .then(res => {
+        console.log(res);
+      });
   }
     sendData(data) {
         this.props.buttonClick(data);
@@ -57,13 +70,13 @@ class CentralText extends Component {
             <Grid.Row columns={1}>
                 <Grid.Column>
                     <Header as='h1'style={mybigtext}>
-                        Everybody wins in an efficient lumber ecosystem.
+                        Digital Marketing headline
                         </Header>
                         <Header as= 'h1' style={mymidtext}>
-                        Skip the middlemen, buy lumber straight from the sawmill with logistics handled - the best price is just a bonus. 
+                          Digital Marketing Text
                         </Header>
                         <Header as='h1'style={mymidtext}>
-                        Join our mailing list for free early access - Release Summer 2020
+                        Some more text
                         </Header>
                         <Form size ='massive' style = {submit}>
                             <Form.Group inline={true}>

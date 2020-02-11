@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Image,Grid,Card,Checkbox,Divider, Header, Form, Input,Dropdown, Icon, Label,Button,Table,Segment,List,Container } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
-import Type from "./lumtype"
 import Formx from "./Formx"
 let endpoint = "http://localhost:8080/";
 const gridoffset = {
@@ -16,44 +15,44 @@ const gridoffset = {
 const friendOptions = [
     {
       key: '1x3',
-      text: '1 x 3',
-      value: '1 x 3',
+      text: 'Option1',
+      value: 'Option1',
       image: { avatar: true, src: '/images/avatar/small/jenny.jpg' },
     },
     {
         key: '1x4',
-        text: '1 x 4',
-        value: '1 x 4',
+        text: 'Option2',
+        value: 'Option2',
         image: { avatar: true, src: '/images/avatar/small/elliot.jpg' },
     },
     {
         key: '1x6',
-        text: '1 x 6',
-        value: '1 x 6',
+        text: 'Option3',
+        value: 'Option3',
       image: { avatar: true, src: '/images/avatar/small/stevie.jpg' },
     },
     {
         key: '1x8',
-        text: '1 x 8',
-        value: '1 x 8',
+        text: 'Option4',
+        value: 'Option4',
       image: { avatar: true, src: '/images/avatar/small/christian.jpg' },
     },
     {
         key: '2x2',
-        text: '2 x 2',
-        value: '2 x 2',
+        text: 'Option5',
+        value: 'Option6',
       image: { avatar: true, src: '/images/avatar/small/matt.jpg' },
     },
     {
         key: '2x4',
-        text: '2 x 4',
-        value: '2 x 4',
+        text: 'Option7',
+        value: 'Option7',
       image: { avatar: true, src: '/images/avatar/small/justen.jpg' },
     },
     {
         key: '2x6',
-        text: '2 x 6',
-        value: '2 x 6',
+        text: 'Option8',
+        value: 'Option8',
       image: { avatar: true, src: '/images/avatar/small/justen.jpg' },
     },
   ]
@@ -147,9 +146,9 @@ class Profile extends Component {
           var margin_left = i == 0? "24px":"16px"
           console.log(favorites[i][1])
           if (favorites[i][1]){
-            result.push(<Button style={{marginLeft:margin_left,background:"#3F691A"}} index={i} onClick={this.setButton} className="success-check-wood" icon='check circle outline' content={favorites[i][0]} />);
+            result.push(<Button style={{marginLeft:margin_left,background:"blue",color:"white"}} index={i} onClick={this.setButton} className="success-check-wood" icon='check circle outline' content={favorites[i][0]} />);
           } else {
-            result.push(<Button style={{marginLeft:margin_left,background:"#FFFFFF"}} index={i} onClick={this.setButton} className="fail-check-wood"  content={favorites[i][0]}  /> );
+            result.push(<Button style={{marginLeft:margin_left,background:"#FFFFFF",color:"#6699ff"}} index={i} onClick={this.setButton} className="fail-check-wood"  content={favorites[i][0]}  /> );
           }
       }
       return result
@@ -203,43 +202,23 @@ class Profile extends Component {
                     <Card style={{marginTop:"84px",marginLeft:"16px",marginRight:"29px",width:"637px",marginBottom:"0px",height:"208px"}}>
                     <Form style={{marginLeft:"24px",marginTop:"16px",marginBottom:"16.5px"}}>
                     <div class="lumber-preferences" style={{marginBottom:"8px"}}> 
-                        Lumber Preferences
+                        Social Handle Preferences
                     </div>
                     <div>
                       {return_array}
                     </div>
         <Form.Field>
             <div class="lumber-preferences" style={{marginBottom:"6.83px"}}> 
-                Length Preferences
+                Dropdown Preferences
             </div>
         <Form.Dropdown style={{marginLeft:".5px",marginBottom:"16.5px",marginRight:"394.5px",width:"208px"}}
-        placeholder='Select Length(ft)'
+        placeholder='Select an Option'
         fluid
         selection
         options={friendOptions}
   />
         </Form.Field>    
         </Form>
-                    </Card>
-                    <Card style={{marginTop:"16px",marginLeft:"16px",marginRight:"29px",marginBottom:"0px",width:"637px",height:"120px"}}>
-                    <div class="email">Email</div>
-                    <Form>
-                    <Form.Field style={{marginLeft:"26px",marginRight:"0px",marginBottom:"39px",width:"613px"}}>
-                        <Checkbox style={{fontSize:"16px",fontHeight:"24px"}} className="terms" label='Yes, I would like lumber.io to contact me about new bundles and other
-                        promotional information' />
-                        </Form.Field>
-                        </Form>
-                    </Card>
-                    <Card style={{marginTop:"16px",marginLeft:"16px",marginRight:"29px",width:"637px",height:"108px"}}>
-                    <div style={{marginTop:"17px",marginLeft:"21px",marginRight:"377px"}}>
-                    <div class="payment-method">Payment Method </div> <span class="change-copy"> Change </span>
-                    </div>
-                    <Divider style={{marginTop:"10px",marginBottom:"9px"}}/>
-                   <Card.Description  style={{marginLeft:"32px",marginBottom:"18px"}}>
-                       <Icon size="large" name="cc visa">
-                       </Icon>
-                       <span class="ending-card" >Ending in 0001</span>
-                   </Card.Description>
                     </Card>
                     </Grid.Column>
             </Grid.Row>

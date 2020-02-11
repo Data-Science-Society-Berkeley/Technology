@@ -102,7 +102,7 @@ const insideTextR = {
 };
 const buttonStyle = {
   marginRight: "24px",
-  marginLeft: "225px",
+  marginLeft: "400px",
   marginTop: "5px",
   marginBottom: "20px",
   height: "45px",	
@@ -125,63 +125,23 @@ class InMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      seconds: '24',   // second for timer
-      minutes: '21', // minutes for timer
-      hours: '10',  // hours for timer
+
 }
-this.startCountDown = this.startCountDown.bind(this);
-this.tick = this.tick.bind(this);
-this.startCountDown()
+
 this.setStyle = this.setStyle.bind(this);
 }
-//TODO fix so that will work for hours
-  tick() {
-    console.log(67)
-    var hour = Math.floor(this.secondsRemaining / (60*60));
-    var min = Math.floor((this.secondsRemaining - (hour * 60*60))/60);
-    var sec = this.secondsRemaining -(hour*3600) - (min * 60);
-    console.log(sec)
-    this.setState({
-      hours: hour,
-      minutes: min,
-      seconds: sec,
-    })
-    if (sec < 10) {
-      this.setState({
-        seconds: "0" + this.state.seconds,
-      })
-    }
-    if (min < 10) {
-    this.setState({
-      minutes: "0" + min,
-     })
-    }
-    if (hour < 10) {
-      this.setState({
-        hours: "0" + hour,
-       })
-      }
-    this.secondsRemaining--
-    }
-  startCountDown() {
-    this.intervalHandle = setInterval(this.tick, 1000);
-    let time = this.state.minutes;
-    let hours = this.state.hours;
-    let seconds = this.state.seconds;
-    console.log(hours*3600,seconds*1,time*60)
-    this.secondsRemaining = time * 60 + hours*3600 + seconds*1;
-    }
+
     setStyle(){
       this.border_lumber_select = {
-        borderBottom: this.props.location.pathname =='/lumber' ? "2px solid #3F691A" : "",
+        borderBottom: this.props.location.pathname =='/lumber' ? "2px solid #6699ff" : "",
         marginLeft: "32px",
       };
       this.border_profile_select = {
-        borderBottom: this.props.location.pathname =='/profile' ? "2px solid #3F691A" : "",
+        borderBottom: this.props.location.pathname =='/profile' ? "2px solid #6699ff" : "",
         marginLeft: "32px",
       };
       this.border_order_select = {
-        borderBottom: this.props.location.pathname =='/orders' ? "2px solid #3F691A" : "",
+        borderBottom: this.props.location.pathname =='/orders' ? "2px solid #6699ff" : "",
         marginLeft: "32px",
       };
     }
@@ -189,36 +149,21 @@ this.setStyle = this.setStyle.bind(this);
     this.setStyle()
         return (
       <div>
-        <Grid fluid padded={false} columns={2} style={gridS}>
-          <Grid.Row fluid stye={greenBut}>
-          <Grid.Column>
-          <Link to={"/"} style={navbar}>
-        Lumber.io
-        </Link>
-        </Grid.Column>
-        <Grid.Column >
-          <div style={call}>              
-          Call <span style={phone}>778-329-3030</span> for assistance </div>
-              </Grid.Column>
-
-      </Grid.Row>
-      </Grid>
-      <Menu size="none" style={{marginTop: '19px', paddingBottom: '0px',boxShadow: "none",
-  border: "none",marginBottom: '0px',	height: "60px"}}>
+      <Menu size="none" style={{marginTop: '0px', paddingBottom: '0px',marginBottom: '0px',	height: "60px"}}>
       <Menu.Item style={tabs}>
       <div style={this.border_lumber_select}>
-        <Link to={"/lumber"}>
+        <Link to={"/home"}>
         <div style={tabText}>
-            My best deals
+            Clients
             </div>
             </Link>
             </div>
       </Menu.Item >
       <Menu.Item style={tabs}>
       <div style={this.border_order_select}>
-      <Link to={"/orders"}>
+      <Link to={"/tbd"}>
         <div style={tabText}>
-            My Orders
+            TBD
             </div>
             </Link>
             </div>
@@ -234,17 +179,6 @@ this.setStyle = this.setStyle.bind(this);
       </Menu.Item >
 
       <Grid.Column style={rightText} fluid >
-        <table style={boxedText}>
-        <tr>
-
-        <td style={insideTextL}>
-            These deals end in
-            </td>
-            <td style={insideTextR}>
-            {this.state.hours}: {this.state.minutes}: {this.state.seconds}
-            </td>
-            </tr>
-            </table>
             <Link to={"/"}>
           <Button style={buttonStyle}>
             Log Out

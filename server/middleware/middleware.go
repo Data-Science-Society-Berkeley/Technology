@@ -6,14 +6,19 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"digitalmarketing/server/models"
+    "github.com/gorilla/mux"
+    "time"
+    "io"
+    "bytes"
     "reflect"
-	"go-to-do-app/server/models"
-	"github.com/gorilla/mux"
-	api "github.com/johnaoss/golinkedinapi"
-	"go.mongodb.org/mongo-driver/bson"
+    "github.com/google/uuid"
+    "golang.org/x/crypto/bcrypt"
+    "go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
+    "github.com/gomodule/redigo/redis"
 )
 
 // DB connection string
@@ -21,17 +26,32 @@ import (
 const connectionString = "mongodb+srv://arjun:mishra@cluster0-9jlvf.mongodb.net/admin?retryWrites=true&w=majority"
 
 // Database Name
-const dbName = "test"
+const dbName = "digital"
 
 // Collection name
-const collName = "todolist"
+const collName = "users"
+const emailColName = "emails"
+const clientCollName = "clients"
+const projName = "project"
 
 // collection object/instance
 var collection *mongo.Collection
-
+var emailCollection *mongo.Collection
+var clientCollection *mongo.Collection
+var projectCollection *mongo.Collection
+var cache redis.Conn
+func initCache() {
+    // Initialize the redis connection to a redis instance running on your local machine
+    conn, err := redis.DialURL("redis://localhost")
+    if err != nil {
+        panic(err)
+    }
+    // Assign the connection to the package level `cache` variable
+    cache = conn
+}
 // create connection with mongo db
 func init() {
-
+    initCache()
 	// Set client options
 	clientOptions := options.Client().ApplyURI(connectionString)
 
@@ -52,42 +72,57 @@ func init() {
 	fmt.Println("Connected to MongoDB!")
 
 	collection = client.Database(dbName).Collection(collName)
+	emailCollection = client.Database(dbName).Collection(emailColName)
+    clientCollection = client.Database(dbName).Collection(clientCollName)
+    projectCollection = client.Database(dbName).Collection(projName)
 
 	fmt.Println("Collection instance created!")
 }
-func Linkedin(w http.ResponseWriter, r *http.Request){
-	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
-	w.Header().Set("Access-Control-Allow-Origin", "*")
-	login := api.GetLoginURL(w,r)
-	html := "Your login is <a href=\"" + login + "\">Login here!</a>"
-	json.NewEncoder(w).Encode(html)
-	fmt.Println(login)
-	fmt.Println("Signing into LinkedIn")
-}
-func GetCars(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
-	w.Header().Set("Access-Control-Allow-Origin", "*")
-	payload := getAllCars()
-	json.NewEncoder(w).Encode(payload)
-	fmt.Println("Fetching Cars")
-}
-func GetDrivers(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
-	w.Header().Set("Access-Control-Allow-Origin", "*")
-	userData,err := api.GetProfileData(w,r)
-	if err != nil{
-		fmt.Println(err)
-	}
-	fmt.Println(userData)
-	html :=userData.FirstName
-	fmt.Println(html)
-	http.Redirect(w, r,"http://localhost:3000" , http.StatusSeeOther)
+func AuthMiddle(next http.Handler) http.Handler {
+    return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Executing Auth")
+    log.Println("Executing Auth")
+   // We can obtain the session token from the requests cookies, which come with every request
+       c, err := r.Cookie("session_token")
+       if err != nil {
+           if err == http.ErrNoCookie {
+               // If the cookie is not set, return an unauthorized status
+               log.Println("Erroro")
+               w.WriteHeader(http.StatusUnauthorized)
+               return
+           }
+           // For any other type of error, return a bad request status
+           w.WriteHeader(http.StatusBadRequest)
+           next.ServeHTTP(w, r)
+           return
+                                       
+       }
+       sessionToken := c.Value
+       // We then get the name of the user from our cache, where we set the session token
+       response, err := cache.Do("GET", sessionToken)
+       if err != nil {
+           // If there is an error fetching from cache, return an internal server error status
+           w.WriteHeader(http.StatusInternalServerError)
+           return
+       }
+       if response == nil {
+           // If the session token is not present in cache, return an unauthorized error
+           w.WriteHeader(http.StatusUnauthorized)
+           return
+                   }
+        next.ServeHTTP(w, r)
+        log.Println("Finishing Auth")
+    })
+
 }
 func Login(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
-	w.Header().Set("Access-Control-Allow-Origin", "*")
+    w.Header().Set("Access-Control-Allow-Origin", "http://localhost:3000")
+    w.Header().Set("Access-Control-Allow-Credentials", "true")
+    //w.Header().Set("Access-Control-Allow-Origin", "http://localhost:8080/api/login")
 	w.Header().Set("Access-Control-Allow-Methods", "POST")
 	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+	//w.Header().Set("Access-Control-Allow-Credentials", "true")
 	var user models.User
     err := json.NewDecoder(r.Body).Decode(&user)
     if err != nil{
@@ -96,13 +131,70 @@ func Login(w http.ResponseWriter, r *http.Request) {
      fmt.Println(user, r.Body)
      fetched,err := findOneUser(user)
      if (err != nil){
+	    http.Redirect(w, r,"http://localhost:3000" , http.StatusSeeOther)
+	    fmt.Println("Error0")
         w.WriteHeader(http.StatusForbidden)
         w.Write([]byte("500 - Something bad happened!"))
         return
     }
+    //var temp models.User
+    //TODO extract the password from fetched
+    //fetched[3].Value
+    if (len(fetched) < 3){
+	    fmt.Println("Error1")
+        w.WriteHeader(http.StatusUnauthorized)
+        return
+    }
+    password := []byte(fmt.Sprintf("%v", fetched[3].Value.(interface{})))
+    if err = bcrypt.CompareHashAndPassword(password, []byte(user.Password)); err != nil {
+        // If the two passwords don't match, return a 401 status
+	    fmt.Println("Error1")
+        w.WriteHeader(http.StatusUnauthorized)
+        return
+    }
+    // FROM tutorial at https://www.sohamkamani.com/blog/2018/03/25/golang-session-authentication/
+    // Create a new random session token
+    sessionToken := uuid.Must(uuid.NewRandom()).String()
+    // Set the token in the cache, along with the user whom it represents
+    // The token has an expiry time of 120 seconds
+    _, err = cache.Do("SETEX", sessionToken, "1200", user.Email)
+    if err != nil {
+        // If there is an error in setting the cache, return an internal server error
+	    fmt.Println("Error2")
+        w.WriteHeader(http.StatusInternalServerError)
+        return
+    }
+    // Finally, we set the client cookie for "session_token" as the session token we just generated
+    // we also set an expiry time of 120 seconds, the same as the cache
+    http.SetCookie(w, &http.Cookie{
+        Name:    "session_token",
+        Value:   sessionToken,
+        HttpOnly: false,
+        Path: "/",
+        Expires: time.Now().Add(1200 * time.Second),
+    })
     //TODO add logic to hash the password and give the user some unique token so we ensure hes logged in
-	fmt.Println("Login User")
-	json.NewEncoder(w).Encode(fetched)
+	fmt.Println("Login User to Lumber",sessionToken)
+    w.WriteHeader(http.StatusOK)
+    //http.Redirect(w, r, "/", http.StatusFound)
+    //json.NewEncoder(w).Encode(fetched)
+}
+// Create create task route
+func AddEmail(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Methods", "POST")
+	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+    var user models.Email
+    err := json.NewDecoder(r.Body).Decode(&user)
+    if err != nil{
+        fmt.Println(err)
+    }
+     fmt.Println(6,user, r.Body)
+	insertOneEmail(user)
+    //TODO add logic to hash the password and give the user some unique token so we ensure hes logged in
+	fmt.Println("User joined now")
+	json.NewEncoder(w).Encode(user)
 }
 
 // Create create task route
@@ -111,31 +203,200 @@ func AddUser(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Access-Control-Allow-Methods", "POST")
 	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
-	var user models.User
+	fmt.Println(3)
+    var user models.User
     err := json.NewDecoder(r.Body).Decode(&user)
     if err != nil{
         fmt.Println(err)
     }
-     fmt.Println(user, r.Body)
-	insertOneUser(user)
+    fmt.Println(user, r.Body)
+    hashedPassword, err := bcrypt.GenerateFromPassword([]byte(user.Password), 8)
+	user.Password = string(hashedPassword)
+    insertOneUser(user)
     //TODO add logic to hash the password and give the user some unique token so we ensure hes logged in
-	fmt.Println("Creating User")
+	fmt.Println("Creating User",66666666666666666,user.Password)
 	json.NewEncoder(w).Encode(user)
 }
-// Create create driver route
-func CreateDriver(w http.ResponseWriter, r *http.Request) {
+func AddProjectFile(w http.ResponseWriter, r *http.Request) {
+    w.Header().Set("Access-Control-Allow-Origin", "http://localhost:3000")
+    w.Header().Set("Access-Control-Allow-Credentials", "true")
 	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
-	w.Header().Set("Access-Control-Allow-Origin", "*")
-	w.Header().Set("Access-Control-Allow-Methods", "POST")
+	w.Header().Set("Access-Control-Allow-Methods", "POST,OPTIONS,PUT")
 	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
-	var task models.Driver
-	_ = json.NewDecoder(r.Body).Decode(&task)
-	// fmt.Println(task, r.Body)
-	insertOneDriver(task)
-	fmt.Println("Creating Drivers")
-	json.NewEncoder(w).Encode(task)
+    read_form, err := r.MultipartReader()
+    if err != nil {
+        fmt.Println(err)
+        w.WriteHeader(http.StatusUnauthorized)
+        return
+    }
+    buf := new(bytes.Buffer)
+    
+    for {
+           part, err_part := read_form.NextPart()
+           if err_part == io.EOF {
+                     break
+                        
+           }
+           if part.FormName() == "file" {
+               buf.ReadFrom(part)
+           }
+           if (part.FormName() ==  "id") {
+               temp_buf := new(bytes.Buffer)
+               _,err = temp_buf.ReadFrom(part)
+               // get rid of the colon
+               if err != nil {
+                   fmt.Println(err)
+                   w.WriteHeader(http.StatusUnauthorized)
+                   return
+               }
+               insertCSV(buf,temp_buf.String())
+    }
 }
+	fmt.Println("Creating Project Upload CSV")
+    w.WriteHeader(http.StatusOK)
+}
+func AddProject(w http.ResponseWriter, r *http.Request) {
+    w.Header().Set("Access-Control-Allow-Origin", "http://localhost:3000")
+    w.Header().Set("Access-Control-Allow-Credentials", "true")
+	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
+	w.Header().Set("Access-Control-Allow-Methods", "POST,OPTIONS,PUT")
+	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+    var project models.Project
+    err := json.NewDecoder(r.Body).Decode(&project)
+    if err != nil{
+        fmt.Println(err)
+    }
+    id := insertOneProject(project)
+    //TODO add logic to hash the password and give the user some unique token so we ensure hes logged in
+	project.ID = id
+    fmt.Println("Creating Project",project.ID)
+	json.NewEncoder(w).Encode(project)
+}
+func GetProject(w http.ResponseWriter, r *http.Request) {
+    w.Header().Set("Access-Control-Allow-Origin", "http://localhost:3000")
+    w.Header().Set("Access-Control-Allow-Credentials", "true")
+	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
+	w.Header().Set("Access-Control-Allow-Methods", "GET")
+	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+    // fetch email from middleware when i fix it
+    clientid := r.URL.Query()["clientid"]
+    if (len(clientid) != 1){
+        fmt.Println("Werd ERROR")
+    }
+    value := findProjects(clientid[0])
+    //TODO add logic to hash the password and give the user some unique token so we ensure hes logged in
+	fmt.Println("Get Project")
+	json.NewEncoder(w).Encode(value)
+}
+func findProjects(client_id string)([]primitive.M) {
+    id, err := primitive.ObjectIDFromHex(client_id)
+    if err != nil {
+                fmt.Println("ObjectIDFromHex ERROR", err)
+    }
+    // First we obtain the clients row so we can get the projects
+    fmt.Println(client_id)
+    result := bson.D{}
+    query := &bson.M{"_id": id} 
+    err = clientCollection.FindOne(context.Background(), query).Decode(&result)
+    if err != nil {
+                fmt.Println("Werd ERROR", err)
+                return nil
+    }
+    // if they dont have any projects yet
+    if len(result) < 4{
+        return nil
+    }
+    fmt.Println(result[3].Value)
+    query_array := result[3].Value.(primitive.A)
+    oids := make([]primitive.ObjectID, len(query_array))
+    for i := range query_array {
+        temp, err := primitive.ObjectIDFromHex(query_array[i].(string))
+        if err != nil {
+            fmt.Println("ObjectIDFromHex ERROR", err)
+        }
+          oids[i] = temp    
+      }
+    projectQuery := bson.M{"_id": bson.M{"$in": oids}}
+    cur,err := projectCollection.Find(context.Background(), projectQuery)     
+    if (err != nil){
+             log.Fatal(err)
+             return nil
+    }
+//	cur.Close(context.Background())
+    var projectResults []primitive.M
+     for cur.Next(context.Background()) {
+         var temp bson.M
+         e := cur.Decode(&temp)
+         if e != nil {
+             log.Fatal(e)
+         }
+         projectResults = append(projectResults, temp)
+     }
 
+     if err := cur.Err(); err != nil {
+         log.Fatal(err)
+     }
+     fmt.Println("Found Projects", projectResults)
+	 cur.Close(context.Background())
+     return projectResults
+}
+func AddClient(w http.ResponseWriter, r *http.Request) {
+    w.Header().Set("Access-Control-Allow-Origin", "http://localhost:3000")
+    w.Header().Set("Access-Control-Allow-Credentials", "true")
+	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
+	w.Header().Set("Access-Control-Allow-Methods", "POST,OPTIONS,PUT")
+	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+    var client models.Client
+    err := json.NewDecoder(r.Body).Decode(&client)
+    if err != nil{
+        fmt.Println(err)
+    }
+    fmt.Println(client, r.Body)
+    id := insertOneClient(client)
+    //TODO add logic to hash the password and give the user some unique token so we ensure hes logged in
+	fmt.Println("Creating Client")
+    client.ID = id
+	json.NewEncoder(w).Encode(client)
+}
+func GetClient(w http.ResponseWriter, r *http.Request) {
+    w.Header().Set("Access-Control-Allow-Origin", "http://localhost:3000")
+    w.Header().Set("Access-Control-Allow-Credentials", "true")
+	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
+	w.Header().Set("Access-Control-Allow-Methods", "GET")
+	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+    // fetch email from middleware when i fix it
+    var user models.User
+    value := findClients(user)
+    //TODO add logic to hash the password and give the user some unique token so we ensure hes logged in
+	fmt.Println("Creating Client")
+	json.NewEncoder(w).Encode(value)
+}
+func findClients(user models.User)([]primitive.M) {
+    result := bson.D{}
+    query := &bson.M{"email": "arjunmishra@berkeley.edu"} 
+    cur,err := clientCollection.Find(context.Background(), query)     
+    if (err != nil){
+             log.Fatal(err)
+             return nil
+    }
+    var results []primitive.M
+     for cur.Next(context.Background()) {
+         var result bson.M
+         e := cur.Decode(&result)
+         if e != nil {
+             log.Fatal(e)
+         }
+         fmt.Println("cur..>", cur, "result", reflect.TypeOf(result), reflect.TypeOf(result["_id"]))
+         results = append(results, result)
+     }
+
+     if err := cur.Err(); err != nil {
+         log.Fatal(err)
+     }
+     fmt.Println("Found Clients", result)
+	 cur.Close(context.Background())
+     return results
+}
 // TaskComplete update task route
 func TaskComplete(w http.ResponseWriter, r *http.Request) {
 
@@ -184,95 +445,101 @@ func DeleteAllTask(w http.ResponseWriter, r *http.Request) {
 	// json.NewEncoder(w).Encode("Task not found")
 
 }
-
-// get all cars from the DB and return them
-func getAllCars() []primitive.M {
-    cur, err := collection.Find(context.Background(), bson.D{{}})
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	var results []primitive.M
-	for cur.Next(context.Background()) {
-		var result bson.M
-		e := cur.Decode(&result)
-		if e != nil {
-			log.Fatal(e)
-		}
-		fmt.Println("cur..>", cur, "result", reflect.TypeOf(result), reflect.TypeOf(result["_id"]))
-		results = append(results, result)
-
-	}
-
-	if err := cur.Err(); err != nil {
-		log.Fatal(err)
-	}
-	fmt.Println("private method got called to fetch cars")
-    fmt.Println(context.Background())
-	cur.Close(context.Background())
-	return results
-}
-// get all cars from the DB and return them
-func getAllDrivers() []primitive.M {
-    cur, err := collection.Find(context.Background(), bson.D{{}})
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	var results []primitive.M
-	for cur.Next(context.Background()) {
-		var result bson.M
-		e := cur.Decode(&result)
-		if e != nil {
-			log.Fatal(e)
-		}
-		fmt.Println("cur..>", cur, "result", reflect.TypeOf(result), reflect.TypeOf(result["_id"]))
-		results = append(results, result)
-
-	}
-
-	if err := cur.Err(); err != nil {
-		log.Fatal(err)
-	}
-	fmt.Println("private method got called to fetch drivers")
-	cur.Close(context.Background())
-	return results
-}
-
 func findOneUser(user models.User)(primitive.D,error) {
-	fmt.Println(user)
     result := bson.D{}
-    query := &bson.M{"name": user.Name,"password": user.Password} 
-    err := collection.FindOne(context.Background(), query).Decode(&result)
+    fmt.Println(user,user.Password)
+    hashedPassword, err := bcrypt.GenerateFromPassword([]byte(user.Password), 8)
 	if err != nil {
 		return result,err
         //log.Fatal(err)
 	}
+    // TODO add an and to also query based on the username
+    query := &bson.M{"password": string(hashedPassword)} 
+    err = collection.FindOne(context.Background(), query).Decode(&result)
+	if err != nil {
+		fmt.Println(string(hashedPassword))
+        fmt.Println(err)
+        return result,err
+        //log.Fatal(err)
+	}
+    //TODO we might need check to ensure that a username is unique when you register
 	fmt.Println("Found a Single User", result)
     return result,nil
 }
-
+// Insert one task in the DB
+func insertOneEmail(user models.Email) {
+	fmt.Println(user)
+    insertResult, err := emailCollection.InsertOne(context.Background(), user)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("Inserted a Single Email", insertResult.InsertedID)
+}
 // Insert one task in the DB
 func insertOneUser(user models.User) {
 	fmt.Println(user)
     insertResult, err := collection.InsertOne(context.Background(), user)
-
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	fmt.Println("Inserted a Single User", insertResult.InsertedID)
 }
-// Insert one Driver in the DB
-func insertOneDriver(task models.Driver) {
-	insertResult, err := collection.InsertOne(context.Background(), task)
+func insertOneProject(project models.Project) primitive.ObjectID{
+    insertResult, err := projectCollection.InsertOne(context.Background(), project)
 
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("Inserted a Single Car", insertResult.InsertedID)
+    updateClient(project,insertResult.InsertedID.(primitive.ObjectID))
+	return insertResult.InsertedID.(primitive.ObjectID)
 }
+func updateClient(project models.Project, objectid primitive.ObjectID){
+    fmt.Println(project.Client_id,66666999999)
+    id, err := primitive.ObjectIDFromHex(project.Client_id)
+    if err != nil {
+                fmt.Println("ObjectIDFromHex ERROR", err)
+    }
+	filter := bson.M{"_id": id}
+    update := bson.M{"$push": bson.M{"client_ids": objectid.Hex()}}
+    result, err := clientCollection.UpdateOne(
+        context.Background(),
+        filter,
+        update,
+    )
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("Updated the Client with the new project", result)
+}
+func insertCSV(buf *bytes.Buffer, projectid string) {
+	fmt.Println(buf.String())
+    //TODO here we modify the project row, such that we append all the CSVS to one another in that row
+    id, err := primitive.ObjectIDFromHex(projectid)
+    if err != nil {
+                fmt.Println("ObjectIDFromHex ERROR", err)
+    }
+	filter := bson.M{"_id": id}
+    update := bson.M{"$push": bson.M{"csv": buf.String()}}
+    result, err := projectCollection.UpdateOne(
+        context.Background(),
+        filter,
+        update,
+    )
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("Inserted a CSV", result)
+}
+func insertOneClient(client models.Client) primitive.ObjectID {
+	fmt.Println(client)
+    insertResult, err := clientCollection.InsertOne(context.Background(), client)
 
+	if err != nil {
+		log.Fatal(err)
+	}
+    return insertResult.InsertedID.(primitive.ObjectID)
+}
 // task complete method, update task's status to true
 func taskComplete(task string) {
 	fmt.Println(task)

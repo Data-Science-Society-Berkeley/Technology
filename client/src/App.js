@@ -4,12 +4,9 @@ import { Button,Container, Menu } from "semantic-ui-react";
 import Login from './Login';
 import Profile from './Profile';
 import Registration from './Register';
-import MasterDriver from './MasterDriver';
-import MasterCar from './MasterCar';
-import MasterRate from './MasterRate';
 import Footer from './footer'
 import Info from './Info';
-import Orders from './Order';
+import Upload from './Analytics';
 import Checkout from './checkout';
 
 
@@ -28,36 +25,29 @@ class App extends Component {
     super(props)
     // we track the zipcode in state because we need to pass this onto the next page we load
     this.state = {
-      page: '',
+      clientname: 'Client Name',
+      projectname: 'Project Name',
+      clientid: 'Client Name',
+      projectid: 'Client Name',
     };
   }
-      // our send data function sets the state correctly to use the data passed on by the child component
-    login(){
-      console.log(3)
-      this.setState({
-        page:'/login'
-      });
-    }
     sendData(data) {
+      console.log(data)
+      if (data.type){
       this.setState({
-      zipcode:data
+      clientname:data.type,
+      clientid:data.id,
     });
+      }
     };
-    //TODO this also needs to validate all the forms of the kids
-    // Requires Learning how to have access to your child components and call functions inside them
-    moveDriver(){
-        console.log("Moving to the Driver Info Page")
-        this.setState({
-            vehicleCompletion:true,
-        });
-    };
-    //TODO this also needs to validate all the forms of the kids
-    // Requires Learning how to have access to your child components and call functions inside them
-    moveToRate(){
-        console.log("Moving to the Rate Info Page")
-        this.setState({
-            driverCompletion:true,
-        });
+    sendProject(data) {
+      console.log(data,777)
+      if (data.type){
+      this.setState({
+      projectname:data.type,
+      projectid:data.id,
+    });
+      }
     };
 render () {
     const { redirect  } = this.state;
@@ -74,16 +64,16 @@ render () {
 <Switch>
     <Route exact path ='/' render={(props) => 
     <div>
-    <NavBar {...props} login={this.login.bind(this)}/>
+    <NavBar {...props}/>
     <CentralText {...props} buttonClick={this.sendData.bind(this)} />
     </div>
     } 
     />
-    <Route exact path ='/lumber' render={(props) => 
+    <Route exact path ='/home' render={(props) => 
     <div >
     <InMenu {...props} />
     <div style={{ marginTop: "0px",marginRight: "0px", background: "#F6F7F6",width: "1450px"}}>
-    <BestDeals {...props} buttonClick={this.sendData.bind(this)} />
+    <BestDeals {...props} updateState={this.sendData.bind(this)} />
     <Footer/>
     </div>
     </div>
@@ -97,28 +87,18 @@ render () {
     </div>
     </div>
     }/>
-      <Route exact path ='/orders' render={(props) => 
-    <div>
-    <InMenu {...props} />
+       <Route path ='/client:id' render={(props) => 
     <div style={{ marginTop: "0px",marginRight: "0px", background: "#F6F7F6",width: "1450px"}}>
-    <Orders {...props}/>
-    <Footer/>
-    </div>
+    <Info {...props} name={this.state.clientname} updateState={this.sendProject.bind(this)} />
     </div>
     }/>
-       <Route path ='/soft:id' render={(props) => 
-    <div style={{ marginTop: "0px",marginRight: "0px", background: "#F6F7F6",width: "1450px"}}>
-    <Info {...props} />
-    </div>
-    }/>
-        <Route path ='/check:id' render={(props) => 
+        <Route path ='/client/project:id' render={(props) => 
         <div >
-            <Checkout {...props} buttonClick={this.sendData.bind(this)} />
+            <Upload {...props} name={this.state.projectname} clientid={this.state.clientid} buttonClick={this.sendData.bind(this)} />
         </div>
     }/>
     <Route exact path ='/register' render={(props) => <Registration {...props} />}/>
     <Route exact path ='/login' render={(props) => <Login {...props} />}/>
-    <Route exact path ='/quote/vehicles' render={(props) => <MasterCar {...props} routeChange={this.moveDriver.bind(this)} />}/>
     </Switch>
     </div>
     </Router>
