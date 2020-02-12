@@ -110,7 +110,9 @@ func AuthMiddle(next http.Handler) http.Handler {
            w.WriteHeader(http.StatusUnauthorized)
            return
                    }
-        next.ServeHTTP(w, r)
+        ctx := context.WithValue(r.Context(), "user_id", response)
+        next.ServeHTTP(w, r.WithContext(ctx))
+        fmt.Println(string(response.([]uint8)),"CACHE ACCESS")
         log.Println("Finishing Auth")
     })
 
@@ -157,7 +159,8 @@ func Login(w http.ResponseWriter, r *http.Request) {
     sessionToken := uuid.Must(uuid.NewRandom()).String()
     // Set the token in the cache, along with the user whom it represents
     // The token has an expiry time of 120 seconds
-    _, err = cache.Do("SETEX", sessionToken, "1200", user.Email)
+    //fetched[0] has the id of the user we just validated
+    _, err = cache.Do("SETEX", sessionToken, "1200", fetched[0].Value.(primitive.ObjectID).Hex())
     if err != nil {
         // If there is an error in setting the cache, return an internal server error
 	    fmt.Println("Error2")
@@ -174,7 +177,7 @@ func Login(w http.ResponseWriter, r *http.Request) {
         Expires: time.Now().Add(1200 * time.Second),
     })
     //TODO add logic to hash the password and give the user some unique token so we ensure hes logged in
-	fmt.Println("Login User to Lumber",sessionToken)
+	fmt.Println("Login User to Lumber",sessionToken,user.ID)
     w.WriteHeader(http.StatusOK)
     //http.Redirect(w, r, "/", http.StatusFound)
     //json.NewEncoder(w).Encode(fetched)
@@ -207,7 +210,12 @@ func AddUser(w http.ResponseWriter, r *http.Request) {
     var user models.User
     err := json.NewDecoder(r.Body).Decode(&user)
     if err != nil{
+    }
+    _,err = findOneUser(user)
+    if (err == nil){
+        w.WriteHeader(http.StatusUnauthorized)
         fmt.Println(err)
+        return
     }
     fmt.Println(user, r.Body)
     hashedPassword, err := bcrypt.GenerateFromPassword([]byte(user.Password), 8)
@@ -352,7 +360,8 @@ func AddClient(w http.ResponseWriter, r *http.Request) {
         fmt.Println(err)
     }
     fmt.Println(client, r.Body)
-    id := insertOneClient(client)
+    user_id := string(r.Context().Value("user_id").([]uint8))
+    id := insertOneClient(client,user_id)
     //TODO add logic to hash the password and give the user some unique token so we ensure hes logged in
 	fmt.Println("Creating Client")
     client.ID = id
@@ -366,20 +375,47 @@ func GetClient(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
     // fetch email from middleware when i fix it
     var user models.User
-    value := findClients(user)
+    user_id := string(r.Context().Value("user_id").([]uint8))
+    value := findClients(user,user_id)
     //TODO add logic to hash the password and give the user some unique token so we ensure hes logged in
 	fmt.Println("Creating Client")
 	json.NewEncoder(w).Encode(value)
 }
-func findClients(user models.User)([]primitive.M) {
+func findClients(user models.User,user_id string)([]primitive.M) {
+    id, err := primitive.ObjectIDFromHex(user_id)
+    if err != nil {
+                fmt.Println("ObjectIDFromHex ERROR", err)
+    }
     result := bson.D{}
-    query := &bson.M{"email": "arjunmishra@berkeley.edu"} 
-    cur,err := clientCollection.Find(context.Background(), query)     
+    query := &bson.M{"_id": id} 
+    err = collection.FindOne(context.Background(), query).Decode(&result)
+    if err != nil {
+                fmt.Println("Werd ERROR", err)
+                return nil
+    }
+    // if they dont have any projects yet
+    if len(result) < 7{
+        return nil
+    }
+    // TODO we should replace these direct indices with types that correspond to our schema
+    fmt.Println(result[7].Value)
+    query_array := result[7].Value.(primitive.A)
+    oids := make([]primitive.ObjectID, len(query_array))
+    for i := range query_array {
+        temp, err := primitive.ObjectIDFromHex(query_array[i].(string))
+        if err != nil {
+            fmt.Println("ObjectIDFromHex ERROR", err)
+        }
+          oids[i] = temp    
+      }
+    clientQuery := bson.M{"_id": bson.M{"$in": oids}}
+    // AT THIS POINT we have retrieved the correct filtering client ids and now we just need to match them
+    cur,err := clientCollection.Find(context.Background(), clientQuery)     
     if (err != nil){
              log.Fatal(err)
              return nil
     }
-    var results []primitive.M
+    var clientResults []primitive.M
      for cur.Next(context.Background()) {
          var result bson.M
          e := cur.Decode(&result)
@@ -387,7 +423,7 @@ func findClients(user models.User)([]primitive.M) {
              log.Fatal(e)
          }
          fmt.Println("cur..>", cur, "result", reflect.TypeOf(result), reflect.TypeOf(result["_id"]))
-         results = append(results, result)
+         clientResults = append(clientResults, result)
      }
 
      if err := cur.Err(); err != nil {
@@ -395,7 +431,7 @@ func findClients(user models.User)([]primitive.M) {
      }
      fmt.Println("Found Clients", result)
 	 cur.Close(context.Background())
-     return results
+     return clientResults
 }
 // TaskComplete update task route
 func TaskComplete(w http.ResponseWriter, r *http.Request) {
@@ -447,17 +483,10 @@ func DeleteAllTask(w http.ResponseWriter, r *http.Request) {
 }
 func findOneUser(user models.User)(primitive.D,error) {
     result := bson.D{}
-    fmt.Println(user,user.Password)
-    hashedPassword, err := bcrypt.GenerateFromPassword([]byte(user.Password), 8)
-	if err != nil {
-		return result,err
-        //log.Fatal(err)
-	}
     // TODO add an and to also query based on the username
-    query := &bson.M{"password": string(hashedPassword)} 
-    err = collection.FindOne(context.Background(), query).Decode(&result)
+    query := &bson.M{"email": user.Email} 
+    err := collection.FindOne(context.Background(), query).Decode(&result)
 	if err != nil {
-		fmt.Println(string(hashedPassword))
         fmt.Println(err)
         return result,err
         //log.Fatal(err)
@@ -531,9 +560,24 @@ func insertCSV(buf *bytes.Buffer, projectid string) {
 	}
 	fmt.Println("Inserted a CSV", result)
 }
-func insertOneClient(client models.Client) primitive.ObjectID {
+func insertOneClient(client models.Client,user_id string) primitive.ObjectID {
+    id, err := primitive.ObjectIDFromHex(user_id)
+    if err != nil {
+                fmt.Println("ObjectIDFromHex ERROR", err)
+    }
 	fmt.Println(client)
     insertResult, err := clientCollection.InsertOne(context.Background(), client)
+	// NOTE we are filtering on the user_id, so we need to be able to access this
+    filter := bson.M{"_id": id}
+    update := bson.M{"$push": bson.M{"clients": insertResult.InsertedID.(primitive.ObjectID).Hex()}}
+    _, err = collection.UpdateOne(
+        context.Background(),
+        filter,
+        update,
+    )
+	if err != nil {
+		log.Fatal(err)
+	}
 
 	if err != nil {
 		log.Fatal(err)
