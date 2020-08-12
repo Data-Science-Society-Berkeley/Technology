@@ -473,15 +473,9 @@ h1, h2, h3, h4, h5, h6 {
   background-position: top;
   background-attachment: fixed; }
   .site-blocks-cover.overlay {
-    position: relative; }
-    .site-blocks-cover.overlay:before {
-      position: absolute;
-      content: "";
-      left: 0;
-      bottom: 0;
-      right: 0;
-      top: 0;
-      background: rgba(0, 0, 0, 0.4); }
+    background-color: #00000030;
+    background-blend-mode: multiply; 
+  }
   .site-blocks-cover, .site-blocks-cover .row {
     min-height: 600px;
     height: calc(100vh); }
@@ -1255,5 +1249,20 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #6495ED !important;
   border-color: #6495ED !important;
   color: #fff; }
+
+/* index.html */
+.index-apply {
+  width: 15em;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0em;
+}
+
+.index-apply-button {
+  font-size: 1.1em !important;
+  font-weight: 500;
+}
+
 
 /*# sourceMappingURL=style.css.map */
