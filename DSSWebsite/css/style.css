@@ -1,11 +1,13 @@
 /* Base */
 
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap');
+
 body {
   line-height: 1.7;
-  color: gray;
-  font-weight: 300;
-  font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  color: #202020;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: -apple-system, 'Source Sans Pro', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 ::-moz-selection {
   background: #000;
@@ -743,35 +745,36 @@ h1, h2, h3, h4, h5, h6 {
   color: #6495ED;
   margin-bottom: 10px; }
 
-.about-section .img-years {
-  position: relative; }
-  .about-section .img-years .experience {
-    position: absolute;
-    display: block;
-    right: 0; }
-  .about-section .img-years .caption {
-    display: block;
-    text-transform: uppercase;
-    letter-spacing: .8em;
-    font-size: 14px;
-    font-weight: 900;
-    color: #6495ED; }
-    @media (max-width: 991.98px) {
-      .about-section .img-years .caption {
-        letter-spacing: .3em; } }
-  .about-section .img-years .years {
-    line-height: 1.2;
-    font-weight: 900;
-    font-size: 100px;
-    color: #6495ED; }
-    @media (max-width: 991.98px) {
-      .about-section .img-years .years {
-        font-size: 80px; } }
-
-.about-section h3 {
-  font-size: 30px;
-  font-weight: bold;
-  color: #000; }
+.about-section {
+  padding: 0em;}
+  .about-section .img-years {
+    position: relative; }
+    .about-section .img-years .experience {
+      position: absolute;
+      display: block;
+      right: 0; }
+    .about-section .img-years .caption {
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: .8em;
+      font-size: 14px;
+      font-weight: 900;
+      color: #6495ED; }
+      @media (max-width: 991.98px) {
+        .about-section .img-years .caption {
+          letter-spacing: .3em; } }
+    .about-section .img-years .years {
+      line-height: 1.2;
+      font-weight: 900;
+      font-size: 100px;
+      color: #6495ED; }
+      @media (max-width: 991.98px) {
+        .about-section .img-years .years {
+          font-size: 80px; } }
+  .about-section h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000; }
 
 .media.custom-media .icon {
   position: relative;
@@ -1264,5 +1267,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+.index-site-title {
+  font-family: 'Karla';
+  /* font-family: "Segoe UI"; */
+}
+
+.index-committee-title {
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=style.css.map */
