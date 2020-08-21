@@ -21,7 +21,6 @@ import {
 } from "semantic-ui-react";
 import { Link} from 'react-router-dom';
 
-import Formx from "./Formx";
 const style = {
   hang: {
     fontFamily: "Akkurat",

@@ -19,7 +19,6 @@ import {
   Divider,
   List
 } from "semantic-ui-react";
-import Formx from "./Formx";
 const style = {
   hang: {
     fontFamily: "Akkurat",

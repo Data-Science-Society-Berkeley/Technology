@@ -13,6 +13,19 @@
   box-shadow: 0 2px 3px 0
    rgba(0,0,0,0.2);}
 
+   #text::placeholder {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 37px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;}
 .registrectangle {	height: 188px;	
   width: 392px;	
   background-color: #FFFFFF;	
@@ -39,16 +52,7 @@
         margin-left: 33.5px;
         margin-right: 158.5px;
         letter-spacing: 0.57px;	line-height: 34px;}
-.the-best-lumber-are {	
-          height: 52px;	width: 318px;
-          margin-top: 23.5px;
-          margin-bottom: 58px;
-          margin-left: 34.5px;
-          margin-right: 40.5px;
-            color: #707070;	font-family: Rubik;	
-            font-size: 12px;	
-            letter-spacing: 0.43px;	
-            line-height: 17px;}
+
 .learn-more {	height: 19px;	
   width: 103px;	
   color: #3F691A;	
@@ -375,8 +379,8 @@ For the Checkout Page
   margin-top: 17px;
   margin-right: 189px;
   margin-bottom: 14px;
-	color: #3F691A;
-	font-family: Rubik;
+	color: #8CD6D1;
+	font-family: Montserrat;
 	font-size: 20px;
 	font-weight: 500;
 	letter-spacing: 0.71px;

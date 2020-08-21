@@ -2,24 +2,28 @@ import React, { Fragment, Component  } from 'react';
 import "./App.css";
 import { Button,Container, Menu } from "semantic-ui-react";
 import Login from './Login';
-import Profile from './Profile';
 import Registration from './Register';
-import Footer from './footer'
-import Info from './Info';
-import Upload from './Analytics';
-import Checkout from './checkout';
-
-
-import BestDeals from './bestdeals';
-
-import InMenu from './inMen';
-
+import About from './about'
+import Committees from './committees'
 import CentralText from './CentralText';
+import Decal from './Decal';
+import Acadev from './Acadev';
+import Consulting from './Consulting';
+import Work from './Work';
+import Contact from './Contact'
 import { withRouter, BrowserRouter as Router, Switch, Route, Link, Redirect  } from 'react-router-dom';
 import NavBar from './Menu';
-const mydriverboundry = {
-    margin: "auto",
-};
+import {Helmet} from 'react-helmet';
+import WebFont from 'webfontloader';
+import ReactGA from 'react-ga';
+ReactGA.pageview(window.location.pathname + window.location.search);
+ReactGA.initialize('UA-175785074-1');
+WebFont.load({
+  google: {
+    families: ['Montserrat:300,400,700', 'sans-serif']
+  }
+});
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -50,6 +54,7 @@ class App extends Component {
       }
     };
 render () {
+  ReactGA.pageview(window.location.pathname + window.location.search);
     const { redirect  } = this.state;
     // redirecting to the driver page, because the zipcode has been entered and the this.state.vehicleCompletion is True
     // encodes our logic for loading the correct components with respect to each route
@@ -69,32 +74,69 @@ render () {
     </div>
     } 
     />
-    <Route exact path ='/home' render={(props) => 
-    <div >
-    <InMenu {...props} />
-    <div style={{ marginTop: "0px",marginRight: "0px", background: "#F6F7F6",width: "1450px"}}>
-    <BestDeals {...props} updateState={this.sendData.bind(this)} />
-    <Footer/>
-    </div>
-    </div>
-    }/>
-    <Route exact path ='/profile' render={(props) => 
+    <Route exact path ='/about' render={(props) => 
     <div>
-    <InMenu {...props} />
-    <div style={{ marginTop: "0px",marginRight: "0px", background: "#F6F7F6",width: "1450px"}}>
-    <Profile {...props} buttonClick={this.sendData.bind(this)} />
-    <Footer/>
-    </div>
+    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+    <NavBar {...props} />
+    <About/>
     </div>
     }/>
+    <Route exact path ='/commitees' render={(props) => 
+    <div>
+        <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+    <NavBar {...props} />
+    <Committees></Committees>
+    </div>
+    }/>
+     <Route exact path ='/consulting' render={(props) => 
+    <div>
+        <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+    <NavBar {...props} />
+    <Consulting></Consulting>
+    </div>
+    }/>
+      <Route exact path ='/acadev' render={(props) => 
+    <div>
+        <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+    <NavBar {...props} />
+    <Acadev></Acadev>
+    </div>
+    }/>
+      <Route exact path ='/decal' render={(props) => 
+    <div>
+        <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+    <NavBar {...props} />
+    <Decal></Decal>
+    </div>
+    }/>
+      <Route exact path ='/work' render={(props) => 
+    <div>
+            <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+    <NavBar {...props}/>
+    <Work></Work>
+    </div>
+    } 
+    />
+       <Route exact path ='/contact' render={(props) => 
+    <div>
+    <NavBar {...props}/>
+    <Contact></Contact>
+    </div>
+    } 
+    />
+       <Route exact path ='/login' render={(props) => 
+    <div>
+    <NavBar {...props}/>
+    <Login></Login>
+    </div>
+    } 
+    />
        <Route path ='/client:id' render={(props) => 
     <div style={{ marginTop: "0px",marginRight: "0px", background: "#F6F7F6",width: "1450px"}}>
-    <Info {...props} name={this.state.clientname} updateState={this.sendProject.bind(this)} />
     </div>
     }/>
         <Route path ='/client/project:id' render={(props) => 
         <div >
-            <Upload {...props} name={this.state.projectname} clientid={this.state.clientid} buttonClick={this.sendData.bind(this)} />
         </div>
     }/>
     <Route exact path ='/register' render={(props) => <Registration {...props} />}/>

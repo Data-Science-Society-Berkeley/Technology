@@ -3,31 +3,46 @@ import axios from "axios";
 import { Image,Grid,Card, Header, Form, Input, Icon, Button } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
 
-import Formx from "./Formx"
 let endpoint = "http://localhost:8080";
 const gridoffset = {
-          marginTop: "150px",
+          marginLeft:"164px",
+          marginTop: "67px",
           textAlign:"center",
-          fontFamily: "	OverpassSemiBold",
+          fontFamily: "Montserrat"
 };
 const mybigtext = {
-          fontSize: "50px",
-          fontWeight: "bold",
+  fontFamily: "Montserrat",
+  fontWeight: 600,
+  lineHeight: "110px",
+          fontSize: "96px",
+          color:"#FFFBFB",
+    width:"438px",
+    fontStyle: "normal",
+    textAlign:"left"
+
 
 };
 const mymidtext = {
-    fontSize: "20px",
-    fontWeight: "lighter"
+  fontFamily: "Montserrat",
+  fontWeight: 600,
+  lineHeight: "76px",
+  fontSize: "50px",
+  color:"#FFFFFF",
+  width:"300px",
+  fontStyle: "normal",
+  textAlign:"left"
 };
-const submit = {
-    width : "50%",
-    height: "180px",
-    margin: "0 auto",
+const apply = {
+    width : "425px",
+    fontFamily: "Montserrat",
+    fontWeight: 600,
+    lineHeight: "55px",
+    fontSize: "36px",
+    borderRadius: "40px",
+    color:"#3F6491",
+    fontStyle: "normal",
+    background: "#FFFFFF",
 };
-const greenBut = {
-    background: "blue",
-    color: "white",
-  };
 class CentralText extends Component {
   constructor(props) {
     super(props);
@@ -66,26 +81,19 @@ class CentralText extends Component {
     render() {
     return (
 <Grid divided='vertically' style={gridoffset}>
-    <Grid.Row columns={1}>
-            <Grid.Row columns={1}>
+    <Grid.Row columns={2}>
                 <Grid.Column>
                     <Header as='h1'style={mybigtext}>
-                        Digital Marketing headline
+                        Data Science Society
                         </Header>
                         <Header as= 'h1' style={mymidtext}>
-                          Digital Marketing Text
+                          At Berkeley
                         </Header>
-                        <Header as='h1'style={mymidtext}>
-                        Some more text
-                        </Header>
-                        <Form size ='massive' style = {submit}>
-                            <Form.Group inline={true}>
-                        <input placeholder='Enter your Email address' onChange={this.updateEmail}/>
-                        <Form.Button content='Join Now' size={"huge"} style={greenBut}  onClick={this.join}/>
-                        </Form.Group>
-                        </Form>
                     </Grid.Column>
-            </Grid.Row>
+
+                    <Grid.Column style={{marginLeft:"484px",marginTop:"-250px"}}>
+                      <Button style={apply} circular>APPLY HERE</Button>
+                    </Grid.Column>
   </Grid.Row>
   </Grid>
 )

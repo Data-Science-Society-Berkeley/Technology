@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Image,Grid,Card,Checkbox,Divider, Header, Form, Input,Dropdown, Icon, Label,Button,Table,Segment,List,Container } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
-import Formx from "./Formx"
 let endpoint = "http://localhost:8080/";
 const gridoffset = {
           marginTop: "32px",

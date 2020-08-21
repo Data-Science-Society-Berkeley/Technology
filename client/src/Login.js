@@ -24,6 +24,18 @@ const header_formatting = {
 
 
 };
+const mybigtext = {
+  fontFamily: "Montserrat",
+  fontWeight: 600,
+  lineHeight: "110px",
+      fontSize: "64px",
+      color:"#FFFBFB",
+  width:"863px",
+  fontStyle: "normal",
+  textAlign:"left",
+  marginLeft:"320px",
+  
+  };
 const description_formatting = {
   marginLeft: "33px",
   marginRight: "21px",
@@ -60,7 +72,26 @@ const submit = {
 const lip = {
   color: "white",
 };
-const form_formatting = { marginLeft: "41px", marginRight: "91px", };
+const formStyle = {
+  width: "635px",
+  height: "88px",
+  border: "2px solid #FFFAFA",
+  boxSizing:"borderBox",
+  backgroundColor:"transparent",
+  marginTop:"22px",
+  color:"#FFFFFF"
+  };
+  const buttonStyle = { width: "402px"
+, height: "76px",fontFamily: "Montserrat",
+fontWeight: 600,
+lineHeight: "37px",
+fontSize: "24px",
+color:"#8CD6D1",
+fontStyle: "normal",
+background: "#FFFFFF",
+borderRadius: "35px",
+marginTop:"64px"
+ };
 //TODO make the bottom card on the left side reactive like the top one...
 
 let endpoint = "http://localhost:8080";
@@ -142,74 +173,18 @@ class Login extends Component {
   render () {
     return (
       <Grid columns={2} padded={true} >
-        <Grid.Column width={4} style={card_formatting } >
-        <Card.Group fluid >
-
-          <Card fluid> 
-      <h2 className= "not-registered-yet"> Not Registered Yet?</h2>
-      <Card.Description className= "register-now-to-buy" style={description_formatting}>
-              Register now to buy and sell lumber. It's easy and free!
-            </Card.Description>
-            <Link style={lip} to={"register"}>
-            <Button  color={"green"} size={"mini"} fluid={false} style={button_formatting}>
-                REGISTER NOW
-              </Button>
-              </Link>
-          </Card>
-          <Card fluid>
-            
-      <Card.Header className="did-you-know" >Did you know...
-</Card.Header>
-      <Card.Description style={description_formatting} className="the-best-lumber-are">
-            The best lumber are often not bought at the best price.
-Statistics show that money is lost when there are too many
-steps in the purchasing process.
-            </Card.Description>
-            <div className="learn-more">
-          Learn More
-          </div>
-          </Card>
-       
-          </Card.Group>
-
-        
-
-        </Grid.Column>
-
-
-
-        <Grid.Column width={10} style={card_formatting } className="the-best-lumber-are">
-          <Card fluid >
-          <Header as="h2" style={login_formatting } className="sign-in">
-            Sign In
+        <Grid.Column width={1} style={card_formatting } className="the-best-lumber-are">
+          <Header as="h2" style={mybigtext} >
+            Data Science Society
           </Header>
-            <Form size="large" style={form_formatting}>
-              <Form.Input
-                fluid
-                icon="user"
-                iconPosition="left"
-                placeholder="Email address"
-                error={this.state.errEmail}
-                value={this.state.email}
-                onChange={this.onEChange}
-              />
-              <Form.Input
-                fluid
-                icon="lock"
-                iconPosition="left"
-                placeholder="Password"
-                type="Password"
-                error={this.state.errPassword}
-                value={this.password}
-                onChange={this.onPChange}
-              />
-  <Form.Checkbox label='Keep me signed in' />
+                          <Form style={{marginTop:"20px",marginLeft:"300px"}}>
+                              <input id="text" style={formStyle} placeholder='Name' />
+                              <input id="text" style={formStyle}  placeholder='E-mail' />
 
-              <Form.Button color="blue" size="large" style={submit} onClick={this.validateForm}>
-                <div className="button-text">SIGN IN</div>
-              </Form.Button>
-            </Form>
-          </Card>
+                              <Form.Button rounded style={buttonStyle}>
+                                  log-in
+                              </Form.Button>
+                          </Form>
         </Grid.Column>
       </Grid>
 
