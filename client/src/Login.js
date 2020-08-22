@@ -154,9 +154,11 @@ class Login extends Component {
 
       >
         <Grid.Column width={1} style={card_formatting } className="the-best-lumber-are">
-        <Image src={logo2}>
+       <Link to="/">
+<Image src={logo2}>
 
         </Image>
+        </Link> 
           <Header as="h2" style={mybigtext} >
             Data Science Society
           </Header>
