@@ -5,6 +5,8 @@ import {Image } from "semantic-ui-react";
 
 import background from './Backgrounds/Rectangle1.png'
 import logo from "./Backgrounds/dssportal-logo (2).jpg"
+import logo2 from './Backgrounds/dsswhite-transparent-slightly.png'
+
 import {
       Button,
       Form,
@@ -152,7 +154,7 @@ class Login extends Component {
 
       >
         <Grid.Column width={1} style={card_formatting } className="the-best-lumber-are">
-        <Image src={logo}>
+        <Image src={logo2}>
 
         </Image>
           <Header as="h2" style={mybigtext} >

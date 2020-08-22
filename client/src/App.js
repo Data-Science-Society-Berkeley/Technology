@@ -27,7 +27,6 @@ import ReactGA from 'react-ga';
 import background from './Backgrounds/Rectangle1.png'
 import background1 from './Backgrounds/dsswallpapergif.gif'
 
-
 ReactGA.pageview(window.location.pathname + window.location.search);
 ReactGA.initialize('UA-175785074-1');
 WebFont.load({
