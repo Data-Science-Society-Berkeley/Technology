@@ -183,7 +183,7 @@ class NavBar extends Component {
             <Dropdown style={linkStyling} item text='committees'>
           <Dropdown.Menu >
           <Link to="/commitees" style={linkStyling}>
-            <Dropdown.Item icon='book' text='Overview' />
+            <Dropdown.Item icon='sitemap' text='Overview' />
             </Link>
           <Link to="/decal" style={linkStyling}>
             <Dropdown.Item icon='book' text='Decal' />
@@ -197,6 +197,13 @@ class NavBar extends Component {
             <Link to="/socialgood" style={linkStyling}>
             <Dropdown.Item icon='like' text='Social Good' />
             </Link>
+            <Dropdown item text='Student Links'>
+          <Dropdown.Menu >
+            <Dropdown.Header>Pages</Dropdown.Header>
+            <Link to="generalmember"><Dropdown.Item>GM Landing</Dropdown.Item></Link>
+            <Link to="decallearn"><Dropdown.Item>Decal Landing</Dropdown.Item></Link>
+          </Dropdown.Menu>
+        </Dropdown>
           </Dropdown.Menu>
         </Dropdown>
             </Menu.Item>

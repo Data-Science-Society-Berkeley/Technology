@@ -270,7 +270,7 @@ class DecalLearn extends Component {
             <a rel="noopener noreferrer" target="_blank" href="https://learn.datacamp.com/courses/inTable.Rowoduction-to-spreadsheets"><b>DataCamp (Optional)</b></a> (Chapters 1 and 2)
           </Table.Cell>
           <Table.Cell>
-              Avik, GayaTable.Rowi, Varun, Kate, Naman
+              Avik, Gayatri, Varun, Kate, Naman
           </Table.Cell>
       </Table.Row>
 
@@ -295,7 +295,7 @@ class DecalLearn extends Component {
             <a rel="noopener noreferrer" target="_blank" href="https://www.datacamp.com/users/sign_in?redirect=https://learn.datacamp.com/courses/inTable.Rowoduction-to-tableau"><b>DataCamp (Optional)</b></a> (Chapter 1)
           </Table.Cell>
           <Table.Cell>
-              Jae, Naman, Kanu, Kate, Avik, Elton, Varun, GayaTable.Rowi
+              Jae, Naman, Kanu, Kate, Avik, Elton, Varun, Gayatri.Rowi
           </Table.Cell>
       </Table.Row>
 
