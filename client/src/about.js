@@ -51,6 +51,17 @@ const mybigtext = {
     fontStyle: "normal",
     textAlign:"left"
 };
+const header = {
+  fontFamily: "Montserrat",
+  fontWeight: 600,
+  lineHeight: "97px",
+          fontSize: "64px",
+          color:"#8CD6D1",
+    width:"1020px",
+    fontStyle: "normal",
+    textAlign:"left",
+    marginLeft:"300px"
+};
 const cardstyle = { 
     width:"400px",
    // height: "800px",
@@ -420,6 +431,50 @@ class About extends Component {
                 </Grid.Column>
   </Grid.Row>
   <Grid.Row>
+  <Header style={header}> Why should you join DSS?</Header>
+  <Grid>
+    <Grid.Row columns={4}>
+      <Grid.Column>
+      <div style={{height:"348px",width:"301px",border: "1px solid #000000",boxSizing: "borderBox", font:"Montserrat",fontSize:"36px",lineHeight:"44px",fontWeight:"300"}}>
+      Executive Team
+      </div>
+      </Grid.Column>
+      <Grid.Column>
+      <div style={{height:"348px",width:"301px",border: "1px solid #000000",boxSizing: "borderBox", font:"Montserrat",fontSize:"36px",lineHeight:"44px",fontWeight:"300"}}>
+      Project Manager
+</div>
+      </Grid.Column>
+      <Grid.Column>
+      <div style={{height:"348px",width:"301px",border: "1px solid #000000",boxSizing: "borderBox", font:"Montserrat",fontSize:"36px",lineHeight:"44px",fontWeight:"300"}}>
+      Committee Member
+</div>
+      </Grid.Column>
+      <Grid.Column>
+      <div style={{height:"348px",width:"301px",border: "1px solid #000000",boxSizing: "borderBox", font:"Montserrat",fontSize:"36px",lineHeight:"44px",fontWeight:"300"}}>
+      Senior Advisor
+
+</div>
+      </Grid.Column>
+    </Grid.Row>
+    <Grid.Row columns={4}>
+    <Grid.Column>
+    <div style={{height:"348px",width:"301px",border: "1px solid #000000",boxSizing: "borderBox", font:"Montserrat",fontSize:"36px",lineHeight:"44px",fontWeight:"300"}}>
+    General Member
+</div>
+      </Grid.Column>
+      <Grid.Column>
+      <div style={{height:"348px",width:"301px",border: "1px solid #000000",boxSizing: "borderBox", font:"Montserrat",fontSize:"36px",lineHeight:"44px",fontWeight:"300"}}>
+      DeCal Student
+</div>
+      </Grid.Column>
+      <Grid.Column>
+      <div style={{height:"226px",width:"529px",border: "1px solid #000000",boxSizing: "borderBox",marginTop:"70px", font:"Montserrat",fontSize:"36px",lineHeight:"44px",fontWeight:"300"}}>
+      Internal Committee + Alumni
+</div>
+      </Grid.Column>
+    </Grid.Row>
+  </Grid>
+
                     <Header style={mybigtext}> LEADERSHIP</Header>
                     <Card.Group itemsPerRow={3}>
                     {leadershipCards}

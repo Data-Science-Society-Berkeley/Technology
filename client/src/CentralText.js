@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Image,Grid,Card, Header, Form, Input, Icon, Button } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
+import edu from './landing/AcaDev.png'
+import collab from './landing/Rectangle66.png'
+import socialize from './landing/Rectangle69.png'
+import socialgood from './landing/SocialGood.png'
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -32,6 +36,18 @@ const mymidtext = {
   fontStyle: "normal",
   textAlign:"left"
 };
+
+const overlaytext = {
+  fontFamily: "Montserrat",
+  fontWeight: 300,
+  lineHeight: "78px",
+  fontSize: "64px",
+  color:"#00000",
+  fontStyle: "normal",
+  textAlign:"left",
+  marginLeft:"74px",
+  paddingTop:"100px",
+};
 const apply = {
     width : "425px",
     fontFamily: "Montserrat",
@@ -43,6 +59,30 @@ const apply = {
     fontStyle: "normal",
     background: "#FFFFFF",
 };
+const formStyle = {
+  width: "635px",
+  height: "88px",
+  border: "1px solid #000000",
+  boxSizing:"borderBox",
+  backgroundColor:"transparent",
+  marginTop:"22px",
+  marginLeft:"88px",
+  color:"#000000"
+  };
+  const buttonStyle = { width: "402px"
+, height: "76px",fontFamily: "Montserrat",
+fontWeight: 600,
+lineHeight: "37px",
+fontSize: "24px",
+color:"#8CD6D1",
+fontStyle: "normal",
+background: "#FFFFFF",
+borderRadius: "35px",
+marginTop:"14px",
+border: "1px solid #000000",
+boxSizing:"borderBox",
+marginLeft:"88px",
+ };
 class CentralText extends Component {
   constructor(props) {
     super(props);
@@ -80,6 +120,7 @@ class CentralText extends Component {
     };
     render() {
     return (
+      <div>
 <Grid divided='vertically' style={gridoffset}>
     <Grid.Row columns={2}>
                 <Grid.Column>
@@ -96,6 +137,65 @@ class CentralText extends Component {
                     </Grid.Column>
   </Grid.Row>
   </Grid>
+  <div style={{width:"2000px",height:"206px",backgroundColor:"white",marginRight:"600px"}}>
+  <Header style={{marginLeft:"64px",font:"Montserrat",fontStyle:"normal",fontWeight:"600",fontSize:"64px",lineHeight:"78px",color:"#8CD6D1",width:"289px"}}>
+    about us
+  </Header>
+
+  </div>
+  <div columns={1}style={{width:"1440px",height:"406px",backgroundImage:`url(${edu})`}}>
+  <div style={overlaytext}>
+  educate.
+  </div>
+</div>
+<div columns={1}style={{width:"1440px",height:"406px",backgroundImage:`url(${collab})`}}>
+<div style={overlaytext}>
+  collaborate.
+  </div></div>
+<div columns={1}style={{width:"1440px",height:"406px",backgroundImage:`url(${socialize})`}}>
+<div style={overlaytext}>
+  socialize.
+  </div>
+</div>
+ <div columns={1}style={{width:"1440px",height:"406px",backgroundImage:`url(${socialgood})`}}>
+ <div style={overlaytext}>
+  engage.
+  </div>
+</div>
+<div style={{width:"1440px",height:"1019px",backgroundColor:"white"}}>
+
+
+<div style={{marginLeft:"64px",font:"Montserrat",fontStyle:"normal",fontWeight:"600",fontSize:"64px",lineHeight:"78px",color:"#8CD6D1",width:"1400px",paddingTop:"398px"}}>
+subscribe to our newsletter to get updates on what we do
+</div>
+<Form >
+                              <Input style={formStyle}  placeholder={'E-mail'} />
+                              <Form.Button rounded style={buttonStyle}>
+                                  SUBMIT
+                              </Form.Button>
+                          </Form>
+                          <div>
+                        <Icon.Group size='huge' style={{marginLeft:"0px",marginTop:"100px"}}>
+                          <Icon name="mail" style={{marginLeft:"100px",color:"#8CD6D1"}}>
+
+                          </Icon>
+                          <Icon name="instagram" style={{marginLeft:"130px",color:"#8CD6D1"}}>
+                            
+                            </Icon>
+                            <Icon name="facebook" style={{marginLeft:"210px",color:"#8CD6D1"}}>
+                            
+                            </Icon>
+                            <Icon name="linkedin" style={{marginLeft:"290px",color:"#8CD6D1"}}>
+                            
+                            </Icon>
+                            <Icon name="youtube" style={{marginLeft:"370px",color:"#8CD6D1"}}>
+                            
+                            </Icon>
+                        </Icon.Group>
+                        </div>
+</div>
+
+  </div>
 )
 
 }
