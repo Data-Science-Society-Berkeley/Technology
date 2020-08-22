@@ -7,7 +7,7 @@ import collab from './landing/Rectangle66.png'
 import socialize from './landing/Rectangle69.png'
 import socialgood from './landing/SocialGood.png'
 
-let endpoint = "http://localhost:8080";
+let endpoint = "https://dssberkeley.com/";
 const gridoffset = {
           marginLeft:"164px",
           marginTop: "67px",
@@ -180,16 +180,16 @@ subscribe to our newsletter to get updates on what we do
 
                           </Icon>
                           <Icon name="instagram" style={{marginLeft:"130px",color:"#8CD6D1"}}>
-                            
+
                             </Icon>
                             <Icon name="facebook" style={{marginLeft:"210px",color:"#8CD6D1"}}>
-                            
+
                             </Icon>
                             <Icon name="linkedin" style={{marginLeft:"290px",color:"#8CD6D1"}}>
-                            
+
                             </Icon>
                             <Icon name="youtube" style={{marginLeft:"370px",color:"#8CD6D1"}}>
-                            
+
                             </Icon>
                         </Icon.Group>
                         </div>

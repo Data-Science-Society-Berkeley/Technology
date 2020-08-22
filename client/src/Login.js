@@ -35,7 +35,7 @@ const mybigtext = {
   fontStyle: "normal",
   textAlign:"left",
   marginLeft:"320px",
-  
+
   };
 const description_formatting = {
   marginLeft: "33px",
@@ -94,8 +94,7 @@ borderRadius: "35px",
 marginTop:"64px"
  };
 //TODO make the bottom card on the left side reactive like the top one...
-
-let endpoint = "http://localhost:8080";
+let endpoint = "https://dssberkeley.com/";
 //axios.defaults.withCredentials = true
 class Login extends Component {
   constructor(props) {
@@ -155,25 +154,25 @@ class Login extends Component {
         this.setState({
           errEmail: true
       });
-      } 
+      }
       if (!this.state["password"]){
         validated = false
         this.setState({
           errPassword: true
       });
-      } 
+      }
       if (validated){
         console.log(36)
         var response = this.loginUser()
-        // if token not valid 
+        // if token not valid
         // if response not valid throw an error on the page
       }
-    
+
 
   }
   render () {
     return (
-      <Grid columns={2} padded={true} 
+      <Grid columns={2} padded={true}
 
       >
         <Grid.Column width={1} style={card_formatting } className="the-best-lumber-are">

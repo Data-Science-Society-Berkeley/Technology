@@ -15,7 +15,7 @@ import {
       Checkbox,
 
 } from 'semantic-ui-react';
-
+let endpoint = "https://dssberkeley.com/";
 const gridoffset = {
     marginLeft:"164px",
     marginTop: "67px",
@@ -126,20 +126,20 @@ class Login extends Component {
         this.setState({
           errEmail: true
       });
-      } 
+      }
       if (!this.state["password"]){
         validated = false
         this.setState({
           errPassword: true
       });
-      } 
+      }
       if (validated){
         console.log(36)
         var response = this.loginUser()
-        // if token not valid 
+        // if token not valid
         // if response not valid throw an error on the page
       }
-    
+
 
   }
   render () {
@@ -154,7 +154,7 @@ class Login extends Component {
                               At Berkeley
                             </Header>
                         </Grid.Column>
-    
+
                         <Grid.Column style={{marginLeft:"784px",marginTop:"-400px"}}>
                           <Form >
                               <input id="text" style={formStyle} placeholder='Name' />
