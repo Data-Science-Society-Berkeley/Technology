@@ -83,7 +83,7 @@ class NavBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-    activeStyle:(this.props.match.path != "/" && this.props.match.path != "/education" && this.props.match.path != "/login") ,
+    activeStyle:(this.props.match.path != "/" && this.props.match.path != "/login") ,
     }
     this.setMenu = this.setMenu.bind(this);
     this.setCircle = this.setCircle.bind(this);
@@ -194,6 +194,9 @@ class NavBar extends Component {
             <Link to="/consulting" style={linkStyling}>
             <Dropdown.Item icon='exchange' text='Consulting' />
             </Link>
+            <Link to="/socialgood" style={linkStyling}>
+            <Dropdown.Item icon='like' text='Social Good' />
+            </Link>
           </Dropdown.Menu>
         </Dropdown>
             </Menu.Item>
@@ -214,7 +217,7 @@ class NavBar extends Component {
             <Menu.Item     name='services'
             active={activeItem === 'services'}
             onClick={this.handleItemClick} style={navbar}>
-            <Link style={linkStyling} to="events">
+            <Link style={linkStyling} to="services">
             services
             </Link>
             </Menu.Item>

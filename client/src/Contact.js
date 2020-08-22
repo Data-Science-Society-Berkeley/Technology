@@ -20,7 +20,7 @@ const gridoffset = {
     marginLeft:"164px",
     marginTop: "67px",
     textAlign:"center",
-    fontFamily: "Montserrat"
+    fontFamily: "Montserrat",
 };
 const mybigtext = {
 fontFamily: "Montserrat",

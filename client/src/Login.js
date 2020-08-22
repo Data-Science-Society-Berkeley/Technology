@@ -2,6 +2,7 @@ import React, { Fragment, Component  } from 'react';
 import { Link } from 'react-router-dom';
 import axios from "axios";
 
+import background from './Backgrounds/Rectangle1.png'
 
 import {
       Button,
@@ -172,14 +173,15 @@ class Login extends Component {
   }
   render () {
     return (
-      <Grid columns={2} padded={true} >
+      <Grid columns={2} padded={true} 
+
+      >
         <Grid.Column width={1} style={card_formatting } className="the-best-lumber-are">
           <Header as="h2" style={mybigtext} >
             Data Science Society
           </Header>
                           <Form style={{marginTop:"20px",marginLeft:"300px"}}>
-                              <input id="text" style={formStyle} placeholder='Name' />
-                              <input id="text" style={formStyle}  placeholder='E-mail' />
+                              <input id="text" style={formStyle} placeholder='Secret Token' />
 
                               <Form.Button rounded style={buttonStyle}>
                                   log-in

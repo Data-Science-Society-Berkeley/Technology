@@ -114,7 +114,7 @@ class Commit extends Component {
 
                 <Grid.Column>
                 <div style={{height:"588px",width:"284px",border: "1px solid #000000",boxSizing: "borderBox",backgroundImage:`url(${social})`}}> 
-                <Header style={mymidtext}> <Link to="consulting" style={link}>Social Good</Link></Header>
+                <Header style={mymidtext}> <Link to="socialgood" style={link}>Social Good</Link></Header>
 
                 </div>
 

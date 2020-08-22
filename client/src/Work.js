@@ -86,7 +86,8 @@ class Work extends Component {
     return (
         <div>
 
-        <Header style={mybigtext}> PROJECTS </Header>
+        <Header style={mybigtext}> EVENTS </Header>
+        <Header style={mymidtext}> External Calendar </Header>
   </div>
 
 )

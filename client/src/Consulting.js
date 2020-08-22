@@ -7,6 +7,11 @@ import metromile from './Consulting/Rectangle 48.png'
 import monday from './Consulting/Rectangle 49.png'
 import simmer from './Consulting/Rectangle 50.png'
 import sofi from './Consulting/Rectangle 51.png'
+import paypal1 from './Consulting/Rectangle 52.png'
+import metromile2 from './Consulting/Rectangle 53.png'
+import monday3 from './Consulting/Rectangle 54.png'
+import simmer4 from './Consulting/Rectangle 55.png'
+import sofi5 from './Consulting/Rectangle 56.png'
 
 
 let endpoint = "http://localhost:8080";
@@ -164,6 +169,17 @@ Consulting Blurb
 <div style={consult}>
 “Our team worked with DSS to analyze and model our member behavior. The consultants delivered high quality presentations of their insights. Their metrics, visualizations, and model provided new perspectives for us to consider when evaluating engagement. The team was very professional and skilled, and they were a pleasure to work with.” - Michelle Leahy, Business Operations Manager, Data at SoFi
 </div>
+        </Grid.Row>
+        <Grid.Row>
+        <Image.Group>
+          <Image src={paypal1}/>
+          <Image src={metromile2}/>
+          <Image src={monday3}/>
+          <Image src={simmer4}/>
+          <Image src={sofi5}/>
+
+        </Image.Group>
+
         </Grid.Row>
         </Grid>
   </div>

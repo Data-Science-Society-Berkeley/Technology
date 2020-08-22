@@ -1,6 +1,6 @@
 import React, { Fragment, Component  } from 'react';
 import "./App.css";
-import { Button,Container, Menu } from "semantic-ui-react";
+import { Button,Container, Menu,Image } from "semantic-ui-react";
 import Login from './Login';
 import Registration from './Register';
 import About from './about'
@@ -11,11 +11,17 @@ import Acadev from './Acadev';
 import Consulting from './Consulting';
 import Work from './Work';
 import Contact from './Contact'
+import Social from './Social.js'
+import Education from './Education.js'
+import Service from './Services.js'
+
 import { withRouter, BrowserRouter as Router, Switch, Route, Link, Redirect  } from 'react-router-dom';
 import NavBar from './Menu';
 import {Helmet} from 'react-helmet';
 import WebFont from 'webfontloader';
 import ReactGA from 'react-ga';
+import background from './Backgrounds/Rectangle1.png'
+
 ReactGA.pageview(window.location.pathname + window.location.search);
 ReactGA.initialize('UA-175785074-1');
 WebFont.load({
@@ -109,6 +115,13 @@ render () {
     <Decal></Decal>
     </div>
     }/>
+       <Route exact path ='/socialgood' render={(props) => 
+    <div>
+        <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+    <NavBar {...props} />
+    <Social></Social>
+    </div>
+    }/>
       <Route exact path ='/events' render={(props) => 
     <div>
             <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
@@ -119,21 +132,26 @@ render () {
     />
        <Route exact path ='/services' render={(props) => 
     <div>
+                    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props}/>
-    <Contact></Contact>
+    <Service></Service>
+    <div style={{backgroundColor:"#8CD6D1",marginRight:"-500px",marginTop:"-61px",paddingBottom:"150px"}}>
+    <Contact ></Contact>
+    </div>
     </div>
     } 
     />
       <Route exact path ='/education' render={(props) => 
     <div>
+                <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props}/>
-    <Contact></Contact>
+    <Education></Education>
     </div>
     } 
     />
        <Route exact path ='/login' render={(props) => 
-    <div>
-    <NavBar {...props}/>
+    <div style={{backgroundImage:`url(${background})`,paddingTop:"10px",paddingBottom:"150px",width:"1340px",height:"1010px",marginLeft:"200px"}}>
+                    <Helmet bodyAttributes={{style: 'background-color : #000000'}}/>
     <Login></Login>
     </div>
     } 
