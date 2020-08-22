@@ -145,31 +145,7 @@ class Login extends Component {
     // TODO if its an invalid email we can prompt them for an error later
     this.setState({ password: value.target.value });
   };
-  validateForm(){
-      // this function makes a call to our backend with the current email in the box
-      // TODO call the backend from here
-      var validated = true
-      if (!this.state["email"]){
-        validated = false
-        this.setState({
-          errEmail: true
-      });
-      }
-      if (!this.state["password"]){
-        validated = false
-        this.setState({
-          errPassword: true
-      });
-      }
-      if (validated){
-        console.log(36)
-        var response = this.loginUser()
-        // if token not valid
-        // if response not valid throw an error on the page
-      }
-
-
-  }
+  
   render () {
     return (
       <Grid columns={2} padded={true}

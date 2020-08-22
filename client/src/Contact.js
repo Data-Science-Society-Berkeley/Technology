@@ -66,7 +66,6 @@ marginTop:"64px"
  };
 //TODO make the bottom card on the left side reactive like the top one...
 
-let endpoint = "http://localhost:8080";
 //axios.defaults.withCredentials = true
 class Login extends Component {
   constructor(props) {
