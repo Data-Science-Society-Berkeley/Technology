@@ -1,9 +1,10 @@
 import React, { Fragment, Component  } from 'react';
 import { Link } from 'react-router-dom';
 import axios from "axios";
+import {Image } from "semantic-ui-react";
 
 import background from './Backgrounds/Rectangle1.png'
-
+import logo from "./Backgrounds/dssportal-logo (2).jpg"
 import {
       Button,
       Form,
@@ -107,7 +108,6 @@ class Login extends Component {
       errEmail: false,
       errPassword: false,
     };
-    this.validateForm = this.validateForm.bind(this)
     this.loginUser= this.loginUser.bind(this)
   }
   loginUser = () => {
@@ -152,10 +152,13 @@ class Login extends Component {
 
       >
         <Grid.Column width={1} style={card_formatting } className="the-best-lumber-are">
+        <Image src={logo}>
+
+        </Image>
           <Header as="h2" style={mybigtext} >
             Data Science Society
           </Header>
-                          <Form style={{marginTop:"20px",marginLeft:"300px"}}>
+                          <Form style={{marginTop:"20px",marginLeft:"325px"}}>
                               <input id="text" style={formStyle} placeholder='Secret Token' />
 
                               <Form.Button rounded style={buttonStyle}>

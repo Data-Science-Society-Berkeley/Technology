@@ -25,6 +25,8 @@ import {Helmet} from 'react-helmet';
 import WebFont from 'webfontloader';
 import ReactGA from 'react-ga';
 import background from './Backgrounds/Rectangle1.png'
+import background1 from './Backgrounds/dsswallpapergif.gif'
+
 
 ReactGA.pageview(window.location.pathname + window.location.search);
 ReactGA.initialize('UA-175785074-1');
@@ -168,13 +170,13 @@ render () {
     } 
     />
        <Route exact path ='/login' render={(props) => 
-    <div style={{backgroundImage:`url(${background})`,paddingTop:"10px",paddingBottom:"150px",width:"1340px",height:"1010px",marginLeft:"200px"}}>
+    <div style={{backgroundImage:`url(${background1})`,paddingTop:"0px",paddingBottom:"150px",width:"1640px",height:"1010px",marginLeft:"00px"}}>
                     <Helmet bodyAttributes={{style: 'background-color : #000000'}}/>
     <Login></Login>
     </div>
     } 
     />
-       <Route path ='/client:id' render={(props) => 
+       <Route path ='/client:id' render={(props) =>  
     <div style={{ marginTop: "0px",marginRight: "0px", background: "#F6F7F6",width: "1450px"}}>
     </div>
     }/>
