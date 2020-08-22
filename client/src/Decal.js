@@ -133,17 +133,22 @@ fontStyle: "normal",
 fontWeight: "300",
 fontSize: "24px",
 lineHeight: "29px"}}>
-The academic development committee hosts a variety of educational workshops for the greater campus community, and directs our general membership (GM) program open to all skill levels and students. We run the workshops in a collaborative setting to encourage learning with peers and to connect students across disciplines. We also partner with other campus organizations such as the Haas Data Science club to provide tailored workshops to their student base. The GM program provides members with a mentor and weekly lectures to work on a semester-long project to put skills into practice, especially those not always emphasized in course curriculum and present at a Berkeley Data Science Research Symposium to complete the semester.         </div>
-        <Button.Group style={{marginLeft:"292px"}}>
+Welcome to Data Science Society at Berkeley’s very own DeCal: Essential Tools for Data Science! With the omnipresence of data in an increasingly digital world - data literacy is becoming one of the most sought after skills in every field.  Unfortunately, we believe that the data science courses at Berkeley - although beautifully designed and taught, are primarily geared towards technical majors. In addition to this, these courses are also incredibly hard to get into for non-technical/non-data science majors. This course aims to address this gap. This course is something that picks and chooses what we think are universally relevant concepts from both Introductory data science courses and Intermediate data science courses - and teaches these concepts in a way actively geared towards people of all backgrounds.
+
+This course aims to expose students to essential data science and statistical modeling/Machine learning concepts that will not only make them a lot more employable but will also be very relevant to them irrespective of what they end up pursuing. There is a strong focus on building a statistical intuition without delving into the arcane math/programming that goes behind a lot of models using libraries like sci-kit learn.
+</div>
+       <Button.Group style={{marginLeft:"292px"}}>
           <Button style={button}>
           Course Listing
           </Button>
           <Button style={button}>
+          <Link to="/decallearn" style={{color:"white"}}>
           Course Landing Page
+          </Link> 
           </Button>
         </Button.Group>
        <Header style={link}>
-       Acadev Co-Directors
+       Decal Co-Directors
        </Header>   
        <Card.Group style={{marginLeft:"120px"}}>
        <Card style={cardstyle}> <Image style={imagestyle} src={kate}/>    
@@ -172,7 +177,7 @@ The academic development committee hosts a variety of educational workshops for 
         <span className='date'>Director of Decal</span>
       </Card.Meta>
       <Card.Description>
-      Alleanna is a director of Academic Development.      
+      Uma is a director of Decal.      
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
@@ -191,7 +196,7 @@ The academic development committee hosts a variety of educational workshops for 
         <span className='date'>Director of Decal</span>
       </Card.Meta>
       <Card.Description>
-      Stephanie is a director of Decal.
+      Gayatri is a director of Decal.
             </Card.Description>
     </Card.Content>
     <Card.Content extra>

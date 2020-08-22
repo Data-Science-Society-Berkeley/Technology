@@ -142,7 +142,9 @@ The academic development committee hosts a variety of educational workshops for 
           Past GM Projects
           </Button>
           <Button style={button}>
+          <Link to="/generalmember" style={{color:"#FFFFFF"}}>
           GM Landing Page
+          </Link>
           </Button>
           <Button style={button}>
           Past Workshops

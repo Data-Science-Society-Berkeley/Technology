@@ -7,6 +7,8 @@ import About from './about'
 import Committees from './committees'
 import CentralText from './CentralText';
 import Decal from './Decal';
+import DecalLearn from './DecalLearn.js';
+
 import Acadev from './Acadev';
 import Consulting from './Consulting';
 import Work from './Work';
@@ -14,6 +16,8 @@ import Contact from './Contact'
 import Social from './Social.js'
 import Education from './Education.js'
 import Service from './Services.js'
+import GeneralMember from './generalmember.js'
+
 
 import { withRouter, BrowserRouter as Router, Switch, Route, Link, Redirect  } from 'react-router-dom';
 import NavBar from './Menu';
@@ -108,11 +112,25 @@ render () {
     <Acadev></Acadev>
     </div>
     }/>
+       <Route exact path ='/generalmember' render={(props) => 
+    <div>
+        <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+    <NavBar {...props} />
+    <GeneralMember></GeneralMember>
+    </div>
+    }/>
       <Route exact path ='/decal' render={(props) => 
     <div>
         <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props} />
     <Decal></Decal>
+    </div>
+    }/>
+        <Route exact path ='/decallearn' render={(props) => 
+    <div>
+        <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+    <NavBar {...props} />
+    <DecalLearn></DecalLearn>
     </div>
     }/>
        <Route exact path ='/socialgood' render={(props) => 
