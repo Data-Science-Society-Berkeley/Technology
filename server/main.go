@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"digitalmarketing/server/router"
+	"Technology/server/router"
 )
 
 func main() {

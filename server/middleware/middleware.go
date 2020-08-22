@@ -2,7 +2,7 @@
 package middleware
 
 import (
-	"Ozone-Dev/server/models"
+	"Technology/server/models"
 	"context"
 	"encoding/base64"
 	"encoding/json"
