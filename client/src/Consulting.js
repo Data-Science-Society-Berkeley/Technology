@@ -172,11 +172,11 @@ Consulting Blurb
         </Grid.Row>
         <Grid.Row>
         <Image.Group>
-          <Image src={paypal1}/>
-          <Image src={metromile2}/>
-          <Image src={monday3}/>
-          <Image src={simmer4}/>
-          <Image src={sofi5}/>
+          <Image src={paypal1} />
+          <Image src={metromile2} style={{marginLeft:"70px"}}/>
+          <Image src={monday3} style={{marginLeft:"70px"}}/>
+          <Image src={simmer4} style={{marginLeft:"70px"}}/>
+          <Image src={sofi5} style={{marginLeft:"70px"}}/>
 
         </Image.Group>
 
