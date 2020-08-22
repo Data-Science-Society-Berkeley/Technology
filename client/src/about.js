@@ -136,7 +136,7 @@ const leadershipCards = [
         <span className='date'>Director of Acadev</span>
       </Card.Meta>
       <Card.Description>
-        Roshan is a direcor of Academic Development.
+        Roshan is a director of Academic Development.
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
@@ -155,7 +155,7 @@ const leadershipCards = [
         <span className='date'>Director of Acadev</span>
       </Card.Meta>
       <Card.Description>
-      Alleanna is a direcor of Academic Development.      
+      Alleanna is a director of Academic Development.      
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
@@ -174,7 +174,7 @@ const leadershipCards = [
         <span className='date'>Director of Acadev</span>
       </Card.Meta>
       <Card.Description>
-      Stephanie is a direcor of Academic Development.
+      Stephanie is a director of Academic Development.
             </Card.Description>
     </Card.Content>
     <Card.Content extra>

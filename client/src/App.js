@@ -109,7 +109,7 @@ render () {
     <Decal></Decal>
     </div>
     }/>
-      <Route exact path ='/work' render={(props) => 
+      <Route exact path ='/events' render={(props) => 
     <div>
             <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props}/>
@@ -117,7 +117,14 @@ render () {
     </div>
     } 
     />
-       <Route exact path ='/contact' render={(props) => 
+       <Route exact path ='/services' render={(props) => 
+    <div>
+    <NavBar {...props}/>
+    <Contact></Contact>
+    </div>
+    } 
+    />
+      <Route exact path ='/education' render={(props) => 
     <div>
     <NavBar {...props}/>
     <Contact></Contact>

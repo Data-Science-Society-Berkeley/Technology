@@ -83,7 +83,7 @@ class NavBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-    activeStyle:(this.props.match.path != "/" && this.props.match.path != "/contact" && this.props.match.path != "/login") ,
+    activeStyle:(this.props.match.path != "/" && this.props.match.path != "/education" && this.props.match.path != "/login") ,
     }
     this.setMenu = this.setMenu.bind(this);
     this.setCircle = this.setCircle.bind(this);
@@ -182,6 +182,9 @@ class NavBar extends Component {
             onClick={this.handleItemClick}style={navbar}>
             <Dropdown style={linkStyling} item text='committees'>
           <Dropdown.Menu >
+          <Link to="/commitees" style={linkStyling}>
+            <Dropdown.Item icon='book' text='Overview' />
+            </Link>
           <Link to="/decal" style={linkStyling}>
             <Dropdown.Item icon='book' text='Decal' />
             </Link>
@@ -194,18 +197,25 @@ class NavBar extends Component {
           </Dropdown.Menu>
         </Dropdown>
             </Menu.Item>
-            <Menu.Item     name='work'
-            active={activeItem === 'work'}
+            <Menu.Item     name='education'
+            active={activeItem === 'education'}
             onClick={this.handleItemClick} style={navbar}>
-            <Link style={linkStyling}to="work">
-            our work
+            <Link style={linkStyling}to="education">
+            education
             </Link>
             </Menu.Item>
-            <Menu.Item     name='contact'
-            active={activeItem === 'contact'}
+            <Menu.Item     name='events'
+            active={activeItem === 'events'}
             onClick={this.handleItemClick} style={navbar}>
-            <Link style={linkStyling} to="contact">
-            contact us
+            <Link style={linkStyling} to="events">
+            events
+            </Link>
+            </Menu.Item>
+            <Menu.Item     name='services'
+            active={activeItem === 'services'}
+            onClick={this.handleItemClick} style={navbar}>
+            <Link style={linkStyling} to="events">
+            services
             </Link>
             </Menu.Item>
             <Menu.Item     name='login'

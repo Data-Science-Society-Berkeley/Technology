@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Image,Grid,Card, Header, Form, Input, Icon, Button } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
+import acadev from './Backgrounds/AcaDev.png'
+import decal from './Backgrounds/DeCal.png'
+import consulting from './Backgrounds/Consulting.png'
+import social from './Backgrounds/social.png'
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -30,20 +34,19 @@ const mybigtext = {
 const mymidtext = {
   fontFamily: "Montserrat",
   fontWeight: 300,
-  lineHeight: "73px",
-  fontSize: "48px",
+  lineHeight: "29px",
+  fontSize: "24px",
   color:"#8CD6D1",
   fontStyle: "normal",
   textAlign:"center",
-  marginLeft:"30px",
+  marginLeft:"10px",
   marginTop:"19px",
 };
 const link = {
     fontFamily: "Montserrat",
     fontWeight: 300,
-    lineHeight: "73px",
-    fontSize: "48px",
-    color:"#8CD6D1",
+    lineHeight: "29px",
+    fontSize: "24px",
     fontStyle: "normal",
     textAlign:"center",
   };
@@ -88,22 +91,30 @@ class Commit extends Component {
 
         <Header style={mybigtext}> TEAMS</Header>
 <Grid divided='vertically' style={gridoffset}>
-    <Grid.Row columns={3}>
+    <Grid.Row columns={4}>
                 <Grid.Column>
-                    <div style={{height:"588px",width:"434px",border: "1px solid #000000",boxSizing: "borderBox"}}> 
+                    <div style={{height:"588px",width:"284px",border: "1px solid #000000",boxSizing: "borderBox",backgroundImage:`url(${decal})`}}> 
                     <Header style={mymidtext}> <Link to="decal"style={link}>Decal</Link></Header>
                     </div>
                 </Grid.Column>
                 <Grid.Column>
-                <div style={{height:"588px",width:"434px",border: "1px solid #000000",boxSizing: "borderBox"}}>
+                <div style={{height:"588px",width:"284px",border: "1px solid #000000",boxSizing: "borderBox",backgroundImage:`url(${acadev})`}}>
                 <Header style={mymidtext}> <Link to="acadev" style={link}>Acadev</Link></Header>
                 
                  </div>
 
                 </Grid.Column>
                 <Grid.Column>
-                <div style={{height:"588px",width:"434px",border: "1px solid #000000",boxSizing: "borderBox"}}> 
+                <div style={{height:"588px",width:"284px",border: "1px solid #000000",boxSizing: "borderBox",backgroundImage:`url(${consulting})`}}> 
                 <Header style={mymidtext}> <Link to="consulting" style={link}>Consulting</Link></Header>
+
+                </div>
+
+                </Grid.Column>
+
+                <Grid.Column>
+                <div style={{height:"588px",width:"284px",border: "1px solid #000000",boxSizing: "borderBox",backgroundImage:`url(${social})`}}> 
+                <Header style={mymidtext}> <Link to="consulting" style={link}>Social Good</Link></Header>
 
                 </div>
 
