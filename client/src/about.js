@@ -23,6 +23,7 @@ import sponsor2 from './Leadership Headshots/leadcenter_logo.png'
 import sponsor3 from './Leadership Headshots/haas-ds-club-logo.png'
 import gaya from './Leadership Headshots/GayatriBabel.png'
 import eric from './Leadership Headshots/eric.jpg'
+import samir from './PM Headshots/Samir.png'
 
 
 
@@ -257,7 +258,7 @@ const leadershipCards = [
         </a>
       </Card.Content>
 </Card>,
-<Card style={cardstyle}>    <Image  style={imagestyle} src={uma}  />
+<Card style={cardstyle}>    <Image  style={imagestyle} src={samir}  />
 <Card.Content>
 <Card.Header style={textstyle}>Samir Puranik</Card.Header>
 <Card.Meta>
