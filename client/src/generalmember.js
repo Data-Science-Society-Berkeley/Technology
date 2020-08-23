@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom'
 import berk from './Decal Images/berkeleyischool-logo-alternate-blue-lg.png'
 import datacamp from './Decal Images/datacamp-logo 1.png' 
 import roshan from './Leadership Headshots/roshan.jpg'
-import alleanna from './Leadership Headshots/alleanna.PNG'
+import alleanna from './Leadership Headshots/alleanna2.jpeg'
 import steph from './Leadership Headshots/steph.jpg'
 
 let endpoint = "http://localhost:8080";

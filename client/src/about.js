@@ -7,7 +7,7 @@ import kate from './Leadership Headshots/kate.jpg'
 import roshan from './Leadership Headshots/roshan.jpg'
 import kanu from './Leadership Headshots/kanu.jpg'
 import charlie from './Leadership Headshots/charlie.jpg'
-import alleanna from './Leadership Headshots/alleanna.PNG'
+import alleanna from './Leadership Headshots/alleanna2.jpeg'
 import steph from './Leadership Headshots/steph.jpg'
 import uma from './Leadership Headshots/uma.png'
 import varunmi from './Leadership Headshots/varunmi.jpeg'
@@ -23,7 +23,7 @@ import sponsor2 from './Leadership Headshots/leadcenter_logo.png'
 import sponsor3 from './Leadership Headshots/haas-ds-club-logo.png'
 import gaya from './Leadership Headshots/GayatriBabel.png'
 import eric from './Leadership Headshots/eric.jpg'
-import samir from './PM Headshots/Samir.png'
+import samir from './Leadership Headshots/samir.jpeg'
 
 
 

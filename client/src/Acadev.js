@@ -13,7 +13,7 @@ import uea from './Acadev Images/berkuea 1.png'
 import berk from './Acadev Images/cdssberk 1.png' 
 import data8 from './Acadev Images/data8logo 1.png' 
 import roshan from './Leadership Headshots/roshan.jpg'
-import alleanna from './Leadership Headshots/alleanna.PNG'
+import alleanna from './Leadership Headshots/alleanna2.jpeg'
 import steph from './Leadership Headshots/steph.jpg'
 
 

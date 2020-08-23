@@ -19,7 +19,7 @@ import andy from './PM Headshots/HEADSHOT_ANDY.jpg'
 import pooja from './PM Headshots/Pooja.png'
 import pranav from './PM Headshots/Pranav.png'
 import rick from './PM Headshots/Rick.jpeg'
-import samir from './PM Headshots/Samir.png'
+import samir from './Leadership Headshots/samir.jpeg'
 import young from './PM Headshots/Youngli.jpg'
 import andi from './Leadership Headshots/andi.jpg'
 
