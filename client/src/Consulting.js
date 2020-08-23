@@ -71,8 +71,7 @@ const mymidtext = {
   fontSize: "36px",
   color:"#8CD6D1",
   fontStyle: "normal",
-  textAlign:"center",
-  marginLeft:"30px",
+  marginLeft:"450px",
   marginTop:"19px",
 };
 const consult = {
@@ -368,8 +367,12 @@ Consulting Blurb
         <Card.Group itemsPerRow={3} style={{marginLeft:"50px"}}>
         {temp}
         </Card.Group>
-        <Header style={mymidtext}> Client Testimonials</Header>
         <Grid style={{marginLeft:"164px"}}>
+        <Grid.Row columns={1}>
+        <Grid.Column>
+        <Header style={mymidtext}> Client Testimonials</Header>
+        </Grid.Column>
+        </Grid.Row>
         <Grid.Row>
         <Image style={{height:"90px",width:"101px"}} src={paypal}>
 

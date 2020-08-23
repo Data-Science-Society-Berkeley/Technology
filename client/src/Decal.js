@@ -7,7 +7,7 @@ import datacamp from './Decal Images/datacamp-logo 1.png'
 import decal from './Decal Images/decalberkeleylogo 1.png'
 import kate from './Leadership Headshots/kate.jpg'
 import uma from './Leadership Headshots/uma.png'
-import gaya from './Leadership Headshots/GayatriBabel.png'
+import gaya from './Leadership Headshots/gayatri.png'
 
 import steph from './Leadership Headshots/steph.jpg'
 let endpoint = "http://localhost:8080";

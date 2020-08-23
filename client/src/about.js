@@ -21,7 +21,7 @@ import wids from './Leadership Headshots/wids-berkeley-logo.jpg'
 import sponsor1 from './Leadership Headshots/dsnexus-logo.png'
 import sponsor2 from './Leadership Headshots/leadcenter_logo.png'
 import sponsor3 from './Leadership Headshots/haas-ds-club-logo.png'
-import gaya from './Leadership Headshots/GayatriBabel.png'
+import gaya from './Leadership Headshots/gayatri.png'
 import eric from './Leadership Headshots/eric.jpg'
 import samir from './Leadership Headshots/samir.jpeg'
 
@@ -73,9 +73,9 @@ const cardstyle = {
     marginleft:"20px",
 };
 const imagestyle = {
-  height: "auto",
-  maxHeight: "500px",
-  width: "auto",
+  height: "400px",
+  maxHeight: "400px",
+  width: "400px",
   maxWidth: "400px",
 };
 const textstyle = {
