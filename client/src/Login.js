@@ -147,7 +147,7 @@ class Login extends Component {
       >
         <Grid.Column width={1} style={card_formatting } className="the-best-lumber-are">
        <Link to="/">
-<Image src={logo2}>
+<Image src={logo2} style={{width:"100px",height:"100px"}}>
 
         </Image>
         </Link> 

@@ -169,7 +169,7 @@ render () {
     } 
     />
        <Route exact path ='/login' render={(props) => 
-    <div style={{backgroundImage:`url(${background1})`,paddingTop:"0px",paddingBottom:"150px",width:"3000px",height:"1010px",marginLeft:"00px"}}>
+    <div style={{backgroundImage:`url(${background1})`,paddingTop:"0px",paddingBottom:"150px",width:"140%",height:"1010px",marginLeft:"00px"}}>
                     <Helmet bodyAttributes={{style: 'background-color : #000000'}}/>
     <Login {...props} ></Login>
     </div>
