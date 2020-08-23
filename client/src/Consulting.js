@@ -28,10 +28,10 @@ import andi from './Leadership Headshots/andi.jpg'
 
 
 const imagestyle = {
-height: "auto",
-maxHeight: "500px",
-width: "auto",
-maxWidth: "400px",
+  height: "400px",
+  maxHeight: "400px",
+  width: "400px",
+  maxWidth: "400px",
 };
 
 let endpoint = "http://localhost:8080";
