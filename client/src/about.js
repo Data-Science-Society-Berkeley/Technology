@@ -62,18 +62,18 @@ const header = {
     textAlign:"left",
     marginLeft:"300px"
 };
-const cardstyle = { 
+const cardstyle = {
     width:"400px",
    // height: "800px",
     marginBottom:"10px",
     marginleft:"20px",
 };
-const imagestyle = { 
+const imagestyle = {
   height: "auto",
   maxHeight: "500px",
   width: "auto",
   maxWidth: "400px",
-}; 
+};
 const textstyle = {
   fontFamily: "Montserrat",
   fontWeight: 300,
@@ -81,7 +81,7 @@ const textstyle = {
           color:"#8CD6D1",
 }
 const leadershipCards = [
-<Card style={cardstyle}>    
+<Card style={cardstyle}>
 <Image src={andi} style={imagestyle}  />
 <Card.Content>
       <Card.Header style={textstyle}>Andi Halim</Card.Header>
@@ -94,14 +94,14 @@ const leadershipCards = [
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:andihalim@berkeley.edu">
-        <Icon name='mail' />
+        <Icon size="large" name='mail' />
         </a>
         <a href="https://www.linkedin.com/in/andihalim/">
-        <Icon name='linkedin' />
+        <Icon size="large"  name='linkedin' />
         </a>
       </Card.Content>
 </Card>,
-<Card style={cardstyle}>    
+<Card style={cardstyle}>
 <Image src={andi} style={imagestyle}  />
 <Card.Content>
       <Card.Header style={textstyle}>Eric Gan</Card.Header>
@@ -114,10 +114,10 @@ const leadershipCards = [
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:ericgan@berkeley.edu">
-        <Icon name='mail' />
+        <Icon size="large"  name='mail' />
         </a>
         <a href="https://www.linkedin.com/in/eric-gan/">
-        <Icon name='linkedin' />
+        <Icon size="large"  name='linkedin' />
         </a>
       </Card.Content>
 </Card>,
@@ -133,10 +133,10 @@ const leadershipCards = [
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:murthy@berkeley.edu">
-        <Icon name='mail' />
+        <Icon size="large"  name='mail' />
         </a>
         <a href="https://linkedin.com/in/Murthy1999">
-        <Icon name='linkedin' />
+        <Icon size="large"  name='linkedin' />
         </a>
       </Card.Content>
 </Card>,
@@ -152,10 +152,10 @@ const leadershipCards = [
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:roshanlodha@berkeley.edu">
-        <Icon name='mail' />
+        <Icon size="large"  name='mail' />
         </a>
         <a href="http://linkedin.com/in/roshanlodha">
-        <Icon name='linkedin' />
+        <Icon size="large"  name='linkedin' />
         </a>
       </Card.Content>
 </Card>,
@@ -166,15 +166,15 @@ const leadershipCards = [
         <span className='date'>Director of Acadev</span>
       </Card.Meta>
       <Card.Description>
-      Alleanna is a director of Academic Development.      
+      Alleanna is a director of Academic Development.
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:alleanna@berkeley.edu">
-        <Icon name='mail' />
+        <Icon size="large"  name='mail' />
         </a>
         <a href="https://www.linkedin.com/in/alleanna-clark-5b37aa16a/ ">
-        <Icon name='linkedin' />
+        <Icon size="large"  name='linkedin' />
         </a>
       </Card.Content>
 </Card>,
@@ -190,10 +190,10 @@ const leadershipCards = [
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:stephanie.lu@berkeley.edu">
-        <Icon name='mail' />
+        <Icon size="large"  name='mail' />
         </a>
         <a href="https://www.linkedin.com/in/stephanie-l-705a29175/">
-        <Icon name='linkedin' />
+        <Icon size="large" name='linkedin' />
         </a>
       </Card.Content>
 </Card>,
@@ -209,10 +209,10 @@ const leadershipCards = [
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:katevmiller@berkeley.edu">
-        <Icon name='mail' />
+        <Icon size="large"  name='mail' />
         </a>
         <a href="https://www.linkedin.com/in/kate-miller-7a884719b/">
-        <Icon name='linkedin' />
+        <Icon size="large"  name='linkedin' />
         </a>
       </Card.Content>
 </Card>,
@@ -228,10 +228,10 @@ const leadershipCards = [
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:umakrishnaswamy@berkeley.edu">
-        <Icon name='mail' />
+        <Icon size="large" name='mail' />
         </a>
         <a href="https://www.linkedin.com/in/uma-k-369ba4122/">
-        <Icon name='linkedin' />
+        <Icon size="large"  name='linkedin' />
         </a>
       </Card.Content>
 </Card>,
@@ -247,10 +247,10 @@ const leadershipCards = [
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:gbabel@berkeley.edu">
-        <Icon size="small" name='mail' />
+        <Icon size="large"  name='mail' size="large" />
         </a>
         <a href="https://www.linkedin.com/in/gayatri-babel/">
-        <Icon size="small" name='linkedin' />
+        <Icon size="large"  name='linkedin' size='large' />
         </a>
       </Card.Content>
 </Card>,
@@ -266,10 +266,10 @@ const leadershipCards = [
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:samir.puranik@berkeley.edu">
-        <Icon name='mail' />
+        <Icon size='large' name='mail' />
         </a>
         <a href="https://linkedin.com/in/samir-puranik">
-        <Icon name='linkedin' />
+        <Icon name='linkedin' size='large' />
         </a>
       </Card.Content>
 </Card>,
@@ -285,10 +285,10 @@ const leadershipCards = [
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:charlieduarte@berkeley.edu">
-        <Icon name='mail' />
+        <Icon size="large"  name='mail' />
         </a>
         <a href="https://www.linkedin.com/in/charlie-duarte/">
-        <Icon name='linkedin' />
+        <Icon size="large"  name='linkedin' />
         </a>
       </Card.Content>
 </Card>,
@@ -304,10 +304,10 @@ const leadershipCards = [
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:arjunmishra@berkeley.edu">
-        <Icon name='mail' />
+        <Icon size="large"  name='mail' />
         </a>
         <a href="https://www.linkedin.com/in/arjun-mishra-8163b7149/">
-        <Icon name='linkedin' />
+        <Icon size="large"  name='linkedin' />
         </a>
       </Card.Content>
 </Card>,
@@ -323,10 +323,10 @@ const leadershipCards = [
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:varunmittal@berkeley.edu">
-        <Icon name='mail' />
+        <Icon size="large"  name='mail' />
         </a>
         <a href="https://www.linkedin.com/in/varun-mittal-727559181/">
-        <Icon name='linkedin' />
+        <Icon size="large"  name='linkedin' />
         </a>
       </Card.Content>
 </Card>,
@@ -342,10 +342,10 @@ const leadershipCards = [
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:grover.kanu@berkeley.edu">
-        <Icon name='mail' />
+        <Icon size="large"  name='mail' />
         </a>
         <a href="https://www.linkedin.com/in/kanu-grover-a89983187/">
-        <Icon name='linkedin' />
+        <Icon size="large"  name='linkedin' />
         </a>
       </Card.Content>
 </Card>,
@@ -401,7 +401,7 @@ class About extends Component {
         this.props.buttonClick(data);
     };
     render() {
-      
+
     return (
 <Grid divided='vertically' style={gridoffset}>
     <Grid.Row columns={2}>
