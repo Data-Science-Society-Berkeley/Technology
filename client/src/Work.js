@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import request from 'superagent'
 import { Image,Grid,Card, Header, Form, Input, Icon, Button } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
 import { Calendar, momentLocalizer } from 'react-big-calendar'
@@ -7,7 +8,7 @@ import moment from 'moment'
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import event1 from './Events/dssdatathon 2.png'
 import event2 from './Events/operationanalyticseventbannerdss (1).png'
-
+import { gapi } from 'gapi-script'
 const localizer = momentLocalizer(moment)
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -69,6 +70,28 @@ class Work extends Component {
       this.join=this.join.bind(this);
 
   }
+  componentDidMount = () => {
+    this.getEvents()
+  }
+  getEvents () {
+    let CALENDAR_ID = 'c_9crnfpiudugdctfhkrq2abdttc%40group.calendar.google.com'
+    request
+      .get(`https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${"AIzaSyBoBAcwgo80fBv7A6DQvBWGxpzVuf0AJ1E"}`)
+      .end((err, resp) => {
+        if (!err) {
+          const events = []
+          JSON.parse(resp.text).items.map((event) => {
+            events.push({
+              start: event.start.dateTime,
+              end: event.end.dateTime,
+              title: event.summary,
+            })
+          })
+          this.setState({events:events});
+        }
+      })
+  }
+
   updateEmail = (value) => {
     // TODO if its an invalid email we can prompt them for an error later
     this.setState({ email: value.target.value });
@@ -96,11 +119,7 @@ class Work extends Component {
         this.props.buttonClick(data);
     };
     render() {
-      var temp = [{
-        title: "DSS Welcome Session",
-        start: moment().add(7, 'days'),
-        end: moment().add(7, 'days'),
-      }]
+
     return (
         <div>
 
@@ -110,7 +129,7 @@ class Work extends Component {
       localizer={localizer}
       startAccessor="start"
       endAccessor="end"
-      events={temp}
+      events={this.state.events}
       components={{
       timeSlotWrapper: ColoredDateCellWrapper,
     }}

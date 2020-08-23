@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.19.0",
+    "gapi-script": "^1.0.2",
     "html-react-parser": "^0.10.0",
     "js-cookie": "^2.2.1",
     "moment": "^2.27.0",
@@ -11,11 +12,13 @@
     "react-big-calendar": "^0.26.1",
     "react-dom": "^16.8.6",
     "react-ga": "^3.1.2",
+    "react-google-calendar-api": "^1.1.0",
     "react-helmet": "^5.2.1",
     "react-password-strength-bar": "^0.3.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.0.1",
     "semantic-ui-react": "^0.87.3",
+    "superagent": "^6.0.0",
     "typescript": "^3.7.4",
     "validator": "^12.1.0",
     "webfontloader": "^1.6.28"
