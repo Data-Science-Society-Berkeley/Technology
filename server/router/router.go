@@ -9,7 +9,6 @@ import (
 // Router is exported and used in main.go
 func Router() *mux.Router {
 	router := mux.NewRouter()
-	router.HandleFunc("/api/register", middleware.AddUser).Methods("POST", "OPTIONS")
 	router.HandleFunc("/api/login", middleware.Login).Methods("POST", "OPTIONS")
 	// Upload
 	router.HandleFunc("/api/addCustomer", middleware.AddCustomer).Methods("POST", "OPTIONS")

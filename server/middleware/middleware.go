@@ -225,55 +225,41 @@ func AuthMiddle(next http.Handler) http.Handler {
 
 }
 func Login(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
-	w.Header().Set("Access-Control-Allow-Origin", "https://dssberkeley.com")
-	//w.Header().Set("Access-Control-Allow-Origin", "https://lumberio.com")
-	w.Header().Set("Access-Control-Allow-Credentials", "true")
-	//w.Header().Set("Access-Control-Allow-Origin", "http://localhost:8080/api/login")
+	w.Header().Set("Access-Control-Allow-Origin", "https://www.dssberkeley.com")
 	w.Header().Set("Access-Control-Allow-Methods", "POST")
 	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
-	//w.Header().Set("Access-Control-Allow-Credentials", "true")
-	var user models.User
+	var user models.Password
+	fmt.Println(r.Body)
 	err := json.NewDecoder(r.Body).Decode(&user)
 	if err != nil {
-		//fmt.Println(err)
+		fmt.Println(err)
 	}
-	fetched, err := findOneUser(user)
-	if err != nil {
-		//fmt.Println("Error0", err)
-		w.WriteHeader(http.StatusForbidden)
-		w.Write([]byte("500 - Something bad happened!"))
-		return
-	}
-	//var temp models.User
-	//TODO extract the password from fetched
-	//fetched[3].Value
-	if len(fetched) < 3 {
-		//fmt.Println("Error1")
+	fmt.Println("FETCHED SUCCESFULLY", user)
+	if (user.Password != "dss#16"){
+		fmt.Println("ANGRY",user.Password)
 		w.WriteHeader(http.StatusUnauthorized)
 		return
 	}
-	//fmt.Println("FETCHED SUCCESFULLY", fetched)
-	password := []byte(fmt.Sprintf("%v", fetched[3].Value.(interface{})))
-	if err = bcrypt.CompareHashAndPassword(password, []byte(user.Password)); err != nil {
+	//if err = bcrypt.CompareHashAndPassword([]byte("dss4life#16"), password); err != nil {
 		// If the two passwords don't match, return a 401 status
 		//fmt.Println("Error1")
-		w.WriteHeader(http.StatusUnauthorized)
-		return
-	}
+	//	fmt.Println(err)
+//		w.WriteHeader(http.StatusUnauthorized)
+	//	return
+//	}
 	// FROM tutorial at https://www.sohamkamani.com/blog/2018/03/25/golang-session-authentication/
 	// Create a new random session token
 	sessionToken := uuid.Must(uuid.NewRandom()).String()
 	// Set the token in the cache, along with the user whom it represents
 	// The token has an expiry time of 120 seconds
 	//fetched[0] has the id of the user we just validated
-	_, err = cache.Do("SETEX", sessionToken, "3600", fetched[0].Value.(primitive.ObjectID).Hex())
-	if err != nil {
+	//_, err = cache.Do("SETEX", sessionToken, "3600", fetched[0].Value.(primitive.ObjectID).Hex())
+	//if err != nil {
 		// If there is an error in setting the cache, return an internal server error
 		//fmt.Println("Error2")
-		w.WriteHeader(http.StatusInternalServerError)
-		return
-	}
+	//	w.WriteHeader(http.StatusInternalServerError)
+	//	return
+	//}
 	// Finally, we set the client cookie for "session_token" as the session token we just generated
 	// we also set an expiry time of 120 seconds, the same as the cache
 	http.SetCookie(w, &http.Cookie{
@@ -285,11 +271,8 @@ func Login(w http.ResponseWriter, r *http.Request) {
 	})
 	//TODO add logic to hash the password and give the user some unique token so we ensure hes logged in
 	//fmt.Println("Login User to Lumber", sessionToken, user.ID)
-	user.Buyer = fetched[4].Value.(interface{}).(bool)
-	//http.Redirect(w, r, "/", http.StatusFound)
-	//fmt.Println(user.Buyer)
-	json.NewEncoder(w).Encode(user.Buyer)
-	// w.WriteHeader(http.StatusOK)
+	json.NewEncoder(w).Encode(user.Password)
+	return
 }
 
 // Create create task route

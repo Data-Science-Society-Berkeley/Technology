@@ -171,7 +171,7 @@ render () {
        <Route exact path ='/login' render={(props) => 
     <div style={{backgroundImage:`url(${background1})`,paddingTop:"0px",paddingBottom:"150px",width:"3000px",height:"1010px",marginLeft:"00px"}}>
                     <Helmet bodyAttributes={{style: 'background-color : #000000'}}/>
-    <Login></Login>
+    <Login {...props} ></Login>
     </div>
     } 
     />
@@ -184,7 +184,6 @@ render () {
         </div>
     }/>
     <Route exact path ='/register' render={(props) => <Registration {...props} />}/>
-    <Route exact path ='/login' render={(props) => <Login {...props} />}/>
     </Switch>
     </div>
     </Router>

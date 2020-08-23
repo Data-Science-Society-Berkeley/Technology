@@ -13,8 +13,8 @@ type Length struct {
 	name     string `json:"name,omitempty"`
 	selected bool   `json:"selected,omitempty"`
 }
-type Email struct {
-	Email string `json:"email,omitempty"`
+type Password struct {
+	Password string `json:"Password,omitempty"`
 }
 type Checkout struct {
 	Addy   Address                `json:"address"`

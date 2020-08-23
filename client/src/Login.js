@@ -1,7 +1,7 @@
 import React, { Fragment, Component  } from 'react';
 import { Link } from 'react-router-dom';
 import axios from "axios";
-import {Image } from "semantic-ui-react";
+import {Image, Input } from "semantic-ui-react";
 
 import background from './Backgrounds/Rectangle1.png'
 import logo from "./Backgrounds/dssportal-logo (2).jpg"
@@ -97,7 +97,7 @@ borderRadius: "35px",
 marginTop:"64px"
  };
 //TODO make the bottom card on the left side reactive like the top one...
-let endpoint = "https://dssberkeley.com/";
+let endpoint = "https://dssberkeley.com";
 //axios.defaults.withCredentials = true
 class Login extends Component {
   constructor(props) {
@@ -113,35 +113,27 @@ class Login extends Component {
     this.loginUser= this.loginUser.bind(this)
   }
   loginUser = () => {
-    let email = this.state.email
-    let password = this.state.password
-    axios
+    let Password = this.state.password
+	  axios
     .post(
       endpoint + "/api/login",
       {
-    email,password
+    Password
       },
       {
-        withCredentials: true,
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded"
-        }
+	       headers: {
+		                   "Content-Type": "application/x-www-form-urlencoded",
+		                 },
       }
     )
     .then(res => {
-      //console.log(res.status);
-      //console.log(res);
       if (res.status == 200){
-        this.props.history.push("home")
+	      this.props.history.push("home")
       } else {
         // throw an error for the program //TODO TEST THIS works
         // TODO when logout, clear the cookie from cache and browser..
       }
     });
-  };
-  onEChange = (value) => {
-    // TODO if its an invalid email we can prompt them for an error later
-    this.setState({ email: value.target.value });
   };
   onPChange = (value) => {
     // TODO if its an invalid email we can prompt them for an error later
@@ -163,9 +155,9 @@ class Login extends Component {
             Data Science Society
           </Header>
                           <Form style={{marginTop:"20px",marginLeft:"325px"}}>
-                              <input id="text" style={formStyle} placeholder='Secret Token' />
+                              <Input onChange={this.onPChange} id="text" style={formStyle} placeholder='Secret Token' />
 
-                              <Form.Button rounded style={buttonStyle}>
+                              <Form.Button onClick={this.loginUser} rounded style={buttonStyle}>
                                   log-in
                               </Form.Button>
                           </Form>
