@@ -58,12 +58,12 @@ const mybigtext = {
     textAlign:"center",
 
 };
-const imagestyle = { 
-  height: "auto",
-  maxHeight: "500px",
-  width: "auto",
+const imagestyle = {
+  height: "400px",
+  maxHeight: "400px",
+  width: "400px",
   maxWidth: "400px",
-}; 
+};
 const mymidtext = {
   fontFamily: "Montserrat",
   fontWeight: 300,

@@ -56,12 +56,12 @@ const mybigtext = {
     textAlign:"center",
 
 };
-const imagestyle = { 
-  height: "auto",
-  maxHeight: "500px",
-  width: "auto",
+const imagestyle = {
+  height: "400px",
+  maxHeight: "400px",
+  width: "400px",
   maxWidth: "400px",
-}; 
+};
 const mymidtext = {marginBottom:"50px",marginLeft:"64px", 
 fontFamily: "Montserrat",
 fontStyle: "normal",
@@ -313,25 +313,6 @@ lineHeight: "29px"}}>
        General Member Course Staff
        </Header>   
        <Card.Group style={{marginLeft:"120px"}}>
-       <Card style={cardstyle}> <Image style={imagestyle} src={roshan}/>    
-       <Card.Content>
-<Card.Header style={textstyle}>Roshan Lodha</Card.Header>
-<Card.Meta>
-        <span className='date'>Director of Acadev</span>
-      </Card.Meta>
-      <Card.Description>
-        Roshan is a director of Academic Development.
-      </Card.Description>
-    </Card.Content>
-    <Card.Content extra>
-      <a href="mailto:roshanlodha@berkeley.edu">
-        <Icon name='mail' />
-        </a>
-        <a href="http://linkedin.com/in/roshanlodha">
-        <Icon name='linkedin' />
-        </a>
-      </Card.Content>
-</Card>
 <Card style={cardstyle}>    <Image  style={imagestyle} src={alleanna}  />
 <Card.Content>
 <Card.Header style={textstyle}>Alleanna Clark</Card.Header>
@@ -366,6 +347,25 @@ lineHeight: "29px"}}>
         <Icon name='mail' />
         </a>
         <a href="https://www.linkedin.com/in/stephanie-l-705a29175/">
+        <Icon name='linkedin' />
+        </a>
+      </Card.Content>
+</Card>
+       <Card style={cardstyle}> <Image style={imagestyle} src={roshan}/>    
+       <Card.Content>
+<Card.Header style={textstyle}>Roshan Lodha</Card.Header>
+<Card.Meta>
+        <span className='date'>Director of Acadev</span>
+      </Card.Meta>
+      <Card.Description>
+        Roshan is a director of Academic Development.
+      </Card.Description>
+    </Card.Content>
+    <Card.Content extra>
+      <a href="mailto:roshanlodha@berkeley.edu">
+        <Icon name='mail' />
+        </a>
+        <a href="http://linkedin.com/in/roshanlodha">
         <Icon name='linkedin' />
         </a>
       </Card.Content>

@@ -144,25 +144,6 @@ const leadershipCards = [
         </a>
       </Card.Content>
 </Card>,
-<Card style={cardstyle}>    <Image style={imagestyle} src={roshan}/>
-<Card.Content>
-<Card.Header style={textstyle}>Roshan Lodha</Card.Header>
-<Card.Meta>
-        <span className='date'>Director of Acadev</span>
-      </Card.Meta>
-      <Card.Description>
-        Roshan is a director of Academic Development.
-      </Card.Description>
-    </Card.Content>
-    <Card.Content extra>
-      <a href="mailto:roshanlodha@berkeley.edu">
-        <Icon size="large"  name='mail' />
-        </a>
-        <a href="http://linkedin.com/in/roshanlodha">
-        <Icon size="large"  name='linkedin' />
-        </a>
-      </Card.Content>
-</Card>,
 <Card style={cardstyle}>    <Image  style={imagestyle} src={alleanna}  />
 <Card.Content>
 <Card.Header style={textstyle}>Alleanna Clark</Card.Header>
@@ -198,6 +179,25 @@ const leadershipCards = [
         </a>
         <a href="https://www.linkedin.com/in/stephanie-l-705a29175/">
         <Icon size="large" name='linkedin' />
+        </a>
+      </Card.Content>
+</Card>,
+<Card style={cardstyle}>    <Image style={imagestyle} src={roshan}/>
+<Card.Content>
+<Card.Header style={textstyle}>Roshan Lodha</Card.Header>
+<Card.Meta>
+        <span className='date'>Director of Acadev</span>
+      </Card.Meta>
+      <Card.Description>
+        Roshan is a director of Academic Development.
+      </Card.Description>
+    </Card.Content>
+    <Card.Content extra>
+      <a href="mailto:roshanlodha@berkeley.edu">
+        <Icon size="large"  name='mail' />
+        </a>
+        <a href="http://linkedin.com/in/roshanlodha">
+        <Icon size="large"  name='linkedin' />
         </a>
       </Card.Content>
 </Card>,

@@ -57,12 +57,12 @@ const mybigtext = {
     marginleft:"20px",
     textAlign:"center",
 };
-const imagestyle = { 
-  height: "auto",
-  maxHeight: "500px",
-  width: "auto",
+const imagestyle = {
+  height: "400px",
+  maxHeight: "400px",
+  width: "400px",
   maxWidth: "400px",
-}; 
+};
 const mymidtext = {marginBottom:"50px",marginLeft:"64px", 
 fontFamily: "Montserrat",
 fontStyle: "normal",
