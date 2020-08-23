@@ -21,6 +21,9 @@ import wids from './Leadership Headshots/wids-berkeley-logo.jpg'
 import sponsor1 from './Leadership Headshots/dsnexus-logo.png'
 import sponsor2 from './Leadership Headshots/leadcenter_logo.png'
 import sponsor3 from './Leadership Headshots/haas-ds-club-logo.png'
+import gaya from './Leadership Headshots/GayatriBabel.png'
+import eric from './Leadership Headshots/eric.jpg'
+
 
 
 
@@ -102,7 +105,7 @@ const leadershipCards = [
       </Card.Content>
 </Card>,
 <Card style={cardstyle}>
-<Image src={andi} style={imagestyle}  />
+<Image src={eric} style={imagestyle}  />
 <Card.Content>
       <Card.Header style={textstyle}>Eric Gan</Card.Header>
       <Card.Meta>
@@ -235,7 +238,7 @@ const leadershipCards = [
         </a>
       </Card.Content>
 </Card>,
-<Card style={cardstyle}>    <Image  style={imagestyle} src={uma}  />
+<Card style={cardstyle}>    <Image  style={imagestyle} src={gaya}  />
 <Card.Content>
 <Card.Header style={textstyle}>Gayatri Babel</Card.Header>
 <Card.Meta>

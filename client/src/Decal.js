@@ -7,6 +7,7 @@ import datacamp from './Decal Images/datacamp-logo 1.png'
 import decal from './Decal Images/decalberkeleylogo 1.png'
 import kate from './Leadership Headshots/kate.jpg'
 import uma from './Leadership Headshots/uma.png'
+import gaya from './Leadership Headshots/GayatriBabel.png'
 
 import steph from './Leadership Headshots/steph.jpg'
 let endpoint = "http://localhost:8080";
@@ -189,7 +190,7 @@ This course aims to expose students to essential data science and statistical mo
         </a>
       </Card.Content>
 </Card>
-<Card style={cardstyle}>    <Image  style={imagestyle} src={uma}  />
+<Card style={cardstyle}>    <Image  style={imagestyle} src={gaya}  />
 <Card.Content>
 <Card.Header style={textstyle}>Gayatri Babel</Card.Header>
 <Card.Meta>
@@ -209,10 +210,10 @@ This course aims to expose students to essential data science and statistical mo
       </Card.Content>
 </Card>
 </Card.Group>
-       <div style={{marginLeft:"249px"}}>
+       <div style={{marginLeft:"249px",marginTop:"40px"}}>
        <div >
          <span style={{fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px"}}>6 </span> <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"386px",font:"Montserrat"}}>Semesters Completed</span>
-       <span style={{marginLeft:"151px",fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px",fontStyle:"normal",fontWeigt:"normal"}}> 64 <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"227px",font:"Montserrat"}}>Workshops Hosted</span> </span>
+       <span style={{marginLeft:"151px",fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px",fontStyle:"normal",fontWeigt:"normal"}}> 400+ <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"227px",font:"Montserrat"}}>Students Taught</span> </span>
        </div>
        </div>
   </div>
