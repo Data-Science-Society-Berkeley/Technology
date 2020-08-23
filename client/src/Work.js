@@ -8,7 +8,6 @@ import moment from 'moment'
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import event1 from './Events/dssdatathon 2.png'
 import event2 from './Events/operationanalyticseventbannerdss (1).png'
-import { gapi } from 'gapi-script'
 const localizer = momentLocalizer(moment)
 let endpoint = "http://localhost:8080";
 const gridoffset = {
