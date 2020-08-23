@@ -37,7 +37,7 @@ const navbar = {
   fontSize: "24px",	
   fontWeight: 600,
   lineHeight: "37px",
-  marginLeft: "41px",
+  marginLeft: "24px",
   color:"#FFFFFF"
 };
 const link = {
@@ -173,7 +173,7 @@ class NavBar extends Component {
 
 
         </Menu.Item>
-          <Menu.Menu position="right" style={{marginLeft:"504px"}}>
+          <Menu.Menu position="right" style={{marginLeft:"104px"}}>
             <Menu.Item      name='about'
             active={activeItem === 'about'}
             onClick={this.handleItemClick} style={navbar}>

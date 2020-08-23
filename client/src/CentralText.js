@@ -7,9 +7,11 @@ import collab from './landing/Rectangle66.png'
 import socialize from './landing/Rectangle69.png'
 import socialgood from './landing/SocialGood.png'
 import ocf from  './Backgrounds/ocf-hosted-penguin.svg'
+import ResizeImage from 'react-resize-image'
+
 let endpoint = "https://dssberkeley.com/";
 const gridoffset = {
-          marginLeft:"164px",
+          marginLeft:"184px",
           marginTop: "67px",
           textAlign:"center",
           fontFamily: "Montserrat"
@@ -22,7 +24,8 @@ const mybigtext = {
           color:"#FFFBFB",
     width:"438px",
     fontStyle: "normal",
-    textAlign:"left"
+    textAlign:"left",
+    marginTop:"35px"
 
 
 };
@@ -88,9 +91,24 @@ class CentralText extends Component {
     super(props);
     this.state = {
         email: "",
+        normal_width:"1440px",
+        normal_height:"406px",
+        width: 0, height: 0
       };
       this.join=this.join.bind(this);
-
+      this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
   updateEmail = (value) => {
     // TODO if its an invalid email we can prompt them for an error later
@@ -119,6 +137,7 @@ class CentralText extends Component {
         this.props.buttonClick(data);
     };
     render() {
+      console.log(this.state.height,this.state.width)
     return (
       <div>
 <Grid divided='vertically' style={gridoffset}>
@@ -137,32 +156,32 @@ class CentralText extends Component {
                     </Grid.Column>
   </Grid.Row>
   </Grid>
-  <div style={{width:"1440px",height:"206px",backgroundColor:"white",marginRight:"600px"}}>
+  <div style={{width:"100%",height:"206px",backgroundColor:"white",paddingRight:"2000px",marginTop:"229px"}}>
   <Header style={{marginLeft:"64px",font:"Montserrat",fontStyle:"normal",fontWeight:"600",fontSize:"64px",lineHeight:"78px",color:"#8CD6D1",width:"289px"}}>
     about us
   </Header>
 
   </div>
-  <div columns={1}style={{width:"1440px",height:"406px",backgroundImage:`url(${edu})`}}>
+  <div columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${edu})`,}}>
   <div style={overlaytext}>
   educate.
   </div>
 </div>
-<div columns={1}style={{width:"1440px",height:"406px",backgroundImage:`url(${collab})`}}>
+<div columns={1}style={{width:"2000px",height:"554px",backgroundImage:`url(${collab})`}}>
 <div style={overlaytext}>
   collaborate.
   </div></div>
-<div columns={1}style={{width:"1440px",height:"406px",backgroundImage:`url(${socialize})`}}>
+<div columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${socialize})`}}>
 <div style={overlaytext}>
   socialize.
   </div>
 </div>
- <div columns={1}style={{width:"1440px",height:"406px",backgroundImage:`url(${socialgood})`}}>
+ <div columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${socialgood})`}}>
  <div style={overlaytext}>
   engage.
   </div>
 </div>
-<div style={{width:"1440px",height:"1019px",backgroundColor:"white"}}>
+<div style={{width:"2000px",height:"1019px",backgroundColor:"white"}}>
 
 
 <div style={{marginLeft:"64px",font:"Montserrat",fontStyle:"normal",fontWeight:"600",fontSize:"64px",lineHeight:"78px",color:"#8CD6D1",width:"1400px",paddingTop:"398px"}}>
