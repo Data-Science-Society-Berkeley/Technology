@@ -17,10 +17,13 @@ import Social from './Social.js'
 import Education from './Education.js'
 import Service from './Services.js'
 import GeneralMember from './generalmember.js'
+import Culture from './Culture.js'
+
 
 
 import { withRouter, BrowserRouter as Router, Switch, Route, Link, Redirect  } from 'react-router-dom';
 import NavBar from './Menu';
+import InMenu from './inMen';
 import {Helmet} from 'react-helmet';
 import WebFont from 'webfontloader';
 import ReactGA from 'react-ga';
@@ -85,6 +88,13 @@ render () {
     </div>
     } 
     />
+        <Route exact path ='/culture' render={(props) => 
+    <div>
+    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+    <InMenu {...props} />
+    <Culture {...props}></Culture>
+    </div>
+    }/>
     <Route exact path ='/about' render={(props) => 
     <div>
     <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
@@ -190,3 +200,4 @@ render () {
 )};
 }
 export default withRouter(App);
+

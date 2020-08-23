@@ -137,7 +137,7 @@ class CentralText extends Component {
                     </Grid.Column>
   </Grid.Row>
   </Grid>
-  <div style={{width:"2000px",height:"206px",backgroundColor:"white",marginRight:"600px"}}>
+  <div style={{width:"1440px",height:"206px",backgroundColor:"white",marginRight:"600px"}}>
   <Header style={{marginLeft:"64px",font:"Montserrat",fontStyle:"normal",fontWeight:"600",fontSize:"64px",lineHeight:"78px",color:"#8CD6D1",width:"289px"}}>
     about us
   </Header>

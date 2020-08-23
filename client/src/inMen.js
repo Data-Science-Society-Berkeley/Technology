@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
-import { Container, Image, Menu,Button, Grid,Label,Icon,List  } from 'semantic-ui-react';
+import axios from "axios";
+import { Container, Image, Menu,Button,Portal,Header,Card ,Form ,Input,Divider,Icon,Dropdown} from 'semantic-ui-react';
+import PasswordStrengthBar from 'react-password-strength-bar';
+import validator from 'validator';
+import logo from './Backgrounds/logo.png'
+
+let endpoint = "http://localhost:8080";
+
 const mynav = {
     background: "inherit",
     height: "75%",
@@ -9,182 +16,231 @@ const mynav = {
     fontSize: "16px",	
     fontWeight: 600,
     lineHeight: "25px",
-    
+    boxShadow: "none",
+    border: "none",
+    marginTop:"52px",
 };
+// since menu has 10 margin
+const form_formatting = { marginLeft: "36px", marginRight: "32px",marginTop: "25px" };
+const pref_formatting = { marginLeft: "37px", marginRight: "20px",marginTop: "45px" };
+
+const submit = {
+  marginRight: "519px",
+  marginBottom: "42px",
+  background: "blue"
+};
+
 const navbar = {
-  color: "#759E33",
-  fontFamily: "Overpass",	
-  fontSize: "16px",	
+  fontFamily: "Montserrat",	
+  fontSize: "24px",	
   fontWeight: 600,
-  lineHeight: "25px",
-  marginLeft: "13px",
-  marginTop: "9px",
-  marginBottom: "0px",
-
-
+  lineHeight: "37px",
+  marginLeft: "41px",
+  color:"#FFFFFF"
 };
-const call = {
-  height: "24px",	
-    width: "333px",	
-    color: "#BBBBBB",	
-    fontFamily: "Rubik",	
-    fontSize: "20px",	
-    letterSpacing: "0.71px",
-    marginTop: "29px",
-    marginLeft: "352px",
-    marginRight: "24px",
-    lineHeight: "24px",
-    whiteSpace: "nowrap",
+const link = {
+  fontFamily: "Montserrat",	
+  fontSize: "24px",	
+  fontWeight: 600,
+  lineHeight: "37px",
+  color:"#FFFFFF"
 };
+const link2 = {
+  fontFamily: "Montserrat",	
+  fontSize: "24px",	
+  fontWeight: 600,
+  lineHeight: "37px",
+  color: "#8CD6D1"};
+
 const greenBut = {
-  height: "86px",	
+  background: "blue",
+  color: "white",
 };
-const gridS = {
-  height: "74px",	
-  width: "1366px",	
+const lip = {
+  color: "black",
 };
-const tabs = {
-  height: "60px",	
-  width: "206px",	
+var circleStyle = {
+  padding:10,
+  marginLeft:34,
+  display:"inline-block",
+  backgroundColor: "#FFFFFF",
+  borderRadius: "50%",
+  width:100,
+  height:100,
 };
-// 48 became 32 since padding of menu items
-const tabText = {
-  width: "109px",	
-    color: "#595959",	
-    fontFamily: "Rubik",	
-    fontSize: "16px",	
-    letterSpacing: "0.57px",	
-    lineHeight: "19px",	
-    marginTop: "21px",
-    marginBottom: "20px",
-    textAlign: "center"};
-const rightText = {
-    marginLeft: "30px",
-    display: "flex",
-    textAlign: "center"};
-const boxedText = {
-      height: "45px",
-      width: "310px",
-      boxSizing: "border-box",
-      border: "2px solid #3F691A",
-      marginTop: "5px",
-      marginBottom: "16px",
-      
-  };
-  const insideTextL = {
-    height: "19px",
-    width: "183px",
-    color: "#3F691A",
-    fontFamily: "Rubik",
-    fontSize: "16px",
-    letterSpacing: "0.57px",
-    lineHeight: "19px",
-    paddingTop: "13px",
-    paddingBottom: "13px",
-    boxSizing: "border-box",
-    marginLeft: "16px",
-    display: "table-cell",
-    borderRight: "2px solid #3F691A",
-
-};
-const insideTextR = {
-  height: "19px",
-  width: "86px",
-  color: "#3F691A",
-  fontFamily: "Rubik",
-  fontSize: "16px",
-  fontWeight: "500px",
-  letterSpacing: "0.57px",
-  lineHeight: "19px",
-  borderSpacing: "13px",
-  marginLeft: "16px",
-  display: "table-cell",
-};
-const buttonStyle = {
-  marginRight: "24px",
-  marginLeft: "400px",
-  marginTop: "5px",
-  marginBottom: "20px",
-  height: "45px",	
-  width: "136px",
-  fontFamily: "Rubik",
-  fontSize: "16px",
-  letterSpacing: "0.57px",
-  lineHeight: "19px",
-  background: "#F6F7F6",
-  color: "#595959",
-  fontWeight: "400",
-};
-const phone= {
-  color: "#3F691A",
+var circle2 = {
+  padding:10,
+  marginLeft:34,
+  display:"inline-block",
+  backgroundColor: "#8CD6D1",
+  borderRadius: "50%",
+  width:100,
+  height:100,
 };
 
 
 
-class InMenu extends Component {
+class NavBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
-}
-
-this.setStyle = this.setStyle.bind(this);
-}
-
-    setStyle(){
-      this.border_lumber_select = {
-        borderBottom: this.props.location.pathname =='/lumber' ? "2px solid #6699ff" : "",
-        marginLeft: "32px",
-      };
-      this.border_profile_select = {
-        borderBottom: this.props.location.pathname =='/profile' ? "2px solid #6699ff" : "",
-        marginLeft: "32px",
-      };
-      this.border_order_select = {
-        borderBottom: this.props.location.pathname =='/orders' ? "2px solid #6699ff" : "",
-        marginLeft: "32px",
-      };
+    activeStyle:(this.props.match.path != "/" && this.props.match.path != "/login") ,
     }
-  render() {
-    this.setStyle()
-        return (
-      <div>
-      <Menu size="none" style={{marginTop: '0px', paddingBottom: '0px',marginBottom: '0px',	height: "60px"}}>
-      <Menu.Item style={tabs}>
-      <div style={this.border_lumber_select}>
-        <Link to={"/home"}>
-        <div style={tabText}>
-            Clients
-            </div>
-            </Link>
-            </div>
-      </Menu.Item >
-      <Menu.Item style={tabs}>
-      <div style={this.border_order_select}>
-      <Link to={"/tbd"}>
-        <div style={tabText}>
-            TBD
-            </div>
-            </Link>
-            </div>
-      </Menu.Item >
-      <Menu.Item style={tabs}>
-      <div style={this.border_profile_select}>
-      <Link to={"/profile"}>
-        <div style={tabText}>
-            Edit Profile
-            </div>
-            </Link>
-            </div>
-      </Menu.Item >
+    this.setMenu = this.setMenu.bind(this);
+    this.setCircle = this.setCircle.bind(this);
+    console.log(this.props.match.path)
 
-      <Grid.Column style={rightText} fluid >
-            <Link to={"/"}>
-          <Button style={buttonStyle}>
-            Log Out
-          </Button>
-          </Link>
-      </Grid.Column >
+  }; 
+  registerUser = () => {
+    let email = this.state.email
+    let name = this.state.name
+    let password = this.state.password
+    let buyer = this.state.buyer
+    let lumber = this.state.lumber
+    let length = this.state.length
+    axios
+    .post(
+      endpoint + "/api/register",
+      {
+    email,password,buyer,lumber,length
+      },
+      {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        }
+      }
+    )
+    .then(res => {
+      console.log(res);
+      if (res.status == 200){
+          this.setState({ 
+            open: false,
+          })
+        }
+    });
+  };
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+    
+  handleOpen = () => {
+    this.setState({ open: true })
+  }
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
+  handleClose = () => {
+    this.setState({ open: false })
+  }
+  closeEmail = () => {
+    this.setState({ emailOpen: false })
+  }  
+  setCircle(){
+    //TODO ensure first guys margin is effectively 24 
+    console.log(this.state.activeStyle);
+    if (this.state.activeStyle){
+      return circle2;
+    } else {
+      return circleStyle;
+    }
+  }
+  setMenu(){
+    //TODO ensure first guys margin is effectively 24 
+    console.log(this.state.activeStyle);
+    if (this.state.activeStyle){
+      return link2;
+    } else {
+      return link;
+    }
+  }
+  render() {
+    // FOR NOW FOR TESTING
+    const { activeItem } = this.state
+    var linkStyling = this.setMenu()
+    console.log(linkStyling,this.state.activeStyle)
+    var circleStyling = this.setCircle()
+
+    return (
+      <div className='NavBar'>
+      <Menu style={mynav} borderless={true}>
+          <Menu.Item style={navbar} className=".ui.table" >
+          <Link to="/">
+
+          <Image src={logo}>
+
+      </Image>
+      </Link>
+
+
+        </Menu.Item>
+          <Menu.Menu position="right" style={{marginLeft:"504px"}}>
+            <Menu.Item      name='culture'
+            active={activeItem === 'culture'}
+            onClick={this.handleItemClick} style={navbar}>
+            <Link to="culture" style={linkStyling}>
+            culture
+            </Link>
+            </Menu.Item>
+            <Menu.Item     name='committees'
+            active={activeItem === 'committees'}
+            onClick={this.handleItemClick}style={navbar}>
+            <Dropdown style={linkStyling} item text='TBD'>
+          <Dropdown.Menu >
+          <Link to="/commitees" style={linkStyling}>
+            <Dropdown.Item icon='sitemap' text='TBD' />
+            </Link>
+          <Link to="/decal" style={linkStyling}>
+            <Dropdown.Item icon='book' text='TBD' />
+            </Link>
+            <Link to="/acadev" style={linkStyling}>
+            <Dropdown.Item icon='globe' text='TBD' />
+            </Link>
+            <Link to="/consulting" style={linkStyling}>
+            <Dropdown.Item icon='exchange' text='TBD' />
+            </Link>
+            <Link to="/socialgood" style={linkStyling}>
+            <Dropdown.Item icon='like' text='TBD' />
+            </Link>
+            <Dropdown item text='Student Links'>
+          <Dropdown.Menu >
+            <Dropdown.Header>Pages</Dropdown.Header>
+            <Link to="generalmember"><Dropdown.Item>GM Landing</Dropdown.Item></Link>
+            <Link to="decallearn"><Dropdown.Item>Decal Landing</Dropdown.Item></Link>
+          </Dropdown.Menu>
+        </Dropdown>
+          </Dropdown.Menu>
+        </Dropdown>
+            </Menu.Item>
+            <Menu.Item     name='education'
+            active={activeItem === 'education'}
+            onClick={this.handleItemClick} style={navbar}>
+            <Link style={linkStyling}to="education">
+            TBD
+            </Link>
+            </Menu.Item>
+            <Menu.Item     name='events'
+            active={activeItem === 'events'}
+            onClick={this.handleItemClick} style={navbar}>
+            <Link style={linkStyling} to="events">
+            TBD
+            </Link>
+            </Menu.Item>
+            <Menu.Item     name='services'
+            active={activeItem === 'services'}
+            onClick={this.handleItemClick} style={navbar}>
+            <Link style={linkStyling} to="services">
+            TBD
+            </Link>
+            </Menu.Item>
+            <Menu.Item     name='login'
+            active={activeItem === 'login'}
+            onClick={this.handleItemClick} style={navbar}>
+            <Link style={linkStyling} to="login">
+            TBD
+            </Link>
+            </Menu.Item>
+            <Menu.Item header >
+            
+
+            </Menu.Item>
+            </Menu.Menu>
       </Menu>
       </div>
     )
@@ -192,4 +248,5 @@ this.setStyle = this.setStyle.bind(this);
 }
 }
 
-export default InMenu;
+export default NavBar;
+

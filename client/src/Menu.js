@@ -198,23 +198,22 @@ class NavBar extends Component {
             <Link to="/socialgood" style={linkStyling}>
             <Dropdown.Item icon='like' text='Social Good' />
             </Link>
-            <Dropdown item text='Student Links'>
-          <Dropdown.Menu >
-            <Dropdown.Header>Pages</Dropdown.Header>
-            <Link to="generalmember"><Dropdown.Item>GM Landing</Dropdown.Item></Link>
-            <Link to="decallearn"><Dropdown.Item>Decal Landing</Dropdown.Item></Link>
-          </Dropdown.Menu>
-        </Dropdown>
           </Dropdown.Menu>
         </Dropdown>
             </Menu.Item>
             <Menu.Item     name='education'
             active={activeItem === 'education'}
             onClick={this.handleItemClick} style={navbar}>
-            <Link style={linkStyling}to="education">
-            education
+            <Dropdown style={linkStyling} item text='education'>
+          <Dropdown.Menu >
+          <Link to="/education" style={linkStyling}>
+            <Dropdown.Item icon='book' text='Overview' />
             </Link>
-            </Menu.Item>
+            <Link to="generalmember"><Dropdown.Item icon='calendar' text="GM Landing"></Dropdown.Item></Link>
+            <Link to="decallearn"><Dropdown.Item icon='grid layout' text="Decal Landing"></Dropdown.Item></Link>
+          </Dropdown.Menu>
+        </Dropdown>
+	    </Menu.Item>
             <Menu.Item     name='events'
             active={activeItem === 'events'}
             onClick={this.handleItemClick} style={navbar}>

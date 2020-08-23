@@ -128,7 +128,7 @@ class Login extends Component {
     )
     .then(res => {
       if (res.status == 200){
-	      this.props.history.push("home")
+	      this.props.history.push("culture")
       } else {
         // throw an error for the program //TODO TEST THIS works
         // TODO when logout, clear the cookie from cache and browser..
@@ -147,7 +147,7 @@ class Login extends Component {
       >
         <Grid.Column width={1} style={card_formatting } className="the-best-lumber-are">
        <Link to="/">
-<Image src={logo2} style={{width:"100px",height:"100px"}}>
+<Image src={logo2} style={{width:"100px",height:"100px",marginTop:"-100px"}}>
 
         </Image>
         </Link> 
