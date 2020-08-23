@@ -4,7 +4,7 @@ import axios from "axios";
 import { Container, Image, Menu,Button,Portal,Header,Card ,Form ,Input,Divider,Icon,Dropdown} from 'semantic-ui-react';
 import PasswordStrengthBar from 'react-password-strength-bar';
 import validator from 'validator';
-import logo from './Backgrounds/logo.png'
+import logo from './Backgrounds/DSS-logo-white.png'
 
 let endpoint = "http://localhost:8080";
 
@@ -163,7 +163,7 @@ class NavBar extends Component {
           <Menu.Item style={navbar} className=".ui.table" >
           <Link to="/">
 
-          <Image src={logo}>
+          <Image style={{width:"100px",height:"100px"}} src={logo}>
 
       </Image>
       </Link>

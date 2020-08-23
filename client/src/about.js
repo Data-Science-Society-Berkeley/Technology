@@ -516,6 +516,7 @@ class About extends Component {
 </Image.Group>
   </Grid.Row>
   </Grid>
+ 
 )
 
 }

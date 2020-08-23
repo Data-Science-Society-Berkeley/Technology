@@ -4,7 +4,9 @@ import axios from "axios";
 import { Container, Image, Menu,Button,Portal,Header,Card ,Form ,Input,Divider,Icon,Dropdown} from 'semantic-ui-react';
 import PasswordStrengthBar from 'react-password-strength-bar';
 import validator from 'validator';
-import logo from './Backgrounds/logo.png'
+import logo from './Backgrounds/DSS-logo-white.png'
+import logo2 from './Backgrounds/DSS-logo-black-transparent.png'
+
 
 let endpoint = "http://localhost:8080";
 
@@ -136,9 +138,13 @@ class NavBar extends Component {
     //TODO ensure first guys margin is effectively 24 
     console.log(this.state.activeStyle);
     if (this.state.activeStyle){
-      return circle2;
+      
+      return (     
+      <Image style={{width:"100px",height:"100px"}} src={logo2}>
+      </Image>);
     } else {
-      return circleStyle;
+      return      (<Image style={{width:"100px",height:"100px"}} src={logo}>
+      </Image>);
     }
   }
   setMenu(){
@@ -155,17 +161,14 @@ class NavBar extends Component {
     const { activeItem } = this.state
     var linkStyling = this.setMenu()
     console.log(linkStyling,this.state.activeStyle)
-    var circleStyling = this.setCircle()
+    var logo = this.setCircle()
 
     return (
       <div className='NavBar'>
       <Menu style={mynav} borderless={true}>
           <Menu.Item style={navbar} className=".ui.table" >
           <Link to="/">
-
-          <Image src={logo}>
-
-      </Image>
+          {logo}
       </Link>
 
 
@@ -183,14 +186,11 @@ class NavBar extends Component {
             onClick={this.handleItemClick}style={navbar}>
             <Dropdown style={linkStyling} item text='committees'>
           <Dropdown.Menu >
-          <Link to="/commitees" style={linkStyling}>
-            <Dropdown.Item icon='sitemap' text='Overview' />
-            </Link>
           <Link to="/decal" style={linkStyling}>
             <Dropdown.Item icon='book' text='DeCal' />
             </Link>
             <Link to="/acadev" style={linkStyling}>
-            <Dropdown.Item icon='globe' text='Acadev' />
+            <Dropdown.Item icon='pencil' text='Acadev' />
             </Link>
             <Link to="/consulting" style={linkStyling}>
             <Dropdown.Item icon='exchange' text='Consulting' />
@@ -206,9 +206,6 @@ class NavBar extends Component {
             onClick={this.handleItemClick} style={navbar}>
             <Dropdown style={linkStyling} item text='education'>
           <Dropdown.Menu >
-          <Link to="/education" style={linkStyling}>
-            <Dropdown.Item icon='book' text='Overview' />
-            </Link>
             <Link to="generalmember"><Dropdown.Item icon='calendar' text="GM Landing"></Dropdown.Item></Link>
             <Link to="decallearn"><Dropdown.Item icon='grid layout' text="Decal Landing"></Dropdown.Item></Link>
           </Dropdown.Menu>

@@ -6,7 +6,7 @@ import edu from './landing/AcaDev.png'
 import collab from './landing/Rectangle66.png'
 import socialize from './landing/Rectangle69.png'
 import socialgood from './landing/SocialGood.png'
-
+import ocf from  './Backgrounds/ocf-hosted-penguin.svg'
 let endpoint = "https://dssberkeley.com/";
 const gridoffset = {
           marginLeft:"164px",
@@ -176,25 +176,33 @@ subscribe to our newsletter to get updates on what we do
                           </Form>
                           <div>
                         <Icon.Group size='huge' style={{marginLeft:"0px",marginTop:"100px"}}>
-                          <Icon name="mail" style={{marginLeft:"100px",color:"#8CD6D1"}}>
+                        <a href="mailto:info@dss.berkeley.edu"><Icon name="mail" style={{marginLeft:"100px",color:"#8CD6D1"}}>
 
                           </Icon>
-                          <Icon name="instagram" style={{marginLeft:"130px",color:"#8CD6D1"}}>
+                          </a>
+                          <a href="https://www.instagram.com/dssberkeley/"> <Icon name="instagram" style={{marginLeft:"0px",color:"#8CD6D1"}}/> </a>
+
+                         
+                          <a href="https://www.facebook.com/dssberkeley"> <Icon name="facebook" style={{marginLeft:"10px",color:"#8CD6D1"}}>
 
                             </Icon>
-                            <Icon name="facebook" style={{marginLeft:"210px",color:"#8CD6D1"}}>
+                            </a>
+                            <a href="https://www.linkedin.com/company/data-science-society-at-berkeley/"> <Icon name="linkedin" style={{marginLeft:"10px",color:"#8CD6D1"}}>
 
                             </Icon>
-                            <Icon name="linkedin" style={{marginLeft:"290px",color:"#8CD6D1"}}>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCBj7xVI8e_jlEAznyVetWIQ/"> <Icon name="youtube" style={{marginLeft:"10px",color:"#8CD6D1"}}>
 
                             </Icon>
-                            <Icon name="youtube" style={{marginLeft:"370px",color:"#8CD6D1"}}>
-
-                            </Icon>
+                            </a>
                         </Icon.Group>
                         </div>
 </div>
+<a href="https://www.ocf.berkeley.edu/">
+ <Image src={ocf} style={{marginTop:"20px"}}>
 
+</Image>
+</a>
   </div>
 )
 

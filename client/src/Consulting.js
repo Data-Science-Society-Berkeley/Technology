@@ -12,7 +12,27 @@ import metromile2 from './Consulting/Rectangle 53.png'
 import monday3 from './Consulting/Rectangle 54.png'
 import simmer4 from './Consulting/Rectangle 55.png'
 import sofi5 from './Consulting/Rectangle 56.png'
+import aadiraj from './PM Headshots/aadiheadshot_byandi.jpg'
+import alina from './PM Headshots/Alina.png'
+import grace from './PM Headshots/Grace.jpg'
+import andy from './PM Headshots/HEADSHOT_ANDY.jpg'
+import pooja from './PM Headshots/Pooja.png'
+import pranav from './PM Headshots/Pranav.png'
+import rick from './PM Headshots/Rick.jpeg'
+import samir from './PM Headshots/Samir.png'
+import young from './PM Headshots/Youngli.jpg'
+import andi from './Leadership Headshots/andi.jpg'
 
+
+
+
+
+const imagestyle = {
+height: "auto",
+maxHeight: "500px",
+width: "auto",
+maxWidth: "400px",
+};
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -21,7 +41,13 @@ const gridoffset = {
           textAlign:"center",
           fontFamily: "Montserrat"
 };
-
+const textstyle = {
+  fontFamily: "Montserrat",
+  fontWeight: 300,
+          fontSize: "37px",
+          color:"#8CD6D1",
+          textAlign:"center",
+}
 
 
 const mybigtext = {
@@ -71,6 +97,14 @@ const consult = {
     width:"915px",
     marginLeft:"49px",
   };
+  const cardstyle = {
+    width:"400px",
+   // height: "800px",
+    marginBottom:"10px",
+    marginleft:"20px",
+    textAlign:"center",
+
+};
 class Consulting extends Component {
   constructor(props) {
     super(props);
@@ -107,7 +141,218 @@ class Consulting extends Component {
         this.props.buttonClick(data);
     };
     render() {
-      let temp = [<Card></Card>,<Card></Card>,<Card></Card>,<Card></Card>,<Card></Card>,<Card></Card>,<Card></Card>,<Card></Card>,<Card></Card>,<Card></Card>]
+      let temp = [
+        <Card style={cardstyle}>
+        <Image src={samir} style={imagestyle}  />
+        <Card.Content>
+              <Card.Header style={textstyle}>Samir Puranik</Card.Header>
+              <Card.Meta>
+                <span className='date'>Director of Consulting</span>
+              </Card.Meta>
+              <Card.Description>
+                Samir is the Director of DSS Consulting.
+              </Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+              <a href="mailto:samir.puranik@berkeley.edu">
+                <Icon size="large" name='mail' />
+                </a>
+                <a href="https://linkedin.com/in/samir-puranik">
+                <Icon size="large"  name='linkedin' />
+                </a>
+              </Card.Content>
+        </Card>,    <Card style={cardstyle}>
+        <Image src={rick} style={imagestyle}  />
+        <Card.Content>
+              <Card.Header style={textstyle}>Rick Zhang</Card.Header>
+              <Card.Meta>
+                <span className='date'>PM</span>
+              </Card.Meta>
+              <Card.Description>
+                Rick is a PM @ DSS.
+              </Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+              <a href="mailto:rickzhang@berkeley.edu">
+                <Icon size="large" name='mail' />
+                </a>
+                <a href="https://www.linkedin.com/in/rick-zhang/">
+                <Icon size="large"  name='linkedin' />
+                </a>
+              </Card.Content>
+        </Card>,
+            <Card style={cardstyle}>
+            <Image src={aadiraj} style={imagestyle}  />
+            <Card.Content>
+                  <Card.Header style={textstyle}>Aadiraj Batlaw</Card.Header>
+                  <Card.Meta>
+                  <span className='date'>PM</span>
+                  </Card.Meta>
+                  <Card.Description>
+Aadiraj is a PM @ DSS.                  </Card.Description>
+                </Card.Content>
+                <Card.Content extra>
+                  <a href="mailto:batlaw33375@berkeley.edu">
+                    <Icon size="large" name='mail' />
+                    </a>
+                    <a href="https://www.linkedin.com/in/aadiraj-batlaw-594785177/">
+                    <Icon size="large"  name='linkedin' />
+                    </a>
+                  </Card.Content>
+            </Card>,
+                <Card style={cardstyle}>
+                <Image src={andi} yle={imagestyle}  />
+                <Card.Content>
+                      <Card.Header style={textstyle}>Kevin Miao</Card.Header>
+                      <Card.Meta>
+                      <span className='date'>PM</span>
+                      </Card.Meta>
+                      <Card.Description>
+    Kevin is a PM @ DSS.                      </Card.Description>
+                    </Card.Content>
+                    <Card.Content extra>
+                      <a href="kevinmiao@berkeley.edu">
+                        <Icon size="large" name='mail' />
+                        </a>
+                        <a href="http://www.linkedin.com/in/miaok">
+                        <Icon size="large"  name='linkedin' />
+                        </a>
+                      </Card.Content>
+                </Card>,
+                    <Card style={cardstyle}>
+                    <Image src={alina} style={imagestyle}  />
+                    <Card.Content>
+                          <Card.Header style={textstyle}>Alina Trinh</Card.Header>
+                          <Card.Meta>
+                          <span className='date'>PM</span>
+                          </Card.Meta>
+                          <Card.Description>
+        Alina is a PM @ DSS.                          </Card.Description>
+                        </Card.Content>
+                        <Card.Content extra>
+                          <a href="mailto:tutrinh@berkeley.edu">
+                            <Icon size="large" name='mail' />
+                            </a>
+                            <a href="https://www.linkedin.com/in/tu-trinh/">
+                            <Icon size="large"  name='linkedin' />
+                            </a>
+                          </Card.Content>
+                    </Card>,
+                        <Card style={cardstyle}>
+                        <Image src={pranav} style={imagestyle}  />
+                        <Card.Content>
+                              <Card.Header style={textstyle}>Pranav Krishnan</Card.Header>
+                              <Card.Meta>
+                              <span className='date'>PM</span>
+                              </Card.Meta>
+                              <Card.Description>
+            Pranav is a PM @ DSS.                              </Card.Description>
+                            </Card.Content>
+                            <Card.Content extra>
+                              <a href="mailto:pranavk@berkeley.edu">
+                                <Icon size="large" name='mail' />
+                                </a>
+                                <a href="https://www.linkedin.com/in/pranav-krishnan-695726108/">
+                                <Icon size="large"  name='linkedin' />
+                                </a>
+                              </Card.Content>
+                        </Card>,
+                            <Card style={cardstyle}>
+                            <Image src={andi} style={imagestyle}  />
+                            <Card.Content>
+                                  <Card.Header style={textstyle}>Avik Sethia</Card.Header>
+                                  <Card.Meta>
+                                  <span className='date'>PM</span>
+                                  </Card.Meta>
+                                  <Card.Description>
+                                    Avik is a PM @ DSS.
+                                  </Card.Description>
+                                </Card.Content>
+                                <Card.Content extra>
+                                  <a href="mailto:aviksethia99@berkeley.edu">
+                                        <Icon size="large" name='mail' />
+                                        </a>
+                                    <a href="https://www.linkedin.com/in/aviksethia99/">
+                                    <Icon size="large"  name='linkedin' />
+                                    </a>
+                                  </Card.Content>
+                            </Card>,
+                                <Card style={cardstyle}>
+                                <Image src={pooja} style={imagestyle}  />
+                                <Card.Content>
+                                      <Card.Header style={textstyle}>Pooja Eega</Card.Header>
+                                      <Card.Meta>
+                                      <span className='date'>PM</span>
+                                      </Card.Meta>
+                                      <Card.Description>
+                    Pooja is a PM @ DSS.                                      </Card.Description>
+                                    </Card.Content>
+                                    <Card.Content extra>
+                                      <a href="mailto:pooja.eega@berkeley.edu">
+                                        <Icon size="large" name='mail' />
+                                        </a>
+                                        <a href="www.linkedin.com/in/pooja-eega ">
+                                        <Icon size="large"  name='linkedin' />
+                                        </a>
+                                      </Card.Content>
+                                </Card>,
+                                    <Card style={cardstyle}>
+                                    <Image src={young} style={imagestyle}  />
+                                    <Card.Content>
+                                          <Card.Header style={textstyle}>Youngli Hong</Card.Header>
+                                          <Card.Meta>
+                                          <span className='date'>PM</span>
+                                          </Card.Meta>
+                                          <Card.Description>
+                        Youngli is a PM @ DSS.                                          </Card.Description>
+                                        </Card.Content>
+                                        <Card.Content extra>
+                                          <a href="mailto:youngli.hong@berkeley.edu">
+                                            <Icon size="large" name='mail' />
+                                            </a>
+                                            <a href="https://www.linkedin.com/in/youngli-hong-a0750b158/">
+                                            <Icon size="large"  name='linkedin' />
+                                            </a>
+                                          </Card.Content>
+                                    </Card>,
+                                    <Card style={cardstyle}>
+                                    <Image src={andy} style={imagestyle}  />
+                                    <Card.Content>
+                                          <Card.Header style={textstyle}>Andy Xia</Card.Header>
+                                          <Card.Meta>
+                                          <span className='date'>PM</span>
+                                          </Card.Meta>
+                                          <Card.Description>
+                        Andy is a PM @ DSS.                                          </Card.Description>
+                                        </Card.Content>
+                                        <Card.Content extra>
+                                          <a href="mailto:andyxia124@berkeley.edu">
+                                            <Icon size="large" name='mail' />
+                                            </a>
+                                            <a href="https://www.linkedin.com/in/andy-xia-6577b6171/">
+                                            <Icon size="large"  name='linkedin' />
+                                            </a>
+                                          </Card.Content>
+                                    </Card>,
+                                    <Card style={cardstyle}>
+                                    <Image src={grace} style={imagestyle}  />
+                                    <Card.Content>
+                                          <Card.Header style={textstyle}>Grace Qiu</Card.Header>
+                                          <Card.Meta>
+                                          <span className='date'>PM</span>
+                                          </Card.Meta>
+                                          <Card.Description>
+                        Grace is a PM @ DSS.                                          </Card.Description>
+                                        </Card.Content>
+                                        <Card.Content extra>
+                                          <a href="mailto:graceq@berkeley.edu">
+                                            <Icon size="large" name='mail' />
+                                            </a>
+                                            <a href="linkedin.com/in/graqiu">
+                                            <Icon size="large"  name='linkedin' />
+                                            </a>
+                                          </Card.Content>
+                                    </Card>]
     return (
         <div>
 
@@ -120,7 +365,7 @@ fontSize: "24px",
 lineHeight: "29px"}}>
 Consulting Blurb
 </div>
-        <Card.Group>
+        <Card.Group itemsPerRow={3} style={{marginLeft:"50px"}}>
         {temp}
         </Card.Group>
         <Header style={mymidtext}> Client Testimonials</Header>
