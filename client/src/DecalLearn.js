@@ -55,6 +55,7 @@ const mybigtext = {
    // height: "800px",
     marginBottom:"10px",
     marginleft:"20px",
+    textAlign:"center",
 };
 const imagestyle = { 
   height: "auto",
@@ -478,7 +479,7 @@ Reading Quizzes: 10% (2 Drops)
         <span className='date'>Director of DeCal</span>
       </Card.Meta>
       <Card.Description>
-      Alleanna is a director of Academic Development.      
+      Uma is a director of Academic Development.      
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
@@ -497,7 +498,7 @@ Reading Quizzes: 10% (2 Drops)
         <span className='date'>Director of DeCal</span>
       </Card.Meta>
       <Card.Description>
-      Stephanie is a director of DeCal.
+      Gayatri is a director of DeCal.
             </Card.Description>
     </Card.Content>
     <Card.Content extra>

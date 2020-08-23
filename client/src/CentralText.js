@@ -7,7 +7,6 @@ import collab from './landing/Rectangle66.png'
 import socialize from './landing/Rectangle69.png'
 import socialgood from './landing/SocialGood.png'
 import ocf from  './Backgrounds/ocf-hosted-penguin.svg'
-import ResizeImage from 'react-resize-image'
 
 let endpoint = "https://dssberkeley.com/";
 const gridoffset = {
@@ -42,14 +41,25 @@ const mymidtext = {
 
 const overlaytext = {
   fontFamily: "Montserrat",
-  fontWeight: 300,
+  fontWeight: 600,
   lineHeight: "78px",
   fontSize: "64px",
   color:"#00000",
   fontStyle: "normal",
   textAlign:"left",
   marginLeft:"74px",
-  paddingTop:"100px",
+  paddingTop:"83px",
+}
+const underlaytext = {
+  fontFamily: "Montserrat",
+  fontWeight: 600,
+  lineHeight: "37px",
+  fontSize: "30px",
+  color:"#FFFFFF",
+  fontStyle: "normal",
+  textAlign:"left",
+  marginLeft:"74px",
+  paddingTop:"85px",
 };
 const apply = {
     width : "425px",
@@ -63,28 +73,28 @@ const apply = {
     background: "#FFFFFF",
 };
 const formStyle = {
-  width: "635px",
+  width: "1168px",
   height: "88px",
   border: "1px solid #000000",
   boxSizing:"borderBox",
   backgroundColor:"transparent",
   marginTop:"22px",
-  marginLeft:"88px",
+  marginLeft:"93px",
   color:"#000000"
   };
-  const buttonStyle = { width: "402px"
+  const buttonStyle = { width: "289px"
 , height: "76px",fontFamily: "Montserrat",
-fontWeight: 600,
+fontWeight: 300,
 lineHeight: "37px",
 fontSize: "24px",
-color:"#8CD6D1",
+color:"#FFFFFF",
 fontStyle: "normal",
-background: "#FFFFFF",
+background: "#8CD6D1",
 borderRadius: "35px",
 marginTop:"14px",
 border: "1px solid #000000",
 boxSizing:"borderBox",
-marginLeft:"88px",
+marginLeft:"980px",
  };
 class CentralText extends Component {
   constructor(props) {
@@ -152,25 +162,47 @@ class CentralText extends Component {
                     </Grid.Column>
 
                     <Grid.Column style={{marginLeft:"484px",marginTop:"-250px"}}>
-                      <Button style={apply} circular>APPLY HERE</Button>
+                      <Button style={apply} circular>APPLY</Button>
                     </Grid.Column>
   </Grid.Row>
   </Grid>
-  <div style={{width:"100%",height:"206px",backgroundColor:"white",paddingRight:"2000px",marginTop:"229px"}}>
-  <Header style={{marginLeft:"64px",font:"Montserrat",fontStyle:"normal",fontWeight:"600",fontSize:"64px",lineHeight:"78px",color:"#8CD6D1",width:"289px"}}>
-    about us
+  <div style={{width:"100%",height:"493px",backgroundColor:"white",paddingRight:"2000px",marginTop:"229px"}}>
+  <Header style={{marginLeft:"74px",font:"Montserrat",fontStyle:"normal",fontWeight:"600",fontSize:"64px",lineHeight:"78px",color:"#8CD6D1",width:"289px",paddingTop:"69px"}}>
+    About Us
   </Header>
 
+<div style={{fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"300px",fontSize:"48px",lineHeight:"59px",color:"#000000",width:"1082px",marginLeft:"74px"}}>
+Building the next generation of data science leaders, educators, and change-makers.
+</div>
+<Link to="/about">
+<div style={{fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"600px",fontSize:"36px",lineHeight:"44px",color:"#0376FD",width:"364px",height:"38px",marginLeft:"1065px"}}>
+  <span>Learn More > </span>
+</div>
+</Link>
   </div>
   <div columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${edu})`,}}>
   <div style={overlaytext}>
   educate.
   </div>
+  <div style={underlaytext}>
+  <Link to="/acadev"> <div style={{color:"#FFFFFF"}}>  Learn more about our Academic Development programs >> </div>  </Link>
+ <Link to="/decal"> <div style={{marginTop:"29px",color:"#FFFFFF"}}>
+  Check out our DeCal >>
+  </div>
+  </Link>
+    </div>
 </div>
 <div columns={1}style={{width:"2000px",height:"554px",backgroundImage:`url(${collab})`}}>
 <div style={overlaytext}>
-  collaborate.
-  </div></div>
+  innovate.
+  </div>
+  <Link to="/consulting">
+  <div style={underlaytext}>
+  Learn more about our consulting projects >>
+  </div>
+  </Link>
+  
+  </div>
 <div columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${socialize})`}}>
 <div style={overlaytext}>
   socialize.
@@ -181,16 +213,24 @@ class CentralText extends Component {
   engage.
   </div>
 </div>
-<div style={{width:"2000px",height:"1019px",backgroundColor:"white"}}>
-
-
-<div style={{marginLeft:"64px",font:"Montserrat",fontStyle:"normal",fontWeight:"600",fontSize:"64px",lineHeight:"78px",color:"#8CD6D1",width:"1400px",paddingTop:"398px"}}>
-subscribe to our newsletter to get updates on what we do
+<div style={{width:"2000px",height:"1246px",backgroundColor:"white"}}>
+<div style={{marginLeft:"93px",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"600",fontSize:"48px",lineHeight:"59px",color:"#8CD6D1",paddingTop:"103px"}}>
+Get Involved
 </div>
+<span style={{marginLeft:"93px",fontWeight:"300",fontSize:"24px",lineHeight:"29px",fontFamily:"Montserrat"}}>
+Collaborate with us and lets build the change-makers of tomorrow!
+</span>
+
+<div style={{marginLeft:"93px",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"600",fontSize:"48px",lineHeight:"59px",color:"#8CD6D1",width:"1400px",paddingTop:"398px"}}>
+Subscribe to our newsletter to get updates on what we do
+</div>
+<span style={{marginLeft:"93px",fontWeight:"300",fontSize:"24px",lineHeight:"29px",fontFamily:"Montserrat"}}>
+Collaborate with us and lets build the change-makers of tomorrow!
+</span>
 <Form >
                               <Input style={formStyle}  placeholder={'E-mail'} />
                               <Form.Button rounded style={buttonStyle}>
-                                  SUBMIT
+                                  Submit
                               </Form.Button>
                           </Form>
                           <div>

@@ -83,6 +83,8 @@ const link = {
    // height: "800px",
     marginBottom:"10px",
     marginleft:"20px",
+    textAlign:"center",
+
 };
 const imagestyle = { 
   height: "auto",

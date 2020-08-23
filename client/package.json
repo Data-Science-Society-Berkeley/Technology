@@ -15,6 +15,7 @@
     "react-google-calendar-api": "^1.1.0",
     "react-helmet": "^5.2.1",
     "react-password-strength-bar": "^0.3.0",
+    "react-resize-image": "^1.0.4",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.0.1",
     "semantic-ui-react": "^0.87.3",
