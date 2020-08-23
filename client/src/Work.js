@@ -138,10 +138,10 @@ class Work extends Component {
     <div style={link}>
     Subscribe to our external calendar to keep up to date on all of our public events via Google Calendar!
     </div>
-
+    <div style={{textAlign:"center"}}>
     <Header style={mymidtext}> Past Events </Header>
-    <Grid style={{marginLeft:"101px"}}>
-    <Grid.Row>
+    <Grid style={{marginLeft:"101px"}} centered >
+    <Grid.Row columns={1}>
     <Image>
 
     </Image>
@@ -200,6 +200,7 @@ Facebook Page Link
 
 
     </Grid>
+    </div>
 
   </div>
 

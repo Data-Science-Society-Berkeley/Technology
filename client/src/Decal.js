@@ -29,7 +29,7 @@ const mybigtext = {
     width:"438px",
     fontStyle: "normal",
     textAlign:"left",
-    marginLeft:"74px",
+    marginLeft:"124px",
     marginBottom:"42px",
 };
 
@@ -140,7 +140,8 @@ Welcome to Data Science Society at Berkeley’s very own DeCal: Essential Tools 
 
 This course aims to expose students to essential data science and statistical modeling/Machine learning concepts that will not only make them a lot more employable but will also be very relevant to them irrespective of what they end up pursuing. There is a strong focus on building a statistical intuition without delving into the arcane math/programming that goes behind a lot of models using libraries like sci-kit learn.
 </div>
-       <Button.Group style={{marginLeft:"292px"}}>
+<div style={{textAlign:"center"}}>
+       <Button.Group style={{margin:"auto"}}>
           <Button style={button}>
           Course Listing
           </Button>
@@ -150,10 +151,11 @@ This course aims to expose students to essential data science and statistical mo
           </Link> 
           </Button>
         </Button.Group>
+        </div>
        <Header style={link}>
        DeCal Co-Directors
        </Header>   
-       <Card.Group style={{marginLeft:"120px"}}>
+       <Card.Group style={{marginLeft:"360px"}}>
        <Card style={cardstyle}> <Image style={imagestyle} src={kate}/>    
        <Card.Content>
 <Card.Header style={textstyle}>Kate Miller</Card.Header>
@@ -212,17 +214,20 @@ This course aims to expose students to essential data science and statistical mo
       </Card.Content>
 </Card>
 </Card.Group>
-       <div style={{marginLeft:"249px",marginTop:"40px"}}>
-       <div >
+     <div style={{textAlign:"center"}}>
+       <div style={{margin:"auto"}}>
          <span style={{fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px"}}>6 </span> <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"386px",font:"Montserrat"}}>Semesters Completed</span>
        <span style={{marginLeft:"151px",fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px",fontStyle:"normal",fontWeigt:"normal"}}> 400+ <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"227px",font:"Montserrat"}}>Students Taught</span> </span>
        </div>
        </div>
   </div>
-  <Header style={{fontSize:"30px",lineHeight:"37px",font:"Montserrat",marginLeft:"613px",fontStyle:"normal",fontWeight:"normal"}}>
+  <div style={{textAlign:"center"}}>
+  <Header style={{fontSize:"30px",lineHeight:"37px",font:"Montserrat",margin:"auto",fontStyle:"normal",fontWeight:"normal"}}>
     Sponsored By
   </Header>
-  <Image.Group style={{marginLeft:"108px",marginBottom:"73px"}}>
+  </div>
+  <div style={{textAlign:"center"}}>
+  <Image.Group style={{margin:"auto",marginBottom:"73px"}}>
     <Image style={{marginRight:"70px"}}src={decal}>
 
     </Image>
@@ -233,6 +238,7 @@ This course aims to expose students to essential data science and statistical mo
       
       </Image>
   </Image.Group>
+  </div>
   </div>
 
 )

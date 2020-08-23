@@ -312,7 +312,7 @@ lineHeight: "29px"}}>
        <Header style={link}>
        General Member Course Staff
        </Header>   
-       <Card.Group style={{marginLeft:"120px"}}>
+       <Card.Group style={{marginLeft:"360px"}}>
 <Card style={cardstyle}>    <Image  style={imagestyle} src={alleanna}  />
 <Card.Content>
 <Card.Header style={textstyle}>Alleanna Clark</Card.Header>

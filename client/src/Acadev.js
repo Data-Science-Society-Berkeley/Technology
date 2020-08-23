@@ -139,8 +139,8 @@ fontWeight: "300",
 fontSize: "24px",
 lineHeight: "29px"}}>
 The academic development committee hosts a variety of educational workshops for the greater campus community, and directs our general membership (GM) program open to all skill levels and students. We run the workshops in a collaborative setting to encourage learning with peers and to connect students across disciplines. We also partner with other campus organizations such as the Haas Data Science club to provide tailored workshops to their student base. The GM program provides members with a mentor and weekly lectures to work on a semester-long project to put skills into practice, especially those not always emphasized in course curriculum and present at a Berkeley Data Science Research Symposium to complete the semester.         </div>
-        <Button.Group style={{marginLeft:"210px"}}>
-          <Button style={button}>
+<div style={{textAlign:"center"}}>
+       <Button.Group style={{margin:"auto"}}>          <Button style={button}>
           Past GM Projects
           </Button>
           <Button style={button}>
@@ -152,10 +152,11 @@ The academic development committee hosts a variety of educational workshops for 
           Past Workshops
           </Button>
         </Button.Group>
+        </div>
        <Header style={link}>
        Acadev Co-Directors
        </Header>
-       <Card.Group style={{marginLeft:"120px"}}>
+       <Card.Group style={{marginLeft:"360px"}}>
 <Card style={cardstyle}>    <Image  style={imagestyle} src={alleanna}  />
 <Card.Content>
 <Card.Header style={textstyle}>Alleanna Clark</Card.Header>
@@ -214,8 +215,8 @@ The academic development committee hosts a variety of educational workshops for 
       </Card.Content>
 </Card>
 </Card.Group>
-       <div style={{marginLeft:"249px"}}>
-       <div >
+<div style={{textAlign:"center"}}>
+       <div style={{margin:"auto"}}>
          <span style={{fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px"}}>4 </span> <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"386px",font:"Montserrat"}}>Semesters Completed</span>
        <span style={{marginLeft:"51px",fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px"}}> 350+ <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"227px",font:"Montserrat"}}>Past General Members</span> </span>
        <div>

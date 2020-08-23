@@ -370,7 +370,9 @@ Consulting Blurb
         <Grid style={{marginLeft:"164px"}}>
         <Grid.Row columns={1}>
         <Grid.Column>
+        <div>
         <Header style={mymidtext}> Client Testimonials</Header>
+        </div>
         </Grid.Column>
         </Grid.Row>
         <Grid.Row>

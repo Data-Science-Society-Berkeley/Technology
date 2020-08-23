@@ -452,7 +452,7 @@ Reading Quizzes: 10% (2 Drops)
        <Header style={link}>
        DeCal Course Staff
        </Header>   
-       <Card.Group style={{marginLeft:"120px"}}>
+       <Card.Group style={{marginLeft:"360px"}}>
        <Card style={cardstyle}> <Image style={imagestyle} src={kate}/>    
        <Card.Content>
 <Card.Header style={textstyle}>Kate Miller</Card.Header>
@@ -511,7 +511,7 @@ Reading Quizzes: 10% (2 Drops)
       </Card.Content>
 </Card>
 </Card.Group>
-       <div style={{marginLeft:"249px",marginTop:"40px"}}>
+       <div style={{marginLeft:"530px",marginTop:"40px"}}>
        <div >
          <span style={{fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px"}}>6 </span> <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"386px",font:"Montserrat"}}>Semesters Completed</span>
        <span style={{marginLeft:"151px",fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px",fontStyle:"normal",fontWeigt:"normal"}}> 400+ <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"227px",font:"Montserrat"}}>Students Taught</span> </span>
