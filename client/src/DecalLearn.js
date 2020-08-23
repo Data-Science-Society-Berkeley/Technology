@@ -448,17 +448,17 @@ Reading Quizzes: 10% (2 Drops)
 </div>
 
        <Header style={link}>
-       Decal Course Staff
+       DeCal Course Staff
        </Header>   
        <Card.Group style={{marginLeft:"120px"}}>
        <Card style={cardstyle}> <Image style={imagestyle} src={kate}/>    
        <Card.Content>
 <Card.Header style={textstyle}>Kate Miller</Card.Header>
 <Card.Meta>
-        <span className='date'>Director of Decal</span>
+        <span className='date'>Director of DeCal</span>
       </Card.Meta>
       <Card.Description>
-        Kate is a director of Decal.
+        Kate is a director of DeCal.
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
@@ -474,7 +474,7 @@ Reading Quizzes: 10% (2 Drops)
 <Card.Content>
 <Card.Header style={textstyle}>Uma Krishnaswamy</Card.Header>
 <Card.Meta>
-        <span className='date'>Director of Decal</span>
+        <span className='date'>Director of DeCal</span>
       </Card.Meta>
       <Card.Description>
       Alleanna is a director of Academic Development.      
@@ -493,10 +493,10 @@ Reading Quizzes: 10% (2 Drops)
 <Card.Content>
 <Card.Header style={textstyle}>Gayatri Babel</Card.Header>
 <Card.Meta>
-        <span className='date'>Director of Decal</span>
+        <span className='date'>Director of DeCal</span>
       </Card.Meta>
       <Card.Description>
-      Stephanie is a director of Decal.
+      Stephanie is a director of DeCal.
             </Card.Description>
     </Card.Content>
     <Card.Content extra>

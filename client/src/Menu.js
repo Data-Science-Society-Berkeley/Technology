@@ -187,7 +187,7 @@ class NavBar extends Component {
             <Dropdown.Item icon='sitemap' text='Overview' />
             </Link>
           <Link to="/decal" style={linkStyling}>
-            <Dropdown.Item icon='book' text='Decal' />
+            <Dropdown.Item icon='book' text='DeCal' />
             </Link>
             <Link to="/acadev" style={linkStyling}>
             <Dropdown.Item icon='globe' text='Acadev' />
@@ -232,7 +232,7 @@ class NavBar extends Component {
             active={activeItem === 'login'}
             onClick={this.handleItemClick} style={navbar}>
             <Link style={linkStyling} to="login">
-            member login
+            login
             </Link>
             </Menu.Item>
             <Menu.Item header >

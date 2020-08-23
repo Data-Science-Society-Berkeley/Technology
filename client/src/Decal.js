@@ -120,7 +120,7 @@ class Decal extends Component {
     return (
         <div>
 
-        <Header style={mybigtext}> Decal</Header>
+        <Header style={mybigtext}> DeCal</Header>
         <div style={{marginBottom:"50px",marginLeft:"64px", 
 fontFamily: "Montserrat",
 fontStyle: "normal",
@@ -148,17 +148,17 @@ This course aims to expose students to essential data science and statistical mo
           </Button>
         </Button.Group>
        <Header style={link}>
-       Decal Co-Directors
+       DeCal Co-Directors
        </Header>   
        <Card.Group style={{marginLeft:"120px"}}>
        <Card style={cardstyle}> <Image style={imagestyle} src={kate}/>    
        <Card.Content>
 <Card.Header style={textstyle}>Kate Miller</Card.Header>
 <Card.Meta>
-        <span className='date'>Director of Decal</span>
+        <span className='date'>Director of DeCal</span>
       </Card.Meta>
       <Card.Description>
-        Kate is a director of Decal.
+        Kate is a director of DeCal.
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
@@ -174,10 +174,10 @@ This course aims to expose students to essential data science and statistical mo
 <Card.Content>
 <Card.Header style={textstyle}>Uma Krishnaswamy</Card.Header>
 <Card.Meta>
-        <span className='date'>Director of Decal</span>
+        <span className='date'>Director of DeCal</span>
       </Card.Meta>
       <Card.Description>
-      Uma is a director of Decal.      
+      Uma is a director of DeCal.      
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
@@ -193,10 +193,10 @@ This course aims to expose students to essential data science and statistical mo
 <Card.Content>
 <Card.Header style={textstyle}>Gayatri Babel</Card.Header>
 <Card.Meta>
-        <span className='date'>Director of Decal</span>
+        <span className='date'>Director of DeCal</span>
       </Card.Meta>
       <Card.Description>
-      Gayatri is a director of Decal.
+      Gayatri is a director of DeCal.
             </Card.Description>
     </Card.Content>
     <Card.Content extra>

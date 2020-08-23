@@ -55,7 +55,7 @@ const apply = {
     lineHeight: "55px",
     fontSize: "36px",
     borderRadius: "40px",
-    color:"#3F6491",
+    color:"#FFC54A",
     fontStyle: "normal",
     background: "#FFFFFF",
 };

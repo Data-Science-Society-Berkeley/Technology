@@ -94,7 +94,7 @@ class Commit extends Component {
     <Grid.Row columns={4}>
                 <Grid.Column>
                     <div style={{height:"588px",width:"284px",border: "1px solid #000000",boxSizing: "borderBox",backgroundImage:`url(${decal})`}}> 
-                    <Header style={mymidtext}> <Link to="decal"style={link}>Decal</Link></Header>
+                    <Header style={mymidtext}> <Link to="decal"style={link}>DeCal</Link></Header>
                     </div>
                 </Grid.Column>
                 <Grid.Column>

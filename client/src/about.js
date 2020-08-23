@@ -106,10 +106,10 @@ const leadershipCards = [
 <Card.Content>
       <Card.Header style={textstyle}>Eric Gan</Card.Header>
       <Card.Meta>
-        <span className='date'>IVP</span>
+        <span className='date'>Internal Vice President</span>
       </Card.Meta>
       <Card.Description>
-        Eric is the IVP of DSS.
+        Eric is the Internal Vice President of DSS.
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
@@ -125,10 +125,10 @@ const leadershipCards = [
 <Card.Content>
 <Card.Header style={textstyle}>Varun Murthy</Card.Header>
 <Card.Meta>
-        <span className='date'>EVP</span>
+        <span className='date'>External Vice President</span>
       </Card.Meta>
       <Card.Description>
-        Varun is the EVP of DSS.
+        Varun is the External Vice President of DSS.
       </Card.Description>
     </Card.Content>
     <Card.Content extra>
@@ -201,7 +201,7 @@ const leadershipCards = [
 <Card.Content>
 <Card.Header style={textstyle}>Kate Miller</Card.Header>
 <Card.Meta>
-        <span className='date'>Director of Decal</span>
+        <span className='date'>Director of DeCal</span>
       </Card.Meta>
       <Card.Description>
         Kate is a director of DeCal.
@@ -220,7 +220,7 @@ const leadershipCards = [
 <Card.Content>
 <Card.Header style={textstyle}>Uma Krishnawamy</Card.Header>
 <Card.Meta>
-<span className='date'>Director of Decal</span>
+<span className='date'>Director of DeCal</span>
       </Card.Meta>
       <Card.Description>
       Uma is a director of DeCal.
@@ -239,7 +239,7 @@ const leadershipCards = [
 <Card.Content>
 <Card.Header style={textstyle}>Gayatri Babel</Card.Header>
 <Card.Meta>
-<span className='date'>Director of Decal</span>
+<span className='date'>Director of DeCal</span>
       </Card.Meta>
       <Card.Description>
       Gayatri is a director of DeCal.
@@ -247,10 +247,10 @@ const leadershipCards = [
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:gbabel@berkeley.edu">
-        <Icon name='mail' />
+        <Icon size="small" name='mail' />
         </a>
         <a href="https://www.linkedin.com/in/gayatri-babel/">
-        <Icon name='linkedin' />
+        <Icon size="small" name='linkedin' />
         </a>
       </Card.Content>
 </Card>,
