@@ -6,6 +6,10 @@ import edu from './landing/AcaDev.png'
 import collab from './landing/Rectangle66.png'
 import socialize from './landing/Rectangle69.png'
 import socialgood from './landing/SocialGood.png'
+import topright from './landing/WebsiteLandingPage-2.png'
+import bottomright from './landing/WebsiteLandingPage-2rotate.png'
+
+
 import ocf from  './Backgrounds/ocf-hosted-penguin.svg'
 
 let endpoint = "https://dssberkeley.com/";
@@ -181,17 +185,23 @@ class CentralText extends Component {
       <div>
 <Grid centered divided='vertically' style={gridoffset}>
     <Grid.Row columns={2}>
-                <Grid.Column>
+                <Grid.Column width={8}>
                     <Header as='h1'style={mybigtext}>
                         Data Science Society
                         </Header>
                         <Header as= 'h1' style={mymidtext}>
                           At Berkeley
                         </Header>
+                        <Image style ={{height:"355px",marginTop:"300px",marginRight:"25px"}}  floated="left" src={bottomright}>
+
+                        </Image>
                     </Grid.Column>
 
-                    <Grid.Column textAlign="bottom" floated="right" verticalAlign="middle">
-                      <Button.Group style={{marginRight:"10px"}}>
+                    <Grid.Column textAlign="center" floated="right" verticalAlign="middle">
+                    <Image style ={{height:"355px",marginBottom:"94px",marginTop:"-400px",marginRight:"25px"}} floated="right" src={topright}>
+
+                    </Image>
+                      <Button.Group style={{marginRight:"100px"}} >
 
                       <Button style={apply} circular>APPLY</Button>
                       <Button style={learn} circular>LEARN MORE </Button>
