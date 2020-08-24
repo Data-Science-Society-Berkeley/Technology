@@ -102,12 +102,12 @@ class NavBar extends Component {
         Home
       </Menu.Item>
       <Menu.Item as='a'>
-        <Icon name='gamepad' />
-        Games
+        <Icon name='book' />
+        About
       </Menu.Item>
       <Menu.Item as='a'>
-        <Icon name='camera' />
-        Channels
+        <Icon name='group' />
+        Committees
       </Menu.Item>
       </Sidebar>
         <Sidebar.Pusher
@@ -118,9 +118,9 @@ class NavBar extends Component {
         
           <Menu fixed="top" inverted>
             <Menu.Item>
-              <Image size="mini" src="https://react.semantic-ui.com/logo.png" />
+              <Image size="mini" src={logo} />
             </Menu.Item>
-            <Menu.Item onClick={this.handleToggle}>
+            <Menu.Item position="right" onClick={this.handleToggle}>
               <Icon name="sidebar" />
             </Menu.Item>
             {this.props.children}

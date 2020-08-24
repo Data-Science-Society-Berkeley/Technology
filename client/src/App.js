@@ -18,7 +18,9 @@ import Education from './Education.js'
 import Service from './Services.js'
 import GeneralMember from './generalmember.js'
 import Culture from './Culture.js'
+
 import MobileMenu from './mobilemenu.js'
+import MobileLanding from './mobilelanding.js'
 
 
 
@@ -87,7 +89,11 @@ render () {
     if (this.state.mobile){
       return (<Switch>
         <Route  path ='/' render={(props) => 
+        <div>
+
         <MobileMenu {...props}/>
+        <MobileLanding {...props}/>
+        </div>
         } 
         />
         </Switch>)
