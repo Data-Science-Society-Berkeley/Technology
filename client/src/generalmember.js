@@ -279,17 +279,27 @@ Intro to Project Development
     render() {
     return (
         <div>
-
+        <Grid centered>
+        <Grid.Row>
         <Header style={mybigtext}> General Membership Program | Fall 2020</Header>
+        </Grid.Row>
+
         <div style={{marginBottom:"50px",marginLeft:"64px", 
 fontFamily: "Montserrat",
 fontStyle: "normal",
 fontWeight: "300",
 fontSize: "24px",
 lineHeight: "29px"}}>
+
+<Grid.Row>
+
   <div >
 <b style={mymidtext}>General Membership</b>  | Fall 2020       </div>
+        </Grid.Row>
+        <Grid.Row>
+
 <div style={{marginLeft:"197px"}}>
+
 Welcome to Data Science Society at Berkeley&rsquo;s very own General Member Program: Essential Tools for Data Scientists! This course is geared towards exposing students to essential data science skills that are
                         demanded in industry and are meant to be taken as a follow-up or alongside Data 8. The course covers the bits of data science and machine learning that aren’t traditionally taught in the classroom
                         like advanced Pandas and Seaborn, and visualization dashboards that will challenge you, sharpen your skills and elevate you in the internship game.
@@ -297,7 +307,10 @@ Welcome to Data Science Society at Berkeley&rsquo;s very own General Member Prog
                         In this course, you will learn everything you need to know from the ground up from an introduction on Python, to software like Excel and Tableau, to other essential skills through a personalized
                         data science project that includes data cleaning, visualization, statistical analysis, and machine learning.
 </div>
+        </Grid.Row>
+
 <div style={{marginLeft:"0px"}}>
+<Grid.Row>
 
 <Header style={{marginLeft:"60px",fontFamily: "Montserrat",
 fontStyle: "normal",
@@ -306,12 +319,23 @@ fontSize: "24px",
 lineHeight: "29px"}}>
   Schedule
 </Header>
+        </Grid.Row>
+        <Grid.Row>
+
 {this.loadTable()}
+</Grid.Row>
+
+
 </div>
+
+<Grid.Row>
 
        <Header style={link}>
        General Member Course Staff
        </Header>   
+       </Grid.Row>
+       <Grid.Row>
+
        <Card.Group style={{marginLeft:"360px"}}>
 <Card style={cardstyle}>    <Image  style={imagestyle} src={alleanna}  />
 <Card.Content>
@@ -371,7 +395,10 @@ lineHeight: "29px"}}>
       </Card.Content>
 </Card>
 </Card.Group>
+</Grid.Row>
+
   </div>
+  </Grid>
   </div>
 
 )

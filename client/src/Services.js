@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { Image,Grid,Card, Header, Form, Input, Icon, Button,Accordion } from "semantic-ui-react";
+import { Image,Grid,Card, Header, Form, Input, Icon, Button,Accordion,Segment } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
 import berk from './Decal Images/berkeleyischool-logo-alternate-blue-lg.png'
 import datacamp from './Decal Images/datacamp-logo 1.png' 
@@ -133,7 +133,7 @@ class Education extends Component {
     <Grid.Row columns={2}>
                 <Grid.Column>
 
-                    <div style={{height:"906px",width:"588px",border: "1px solid #000000",boxSizing: "borderBox",font:"Montserrat"}}>
+                    <Segment style={{height:"906px",width:"588px",border: "1px solid #000000",boxSizing: "borderBox",font:"Montserrat"}}>
                     <Header style={mymidtext}>
                     Consulting
                     </Header>
@@ -141,12 +141,12 @@ class Education extends Component {
                     Consulting teams consist of 2 Project Managers, 4-6 Consultants, and 1 Project Mentor, all of whom sign non-disclosure agreements. We engage with 5 clients each semester.
 
 <br></br><br></br>Contact us below to receive our consulting pitch slide deck and work samples.                  </div>
-                    </div>
+                    </Segment>
 
                 </Grid.Column>
                 <Grid.Column>
                     <Grid.Row>
-                    <div style={{height:"906px",width:"588px",border: "1px solid #000000",boxSizing: "borderBox",font:"Montserrat"}}>
+                    <Segment style={{height:"906px",width:"588px",border: "1px solid #000000",boxSizing: "borderBox",font:"Montserrat"}}>
                     <Header style={mymidtext}>
                     Sponsorships
                     </Header>
@@ -154,7 +154,7 @@ class Education extends Component {
                     We offer sponsorship opportunities for our clients. We possess a significant footprint on campus through our 2-unit course for 90 students, weekly workshops open to all UC Berkeley students with an average of 50 attendees, and highly coveted sponsored events.
 
 <br/> <br/>Contact us below to receive our sponsorship booklet.                    </div>                 
-                    </div>
+                    </Segment>
                     </Grid.Row>
 
               

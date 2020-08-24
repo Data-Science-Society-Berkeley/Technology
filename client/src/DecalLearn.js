@@ -381,14 +381,20 @@ class DecalLearn extends Component {
     render() {
     return (
         <div>
+        <Grid centered>
+<Grid.Row>
 
         <Header style={mybigtext}> DeCal: Essential Tools for Data Science | Fall 2020 </Header>
+        </Grid.Row>
+
         <div style={{marginBottom:"50px",marginLeft:"64px", 
 fontFamily: "Montserrat",
 fontStyle: "normal",
 fontWeight: "300",
 fontSize: "24px",
 lineHeight: "29px"}}>
+        <Grid.Row>
+
   <div >
 <b style={mymidtext}>Essential Tools for Data Scientists</b>  | Spring 2020       </div>
 <div style={{marginLeft:"197px"}}>
@@ -399,7 +405,10 @@ Welcome to Data Science Society at Berkeley&rsquo;s very own DeCal: Essential To
                         In this course, you will learn everything you need to know from the ground up from an introduction on Python, to software like Excel and Tableau, to other essential skills through a personalized
                         data science project that includes data cleaning, visualization, statistical analysis, and machine learning.
 </div>
+        </Grid.Row>
+
 <div style={{marginLeft:"0px"}}>
+<Grid.Row>
 
 <Header  >
   <b style={mymidtext}>Logistics</b>
@@ -422,6 +431,9 @@ Welcome to Data Science Society at Berkeley&rsquo;s very own DeCal: Essential To
 </List.Item>
 
 </List>
+        </Grid.Row>
+        <Grid.Row>
+
 <Header  >
   <b style={mymidtext}> Prerequisites</b>
 </Header>
@@ -446,8 +458,14 @@ Reading Quizzes: 10% (2 Drops)
 <Header style={{marginLeft:"60px"}}>
   Schedule
 </Header>
+        </Grid.Row>
+        <Grid.Row>
+
 {this.loadTable()}
+</Grid.Row>
+
 </div>
+        <Grid.Row>
 
        <Header style={link}>
        DeCal Course Staff
@@ -511,13 +529,16 @@ Reading Quizzes: 10% (2 Drops)
       </Card.Content>
 </Card>
 </Card.Group>
-       <div style={{marginLeft:"530px",marginTop:"40px"}}>
+
+       <div style={{marginTop:"40px"}}>
        <div >
          <span style={{fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px"}}>6 </span> <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"386px",font:"Montserrat"}}>Semesters Completed</span>
-       <span style={{marginLeft:"151px",fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px",fontStyle:"normal",fontWeigt:"normal"}}> 400+ <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"227px",font:"Montserrat"}}>Students Taught</span> </span>
+       <span style={{fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px",fontStyle:"normal",fontWeigt:"normal"}}> 400+ <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"227px",font:"Montserrat"}}>Students Taught</span> </span>
        </div>
        </div>
+       </Grid.Row>
   </div>
+  </Grid>
   </div>
 
 )

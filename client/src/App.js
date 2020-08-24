@@ -1,6 +1,6 @@
 import React, { Fragment, Component  } from 'react';
 import "./App.css";
-import { Button,Container, Menu,Image } from "semantic-ui-react";
+import { Button,Container, Menu,Image,Header } from "semantic-ui-react";
 import Login from './Login';
 import Registration from './Register';
 import About from './about'
@@ -67,15 +67,35 @@ class App extends Component {
     });
       }
     };
+    resize() {
+      let currentMobile = (window.innerWidth <= 760);
+      if (currentMobile !== this.state.mobile) {
+        this.setState({mobile: currentMobile});
+      }
+    }
+    componentDidMount(){
+      window.addEventListener("resize", this.resize.bind(this));
+      this.resize();
+    }
 render () {
   ReactGA.pageview(window.location.pathname + window.location.search);
     const { redirect  } = this.state;
     // redirecting to the driver page, because the zipcode has been entered and the this.state.vehicleCompletion is True
     // encodes our logic for loading the correct components with respect to each route
-    switch(this.state["page"]) {
-      case '/login':
-        return <Redirect to='/login'/>;
-      default:
+    if (this.state.mobile){
+      return (<Switch>
+        <Route exact path ='/' render={(props) => 
+        <div>
+        <Menu.Menu  stackable>
+        </Menu.Menu>
+        <Header>
+          DSS hasn't come to mobile yet! Please use your laptop
+        </Header>
+        </div>
+        } 
+        />
+        </Switch>)
+
     }
     return (
         <Router>

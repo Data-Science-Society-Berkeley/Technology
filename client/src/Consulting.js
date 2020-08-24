@@ -71,7 +71,6 @@ const mymidtext = {
   fontSize: "36px",
   color:"#8CD6D1",
   fontStyle: "normal",
-  marginLeft:"450px",
   marginTop:"19px",
 };
 const consult = {
@@ -354,9 +353,13 @@ Aadiraj is a PM @ DSS.                  </Card.Description>
                                     </Card>]
     return (
         <div>
+        <Grid centered>
+        <Grid.Row>
 
         <Header style={mybigtext}> Consulting</Header>
-        <div style={{marginBottom:"50px",marginLeft:"84px", 
+        </Grid.Row>
+<Grid.Row>
+        <div style={{marginBottom:"50px", 
 fontFamily: "Montserrat",
 fontStyle: "normal",
 fontWeight: "300",
@@ -364,16 +367,15 @@ fontSize: "24px",
 lineHeight: "29px"}}>
 Consulting Blurb
 </div>
+        </Grid.Row>
+<Grid.Row>
+
         <Card.Group itemsPerRow={3} style={{marginLeft:"50px"}}>
         {temp}
         </Card.Group>
-        <Grid style={{marginLeft:"164px"}}>
-        <Grid.Row columns={1}>
-        <Grid.Column>
-        <div>
+        </Grid.Row>
+        <Grid.Row>
         <Header style={mymidtext}> Client Testimonials</Header>
-        </div>
-        </Grid.Column>
         </Grid.Row>
         <Grid.Row>
         <Image style={{height:"90px",width:"101px"}} src={paypal}>

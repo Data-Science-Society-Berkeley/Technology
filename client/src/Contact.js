@@ -12,12 +12,11 @@ import {
       Segment,
       Card,
       Label,
-      Checkbox,
+      Checkbox,Input
 
 } from 'semantic-ui-react';
 let endpoint = "https://dssberkeley.com/";
 const gridoffset = {
-    marginLeft:"164px",
     marginTop: "67px",
     textAlign:"center",
     fontFamily: "Montserrat",
@@ -30,7 +29,8 @@ lineHeight: "110px",
     color:"#FFFBFB",
 width:"438px",
 fontStyle: "normal",
-textAlign:"left"
+textAlign:"left",
+marginLeft:"10%"
 
 
 };
@@ -42,7 +42,9 @@ fontSize: "50px",
 color:"#FFFFFF",
 width:"300px",
 fontStyle: "normal",
-textAlign:"left"
+textAlign:"left",
+marginLeft:"10%"
+
 };
 const formStyle = {
     width: "635px",
@@ -154,16 +156,16 @@ class Login extends Component {
                             </Header>
                         </Grid.Column>
 
-                        <Grid.Column style={{marginLeft:"784px",marginTop:"-400px"}}>
+                        <Grid.Column floated="left">
                           <Form >
-                              <input id="text" style={formStyle} placeholder='Name' />
-                              <input id="text" style={formStyle}  placeholder='E-mail' />
+                              <Form.Input width={6}  placeholder='Name' />
+                              <Form.Input width={6} placeholder='E-mail' />
 
-                              <Form.Field style={{marginTop:"22px"}}>
-                              <Form.TextArea id="text" style={formStyle} placeholder='Message' />
+                              <Form.Field width={6} style={{marginTop:"22px"}}>
+                              <Form.TextArea width={6} placeholder='Message' />
                               </Form.Field>
 
-                              <Form.Button rounded style={buttonStyle}>
+                              <Form.Button width={6} rounded style={buttonStyle}>
                                   SUBMIT
                               </Form.Button>
                           </Form>
