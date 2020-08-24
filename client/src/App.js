@@ -18,6 +18,8 @@ import Education from './Education.js'
 import Service from './Services.js'
 import GeneralMember from './generalmember.js'
 import Culture from './Culture.js'
+import MobileMenu from './mobilemenu.js'
+
 
 
 
@@ -84,14 +86,8 @@ render () {
     // encodes our logic for loading the correct components with respect to each route
     if (this.state.mobile){
       return (<Switch>
-        <Route exact path ='/' render={(props) => 
-        <div>
-        <Menu.Menu  stackable>
-        </Menu.Menu>
-        <Header>
-          DSS hasn't come to mobile yet! Please use your laptop
-        </Header>
-        </div>
+        <Route  path ='/' render={(props) => 
+        <MobileMenu {...props}/>
         } 
         />
         </Switch>)
