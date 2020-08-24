@@ -26,7 +26,7 @@ const mybigtext = {
   lineHeight: "59px",
           fontSize: "48px",
           color:"#8CD6D1",
-    width:"1234px",
+    width:"100%px",
     fontStyle: "normal",
     textAlign:"left",
     marginLeft:"64px",
@@ -381,7 +381,7 @@ class DecalLearn extends Component {
     render() {
     return (
         <div>
-        <Grid centered>
+        <Grid>
 <Grid.Row>
 
         <Header style={mybigtext}> DeCal: Essential Tools for Data Science | Fall 2020 </Header>
@@ -470,7 +470,7 @@ Reading Quizzes: 10% (2 Drops)
        <Header style={link}>
        DeCal Course Staff
        </Header>   
-       <Card.Group style={{marginLeft:"360px"}}>
+       <Card.Group centered style={{}}>
        <Card style={cardstyle}> <Image style={imagestyle} src={kate}/>    
        <Card.Content>
 <Card.Header style={textstyle}>Kate Miller</Card.Header>
@@ -497,7 +497,7 @@ Reading Quizzes: 10% (2 Drops)
         <span className='date'>Director of DeCal</span>
       </Card.Meta>
       <Card.Description>
-      Uma is a director of Academic Development.      
+      Uma is a director of DeCal.      
       </Card.Description>
     </Card.Content>
     <Card.Content extra>

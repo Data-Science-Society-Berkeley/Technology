@@ -279,7 +279,7 @@ Intro to Project Development
     render() {
     return (
         <div>
-        <Grid centered>
+        <Grid>
         <Grid.Row>
         <Header style={mybigtext}> General Membership Program | Fall 2020</Header>
         </Grid.Row>
@@ -336,7 +336,7 @@ lineHeight: "29px"}}>
        </Grid.Row>
        <Grid.Row>
 
-       <Card.Group style={{marginLeft:"360px"}}>
+       <Card.Group centered>
 <Card style={cardstyle}>    <Image  style={imagestyle} src={alleanna}  />
 <Card.Content>
 <Card.Header style={textstyle}>Alleanna Clark</Card.Header>
