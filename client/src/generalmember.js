@@ -341,7 +341,7 @@ lineHeight: "29px"}}>
 <Card.Content>
 <Card.Header style={textstyle}>Alleanna Clark</Card.Header>
 <Card.Meta>
-        <span className='date'>Director of Acadev</span>
+        <span className='date'>Director of Academic Development</span>
       </Card.Meta>
       <Card.Description>
       Alleanna is a director of Academic Development.      
@@ -360,7 +360,7 @@ lineHeight: "29px"}}>
 <Card.Content>
 <Card.Header style={textstyle}>Stephanie Lu</Card.Header>
 <Card.Meta>
-        <span className='date'>Director of Acadev</span>
+        <span className='date'>Director of Academic Development</span>
       </Card.Meta>
       <Card.Description>
       Stephanie is a director of Academic Development.
@@ -379,7 +379,7 @@ lineHeight: "29px"}}>
        <Card.Content>
 <Card.Header style={textstyle}>Roshan Lodha</Card.Header>
 <Card.Meta>
-        <span className='date'>Director of Acadev</span>
+        <span className='date'>Director of Academic Development</span>
       </Card.Meta>
       <Card.Description>
         Roshan is a director of Academic Development.

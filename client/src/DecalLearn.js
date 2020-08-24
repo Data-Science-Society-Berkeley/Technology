@@ -529,13 +529,6 @@ Reading Quizzes: 10% (2 Drops)
       </Card.Content>
 </Card>
 </Card.Group>
-
-       <div style={{marginTop:"40px"}}>
-       <div >
-         <span style={{fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px"}}>6 </span> <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"386px",font:"Montserrat"}}>Semesters Completed</span>
-       <span style={{fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px",fontStyle:"normal",fontWeigt:"normal"}}> 400+ <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"227px",font:"Montserrat"}}>Students Taught</span> </span>
-       </div>
-       </div>
        </Grid.Row>
   </div>
   </Grid>

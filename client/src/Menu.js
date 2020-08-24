@@ -186,14 +186,14 @@ class NavBar extends Component {
             onClick={this.handleItemClick}style={navbar}>
             <Dropdown style={linkStyling} item text='committees'>
           <Dropdown.Menu >
-          <Link to="/decal" style={linkStyling}>
-            <Dropdown.Item icon='book' text='DeCal' />
-            </Link>
-            <Link to="/acadev" style={linkStyling}>
-            <Dropdown.Item icon='pencil' text='Acadev' />
+          <Link to="/acadev" style={linkStyling}>
+            <Dropdown.Item icon='pencil' text='Academic Development' />
             </Link>
             <Link to="/consulting" style={linkStyling}>
             <Dropdown.Item icon='exchange' text='Consulting' />
+            </Link>
+          <Link to="/decal" style={linkStyling}>
+            <Dropdown.Item icon='book' text='DeCal' />
             </Link>
             <Link to="/socialgood" style={linkStyling}>
             <Dropdown.Item icon='like' text='Social Good' />
