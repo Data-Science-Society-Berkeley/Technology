@@ -76,6 +76,7 @@ const link = {
     color:"#8CD6D1",
     fontStyle: "normal",
     textAlign:"center",
+    marginTop:"10px,"
   };
 class DecalLearn extends Component {
   constructor(props) {
