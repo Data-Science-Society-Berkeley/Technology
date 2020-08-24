@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { Image,Grid,Card, Header, Form, Input, Icon, Button } from "semantic-ui-react";
+import { Image,Grid,Card, Header, Form, Input, Icon, Button, GridColumn } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
 import edu from './landing/AcaDev.png'
 import collab from './landing/Rectangle66.png'
@@ -19,9 +19,8 @@ const mybigtext = {
   fontFamily: "Montserrat",
   fontWeight: 600,
   lineHeight: "110px",
-          fontSize: "96px",
+          fontSize: "78px",
           color:"#FFFBFB",
-    width:"438px",
     fontStyle: "normal",
     textAlign:"left",
     marginTop:"35px"
@@ -34,14 +33,13 @@ const mymidtext = {
   lineHeight: "76px",
   fontSize: "50px",
   color:"#FFFFFF",
-  width:"300px",
   fontStyle: "normal",
   textAlign:"left"
 };
 
 const overlaytext = {
   fontFamily: "Montserrat",
-  fontWeight: 600,
+  fontWeight: 500,
   lineHeight: "78px",
   fontSize: "64px",
   color:"#00000",
@@ -52,17 +50,17 @@ const overlaytext = {
 }
 const underlaytext = {
   fontFamily: "Montserrat",
-  fontWeight: 600,
+  fontWeight: 300,
   lineHeight: "37px",
   fontSize: "30px",
-  color:"#FFFFFF",
+  color:"#000000",
   fontStyle: "normal",
   textAlign:"left",
   marginLeft:"74px",
   paddingTop:"85px",
 };
 const apply = {
-    width : "425px",
+    minWidth : "325px",
     fontFamily: "Montserrat",
     fontWeight: 600,
     lineHeight: "55px",
@@ -71,6 +69,18 @@ const apply = {
     color:"#FFC54A",
     fontStyle: "normal",
     background: "#FFFFFF",
+};
+const learn = {
+  minWidth : "325px",
+  fontFamily: "Montserrat",
+  fontWeight: 600,
+  lineHeight: "55px",
+  fontSize: "36px",
+  borderRadius: "40px",
+  color:"#FFC54A",
+  fontStyle: "normal",
+  background: "#FFFFFF",
+  marginLeft:"40px",
 };
 const formStyle = {
   width: "1168px",
@@ -90,12 +100,27 @@ fontSize: "24px",
 color:"#FFFFFF",
 fontStyle: "normal",
 background: "#8CD6D1",
-borderRadius: "35px",
-marginTop:"14px",
-border: "1px solid #000000",
+borderRadius: "40px",
+marginTop:"44px",
 boxSizing:"borderBox",
 marginLeft:"980px",
  };
+ const value_card = {
+  minWidth : "284px",
+  height:"306px",
+  fontFamily: "Montserrat",
+  fontWeight: 300,
+  lineHeight: "55px",
+  fontSize: "36px",
+  borderRadius: "40px",
+  color:"#FFC54A",
+  fontStyle: "normal",
+  background: "#8CD6D1",
+  border: "5px solid #8CD6D1",
+  boxSizing:"border-box",
+  boxShadow:"5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
+  borderRadius:"20px",
+};
 class CentralText extends Component {
   constructor(props) {
     super(props);
@@ -125,32 +150,36 @@ class CentralText extends Component {
     this.setState({ email: value.target.value });
   };
   join(){
-      console.log(14)
-      let email = this.state.email
-      axios
-      .post(
-        endpoint + "/api/joinnow",
-        {
-      email
-        },
-        {
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
-          }
-        }
-      )
-      .then(res => {
-        console.log(res);
-      });
+    return [<Card style={value_card}>
+    <Card.Header style={{fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"600px",fontSize:"48px",lineHeight:"59px",color:"#FFFFFF"}}>
+    1
+    </Card.Header>
+    <Card.Description style={{fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"500px",fontSize:"28px",lineHeight:"34px",color:"#FFFFFF",width:"258px"}}>
+    Contact us for consulting services.
+    </Card.Description>
+    </Card>,<Card style={value_card}>
+    <Card.Header style={{fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"600px",fontSize:"48px",lineHeight:"59px",color:"#FFFFFF"}}>
+    2
+    </Card.Header>
+    <Card.Description style={{fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"500px",fontSize:"28px",lineHeight:"34px",color:"#FFFFFF",width:"258px"}}>
+    Like what we do? Sponsor us today!    </Card.Description>
+    </Card>,<Card style={value_card}>
+    <Card.Header style={{fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"600px",fontSize:"48px",lineHeight:"59px",color:"#FFFFFF"}}>
+    3
+    </Card.Header>
+    <Card.Description style={{fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"500px",fontSize:"28px",lineHeight:"34px",color:"#FFFFFF",width:"258px"}}>
+    Connect with us and let’s host an event!    </Card.Description>
+    </Card>]
   }
     sendData(data) {
         this.props.buttonClick(data);
     };
     render() {
       console.log(this.state.height,this.state.width)
+      let process = this.join()
     return (
       <div>
-<Grid divided='vertically' style={gridoffset}>
+<Grid centered divided='vertically' style={gridoffset}>
     <Grid.Row columns={2}>
                 <Grid.Column>
                     <Header as='h1'style={mybigtext}>
@@ -161,78 +190,104 @@ class CentralText extends Component {
                         </Header>
                     </Grid.Column>
 
-                    <Grid.Column style={{marginLeft:"484px",marginTop:"-250px"}}>
+                    <Grid.Column textAlign="bottom" floated="right" verticalAlign="middle">
+                      <Button.Group style={{marginRight:"10px"}}>
+
                       <Button style={apply} circular>APPLY</Button>
+                      <Button style={learn} circular>LEARN MORE </Button>
+                      </Button.Group>
+
                     </Grid.Column>
   </Grid.Row>
   </Grid>
-  <div style={{width:"100%",height:"493px",backgroundColor:"white",paddingRight:"2000px",marginTop:"229px"}}>
-  <Header style={{marginLeft:"74px",font:"Montserrat",fontStyle:"normal",fontWeight:"600",fontSize:"64px",lineHeight:"78px",color:"#8CD6D1",width:"289px",paddingTop:"69px"}}>
+  <Grid style={{width:"110%",backgroundColor:"white",marginTop:"229px"}}>
+  <Grid.Row >
+  <Header style={{marginLeft:"74px",font:"Montserrat",fontStyle:"normal",fontWeight:"600",fontSize:"64px",lineHeight:"78px",color:"#8CD6D1",paddingTop:"69px"}}>
     About Us
   </Header>
-
-<div style={{fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"300px",fontSize:"48px",lineHeight:"59px",color:"#000000",width:"1082px",marginLeft:"74px"}}>
+  </Grid.Row>
+  <Grid.Row  style={{fontFamily:"Montserrat",fontWeight:"300px",fontSize:"48px",lineHeight:"59px",color:"#000000",width:"1082px",marginLeft:"74px",marginTop:"50px"}}>
+<Grid.Column width={7}>
 Building the next generation of data science leaders, educators, and change-makers.
-</div>
-<Link to="/about">
-<div style={{fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"600px",fontSize:"36px",lineHeight:"44px",color:"#0376FD",width:"364px",height:"38px",marginLeft:"1065px"}}>
-  <span>Learn More > </span>
-</div>
+</Grid.Column>
+
+  </Grid.Row>
+  <Grid.Row columns={1}>
+  <Grid.Column width={6} floated="right" verticalAlign="middle" style={{width:"364px",height:"38px",marginBottom:"52px"}}>
+  <Link to="/about" style={{fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"600px",fontSize:"36px",lineHeight:"44px",color:"#FFC54A"}}>
+Learn More >
 </Link>
-  </div>
-  <div columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${edu})`,}}>
+
+  </Grid.Column>
+  </Grid.Row>
+
+  </Grid>
+  <Grid style={{width:"110%",backgroundColor:"white"}}>
+<Grid.Row columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${edu})`}}>
+<Grid.Column>
   <div style={overlaytext}>
   educate.
   </div>
+</Grid.Column>
+
+  <Grid.Column>
   <div style={underlaytext}>
-  <Link to="/acadev"> <div style={{color:"#FFFFFF"}}>  Learn more about our Academic Development programs >> </div>  </Link>
- <Link to="/decal"> <div style={{marginTop:"29px",color:"#FFFFFF"}}>
+  <Link to="/acadev"> <div style={{color:"#000000"}}>  Learn more about our Academic Development programs >> </div>  </Link>
+ <Link to="/decal"> <div style={{marginTop:"29px",color:"#000000"}}>
   Check out our DeCal >>
   </div>
+  
   </Link>
+  
     </div>
-</div>
-<div columns={1}style={{width:"2000px",height:"554px",backgroundImage:`url(${collab})`}}>
+    </Grid.Column>
+
+</Grid.Row>
+<Grid.Row columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${collab})`}}>
+<Grid.Column>
 <div style={overlaytext}>
   innovate.
   </div>
+  </Grid.Column>
+  <Grid.Column>
   <Link to="/consulting">
   <div style={underlaytext}>
   Learn more about our consulting projects >>
   </div>
   </Link>
-  
-  </div>
-<div columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${socialize})`}}>
-<div style={overlaytext}>
-  socialize.
-  </div>
-</div>
- <div columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${socialgood})`}}>
+  </Grid.Column>
+</Grid.Row>
+<Grid.Row columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${socialgood})`}}>
  <div style={overlaytext}>
   engage.
   </div>
-</div>
-<div style={{width:"2000px",height:"1246px",backgroundColor:"white"}}>
-<div style={{marginLeft:"93px",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"600",fontSize:"48px",lineHeight:"59px",color:"#8CD6D1",paddingTop:"103px"}}>
-Get Involved
-</div>
-<span style={{marginLeft:"93px",fontWeight:"300",fontSize:"24px",lineHeight:"29px",fontFamily:"Montserrat"}}>
-Collaborate with us and lets build the change-makers of tomorrow!
-</span>
-
-<div style={{marginLeft:"93px",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"600",fontSize:"48px",lineHeight:"59px",color:"#8CD6D1",width:"1400px",paddingTop:"398px"}}>
-Subscribe to our newsletter to get updates on what we do
-</div>
-<span style={{marginLeft:"93px",fontWeight:"300",fontSize:"24px",lineHeight:"29px",fontFamily:"Montserrat"}}>
-Collaborate with us and lets build the change-makers of tomorrow!
-</span>
+</Grid.Row>
+<Grid.Row columns={1}>
+<Grid.Column width={6} style={{marginLeft:"93px",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"600",fontSize:"48px",lineHeight:"59px",color:"#8CD6D1",paddingTop:"103px"}}>
+Work with Us
+</Grid.Column>
+<Grid.Column width={12} style={{marginLeft:"93px",fontWeight:"300",fontSize:"24px",lineHeight:"29px",fontFamily:"Montserrat"}}>
+Collaborate with us and grow our data science community!
+</Grid.Column>
+<Grid.Column verticalAlign="center">
+  <Card.Group style={{marginTop:"90px",marginLeft:"210px"}}>
+    {process}
+  </Card.Group>
+</Grid.Column>
+<Grid.Column style={{marginLeft:"93px",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"600",fontSize:"48px",lineHeight:"59px",color:"#8CD6D1",paddingTop:"134px"}}>
+Subscribe to our newsletter!
+</Grid.Column>
+<Grid.Column style={{marginLeft:"93px",fontWeight:"300",fontSize:"24px",lineHeight:"29px",fontFamily:"Montserrat"}}>
+Stay updated on our events, recruiting, and other on-campus initiatives. </Grid.Column>
+<Grid.Column>
 <Form >
                               <Input style={formStyle}  placeholder={'E-mail'} />
                               <Form.Button rounded style={buttonStyle}>
                                   Submit
                               </Form.Button>
                           </Form>
+                          </Grid.Column>
+                          <Grid.Column>
                           <div>
                         <Icon.Group size='huge' style={{marginLeft:"0px",marginTop:"100px"}}>
                         <a href="mailto:info@dss.berkeley.edu"><Icon name="mail" style={{marginLeft:"100px",color:"#8CD6D1"}}>
@@ -256,7 +311,10 @@ Collaborate with us and lets build the change-makers of tomorrow!
                             </a>
                         </Icon.Group>
                         </div>
-</div>
+                        </Grid.Column>
+
+</Grid.Row>
+</Grid>
 <a href="https://www.ocf.berkeley.edu/">
  <Image src={ocf} style={{marginTop:"20px"}}>
 
