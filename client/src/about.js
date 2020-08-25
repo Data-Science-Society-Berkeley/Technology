@@ -537,7 +537,7 @@ class About extends Component {
 
      </div>
      <Grid entered style={gridoffset}>
-     <Grid.Row width={16} columns={4} style={{backgroundColor:"#8CD6D1",width:"100%",height:"97px",marginTop:"-150px"}}>
+     <Grid.Row width={16} columns={4} style={{backgroundColor:"#8CD6D1",width:"100%",height:"97px",marginTop:"-45px"}}>
      <Grid.Column width={4} style={aboutlinks}>
      Who we are
      </Grid.Column>
