@@ -591,6 +591,7 @@ class About extends Component {
   <Grid.Row  width={6} centered>
   <Card.Group  centered>
   <Card style={overlayboxes}>
+  <Card.Header/>
   <div style={circleStyle}> 1</div>
   <Card.Description style={{marginTop:"40px"}}>
   At essence, a social community! MemDev, Big/Little, and more!
@@ -598,21 +599,25 @@ class About extends Component {
 
   </Card>
   <Card style={overlayboxes}>
+  <Card.Header/>
   <div style={circleStyle}> 2</div>
   <Card.Description style={{marginTop:"40px"}}>
   Career-driven, help get you to where you want to be.  </Card.Description>
   </Card>
   <Card style={overlayboxes}>
+  <Card.Header/>
   <div style={circleStyle}> 3</div>
   <Card.Description style={{marginTop:"40px"}}>
   Work to support the entire campus + extend outside its boundaries in data science initiatives.   </Card.Description>
   </Card>
   <Card style={overlayboxes}>
+  <Card.Header/>
   <div style={circleStyle}> 4 </div>
   <Card.Description style={{marginTop:"40px"}}>
   Diversity in cultural and academic backgrounds! Strive to encompass all of   </Card.Description>
   </Card>
   <Card style={overlayboxes}>
+  <Card.Header/>
   <div style={circleStyle}> 5 </div>
   <Card.Description style={{marginTop:"40px"}}>
   A variety of roles that can satisfy what you want to do  </Card.Description>
