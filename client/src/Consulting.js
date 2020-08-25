@@ -449,6 +449,7 @@ Aadiraj is a PM @ DSS.                  </Card.Description>
         <Grid centered>
         <Grid.Row>
         <Grid.Row style={link} centered>
+        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-585px",marginBottom:"-45px"}}> </div > 
   What We Do
 </Grid.Row>
 <Grid.Row style={{color:"#000000",textAlign:"center",lineHeight:"44px",fontSize:"36px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginLeft:"129px",marginRight:"128px",marginBottom:"81px",marginTop:"121px"}}>
@@ -456,7 +457,10 @@ We believe that the best way to learn about innovative and pioneering data scien
 </Grid.Row>
         </Grid.Row>
         <Grid.Row style={link} centered>
+        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-580px",marginTop:"35px",marginRight:"-190px"}}> </div > 
+        <div>
         Our Expertise
+        </div>
         </Grid.Row>
         <Card.Group centered>
   <Card style={overlayboxes}>
@@ -534,6 +538,7 @@ We believe that the best way to learn about innovative and pioneering data scien
   </Card.Group>
 <Grid.Row>
 <Grid.Row style={link} centered>
+<div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-540px",marginBottom:"-50px"}}> </div > 
         Project Managers
         </Grid.Row>
         <Card.Group centered itemsPerRow={3} style={{marginLeft:"50px",marginTop:"56px"}}>
@@ -541,6 +546,7 @@ We believe that the best way to learn about innovative and pioneering data scien
         </Card.Group>
         </Grid.Row>
         <Grid.Row style={link} centered>
+        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-490px",marginTop:"32px",marginRight:"-130px"}}> </div > 
         Client Testimonials
         </Grid.Row>
         <Grid.Row>

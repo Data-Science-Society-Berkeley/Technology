@@ -141,9 +141,10 @@ DeCal</span>
      </div>
         <Grid centered >
         <Grid.Row style={{marginTop:"130px"}}>
-<Header style={link}>
+        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-545px",marginTop:"33px",marginRight:"-185px"}}> </div > 
+<div style={link}>
        What We Do
-       </Header>  
+       </div>  
 </Grid.Row>
 <Grid.Row>
   <Grid.Column verticalAlign="top" width={7} style={{color:"#000000",textAlign:"left",lineHeight:"44px",fontSize:"36px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginLeft:"129px",marginRight:"128px",marginBottom:"81px",marginTop:"0px"}}>
@@ -170,6 +171,7 @@ DeCal</span>
     </Image.Group>
     <Grid.Row style={{marginTop:"152px"}}>
     <Grid.Column>
+    <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"185px",marginTop:"33px",marginRight:"-185px",marginBottom:"-100px"}}> </div > 
       <span style={{
     fontFamily: "Montserrat",
     fontWeight: 300,
@@ -218,6 +220,7 @@ Apply to be a DeCal student!
           </Button>
         </Grid.Row>
         <Grid.Row style={{marginTop:"167px"}}>
+        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-515px",marginTop:"60px",marginRight:"-185px",marginBottom:"-200px"}}> </div > 
        <Header style={link}>
        DeCal Directors
        </Header>   
@@ -289,6 +292,7 @@ Apply to be a DeCal student!
        </div>
        </Grid.Row>
   <Grid.Row style={{marginTop:"267px"}}>
+  <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-515px",marginTop:"60px",marginRight:"-185px",marginBottom:"-200px"}}> </div > 
   <Header style={link}>
        Our Sponsors
        </Header>   

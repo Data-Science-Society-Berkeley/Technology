@@ -221,12 +221,13 @@ class Acadev extends Component {
         </Grid.Row>
   
 <Grid.Row style={link} centered>
-  What We Do
+  <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-675px",marginTop:"33px",marginRight:"-185px"}}> </div > What We Do
 </Grid.Row>
 <Grid.Row style={{color:"#000000",textAlign:"center",lineHeight:"44px",fontSize:"36px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginLeft:"129px",marginRight:"128px",marginBottom:"128px"}}>
 The academic development committee hosts a variety of  educational workshops for the greater campus community , and directs our general membership (GM) program open to all skill levels and students. 
 </Grid.Row>
 <Grid.Row style={link} centered>
+<div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-670px",marginTop:"33px",marginRight:"-185px"}}> </div > 
   Our Intiatives
 </Grid.Row>
 <Grid.Row centered columns={2}>
@@ -318,9 +319,10 @@ Check out the DeCal Committee Page.
 
         </Grid.Row>
         <Grid.Row>
-       <Header centered style={link}>
+        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-625px",marginTop:"113px",marginRight:"-185px"}}> </div > 
+       <div style={link}>
        AcaDev Directors
-       </Header>
+       </div>
        </Grid.Row>
 
        <Grid.Row>
@@ -388,11 +390,11 @@ Check out the DeCal Committee Page.
        <Grid.Row>
        </Grid.Row>
        <Grid.Row style={{marginTop:"245px"}}>
-
-       <Header style={link}>
+       <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-450px",marginTop:"113px",marginRight:"-185px"}}> </div > 
+       <div style={link}>
        Current and Past Collaborations
        
-              </Header>
+              </div>
               </Grid.Row>
 
           <Grid.Row>
