@@ -141,7 +141,7 @@ DeCal</span>
      </div>
         <Grid centered >
         <Grid.Row style={{marginTop:"130px"}}>
-        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-675px",marginTop:"33px",marginRight:"-185px"}}> </div > 
+        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-680px",marginTop:"33px",marginRight:"-185px"}}> </div > 
 <div style={link}>
        What We Do
        </div>  
@@ -169,10 +169,11 @@ DeCal</span>
 
       </Image>
     </Image.Group>
-    <Grid.Row style={{marginTop:"152px"}}>
-    <Grid.Column>
-    <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"55px",marginTop:"33px",marginRight:"-185px",marginBottom:"-100px"}}> </div > 
-      <span style={{
+    <Grid.Row>
+    <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"310px",top:"50%",margin:"63px",marginRight:"100px",marginTop:"152px",marginBottom:"-105px"}}> </div > 
+    </Grid.Row>
+    <Grid.Row centered style={{marginTop:"0px"}}>
+      <div style={{
     fontFamily: "Montserrat",
     fontWeight: 300,
     lineHeight: "73px",
@@ -185,8 +186,7 @@ DeCal</span>
        <Image inline src={datalab} style={{height:"204px",width:"551px",marginLeft:"30px"}}>
 
 </Image>
-       </span>  
-       </Grid.Column>
+       </div>  
 
     </Grid.Row>
     <Grid.Row style={{color:"#000000",textAlign:"center",lineHeight:"44px",fontSize:"36px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginLeft:"129px",marginRight:"128px",marginBottom:"128px"}}>
@@ -209,7 +209,7 @@ Join DSS and
 apply to be a TA!
 </Grid.Column>
 <Grid.Column style={{color:"#8CD6D1",textAlign:"center",lineHeight:"59px",fontSize:"48px",fontWeight:"500px",fontStyle:"normal",fontFamily:"Montserrat",marginBottom:"98px"}}>
-Apply to be a 6student!
+Apply to be a student!
 </Grid.Column>
 </Grid.Row>
 <Grid.Row centered>
@@ -220,7 +220,7 @@ Apply to be a 6student!
           </Button>
         </Grid.Row>
         <Grid.Row style={{marginTop:"167px"}}>
-        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-645px",marginTop:"60px",marginRight:"-185px",marginBottom:"-200px"}}> </div > 
+        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-650px",marginTop:"60px",marginRight:"-185px",marginBottom:"-200px"}}> </div > 
        <Header style={link}>
        DeCal Directors
        </Header>   
