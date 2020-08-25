@@ -31,6 +31,12 @@ import commit from './About/dsssp20-biglittlereveal-groupphoto1.png'
 import gen from './About/operationanalytics21.png'
 import decal from './About/learn.png'
 import senior from './About/widsberkeleydssspring20201.png'
+import join from './About/JoinUs.jpg'
+import story from './About/OurStory.jpg'
+import popout from './About/popoutDesign.png'
+
+
+
 
 
 
@@ -43,7 +49,6 @@ import senior from './About/widsberkeleydssspring20201.png'
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
-          marginLeft:"62px",
           marginTop: "42px",
           textAlign:"center",
           fontFamily: "Montserrat"
@@ -162,7 +167,26 @@ const execstyle6 = {
           margin:"0 auto"
 
 }
-
+const aboutlinks = {
+  fontFamily: "Montserrat",
+  fontWeight: "normal",
+          fontSize: "36px",
+          lineHeight:"44px",
+          color:"#FFFFFF",
+          textAlign:"center",
+          marginTop:"25px",
+}
+const overlayboxes = {
+background: "#FFFFFF",
+border: "5px solid #8CD6D1",
+boxSizing: "border-box",
+boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
+borderRadius: "20px",
+height:"236px",
+width:"284px",
+marginLeft:"150px",
+marginBottom:"70px",
+}
 
 const leadershipCards = [
 <Card style={cardstyle}>
@@ -485,29 +509,59 @@ class About extends Component {
         this.props.buttonClick(data);
     };
     render() {
-
     return (
-<Grid entered style={gridoffset}>
-    <Grid.Row columns={2}>
-                <Grid.Column>
-                    <Header style={mybigtext}> OUR STORY</Header>
-                    <div style={{height:"740px",width:"633px",border: "1px solid #000000",boxSizing: "borderBox",font:"Montserrat"}}>
-                    Data Science Society is UC Berkeley's first student-run, not-for-profit organization focused on data science and its interdisciplinary applications. Since our founding in 2016, we have united students from a wide range of disciplines behind our shared passion for all things data. Our mission is to foster a strong data science community on campus by advocating data science education and practice through our various committees and internal and external programs. Our educational and consulting initiatives have impacted hundreds of students in a variety of majors across campus and given them the technical and soft skills needed to thrive in a data-first world.
+      <div>
+       <div style={{zIndex:"1",position:"relative"}}>
+      <Image src={story} style={{width:"120%",height:"auto",zIndex:"2"}}>
+      </Image>
+      <div style={{width:"100%",textAlign:"center"}}>
+      <span style={{position: "relative", top: "-542px",left:"10%", zIndex: "3",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"bold",fontSize:"72px",lineHeight:"88px",color:"#FFFFFF"}}> OUR STORY</span>
+      </div>
 
-                    </div>
-                </Grid.Column>
-                <Grid.Column>
-                    <Grid.Row>
-                    <Header style={mymidtext}> our mission</Header>
-                    <div style={{height:"244px",width:"628px",border: "1px solid #000000",boxSizing: "borderBox",font:"Montserrat"}}>
-                    Data Science Society is UC Berkeley's first student-run, not-for-profit organization focused on data science and its interdisciplinary applications. Since our founding in 2016, we have united students from a wide range of disciplines behind our shared passion for all things data. Our mission is to foster a strong data science community on campus by advocating data science education and practice through our various committees and internal and external programs. Our educational and consulting initiatives have impacted hundreds of students in a variety of majors across campus and given them the technical and soft skills needed to thrive in a data-first world.
-                    </div>
-                    </Grid.Row>
-                    <Grid.Row style={{marginTop:"42px"}}>
-                    <Header style={mymidtext}>our vision</Header>
-                    </Grid.Row>
-                </Grid.Column>
+     </div>
+     <Grid entered style={gridoffset}>
+     <Grid.Row width={16} columns={4} style={{backgroundColor:"#8CD6D1",width:"100%",height:"97px",marginTop:"-150px"}}>
+     <Grid.Column width={4} style={aboutlinks}>
+     Who we are
+     </Grid.Column>
+   <Grid.Column style={aboutlinks}>
+       Why Join?
+     </Grid.Column>
+     <Grid.Column style={aboutlinks}>
+       Find your place
+       </Grid.Column>
+       <Grid.Column style={aboutlinks}>
+       Our Team
+       </Grid.Column>
+    
 
+     </Grid.Row>
+     
+    <Grid.Row centered columns={1} style={{marginBottom:"90px"}}>
+    <div style={header}> Who We Are</div>
+    <Grid.Column style={{marginLeft:"170px",marginRight:"auto"}}>
+    <div style={{fontSize:"36px",lineHeight:"44px",fontWeight:"500px",marginTop:"22px",color:"#B6E5D7",fontFamily:"Montserrat"}}> A family of passionate individuals looking to make a change.</div>
+    <div style={{fontSize:"29px",lineHeight:"35px",fontWeight:"normal",marginTop:"22px",color:"#C4C4C4",fontFamily:"Montserrat"}}>
+    Data Science Society is UC Berkeley's first student-run, not-for-profit organization focused on data science and its interdisciplinary applications. Since our founding in 2016, we have united students from a wide range of disciplines behind our shared passion for all things data.
+    </div>
+    </Grid.Column>
+
+  </Grid.Row>
+  <Grid.Row>
+  <div style={{zIndex:"1",position:"relative"}}>
+  <Image src={popout} style={{zIndex:"2"}}>
+  </Image>
+  <div style={{position: "relative", textShadow:"0px 4px 4px rgba(0, 0, 0, 0.25)",top: "-442px",left:"-340px", zIndex: "3",fontFamily:"Montserrat",fontStyle:"600",fontWeight:"bold",fontSize:"64px",lineHeight:"78px",color:"#FFFFFF"}}>
+    <span >
+      Our mission
+    </span>
+    <div style={{position: "relative",width:"859px",top: "32px",left:"420px", zIndex: "4",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"normal",fontSize:"27px",lineHeight:"33px",color:"#FFFFFF"}}> 
+  We aim to foster a strong data science community on campus by advocating data science education and practice through our various committees and internal and external programs. Our educational and consulting initiatives have impacted hundreds of students in a variety of majors across campus and given them the technical and soft skills needed to thrive in an increasingly data-centric world.
+</div>
+  </div>
+
+ 
+  </div>
   </Grid.Row>
   <Grid.Row width={12} centered>
   <div style={header}> Why Join?</div>
@@ -516,18 +570,54 @@ class About extends Component {
   <div style={{fontSize:"36px",lineHeight:"44px",fontWeight:"500px",marginTop:"22px",color:"#B6E5D7",fontFamily:"Montserrat"}}> Simple. To be a part of our family.</div>
 
   </Grid.Row>
+  <Grid.Row  width={6} centered>
+  <Card.Group  centered>
+  <Card style={overlayboxes}>
+  <Card.Description style={{marginTop:"80px"}}>
+  At essence, a social community! MemDev, Big/Little, and more!
+  </Card.Description>
 
+  </Card>
+  <Card style={overlayboxes}>
+  <Card.Description style={{marginTop:"80px"}}>
+  Career-driven, help get you to where you want to be.  </Card.Description>
+  </Card>
+  <Card style={overlayboxes}>
+  <Card.Description style={{marginTop:"80px"}}>
+  Work to support the entire campus + extend outside its boundaries in data science initiatives.   </Card.Description>
+  </Card>
+  <Card style={overlayboxes}>
+  <Card.Description style={{marginTop:"80px"}}>
+  Diversity in cultural and academic backgrounds! Strive to encompass all of   </Card.Description>
+  </Card>
+  <Card style={overlayboxes}>
+  <Card.Description style={{marginTop:"80px"}}>
+  A variety of roles that can satisfy what you want to do  </Card.Description>
+  </Card>
+  </Card.Group>
+  </Grid.Row>
+  <Grid.Row columns={2}>
+  <Grid.Column>
+    
+    </Grid.Column>
+    <Grid.Column>
+    
+    </Grid.Column>
+
+  </Grid.Row>
   <Grid.Row centered>
   </Grid.Row>
 <Grid.Row width={12} centered>
 
-  <div style={{width:"1100px",border: "10px solid #B6E5D7",boxSizing: "borderBox",marginBottom:"81px",marginTop:"145px"}}>
+  <div style={{width:"1100px",border: "10px solid #B6E5D7",boxSizing: "borderBox",marginBottom:"81px",marginTop:"70px"}}>
                     <Embed
                     id='XW7Zkzf7_C8'
                     source='youtube'
   />
                     </div>
   </Grid.Row>
+  <Image fluid src={join} style={{marginTop:"120px",zIndex:2}}>
+    </Image>
     <Grid.Row width={12} centered>
   <div style={header}> Find your place</div>
   </Grid.Row>
@@ -622,6 +712,7 @@ class About extends Component {
 </Image.Group>
   </Grid.Row>
   </Grid>
+  </div>
  
 )
 
