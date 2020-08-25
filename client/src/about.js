@@ -25,6 +25,12 @@ import gaya from './Leadership Headshots/gayatri.png'
 import eric from './Leadership Headshots/eric.jpg'
 import samir from './Leadership Headshots/samir.jpeg'
 
+import pm from './About/_MG_59681.png'
+import exec from './About/group1.png'
+import commit from './About/dsssp20-biglittlereveal-groupphoto1.png'
+import gen from './About/operationanalytics21.png'
+import decal from './About/learn.png'
+import senior from './About/widsberkeleydssspring20201.png'
 
 
 
@@ -48,23 +54,18 @@ const gridoffset = {
 const mybigtext = {
   fontFamily: "Montserrat",
   fontWeight: 600,
-  lineHeight: "97px",
+  lineHeight: "78px",
           fontSize: "64px",
           color:"#8CD6D1",
-    width:"438px",
     fontStyle: "normal",
-    textAlign:"left"
 };
 const header = {
   fontFamily: "Montserrat",
-  fontWeight: 600,
-  lineHeight: "97px",
+  fontWeight: 500,
+  lineHeight: "78px",
           fontSize: "64px",
           color:"#8CD6D1",
-    width:"1020px",
     fontStyle: "normal",
-    textAlign:"left",
-    marginLeft:"300px"
 };
 const cardstyle = {
     width:"400px",
@@ -84,6 +85,85 @@ const textstyle = {
           fontSize: "37px",
           color:"#8CD6D1",
 }
+const execstyle1 = {
+  fontFamily: "Montserrat",
+  fontWeight: "normal",
+          fontSize: "36px",
+          lineHeight:"44px",
+          width:"356px",
+          maxWidth:"356px",
+          height:"352px",
+          borderRadius:"15px",
+          backgroundImage:`url(${exec})`,
+          margin:"0 auto"
+}
+const execstyle2 = {
+  fontFamily: "Montserrat",
+  fontWeight: "normal",
+          fontSize: "36px",
+          lineHeight:"44px",
+          fontColor:"#FFFFFF",
+          width:"356px",
+          height:"352px",
+          borderRadius:"15px",
+          backgroundImage:`url(${pm})`,
+          backgroundColor:"transparent",
+          margin:"0 auto"
+          
+}
+const execstyle3 = {
+  fontFamily: "Montserrat",
+  fontWeight: "normal",
+          fontSize: "36px",
+          lineHeight:"44px",
+          fontColor:"#FFFFFF",
+          width:"356px",
+          height:"352px",
+          borderRadius:"15px",
+          backgroundImage:`url(${commit})`,
+          margin:"0 auto"
+}
+const execstyle4 = {
+  fontFamily: "Montserrat",
+  fontWeight: "normal",
+          fontSize: "36px",
+          lineHeight:"44px",
+          fontColor:"#FFFFFF",
+          width:"356px",
+          height:"352px",
+          borderRadius:"15px",
+          backgroundImage:`url(${gen})`,
+          margin:"0 auto"
+
+}
+const execstyle5 = {
+  fontFamily: "Montserrat",
+  fontWeight: "normal",
+          fontSize: "36px",
+          lineHeight:"44px",
+          fontColor:"#FFFFFF",
+          width:"356px",
+          height:"352px",
+          borderRadius:"15px",
+          backgroundImage:`url(${decal})`,
+          margin:"0 auto"
+
+}
+const execstyle6 = {
+  fontFamily: "Montserrat",
+  fontWeight: "normal",
+          fontSize: "36px",
+          lineHeight:"44px",
+          fontColor:"#FFFFFF",
+          width:"356px",
+          height:"352px",
+          borderRadius:"15px",
+          backgroundImage:`url(${senior})`,
+          margin:"0 auto"
+
+}
+
+
 const leadershipCards = [
 <Card style={cardstyle}>
 <Image src={andi} style={imagestyle}  />
@@ -407,7 +487,7 @@ class About extends Component {
     render() {
 
     return (
-<Grid divided='vertically' style={gridoffset}>
+<Grid entered style={gridoffset}>
     <Grid.Row columns={2}>
                 <Grid.Column>
                     <Header style={mybigtext}> OUR STORY</Header>
@@ -425,65 +505,87 @@ class About extends Component {
                     </Grid.Row>
                     <Grid.Row style={{marginTop:"42px"}}>
                     <Header style={mymidtext}>our vision</Header>
-                    <div style={{height:"354px",width:"628px",border: "1px solid #000000",boxSizing: "borderBox"}}>
+                    </Grid.Row>
+                </Grid.Column>
+
+  </Grid.Row>
+  <Grid.Row width={12} centered>
+  <div style={header}> Why Join?</div>
+  </Grid.Row>
+  <Grid.Row width={12} centered>
+  <div style={{fontSize:"36px",lineHeight:"44px",fontWeight:"500px",marginTop:"22px",color:"#B6E5D7",fontFamily:"Montserrat"}}> Simple. To be a part of our family.</div>
+
+  </Grid.Row>
+
+  <Grid.Row centered>
+  </Grid.Row>
+<Grid.Row width={12} centered>
+
+  <div style={{width:"1100px",border: "10px solid #B6E5D7",boxSizing: "borderBox",marginBottom:"81px",marginTop:"145px"}}>
                     <Embed
                     id='XW7Zkzf7_C8'
                     source='youtube'
   />
                     </div>
-                    </Grid.Row>
-                </Grid.Column>
   </Grid.Row>
-  <Grid.Row>
-  <Header style={header}> Why should you join DSS?</Header>
-  <Grid>
-    <Grid.Row columns={4}>
-      <Grid.Column>
-      <div style={{height:"348px",width:"301px",border: "1px solid #000000",boxSizing: "borderBox", font:"Montserrat",fontSize:"36px",lineHeight:"44px",fontWeight:"300"}}>
-      Executive Team
+    <Grid.Row width={12} centered>
+  <div style={header}> Find your place</div>
+  </Grid.Row>
+    <Grid.Row centered columns={3}  style={{marginTop:"124px"}}>
+      <Grid.Column style={{}}>
+      <div style={execstyle1}>
+      <div style={{marginLeft:"31px",paddingTop:"30px"}}>
+      Executive <br/>  Team
+      </div>
       </div>
       </Grid.Column>
       <Grid.Column>
-      <div style={{height:"348px",width:"301px",border: "1px solid #000000",boxSizing: "borderBox", font:"Montserrat",fontSize:"36px",lineHeight:"44px",fontWeight:"300"}}>
-      Project Manager
+      <div style={execstyle2}>
+      <div style={{marginLeft:"33px",paddingTop:"30px"}}>
+      Project <br/> Manager
+      </div>
 </div>
       </Grid.Column>
-      <Grid.Column>
-      <div style={{height:"348px",width:"301px",border: "1px solid #000000",boxSizing: "borderBox", font:"Montserrat",fontSize:"36px",lineHeight:"44px",fontWeight:"300"}}>
+      <Grid.Column >
+      <div style={execstyle3}>
+      <div style={{marginLeft:"37px",paddingTop:"30px"}}>
       Committee Member
-</div>
-      </Grid.Column>
-      <Grid.Column>
-      <div style={{height:"348px",width:"301px",border: "1px solid #000000",boxSizing: "borderBox", font:"Montserrat",fontSize:"36px",lineHeight:"44px",fontWeight:"300"}}>
-      Senior Advisor
-
+      </div>
 </div>
       </Grid.Column>
     </Grid.Row>
-    <Grid.Row columns={4}>
+    <Grid.Row centered columns={3}>
     <Grid.Column>
-    <div style={{height:"348px",width:"301px",border: "1px solid #000000",boxSizing: "borderBox", font:"Montserrat",fontSize:"36px",lineHeight:"44px",fontWeight:"300"}}>
-    General Member
+    <div style={execstyle4}>
+      <div style={{marginLeft:"31px",paddingTop:"30px"}}>
+      General <br/>  Member
+      </div>
+      </div>
+      </Grid.Column>
+      <Grid.Column>
+      <div style={execstyle5}>
+      <div style={{marginLeft:"33px",paddingTop:"30px"}}>
+      DeCal <br/> Student
+      </div>
 </div>
       </Grid.Column>
       <Grid.Column>
-      <div style={{height:"348px",width:"301px",border: "1px solid #000000",boxSizing: "borderBox", font:"Montserrat",fontSize:"36px",lineHeight:"44px",fontWeight:"300"}}>
-      DeCal Student
-</div>
-      </Grid.Column>
-      <Grid.Column>
-      <div style={{height:"226px",width:"529px",border: "1px solid #000000",boxSizing: "borderBox",marginTop:"70px", font:"Montserrat",fontSize:"36px",lineHeight:"44px",fontWeight:"300"}}>
-      Internal Committee + Alumni
+      <div style={execstyle6}>
+      <div style={{marginLeft:"37px",paddingTop:"30px"}}>
+      Senior<br/> Advisor
+      </div>
 </div>
       </Grid.Column>
     </Grid.Row>
-  </Grid>
-
-                    <Header style={mybigtext}> LEADERSHIP</Header>
-                    <Card.Group itemsPerRow={3}>
+<Grid.Row centered width={12}>
+                    <div style={mybigtext}> Our Exec Team</div>
+                    <Card.Group centered itemsPerRow={3}>
                     {leadershipCards}
                     </Card.Group>
-  </Grid.Row>
+``
+                    </Grid.Row>
+                    
+
   <Grid.Row>
   <Header style={mybigtext}> Our Sponsors</Header>
   <Image.Group size={"medium"}>
