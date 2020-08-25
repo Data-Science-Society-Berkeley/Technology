@@ -6,6 +6,12 @@ import berk from './Decal Images/berkeleyischool-logo-alternate-blue-lg.png'
 import datacamp from './Decal Images/datacamp-logo 1.png' 
 import decal from './Decal Images/decalberkeleylogo 1.png'
 import charlie from './Leadership Headshots/charlie.jpg'
+import story from './SocialGood/20191109_150334.jpg'
+import good from './SocialGood/officebuilding.png'
+import hype from './SocialGood/dssg1.jpeg'
+import dolla from './SocialGood/dollarsign.png'
+
+
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -117,26 +123,61 @@ class Social extends Component {
     render() {
     return (
         <div>
+       <div style={{zIndex:"1",position:"relative"}}>
+      <Image src={story} style={{width:"120%",height:"auto",zIndex:"2"}}>
+      </Image>
+      <div style={{width:"100%",textAlign:"center",background: "rgba(140, 214, 209, 0.6)"}}>
+      <span style={{position: "absolute",top:"50%",transform: "translate(-50%, -50%)" ,zIndex: "3",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"bold",fontSize:"72px",lineHeight:"88px",color:"#FFFFFF"}}> Social Good
+</span>
+<span style={{position: "absolute",left:"25%",top:"75%",transform: "translate(-50%, -50%)" ,zIndex: "3",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"bold",fontSize:"72px",lineHeight:"88px",color:"#FFFFFF"}}> 
+<span style={{fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"0px"}}>2 </span> <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"10px",font:"Montserrat"}}>Projects per Semester</span></span>
+      <div style={{background: "rgba(140, 214, 209, 0.6)",zIndex:"2",position: "absolute",width:"100%",height:"100%",top:0,left:0,right:0,bottom:0}}></div>
+      <span style={{position: "absolute",left:"70%",top:"75%",transform: "translate(-50%, -50%)" ,zIndex: "3",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"bold",fontSize:"72px",lineHeight:"88px",color:"#FFFFFF"}}> 
+      <span style={{marginLeft:"151px",fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px",fontStyle:"normal",fontWeigt:"normal"}}> 5 <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"227px",font:"Montserrat"}}>researchers per team </span> </span>
+</span>
+      </div>
 
-        <Header style={mybigtext}> Social Good</Header>
-        <div style={{marginBottom:"50px",marginLeft:"64px", 
-fontFamily: "Montserrat",
-fontStyle: "normal",
-fontWeight: "300",
-fontSize: "24px",
-lineHeight: "29px"}}>
-  <div style={{marginBottom:"50px",marginLeft:"64px", 
-fontFamily: "Montserrat",
-fontStyle: "normal",
-fontWeight: "300",
-fontSize: "24px",
-lineHeight: "29px"}}>
-We do social good.
-</div>
-       <Header style={link}>
-       Social Good Directors
-       </Header>   
-       <Card.Group style={{marginLeft:"450px"}}>
+     </div>
+<Grid centered>
+<Grid.Row style={{marginTop:"130px"}}>
+<Header style={link}>
+Committee Origin       
+</Header>  
+</Grid.Row>
+<Grid.Row columns={2} >
+  <Grid.Column verticalAlign="top" width={4} style={{color:"#000000",textAlign:"left",lineHeight:"44px",fontSize:"36px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginLeft:"129px",marginRight:"128px",marginBottom:"81px",marginTop:"75px"}}>
+
+  Data science has exploded in popularity due to its influence on the business landscape. The technological capabilities with data has provided business with a competitive advantage, opportunity to optimize efficiency, and in essence, more profit. 
+
+  </Grid.Column>
+  <Grid.Column verticalAlign="top" style={{marginBottom:"153px"}} >
+  <Image.Group>
+    <Image inline src={good} style={{height:"535px",width:"535px"}}>
+    </Image>
+    <Image inline src={dolla} style={{height:"333px",width:"333px",marginTop:"-150px",marginLeft:"-150"}}>
+
+    </Image>
+    </Image.Group>
+  </Grid.Column>
+  </Grid.Row>
+  </Grid>
+  <div style={{zIndex:"1",position:"relative"}}>
+      <Image src={hype} style={{width:"120%",height:"auto",zIndex:"2"}}>
+      </Image>
+      <div style={{width:"100%",textAlign:"center",background: "rgba(140, 214, 209, 0.6)"}}>
+      <span style={{position: "absolute",top:"10%",left:"60%",fontWeight:"300px",zIndex: "3",width:"508px",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"normal",fontSize:"36px",lineHeight:"44px",color:"#000000"}}> We seek to use these same tools and our datafied way of thinking to promise and act for change. We want to use the power of data science in service of humankind and offer creative solutions to address the world’s most urgent societal challenges.</span>
+      </div>
+
+     </div>
+ <Grid centered>
+ <Grid.Row style={{marginTop:"94px"}}>
+ <div style={link}>
+       Our Team
+       </div>   
+ </Grid.Row>
+  <Grid.Row>
+
+       <Card.Group centered>
        <Card style={cardstyle}> <Image style={imagestyle} src={charlie}/>    
        <Card.Content>
 <Card.Header style={textstyle}>Charlie Duarte</Card.Header>
@@ -157,27 +198,12 @@ We do social good.
       </Card.Content>
 </Card>
 </Card.Group>
-       <div style={{marginLeft:"249px"}}>
-       <div >
-         <span style={{fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px"}}>1 </span> <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"386px",font:"Montserrat"}}>Semesters Completed</span>
-       <span style={{marginLeft:"151px",fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px",fontStyle:"normal",fontWeigt:"normal"}}> X <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"227px",font:"Montserrat"}}>dollars raised</span> </span>
-       </div>
-       </div>
-  </div>
-  <Header style={{fontSize:"30px",lineHeight:"37px",font:"Montserrat",marginLeft:"613px",fontStyle:"normal",fontWeight:"normal"}}>
-    Sponsored By
-  </Header>
-  <Image.Group style={{marginLeft:"108px",marginBottom:"73px"}}>
-    <Image style={{marginRight:"70px"}}src={decal}>
-
-    </Image>
-    <Image style={{marginRight:"39px"}}src={berk}>
-      
-      </Image>
-      <Image src={datacamp}>
-      
-      </Image>
-  </Image.Group>
+  </Grid.Row>
+  <Grid.Row>
+  <Grid.Column style={{color:"#8CD6D1",textAlign:"center",lineHeight:"59px",fontSize:"48px",fontWeight:"500px",fontStyle:"normal",fontFamily:"Montserrat",marginBottom:"98px"}}>
+  This Fall 2020 Semester is the first semester for the Social Good committee. Stay tuned for updates!</Grid.Column>
+  </Grid.Row>
+  </Grid>
   </div>
 
 )
