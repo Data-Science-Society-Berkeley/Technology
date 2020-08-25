@@ -141,7 +141,7 @@ DeCal</span>
      </div>
         <Grid centered >
         <Grid.Row style={{marginTop:"130px"}}>
-        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-545px",marginTop:"33px",marginRight:"-185px"}}> </div > 
+        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-675px",marginTop:"33px",marginRight:"-185px"}}> </div > 
 <div style={link}>
        What We Do
        </div>  
@@ -171,7 +171,7 @@ DeCal</span>
     </Image.Group>
     <Grid.Row style={{marginTop:"152px"}}>
     <Grid.Column>
-    <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"185px",marginTop:"33px",marginRight:"-185px",marginBottom:"-100px"}}> </div > 
+    <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"55px",marginTop:"33px",marginRight:"-185px",marginBottom:"-100px"}}> </div > 
       <span style={{
     fontFamily: "Montserrat",
     fontWeight: 300,
@@ -209,7 +209,7 @@ Join DSS and
 apply to be a TA!
 </Grid.Column>
 <Grid.Column style={{color:"#8CD6D1",textAlign:"center",lineHeight:"59px",fontSize:"48px",fontWeight:"500px",fontStyle:"normal",fontFamily:"Montserrat",marginBottom:"98px"}}>
-Apply to be a DeCal student!
+Apply to be a 6student!
 </Grid.Column>
 </Grid.Row>
 <Grid.Row centered>
@@ -220,7 +220,7 @@ Apply to be a DeCal student!
           </Button>
         </Grid.Row>
         <Grid.Row style={{marginTop:"167px"}}>
-        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-515px",marginTop:"60px",marginRight:"-185px",marginBottom:"-200px"}}> </div > 
+        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-645px",marginTop:"60px",marginRight:"-185px",marginBottom:"-200px"}}> </div > 
        <Header style={link}>
        DeCal Directors
        </Header>   
@@ -292,7 +292,7 @@ Apply to be a DeCal student!
        </div>
        </Grid.Row>
   <Grid.Row style={{marginTop:"267px"}}>
-  <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-515px",marginTop:"60px",marginRight:"-185px",marginBottom:"-200px"}}> </div > 
+  <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-675px",marginTop:"60px",marginRight:"-185px",marginBottom:"-200px"}}> </div > 
   <Header style={link}>
        Our Sponsors
        </Header>   
