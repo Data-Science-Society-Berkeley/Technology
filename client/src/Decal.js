@@ -8,6 +8,7 @@ import decal from './Decal Images/decalberkeleylogo 1.png'
 import kate from './Leadership Headshots/kate.jpg'
 import uma from './Leadership Headshots/uma.png'
 import gaya from './Leadership Headshots/gayatri.png'
+import story from './Decal Images/DecalHeader.JPG'
 
 import steph from './Leadership Headshots/steph.jpg'
 let endpoint = "http://localhost:8080";
@@ -122,24 +123,35 @@ class Decal extends Component {
     render() {
     return (
         <div>
+            <div style={{zIndex:"1",position:"relative"}}>
+      <Image src={story} style={{width:"120%",height:"auto",zIndex:"2"}}>
+      </Image>
+      <div style={{width:"100%",textAlign:"center",background: "rgba(140, 214, 209, 0.6)"}}>
+      <span style={{position: "absolute",top:"50%",transform: "translate(-50%, -50%)" ,zIndex: "3",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"bold",fontSize:"72px",lineHeight:"88px",color:"#FFFFFF"}}> Essential Tools for Data Science
+DeCal</span>
+<span style={{position: "absolute",left:"25%",top:"75%",transform: "translate(-50%, -50%)" ,zIndex: "3",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"bold",fontSize:"72px",lineHeight:"88px",color:"#FFFFFF"}}> 
+<span style={{fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"0px"}}>6 </span> <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"10px",font:"Montserrat"}}>Semesters Completed</span></span>
+      <div style={{background: "rgba(140, 214, 209, 0.6)",zIndex:"2",position: "absolute",width:"100%",height:"100%",top:0,left:0,right:0,bottom:0}}></div>
+      <span style={{position: "absolute",left:"75%",top:"75%",transform: "translate(-50%, -50%)" ,zIndex: "3",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"bold",fontSize:"72px",lineHeight:"88px",color:"#FFFFFF"}}> 
+      <span style={{marginLeft:"151px",fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px",fontStyle:"normal",fontWeigt:"normal"}}> 400+ <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"227px",font:"Montserrat"}}>Students Taught</span> </span>
+</span>
+      </div>
+
+     </div>
         <Grid centered >
-        <Header style={mybigtext}> DeCal</Header>
         <div style={{marginBottom:"50px",marginLeft:"64px", 
 fontFamily: "Montserrat",
 fontStyle: "normal",
 fontWeight: "300",
 fontSize: "24px",
 lineHeight: "29px"}}>
-  <div style={{marginBottom:"50px",marginLeft:"64px", 
-fontFamily: "Montserrat",
-fontStyle: "normal",
-fontWeight: "300",
-fontSize: "24px",
-lineHeight: "29px"}}>
-Welcome to Data Science Society at Berkeley’s very own DeCal: Essential Tools for Data Science! With the omnipresence of data in an increasingly digital world - data literacy is becoming one of the most sought after skills in every field.  Unfortunately, we believe that the data science courses at Berkeley - although beautifully designed and taught, are primarily geared towards technical majors. In addition to this, these courses are also incredibly hard to get into for non-technical/non-data science majors. This course aims to address this gap. This course is something that picks and chooses what we think are universally relevant concepts from both Introductory data science courses and Intermediate data science courses - and teaches these concepts in a way actively geared towards people of all backgrounds.
+<Grid.Row columns={2} style={{height:"809px"}}>
+<Grid.Column>
+</Grid.Column>
+<Grid.Column>
 
-This course aims to expose students to essential data science and statistical modeling/Machine learning concepts that will not only make them a lot more employable but will also be very relevant to them irrespective of what they end up pursuing. There is a strong focus on building a statistical intuition without delving into the arcane math/programming that goes behind a lot of models using libraries like sci-kit learn.
-</div>
+</Grid.Column>
+</Grid.Row>
 <Grid.Row>
        <Button.Group style={{margin:"auto"}}>
           <Button style={button}>
@@ -218,8 +230,7 @@ This course aims to expose students to essential data science and statistical mo
        </Grid.Row>
        <Grid.Row>
        <div style={{margin:"auto"}}>
-         <span style={{fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px"}}>6 </span> <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"386px",font:"Montserrat"}}>Semesters Completed</span>
-       <span style={{marginLeft:"151px",fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px",fontStyle:"normal",fontWeigt:"normal"}}> 400+ <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"227px",font:"Montserrat"}}>Students Taught</span> </span>
+        
        </div>
        </Grid.Row>
   </div>
