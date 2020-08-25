@@ -188,6 +188,23 @@ marginLeft:"150px",
 marginBottom:"70px",
 }
 
+var circleStyle = {
+  padding:10,
+  marginLeft:-34,
+  marginTop:"-50px",
+  display:"inline-block",
+  backgroundColor: "#8CD6D1",
+  borderRadius: "50%",
+  width:100,
+  height:100,
+  fontFamily:"Montserrat",
+  fontStyle:"normal",
+  fontWeight:"600",
+  fontSize:"72px",
+  lineHeight:"88px",
+  color:"#FFFFFF",
+  textAlign:"center",
+};
 const leadershipCards = [
 <Card style={cardstyle}>
 <Image src={andi} style={imagestyle}  />
@@ -515,7 +532,7 @@ class About extends Component {
       <Image src={story} style={{width:"120%",height:"auto",zIndex:"2"}}>
       </Image>
       <div style={{width:"100%",textAlign:"center"}}>
-      <span style={{position: "relative", top: "-542px",left:"10%", zIndex: "3",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"bold",fontSize:"72px",lineHeight:"88px",color:"#FFFFFF"}}> OUR STORY</span>
+      <span style={{position: "absolute",top:"50%",transform: "translate(-50%, -50%)" ,zIndex: "3",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"bold",fontSize:"72px",lineHeight:"88px",color:"#FFFFFF"}}> OUR STORY</span>
       </div>
 
      </div>
@@ -567,31 +584,36 @@ class About extends Component {
   <div style={header}> Why Join?</div>
   </Grid.Row>
   <Grid.Row width={12} centered>
-  <div style={{fontSize:"36px",lineHeight:"44px",fontWeight:"500px",marginTop:"22px",color:"#B6E5D7",fontFamily:"Montserrat"}}> Simple. To be a part of our family.</div>
+  <div style={{fontSize:"36px",lineHeight:"44px",fontWeight:"500px",marginTop:"22px",color:"#B6E5D7",fontFamily:"Montserrat",marginBottom:"50px"}}> Simple. To be a part of our family.</div>
 
   </Grid.Row>
   <Grid.Row  width={6} centered>
   <Card.Group  centered>
   <Card style={overlayboxes}>
-  <Card.Description style={{marginTop:"80px"}}>
+  <div style={circleStyle}> 1</div>
+  <Card.Description style={{marginTop:"40px"}}>
   At essence, a social community! MemDev, Big/Little, and more!
   </Card.Description>
 
   </Card>
   <Card style={overlayboxes}>
-  <Card.Description style={{marginTop:"80px"}}>
+  <div style={circleStyle}> 2</div>
+  <Card.Description style={{marginTop:"40px"}}>
   Career-driven, help get you to where you want to be.  </Card.Description>
   </Card>
   <Card style={overlayboxes}>
-  <Card.Description style={{marginTop:"80px"}}>
+  <div style={circleStyle}> 3</div>
+  <Card.Description style={{marginTop:"40px"}}>
   Work to support the entire campus + extend outside its boundaries in data science initiatives.   </Card.Description>
   </Card>
   <Card style={overlayboxes}>
-  <Card.Description style={{marginTop:"80px"}}>
+  <div style={circleStyle}> 4 </div>
+  <Card.Description style={{marginTop:"40px"}}>
   Diversity in cultural and academic backgrounds! Strive to encompass all of   </Card.Description>
   </Card>
   <Card style={overlayboxes}>
-  <Card.Description style={{marginTop:"80px"}}>
+  <div style={circleStyle}> 5 </div>
+  <Card.Description style={{marginTop:"40px"}}>
   A variety of roles that can satisfy what you want to do  </Card.Description>
   </Card>
   </Card.Group>
