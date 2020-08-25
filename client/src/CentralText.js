@@ -3,9 +3,9 @@ import axios from "axios";
 import { Image,Grid,Card, Header, Form, Input, Icon, Button, GridColumn } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
 import edu from './landing/AcaDev.png'
-import collab from './landing/Rectangle66.png'
-import socialize from './landing/Rectangle69.png'
-import socialgood from './landing/SocialGood.png'
+import engage from './landing/engage.jpg'
+import innovate from './landing/innovate.jpg'
+import educate from './landing/educate.jpg'
 import topright from './landing/WebsiteLandingPage-2.png'
 import bottomright from './landing/WebsiteLandingPage-2rotate.png'
 
@@ -233,7 +233,7 @@ Learn More >
 
   </Grid>
   <Grid style={{width:"110%",backgroundColor:"white"}}>
-<Grid.Row columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${edu})`}}>
+<Grid.Row columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${educate})`}}>
 <Grid.Column>
   <div style={overlaytext}>
   educate.
@@ -253,7 +253,7 @@ Learn More >
     </Grid.Column>
 
 </Grid.Row>
-<Grid.Row columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${collab})`}}>
+<Grid.Row columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${innovate})`}}>
 <Grid.Column>
 <div style={overlaytext}>
   innovate.
@@ -267,7 +267,7 @@ Learn More >
   </Link>
   </Grid.Column>
 </Grid.Row>
-<Grid.Row columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${socialgood})`}}>
+<Grid.Row columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${engage})`}}>
  <div style={overlaytext}>
   engage.
   </div>
