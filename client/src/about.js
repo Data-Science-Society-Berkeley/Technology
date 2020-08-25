@@ -531,8 +531,9 @@ class About extends Component {
        <div style={{zIndex:"1",position:"relative"}}>
       <Image src={story} style={{width:"120%",height:"auto",zIndex:"2"}}>
       </Image>
-      <div style={{width:"100%",textAlign:"center"}}>
+      <div style={{width:"100%",textAlign:"center",background: "rgba(140, 214, 209, 0.6)"}}>
       <span style={{position: "absolute",top:"50%",transform: "translate(-50%, -50%)" ,zIndex: "3",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"bold",fontSize:"72px",lineHeight:"88px",color:"#FFFFFF"}}> OUR STORY</span>
+      <div style={{background: "rgba(140, 214, 209, 0.6)",zIndex:"2",position: "absolute",width:"100%",height:"100%",top:0,left:0,right:0,bottom:0}}></div>
       </div>
 
      </div>
