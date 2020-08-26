@@ -139,7 +139,7 @@ class Footer extends Component {
                 <Link to="/gm"><List.Item as='a' style={footer}> General Membership </List.Item></Link>
                 <br/>                <br/>
 
-                <Link to='/decallearn'><List.Item as='a' style={footer}>DeCal: Essential Tools for Data Science </List.Item></Link>                <br/>                
+                <Link to='/decallearn'><List.Item as='a' style={footer}>DeCal Course </List.Item></Link>                <br/>                
                 <br/>                
 
               </List>
