@@ -172,13 +172,13 @@ marginLeft:"79.5%"}}>
 
     <Grid >
     <Grid.Row style={{width:"655px",height:"258x",marginLeft:"72px",marginBottom:"28px"}} >
-    <Grid.Column width={8}>
+    <Grid.Column width={6}>
     <Image src={event1} style={{width:"655px",height:"258x"}}>
     </Image>
     <Image src={event2} style={{width:"653px",height:"230px"}}>
     </Image>
     </Grid.Column>
-    <Grid.Column width={6}>
+    <Grid.Column width={7}>
     <div style={rightcol}>
     <strong>Operation: Analytics, a Tech & Business Industry Speaker Series </strong><br/>
 Thursday, February 27, 2020<br/>
@@ -201,13 +201,13 @@ Co-Hosted with Phi Beta Lambda and the Student Association of Applied Statistics
 
     </div>
     <Grid.Row coluns={2} style={{width:"655px",height:"258x",marginLeft:"72px",marginBottom:"42px",marginTop:"39px"}}>
-    <Grid.Column width={8}>
+    <Grid.Column width={6}>
     <Image src={event3} style={{width:"651px",height:"307px"}}>
     </Image>
     <Image src={event4} style={{width:"651px",height:"307px"}}>
     </Image>
     </Grid.Column>
-    <Grid.Column width={6}>
+    <Grid.Column width={7}>
     <div style={rightcol}>
    <strong> DSS Datathon for Social Good</strong>  <br/>
 Start: Friday, Nov 8, 2019 at 5:00 PM <br/>
@@ -228,12 +228,12 @@ Sponsored by IBM. Co-Hosted with Latinx Business Club.  <br/>
     <div style={bluediv}>
 
 </div>
-    <Grid.Row style={{width:"655px",height:"258x",marginLeft:"72px",marginTop:"39px",marginBottom:"42px"}}>
-    <Grid.Column width={8}>
+    <Grid.Row style={{width:"655px",marginLeft:"72px",height:"258x",marginTop:"39px",marginBottom:"42px"}}>
+    <Grid.Column width={6}>
     <Image src={event5} style={{width:"643px",height:"336px"}}>
     </Image>
     </Grid.Column>
-    <Grid.Column width={6}>
+    <Grid.Column width={7}>
     <div style={rightcol}>
     <strong>Quora Tech Talk  </strong><br/>
 Thursday, September 12, 2019 <br/>
