@@ -9,9 +9,9 @@ let endpoint = "http://localhost:8080/test";
 const footer = {
   color: "#000000",
   fontFamily: "Montserrat",
-  fontSize: "14px",
+  fontSize: "18px",
   fontStyle:"normal",
-  lineHeight: "17px",
+  lineHeight: "22px",
 };
 const iconDesc = {
   color: "#000000",
@@ -26,9 +26,10 @@ const iconDesc = {
 const link = {
   color: "#000000",
   fontFamily: "Montserrat",
-  fontSize: "14px",
+  fontSize: "18px",
   fontStyle:"normal",
-  lineHeight: "17px",
+  lineHeight: "22px",
+  fontWeight:"600",
 };
 class Footer extends Component {
   constructor(props) {
@@ -40,7 +41,7 @@ class Footer extends Component {
       <Container>
         <Grid divided inverted stackable>
         <Grid.Row>
-        <div style={{marginLeft:"-493px",marginTop:"24px"}}>
+        <div style={{marginLeft:"-20%",marginTop:"24px"}}>
           <Image inline src={logo} style={{width:"74px",height:"74px"}}>
           </Image>
           <div style={{marginLeft:"100px",marginTop:"-40px",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"300px",fontSize:"24px",lineHeight:"29px"}}>
@@ -50,7 +51,7 @@ class Footer extends Component {
         </Grid.Row>
           <Grid.Row style={{marginBottom:"10px",marginTop:"24px"}}>
           <Grid.Column width={8}>
-          <Icon.Group size='huge' style={{marginLeft:"-450px",marginTop:"0px"}}>
+          <Icon.Group size='huge' style={{marginLeft:"-20%",marginTop:"0px"}}>
                         <a href="mailto:info@dss.berkeley.edu"><Icon name="mail outline" style={{marginBottom:"14px",color:"#8CD6D1"}}>
                           </Icon>
                           </a>
@@ -84,21 +85,24 @@ class Footer extends Component {
                         </Icon.Group>
           </Grid.Column>
             <Grid.Column width={2} >
-              <div  style={{link}}>
-              <span style={{fontWeight:"450"}}>General </span>
+              <div  style={link}>
+              General 
                   </div>
               <List link inverted>
                 <Link to="/about"> <List.Item as='a' style={footer}> About us </List.Item></Link>
                 <br/>                 <br/>
 
                 <Link to="/acadev"><List.Item as='a' style={footer}> AcaDev</List.Item></Link>
-                <br/>                
+                <br/>                     <br/>                
+           
 
 
                 <Link to="/consulting"><List.Item as='a' style={footer}> Consulting </List.Item></Link>
-                <br/>              
+                <br/>                            <br/>                
+  
                 <Link to='/decal'> <List.Item as='a' style={footer}> DeCal </List.Item></Link>
-                <br/>
+                <br/>                <br/>                
+
                 <Link to="socialgood"> <List.Item as='a' style={footer}> Social Good </List.Item></Link>
                 <br/>                <br/>
 
@@ -110,29 +114,39 @@ class Footer extends Component {
               </List>
             </Grid.Column>
             <Grid.Column width={2}>
-            <div   style={{link}}>
-            <span style={{fontWeight:"450"}}>Past Work     </span>       </div>
+            <div   style={link}>
+            Past Work   </div>
               <List link inverted>
                 <Link to="/consulting">
-              <List.Item as='a' style={footer}> Consulting</List.Item>  </Link>
+              <List.Item as='a' style={footer}> Consulting</List.Item>  </Link>                <br/>                
+              <br/>                
+
                 <Link to="/events"><List.Item as='a' style={footer}>Events</List.Item> </Link>
+                <br/>                       <br/>                
+         
+
                 <Link to="/events"> <List.Item as='a' style={footer}>Workshops</List.Item></Link>
+                <br/>                   <br/>                
+             
+
                 <List.Item as='a' style={footer}>GM Projects</List.Item>
               </List>
             </Grid.Column>
             <Grid.Column width={2}>
-            <div  style={{link}} >
-            <span style={{fontWeight:"450"}}> Program Pages  </span>          </div>
+            <div  style={link} >
+            Program Pages         </div>
               <List link inverted>
                 <Link to="/gm"><List.Item as='a' style={footer}> General Membership </List.Item></Link>
                 <br/>                <br/>
 
-                <Link to='/decallearn'><List.Item as='a' style={footer}>DeCal: Essential Tools for Data Science </List.Item></Link>
+                <Link to='/decallearn'><List.Item as='a' style={footer}>DeCal: Essential Tools for Data Science </List.Item></Link>                <br/>                
+                <br/>                
+
               </List>
             </Grid.Column>
             <Grid.Column width={2}>
-            <div   style={{link}}>
-            <span style={{fontWeight:"450"}}> Contact Us       </span>   </div>
+            <div   style={link}>
+            Contact Us    </div>
               <List link inverted>
                 <Link to="/apply"><List.Item as='a' style={footer}> <span style={{fontWeight:"480",color:"#000000"}}>Apply</span></List.Item></Link>
               </List>
