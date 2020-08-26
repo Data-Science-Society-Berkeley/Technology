@@ -21,7 +21,7 @@ import Service from './Services.js'
 import GeneralMember from './generalmember.js'
 import Culture from './Culture.js'
 
-//import Footer from './footer'
+import Footer from './footer'
 import MobileMenu from './mobilemenu.js'
 import MobileLanding from './mobilelanding.js'
 
@@ -114,6 +114,7 @@ render () {
     <div>
     <NavBar {...props}/>
     <CentralText {...props} buttonClick={this.sendData.bind(this)} />
+    <Footer></Footer>
     </div>
     } 
     />
@@ -147,6 +148,7 @@ Join our Discord at discord.gg/nrSntva !
     <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props} />
     <About/>
+    <Footer></Footer>
     </div>
     }/>
     <Route exact path ='/commitees' render={(props) => 
@@ -154,6 +156,7 @@ Join our Discord at discord.gg/nrSntva !
         <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props} />
     <Committees></Committees>
+    <Footer></Footer>
     </div>
     }/>
      <Route exact path ='/consulting' render={(props) => 
@@ -161,6 +164,7 @@ Join our Discord at discord.gg/nrSntva !
         <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props} />
     <Consulting></Consulting>
+    <Footer></Footer>
     </div>
     }/>
       <Route exact path ='/acadev' render={(props) => 
@@ -168,6 +172,7 @@ Join our Discord at discord.gg/nrSntva !
         <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props} />
     <Acadev></Acadev>
+        <Footer></Footer>
     </div>
     }/>
        <Route exact path ='/gm' render={(props) => 
@@ -175,6 +180,7 @@ Join our Discord at discord.gg/nrSntva !
         <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props} />
     <GeneralMember></GeneralMember>
+    <Footer></Footer>
     </div>
     }/>
       <Route exact path ='/decal' render={(props) => 
@@ -182,6 +188,7 @@ Join our Discord at discord.gg/nrSntva !
         <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props} />
     <Decal></Decal>
+    <Footer></Footer>
     </div>
     }/>
         <Route exact path ='/decallearn' render={(props) => 
@@ -189,6 +196,7 @@ Join our Discord at discord.gg/nrSntva !
         <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props} />
     <DecalLearn></DecalLearn>
+    <Footer></Footer>
     </div>
     }/>
        <Route exact path ='/socialgood' render={(props) => 
@@ -196,6 +204,7 @@ Join our Discord at discord.gg/nrSntva !
         <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props} />
     <Social></Social>
+    <Footer></Footer>
     </div>
     }/>
       <Route exact path ='/events' render={(props) => 
@@ -203,6 +212,7 @@ Join our Discord at discord.gg/nrSntva !
             <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props}/>
     <Work></Work>
+    <Footer></Footer>
     </div>
     } 
     />
@@ -213,6 +223,7 @@ Join our Discord at discord.gg/nrSntva !
     <Service></Service>
     <div style={{backgroundColor:"#8CD6D1",marginRight:"-500px",marginTop:"0px",paddingBottom:"150px"}}>
     <Contact ></Contact>
+    <Footer></Footer>
     </div>
 
     <div style={{backgroundColor:"#FFFFFF",marginTop:"55px",paddingBottom:"50px",textAlign:"center",fontFamily:"Montserrat",fontSize:"24px",fontHeight:"29px"}}>
@@ -225,7 +236,11 @@ Join our Discord at discord.gg/nrSntva !
     <div>
                 <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props}/>
-    <Education></Education>
+    <Education ></Education>
+    <div style={{marginTop:"200px"}}>
+
+    </div>
+    <Footer style={{marginTop:"200px"}}></Footer>
     </div>
     } 
     />

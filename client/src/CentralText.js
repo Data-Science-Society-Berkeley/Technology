@@ -345,39 +345,9 @@ Stay updated on our events, recruiting, and other on-campus initiatives. </Grid.
     />
                           </Form>
                           </Grid.Column>
-                          <Grid.Column>
-                          <div>
-                        <Icon.Group size='huge' style={{marginLeft:"0px",marginTop:"100px"}}>
-                        <a href="mailto:info@dss.berkeley.edu"><Icon name="mail" style={{marginLeft:"100px",color:"#8CD6D1"}}>
-
-                          </Icon>
-                          </a>
-                          <a href="https://www.instagram.com/dssberkeley/"> <Icon name="instagram" style={{marginLeft:"0px",color:"#8CD6D1"}}/> </a>
-
-                         
-                          <a href="https://www.facebook.com/dssberkeley"> <Icon name="facebook" style={{marginLeft:"10px",color:"#8CD6D1"}}>
-
-                            </Icon>
-                            </a>
-                            <a href="https://www.linkedin.com/company/data-science-society-at-berkeley/"> <Icon name="linkedin" style={{marginLeft:"10px",color:"#8CD6D1"}}>
-
-                            </Icon>
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCBj7xVI8e_jlEAznyVetWIQ/"> <Icon name="youtube" style={{marginLeft:"10px",color:"#8CD6D1"}}>
-
-                            </Icon>
-                            </a>
-                        </Icon.Group>
-                        </div>
-                        </Grid.Column>
-
+                       
 </Grid.Row>
 </Grid>
-<a href="https://www.ocf.berkeley.edu/">
- <Image src={ocf} style={{marginTop:"20px"}}>
-
-</Image>
-</a>
   </div>
 )
 
