@@ -8,6 +8,8 @@ import Committees from './committees'
 import CentralText from './CentralText';
 import Decal from './Decal';
 import DecalLearn from './DecalLearn.js';
+import apply from './Backgrounds/dssfall2020-recruitmentbanner.png';
+
 
 import Acadev from './Acadev';
 import Consulting from './Consulting';
@@ -19,6 +21,7 @@ import Service from './Services.js'
 import GeneralMember from './generalmember.js'
 import Culture from './Culture.js'
 
+//import Footer from './footer'
 import MobileMenu from './mobilemenu.js'
 import MobileLanding from './mobilelanding.js'
 
@@ -117,7 +120,19 @@ render () {
       <Route exact path ='/apply' render={(props) => 
     <div>
     <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
-    <Menu {...props} />
+    <NavBar {...props} />
+    <Image src={apply}>
+
+    </Image>
+
+    <div style={{color:"#000000",textAlign:"center",lineHeight:"59px",fontSize:"48px",fontWeight:"300",fontFamily:"Montserrat",marginTop:'56px',marginBottom:"56px",marginLeft:"180px",marginRight:"180px"}}>
+    
+    Applications open Thursday, August 27, 2020 at 12:00 Pacific Standard Time. Follow our socials to stay updated!
+<br/>
+<br/>
+
+Join our Discord at discord.gg/nrSntva !
+    </div>
     </div>
     }/>
         <Route exact path ='/culture' render={(props) => 
