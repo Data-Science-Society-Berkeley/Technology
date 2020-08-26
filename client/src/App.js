@@ -211,8 +211,12 @@ Join our Discord at discord.gg/nrSntva !
                     <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props}/>
     <Service></Service>
-    <div style={{backgroundColor:"#8CD6D1",marginRight:"-500px",marginTop:"-61px",paddingBottom:"150px"}}>
+    <div style={{backgroundColor:"#8CD6D1",marginRight:"-500px",marginTop:"0px",paddingBottom:"150px"}}>
     <Contact ></Contact>
+    </div>
+
+    <div style={{backgroundColor:"#FFFFFF",marginTop:"55px",paddingBottom:"50px",textAlign:"center",fontFamily:"Montserrat",fontSize:"24px",fontHeight:"29px"}}>
+    You can also reach us through our email or social medias listed below. 
     </div>
     </div>
     } 

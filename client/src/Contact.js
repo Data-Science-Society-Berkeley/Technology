@@ -15,7 +15,7 @@ import {
       Checkbox,Input
 
 } from 'semantic-ui-react';
-let endpoint = "https://dssberkeley.com/";
+let endpoint = "https://dssberkeley.com";
 const gridoffset = {
     marginTop: "67px",
     textAlign:"center",
@@ -30,8 +30,9 @@ lineHeight: "110px",
 width:"438px",
 fontStyle: "normal",
 textAlign:"left",
-marginLeft:"10%"
-
+marginLeft:"10%",
+marginTop:"10%",
+marginBottom:"400px",
 
 };
 const mymidtext = {
@@ -47,14 +48,27 @@ marginLeft:"10%"
 
 };
 const formStyle = {
-    width: "635px",
+    width: "662px",
     height: "88px",
     border: "2px solid #FFFAFA",
     boxSizing:"borderBox",
     backgroundColor:"transparent",
     marginTop:"22px",
-    color:"#FFFFFF"
+    color:"#FFFFFF",
+    borderRadius: "15px",
+    fontSize:"24px",
     };
+    const formStyle2 = {
+      width: "662px",
+      height: "243px",
+      border: "2px solid #FFFAFA",
+      boxSizing:"borderBox",
+      backgroundColor:"transparent",
+      marginTop:"22px",
+      color:"#FFFFFF",
+      borderRadius: "15px",
+      fontSize:"24px",
+      };
 const buttonStyle = { width: "402px"
 , height: "76px",fontFamily: "Montserrat",
 fontWeight: 600,
@@ -85,12 +99,14 @@ class Login extends Component {
   }
   loginUser = () => {
     let email = this.state.email
-    let password = this.state.password
+    let name = this.state.name
+    let message= this.state.message
+
     axios
     .post(
-      endpoint + "/api/login",
+      endpoint + "/api/email",
       {
-    email,password
+    email,name,message
       },
       {
         withCredentials: true,
@@ -116,7 +132,12 @@ class Login extends Component {
   };
   onPChange = (value) => {
     // TODO if its an invalid email we can prompt them for an error later
-    this.setState({ password: value.target.value });
+
+    this.setState({ name: value.target.value });
+  };
+  onMChange = (value) => {
+    // TODO if its an invalid email we can prompt them for an error later
+    this.setState({ message: value.target.value });
   };
   validateForm(){
       // this function makes a call to our backend with the current email in the box
@@ -147,25 +168,21 @@ class Login extends Component {
     return (
         <Grid divided='vertically' style={gridoffset}>
         <Grid.Row columns={2}>
-                    <Grid.Column>
+                    <Grid.Column verticalAlign="center">
                         <Header as='h1'style={mybigtext}>
-                            Data Science Society
-                            </Header>
-                            <Header as= 'h1' style={mymidtext}>
-                              At Berkeley
+                            Contact us Here!
                             </Header>
                         </Grid.Column>
 
                         <Grid.Column floated="left">
-                          <Form >
-                              <Form.Input width={6}  placeholder='Name' />
-                              <Form.Input width={6} placeholder='E-mail' />
+                          <Form style={{marginTop:"5%",marginRight:"75%"}}>
+                              <input onChange={this.onPChange} style={formStyle} width={6}  id="text" placeholder='Name' />
+                              <br/>
+                              <input style={formStyle} onChange={this.onEChange} width={6} id="text" placeholder='E-mail' />
 
-                              <Form.Field width={6} style={{marginTop:"22px"}}>
-                              <Form.TextArea width={6} placeholder='Message' />
-                              </Form.Field>
+                              <Form.TextArea style={formStyle2}  onChange={this.onMChange} id="text" placeholder='Message' />
 
-                              <Form.Button width={6} rounded style={buttonStyle}>
+                              <Form.Button width={6} onClick={this.loginUser} rounded style={buttonStyle}>
                                   SUBMIT
                               </Form.Button>
                           </Form>

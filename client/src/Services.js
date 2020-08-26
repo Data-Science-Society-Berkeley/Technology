@@ -9,8 +9,7 @@ import charlie from './Leadership Headshots/charlie.jpg'
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
-          marginLeft:"62px",
-          marginTop: "42px",
+          marginTop: "24px",
           textAlign:"center",
           fontFamily: "Montserrat"
 };
@@ -61,14 +60,14 @@ const imagestyle = {
 }; 
 const mymidtext = {
   fontFamily: "Montserrat",
-  fontWeight: 300,
+  fontWeight: 600,
   lineHeight: "73px",
   fontSize: "48px",
   color:"#8CD6D1",
   fontStyle: "normal",
   textAlign:"center",
-  marginLeft:"30px",
-  marginTop:"19px",
+  marginLeft:"0px",
+  marginTop:"72px",
 };
 const link = {
     fontFamily: "Montserrat",
@@ -77,7 +76,24 @@ const link = {
     fontSize: "24px",
     color:"#000000",
     fontStyle: "normal",
-    textAlign:"left",
+    textAlign:"center",
+    marginLeft:"77px",
+    marginRight:"114px",
+    marginBottom:"70px",
+    marginTop:"17px",
+  };
+  const link2 = {
+    fontFamily: "Montserrat",
+    fontWeight: 300,
+    lineHeight: "29px",
+    fontSize: "24px",
+    color:"#000000",
+    fontStyle: "normal",
+    textAlign:"center",
+    marginLeft:"85px",
+    marginRight:"50px",
+    marginBottom:"43px",
+    marginTop:"17px",
   };
 class Education extends Component {
   constructor(props) {
@@ -127,40 +143,28 @@ class Education extends Component {
     return (
         <div>
 
-        <Header style={mybigtext}> Services</Header>
-    
-        <Grid divided='vertically' style={gridoffset}>
-    <Grid.Row columns={2}>
-                <Grid.Column>
-
-                    <Segment style={{height:"906px",width:"588px",border: "1px solid #000000",boxSizing: "borderBox",font:"Montserrat"}}>
-                    <Header style={mymidtext}>
+        <Header style={mybigtext}> SERVICES</Header>    
+<Card.Group centered style={{marginBottom:"100px"}}>
+                    <Card style={{height:"565x",width:"588px",border: "1px solid #000000",boxSizing: "borderBox",font:"Montserrat",borderRadius:"20px",marginRight:"58px"}}>
+                    <div style={mymidtext}>
                     Consulting
-                    </Header>
-                    <div>
+                    </div>
+                    <div style={link}>
                     Consulting teams consist of 2 Project Managers, 4-6 Consultants, and 1 Project Mentor, all of whom sign non-disclosure agreements. We engage with 5 clients each semester.
 
-<br></br><br></br>Contact us below to receive our consulting pitch slide deck and work samples.                  </div>
-                    </Segment>
-
-                </Grid.Column>
-                <Grid.Column>
-                    <Grid.Row>
-                    <Segment style={{height:"906px",width:"588px",border: "1px solid #000000",boxSizing: "borderBox",font:"Montserrat"}}>
-                    <Header style={mymidtext}>
+<br></br><br></br><strong style={{fontWeight:"bold"}}>Contact us below to receive our consulting pitch slide deck and work samples. </strong></div>
+                    </Card>
+                    <Card style={{height:"565x",width:"588px",border: "1px solid #000000",boxSizing: "borderBox",font:"Montserrat",borderRadius:"20px"}}>
+                    <div style={mymidtext}>
                     Sponsorships
-                    </Header>
-                    <div>
+                    </div>
+                    <div style={link2}>
                     We offer sponsorship opportunities for our clients. We possess a significant footprint on campus through our 2-unit course for 90 students, weekly workshops open to all UC Berkeley students with an average of 50 attendees, and highly coveted sponsored events.
 
-<br/> <br/>Contact us below to receive our sponsorship booklet.                    </div>                 
-                    </Segment>
-                    </Grid.Row>
-
+<br/> <br/><strong style={{fontWeight:"bold"}}> Contact us below to receive our sponsorship booklet.      </strong>              </div>                 
+                    </Card>
+                    </Card.Group>
               
-                </Grid.Column>
-  </Grid.Row>
-  </Grid>
   </div>
 
 )

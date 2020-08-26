@@ -233,6 +233,13 @@ class NavBar extends Component {
             login
             </Link>
             </Menu.Item>
+            <Menu.Item     name='apply'
+            active={activeItem === 'apply'}
+            onClick={this.handleItemClick} style={navbar}>
+            <Link style={linkStyling} to="/apply">
+            apply
+            </Link>
+            </Menu.Item>
             <Menu.Item header >
             
 
