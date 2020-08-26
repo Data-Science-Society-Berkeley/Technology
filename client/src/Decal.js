@@ -185,7 +185,7 @@ DeCal</span>
     textAlign:"center",
     marginTop:"87px"
   }}>
-        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"155px",marginTop:"53px",marginRight:"-185px",marginBottom:"-45px"}}> </div > 
+        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"315px",marginTop:"53px",marginRight:"-185px",marginBottom:"-45px"}}> </div > 
        The Course
        <Image src={datalab} style={{height:"204px",width:"551px",margin:"0 auto",marginBottom:"56px"}}>
 </Image>
