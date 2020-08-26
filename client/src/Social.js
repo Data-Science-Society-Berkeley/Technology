@@ -142,6 +142,7 @@ class Social extends Component {
 <Grid centered>
 <Grid.Row style={{marginTop:"130px"}}>
 <Header style={link}>
+<div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-620px",marginTop:"43px",marginRight:"-185px",marginBottom:"-80px"}}> </div>
 Committee Origin       
 </Header>  
 </Grid.Row>

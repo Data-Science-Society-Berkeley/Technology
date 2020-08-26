@@ -484,6 +484,18 @@ class About extends Component {
     sendData(data) {
         this.props.buttonClick(data);
     };
+    scrollJoin(){
+      document.getElementById( 'join' ).scrollIntoView();
+    }
+    scrollWho(){
+      document.getElementById( 'who' ).scrollIntoView();
+    }
+    scrollFind(){
+      document.getElementById( 'place' ).scrollIntoView();
+    }
+    scrollTeam(){
+      document.getElementById( 'team' ).scrollIntoView();
+    }
     render() {
     return (
       <div>
@@ -499,16 +511,28 @@ class About extends Component {
      <Grid entered style={gridoffset}>
      <Grid.Row width={16} columns={4} style={{backgroundColor:"#8CD6D1",width:"100%",height:"97px",marginTop:"-45px"}}>
      <Grid.Column width={4} style={aboutlinks}>
+     <div onClick={this.scrollWho}>
      Who we are
+     </div>
+
      </Grid.Column>
    <Grid.Column style={aboutlinks}>
-       Why Join?
+   <div onClick={this.scrollJoin}>
+   Why Join?
+
+   </div>
      </Grid.Column>
      <Grid.Column style={aboutlinks}>
-       Find your place
+     <div onClick={this.scrollFind}>
+     Find your place
+
+     </div>
        </Grid.Column>
        <Grid.Column style={aboutlinks}>
+       <div onClick={this.scrollTeam}>
        Our Team
+
+       </div>
        </Grid.Column>
     
 
@@ -516,7 +540,9 @@ class About extends Component {
      
     <Grid.Row centered columns={1} style={{marginBottom:"100px"}}>
     <div style={{marginTop:"100px"}}>
-    <div style={header}> Who We Are</div>
+    <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"150px",marginTop:"93px",marginRight:"-185px",marginBottom:"-40px"}}> </div>
+    <div id="who" style={header}> 
+    Who We Are</div>
     </div>
 
     <Grid.Column style={{marginLeft:"170px",marginRight:"auto",marginTop:"33px"}}>
@@ -544,7 +570,8 @@ class About extends Component {
   </div>
   </Grid.Row>
   <Grid.Row width={12} centered style={{marginTop:"-250px"}}>
-  <div style={header}> Why Join?</div>
+  <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-735px",marginTop:"43px",marginRight:"-185px",marginBottom:"-80px"}}> </div>
+  <div id="join"  style={header}> Why Join?</div>
   </Grid.Row>
   <Grid.Row width={12} centered>
   <div style={{fontSize:"36px",lineHeight:"44px",fontWeight:"500px",marginTop:"-120px",color:"#B6E5D7",fontFamily:"Montserrat",marginBottom:"94px"}}> Simple. To be a part of our family.</div>
@@ -578,7 +605,8 @@ class About extends Component {
                     </div>
   </Grid.Row>
     <Grid.Row width={12} centered>
-  <div style={header}> Find your place</div>
+    <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-655px",marginTop:"43px",marginRight:"-185px",marginBottom:"-80px"}}> </div>
+  <div style={header} id="place">  Find your place</div>
   </Grid.Row>
     <Grid.Row centered columns={3}  style={{marginTop:"56px"}}>
       <Grid.Column style={{}}>
@@ -647,7 +675,8 @@ View our current team below!
       </Grid.Column>
     </Grid.Row>
 <Grid.Row centered width={12} style={{marginTop:"100px"}}>
-                    <div style={mybigtext}> Our Exec Team</div>
+<div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-655px",marginTop:"43px",marginRight:"-185px",marginBottom:"-80px"}}> </div>
+                    <div id="team" style={mybigtext}> Our Exec Team</div>
                     <Card.Group centered itemsPerRow={3} style={{marginTop:"56px"}}>
                     {leadershipCards}
                     </Card.Group>

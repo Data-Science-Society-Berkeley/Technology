@@ -185,7 +185,7 @@ DeCal</span>
     textAlign:"center",
     marginTop:"87px"
   }}>
-        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-680px",marginTop:"33px",marginRight:"-185px"}}> </div > 
+        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"155px",marginTop:"53px",marginRight:"-185px",marginBottom:"-45px"}}> </div > 
        The Course
        <Image src={datalab} style={{height:"204px",width:"551px",margin:"0 auto",marginBottom:"56px"}}>
 </Image>
@@ -196,9 +196,11 @@ DeCal</span>
     Our goal is to educate people with little to no experience in the field about the languages, software, and other tools that data scientists across the globe use daily. We place a special emphasis on practical tools not otherwise emphasized in Berkeley academic curricula. </Grid.Row>
   </Grid.Row>
   <Grid.Row style={{marginBottom:"113px"}}>
+  <Link to='/decallearn'>
   <Button style={button}>
           Course Page
           </Button>
+          </Link>
   </Grid.Row>
 </Grid.Row>
    
@@ -221,7 +223,7 @@ Apply to be a student!
 </Grid.Row>
 <Grid.Row centered style={{marginTop:"-50px"}}>
           <Button style={button}>
-          <Link to="/decallearn" style={{color:"white"}}>
+          <Link to="/apply" style={{color:"white"}}>
           Fall 2020 App
           </Link> 
           </Button>

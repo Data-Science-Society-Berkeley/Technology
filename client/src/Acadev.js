@@ -294,34 +294,47 @@ What you’ll do:
   </Card.Group>
 </Grid.Row>
 <Grid.Row centered columns={2} >
-       <Button.Group centered style={{margin:"auto"}}>          <Button style={button}>
+       <Button.Group centered style={{margin:"auto"}}>         
+       <Link to="education">
+        <Button style={button}>
           Past GM Projects
           </Button>
+          </Link>
+          <Link to="education">
           <Button style={button}>
           Past Workshops
           </Button>
+          </Link>
         </Button.Group>
         </Grid.Row>
         <Grid.Row centered columns={3} style={{marginTop:"128px"}}>
         <Grid.Column width={3}  textAlign="center" >
+        <Link to="/apply">
         <div style={info}>
         <strong>Interested in teaching? </strong>
 Apply to become an AcaDev Committee Member!
 </div>
+        </Link>
+
         </Grid.Column>
         <Grid.Column width={3} textAlign="center" >
+        <Link to="/apply">
         <div style={info}>
         <strong> Interested in learning? </strong>
 Apply to become a General Member!
 </div>
+        </Link>
 
         </Grid.Column>
 
 <Grid.Column width={3} textAlign="center" >
+<Link to="/decal">
 <div style={info}>
 <strong> Interested in being a part of our DeCal instead? </strong>
 Check out the DeCal Committee Page. 
 </div>
+</Link>
+
         </Grid.Column>
 
    

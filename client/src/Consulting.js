@@ -198,6 +198,9 @@ class Consulting extends Component {
     // TODO if its an invalid email we can prompt them for an error later
     this.setState({ email: value.target.value });
   };
+  testa(){
+    document.getElementById( 'testa' ).scrollIntoView();
+  }
   join(){
       console.log(14)
       let email = this.state.email
@@ -545,7 +548,7 @@ Warehousing
         </div>
         </Grid.Row>
         <Grid.Row style={link} centered>
-        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-600px",marginTop:"32px",marginRight:"-130px"}}> </div > 
+        <div onClick={this.testa} id="testa" style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-600px",marginTop:"32px",marginRight:"-130px"}}> </div > 
         Client Testimonials
         </Grid.Row>
         <Grid.Row>
