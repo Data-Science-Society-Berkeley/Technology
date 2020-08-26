@@ -638,7 +638,7 @@ Warehousing
         </Image.Group>
 
         </Grid.Row>
-        <Grid.Row style={{fontFamily:"Monteserrat",fontSize:"24px",marginLeft:"165px",marginRight:"165px",marginBottom:"120px",marginTop:"56px",lineHeight:"29px"}}>
+        <Grid.Row style={{fontFamily:"Monteserrat",fontSize:"24px",marginLeft:"400px",marginRight:"400px",marginBottom:"120px",marginTop:"56px",lineHeight:"29px"}}>
         Additionally, we offer our clients sponsorship opportunities to connect our clients with UC Berkeley’s top talent, from setting up events (Info-sessions, Career Fairs, Case Competitions, Hackathons, and Coffee Chats) to compiling extensive Resume Booklets.
         </Grid.Row>
         </Grid>
