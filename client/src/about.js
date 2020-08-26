@@ -547,7 +547,7 @@ class About extends Component {
 
     <Grid.Column style={{marginLeft:"170px",marginRight:"auto",marginTop:"33px"}}>
     <div style={{fontSize:"36px",lineHeight:"44px",fontWeight:"500px",marginTop:"22px",color:"#B6E5D7",fontFamily:"Montserrat",textAlign:"center",marginLeft:"-280px"}}> A family of passionate individuals looking to make a change.</div>
-    <div style={{fontSize:"29px",lineHeight:"35px",fontWeight:"normal",marginTop:"56px",color:"#C4C4C4",fontFamily:"Montserrat",textAlign:"center",marginLeft:"460px",marginRight:"400px",width:"1000px"}}>
+    <div style={{fontSize:"29px",lineHeight:"35px",fontWeight:"normal",marginTop:"56px",color:"#C4C4C4",fontFamily:"Montserrat",textAlign:"center",marginLeft:"200px",marginRight:"400px"}}>
     Data Science Society is UC Berkeley's first student-run, not-for-profit organization focused on data science and its interdisciplinary applications. Since our founding in 2016, we have united students from a wide range of disciplines behind our shared passion for all things data.
     </div>
     </Grid.Column>
