@@ -331,7 +331,7 @@ Collaborate with us and grow our data science community!
   </Card.Group>
 </Grid.Column>
 <Grid.Column style={{marginLeft:"100px",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"400",fontSize:"74px",lineHeight:"78px",color:"#8CD6D1",paddingTop:"100px"}}>
-Subscribe to our newsletter! (coming soon)
+Subscribe to our newsletter!
 </Grid.Column>
 <Grid.Column style={{marginLeft:"100px",fontWeight:"300",fontSize:"24px",lineHeight:"29px",fontFamily:"Montserrat",marginTop:"25px"}}>
 Stay updated on our events, recruiting, and other on-campus initiatives. </Grid.Column>
