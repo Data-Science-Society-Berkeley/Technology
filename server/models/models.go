@@ -63,6 +63,12 @@ type Car struct {
 	Vin      string             `json:"task,omitempty"`
 	Status   bool               `json:"status,omitempty"`
 }
+type Contact struct {
+	ID       primitive.ObjectID `json:"_id,omitempty" bson:"_id,omitempty"`
+	Email    string             `json:"email,omitempty"`
+	Name     string             `json:"name,omitempty"`
+	Message      string             `json:"message,omitempty"`
+}
 type User struct {
 	ID       primitive.ObjectID `json:"_id,omitempty" bson:"_id,omitempty"`
 	Email    string             `json:"email,omitempty"`

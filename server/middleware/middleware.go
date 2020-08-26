@@ -335,6 +335,22 @@ func GetAddress(w http.ResponseWriter, r *http.Request) {
 	// we also want to update our users addresses if we need to
 	json.NewEncoder(w).Encode(result[len(result)-1].Value)
 }
+func Email ( w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Access-Control-Allow-Credentials", "true")
+	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
+	w.Header().Set("Access-Control-Allow-Origin", "https://dssberkeley.com")
+	w.Header().Set("Access-Control-Allow-Methods", "POST")
+	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+	var contact  models.Contact
+	err := json.NewDecoder(r.Body).Decode(&contact)
+	//fmt.Println(performance.ZoomUrl)
+	if err != nil {
+		//fmt.Println(err)
+	}
+	fmt.Println("recieved a contact")
+	contact_id := insertOneContact(contact)
+	json.NewEncoder(w).Encode(contact_id.(primitive.ObjectID).Hex())
+}
 func AddPerformance(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Access-Control-Allow-Credentials", "true")
 	w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
@@ -816,6 +832,14 @@ func insertOneCustomer(customer models.Customer) {
 	//fmt.Println("Inserted a Single User", insertResult.InsertedID)
 }
 
+// Insert one customer in the DB
+func insertOneContact(performance models.Contact) interface{} {
+	insertResult, err := emailCollection.InsertOne(context.Background(), performance)
+	if err != nil {
+		log.Fatal(err)
+	}
+	return insertResult.InsertedID
+}
 // Insert one customer in the DB
 func insertOnePerformance(performance models.Performance) interface{} {
 	insertResult, err := performanceCollection.InsertOne(context.Background(), performance)
