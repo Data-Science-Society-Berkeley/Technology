@@ -134,7 +134,9 @@ class Footer extends Component {
             </Grid.Column>
             <Grid.Column width={2}>
             <div  style={link} >
-            Program Pages         </div>
+            <div style={{width:"150px"}}>
+            Program Pages                    </div>
+ </div>
               <List link inverted>
                 <Link to="/gm"><List.Item as='a' style={footer}> General Membership </List.Item></Link>
                 <br/>                <br/>
@@ -144,11 +146,11 @@ class Footer extends Component {
 
               </List>
             </Grid.Column>
-            <Grid.Column width={2}>
+            <Grid.Column width={2} style={{marginRight:"-100px",marginLeft:"50px"}}>
             <div   style={link}>
             Contact Us    </div>
               <List link inverted>
-                <Link to="/apply"><List.Item as='a' style={footer}> <span style={{fontWeight:"480",color:"#000000"}}>Apply</span></List.Item></Link>
+                <Link to="/apply"><List.Item as='a' style={link}> Apply </List.Item></Link>
               </List>
             </Grid.Column>
           </Grid.Row>
