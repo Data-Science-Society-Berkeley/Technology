@@ -44,7 +44,7 @@ const overlaytext = {
   fontWeight: 500,
   lineHeight: "78px",
   fontSize: "64px",
-  color:"#FFFFFF",
+  color:"#000000",
   fontStyle: "normal",
   textAlign:"left",
   marginLeft:"85px",
@@ -55,7 +55,7 @@ const underlaytext = {
   fontWeight: 300,
   lineHeight: "37px",
   fontSize: "30px",
-  color:"#FFFFFF",
+  color:"#000000",
   fontStyle: "normal",
   textAlign:"left",
   marginLeft:"85px",
@@ -281,8 +281,8 @@ Learn More >
 
   <Grid.Column>
   <div style={underlaytext}>
-  <Link to="/acadev"> <div style={{color:"#FFFFFF"}}>  Learn more about our Academic Development programs >> </div>  </Link>
- <Link to="/decal"> <div style={{marginTop:"29px",color:"#FFFFFF"}}>
+  <Link to="/acadev"> <div style={{color:"#000000"}}>  Learn more about our Academic Development programs >> </div>  </Link>
+ <Link to="/decal"> <div style={{marginTop:"29px",color:"#000000"}}>
   Check out our DeCal >>
   </div>
   
