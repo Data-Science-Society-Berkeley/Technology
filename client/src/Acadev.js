@@ -210,6 +210,8 @@ class Acadev extends Component {
       <span style={{position: "absolute",top:"50%",left:"2%" ,zIndex: "3",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"bold",fontSize:"72px",lineHeight:"88px",color:"#FFFFFF"}}> 
       <span style={{fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px"}}>4 </span> <span style={{fontSize:"30px",fontWeight:"500px",fontStyle:"normal",lineHeight:"37px",textAlign:"center",width:"386px",font:"Montserrat"}}>Semesters of General Membership Completed</span>
       </span>
+      <span style={{position: "absolute",top:"40%",transform: "translate(-50%, -50%)" ,zIndex: "3",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"bold",fontSize:"72px",lineHeight:"88px",color:"#FFFFFF"}}>
+Academic Development</span>
       <span style={{position: "absolute",top:"50%",left:"60%" ,zIndex: "3",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"bold",fontSize:"72px",lineHeight:"88px",color:"#FFFFFF"}}> 
       <span style={{marginLeft:"51px",fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px"}}> 350+ <span style={{fontSize:"30px",fontWeight:"500px",fontStyle:"normal",lineHeight:"37px",textAlign:"center",width:"386px",font:"Montserrat"}}>Past General Members</span> </span>
 </span>
