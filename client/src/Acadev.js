@@ -344,9 +344,7 @@ Check out the DeCal Committee Page.
 <Card.Meta>
         <span className='date'>Director of Acadev</span>
       </Card.Meta>
-      <Card.Description>
-      Alleanna is a director of Academic Development.      
-      </Card.Description>
+ 
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:alleanna@berkeley.edu">
@@ -363,9 +361,6 @@ Check out the DeCal Committee Page.
 <Card.Meta>
         <span className='date'>Director of Acadev</span>
       </Card.Meta>
-      <Card.Description>
-      Stephanie is a director of Academic Development.
-            </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:stephanie.lu@berkeley.edu">
@@ -382,9 +377,6 @@ Check out the DeCal Committee Page.
 <Card.Meta>
         <span className='date'>Director of Acadev</span>
       </Card.Meta>
-      <Card.Description>
-        Roshan is a director of Academic Development.
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:roshanlodha@berkeley.edu">

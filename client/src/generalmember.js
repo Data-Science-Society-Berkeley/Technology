@@ -345,9 +345,6 @@ lineHeight: "29px",marginBottom:"56px"}}>
 <Card.Meta>
         <span className='date'>Director of Academic Development</span>
       </Card.Meta>
-      <Card.Description>
-      Alleanna is a director of Academic Development.      
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:alleanna@berkeley.edu">
@@ -364,9 +361,6 @@ lineHeight: "29px",marginBottom:"56px"}}>
 <Card.Meta>
         <span className='date'>Director of Academic Development</span>
       </Card.Meta>
-      <Card.Description>
-      Stephanie is a director of Academic Development.
-            </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:stephanie.lu@berkeley.edu">
@@ -383,9 +377,6 @@ lineHeight: "29px",marginBottom:"56px"}}>
 <Card.Meta>
         <span className='date'>Director of Academic Development</span>
       </Card.Meta>
-      <Card.Description>
-        Roshan is a director of Academic Development.
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:roshanlodha@berkeley.edu">

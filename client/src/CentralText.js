@@ -233,7 +233,7 @@ Learn More >
 
   </Grid>
   <Grid style={{width:"110%",backgroundColor:"white"}}>
-<Grid.Row columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${educate})`}}>
+<Grid.Row columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${educate})`,backgroundSize: "100%"}}>
 <Grid.Column>
   <div style={overlaytext}>
   educate.
@@ -253,7 +253,7 @@ Learn More >
     </Grid.Column>
 
 </Grid.Row>
-<Grid.Row columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${innovate})`}}>
+<Grid.Row columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${innovate})`,backgroundSize: "100%"}}>
 <Grid.Column>
 <div style={overlaytext}>
   innovate.
@@ -267,7 +267,7 @@ Learn More >
   </Link>
   </Grid.Column>
 </Grid.Row>
-<Grid.Row columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${engage})`}}>
+<Grid.Row columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${engage})`,backgroundSize: "100%",backgroundColor:"#FFFFFF"}}>
  <div style={overlaytext}>
   engage.
   </div>

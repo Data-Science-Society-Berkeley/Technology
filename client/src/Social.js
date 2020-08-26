@@ -182,9 +182,6 @@ Committee Origin
 <Card.Meta>
         <span className='date'>Director of 'Good</span>
       </Card.Meta>
-      <Card.Description>
-        Charlie is a director of Social Good.
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:roshanlodha@berkeley.edu">

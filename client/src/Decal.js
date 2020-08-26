@@ -240,9 +240,6 @@ Apply to be a student!
 <Card.Meta>
         <span className='date'>Director of DeCal</span>
       </Card.Meta>
-      <Card.Description>
-        Kate is a director of DeCal.
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:roshanlodha@berkeley.edu">
@@ -259,9 +256,6 @@ Apply to be a student!
 <Card.Meta>
         <span className='date'>Director of DeCal</span>
       </Card.Meta>
-      <Card.Description>
-      Uma is a director of DeCal.      
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:alleanna@berkeley.edu">
@@ -278,9 +272,6 @@ Apply to be a student!
 <Card.Meta>
         <span className='date'>Director of DeCal</span>
       </Card.Meta>
-      <Card.Description>
-      Gayatri is a director of DeCal.
-            </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:stephanie.lu@berkeley.edu">

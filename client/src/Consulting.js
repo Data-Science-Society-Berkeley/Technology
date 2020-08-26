@@ -229,9 +229,6 @@ class Consulting extends Component {
               <Card.Meta>
                 <span className='date'>Director of Consulting</span>
               </Card.Meta>
-              <Card.Description>
-                Samir is the Director of DSS Consulting.
-              </Card.Description>
             </Card.Content>
             <Card.Content extra>
               <a href="mailto:samir.puranik@berkeley.edu">
@@ -248,9 +245,7 @@ class Consulting extends Component {
               <Card.Meta>
                 <span className='date'>PM</span>
               </Card.Meta>
-              <Card.Description>
-                Rick is a PM @ DSS.
-              </Card.Description>
+
             </Card.Content>
             <Card.Content extra>
               <a href="mailto:rickzhang@berkeley.edu">
@@ -268,8 +263,7 @@ class Consulting extends Component {
                   <Card.Meta>
                   <span className='date'>PM</span>
                   </Card.Meta>
-                  <Card.Description>
-Aadiraj is a PM @ DSS.                  </Card.Description>
+    
                 </Card.Content>
                 <Card.Content extra>
                   <a href="mailto:batlaw33375@berkeley.edu">
@@ -287,8 +281,7 @@ Aadiraj is a PM @ DSS.                  </Card.Description>
                       <Card.Meta>
                       <span className='date'>PM</span>
                       </Card.Meta>
-                      <Card.Description>
-    Kevin is a PM @ DSS.                      </Card.Description>
+
                     </Card.Content>
                     <Card.Content extra>
                       <a href="kevinmiao@berkeley.edu">
@@ -306,8 +299,7 @@ Aadiraj is a PM @ DSS.                  </Card.Description>
                           <Card.Meta>
                           <span className='date'>PM</span>
                           </Card.Meta>
-                          <Card.Description>
-        Alina is a PM @ DSS.                          </Card.Description>
+          
                         </Card.Content>
                         <Card.Content extra>
                           <a href="mailto:tutrinh@berkeley.edu">
@@ -325,8 +317,7 @@ Aadiraj is a PM @ DSS.                  </Card.Description>
                               <Card.Meta>
                               <span className='date'>PM</span>
                               </Card.Meta>
-                              <Card.Description>
-            Pranav is a PM @ DSS.                              </Card.Description>
+                 
                             </Card.Content>
                             <Card.Content extra>
                               <a href="mailto:pranavk@berkeley.edu">
@@ -344,9 +335,7 @@ Aadiraj is a PM @ DSS.                  </Card.Description>
                                   <Card.Meta>
                                   <span className='date'>PM</span>
                                   </Card.Meta>
-                                  <Card.Description>
-                                    Avik is a PM @ DSS.
-                                  </Card.Description>
+                         
                                 </Card.Content>
                                 <Card.Content extra>
                                   <a href="mailto:aviksethia99@berkeley.edu">
@@ -364,8 +353,7 @@ Aadiraj is a PM @ DSS.                  </Card.Description>
                                       <Card.Meta>
                                       <span className='date'>PM</span>
                                       </Card.Meta>
-                                      <Card.Description>
-                    Pooja is a PM @ DSS.                                      </Card.Description>
+                   
                                     </Card.Content>
                                     <Card.Content extra>
                                       <a href="mailto:pooja.eega@berkeley.edu">
@@ -383,8 +371,7 @@ Aadiraj is a PM @ DSS.                  </Card.Description>
                                           <Card.Meta>
                                           <span className='date'>PM</span>
                                           </Card.Meta>
-                                          <Card.Description>
-                        Youngli is a PM @ DSS.                                          </Card.Description>
+                  
                                         </Card.Content>
                                         <Card.Content extra>
                                           <a href="mailto:youngli.hong@berkeley.edu">
@@ -402,8 +389,7 @@ Aadiraj is a PM @ DSS.                  </Card.Description>
                                           <Card.Meta>
                                           <span className='date'>PM</span>
                                           </Card.Meta>
-                                          <Card.Description>
-                        Andy is a PM @ DSS.                                          </Card.Description>
+             
                                         </Card.Content>
                                         <Card.Content extra>
                                           <a href="mailto:andyxia124@berkeley.edu">
@@ -421,8 +407,7 @@ Aadiraj is a PM @ DSS.                  </Card.Description>
                                           <Card.Meta>
                                           <span className='date'>PM</span>
                                           </Card.Meta>
-                                          <Card.Description>
-                        Grace is a PM @ DSS.                                          </Card.Description>
+                      
                                         </Card.Content>
                                         <Card.Content extra>
                                           <a href="mailto:graceq@berkeley.edu">

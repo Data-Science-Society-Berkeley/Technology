@@ -217,9 +217,6 @@ const leadershipCards = [
       <Card.Meta>
         <span className='date'>President</span>
       </Card.Meta>
-      <Card.Description>
-        Andi is the President of DSS.
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:andihalim@berkeley.edu">
@@ -237,9 +234,6 @@ const leadershipCards = [
       <Card.Meta>
         <span className='date'>Internal Vice President</span>
       </Card.Meta>
-      <Card.Description>
-        Eric is the Internal Vice President of DSS.
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:ericgan@berkeley.edu">
@@ -256,9 +250,6 @@ const leadershipCards = [
 <Card.Meta>
         <span className='date'>External Vice President</span>
       </Card.Meta>
-      <Card.Description>
-        Varun is the External Vice President of DSS.
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:murthy@berkeley.edu">
@@ -275,9 +266,6 @@ const leadershipCards = [
 <Card.Meta>
         <span className='date'>Director of Acadev</span>
       </Card.Meta>
-      <Card.Description>
-      Alleanna is a director of Academic Development.
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:alleanna@berkeley.edu">
@@ -294,9 +282,6 @@ const leadershipCards = [
 <Card.Meta>
         <span className='date'>Director of Acadev</span>
       </Card.Meta>
-      <Card.Description>
-      Stephanie is a director of Academic Development.
-            </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:stephanie.lu@berkeley.edu">
@@ -313,9 +298,6 @@ const leadershipCards = [
 <Card.Meta>
         <span className='date'>Director of Acadev</span>
       </Card.Meta>
-      <Card.Description>
-        Roshan is a director of Academic Development.
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:roshanlodha@berkeley.edu">
@@ -332,9 +314,6 @@ const leadershipCards = [
 <Card.Meta>
         <span className='date'>Director of DeCal</span>
       </Card.Meta>
-      <Card.Description>
-        Kate is a director of DeCal.
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:katevmiller@berkeley.edu">
@@ -351,9 +330,6 @@ const leadershipCards = [
 <Card.Meta>
 <span className='date'>Director of DeCal</span>
       </Card.Meta>
-      <Card.Description>
-      Uma is a director of DeCal.
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:umakrishnaswamy@berkeley.edu">
@@ -370,9 +346,6 @@ const leadershipCards = [
 <Card.Meta>
 <span className='date'>Director of DeCal</span>
       </Card.Meta>
-      <Card.Description>
-      Gayatri is a director of DeCal.
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:gbabel@berkeley.edu">
@@ -386,12 +359,6 @@ const leadershipCards = [
 <Card style={cardstyle}>    <Image  style={imagestyle} src={samir}  />
 <Card.Content>
 <Card.Header style={textstyle}>Samir Puranik</Card.Header>
-<Card.Meta>
-<span className='date'>Director of Consulting</span>
-      </Card.Meta>
-      <Card.Description>
-      Samir is a director of Consulting.
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:samir.puranik@berkeley.edu">
@@ -408,9 +375,6 @@ const leadershipCards = [
 <Card.Meta>
         <span className='date'>VP of Finance & Director of Social Good</span>
       </Card.Meta>
-      <Card.Description>
-        Charlie is VP of Finance and Director of Social Good.
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:charlieduarte@berkeley.edu">
@@ -427,9 +391,6 @@ const leadershipCards = [
 <Card.Meta>
         <span className='date'>VP of Tech</span>
       </Card.Meta>
-      <Card.Description>
-        Arjun is VP of Tech.
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:arjunmishra@berkeley.edu">
@@ -446,9 +407,6 @@ const leadershipCards = [
 <Card.Meta>
         <span className='date'>VP of Marketing</span>
       </Card.Meta>
-      <Card.Description>
-        Varun is the VP of Marketing.
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:varunmittal@berkeley.edu">
@@ -465,9 +423,6 @@ const leadershipCards = [
 <Card.Meta>
         <span className='date'>VP of Culture</span>
       </Card.Meta>
-      <Card.Description>
-        Kanu is the VP of Culture.
-      </Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:grover.kanu@berkeley.edu">
