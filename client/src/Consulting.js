@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Image,Grid,Card, Header, Form, Input, Icon, Button,List } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
-import paypal from './Consulting/paypallogo.jpg'
+import paypal from './Consulting/paypallogo.png'
+import paypallogo2 from './Consulting/paypallogo.jpg'
+
 import metromile from './Consulting/metromilelogo.jpg'
 import monday from './Consulting/monday.comlogo.png'
 import simmer from './Consulting/simmer.png'
@@ -45,7 +47,7 @@ import collab from './landing/Rectangle66.png'
 
 
 const overlayboxes2 = {
-  background: "#FFFFFF",
+  background: "#F8F8F8",
   border: "5px solid #8CD6D1",
   boxSizing: "border-box",
   boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
@@ -53,7 +55,7 @@ const overlayboxes2 = {
   height:"360px",
   width:"377px",
   marginBottom:"70px",
-  marginLeft:"53px",
+  marginLeft:"200px",
   marginTop:"80px",
 
   }
@@ -66,7 +68,9 @@ const generalmember = {
   color:"#000000",
   fontStyle: "normal",
   textAlign:"center",
-  marginLeft:"50px",
+  marginLeft:"60px",
+  marginTop:"20px",
+  textAlign:"left",
 }
 const imagestyle = {
   height: "400px",
@@ -90,7 +94,7 @@ const textstyle = {
           textAlign:"center",
 }
 const overlayboxes = {
-  background: "#FFFFFF",
+  background: "#F8F8F8",
   border: "5px solid #8CD6D1",
   boxSizing: "border-box",
   boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
@@ -103,7 +107,7 @@ const overlayboxes = {
   var circleStyle = {
     padding:10,
     marginLeft:-44,
-    marginTop:"-100px",
+    marginTop:"-120px",
     display:"inline-block",
     backgroundColor: "#8CD6D1",
     borderRadius: "50%",
@@ -148,8 +152,8 @@ const consult = {
     fontSize: "22px",
     color:"#000000",
     fontStyle: "normal",
-    textAlign:"center",
-    width:"915px",
+    textAlign:"left",
+    width:"1615px",
     marginLeft:"49px",
   };
   const smallconsult = {
@@ -174,8 +178,8 @@ const consult = {
 const link = {
   fontFamily: "Montserrat",
   fontWeight: 300,
-  lineHeight: "73px",
-  fontSize: "48px",
+  lineHeight: "78px",
+  fontSize: "64px",
   color:"#8CD6D1",
   fontStyle: "normal",
   textAlign:"center",
@@ -447,13 +451,13 @@ Aadiraj is a PM @ DSS.                  </Card.Description>
 
      </div>
         <Grid centered>
-        <Grid.Row>
+        <Grid.Row style={{marginTop:"50px"}}>
         <Grid.Row style={link} centered>
         <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-690px",marginBottom:"-45px"}}> </div > 
   What We Do
 </Grid.Row>
-<Grid.Row style={{color:"#000000",textAlign:"center",lineHeight:"44px",fontSize:"36px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginLeft:"129px",marginRight:"128px",marginBottom:"81px",marginTop:"121px"}}>
-We believe that the best way to learn about innovative and pioneering data science applications is hands-on work with companies in industry. Our project teams consist of two project managers and five to six consultants, all of whom are dedicated to creating a data-driven impact for our clients.
+<Grid.Row style={{color:"#000000",textAlign:"center",lineHeight:"35px",marginLeft:"300px",marginRight:"300px",fontSize:"29px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginBottom:"0px",marginTop:"56px"}}>
+We believe that the best way to learn about the innovative and pioneering data science techniques is to work with companies in industry. Our past clients include a wide range of companies from industry-leaders like PayPal to unicorn startups such as SoFi, all who have been impacted by the work Data Science Society provides.
 </Grid.Row>
         </Grid.Row>
         <Grid.Row style={link} centered>
@@ -468,21 +472,21 @@ We believe that the best way to learn about innovative and pioneering data scien
     Machine Learning
   </Card.Header>
   <div style={circleStyle}> 1</div>
-  <List style={{textAlign:"left",fontFamily:"Monteserrat",fontSize:"24px",lineHeight:"29px",fontStyle:"normal",marginLeft:"37px"}}>
-      <List.Item>
-      • NLP
+  <List bulleted style={{textAlign:"left",fontFamily:"Monteserrat",fontSize:"24px",lineHeight:"29px",fontStyle:"normal",marginLeft:"37px",marginTop:'40px'}}>
+      <List.Item style={{fontFamily:"Monteserrat"}}>
+      NLP
       </List.Item>
-      <List.Item>
-      • Predictive Analysis
+      <List.Item style={{fontFamily:"Monteserrat"}}>
+      Predictive Analysis
       </List.Item>
-      <List.Item>
-      • Data Mining
+      <List.Item style={{fontFamily:"Monteserrat"}}>
+      Data Mining
       </List.Item>
-      <List.Item>
-      • Clustering
+      <List.Item style={{fontFamily:"Monteserrat"}}>
+      Clustering
       </List.Item>
-      <List.Item>
-      • Modeling
+      <List.Item style={{fontFamily:"Monteserrat"}}>
+      Modeling
       </List.Item>
        </List>
   </Card>
@@ -491,21 +495,21 @@ We believe that the best way to learn about innovative and pioneering data scien
     Business Intelligence
   </Card.Header>
   <div style={circleStyle}> 2</div>
-  <List style={{textAlign:"left",fontFamily:"Monteserrat",fontSize:"24px",lineHeight:"29px",fontStyle:"normal",marginLeft:"37px"}}>
+  <List bulleted style={{textAlign:"left",fontFamily:"Monteserrat",fontSize:"24px",lineHeight:"29px",fontStyle:"normal",marginLeft:"37px",marginTop:'40px'}}>
       <List.Item>
-• Visualizations
+ Visualizations
       </List.Item>
-      <List.Item>
-      • Customer Seg.
+      <List.Item style={{fontFamily:"Monteserrat"}}>
+       Customer Segmentation
       </List.Item>
-      <List.Item>
-      • Price Optimization
+      <List.Item style={{fontFamily:"Monteserrat"}}>
+       Price Optimization
       </List.Item>
-      <List.Item>
-      • Customer Churn
+      <List.Item style={{fontFamily:"Monteserrat"}}>
+       Customer Churn
       </List.Item>
-      <List.Item>
-      • Operations Effeciency
+      <List.Item style={{fontFamily:"Monteserrat"}}>
+       Operations Effeciency
       </List.Item>
        </List>
   </Card>
@@ -514,23 +518,23 @@ We believe that the best way to learn about innovative and pioneering data scien
     Software Development
   </Card.Header>
   <div style={circleStyle}> 3</div>
-  <List style={{textAlign:"left",fontFamily:"Monteserrat",fontSize:"24px",lineHeight:"29px",fontStyle:"normal",marginLeft:"37px"}}>
-<List.Item>
-• Warehousing
+  <List bulleted style={{textAlign:"left",fontFamily:"Monteserrat",fontSize:"24px",lineHeight:"29px",fontStyle:"normal",marginLeft:"37px",marginTop:'40px'}}>
+<List.Item style={{fontFamily:"Monteserrat"}}>
+Warehousing
        </List.Item>
-       <List.Item>
+       <List.Item style={{fontFamily:"Monteserrat"}}>
 
-       • Systems Integration
+       Systems Integration
        </List.Item>
-       <List.Item>
-       • Cloud Computing
+       <List.Item style={{fontFamily:"Monteserrat"}}>
+       Cloud Computing
 
        </List.Item>
-       <List.Item>
-       • Front-End Dev.
+       <List.Item style={{fontFamily:"Monteserrat"}}>
+       Front-End Development
        </List.Item>
-       <List.Item>
-       • Back-End Dev.
+       <List.Item style={{fontFamily:"Monteserrat"}}>
+       Back-End Development
 
        </List.Item>
        </List>
@@ -554,7 +558,9 @@ We believe that the best way to learn about innovative and pioneering data scien
 
 </Image>
 <div style={consult}>
+<div style={{marginTop:"40px",marginLeft:"-10px"}}>
 “I have never worked with students more competent than my analysts at DSS... The first thing that impressed me was their process, which was clearly documented and thorough, but not cumbersome on the client... My team used machine learning models to understand churn-user behavior and label users as churned or active. When COVID-19 hit mid-project, I fully anticipated these students to take a step back. Instead, they doubled down. My team exceeded the original parameters of the projects. I'm chomping at the bit to hire them back.” - Richard Wu, CEO, Simmer (YC S19)
+</div>
 
 </div>
         </Grid.Row>
@@ -563,17 +569,26 @@ We believe that the best way to learn about innovative and pioneering data scien
 
 </Image>
 <div style={consult}>
+<div style={{marginTop:"40px",marginLeft:"-20px"}}>
+
 “DSS provided us with a great experiment proposal which we are going to execute... The DSS team has done a tremendous job over a course of a semester, and I would like to thank them for all of their hard, professional work. I highly recommend other organizations to collaborate with DSS and I hope I'll be able to work with them again in the future.” - Omry Sitner, Business Development Manager at monday.com
 </div>
+</div>
+
         </Grid.Row>      
         
         <Grid.Row>
-        <Image style={{height:"128px",width:"150px"}} src={paypal}>
+        <Image style={{height:"128px",width:"150px"}} src={paypallogo2}>
 
 </Image>
+
 <div style={consult}>
+
+<div style={{marginTop:"40px"}}>
 “Working with DSS gave us great and immediately actionable insight into a new Blockchain project we had launched. I really hope we can work with DSS again on our next big project!” - Michael Todasco, Senior Director of Innovation at PayPal
 </div>
+</div>
+
         </Grid.Row>      
         
         <Grid.Row>
@@ -581,23 +596,31 @@ We believe that the best way to learn about innovative and pioneering data scien
 
 </Image>
 <div style={consult}>
+<div style={{marginTop:"0px",marginLeft:"-20px"}}>
+
 “My company hired DSS to analyze data in the winter of 2019 and fall of 2020, and they did an amazing job. They took the project seriously and I greatly appreciated the professional manner in which they handled it. Most importantly, they gathered insights from the data that were incredibly valuable and helped us in building a stronger product. I would definitely use DSS again!” - Cory Linton, CEO of edify.ai
 
 </div>
-      6  </Grid.Row>
+</div>
+
+        </Grid.Row>
         <Grid.Row>
         <Image style={{height:"116px",width:"241px"}}src={sofi}>
 
 </Image>
 <div style={consult}>
+<div style={{marginTop:"20px",marginLeft:"-55px"}}>
+
 “Our team worked with DSS to analyze and model our member behavior. The consultants delivered high quality presentations of their insights. Their metrics, visualizations, and model provided new perspectives for us to consider when evaluating engagement. The team was very professional and skilled, and they were a pleasure to work with.” - Michelle Leahy, Business Operations Manager, Data & Engineering at SoFi</div>
+</div>
+
         </Grid.Row>
         <Grid.Row style={link} centered>
         Past Clients
         </Grid.Row>
         <Grid.Row style={{marginTop:"49px"}}>
-        <Image.Group>
-          <Image src={paypal} />
+        <Image.Group style={{marginLeft:"150px",marginRight:"150px"}}>
+          <Image src={paypal} style={{marginLeft:"70px",maxWidth:"400px",height:"200px"}}/>
           <Image src={sofi} style={{marginLeft:"70px",maxWidth:"400px"}}/>
           <Image src={monday} style={{marginLeft:"70px",maxWidth:"400px"}}/>
           <Image src={metromile} style={{marginLeft:"70px",maxWidth:"400px"}}/>
@@ -617,13 +640,11 @@ We believe that the best way to learn about innovative and pioneering data scien
           <Image src={hcup} style={{marginLeft:"70px",maxWidth:"400px"}}/>
           <Image src={amp} style={{marginLeft:"70px",maxWidth:"400px"}}/>
           <Image src={berkeleycrisis} style={{marginLeft:"70px",maxWidth:"400px"}}/>
-
-
-
-
-
         </Image.Group>
 
+        </Grid.Row>
+        <Grid.Row style={{fontFamily:"Monteserrat",fontSize:"24px",marginLeft:"165px",marginRight:"165px",marginBottom:"120px",marginTop:"56px",lineHeight:"29px"}}>
+        Additionally, we offer our clients sponsorship opportunities to connect our clients with UC Berkeley’s top talent, from setting up events (Info-sessions, Career Fairs, Case Competitions, Hackathons, and Coffee Chats) to compiling extensive Resume Booklets.
         </Grid.Row>
         </Grid>
   </div>

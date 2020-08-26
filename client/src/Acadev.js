@@ -64,9 +64,9 @@ const mymidtext = {
 };
 const link = {
     fontFamily: "Montserrat",
-    fontWeight: 300,
-    lineHeight: "73px",
-    fontSize: "48px",
+    fontWeight: 500,
+    lineHeight: "78px",
+    fontSize: "64px",
     color:"#8CD6D1",
     fontStyle: "normal",
     textAlign:"center",
@@ -98,7 +98,7 @@ const imagestyle = {
   maxWidth: "400px",
 };
 const overlayboxes = {
-  background: "#FFFFFF",
+  background: "#F8F8F8",
   border: "5px solid #8CD6D1",
   boxSizing: "border-box",
   boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
@@ -107,9 +107,10 @@ const overlayboxes = {
   width:"456px",
   marginBottom:"70px",
   marginTop:"80px",
+  marginLeft:"55px"
   }
   const overlayboxes2 = {
-    background: "#FFFFFF",
+    background: "#F8F8F8",
     border: "5px solid #8CD6D1",
     boxSizing: "border-box",
     boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
@@ -117,7 +118,7 @@ const overlayboxes = {
     height:"456px",
     width:"456px",
     marginBottom:"70px",
-    marginLeft:"238px",
+    marginLeft:"438px",
     marginTop:"80px",
 
     }
@@ -130,6 +131,7 @@ const overlayboxes = {
         fontStyle: "normal",
         textAlign:"center",
         marginLeft:"50px",
+        marginTop:"20px"
     }
   var circleStyle = {
     padding:10,
@@ -156,6 +158,8 @@ const overlayboxes = {
     color:"#000000",
     fontStyle: "normal",
     textAlign:"center",
+    marginLeft:"121px",
+    width:"380px"
 }
 
 class Acadev extends Component {
@@ -223,15 +227,15 @@ class Acadev extends Component {
 <Grid.Row style={link} centered>
   <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-675px",marginTop:"33px",marginRight:"-185px"}}> </div > What We Do
 </Grid.Row>
-<Grid.Row style={{color:"#000000",textAlign:"center",lineHeight:"44px",fontSize:"36px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginLeft:"129px",marginRight:"128px",marginBottom:"128px"}}>
+<Grid.Row style={{color:"#000000",marginTop:"28px",textAlign:"center",lineHeight:"35px",fontSize:"29px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginLeft:"400px",marginRight:"400px",marginBottom:"20px"}}>
 The academic development committee hosts a variety of  educational workshops for the greater campus community , and directs our general membership (GM) program open to all skill levels and students. 
 </Grid.Row>
 <Grid.Row style={link} centered>
-<div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-670px",marginTop:"33px",marginRight:"-185px"}}> </div > 
-  Our Intiatives
+<div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-670px",marginTop:"35px",marginRight:"-185px",marginBottom:"3px"}}> </div > 
+Our Initiatives
 </Grid.Row>
-<Grid.Row centered columns={2}>
-  <Card.Group centered>
+<Grid.Row centered columns={1}>
+  <Card.Group centered >
   <Card style={overlayboxes}>
   <Card.Header style={generalmember}>
     General Membership
@@ -243,13 +247,16 @@ The academic development committee hosts a variety of  educational workshops for
 <br/>
 <br/>
 
-      <List style={{textAlign:"left",fontFamily:"Monteserrat",fontSize:"18px",lineHeight:"22px",fontStyle:"normal"}}>
+      <List bulleted>
+      <List.Header style={{textAlign:"left",fontFamily:"Monteserrat",fontSize:"22px",lineHeight:"22px",fontStyle:"normal",marginLeft:"-15px"}}>
       What you’ll do:
+      <br/>
+      </List.Header>
       <List.Item>
-      - Collaborate with students to develop a   semester long project of your choosing 
+      Collaborate with students to develop a   semester long project of your choosing.
       </List.Item>
       <List.Item>
-      - Present at the Berkeley Data Science Research Symposium and create a publication to post on the DSS website.    
+      Present at the Berkeley Data Science Research Symposium and create a publication to post on the DSS website.    
       </List.Item>
        </List>
 
@@ -264,16 +271,20 @@ The academic development committee hosts a variety of  educational workshops for
   Collaborate with students from a variety of backgrounds and other organizations to educate the campus community of practical problems, phenomena and tools related to data science. 
   <br/>
   <br/>
-  <List style={{textAlign:"left",fontFamily:"Monteserrat",fontSize:"18px",lineHeight:"22px",fontStyle:"normal"}}>
+  <List bulleted style={{marginTop:"40px"}}>
+<List.Header style={{textAlign:"left",fontFamily:"Monteserrat",fontSize:"22px",lineHeight:"22px",fontStyle:"normal",marginLeft:"-15px"}}>
 
 What you’ll do:
+<br/>
+</List.Header>
+
 <List.Item>
 
-       - Communicate with your fellow team members and other orgs to develop workshop materials
+       Communicate with your fellow team members and other orgs to develop workshop materials
        </List.Item>
        <List.Item>
 
-       - Present to diverse audiences and support the data science community, both on and off-campus!
+       Present to diverse audiences and support the data science community, both on and off-campus!
        </List.Item>
        </List>
 
@@ -292,13 +303,13 @@ What you’ll do:
         </Button.Group>
         </Grid.Row>
         <Grid.Row centered columns={3} style={{marginTop:"128px"}}>
-        <Grid.Column textAlign="center" >
+        <Grid.Column width={3}  textAlign="center" >
         <div style={info}>
         <strong>Interested in teaching? </strong>
 Apply to become an AcaDev Committee Member!
 </div>
         </Grid.Column>
-        <Grid.Column textAlign="center">
+        <Grid.Column width={3} textAlign="center" >
         <div style={info}>
         <strong> Interested in learning? </strong>
 Apply to become a General Member!
@@ -306,7 +317,7 @@ Apply to become a General Member!
 
         </Grid.Column>
 
-<Grid.Column textAlign="center" >
+<Grid.Column width={3} textAlign="center" >
 <div style={info}>
 <strong> Interested in being a part of our DeCal instead? </strong>
 Check out the DeCal Committee Page. 
@@ -326,7 +337,7 @@ Check out the DeCal Committee Page.
        </Grid.Row>
 
        <Grid.Row>
-       <Card.Group stackable doubling style={{marginTop:"130px"}}>
+       <Card.Group stackable doubling style={{marginTop:"56px"}}>
 <Card style={cardstyle}>    <Image  style={imagestyle} src={alleanna}  />
 <Card.Content>
 <Card.Header style={textstyle}>Alleanna Clark</Card.Header>
@@ -389,8 +400,8 @@ Check out the DeCal Committee Page.
 
        <Grid.Row>
        </Grid.Row>
-       <Grid.Row style={{marginTop:"245px"}}>
-       <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-450px",marginTop:"113px",marginRight:"-185px"}}> </div > 
+       <Grid.Row style={{marginTop:"0px"}}>
+       <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-450px",marginTop:"115px",marginRight:"-185px"}}> </div > 
        <div style={link}>
        Current and Past Collaborations
        
@@ -399,7 +410,7 @@ Check out the DeCal Committee Page.
 
           <Grid.Row>
 
-        <Image.Group style={{marginLeft:"109px"}}>
+        <Image.Group style={{marginLeft:"195px",marginRight:"195px"}}>
         <Image src={haas} style={{marginRight:"72px"}}>
         </Image>
         <Image src={saas}  style={{marginRight:"62px"}}>

@@ -34,6 +34,8 @@ import senior from './About/widsberkeleydssspring20201.png'
 import join from './About/JoinUs.jpg'
 import story from './About/OurStory.jpg'
 import popout from './About/popoutDesign.png'
+import ret from './About/RetreatPic.png'
+import datacamp from './Decal Images/datacamp-logo 1.png' 
 
 
 
@@ -58,7 +60,7 @@ const gridoffset = {
 
 const mybigtext = {
   fontFamily: "Montserrat",
-  fontWeight: 600,
+  fontWeight: 500,
   lineHeight: "78px",
           fontSize: "64px",
           color:"#8CD6D1",
@@ -174,7 +176,7 @@ const aboutlinks = {
           lineHeight:"44px",
           color:"#FFFFFF",
           textAlign:"center",
-          marginTop:"25px",
+          marginTop:"15px",
 }
 const overlayboxes = {
 background: "#FFFFFF",
@@ -186,6 +188,8 @@ height:"236px",
 width:"284px",
 marginLeft:"150px",
 marginBottom:"70px",
+fontFamily:"Montserrat",
+fontSize:"20px",
 }
 
 var circleStyle = {
@@ -555,11 +559,14 @@ class About extends Component {
 
      </Grid.Row>
      
-    <Grid.Row centered columns={1} style={{marginBottom:"90px"}}>
+    <Grid.Row centered columns={1} style={{marginBottom:"100px"}}>
+    <div style={{marginTop:"100px"}}>
     <div style={header}> Who We Are</div>
-    <Grid.Column style={{marginLeft:"170px",marginRight:"auto"}}>
-    <div style={{fontSize:"36px",lineHeight:"44px",fontWeight:"500px",marginTop:"22px",color:"#B6E5D7",fontFamily:"Montserrat"}}> A family of passionate individuals looking to make a change.</div>
-    <div style={{fontSize:"29px",lineHeight:"35px",fontWeight:"normal",marginTop:"22px",color:"#C4C4C4",fontFamily:"Montserrat"}}>
+    </div>
+
+    <Grid.Column style={{marginLeft:"170px",marginRight:"auto",marginTop:"33px"}}>
+    <div style={{fontSize:"36px",lineHeight:"44px",fontWeight:"500px",marginTop:"22px",color:"#B6E5D7",fontFamily:"Montserrat",textAlign:"center",marginLeft:"-280px"}}> A family of passionate individuals looking to make a change.</div>
+    <div style={{fontSize:"29px",lineHeight:"35px",fontWeight:"normal",marginTop:"56px",color:"#C4C4C4",fontFamily:"Montserrat",textAlign:"center",marginLeft:"400px",marginRight:"400px",width:"1000px"}}>
     Data Science Society is UC Berkeley's first student-run, not-for-profit organization focused on data science and its interdisciplinary applications. Since our founding in 2016, we have united students from a wide range of disciplines behind our shared passion for all things data.
     </div>
     </Grid.Column>
@@ -569,11 +576,11 @@ class About extends Component {
   <div style={{zIndex:"1",position:"relative"}}>
   <Image src={popout} style={{zIndex:"2"}}>
   </Image>
-  <div style={{position: "relative", textShadow:"0px 4px 4px rgba(0, 0, 0, 0.25)",top: "-442px",left:"-340px", zIndex: "3",fontFamily:"Montserrat",fontStyle:"600",fontWeight:"bold",fontSize:"64px",lineHeight:"78px",color:"#FFFFFF"}}>
+  <div style={{position: "relative", textShadow:"0px 4px 4px rgba(0, 0, 0, 0.25)",top: "-405px",left:"-320px", zIndex: "3",fontFamily:"Montserrat",fontStyle:"600",fontWeight:"bold",fontSize:"64px",lineHeight:"78px",color:"#FFFFFF",marginBottom:"40px"}}>
     <span >
       Our mission
     </span>
-    <div style={{position: "relative",width:"859px",top: "32px",left:"420px", zIndex: "4",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"normal",fontSize:"27px",lineHeight:"33px",color:"#FFFFFF"}}> 
+    <div style={{position: "relative",textShadow:"none" ,width:"859px",top: "32px",left:"420px", zIndex: "4",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"normal",fontSize:"27px",lineHeight:"33px",color:"#FFFFFF",textAlign:'left'}}> 
   We aim to foster a strong data science community on campus by advocating data science education and practice through our various committees and internal and external programs. Our educational and consulting initiatives have impacted hundreds of students in a variety of majors across campus and given them the technical and soft skills needed to thrive in an increasingly data-centric world.
 </div>
   </div>
@@ -581,79 +588,53 @@ class About extends Component {
  
   </div>
   </Grid.Row>
-  <Grid.Row width={12} centered>
+  <Grid.Row width={12} centered style={{marginTop:"-250px"}}>
   <div style={header}> Why Join?</div>
   </Grid.Row>
   <Grid.Row width={12} centered>
-  <div style={{fontSize:"36px",lineHeight:"44px",fontWeight:"500px",marginTop:"22px",color:"#B6E5D7",fontFamily:"Montserrat",marginBottom:"50px"}}> Simple. To be a part of our family.</div>
+  <div style={{fontSize:"36px",lineHeight:"44px",fontWeight:"500px",marginTop:"-120px",color:"#B6E5D7",fontFamily:"Montserrat",marginBottom:"94px"}}> Simple. To be a part of our family.</div>
 
   </Grid.Row>
-  <Grid.Row  width={6} centered>
-  <Card.Group  centered>
-  <Card style={overlayboxes}>
-  <Card.Header/>
-  <div style={circleStyle}> 1</div>
-  <Card.Description style={{marginTop:"40px"}}>
-  At essence, a social community! MemDev, Big/Little, and more!
-  </Card.Description>
+  <Grid.Row>
+  <Image src={ret}style={{width:"100%",height:"auto"}}>
 
-  </Card>
-  <Card style={overlayboxes}>
-  <Card.Header/>
-  <div style={circleStyle}> 2</div>
-  <Card.Description style={{marginTop:"40px"}}>
-  Career-driven, help get you to where you want to be.  </Card.Description>
-  </Card>
-  <Card style={overlayboxes}>
-  <Card.Header/>
-  <div style={circleStyle}> 3</div>
-  <Card.Description style={{marginTop:"40px"}}>
-  Work to support the entire campus + extend outside its boundaries in data science initiatives.   </Card.Description>
-  </Card>
-  <Card style={overlayboxes}>
-  <Card.Header/>
-  <div style={circleStyle}> 4 </div>
-  <Card.Description style={{marginTop:"40px"}}>
-  Diversity in cultural and academic backgrounds! Strive to encompass all of   </Card.Description>
-  </Card>
-  <Card style={overlayboxes}>
-  <Card.Header/>
-  <div style={circleStyle}> 5 </div>
-  <Card.Description style={{marginTop:"40px"}}>
-  A variety of roles that can satisfy what you want to do  </Card.Description>
-  </Card>
-  </Card.Group>
+  </Image>
+
   </Grid.Row>
-  <Grid.Row columns={2}>
   <Grid.Column>
     
     </Grid.Column>
     <Grid.Column>
     
     </Grid.Column>
-
-  </Grid.Row>
   <Grid.Row centered>
   </Grid.Row>
-<Grid.Row width={12} centered>
+  
+  <Grid.Row centered style={{fontFamily:"Montserrat",fontStyle:"normal",fontSize:"48px",lineHeight:"59px",color:" #8CD6D1"}}>
+  Check out our Fall 2020 Recruitment Video!
+  </Grid.Row>
+<Grid.Row width={12} centered style={{marginBottom:"100px"}}>
 
-  <div style={{width:"1100px",border: "10px solid #B6E5D7",boxSizing: "borderBox",marginBottom:"81px",marginTop:"70px"}}>
+  <div style={{width:"1100px",border: "10px solid #B6E5D7",boxSizing: "borderBox",marginBottom:"0px",marginTop:"70px"}}>
                     <Embed
                     id='XW7Zkzf7_C8'
                     source='youtube'
   />
                     </div>
   </Grid.Row>
-  <Image fluid src={join} style={{marginTop:"120px",zIndex:2}}>
-    </Image>
     <Grid.Row width={12} centered>
   <div style={header}> Find your place</div>
   </Grid.Row>
-    <Grid.Row centered columns={3}  style={{marginTop:"124px"}}>
+    <Grid.Row centered columns={3}  style={{marginTop:"56px"}}>
       <Grid.Column style={{}}>
       <div style={execstyle1}>
       <div style={{marginLeft:"31px",paddingTop:"30px"}}>
       Executive <br/>  Team
+      </div>
+      <div style={{fontSize:"18px",lineHeight:"22px",marginTop:"109px",marginLeft:"25px"}}>
+      Our team of execs is in charge of all the club operations. 
+
+View our current team below!
       </div>
       </div>
       </Grid.Column>
@@ -662,6 +643,9 @@ class About extends Component {
       <div style={{marginLeft:"33px",paddingTop:"30px"}}>
       Project <br/> Manager
       </div>
+      <div style={{fontSize:"18px",lineHeight:"22px",marginTop:"88px",marginLeft:"25px"}}>
+      Project managers apply their past consulting experience and analytics expertise to lead our teams. Typically, we have 10 PMs to lead 5 consulting projects per semester. 
+      </div>
 </div>
       </Grid.Column>
       <Grid.Column >
@@ -669,14 +653,20 @@ class About extends Component {
       <div style={{marginLeft:"37px",paddingTop:"30px"}}>
       Committee Member
       </div>
+      <div style={{fontSize:"18px",lineHeight:"22px",marginTop:"90px",marginLeft:"25px"}}>
+      CMs hold the responsibilities of their respective committees: Academic Development, Consulting, DeCal and Social Good! They can also join our internal committees like Tech and Culture. 
+      </div>
 </div>
       </Grid.Column>
     </Grid.Row>
-    <Grid.Row centered columns={3}>
+    <Grid.Row centered columns={3} style={{marginTop:"69px"}}>
     <Grid.Column>
     <div style={execstyle4}>
       <div style={{marginLeft:"31px",paddingTop:"30px"}}>
       General <br/>  Member
+      </div>
+      <div style={{fontSize:"18px",lineHeight:"22px",marginTop:"84px",marginLeft:"25px"}}>
+      GMs complete semester-long research projects under the guidance of our Academic Development committee. 
       </div>
       </div>
       </Grid.Column>
@@ -685,6 +675,9 @@ class About extends Component {
       <div style={{marginLeft:"33px",paddingTop:"30px"}}>
       DeCal <br/> Student
       </div>
+      <div style={{fontSize:"18px",lineHeight:"22px",marginTop:"84px",marginLeft:"25px"}}>
+      DeCal students enroll in our 2-unit course: Essential Tools for Data Science and learn various DS topics that prepare you for industry. This is completely student-run by our DeCal committee. 
+      </div>
 </div>
       </Grid.Column>
       <Grid.Column>
@@ -692,41 +685,54 @@ class About extends Component {
       <div style={{marginLeft:"37px",paddingTop:"30px"}}>
       Senior<br/> Advisor
       </div>
+      <div style={{fontSize:"18px",lineHeight:"22px",marginTop:"84px",marginLeft:"25px"}}>
+      Our Senior Advisors are made up of students who have been committee members for 2+ semesters! Their obligations vary from advising consulting teams to guest lecturing to holding internal coffee chats! 
+      </div>
 </div>
       </Grid.Column>
     </Grid.Row>
-<Grid.Row centered width={12}>
+<Grid.Row centered width={12} style={{marginTop:"100px"}}>
                     <div style={mybigtext}> Our Exec Team</div>
-                    <Card.Group centered itemsPerRow={3}>
+                    <Card.Group centered itemsPerRow={3} style={{marginTop:"56px"}}>
                     {leadershipCards}
                     </Card.Group>
 ``
                     </Grid.Row>
                     
 
-  <Grid.Row>
+  <Grid.Row style={{marginTop:"100px",marginLeft:"240px"}}>
   <Header style={mybigtext}> Our Sponsors</Header>
+  </Grid.Row>
+  <Grid.Row style={{marginTop:"56px",marginLeft:"240px"}} >
   <Image.Group size={"medium"}>
-    <Image src={edlyft}>
+  <Image src={berkeley}  style={{marginLeft:"1px"}}>
+
+</Image>
+<Image src={berkeley2} style={{marginLeft:"40px",width:"447px",marginTop:"-100px"}}>
+
+</Image>
+    
+    <Image src={asuc} style={{marginLeft:"151px"}}>
 
     </Image>
-    <Image src={berkeley}>
+    </Image.Group>
+<Image.Group>
+    <Image src={datacamp}>
 
-    </Image>
-    <Image src={asuc}>
-
-    </Image>
-    <Image src={berkeley2}>
-
-    </Image>
+</Image>
     <Image src={wids}>
 
     </Image>
+    <Image src={edlyft}>
+
+</Image>
   </Image.Group>
 
   </Grid.Row>
-  <Grid.Row>
+  <Grid.Row style={{marginTop:"20px",marginLeft:"240px"}}>
   <Header style={mybigtext}> Our Partners</Header>
+  </Grid.Row>
+  <Grid.Row style={{marginTop:"56px",marginLeft:"240px"}} >
 <Image.Group size={"medium"} style={{marginTop:"30px"}}>
 <Image style={{marginRight:"10px"}} src={sponsor1}>
 
