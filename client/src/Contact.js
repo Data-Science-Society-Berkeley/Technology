@@ -116,10 +116,8 @@ class Login extends Component {
       }
     )
     .then(res => {
-      //console.log(res.status);
-      //console.log(res);
       if (res.status == 200){
-        this.props.history.push("home")
+        this.setState({ success: true });
       } else {
         // throw an error for the program //TODO TEST THIS works
         // TODO when logout, clear the cookie from cache and browser..
@@ -175,12 +173,14 @@ class Login extends Component {
                         </Grid.Column>
 
                         <Grid.Column floated="left">
-                          <Form style={{marginTop:"5%",marginRight:"75%"}}>
+                          <Form success={this.state.success} style={{marginTop:"5%",marginRight:"75%"}}>
                               <input onChange={this.onPChange} style={formStyle} width={6}  id="text" placeholder='Name' />
                               <br/>
                               <input style={formStyle} onChange={this.onEChange} width={6} id="text" placeholder='E-mail' />
 
                               <Form.TextArea style={formStyle2}  onChange={this.onMChange} id="text" placeholder='Message' />
+                              <Message style={{fontFamily:"Montserrat"}} success header='Form Completed' content="You're all signed up for the newsletter"
+    />
 
                               <Form.Button width={6} onClick={this.loginUser} rounded style={buttonStyle}>
                                   SUBMIT
