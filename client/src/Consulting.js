@@ -24,7 +24,8 @@ import oust from './Consulting/oustlabs.png'
 import pegasus from './Consulting/pegasusanalytics.png'
 import venmo from './Consulting/venmo.png'
 import openride from './Consulting/openride.png'
-
+import down from './Consulting/ClientTestimonials.png'
+import workwus from './Consulting/WorkWithUs.png'
 
 
 
@@ -530,6 +531,40 @@ Warehousing
        </List>
   </Card>
   </Card.Group>
+  <Grid.Row>
+    <div style={{marginLeft:"102px"}}>
+    <Image inline src={down} style={{marginLeft:"-300px",marginBottom:"-100px"}}> 
+
+    </Image>
+      <div onClick={this.testa} style={{fontFamily: "Montserrat",
+fontStyle: "normal",
+fontWeight: "600",
+fontSize: "30px",
+lineHeight: "37px",
+textAlign: "center",
+width:"204px",
+color: "#FFC54A"}}>
+      Client Testimonials
+      </div>
+    </div>
+    <div>
+    <div style={{marginLeft:"238px",zIndex:"1",backgroundImage:`url(${workwus})`,width:"268px",height:"139px",marginTop:"-20px"}}>
+    </div>
+    <Link to="services">
+    <div style={{fontFamily: "Montserrat",
+fontStyle: "normal",
+fontWeight: "600",
+fontSize: "30px",
+lineHeight: "37px",
+textAlign: "center",
+width:"154px",
+marginTop:"-110px",
+marginLeft:"240px",
+color: "#FFC54A"}}>    Work with us
+    </div>
+    </Link>
+    </div>
+  </Grid.Row>
 <Grid.Row style={link} centered>
 <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-530px",marginBottom:"-70px",marginTop:"35px"}}> </div > 
         Project Managers

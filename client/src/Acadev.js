@@ -311,7 +311,7 @@ What you’ll do:
         <Grid.Column width={3}  textAlign="center" >
         <Link to="/apply">
         <div style={info}>
-        <strong>Interested in teaching? </strong>
+        <strong style={{color:"#FFC54A"}}>Interested in teaching? </strong>
 Apply to become an AcaDev Committee Member!
 </div>
         </Link>
@@ -320,17 +320,17 @@ Apply to become an AcaDev Committee Member!
         <Grid.Column width={3} textAlign="center" >
         <Link to="/apply">
         <div style={info}>
-        <strong> Interested in learning? </strong>
+        <strong style={{color:"#FFC54A"}}> Interested in learning? </strong>
 Apply to become a General Member!
 </div>
         </Link>
 
         </Grid.Column>
 
-<Grid.Column width={3} textAlign="center" >
+<Grid.Column width={4} textAlign="center" >
 <Link to="/decal">
 <div style={info}>
-<strong> Interested in being a part of our DeCal instead? </strong>
+<strong style={{color:"#FFC54A"}}> Interested in being a part of our DeCal instead? </strong>
 Check out the DeCal Committee Page. 
 </div>
 </Link>
@@ -448,7 +448,25 @@ Check out the DeCal Committee Page.
         </Image>
         </Image.Group>
         </Grid.Row>
+<Grid.Row centered style={{marginBottom:"128px",marginTop:"56px"}}>
+<div style={{background:"#FFFFFF",border:"5px solid #8CD6D1",boxSizing:"border-box",borderRadius:"45px",
+width:"373px",height:"167px",marginLeft:"226px",marginRight:"200px",fontSize:"24px",lineHeight:"29px",fontWeight:"300px",fontFamily:"Montserrat"}}>
+<div style={{marginTop:"23px",marginLeft:"22px",marginRight:"22px"}}>
+Check out our <Link to="/events"><strong style={{color:"#FFC54A"}}> Events</strong></Link> page to view our past academic collaborations.
+</div>
+</div>
+<div style={{background:"#FFFFFF",border:"5px solid #8CD6D1",boxSizing:"border-box",borderRadius:"45px",width:"616px",height:"167px",marginLeft:"226px",marginRight:"100px"}}>
+<div style={{fontSize:"24px",lineHeight:"29px",fontWeight:"300px",fontFamily:"Montserrat",marginTop:"23px",marginLeft:"22px",marginRight:"22px"}}>
+Interested in DSS hosting a workshop for you? Interested in co-hosting a workshop with us? 
+</div>
+<Link to="/services">
+<div style={{color:"#FFC54A",marginTop:"50px",fontSize:"24px",lineHeight:"29px",fontWeight:"300px",fontFamily:"Montserrat",marginTop:"23px",marginLeft:"22px",marginRight:"22px"}}>
+Contact us here >>
+</div>
+</Link>
+</div>
 
+</Grid.Row>
         </Grid>
   </div>
 
