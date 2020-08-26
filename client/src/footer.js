@@ -40,7 +40,7 @@ class Footer extends Component {
       <Container>
         <Grid divided inverted stackable>
         <Grid.Row>
-        <div style={{marginLeft:"-493px",marginTop:"24px"}}>
+        <div style={{marginLeft:"-20%",marginTop:"24px"}}>
           <Image inline src={logo} style={{width:"74px",height:"74px"}}>
           </Image>
           <div style={{marginLeft:"100px",marginTop:"-40px",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"300px",fontSize:"24px",lineHeight:"29px"}}>
@@ -50,7 +50,7 @@ class Footer extends Component {
         </Grid.Row>
           <Grid.Row style={{marginBottom:"10px",marginTop:"24px"}}>
           <Grid.Column width={8}>
-          <Icon.Group size='huge' style={{marginLeft:"-450px",marginTop:"0px"}}>
+          <Icon.Group size='huge' style={{marginLeft:"-20%",marginTop:"0px"}}>
                         <a href="mailto:info@dss.berkeley.edu"><Icon name="mail outline" style={{marginBottom:"14px",color:"#8CD6D1"}}>
                           </Icon>
                           </a>
