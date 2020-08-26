@@ -43,7 +43,7 @@ import young from './PM Headshots/Youngli.jpg'
 import avik from './PM Headshots/Avik.jpg'
 import kevinmiao from './PM Headshots/KevinHeadShot.jpg'
 
-import collab from './landing/Rectangle66.png'
+import collab from './Consulting/consulting-header.jpg'
 
 
 const overlayboxes2 = {
@@ -292,132 +292,134 @@ class Consulting extends Component {
                         </a>
                       </Card.Content>
                 </Card>,
-                    <Card style={cardstyle}>
-                    <Image src={alina} style={imagestyle}  />
-                    <Card.Content>
-                          <Card.Header style={textstyle}>Alina Trinh</Card.Header>
-                          <Card.Meta>
-                          <span className='date'>PM</span>
-                          </Card.Meta>
-          
-                        </Card.Content>
-                        <Card.Content extra>
-                          <a href="mailto:tutrinh@berkeley.edu">
-                            <Icon size="large" name='mail' />
-                            </a>
-                            <a href="https://www.linkedin.com/in/tu-trinh/">
-                            <Icon size="large"  name='linkedin' />
-                            </a>
-                          </Card.Content>
-                    </Card>,
-                        <Card style={cardstyle}>
-                        <Image src={pranav} style={imagestyle}  />
-                        <Card.Content>
-                              <Card.Header style={textstyle}>Pranav Krishnan</Card.Header>
-                              <Card.Meta>
-                              <span className='date'>PM</span>
-                              </Card.Meta>
-                 
-                            </Card.Content>
-                            <Card.Content extra>
-                              <a href="mailto:pranavk@berkeley.edu">
-                                <Icon size="large" name='mail' />
-                                </a>
-                                <a href="https://www.linkedin.com/in/pranav-krishnan-695726108/">
-                                <Icon size="large"  name='linkedin' />
-                                </a>
-                              </Card.Content>
-                        </Card>,
-                            <Card style={cardstyle}>
-                            <Image src={avik} style={imagestyle}  />
-                            <Card.Content>
-                                  <Card.Header style={textstyle}>Avik Sethia</Card.Header>
-                                  <Card.Meta>
-                                  <span className='date'>PM</span>
-                                  </Card.Meta>
-                         
-                                </Card.Content>
-                                <Card.Content extra>
-                                  <a href="mailto:aviksethia99@berkeley.edu">
-                                        <Icon size="large" name='mail' />
-                                        </a>
-                                    <a href="https://www.linkedin.com/in/aviksethia99/">
-                                    <Icon size="large"  name='linkedin' />
-                                    </a>
-                                  </Card.Content>
-                            </Card>,
-                                <Card style={cardstyle}>
-                                <Image src={pooja} style={imagestyle}  />
-                                <Card.Content>
-                                      <Card.Header style={textstyle}>Pooja Eega</Card.Header>
-                                      <Card.Meta>
-                                      <span className='date'>PM</span>
-                                      </Card.Meta>
-                   
-                                    </Card.Content>
-                                    <Card.Content extra>
-                                      <a href="mailto:pooja.eega@berkeley.edu">
-                                        <Icon size="large" name='mail' />
-                                        </a>
-                                        <a href="www.linkedin.com/in/pooja-eega ">
-                                        <Icon size="large"  name='linkedin' />
-                                        </a>
-                                      </Card.Content>
-                                </Card>,
-                                    <Card style={cardstyle}>
-                                    <Image src={young} style={imagestyle}  />
-                                    <Card.Content>
-                                          <Card.Header style={textstyle}>Youngli Hong</Card.Header>
-                                          <Card.Meta>
-                                          <span className='date'>PM</span>
-                                          </Card.Meta>
-                  
-                                        </Card.Content>
-                                        <Card.Content extra>
-                                          <a href="mailto:youngli.hong@berkeley.edu">
-                                            <Icon size="large" name='mail' />
-                                            </a>
-                                            <a href="https://www.linkedin.com/in/youngli-hong-a0750b158/">
-                                            <Icon size="large"  name='linkedin' />
-                                            </a>
-                                          </Card.Content>
-                                    </Card>,
-                                    <Card style={cardstyle}>
-                                    <Image src={andy} style={imagestyle}  />
-                                    <Card.Content>
-                                          <Card.Header style={textstyle}>Andy Xia</Card.Header>
-                                          <Card.Meta>
-                                          <span className='date'>PM</span>
-                                          </Card.Meta>
              
-                                        </Card.Content>
-                                        <Card.Content extra>
-                                          <a href="mailto:andyxia124@berkeley.edu">
-                                            <Icon size="large" name='mail' />
-                                            </a>
-                                            <a href="https://www.linkedin.com/in/andy-xia-6577b6171/">
-                                            <Icon size="large"  name='linkedin' />
-                                            </a>
-                                          </Card.Content>
-                                    </Card>,
-                                    <Card style={cardstyle}>
-                                    <Image src={grace} style={imagestyle}  />
-                                    <Card.Content>
-                                          <Card.Header style={textstyle}>Grace Qiu</Card.Header>
-                                          <Card.Meta>
-                                          <span className='date'>PM</span>
-                                          </Card.Meta>
-                      
-                                        </Card.Content>
-                                        <Card.Content extra>
-                                          <a href="mailto:graceq@berkeley.edu">
-                                            <Icon size="large" name='mail' />
-                                            </a>
-                                            <a href="linkedin.com/in/graqiu">
-                                            <Icon size="large"  name='linkedin' />
-                                            </a>
-                                          </Card.Content>
-                                    </Card>]
+                 
+                               ]
+let temp1 = [        <Card style={cardstyle}>
+  <Image src={alina} style={imagestyle}  />
+  <Card.Content>
+        <Card.Header style={textstyle}>Alina Trinh</Card.Header>
+        <Card.Meta>
+        <span className='date'>PM</span>
+        </Card.Meta>
+
+      </Card.Content>
+      <Card.Content extra>
+        <a href="mailto:tutrinh@berkeley.edu">
+          <Icon size="large" name='mail' />
+          </a>
+          <a href="https://www.linkedin.com/in/tu-trinh/">
+          <Icon size="large"  name='linkedin' />
+          </a>
+        </Card.Content>
+  </Card>,
+      <Card style={cardstyle}>
+      <Image src={pranav} style={imagestyle}  />
+      <Card.Content>
+            <Card.Header style={textstyle}>Pranav Krishnan</Card.Header>
+            <Card.Meta>
+            <span className='date'>PM</span>
+            </Card.Meta>
+
+          </Card.Content>
+          <Card.Content extra>
+            <a href="mailto:pranavk@berkeley.edu">
+              <Icon size="large" name='mail' />
+              </a>
+              <a href="https://www.linkedin.com/in/pranav-krishnan-695726108/">
+              <Icon size="large"  name='linkedin' />
+              </a>
+            </Card.Content>
+      </Card>,               <Card style={cardstyle}>
+  <Image src={avik} style={imagestyle}  />
+  <Card.Content>
+        <Card.Header style={textstyle}>Avik Sethia</Card.Header>
+        <Card.Meta>
+        <span className='date'>PM</span>
+        </Card.Meta>
+
+      </Card.Content>
+      <Card.Content extra>
+        <a href="mailto:aviksethia99@berkeley.edu">
+              <Icon size="large" name='mail' />
+              </a>
+          <a href="https://www.linkedin.com/in/aviksethia99/">
+          <Icon size="large"  name='linkedin' />
+          </a>
+        </Card.Content>
+  </Card>
+ ,<Card style={cardstyle}>
+  <Image src={pooja} style={imagestyle}  />
+  <Card.Content>
+        <Card.Header style={textstyle}>Pooja Eega</Card.Header>
+        <Card.Meta>
+        <span className='date'>PM</span>
+        </Card.Meta>
+
+      </Card.Content>
+      <Card.Content extra>
+        <a href="mailto:pooja.eega@berkeley.edu">
+          <Icon size="large" name='mail' />
+          </a>
+          <a href="www.linkedin.com/in/pooja-eega ">
+          <Icon size="large"  name='linkedin' />
+          </a>
+        </Card.Content>
+  </Card>]
+let temp2 = [  <Card style={cardstyle}>
+  <Image src={young} style={imagestyle}  />
+  <Card.Content>
+        <Card.Header style={textstyle}>Youngli Hong</Card.Header>
+        <Card.Meta>
+        <span className='date'>PM</span>
+        </Card.Meta>
+
+      </Card.Content>
+      <Card.Content extra>
+        <a href="mailto:youngli.hong@berkeley.edu">
+          <Icon size="large" name='mail' />
+          </a>
+          <a href="https://www.linkedin.com/in/youngli-hong-a0750b158/">
+          <Icon size="large"  name='linkedin' />
+          </a>
+        </Card.Content>
+  </Card>,
+  <Card style={cardstyle}>
+  <Image src={andy} style={imagestyle}  />
+  <Card.Content>
+        <Card.Header style={textstyle}>Andy Xia</Card.Header>
+        <Card.Meta>
+        <span className='date'>PM</span>
+        </Card.Meta>
+
+      </Card.Content>
+      <Card.Content extra>
+        <a href="mailto:andyxia124@berkeley.edu">
+          <Icon size="large" name='mail' />
+          </a>
+          <a href="https://www.linkedin.com/in/andy-xia-6577b6171/">
+          <Icon size="large"  name='linkedin' />
+          </a>
+        </Card.Content>
+  </Card>,<Card style={cardstyle}>
+  <Image src={grace} style={imagestyle}  />
+  <Card.Content>
+        <Card.Header style={textstyle}>Grace Qiu</Card.Header>
+        <Card.Meta>
+        <span className='date'>PM</span>
+        </Card.Meta>
+
+      </Card.Content>
+      <Card.Content extra>
+        <a href="mailto:graceq@berkeley.edu">
+          <Icon size="large" name='mail' />
+          </a>
+          <a href="linkedin.com/in/graqiu">
+          <Icon size="large"  name='linkedin' />
+          </a>
+        </Card.Content>
+  </Card>]
+
     return (
         <div>
               <div style={{zIndex:"1",position:"relative"}}>
@@ -451,7 +453,7 @@ We believe that the best way to learn about the innovative and pioneering data s
         Our Expertise
         </div>
         </Grid.Row>
-        <Card.Group centered>
+        <Card.Group centered >
   <Card style={overlayboxes}>
   <Card.Header style={generalmember}>
     Machine Learning
@@ -525,14 +527,22 @@ Warehousing
        </List>
   </Card>
   </Card.Group>
-<Grid.Row>
 <Grid.Row style={link} centered>
-<div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-650px",marginBottom:"-50px"}}> </div > 
+<div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-530px",marginBottom:"-70px",marginTop:"35px"}}> </div > 
         Project Managers
         </Grid.Row>
-        <Card.Group centered itemsPerRow={3} style={{marginLeft:"50px",marginTop:"56px"}}>
+        <Grid.Row>
+        <div style={{marginLeft:"50px",marginTop:"56px"}}>
+        <Card.Group centered  >
         {temp}
+        </Card.Group >
+        <Card.Group centered>
+          {temp1}
         </Card.Group>
+        <Card.Group centered>
+        {temp2}
+        </Card.Group>
+        </div>
         </Grid.Row>
         <Grid.Row style={link} centered>
         <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-600px",marginTop:"32px",marginRight:"-130px"}}> </div > 
