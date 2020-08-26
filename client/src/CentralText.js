@@ -306,7 +306,7 @@ Learn More >
   </Link>
   </Grid.Column>
 </Grid.Row>
-<Grid.Row columns={1}style={{width:"2000px",height:"564px",backgroundImage:`url(${engage})`,backgroundSize: "100%",backgroundColor:"#FFFFFF"}}>
+<Grid.Row columns={1}style={{width:"2000px",height:"594px",backgroundImage:`url(${engage})`,backgroundSize: "100%",backgroundColor:"#FFFFFF"}}>
  <div style={overlaytext}>
   engage.
   </div>
@@ -335,7 +335,7 @@ Subscribe to our newsletter!
 </Grid.Column>
 <Grid.Column style={{marginLeft:"100px",fontWeight:"300",fontSize:"24px",lineHeight:"29px",fontFamily:"Montserrat",marginTop:"25px"}}>
 Stay updated on our events, recruiting, and other on-campus initiatives. </Grid.Column>
-<Grid.Column>
+<Grid.Column style={{marginBottom:"100px"}}>
 <Form success={this.state.success} style={{marginTop:"100px"}}>
                               <Form.Input onChange={this.onEChange} style={formStyle}  placeholder={'E-mail'} />
                               <Form.Button onClick={this.loginUser} rounded style={buttonStyle}>
