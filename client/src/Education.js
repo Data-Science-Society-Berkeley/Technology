@@ -19,7 +19,7 @@ const gridoffset = {
 
 const mybigtext = {
   fontFamily: "Montserrat",
-  fontWeight: 600,
+  fontWeight: "normal",
   lineHeight: "97px",
           fontSize: "64px",
           color:"#8CD6D1",
@@ -29,23 +29,23 @@ const mybigtext = {
     marginLeft:"74px",
     marginBottom:"42px",
 };
-
-  const button = {
+  const heading = {
     fontFamily: "Montserrat",
     fontWeight: 300,
-    lineHeight: "29px",
-    fontSize: "24px",
-    color:"#FFFFFF",
+    lineHeight: "44px",
+    fontSize: "36px",
+    color:"#000000",
     fontStyle: "normal",
-    textAlign:"center",
-    background: "#8CD6D1",
-    marginLeft:"70px",
+    textAlign:"left",
   };
   const textstyle = {
     fontFamily: "Montserrat",
     fontWeight: 300,
-            fontSize: "37px",
-            color:"#8CD6D1",
+            fontSize: "20px",
+            color:"#000000",
+            lineHeight:"24px",
+            marginLeft:"34px",
+            marginRight:"50px",
   }
   const cardstyle = { 
     width:"400px",
@@ -62,13 +62,23 @@ const imagestyle = {
 const mymidtext = {
   fontFamily: "Montserrat",
   fontWeight: 300,
-  lineHeight: "73px",
-  fontSize: "48px",
-  color:"#8CD6D1",
+  lineHeight: "29px",
+  fontSize: "24px",
+  color:"#0000000",
   fontStyle: "normal",
-  textAlign:"center",
-  marginLeft:"30px",
-  marginTop:"19px",
+  marginLeft:"34px",
+  marginBottom:"45px",
+  textAlign:"left",
+  marginTop:"24px",
+};
+const pasttext = {
+  fontFamily: "Montserrat",
+  fontWeight: 300,
+  lineHeight: "29px",
+  fontSize: "24px",
+  color:"#0000000",
+  fontStyle: "normal",
+  textAlign:"left",
 };
 const link = {
     fontFamily: "Montserrat",
@@ -127,31 +137,26 @@ class Education extends Component {
     return (
         <div>
 
-        <Header style={mybigtext}> Education</Header>
+        <div style={mybigtext}> Education</div>
         
 <Grid divided='vertically' style={gridoffset}>
     <Grid.Row columns={2}>
                 <Grid.Column>
-
-                    <div style={{height:"255px",width:"666px",border: "1px solid #000000",boxSizing: "borderBox",font:"Montserrat"}}>
-                    <Header style={link}>
-                    AcaDev GM Links
-                    </Header>
-                    <div>
-                    This page contains a schedule for the semester as well as all relevant materials regarding workshops and group projects
-                    </div>
+                    <div id="education" type="education" style={{height:"255px",width:"666px",border: "1px solid #000000",boxSizing: "borderBox",font:"Montserrat",background:"linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #8CD6D1"}}>
+                    <div style={mymidtext}>
+                    AcaDev GM Program Page                    </div>
+                    <div style={textstyle}>
+                    This page contains a schedule for the semester as well as all relevant materials regarding workshops and group projects for the DSS General Membership Program.                     </div>
                     </div>
 
                 </Grid.Column>
                 <Grid.Column>
                     <Grid.Row>
-                    <div style={{height:"255px",width:"666px",border: "1px solid #000000",boxSizing: "borderBox",font:"Montserrat"}}>
-                    <Header style={link}>
-                    DeCal Student Links
-                    </Header>
-                    <div>
-                    This page contains a schedule for the semester as well as all past lectures and course materials.   
-                    </div>                 
+                    <div style={{height:"255px",width:"666px",border: "1px solid #000000",boxSizing: "borderBox",font:"Montserrat",background:"linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #8CD6D1"}}>
+                    <div style={mymidtext}>
+                    DeCal Student Course Page                    </div>
+                    <div style={textstyle}>
+                    This page contains a schedule for the semester as well as all past lectures and course materials of INFO 98: Essential Tools for Data Science.                    </div>                 
                     </div>
                     </Grid.Row>
 
@@ -159,14 +164,23 @@ class Education extends Component {
                 </Grid.Column>
   </Grid.Row>
   <Grid.Row style={{marginLeft:"10px"}} columns={1}>
-  <div style={{height:"105px",width:"1367px",border: "1px solid #000000",boxSizing: "borderBox",font:"Montserrat"}}>
-  <Header style={link}>
-                    Past Materials
-                    </Header>
-                    <div>
-                    Below are past workshops and events put on by DSS throughout our time as a club.                    
-                    </div>    
+  <div style={{height:"105px",width:"1367px",font:"Montserrat"}}>
+  <div style={heading}>
+  Past GM Projects (Coming Soon!)                     </div>
+                    <div style={pasttext}>
+                    This section is still under development. You can check out some of the Spring 2020 projects by clicking <a href="https://drive.google.com/drive/folders/1HCiPnsaOvwIy7iLUflbjczMVNmSKEHOf" style={{color:"#FFC54A"}}to="/gm"> here.     </a>          
+                         </div>    
   </div>
+  <div style={{height:"105px",width:"1367px",font:"Montserrat"}}>
+  <div style={heading}>
+  Past Materials (Coming Soon!)                 </div>
+                    <div style={pasttext}>
+                    This section is still under development. You can check out DSS’ past academic workshops and events 
+on our Facebook page <a href="https://www.facebook.com/dssberkeley/events/" style={{color:"#FFC54A"}}to="/gm"> here.     </a>          
+                         </div>    
+  </div>
+  </Grid.Row>
+<Grid.Row>
   <Accordion style={{margin:"auto"}}>
         <Accordion.Title
           active={activeIndex === 0}
@@ -229,7 +243,7 @@ class Education extends Component {
           </p>
         </Accordion.Content>
       </Accordion>
-  </Grid.Row>
+      </Grid.Row>
   </Grid>
  
   </div>

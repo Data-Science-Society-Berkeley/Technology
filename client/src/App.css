@@ -6,6 +6,11 @@
 .ui.table tr th {
   border-bottom: 0px !important;
 }
+.education{
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #8CD6D1;
+border: 1px solid #000000;
+box-sizing: border-box;
+}
 .loginrectangle 
 {	height: 364px;	
   width: 771px;	

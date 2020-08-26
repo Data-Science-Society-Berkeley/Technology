@@ -206,8 +206,9 @@ class NavBar extends Component {
             onClick={this.handleItemClick} style={navbar}>
             <Dropdown style={linkStyling} item text='education'>
           <Dropdown.Menu >
-            <Link to="gm"><Dropdown.Item icon='calendar' text="GM Landing"></Dropdown.Item></Link>
-            <Link to="decallearn"><Dropdown.Item icon='grid layout' text="DeCal Landing"></Dropdown.Item></Link>
+          <Link to="/education"><Dropdown.Item icon='folder' text="Overview"></Dropdown.Item></Link>
+            <Link to="/gm"><Dropdown.Item icon='calendar' text="GM Landing"></Dropdown.Item></Link>
+            <Link to="/decallearn"><Dropdown.Item icon='grid layout' text="DeCal Landing"></Dropdown.Item></Link>
           </Dropdown.Menu>
         </Dropdown>
 	    </Menu.Item>
