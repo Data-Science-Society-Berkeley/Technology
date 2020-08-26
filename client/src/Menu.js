@@ -79,7 +79,22 @@ var circle2 = {
   width:100,
   height:100,
 };
-
+const apply1 = {
+  fontFamily: "Montserrat",	
+  fontSize: "24px",	
+  fontWeight: 600,
+  lineHeight: "37px",
+  marginLeft: "24px",
+  color:"#EDE8C4"
+};
+const apply2 = {
+  fontFamily: "Montserrat",	
+  fontSize: "24px",	
+  fontWeight: 600,
+  lineHeight: "37px",
+  marginLeft: "24px",
+  color:"#FFC54A"
+};
 
 
 class NavBar extends Component {
@@ -90,6 +105,7 @@ class NavBar extends Component {
     }
     this.setMenu = this.setMenu.bind(this);
     this.setCircle = this.setCircle.bind(this);
+    this.setApply = this.setApply.bind(this);
     console.log(this.props.match.path)
 
   }; 
@@ -147,6 +163,15 @@ class NavBar extends Component {
       </Image>);
     }
   }
+  setApply(){
+    //TODO ensure first guys margin is effectively 24 
+    console.log(this.state.activeStyle);
+    if (this.state.activeStyle){
+      return    apply2
+    } else { 
+      return   apply1
+    }
+  }
   setMenu(){
     //TODO ensure first guys margin is effectively 24 
     console.log(this.state.activeStyle);
@@ -162,7 +187,7 @@ class NavBar extends Component {
     var linkStyling = this.setMenu()
     console.log(linkStyling,this.state.activeStyle)
     var logo = this.setCircle()
-
+    let applystyle = this.setApply()
     return (
       <div className='NavBar'>
       <Menu style={mynav} borderless={true}>
@@ -236,7 +261,7 @@ class NavBar extends Component {
             <Menu.Item     name='apply'
             active={activeItem === 'apply'}
             onClick={this.handleItemClick} style={navbar}>
-            <Link style={linkStyling} to="/apply">
+            <Link style={applystyle} to="/apply">
             apply
             </Link>
             </Menu.Item>

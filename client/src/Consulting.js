@@ -267,7 +267,7 @@ class Consulting extends Component {
                   <Card.Meta>
                   <span className='date'>PM</span>
                   </Card.Meta>
-    
+
                 </Card.Content>
                 <Card.Content extra>
                   <a href="mailto:batlaw33375@berkeley.edu">
@@ -296,8 +296,8 @@ class Consulting extends Component {
                         </a>
                       </Card.Content>
                 </Card>,
-             
-                 
+
+
                                ]
 let temp1 = [        <Card style={cardstyle}>
   <Image src={alina} style={imagestyle}  />
@@ -432,10 +432,10 @@ let temp2 = [  <Card style={cardstyle}>
       <div style={{width:"100%",textAlign:"center",background: "rgba(140, 214, 209, 0.6)"}}>
       <span style={{position: "absolute",top:"50%",transform: "translate(-50%, -50%)" ,zIndex: "3",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"bold",fontSize:"72px",lineHeight:"88px",color:"#FFFFFF"}}> Consulting
 </span>
-<span style={{position: "absolute",left:"30%",top:"75%",transform: "translate(-50%, -50%)" ,zIndex: "3",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"bold",fontSize:"72px",lineHeight:"88px",color:"#FFFFFF"}}> 
+<span style={{position: "absolute",left:"30%",top:"75%",transform: "translate(-50%, -50%)" ,zIndex: "3",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"bold",fontSize:"72px",lineHeight:"88px",color:"#FFFFFF"}}>
 <span style={{fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"0px"}}>5 </span> <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"10px",font:"Montserrat"}}>Projects per Semester</span></span>
       <div style={{background: "rgba(140, 214, 209, 0.6)",zIndex:"2",position: "absolute",width:"100%",height:"100%",top:0,left:0,right:0,bottom:0}}></div>
-      <span style={{position: "absolute",left:"70%",top:"75%",transform: "translate(-50%, -50%)" ,zIndex: "3",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"bold",fontSize:"72px",lineHeight:"88px",color:"#FFFFFF"}}> 
+      <span style={{position: "absolute",left:"70%",top:"75%",transform: "translate(-50%, -50%)" ,zIndex: "3",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"bold",fontSize:"72px",lineHeight:"88px",color:"#FFFFFF"}}>
       <span style={{marginLeft:"151px",fontSize:"96px",lineHeight:"117px",font:"Montserrat",marginTop:"10px",fontStyle:"normal",fontWeigt:"normal"}}> 7-8 <span style={{fontSize:"20px",lineHeight:"37px",textAlign:"center",width:"227px",font:"Montserrat"}}>consultants a semester</span> </span>
 </span>
       </div>
@@ -444,7 +444,7 @@ let temp2 = [  <Card style={cardstyle}>
         <Grid centered>
         <Grid.Row style={{marginTop:"50px"}}>
         <Grid.Row style={link} centered>
-        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-690px",marginBottom:"-45px"}}> </div > 
+        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-690px",marginBottom:"-45px"}}> </div >
   What We Do
 </Grid.Row>
 <Grid.Row style={{color:"#000000",textAlign:"center",lineHeight:"35px",marginLeft:"300px",marginRight:"300px",fontSize:"29px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginBottom:"0px",marginTop:"56px"}}>
@@ -452,7 +452,7 @@ We believe that the best way to learn about the innovative and pioneering data s
 </Grid.Row>
         </Grid.Row>
         <Grid.Row style={link} centered>
-        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-690px",marginTop:"35px",marginRight:"-190px"}}> </div > 
+        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-690px",marginTop:"35px",marginRight:"-190px"}}> </div >
         <div>
         Our Expertise
         </div>
@@ -464,11 +464,15 @@ We believe that the best way to learn about the innovative and pioneering data s
   </Card.Header>
   <div style={circleStyle}> 1</div>
   <List bulleted style={{textAlign:"left",fontFamily:"Monteserrat",fontSize:"24px",lineHeight:"29px",fontStyle:"normal",marginLeft:"37px",marginTop:'40px'}}>
-      <List.Item style={{fontFamily:"Monteserrat"}}>
+      <List.Item >
+      <div style={{fontFamily:"Monteserrat"}}>
       NLP
+      </div>
       </List.Item>
-      <List.Item style={{fontFamily:"Monteserrat"}}>
+      <List.Item style={{fontFamily:"Monteserrat",fontSize:"24px",lineHeight:"29px",fontStyle:"normal"}}>
+      <div style={{fontFamily:"Monteserrat"}}>
       Predictive Analysis
+      </div>
       </List.Item>
       <List.Item style={{fontFamily:"Monteserrat"}}>
       Data Mining
@@ -490,7 +494,7 @@ We believe that the best way to learn about the innovative and pioneering data s
       <List.Item>
  Visualizations
       </List.Item>
-      <List.Item style={{fontFamily:"Monteserrat"}}>
+      <List.Item >
        Customer Segmentation
       </List.Item>
       <List.Item style={{fontFamily:"Monteserrat"}}>
@@ -533,7 +537,7 @@ Warehousing
   </Card.Group>
   <Grid.Row>
     <div style={{marginLeft:"102px"}}>
-    <Image inline src={down} style={{marginLeft:"-300px",marginBottom:"-100px"}}> 
+    <Image inline src={down} style={{marginLeft:"-300px",marginBottom:"-100px"}}>
 
     </Image>
       <div onClick={this.testa} style={{fontFamily: "Montserrat",
@@ -566,7 +570,7 @@ color: "#FFC54A"}}>    Work with us
     </div>
   </Grid.Row>
 <Grid.Row style={link} centered>
-<div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-530px",marginBottom:"-70px",marginTop:"35px"}}> </div > 
+<div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-530px",marginBottom:"-70px",marginTop:"35px"}}> </div >
         Project Managers
         </Grid.Row>
         <Grid.Row>
@@ -583,7 +587,7 @@ color: "#FFC54A"}}>    Work with us
         </div>
         </Grid.Row>
         <Grid.Row style={link} centered>
-        <div onClick={this.testa} id="testa" style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-600px",marginTop:"32px",marginRight:"-130px"}}> </div > 
+        <div onClick={this.testa} id="testa" style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-600px",marginTop:"32px",marginRight:"-130px"}}> </div >
         Client Testimonials
         </Grid.Row>
         <Grid.Row>
@@ -608,8 +612,8 @@ color: "#FFC54A"}}>    Work with us
 </div>
 </div>
 
-        </Grid.Row>      
-        
+        </Grid.Row>
+
         <Grid.Row>
         <Image style={{height:"128px",width:"150px"}} src={paypallogo2}>
 
@@ -622,8 +626,8 @@ color: "#FFC54A"}}>    Work with us
 </div>
 </div>
 
-        </Grid.Row>      
-        
+        </Grid.Row>
+
         <Grid.Row>
         <Image style={{height:"74px",width:"177px"}} src={edify}>
 
@@ -676,10 +680,11 @@ color: "#FFC54A"}}>    Work with us
         </Image.Group>
 
         </Grid.Row>
-        <Grid.Row style={{fontFamily:"Monteserrat",fontSize:"24px",marginLeft:"400px",marginRight:"400px",marginBottom:"120px",marginTop:"56px",lineHeight:"29px"}}>
-        Additionally, we offer our clients sponsorship opportunities to connect our clients with UC Berkeley’s top talent, from setting up events (Info-sessions, Career Fairs, Case Competitions, Hackathons, and Coffee Chats) to compiling extensive Resume Booklets.
-        </Grid.Row>
         </Grid>
+        <div style={{fontSize:"24px",marginLeft:"400px",marginRight:"400px",marginBottom:"120px",marginTop:"56px",lineHeight:"29px"}}>
+        Additionally, we offer our clients sponsorship opportunities to connect our clients with UC Berkeley’s top talent, from setting up events (Info-sessions, Career Fairs, Case Competitions, Hackathons, and Coffee Chats) to compiling extensive Resume Booklets.
+        </div>
+
   </div>
 
 )
