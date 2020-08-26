@@ -142,27 +142,26 @@ class Education extends Component {
 <Grid divided='vertically' style={gridoffset}>
     <Grid.Row columns={2}>
                 <Grid.Column>
+                <Link to="/gm">
                     <div id="education" type="education" style={{height:"255px",width:"666px",border: "1px solid #000000",boxSizing: "borderBox",font:"Montserrat",background:"linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #8CD6D1"}}>
-                    <Link to="/gm">
                     <div style={mymidtext}>
                     AcaDev GM Program Page                    </div>
-                    </Link>
-
                     <div style={textstyle}>
                     This page contains a schedule for the semester as well as all relevant materials regarding workshops and group projects for the DSS General Membership Program.                     </div>
                     </div>
+                    </Link>
 
                 </Grid.Column>
                 <Grid.Column>
                     <Grid.Row>
+                    <Link to="decallearn">
                     <div style={{height:"255px",width:"666px",border: "1px solid #000000",boxSizing: "borderBox",font:"Montserrat",background:"linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #8CD6D1"}}>
-                   <Link to="decallearn">
                     <div style={mymidtext}>
                     DeCal Student Course Page                    </div>
-                    </Link>
                     <div style={textstyle}>
                     This page contains a schedule for the semester as well as all past lectures and course materials of INFO 98: Essential Tools for Data Science.                    </div>                 
                     </div>
+                    </Link>
                     
                     </Grid.Row>
 
