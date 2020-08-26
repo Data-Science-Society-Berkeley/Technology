@@ -398,7 +398,7 @@ lineHeight: "29px"}}>
 
   <div >
 <b style={mymidtext}>Essential Tools for Data Scientists</b>  | Spring 2020       </div>
-<div style={{marginLeft:"197px",marginTop:"56px"}}>
+<div style={{marginLeft:"64px",marginTop:"56px"}}>
 Welcome to Data Science Society at Berkeley&rsquo;s very own DeCal: Essential Tools for Data Scientists! This course is geared towards exposing students to essential data science skills that are
                         demanded in industry and are meant to be taken as a follow-up or alongside Data 8. The course covers the bits of data science and machine learning that aren’t traditionally taught in the classroom
                         like advanced Pandas and Seaborn, and visualization dashboards that will challenge you, sharpen your skills and elevate you in the internship game.
@@ -439,7 +439,7 @@ Welcome to Data Science Society at Berkeley&rsquo;s very own DeCal: Essential To
 <Header  style={{marginTop:"56px"}}>
   <b style={mymidtext}> Prerequisites</b>
 </Header>
-<div style={{marginLeft:"197px"}}>
+<div style={{marginLeft:"64px"}}>
 There are no formal prerequisites for this course. It is recommended to have some level of basic programming experience in Python, but not required. We want you to learn as much as possible and will help you get up to speed quickly!
 </div>
 <Header style={{marginTop:"56px"}} >

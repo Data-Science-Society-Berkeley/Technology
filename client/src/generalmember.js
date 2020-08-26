@@ -299,7 +299,7 @@ lineHeight: "29px"}}>
         </Grid.Row>
         <Grid.Row>
 
-<div style={{marginLeft:"197px",marginTop:"56px"}}>
+<div style={{marginLeft:"64px",marginTop:"56px"}}>
 
 Welcome to Data Science Society at Berkeley&rsquo;s very own General Member Program: Essential Tools for Data Scientists! This course is geared towards exposing students to essential data science skills that are
                         demanded in industry and are meant to be taken as a follow-up or alongside Data 8. The course covers the bits of data science and machine learning that aren’t traditionally taught in the classroom

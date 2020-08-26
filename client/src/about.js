@@ -36,7 +36,7 @@ import story from './About/OurStory.jpg'
 import popout from './About/popoutDesign.png'
 import ret from './About/RetreatPic.png'
 import datacamp from './Decal Images/datacamp-logo 1.png' 
-
+import youtubeback from './About/youtubevideo-cover.jpg'
 
 
 
@@ -601,6 +601,7 @@ class About extends Component {
                     <Embed
                     id='XW7Zkzf7_C8'
                     source='youtube'
+                    placeholder={youtubeback}
   />
                     </div>
   </Grid.Row>
