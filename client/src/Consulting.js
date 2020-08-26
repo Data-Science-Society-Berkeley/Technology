@@ -44,7 +44,7 @@ import young from './PM Headshots/Youngli.jpg'
 import avik from './PM Headshots/Avik.jpg'
 import kevinmiao from './PM Headshots/KevinHeadShot.jpg'
 
-import collab from './Consulting/consulting-header.jpg'
+import collab from './Consulting/consultingheader-compress-min.jpg'
 
 
 const overlayboxes2 = {
