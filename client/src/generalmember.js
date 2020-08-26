@@ -281,7 +281,7 @@ Intro to Project Development
     return (
         <div>
         <Grid>
-        <Grid.Row>
+        <Grid.Row >
         <Header style={mybigtext}> General Membership Program | Fall 2020</Header>
         </Grid.Row>
 
@@ -299,11 +299,12 @@ lineHeight: "29px"}}>
         </Grid.Row>
         <Grid.Row>
 
-<div style={{marginLeft:"197px"}}>
+<div style={{marginLeft:"197px",marginTop:"56px"}}>
 
 Welcome to Data Science Society at Berkeley&rsquo;s very own General Member Program: Essential Tools for Data Scientists! This course is geared towards exposing students to essential data science skills that are
                         demanded in industry and are meant to be taken as a follow-up or alongside Data 8. The course covers the bits of data science and machine learning that aren’t traditionally taught in the classroom
                         like advanced Pandas and Seaborn, and visualization dashboards that will challenge you, sharpen your skills and elevate you in the internship game.
+                        <br/>
                         <br/>
                         In this course, you will learn everything you need to know from the ground up from an introduction on Python, to software like Excel and Tableau, to other essential skills through a personalized
                         data science project that includes data cleaning, visualization, statistical analysis, and machine learning.
@@ -311,13 +312,13 @@ Welcome to Data Science Society at Berkeley&rsquo;s very own General Member Prog
         </Grid.Row>
 
 <div style={{marginLeft:"0px"}}>
-<Grid.Row>
+<Grid.Row style={{marginTop:"56px"}}>
 
 <Header style={{marginLeft:"60px",fontFamily: "Montserrat",
 fontStyle: "normal",
 fontWeight: "600",
 fontSize: "24px",
-lineHeight: "29px"}}>
+lineHeight: "29px",marginBottom:"56px"}}>
   Schedule
 </Header>
         </Grid.Row>
@@ -329,7 +330,7 @@ lineHeight: "29px"}}>
 
 </div>
 
-<Grid.Row>
+<Grid.Row style={{marginTop:"100px",marginBottom:"56px"}}>
 
        <Header style={link}>
        General Member Course Staff

@@ -7,9 +7,10 @@ import datacamp from './Decal Images/datacamp-logo 1.png'
 import decal from './Decal Images/decalberkeleylogo 1.png'
 import charlie from './Leadership Headshots/charlie.jpg'
 import story from './SocialGood/20191109_150334.jpg'
-import good from './SocialGood/officebuilding.png'
-import hype from './SocialGood/dssg1.jpeg'
-import dolla from './SocialGood/dollarsign.png'
+import hype from './SocialGood/SoialGoodPic.png'
+import heart from './SocialGood/dssg1.jpeg'
+import arrow from './SocialGood/Arrow3.png'
+
 
 
 
@@ -79,8 +80,8 @@ const mymidtext = {
 const link = {
     fontFamily: "Montserrat",
     fontWeight: 300,
-    lineHeight: "73px",
-    fontSize: "48px",
+    lineHeight: "78px",
+    fontSize: "64px",
     color:"#8CD6D1",
     fontStyle: "normal",
     textAlign:"center",
@@ -145,27 +146,24 @@ Committee Origin
 </Header>  
 </Grid.Row>
 <Grid.Row columns={2} >
-  <Grid.Column verticalAlign="top" width={4} style={{color:"#000000",textAlign:"left",lineHeight:"44px",fontSize:"36px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginLeft:"129px",marginRight:"128px",marginBottom:"81px",marginTop:"75px"}}>
+  <Grid.Column verticalAlign="top" width={4} style={{color:"#000000",textAlign:"left",lineHeight:"35px",fontSize:"29px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginLeft:"129px",marginRight:"128px",marginBottom:"81px",marginTop:"56px"}}>
 
   Data science has exploded in popularity due to its influence on the business landscape. The technological capabilities with data has provided business with a competitive advantage, opportunity to optimize efficiency, and in essence, more profit. 
+<Image src={arrow} style={{marginLeft:"500px"}}>
 
+</Image>
   </Grid.Column>
-  <Grid.Column verticalAlign="top" style={{marginBottom:"153px"}} >
-  <Image.Group>
-    <Image inline src={good} style={{height:"535px",width:"535px"}}>
+  <Grid.Column verticalAlign="top" style={{marginBottom:"153px",marginTop:"56px"}} >
+    <Image inline src={hype} style={{height:"383px",width:"382px",marginTop:"-120px"}}>
     </Image>
-    <Image inline src={dolla} style={{height:"333px",width:"333px",marginTop:"-150px",marginLeft:"-150"}}>
-
-    </Image>
-    </Image.Group>
   </Grid.Column>
   </Grid.Row>
   </Grid>
   <div style={{zIndex:"1",position:"relative"}}>
-      <Image src={hype} style={{width:"120%",height:"auto",zIndex:"2"}}>
+      <Image src={heart} style={{width:"120%",height:"auto",zIndex:"2"}}>
       </Image>
       <div style={{width:"100%",textAlign:"center",background: "rgba(140, 214, 209, 0.6)"}}>
-      <span style={{position: "absolute",top:"10%",left:"60%",fontWeight:"300px",zIndex: "3",width:"508px",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"normal",fontSize:"36px",lineHeight:"44px",color:"#000000"}}> We seek to use these same tools and our datafied way of thinking to promise and act for change. We want to use the power of data science in service of humankind and offer creative solutions to address the world’s most urgent societal challenges.</span>
+      <span style={{position: "absolute",top:"10%",left:"65%",textAlign:"left",fontWeight:"300px",zIndex: "3",width:"508px",fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"normal",fontSize:"36px",lineHeight:"44px",color:"#000000"}}> We seek to use these same tools and our datafied way of thinking to promise and act for change. We want to use the power of data science in service of humankind and offer creative solutions to address the world’s most urgent societal challenges.</span>
       </div>
 
      </div>
@@ -175,7 +173,7 @@ Committee Origin
        Our Team
        </div>   
  </Grid.Row>
-  <Grid.Row>
+  <Grid.Row style={{marginTop:"56px"}}>
 
        <Card.Group centered>
        <Card style={cardstyle}> <Image style={imagestyle} src={charlie}/>    
@@ -199,8 +197,8 @@ Committee Origin
 </Card>
 </Card.Group>
   </Grid.Row>
-  <Grid.Row>
-  <Grid.Column style={{color:"#8CD6D1",textAlign:"center",lineHeight:"59px",fontSize:"48px",fontWeight:"500px",fontStyle:"normal",fontFamily:"Montserrat",marginBottom:"98px"}}>
+  <Grid.Row style={{marginTop:"100px"}}>
+  <Grid.Column style={{color:"#8CD6D1",textAlign:"center",lineHeight:"59px",fontSize:"48px",fontWeight:"500px",fontStyle:"normal",fontFamily:"Montserrat",marginBottom:"98px",marginLeft:"190px",marginRight:"190px"}}>
   This Fall 2020 Semester is the first semester for the Social Good committee. Stay tuned for updates!</Grid.Column>
   </Grid.Row>
   </Grid>

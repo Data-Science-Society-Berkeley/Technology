@@ -385,7 +385,7 @@ class DecalLearn extends Component {
         <Grid>
 <Grid.Row>
 
-        <Header style={mybigtext}> DeCal: Essential Tools for Data Science | Fall 2020 </Header>
+        <Header style={mybigtext}> DeCal: Essential Tools for Data Science | Spring 2020 </Header>
         </Grid.Row>
 
         <div style={{marginBottom:"50px",marginLeft:"64px", 
@@ -398,17 +398,18 @@ lineHeight: "29px"}}>
 
   <div >
 <b style={mymidtext}>Essential Tools for Data Scientists</b>  | Spring 2020       </div>
-<div style={{marginLeft:"197px"}}>
+<div style={{marginLeft:"197px",marginTop:"56px"}}>
 Welcome to Data Science Society at Berkeley&rsquo;s very own DeCal: Essential Tools for Data Scientists! This course is geared towards exposing students to essential data science skills that are
                         demanded in industry and are meant to be taken as a follow-up or alongside Data 8. The course covers the bits of data science and machine learning that aren’t traditionally taught in the classroom
                         like advanced Pandas and Seaborn, and visualization dashboards that will challenge you, sharpen your skills and elevate you in the internship game.
+                        <br/>
                         <br/>
                         In this course, you will learn everything you need to know from the ground up from an introduction on Python, to software like Excel and Tableau, to other essential skills through a personalized
                         data science project that includes data cleaning, visualization, statistical analysis, and machine learning.
 </div>
         </Grid.Row>
 
-<div style={{marginLeft:"0px"}}>
+<div style={{marginLeft:"0px",marginTop:"56px"}}>
 <Grid.Row>
 
 <Header  >
@@ -435,13 +436,13 @@ Welcome to Data Science Society at Berkeley&rsquo;s very own DeCal: Essential To
         </Grid.Row>
         <Grid.Row>
 
-<Header  >
+<Header  style={{marginTop:"56px"}}>
   <b style={mymidtext}> Prerequisites</b>
 </Header>
 <div style={{marginLeft:"197px"}}>
 There are no formal prerequisites for this course. It is recommended to have some level of basic programming experience in Python, but not required. We want you to learn as much as possible and will help you get up to speed quickly!
 </div>
-<Header  >
+<Header style={{marginTop:"56px"}} >
   <b style={mymidtext}> Grading</b>
 </Header>
 <List style={{marginLeft:"60px"}}>
@@ -456,7 +457,7 @@ Reading Quizzes: 10% (2 Drops)
 </List.Item>
 
 </List>
-<Header style={{marginLeft:"60px"}}>
+<Header style={{marginLeft:"60px",marginTop:"56px",marginBottom:"56px"}}>
   Schedule
 </Header>
         </Grid.Row>
@@ -466,12 +467,12 @@ Reading Quizzes: 10% (2 Drops)
 </Grid.Row>
 
 </div>
-        <Grid.Row>
+        <Grid.Row style={{marginTop:"100px"}}>
 
        <Header style={link}>
        DeCal Course Staff
        </Header>   
-       <Card.Group centered style={{}}>
+       <Card.Group centered style={{marginTop:"56px"}}>
        <Card style={cardstyle}> <Image style={imagestyle} src={kate}/>    
        <Card.Content>
 <Card.Header style={textstyle}>Kate Miller</Card.Header>

@@ -13,6 +13,10 @@ import daily from './Decal Images/dailyactivity.jpg'
 import decal1 from './Decal Images/decal-imageleft.jpg'
 import decal2 from './Decal Images/decal-imageright.jpg'
 import datalab from './Decal Images/DeCal_Logo.png'
+import arrow from './Decal Images/Arrow.png'
+import leftarrow from './Decal Images/OrangeArrow2.png'
+import rightarrow from './Decal Images/OrangeArrow1.png'
+
 let endpoint = "http://localhost:8080";
 const gridoffset = {
           marginLeft:"62px",
@@ -80,8 +84,8 @@ const mymidtext = {
 const link = {
     fontFamily: "Montserrat",
     fontWeight: 300,
-    lineHeight: "73px",
-    fontSize: "48px",
+    lineHeight: "78px",
+    fontSize: "64px",
     color:"#8CD6D1",
     fontStyle: "normal",
     textAlign:"center",
@@ -140,38 +144,36 @@ DeCal</span>
 
      </div>
         <Grid centered >
-        <Grid.Row style={{marginTop:"130px"}}>
+        <Grid.Row style={{marginTop:"100px"}}>
         <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-680px",marginTop:"33px",marginRight:"-185px"}}> </div > 
 <div style={link}>
        What We Do
        </div>  
 </Grid.Row>
 <Grid.Row>
-  <Grid.Column verticalAlign="top" width={7} style={{color:"#000000",textAlign:"left",lineHeight:"44px",fontSize:"36px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginLeft:"129px",marginRight:"128px",marginBottom:"81px",marginTop:"0px"}}>
+  <Grid.Column verticalAlign="top" width={7} style={{color:"#000000",textAlign:"left",lineHeight:"35px",fontSize:"29px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginLeft:"110px",marginRight:"128px",marginBottom:"81px",marginTop:"56px"}}>
 
-  Everywhere, data is being collected and used to make decisions –- starting from your news feed in the morning, to the Instagram stories you binge during lunch, and even the best transit routes back home.
+  Everywhere, data is being collected and used to make <strong> decisions </strong> –- starting from your news feed in the morning, to the Instagram stories you binge during lunch, and even the best transit routes back home.
+  <Image src={arrow} style={{marginLeft:"0px",marginTop:"85px"}}>
 
+</Image>
   </Grid.Column>
   <Grid.Column verticalAlign="top" width={6}>
     <Image src={daily} style={{height:"535px",width:"535px"}}>
 
     </Image>
   </Grid.Column>
-  <Grid.Row style={{color:"#000000",textAlign:"left",lineHeight:"44px",fontSize:"36px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginLeft:"366px",marginRight:"143px",marginBottom:"81px",marginTop:"51px"}}>
-  This DeCal introduces EVERYONE to the fascinating world of data analytics and insight .There are absolutely NO prerequisites, and people of ALL majors, backgrounds, and interests are actively encouraged to apply! 
+  <Grid.Row style={{color:"#000000",textAlign:"right",lineHeight:"35px",fontSize:"29px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginLeft:"400px",marginRight:"403px",marginBottom:"81px",marginTop:"-145px"}}>
+  This DeCal introduces <strong>EVERYONE</strong> to the fascinating world of data analytics and insight. There are absolutely <strong> NO prerequisites</strong>, and people of <strong>ALL majors, backgrounds, and interests</strong> are actively encouraged to apply! 
   </Grid.Row>
   <Grid.Row centered >
     <Image.Group style={{margin:"0 auto"}}>
-      <Image src={decal1} style={{height:"353px",width:"635px"}}>
-
+      <Image src={decal1} style={{height:"353px",width:"635px",marginRight:"50px"}}>
       </Image>
-      <Image src={decal2} style={{height:"353px",width:"636px",marginLeft:"47px"}} >
+      <Image src={decal2} style={{height:"353px",width:"636px"}} >
 
       </Image>
     </Image.Group>
-    <Grid.Row>
-    <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"310px",top:"50%",margin:"63px",marginRight:"100px",marginTop:"152px",marginBottom:"-105px"}}> </div > 
-    </Grid.Row>
     <Grid.Row centered style={{marginTop:"0px"}}>
       <div style={{
     fontFamily: "Montserrat",
@@ -181,15 +183,16 @@ DeCal</span>
     color:"#8CD6D1",
     fontStyle: "normal",
     textAlign:"center",
+    marginTop:"87px"
   }}>
+        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-680px",marginTop:"33px",marginRight:"-185px"}}> </div > 
        The Course
-       <Image inline src={datalab} style={{height:"204px",width:"551px",marginLeft:"30px"}}>
-
+       <Image src={datalab} style={{height:"204px",width:"551px",margin:"0 auto",marginBottom:"56px"}}>
 </Image>
        </div>  
 
     </Grid.Row>
-    <Grid.Row style={{color:"#000000",textAlign:"center",lineHeight:"44px",fontSize:"36px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginLeft:"129px",marginRight:"128px",marginBottom:"128px"}}>
+    <Grid.Row style={{color:"#000000",textAlign:"center",lineHeight:"35px",fontSize:"29px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginLeft:"129px",marginRight:"128px",marginBottom:"128px"}}>
     Our goal is to educate people with little to no experience in the field about the languages, software, and other tools that data scientists across the globe use daily. We place a special emphasis on practical tools not otherwise emphasized in Berkeley academic curricula. </Grid.Row>
   </Grid.Row>
   <Grid.Row style={{marginBottom:"113px"}}>
@@ -207,25 +210,29 @@ DeCal</span>
 <Grid.Column style={{color:"#8CD6D1",textAlign:"center",lineHeight:"59px",fontSize:"48px",fontWeight:"500px",fontStyle:"normal",fontFamily:"Montserrat",marginBottom:"98px"}}>
 Join DSS and 
 apply to be a TA!
+<Image src={rightarrow} style={{marginLeft:"600px",marginTop:"60px",transform:"rotate(10deg)"}}>
+</Image>
 </Grid.Column>
 <Grid.Column style={{color:"#8CD6D1",textAlign:"center",lineHeight:"59px",fontSize:"48px",fontWeight:"500px",fontStyle:"normal",fontFamily:"Montserrat",marginBottom:"98px"}}>
 Apply to be a student!
+<Image src={leftarrow} style={{marginLeft:"300px",marginTop:"60px",transform:"rotate(-15deg"}}>
+</Image>
 </Grid.Column>
 </Grid.Row>
-<Grid.Row centered>
+<Grid.Row centered style={{marginTop:"-50px"}}>
           <Button style={button}>
           <Link to="/decallearn" style={{color:"white"}}>
           Fall 2020 App
           </Link> 
           </Button>
         </Grid.Row>
-        <Grid.Row style={{marginTop:"167px"}}>
+        <Grid.Row style={{marginTop:"100px"}}>
         <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-650px",marginTop:"60px",marginRight:"-185px",marginBottom:"-200px"}}> </div > 
        <Header style={link}>
        DeCal Directors
        </Header>   
        </Grid.Row>
-       <Grid.Row style={{marginTop:"130px"}}>
+       <Grid.Row style={{marginTop:"56px"}}>
        <Card.Group centered >
        <Card style={cardstyle}> <Image style={imagestyle} src={kate}/>    
        <Card.Content>
@@ -291,14 +298,14 @@ Apply to be a student!
         
        </div>
        </Grid.Row>
-  <Grid.Row style={{marginTop:"267px"}}>
+  <Grid.Row style={{marginTop:"60px"}}>
   <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-675px",marginTop:"60px",marginRight:"-185px",marginBottom:"-200px"}}> </div > 
   <Header style={link}>
        Our Sponsors
        </Header>   
   </Grid.Row>
   <Grid.Row>
-  <Image.Group style={{margin:"auto",marginBottom:"73px"}}>
+  <Image.Group style={{margin:"auto",marginBottom:"73px",marginTop:"56px"}}>
     <Image style={{marginRight:"70px"}}src={decal}>
 
     </Image>
@@ -309,6 +316,10 @@ Apply to be a student!
       
       </Image>
   </Image.Group>
+  
+  </Grid.Row>
+  <Grid.Row style={{fontFamily:"Monteserrat",fontSize:"24px",marginLeft:"165px",marginRight:"165px",marginBottom:"120px",marginTop:"56px",lineHeight:"29px"}}>
+  *DataCamp offers a free 6 month premium membership to participating students!
   </Grid.Row>
   </Grid>
   </div>
