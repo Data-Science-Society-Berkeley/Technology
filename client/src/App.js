@@ -90,9 +90,9 @@ render () {
       return (<Switch>
         <Route  path ='/' render={(props) => 
         <div>
-
-        <MobileMenu {...props}/>
-        <MobileLanding {...props}/>
+        <Header>
+          Sorry! We're currently not on mobile. Please use your desktop!
+        </Header>
         </div>
         } 
         />
