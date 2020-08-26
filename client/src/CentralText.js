@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { Image,Grid,Card, Header, Form, Input, Icon, Button, GridColumn } from "semantic-ui-react";
+import { Image,Grid,Card, Header, Form, Input, Icon, Button ,Message } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
 import edu from './landing/AcaDev.png'
 import engage from './landing/engage.jpg'
@@ -183,6 +183,34 @@ class CentralText extends Component {
     </Link>
     </Card>]
   }
+  loginUser = () => {
+    let email = this.state.email
+    axios
+    .post(
+      endpoint + "/api/email",
+      {
+    email
+      },
+      {
+        withCredentials: true,
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        }
+      }
+    )
+    .then(res => {
+      if (res.status == 200){
+        this.setState({ success: true });
+      } else {
+        // throw an error for the program //TODO TEST THIS works
+        // TODO when logout, clear the cookie from cache and browser..
+      }
+    });
+  };
+  onEChange = (value) => {
+    // TODO if its an invalid email we can prompt them for an error later
+    this.setState({ email: value.target.value });
+  };
     sendData(data) {
         this.props.buttonClick(data);
     };
@@ -308,11 +336,13 @@ Subscribe to our newsletter! (coming soon)
 <Grid.Column style={{marginLeft:"100px",fontWeight:"300",fontSize:"24px",lineHeight:"29px",fontFamily:"Montserrat",marginTop:"25px"}}>
 Stay updated on our events, recruiting, and other on-campus initiatives. </Grid.Column>
 <Grid.Column>
-<Form style={{marginTop:"100px"}}>
-                              <Form.Input style={formStyle}  placeholder={'E-mail'} />
-                              <Form.Button rounded style={buttonStyle}>
+<Form success={this.state.success} style={{marginTop:"100px"}}>
+                              <Form.Input onChange={this.onEChange} style={formStyle}  placeholder={'E-mail'} />
+                              <Form.Button onClick={this.loginUser} rounded style={buttonStyle}>
                                   Submit
                               </Form.Button>
+                              <Message style={{fontFamily:"Montserrat"}} success header='Form Completed' content="Thanks for signing up for our newsletter!"
+    />
                           </Form>
                           </Grid.Column>
                           <Grid.Column>

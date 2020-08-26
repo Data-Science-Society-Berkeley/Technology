@@ -179,7 +179,7 @@ class Login extends Component {
                               <input style={formStyle} onChange={this.onEChange} width={6} id="text" placeholder='E-mail' />
 
                               <Form.TextArea style={formStyle2}  onChange={this.onMChange} id="text" placeholder='Message' />
-                              <Message style={{fontFamily:"Montserrat"}} success header='Form Completed' content="You're all signed up for the newsletter"
+                              <Message style={{fontFamily:"Montserrat"}} success header='Form Completed' content="We've received your outreach"
     />
 
                               <Form.Button width={6} onClick={this.loginUser} rounded style={buttonStyle}>
