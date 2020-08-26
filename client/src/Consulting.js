@@ -462,24 +462,20 @@ We believe that the best way to learn about the innovative and pioneering data s
     Machine Learning
   </Card.Header>
   <div style={circleStyle}> 1</div>
-  <List bulleted style={{textAlign:"left",fontFamily:"Monteserrat",fontSize:"24px",lineHeight:"29px",fontStyle:"normal",marginLeft:"37px",marginTop:'40px'}}>
+  <List bulleted style={{textAlign:"left",fontSize:"24px",lineHeight:"29px",fontStyle:"normal",marginLeft:"37px",marginTop:'40px'}}>
       <List.Item >
-      <div style={{fontFamily:"Monteserrat"}}>
       NLP
-      </div>
       </List.Item>
-      <List.Item style={{fontFamily:"Monteserrat",fontSize:"24px",lineHeight:"29px",fontStyle:"normal"}}>
-      <div style={{fontFamily:"Monteserrat"}}>
+      <List.Item style={{fontSize:"24px",lineHeight:"29px",fontStyle:"normal"}}>
       Predictive Analysis
-      </div>
       </List.Item>
-      <List.Item style={{fontFamily:"Monteserrat"}}>
+      <List.Item >
       Data Mining
       </List.Item>
-      <List.Item style={{fontFamily:"Monteserrat"}}>
+      <List.Item >
       Clustering
       </List.Item>
-      <List.Item style={{fontFamily:"Monteserrat"}}>
+      <List.Item >
       Modeling
       </List.Item>
        </List>
@@ -489,20 +485,20 @@ We believe that the best way to learn about the innovative and pioneering data s
     Business Intelligence
   </Card.Header>
   <div style={circleStyle}> 2</div>
-  <List bulleted style={{textAlign:"left",fontFamily:"Monteserrat",fontSize:"24px",lineHeight:"29px",fontStyle:"normal",marginLeft:"37px",marginTop:'40px'}}>
+  <List bulleted style={{textAlign:"left",fontSize:"24px",lineHeight:"29px",fontStyle:"normal",marginLeft:"37px",marginTop:'40px'}}>
       <List.Item>
  Visualizations
       </List.Item>
       <List.Item >
        Customer Segmentation
       </List.Item>
-      <List.Item style={{fontFamily:"Monteserrat"}}>
+      <List.Item >
        Price Optimization
       </List.Item>
-      <List.Item style={{fontFamily:"Monteserrat"}}>
+      <List.Item >
        Customer Churn
       </List.Item>
-      <List.Item style={{fontFamily:"Monteserrat"}}>
+      <List.Item >
        Operations Effeciency
       </List.Item>
        </List>
@@ -512,22 +508,22 @@ We believe that the best way to learn about the innovative and pioneering data s
     Software Development
   </Card.Header>
   <div style={circleStyle}> 3</div>
-  <List bulleted style={{textAlign:"left",fontFamily:"Monteserrat",fontSize:"24px",lineHeight:"29px",fontStyle:"normal",marginLeft:"37px",marginTop:'40px'}}>
-<List.Item style={{fontFamily:"Monteserrat"}}>
+  <List bulleted style={{textAlign:"left",fontSize:"24px",lineHeight:"29px",fontStyle:"normal",marginLeft:"37px",marginTop:'40px'}}>
+<List.Item >
 Warehousing
        </List.Item>
-       <List.Item style={{fontFamily:"Monteserrat"}}>
+       <List.Item >
 
        Systems Integration
        </List.Item>
-       <List.Item style={{fontFamily:"Monteserrat"}}>
+       <List.Item >
        Cloud Computing
 
        </List.Item>
-       <List.Item style={{fontFamily:"Monteserrat"}}>
+       <List.Item >
        Front-End Development
        </List.Item>
-       <List.Item style={{fontFamily:"Monteserrat"}}>
+       <List.Item >
        Back-End Development
 
        </List.Item>
