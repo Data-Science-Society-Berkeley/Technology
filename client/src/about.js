@@ -719,7 +719,7 @@ View our current team below!
   <Header style={mybigtext}> Our Partners</Header>
   </Grid.Row>
   <Grid.Row style={{marginTop:"56px",marginLeft:"240px"}} >
-<Image.Group size={"medium"} style={{marginTop:"30px"}}>
+<Image.Group size={"medium"} style={{marginTop:"30px",marginBottom:"100px"}}>
 <Image style={{marginRight:"10px"}} src={sponsor1}>
 
 </Image>

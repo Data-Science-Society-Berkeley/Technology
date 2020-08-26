@@ -113,7 +113,7 @@ render () {
     <Route exact path ='/' render={(props) => 
     <div>
     <NavBar {...props}/>
-    <CentralText {...props} buttonClick={this.sendData.bind(this)} />
+    <CentralText style={{paddingBottom:"500px"}} {...props} buttonClick={this.sendData.bind(this)} />
     <Footer></Footer>
     </div>
     } 
@@ -180,6 +180,9 @@ Join our Discord at discord.gg/nrSntva !
         <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props} />
     <GeneralMember></GeneralMember>
+    <div style={{marginTop:"100px"}}>
+
+</div>
     <Footer></Footer>
     </div>
     }/>
@@ -196,6 +199,9 @@ Join our Discord at discord.gg/nrSntva !
         <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props} />
     <DecalLearn></DecalLearn>
+    <div style={{marginTop:"100px"}}>
+
+</div>
     <Footer></Footer>
     </div>
     }/>
@@ -212,6 +218,9 @@ Join our Discord at discord.gg/nrSntva !
             <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props}/>
     <Work></Work>
+    <div style={{marginTop:"100px"}}>
+
+</div>
     <Footer></Footer>
     </div>
     } 
@@ -223,12 +232,14 @@ Join our Discord at discord.gg/nrSntva !
     <Service></Service>
     <div style={{backgroundColor:"#8CD6D1",marginRight:"-500px",marginTop:"0px",paddingBottom:"150px"}}>
     <Contact ></Contact>
-    <Footer></Footer>
+    
     </div>
 
     <div style={{backgroundColor:"#FFFFFF",marginTop:"55px",paddingBottom:"50px",textAlign:"center",fontFamily:"Montserrat",fontSize:"24px",fontHeight:"29px"}}>
     You can also reach us through our email or social medias listed below. 
     </div>
+    <Footer></Footer>
+
     </div>
     } 
     />
@@ -237,10 +248,10 @@ Join our Discord at discord.gg/nrSntva !
                 <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props}/>
     <Education ></Education>
-    <div style={{marginTop:"200px"}}>
+    <div style={{marginTop:"100px"}}>
 
     </div>
-    <Footer style={{marginTop:"200px"}}></Footer>
+    <Footer ></Footer>
     </div>
     } 
     />
