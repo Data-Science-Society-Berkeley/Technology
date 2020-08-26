@@ -158,26 +158,37 @@ class CentralText extends Component {
     <Card.Header style={{fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"600px",fontSize:"48px",lineHeight:"59px",color:"#FFFFFF",marginTop:"23px"}}>
     1
     </Card.Header>
+    <Link to="/services">
     <Card.Description style={{fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"500px",fontSize:"28px",lineHeight:"34px",color:"#FFFFFF",width:"258px",marginTop:"35px",marginBottom:"37px",marginLeft:"15px"}}>
     Contact us for consulting services.
     </Card.Description>
+    </Link>
     </Card>,<Card style={value_card}>
     <Card.Header style={{fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"600px",fontSize:"48px",lineHeight:"59px",color:"#FFFFFF",marginTop:"23px"}}>
     2
     </Card.Header>
+    <Link to="/services">
+
     <Card.Description style={{fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"500px",fontSize:"28px",lineHeight:"34px",color:"#FFFFFF",width:"258px",marginTop:"35px",marginBottom:"37px",marginLeft:"15px"}}>
     Like what we do? Sponsor us today!    </Card.Description>
+    </Link>
     </Card>,<Card style={value_card}>
     <Card.Header style={{fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"600px",fontSize:"48px",lineHeight:"59px",color:"#FFFFFF",marginTop:"23px"}}>
     3
     </Card.Header>
+    <Link to="/services">
+
     <Card.Description style={{fontFamily:"Montserrat",fontStyle:"normal",fontWeight:"500px",fontSize:"28px",lineHeight:"34px",color:"#FFFFFF",width:"258px",marginTop:"35px",marginBottom:"37px",marginLeft:"15px"}}>
     Connect with us and let’s host an event!    </Card.Description>
+    </Link>
     </Card>]
   }
     sendData(data) {
         this.props.buttonClick(data);
     };
+    moveAbout(){
+      document.getElementById( 'about' ).scrollIntoView();
+    }
     render() {
       console.log(this.state.height,this.state.width)
       let process = this.join()
@@ -203,8 +214,8 @@ class CentralText extends Component {
                     </Image>
                       <Button.Group style={{marginRight:"275px",marginTop:"125px"}} >
 
-                      <Button style={apply} circular>APPLY</Button>
-                      <Button style={learn} circular>LEARN MORE </Button>
+                      <Link to="/apply"><Button style={apply} circular>APPLY</Button></Link>
+                      <Button onClick={this.moveAbout} style={learn} circular>LEARN MORE </Button>
                       </Button.Group>
 
                     </Grid.Column>
@@ -212,7 +223,7 @@ class CentralText extends Component {
   </Grid>
   <Grid style={{width:"110%",backgroundColor:"white",marginTop:"229px"}}>
   <Grid.Row >
-  <Header style={{fontFamily:"Montserrat",marginLeft:"100px",font:"Montserrat",fontStyle:"normal",fontWeight:"400",fontSize:"64px",lineHeight:"78px",color:"#8CD6D1",paddingTop:"69px"}}>
+  <Header id="about" style={{fontFamily:"Montserrat",marginLeft:"100px",font:"Montserrat",fontStyle:"normal",fontWeight:"400",fontSize:"64px",lineHeight:"78px",color:"#8CD6D1",paddingTop:"69px"}}>
     About Us
   </Header>
   </Grid.Row>
@@ -272,9 +283,11 @@ Learn More >
   engage.
   </div>
   <Grid.Column>
+  <Link to="/events">
   <div style={underlaytext}>
   Learn more about our campus-wide events >>
   </div>
+  </Link>
   </Grid.Column>
 </Grid.Row>
 <Grid.Row columns={1}>

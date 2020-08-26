@@ -114,6 +114,12 @@ render () {
     </div>
     } 
     />
+      <Route exact path ='/apply' render={(props) => 
+    <div>
+    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+    <Menu {...props} />
+    </div>
+    }/>
         <Route exact path ='/culture' render={(props) => 
     <div>
     <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
@@ -149,7 +155,7 @@ render () {
     <Acadev></Acadev>
     </div>
     }/>
-       <Route exact path ='/generalmember' render={(props) => 
+       <Route exact path ='/gm' render={(props) => 
     <div>
         <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
     <NavBar {...props} />

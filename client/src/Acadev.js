@@ -393,7 +393,7 @@ Check out the DeCal Committee Page.
        <Grid.Row>
        </Grid.Row>
        <Grid.Row style={{marginTop:"0px"}}>
-       <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-450px",marginTop:"115px",marginRight:"-185px"}}> </div > 
+       <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-400px",marginTop:"115px",marginRight:"-185px"}}> </div > 
        <div style={link}>
        Current and Past Collaborations
        
