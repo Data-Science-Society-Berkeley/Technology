@@ -3,9 +3,9 @@ import axios from "axios";
 import { Image,Grid,Card, Header, Form, Input, Icon, Button ,Message } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
 import edu from './landing/AcaDev.png'
-import engage from './landing/engage.jpg'
-import innovate from './landing/innovate.jpg'
-import educate from './landing/educate.jpg'
+import engage from './landing/engage-opacity.png'
+import innovate from './landing/innovate-opacity.png'
+import educate from './landing/education-opacity.png'
 import topright from './landing/WebsiteLandingPage-2.png'
 import bottomright from './landing/WebsiteLandingPage-2rotate.png'
 

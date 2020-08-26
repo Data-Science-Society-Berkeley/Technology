@@ -15,7 +15,7 @@ import data8 from './Acadev Images/data8logo 1.png'
 import roshan from './Leadership Headshots/roshan.jpg'
 import alleanna from './Leadership Headshots/alleanna2.jpeg'
 import steph from './Leadership Headshots/steph.jpg'
-import story from './Acadev Images/AcaDevBanner.jpg'
+import story from './Acadev Images/AcaDevBanner-compress-min.jpg'
 import haas2 from './Acadev Images/hbsa.jpg'
 import ascend from './Acadev Images/Ascend-Logo.jpg'
 
