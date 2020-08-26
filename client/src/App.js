@@ -103,6 +103,10 @@ render () {
         <Router>
         <div className="myroot">
 <Switch>
+<Route path='/zoom' component={() => { 
+     window.location.href = 'https://berkeley.zoom.us/j/98744924975'; 
+     return null;
+}}/>
     <Route exact path ='/' render={(props) => 
     <div>
     <NavBar {...props}/>
