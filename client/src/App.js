@@ -94,19 +94,8 @@ class App extends Component {
                   <Route exact path ='/apply' render={(props) => 
                 <div>
                 <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
-                <NavBar {...props} />
-                <Image src={apply}>
-            
-                </Image>
-            
-                <div style={{color:"#000000",textAlign:"center",lineHeight:"59px",fontSize:"48px",fontWeight:"300",fontFamily:"Montserrat",marginTop:'56px',marginBottom:"56px",marginLeft:"180px",marginRight:"180px"}}>
-                
-                Applications open Thursday, August 27, 2020 at 12:00 Pacific Standard Time. Follow our socials to stay updated!
-            <br/>
-            <br/>
-            
-            Join our Discord at discord.gg/nrSntva !
-                </div>
+                <NavBar {...props} />   
+                <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shrfYM5C3nk3tacyN?backgroundColor=green" frameborder="0" onmousewheel="" width="100%" height="2849" style={{background: "transparent", border: "1px solid #ccc"}}></iframe>
                 </div>
                 }/>
                 <Route exact path ='/about' render={(props) => 
@@ -256,7 +245,7 @@ class App extends Component {
                   <div>
                   <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
                   <NavBar {...props} />
-                  <Image src={apply}>
+                  <Image src={apply} style={{height:"300px"}}>
               
                   </Image>
               
