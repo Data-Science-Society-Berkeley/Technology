@@ -125,11 +125,11 @@ class Footer extends Component {
                 <br/>                       <br/>                
          
 
-                <Link to="/events"> <List.Item as='a' style={footer}>Workshops</List.Item></Link>
+                <Link to="/education"> <List.Item as='a' style={footer}>Workshops</List.Item></Link>
                 <br/>                   <br/>                
              
 
-                <List.Item as='a' style={footer}>GM Projects</List.Item>
+                <Link to="/education"> <List.Item as='a' style={footer}>GM Projects</List.Item> </Link>
               </List>
             </Grid.Column>
             <Grid.Column width={2}>
@@ -147,8 +147,8 @@ class Footer extends Component {
               </List>
             </Grid.Column>
             <Grid.Column width={2} style={{marginRight:"-100px",marginLeft:"50px"}}>
-            <div   style={link}>
-            Contact Us    </div>
+           <Link to="/services"> <div   style={link}>
+            Contact Us    </div> </Link>
               <List link inverted>
                 <Link to="/apply"><List.Item as='a' style={link}> Apply </List.Item></Link>
               </List>
