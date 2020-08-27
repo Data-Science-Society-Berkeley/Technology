@@ -172,7 +172,7 @@ marginLeft:"79.5%"}}>
 
     <Grid >
     <Grid.Row style={{width:"655px",height:"258x",marginLeft:"72px",marginBottom:"28px"}} >
-    <Grid.Column width={6}>
+    <Grid.Column width={8}>
     <Image src={event1} style={{width:"655px",height:"258x"}}>
     </Image>
     <Image src={event2} style={{width:"653px",height:"230px"}}>
@@ -201,7 +201,7 @@ Co-Hosted with Phi Beta Lambda and the Student Association of Applied Statistics
 
     </div>
     <Grid.Row coluns={2} style={{width:"655px",height:"258x",marginLeft:"72px",marginBottom:"42px",marginTop:"39px"}}>
-    <Grid.Column width={6}>
+    <Grid.Column width={8}>
     <Image src={event3} style={{width:"651px",height:"307px"}}>
     </Image>
     <Image src={event4} style={{width:"651px",height:"307px"}}>
@@ -229,7 +229,7 @@ Sponsored by IBM. Co-Hosted with Latinx Business Club.  <br/>
 
 </div>
     <Grid.Row style={{width:"655px",marginLeft:"72px",height:"258x",marginTop:"39px",marginBottom:"42px"}}>
-    <Grid.Column width={6}>
+    <Grid.Column width={8}>
     <Image src={event5} style={{width:"643px",height:"336px"}}>
     </Image>
     </Grid.Column>
