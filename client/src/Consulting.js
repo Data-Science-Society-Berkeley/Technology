@@ -154,8 +154,9 @@ const consult = {
     color:"#000000",
     fontStyle: "normal",
     textAlign:"left",
-    width:"1615px",
+    width:"80%",
     marginLeft:"49px",
+    verticalAlign:"middle",
   };
   const smallconsult = {
     fontFamily: "Montserrat",
@@ -585,9 +586,8 @@ color: "#FFC54A"}}>    Work with us
         <div onClick={this.testa} id="testa" style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-600px",marginTop:"32px",marginRight:"-130px"}}> </div >
         Client Testimonials
         </Grid.Row>
-        <Grid.Row>
-        <Image style={{height:"167px",width:"167px"}} src={simmer}>
-
+        <Grid.Row centered>
+        <Image inline style={{maxHeight:"167px",maxWidth:"167px",verticalAlign:"middle"}} src={simmer}>
 </Image>
 <div style={consult}>
 <div style={{marginTop:"40px",marginLeft:"-10px"}}>
@@ -596,8 +596,8 @@ color: "#FFC54A"}}>    Work with us
 
 </div>
         </Grid.Row>
-        <Grid.Row>
-        <Image style={{height:"139px",width:"195px"}} src={monday}>
+        <Grid.Row style={{}}>
+        <Image style={{maxHeight:"139px",maxWidth:"195px"}} src={monday}>
 
 </Image>
 <div style={consult}>
@@ -610,7 +610,7 @@ color: "#FFC54A"}}>    Work with us
         </Grid.Row>
 
         <Grid.Row>
-        <Image style={{height:"128px",width:"150px"}} src={paypallogo2}>
+        <Image style={{maxHeight:"128px",maxWidth:"150px"}} src={paypallogo2}>
 
 </Image>
 
@@ -624,7 +624,7 @@ color: "#FFC54A"}}>    Work with us
         </Grid.Row>
 
         <Grid.Row>
-        <Image style={{height:"74px",width:"177px"}} src={edify}>
+        <Image style={{maxHeight:"74px",maxWidth:"177px"}} src={edify}>
 
 </Image>
 <div style={consult}>
@@ -637,7 +637,7 @@ color: "#FFC54A"}}>    Work with us
 
         </Grid.Row>
         <Grid.Row>
-        <Image style={{height:"116px",width:"241px"}}src={sofi}>
+        <Image style={{maxHeight:"116px",maxWidth:"241px"}}src={sofi}>
 
 </Image>
 <div style={consult}>

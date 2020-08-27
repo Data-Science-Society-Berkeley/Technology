@@ -159,7 +159,7 @@ const overlayboxes = {
     fontStyle: "normal",
     textAlign:"center",
     marginLeft:"121px",
-    width:"380px"
+    width:"80%"
 }
 
 class Acadev extends Component {
@@ -452,12 +452,12 @@ Check out the DeCal Committee Page.
         </Grid.Row>
 <Grid.Row centered style={{marginBottom:"128px",marginTop:"56px"}}>
 <div style={{background:"#FFFFFF",border:"5px solid #8CD6D1",boxSizing:"border-box",borderRadius:"45px",
-width:"373px",height:"167px",marginLeft:"226px",marginRight:"200px",fontSize:"24px",lineHeight:"29px",fontWeight:"300px",fontFamily:"Montserrat"}}>
+width:"25%",height:"167px",marginLeft:"8%",marginRight:"5%",fontSize:"24px",lineHeight:"29px",fontWeight:"300px",fontFamily:"Montserrat"}}>
 <div style={{marginTop:"23px",marginLeft:"22px",marginRight:"22px"}}>
 Check out our <Link to="/events"><strong style={{color:"#FFC54A"}}> Events</strong></Link> page to view our past academic collaborations.
 </div>
 </div>
-<div style={{background:"#FFFFFF",border:"5px solid #8CD6D1",boxSizing:"border-box",borderRadius:"45px",width:"616px",height:"167px",marginLeft:"226px",marginRight:"100px"}}>
+<div style={{background:"#FFFFFF",border:"5px solid #8CD6D1",boxSizing:"border-box",borderRadius:"45px",width:"40%",height:"167px",marginLeft:"8%",marginRight:"100px"}}>
 <div style={{fontSize:"24px",lineHeight:"29px",fontWeight:"300px",fontFamily:"Montserrat",marginTop:"23px",marginLeft:"22px",marginRight:"22px"}}>
 Interested in DSS hosting a workshop for you? Interested in co-hosting a workshop with us? 
 </div>

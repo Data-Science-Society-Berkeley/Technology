@@ -39,8 +39,8 @@ fontSize: "24px",
 lineHeight: "29px",
 color: "#000000",
 textAlign:"left",
-marginRight:"300px",
-marginLeft:"200px",
+marginRight:"20%",
+marginLeft:"14%",
 }
 const mybigtext = {
   fontFamily: "Montserrat",
