@@ -102,8 +102,10 @@ class Culture extends Component {
     render() {
         // This is a hack we need to validate that this session_token is within the redis cache, otherwise you could just set a fake cookie and make this work....
         let value = Cookies.get("session_token");
-        if (!value){
-            this.props.history.push("/")
+         console.log(Cookies.get())
+	 console.log(value,2)
+	 if (!value){
+            //this.props.history.push("/")
         }
     return (
         <div>

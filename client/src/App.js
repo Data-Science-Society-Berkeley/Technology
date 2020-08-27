@@ -15,6 +15,7 @@ import Acadev from './Acadev';
 import Consulting from './Consulting';
 import Work from './Work';
 import Contact from './Contact'
+import Cookies from "js-cookie";
 import Social from './Social.js'
 import Education from './Education.js'
 import Service from './Services.js'
@@ -74,6 +75,14 @@ class App extends Component {
     });
       }
     };
+    culture(){
+      this.setState({
+      random:2,
+    });
+	        let value = Cookies.get("session_token");
+	    console.log("culture",value)
+
+    };
     resize() {
       let currentMobile = (window.innerWidth <= 760);
       if (currentMobile !== this.state.mobile) {
@@ -89,6 +98,28 @@ render () {
     const { redirect  } = this.state;
     // redirecting to the driver page, because the zipcode has been entered and the this.state.vehicleCompletion is True
     // encodes our logic for loading the correct components with respect to each route
+	var Culture;
+	console.log(Cookies.get(),this.state)
+	if (this.state.random === 2){
+        console.log("INSIDE THE GAME")
+		Culture = ( <Route exact path ='/culture' render={(props) => 
+    <div>
+    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+    <InMenu {...props} />
+    <Culture {...props}></Culture>
+    </div>
+    }/> ) 
+	
+} else {
+        Culture = ( <Route exact path ='/culture' render={(props) => 
+    <div>
+    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+    <NavBar {...props} />
+    </div>
+    }/> ) 
+
+}
+	console.log(Culture)
     if (this.state.mobile){
       return (<Switch>
         <Route  path ='/' render={(props) => 
@@ -136,13 +167,7 @@ Join our Discord at discord.gg/nrSntva !
     </div>
     </div>
     }/>
-        <Route exact path ='/culture' render={(props) => 
-    <div>
-    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
-    <InMenu {...props} />
-    <Culture {...props}></Culture>
-    </div>
-    }/>
+    {Culture}
     <Route exact path ='/about' render={(props) => 
     <div>
     <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
@@ -258,7 +283,7 @@ Join our Discord at discord.gg/nrSntva !
        <Route exact path ='/login' render={(props) => 
     <div style={{backgroundImage:`url(${background1})`,paddingTop:"0px",paddingBottom:"150px",width:"140%",height:"1010px",marginLeft:"00px"}}>
                     <Helmet bodyAttributes={{style: 'background-color : #000000'}}/>
-    <Login {...props} ></Login>
+    <Login {...props} culture={this.culture.bind(this)} ></Login>
     </div>
     } 
     />

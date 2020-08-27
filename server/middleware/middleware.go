@@ -227,6 +227,7 @@ func AuthMiddle(next http.Handler) http.Handler {
 func Login(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Access-Control-Allow-Origin", "https://www.dssberkeley.com")
 	w.Header().Set("Access-Control-Allow-Methods", "POST")
+	w.Header().Set("Access-Control-Allow-Credentials", "true")
 	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 	var user models.Password
 	fmt.Println(r.Body)
@@ -234,7 +235,6 @@ func Login(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		fmt.Println(err)
 	}
-	fmt.Println("FETCHED SUCCESFULLY", user)
 	if (user.Password != "dss#16"){
 		fmt.Println("ANGRY",user.Password)
 		w.WriteHeader(http.StatusUnauthorized)
@@ -267,8 +267,9 @@ func Login(w http.ResponseWriter, r *http.Request) {
 		Value:    sessionToken,
 		HttpOnly: false,
 		Path:     "/",
-		Expires:  time.Now().Add(12000 * time.Second),
+		Expires:  time.Now().Add(120000 * time.Second),
 	})
+	fmt.Println("COOKIE FETCHED SUCCESFULLY", user)
 	//TODO add logic to hash the password and give the user some unique token so we ensure hes logged in
 	//fmt.Println("Login User to Lumber", sessionToken, user.ID)
 	json.NewEncoder(w).Encode(user.Password)

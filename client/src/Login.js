@@ -121,6 +121,7 @@ class Login extends Component {
     Password
       },
       {
+	                withCredentials: true,
 	       headers: {
 		                   "Content-Type": "application/x-www-form-urlencoded",
 		                 },
@@ -128,7 +129,8 @@ class Login extends Component {
     )
     .then(res => {
       if (res.status == 200){
-	      this.props.history.push("culture")
+	      this.props.culture()
+	      this.props.history.push("")
       } else {
         // throw an error for the program //TODO TEST THIS works
         // TODO when logout, clear the cookie from cache and browser..
