@@ -130,7 +130,7 @@ class Login extends Component {
     .then(res => {
       if (res.status == 200){
 	      this.props.culture()
-	      this.props.history.push("")
+	      this.props.history.push("/culture")
       } else {
         // throw an error for the program //TODO TEST THIS works
         // TODO when logout, clear the cookie from cache and browser..

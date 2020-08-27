@@ -76,11 +76,338 @@ class App extends Component {
       }
     };
     culture(){
-      this.setState({
-      random:2,
-    });
-	        let value = Cookies.get("session_token");
-	    console.log("culture",value)
+          let value = Cookies.get("session_token");
+          if (!value) {
+          return (<Switch>
+            <Route path='/zoom' component={() => { 
+                 window.location.href = 'https://berkeley.zoom.us/j/98744924975'; 
+                 return null;
+            }}/>
+                <Route exact path ='/' render={(props) => 
+                <div>
+                <NavBar {...props}/>
+                <CentralText style={{paddingBottom:"500px"}} {...props} buttonClick={this.sendData.bind(this)} />
+                <Footer></Footer>
+                </div>
+                } 
+                />
+                  <Route exact path ='/apply' render={(props) => 
+                <div>
+                <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                <NavBar {...props} />
+                <Image src={apply}>
+            
+                </Image>
+            
+                <div style={{color:"#000000",textAlign:"center",lineHeight:"59px",fontSize:"48px",fontWeight:"300",fontFamily:"Montserrat",marginTop:'56px',marginBottom:"56px",marginLeft:"180px",marginRight:"180px"}}>
+                
+                Applications open Thursday, August 27, 2020 at 12:00 Pacific Standard Time. Follow our socials to stay updated!
+            <br/>
+            <br/>
+            
+            Join our Discord at discord.gg/nrSntva !
+                </div>
+                </div>
+                }/>
+                <Route exact path ='/about' render={(props) => 
+                <div>
+                <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                <NavBar {...props} />
+                <About/>
+                <Footer></Footer>
+                </div>
+                }/>
+                <Route exact path ='/commitees' render={(props) => 
+                <div>
+                    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                <NavBar {...props} />
+                <Committees></Committees>
+                <Footer></Footer>
+                </div>
+                }/>
+                 <Route exact path ='/consulting' render={(props) => 
+                <div>
+                    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                <NavBar {...props} />
+                <Consulting></Consulting>
+                <Footer></Footer>
+                </div>
+                }/>
+                  <Route exact path ='/acadev' render={(props) => 
+                <div>
+                    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                <NavBar {...props} />
+                <Acadev></Acadev>
+                    <Footer></Footer>
+                </div>
+                }/>
+                   <Route exact path ='/gm' render={(props) => 
+                <div>
+                    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                <NavBar {...props} />
+                <GeneralMember></GeneralMember>
+                <div style={{marginTop:"100px"}}>
+            
+            </div>
+                <Footer></Footer>
+                </div>
+                }/>
+                  <Route exact path ='/decal' render={(props) => 
+                <div>
+                    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                <NavBar {...props} />
+                <Decal></Decal>
+                <Footer></Footer>
+                </div>
+                }/>
+                    <Route exact path ='/decallearn' render={(props) => 
+                <div>
+                    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                <NavBar {...props} />
+                <DecalLearn></DecalLearn>
+                <div style={{marginTop:"100px"}}>
+            
+            </div>
+                <Footer></Footer>
+                </div>
+                }/>
+                   <Route exact path ='/socialgood' render={(props) => 
+                <div>
+                    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                <NavBar {...props} />
+                <Social></Social>
+                <Footer></Footer>
+                </div>
+                }/>
+                  <Route exact path ='/events' render={(props) => 
+                <div>
+                        <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                <NavBar {...props}/>
+                <Work></Work>
+                <div style={{marginTop:"100px"}}>
+            
+            </div>
+                <Footer></Footer>
+                </div>
+                } 
+                />
+                   <Route exact path ='/services' render={(props) => 
+                <div>
+                                <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                <NavBar {...props}/>
+                <Service></Service>
+                <div style={{backgroundColor:"#8CD6D1",marginRight:"-500px",marginTop:"0px",paddingBottom:"150px"}}>
+                <Contact ></Contact>
+                
+                </div>
+            
+                <div style={{backgroundColor:"#FFFFFF",marginTop:"55px",paddingBottom:"50px",textAlign:"center",fontFamily:"Montserrat",fontSize:"24px",fontHeight:"29px"}}>
+                You can also reach us through our email or social medias listed below. 
+                </div>
+                <Footer></Footer>
+            
+                </div>
+                } 
+                />
+                  <Route exact path ='/education' render={(props) => 
+                <div>
+                            <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                <NavBar {...props}/>
+                <Education ></Education>
+                <div style={{marginTop:"100px"}}>
+            
+                </div>
+                <Footer ></Footer>
+                </div>
+                } 
+                />
+                   <Route exact path ='/login' render={(props) => 
+                <div style={{backgroundImage:`url(${background1})`,paddingTop:"0px",paddingBottom:"150px",width:"140%",height:"1010px",marginLeft:"00px"}}>
+                                <Helmet bodyAttributes={{style: 'background-color : #000000'}}/>
+                <Login {...props} culture={this.culture.bind(this)} ></Login>
+                </div>
+                } 
+                />
+                   <Route path ='/client:id' render={(props) =>  
+                <div style={{ marginTop: "0px",marginRight: "0px", background: "#F6F7F6",width: "1450px"}}>
+                </div>
+                }/>
+                    <Route path ='/client/project:id' render={(props) => 
+                    <div >
+                    </div>
+                }/>
+                <Route exact path ='/register' render={(props) => <Registration {...props} />}/>
+                </Switch>)
+          } else {
+            return (<Switch>
+              <Route path='/zoom' component={() => { 
+                   window.location.href = 'https://berkeley.zoom.us/j/98744924975'; 
+                   return null;
+              }}/>
+                  <Route exact path ='/' render={(props) => 
+                  <div>
+                  <NavBar {...props}/>
+                  <CentralText style={{paddingBottom:"500px"}} {...props} buttonClick={this.sendData.bind(this)} />
+                  <Footer></Footer>
+                  </div>
+                  } 
+                  />
+                    <Route exact path ='/apply' render={(props) => 
+                  <div>
+                  <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                  <NavBar {...props} />
+                  <Image src={apply}>
+              
+                  </Image>
+              
+                  <div style={{color:"#000000",textAlign:"center",lineHeight:"59px",fontSize:"48px",fontWeight:"300",fontFamily:"Montserrat",marginTop:'56px',marginBottom:"56px",marginLeft:"180px",marginRight:"180px"}}>
+                  
+                  Applications open Thursday, August 27, 2020 at 12:00 Pacific Standard Time. Follow our socials to stay updated!
+              <br/>
+              <br/>
+              
+              Join our Discord at discord.gg/nrSntva !
+                  </div>
+                  </div>
+                  }/>
+                  {Culture}
+                  <Route exact path ='/about' render={(props) => 
+                  <div>
+                  <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                  <NavBar {...props} />
+                  <About/>
+                  <Footer></Footer>
+                  </div>
+                  }/>
+                  <Route exact path ='/commitees' render={(props) => 
+                  <div>
+                      <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                  <NavBar {...props} />
+                  <Committees></Committees>
+                  <Footer></Footer>
+                  </div>
+                  }/>
+                   <Route exact path ='/consulting' render={(props) => 
+                  <div>
+                      <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                  <NavBar {...props} />
+                  <Consulting></Consulting>
+                  <Footer></Footer>
+                  </div>
+                  }/>
+                    <Route exact path ='/acadev' render={(props) => 
+                  <div>
+                      <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                  <NavBar {...props} />
+                  <Acadev></Acadev>
+                      <Footer></Footer>
+                  </div>
+                  }/>
+                     <Route exact path ='/gm' render={(props) => 
+                  <div>
+                      <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                  <NavBar {...props} />
+                  <GeneralMember></GeneralMember>
+                  <div style={{marginTop:"100px"}}>
+              
+              </div>
+                  <Footer></Footer>
+                  </div>
+                  }/>
+                    <Route exact path ='/decal' render={(props) => 
+                  <div>
+                      <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                  <NavBar {...props} />
+                  <Decal></Decal>
+                  <Footer></Footer>
+                  </div>
+                  }/>
+                      <Route exact path ='/decallearn' render={(props) => 
+                  <div>
+                      <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                  <NavBar {...props} />
+                  <DecalLearn></DecalLearn>
+                  <div style={{marginTop:"100px"}}>
+              
+              </div>
+                  <Footer></Footer>
+                  </div>
+                  }/>
+                     <Route exact path ='/socialgood' render={(props) => 
+                  <div>
+                      <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                  <NavBar {...props} />
+                  <Social></Social>
+                  <Footer></Footer>
+                  </div>
+                  }/>
+                  <Route exact path ='/culture' render={(props) => 
+    <div>
+    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+    <InMenu {...props} />
+    <Culture {...props}></Culture>
+    </div>
+    }/> 
+                    <Route exact path ='/events' render={(props) => 
+                  <div>
+                          <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                  <NavBar {...props}/>
+                  <Work></Work>
+                  <div style={{marginTop:"100px"}}>
+              
+              </div>
+                  <Footer></Footer>
+                  </div>
+                  } 
+                  />
+                     <Route exact path ='/services' render={(props) => 
+                  <div>
+                                  <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                  <NavBar {...props}/>
+                  <Service></Service>
+                  <div style={{backgroundColor:"#8CD6D1",marginRight:"-500px",marginTop:"0px",paddingBottom:"150px"}}>
+                  <Contact ></Contact>
+                  
+                  </div>
+              
+                  <div style={{backgroundColor:"#FFFFFF",marginTop:"55px",paddingBottom:"50px",textAlign:"center",fontFamily:"Montserrat",fontSize:"24px",fontHeight:"29px"}}>
+                  You can also reach us through our email or social medias listed below. 
+                  </div>
+                  <Footer></Footer>
+              
+                  </div>
+                  } 
+                  />
+                    <Route exact path ='/education' render={(props) => 
+                  <div>
+                              <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
+                  <NavBar {...props}/>
+                  <Education ></Education>
+                  <div style={{marginTop:"100px"}}>
+              
+                  </div>
+                  <Footer ></Footer>
+                  </div>
+                  } 
+                  />
+                     <Route exact path ='/login' render={(props) => 
+                  <div style={{backgroundImage:`url(${background1})`,paddingTop:"0px",paddingBottom:"150px",width:"140%",height:"1010px",marginLeft:"00px"}}>
+                                  <Helmet bodyAttributes={{style: 'background-color : #000000'}}/>
+                  <Login {...props} culture={this.culture.bind(this)} ></Login>
+                  </div>
+                  } 
+                  />
+                     <Route path ='/client:id' render={(props) =>  
+                  <div style={{ marginTop: "0px",marginRight: "0px", background: "#F6F7F6",width: "1450px"}}>
+                  </div>
+                  }/>
+                      <Route path ='/client/project:id' render={(props) => 
+                      <div >
+                      </div>
+                  }/>
+                  <Route exact path ='/register' render={(props) => <Registration {...props} />}/>
+                  </Switch>)
+          }
 
     };
     resize() {
@@ -98,28 +425,6 @@ render () {
     const { redirect  } = this.state;
     // redirecting to the driver page, because the zipcode has been entered and the this.state.vehicleCompletion is True
     // encodes our logic for loading the correct components with respect to each route
-	var Culture;
-	console.log(Cookies.get(),this.state)
-	if (this.state.random === 2){
-        console.log("INSIDE THE GAME")
-		Culture = ( <Route exact path ='/culture' render={(props) => 
-    <div>
-    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
-    <InMenu {...props} />
-    <Culture {...props}></Culture>
-    </div>
-    }/> ) 
-	
-} else {
-        Culture = ( <Route exact path ='/culture' render={(props) => 
-    <div>
-    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
-    <NavBar {...props} />
-    </div>
-    }/> ) 
-
-}
-	console.log(Culture)
     if (this.state.mobile){
       return (<Switch>
         <Route  path ='/' render={(props) => 
@@ -133,170 +438,12 @@ render () {
         </Switch>)
 
     }
+    const login = this.culture()
     return (
+      
         <Router>
         <div className="myroot">
-<Switch>
-<Route path='/zoom' component={() => { 
-     window.location.href = 'https://berkeley.zoom.us/j/98744924975'; 
-     return null;
-}}/>
-    <Route exact path ='/' render={(props) => 
-    <div>
-    <NavBar {...props}/>
-    <CentralText style={{paddingBottom:"500px"}} {...props} buttonClick={this.sendData.bind(this)} />
-    <Footer></Footer>
-    </div>
-    } 
-    />
-      <Route exact path ='/apply' render={(props) => 
-    <div>
-    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
-    <NavBar {...props} />
-    <Image src={apply}>
-
-    </Image>
-
-    <div style={{color:"#000000",textAlign:"center",lineHeight:"59px",fontSize:"48px",fontWeight:"300",fontFamily:"Montserrat",marginTop:'56px',marginBottom:"56px",marginLeft:"180px",marginRight:"180px"}}>
-    
-    Applications open Thursday, August 27, 2020 at 12:00 Pacific Standard Time. Follow our socials to stay updated!
-<br/>
-<br/>
-
-Join our Discord at discord.gg/nrSntva !
-    </div>
-    </div>
-    }/>
-    {Culture}
-    <Route exact path ='/about' render={(props) => 
-    <div>
-    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
-    <NavBar {...props} />
-    <About/>
-    <Footer></Footer>
-    </div>
-    }/>
-    <Route exact path ='/commitees' render={(props) => 
-    <div>
-        <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
-    <NavBar {...props} />
-    <Committees></Committees>
-    <Footer></Footer>
-    </div>
-    }/>
-     <Route exact path ='/consulting' render={(props) => 
-    <div>
-        <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
-    <NavBar {...props} />
-    <Consulting></Consulting>
-    <Footer></Footer>
-    </div>
-    }/>
-      <Route exact path ='/acadev' render={(props) => 
-    <div>
-        <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
-    <NavBar {...props} />
-    <Acadev></Acadev>
-        <Footer></Footer>
-    </div>
-    }/>
-       <Route exact path ='/gm' render={(props) => 
-    <div>
-        <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
-    <NavBar {...props} />
-    <GeneralMember></GeneralMember>
-    <div style={{marginTop:"100px"}}>
-
-</div>
-    <Footer></Footer>
-    </div>
-    }/>
-      <Route exact path ='/decal' render={(props) => 
-    <div>
-        <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
-    <NavBar {...props} />
-    <Decal></Decal>
-    <Footer></Footer>
-    </div>
-    }/>
-        <Route exact path ='/decallearn' render={(props) => 
-    <div>
-        <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
-    <NavBar {...props} />
-    <DecalLearn></DecalLearn>
-    <div style={{marginTop:"100px"}}>
-
-</div>
-    <Footer></Footer>
-    </div>
-    }/>
-       <Route exact path ='/socialgood' render={(props) => 
-    <div>
-        <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
-    <NavBar {...props} />
-    <Social></Social>
-    <Footer></Footer>
-    </div>
-    }/>
-      <Route exact path ='/events' render={(props) => 
-    <div>
-            <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
-    <NavBar {...props}/>
-    <Work></Work>
-    <div style={{marginTop:"100px"}}>
-
-</div>
-    <Footer></Footer>
-    </div>
-    } 
-    />
-       <Route exact path ='/services' render={(props) => 
-    <div>
-                    <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
-    <NavBar {...props}/>
-    <Service></Service>
-    <div style={{backgroundColor:"#8CD6D1",marginRight:"-500px",marginTop:"0px",paddingBottom:"150px"}}>
-    <Contact ></Contact>
-    
-    </div>
-
-    <div style={{backgroundColor:"#FFFFFF",marginTop:"55px",paddingBottom:"50px",textAlign:"center",fontFamily:"Montserrat",fontSize:"24px",fontHeight:"29px"}}>
-    You can also reach us through our email or social medias listed below. 
-    </div>
-    <Footer></Footer>
-
-    </div>
-    } 
-    />
-      <Route exact path ='/education' render={(props) => 
-    <div>
-                <Helmet bodyAttributes={{style: 'background-color : #ffffff'}}/>
-    <NavBar {...props}/>
-    <Education ></Education>
-    <div style={{marginTop:"100px"}}>
-
-    </div>
-    <Footer ></Footer>
-    </div>
-    } 
-    />
-       <Route exact path ='/login' render={(props) => 
-    <div style={{backgroundImage:`url(${background1})`,paddingTop:"0px",paddingBottom:"150px",width:"140%",height:"1010px",marginLeft:"00px"}}>
-                    <Helmet bodyAttributes={{style: 'background-color : #000000'}}/>
-    <Login {...props} culture={this.culture.bind(this)} ></Login>
-    </div>
-    } 
-    />
-       <Route path ='/client:id' render={(props) =>  
-    <div style={{ marginTop: "0px",marginRight: "0px", background: "#F6F7F6",width: "1450px"}}>
-    </div>
-    }/>
-        <Route path ='/client/project:id' render={(props) => 
-        <div >
-        </div>
-    }/>
-    <Route exact path ='/register' render={(props) => <Registration {...props} />}/>
-    </Switch>
+        {login}
     </div>
     </Router>
 )};
