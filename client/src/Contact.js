@@ -166,13 +166,13 @@ class Login extends Component {
     return (
         <Grid divided='vertically' style={gridoffset}>
         <Grid.Row columns={2}>
-                    <Grid.Column verticalAlign="center">
+                    <Grid.Column width={6} verticalAlign="center">
                         <Header as='h1'style={mybigtext}>
                             Contact us Here!
                             </Header>
                         </Grid.Column>
 
-                        <Grid.Column floated="left">
+                        <Grid.Column floated="left" >
                           <Form success={this.state.success} style={{marginTop:"5%",marginRight:"75%"}}>
                               <input onChange={this.onPChange} style={formStyle} width={6}  id="text" placeholder='Name' />
                               <br/>
