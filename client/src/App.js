@@ -417,7 +417,7 @@ render () {
     if (this.state.mobile){
       return (<Switch>
         <Route  path ='/' render={(props) => 
-        <div>
+        <div style={{height:"200%"}}>
                     <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shrfYM5C3nk3tacyN?backgroundColor=green" frameborder="0" onmousewheel="" width="100%" height="2849" style={{background: "transparent", border: "1px solid #ccc"}}></iframe>
         </div>
         } 
