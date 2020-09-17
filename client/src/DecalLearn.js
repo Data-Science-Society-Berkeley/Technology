@@ -385,7 +385,7 @@ class DecalLearn extends Component {
         <Grid>
 <Grid.Row>
 
-        <Header style={mybigtext}> DeCal: Essential Tools for Data Science | Spring 2020 </Header>
+        <Header style={mybigtext}> DeCal: Essential Tools for Data Science | Fall 2020 </Header>
         </Grid.Row>
 
         <div style={{marginBottom:"50px",marginLeft:"64px", 
@@ -420,16 +420,10 @@ Welcome to Data Science Society at Berkeley&rsquo;s very own DeCal: Essential To
 <b>Time</b>: Mondays, 6:30 - 8:30 PM 
 </List.Item>
 <List.Item>
-<b>Location</b>: Moffitt 101 
-</List.Item>
-<List.Item>
 <b>Email</b>: <a href="mailto: decal@dss.berkeley.edu"> <b> decal@dss.berkeley.edu </b> </a>
 </List.Item>
 <List.Item>
 <b>Office Hours</b>: <a href="https://calendar.google.com/calendar?cid=YmVya2VsZXkuZWR1X21hdjJqYjcxODloNTJnN3Boc2xtZmU0ZTBvQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"> <b>Calendar</b></a> 
-</List.Item>
-<List.Item>
-<b>Piazza</b>: <a href="https://piazza.com/class/k6fjdl1bk7p2jb"> <b>INFO 98</b> </a> 
 </List.Item>
 
 </List>
@@ -447,14 +441,10 @@ There are no formal prerequisites for this course. It is recommended to have som
 </Header>
 <List style={{marginLeft:"60px"}}>
 <List.Item>
-Attendance: 20% (2 Drops)</List.Item>
+Attendance: 20% </List.Item>
 <List.Item>
-Labs: 20% (2 Drops)</List.Item>
-<List.Item>
-Final Project: 50%</List.Item>
-<List.Item>
-Reading Quizzes: 10% (2 Drops)
-</List.Item>
+Weekly Assignments: 80% </List.Item>
+
 
 </List>
 <Header style={{marginLeft:"60px",marginTop:"56px",marginBottom:"56px"}}>
