@@ -109,20 +109,19 @@ class DecalLearn extends Component {
                 <br/>
             </Table.Cell>
             <Table.Cell class="center">
-                Monday, 2/10/20
+                Monday, 9/14/20
             </Table.Cell>
             <Table.Cell>
                 Welcome, Logistics & Python Bootcamp
             </Table.Cell>
             <Table.Cell>
-              <a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/open?id=172sgj7HjJvmUqFUS4Ocouv-FnJ_gPkyLbaihw6-KDEE"><b>Slides</b></a>
-
+              
             </Table.Cell>
             <Table.Cell>
               None
             </Table.Cell>
             <Table.Cell>
-                All
+                Kate
             </Table.Cell>
         </Table.Row>
 
@@ -134,20 +133,19 @@ class DecalLearn extends Component {
               <br/>
           </Table.Cell>
           <Table.Cell class="center">
-              Monday, 2/14/20
+              Monday, 9/21/20
           </Table.Cell>
           <Table.Cell>
               Data Manipulation and Wrangling: Pandas Part 1
           </Table.Cell>
           <Table.Cell>
-<a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/open?id=1OLtEp6Ib5VJ6OiikBZQcplcvLLxOL7kSkBgkGQVBlvM"><b>Slides</b></a>
+
           </Table.Cell>
           <Table.Cell>
-            <a rel="noopener noreferrer" target="_blank" href=" https://learn.datacamp.com/courses/pandas-foundations"> <b>DataCamp</b> </a> (Chapter 1),
-            <a rel="noopener noreferrer" target="_blank" href=" https://bcourses.berkeley.edu/courses/1492303/quizzes/2302206"><b>Quiz</b></a>
+            
           </Table.Cell>
           <Table.Cell>
-              Marta, Luke
+              Siddhant, Elton
           </Table.Cell>
       </Table.Row>
 
@@ -159,20 +157,19 @@ class DecalLearn extends Component {
               <br/>
           </Table.Cell>
           <Table.Cell class="center">
-              Monday, 3/2/20
+              Monday, 9/28/20
           </Table.Cell>
           <Table.Cell>
               Data Manipulation and Wrangling: Pandas Part 2
           </Table.Cell>
           <Table.Cell>
-<a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/open?id=1cD9pbU1TeYRA_jufeEtfBkpdnEvtxvZU"><b>Slides</b></a>
+
           </Table.Cell>
           <Table.Cell>
-            <a rel="noopener noreferrer" target="_blank" href="-https://learn.datacamp.com/courses/data-manipulation-with-pandas"><b>DataCamp</b></a> (Chapter 2),
-            <a rel="noopener noreferrer" target="_blank" href="https://bcourses.berkeley.edu/courses/1492303/quizzes/2305108"><b>Quiz</b></a>
+            
           </Table.Cell>
           <Table.Cell>
-              Avik
+              Dhruv, Spencer
           </Table.Cell>
       </Table.Row>
 
@@ -184,19 +181,19 @@ class DecalLearn extends Component {
               <br/>
           </Table.Cell>
           <Table.Cell class="center">
-              Monday, 3/9/20
+              Monday, 10/05/20
           </Table.Cell>
           <Table.Cell>
-              SQL
+              TA Panel
           </Table.Cell>
           <Table.Cell>
-<a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/open?id=1ofo6dIbE8ZIqrAGtQ4qWdYZCDmsIZRe_mcD0r7uFwUU"><b>Slides</b></a>
+              N/A 
           </Table.Cell>
           <Table.Cell>
-<a rel="noopener noreferrer" target="_blank" href="https://learn.datacamp.com/courses/inTable.Rowoduction-to-sql"><b>DataCamp</b></a> (Chapter 1)
+              N/A
           </Table.Cell>
           <Table.Cell>
-              Naman, Kanu
+              All
           </Table.Cell>
       </Table.Row>
 
@@ -208,20 +205,19 @@ class DecalLearn extends Component {
               <br/>
           </Table.Cell>
           <Table.Cell class="center">
-              Monday, 3/16/20
+              Monday, 10/12/20
           </Table.Cell>
           <Table.Cell>
-              Statistical Models: NumPy for Linear and Logistic Regression
+              Linear Regression
           </Table.Cell>
           <Table.Cell>
-            <a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/open?id=1wLObHOpNv58GqpFOqP4aH84xu6KZfXHcVKn8-uNBFHM"><b>Slides</b></a>,
-<a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/watch?v=gWF0ExMa9dI&list=PLr1YvQvFwnNLWnamwLjdHKEmAv61Pwa5M"><b>YouTube</b></a>
+            
           </Table.Cell>
           <Table.Cell>
             None
           </Table.Cell>
           <Table.Cell>
-              Nikhil, Elton, Jae
+              Tanu, Siddhant
           </Table.Cell>
       </Table.Row>
 
@@ -233,22 +229,19 @@ class DecalLearn extends Component {
               <br/>
           </Table.Cell>
           <Table.Cell class="center">
-              Monday, 3/30/20
+              Monday, 10/19/20
           </Table.Cell>
           <Table.Cell>
-              Data Visualization and Exploratory Data Analysis
+              Hypothesis Testing + A/B Testing
           </Table.Cell>
           <Table.Cell>
-            <a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/open?id=1xsSkryUMDsVn3dzNNSesyO4kxau23M8ncn6TLoiClO0"><b>Slides</b></a>,
-<a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/watch?v=VqkT0cWgp0I&list=PLrLqdyL0AkkTo_rOVEynNDhEKU9nhDU6R
-">YouTube</a>
+            
           </Table.Cell>
           <Table.Cell>
-<a rel="noopener noreferrer" target="_blank" href="https://learn.datacamp.com/courses/data-visualization-for-everyone"><b>DataCamp (Optional)</b></a> (Chapter 1),
-<a rel="noopener noreferrer" target="_blank" href="https://bcourses.berkeley.edu/courses/1492303/quizzes/2305108"><b>Quiz</b></a>
+
           </Table.Cell>
           <Table.Cell>
-              Dhruv, Uma
+              Spencer, Saeed
           </Table.Cell>
       </Table.Row>
 
@@ -260,20 +253,19 @@ class DecalLearn extends Component {
               <br/>
           </Table.Cell>
           <Table.Cell class="center">
-              Monday, 4/6/20
+              Monday, 10/26/20
           </Table.Cell>
           <Table.Cell>
-              Speadsheets
+              SQL + Spreadsheets
           </Table.Cell>
           <Table.Cell>
-            <a rel="noopener noreferrer" target="_blank" href="https://docs.google.com/presentation/d/1xSzpGfNrwX2GH0O-ZN9d-QEmDBAN66G2VYVu6moMR6U/edit?usp=sharing"><b>Slides</b></a>,
-            <a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/playlist?list=PLr1YvQvFwnNLFsQ6NniLzs3zRI6d1Zrr2"><b>YouTube</b></a>
+            
           </Table.Cell>
           <Table.Cell>
-            <a rel="noopener noreferrer" target="_blank" href="https://learn.datacamp.com/courses/inTable.Rowoduction-to-spreadsheets"><b>DataCamp (Optional)</b></a> (Chapters 1 and 2)
+             
           </Table.Cell>
           <Table.Cell>
-              Avik, Gayatri, Varun, Kate, Naman
+              Jared, Jae Hee
           </Table.Cell>
       </Table.Row>
 
@@ -285,20 +277,19 @@ class DecalLearn extends Component {
               <br/>
           </Table.Cell>
           <Table.Cell class="center">
-              Monday, 4/13/20
+              Monday, 11/2/20
           </Table.Cell>
           <Table.Cell>
-              Tableau
+              Matplotlib + Seaborn In-Depth (Data Visualizations)
           </Table.Cell>
           <Table.Cell>
-            <a rel="noopener noreferrer" target="_blank" href="https://docs.google.com/presentation/d/1L1dvAOGslcDHeQ1K_-eH33cDwVqtibbZLaGuaZSrWwA/edit?usp=sharing"><b>Slides</b></a>,
-            <a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/watch?v=_GamGKPR1CQ&list=PLr1YvQvFwnNKOsCFJKKvlQ2nZZw5O8ujc"><b>YouTube</b></a>
+            
           </Table.Cell>
           <Table.Cell>
-            <a rel="noopener noreferrer" target="_blank" href="https://www.datacamp.com/users/sign_in?redirect=https://learn.datacamp.com/courses/inTable.Rowoduction-to-tableau"><b>DataCamp (Optional)</b></a> (Chapter 1)
+            
           </Table.Cell>
           <Table.Cell>
-              Jae, Naman, Kanu, Kate, Avik, Elton, Varun, Gayatri.Rowi
+              Elton, Dhruv, Jae Hee
           </Table.Cell>
       </Table.Row>
 
@@ -311,19 +302,18 @@ class DecalLearn extends Component {
               <br/>
           </Table.Cell>
           <Table.Cell class="center">
-              Monday, 4/20/20
+              Monday, 11/16/20
           </Table.Cell>
           <Table.Cell>
-              Exploring Seaborn In-Depth
+              Power BI + Tableau  
           </Table.Cell>
           <Table.Cell>
-<a target="_blank" href="Matplotlib_Seaborn_Lecture.zip" download="Seaborn.ipynb"><b>Notebook</b></a>,
-<a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/playlist?list=PLr1YvQvFwnNLXd63ZDY1hnJAgQNSlqL--"><b>YouTube</b></a>
+
           </Table.Cell>
           <Table.Cell>
           </Table.Cell>
           <Table.Cell>
-              Kanu
+              Tanu, Jasmine
           </Table.Cell>
       </Table.Row>
     </Table.Body>
@@ -334,19 +324,19 @@ class DecalLearn extends Component {
               <br/>
           </Table.Cell>
           <Table.Cell class="center">
-              Monday, 4/27/20
+              Monday, 11/23/20
           </Table.Cell>
           <Table.Cell>
-              Special Topic Guest Leture
-          </Table.Cell>
-          <Table.Cell>
-<a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/playlist?list=PL8vMYRBYmK6vwKwtZ0RyNT3fLPW8Lm6sZ"><b>YouTube</b></a>
+              Guest Lecture
           </Table.Cell>
           <Table.Cell>
 
           </Table.Cell>
           <Table.Cell>
-              Dhruv
+
+          </Table.Cell>
+          <Table.Cell>
+              N/A
           </Table.Cell>
       </Table.Row>
     </Table.Body>
@@ -397,7 +387,7 @@ lineHeight: "29px"}}>
         <Grid.Row>
 
   <div >
-<b style={mymidtext}>Essential Tools for Data Scientists</b>  | Spring 2020       </div>
+<b style={mymidtext}>Essential Tools for Data Science</b>  | Fall 2020       </div>
 <div style={{marginLeft:"64px",marginTop:"56px"}}>
 Welcome to Data Science Society at Berkeley&rsquo;s very own DeCal: Essential Tools for Data Scientists! This course is geared towards exposing students to essential data science skills that are
                         demanded in industry and are meant to be taken as a follow-up or alongside Data 8. The course covers the bits of data science and machine learning that aren’t traditionally taught in the classroom
