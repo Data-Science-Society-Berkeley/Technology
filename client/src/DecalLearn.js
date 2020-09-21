@@ -139,7 +139,7 @@ class DecalLearn extends Component {
               Data Manipulation and Wrangling: Pandas Part 1
           </Table.Cell>
           <Table.Cell>
-
+                    https://www.youtube.com/watch?v=wCp9sKLPqIQ
           </Table.Cell>
           <Table.Cell>
             
