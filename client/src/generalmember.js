@@ -16,8 +16,8 @@ const gridoffset = {
           fontFamily: "Montserrat"
 };
 
-// Course list
-// Add each course entry in the identical js object format inside this array
+// Lecture list
+// Add each lecture entry in the identical js object format inside this array
 const lectures = [
   {
     week: 1,
@@ -97,7 +97,7 @@ class DecalLearn extends Component {
       this.join=this.join.bind(this);
 
   }
-  // Generate Table based on courses list
+  // Generate Table based on lectures list
   loadTable(props){
     const lectures = props.lectures;
     const options = {
