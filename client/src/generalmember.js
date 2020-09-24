@@ -16,8 +16,18 @@ const gridoffset = {
           fontFamily: "Montserrat"
 };
 
+// Course list
+// Add each course entry in the identical js object format inside this array
+const lectures = [
+  {
+    week: 1,
+    date: new Date('9/21/2020 PST'),
+    name: "Project Workflow & Deepnote",
+    link: "https://youtu.be/WtehoucrTyQ"
+  }, 
+]
 
-
+// Styles
 const mybigtext = {
   fontFamily: "Montserrat",
   fontWeight: 600,
@@ -87,168 +97,43 @@ class DecalLearn extends Component {
       this.join=this.join.bind(this);
 
   }
-  loadTable(){
-    return (<Table >
-    <Table.Header>
-        <Table.Row>
-            <Table.HeaderCell class='col-md-1 center'><b>Week</b></Table.HeaderCell>
-            <Table.HeaderCell class='col-md-1'><b>Date</b></Table.HeaderCell>
-            <Table.HeaderCell class='col-md-3'><b>Lecture Level 1</b></Table.HeaderCell>
-            <Table.HeaderCell class='col-md-2'><b>Lecture Level 2 and 3</b></Table.HeaderCell>
-
-        </Table.Row>
-    </Table.Header>
-
-    <Table.Body id='wk1'>
-        <Table.Row>
-            <Table.Cell rowspan="2" class="center">
-                1
-                <br/>
-            </Table.Cell>
-            <Table.Cell class="center">
-                Monday, 2/10/20
-            </Table.Cell>
-            <Table.Cell>
-                Welcome Night!
-            </Table.Cell>
-            <Table.Cell>
-            Welcome Night!
-
-            </Table.Cell>
-        </Table.Row>
-
-    </Table.Body>
-    <Table.Body id='wk2'>
+  // Generate Table based on courses list
+  loadTable(props){
+    const lectures = props.lectures;
+    const options = {
+      year: 'numeric', month: 'numeric', day: 'numeric', weekday: 'long'
+    };
+    const tableRows = lectures.map(c => 
       <Table.Row>
-          <Table.Cell rowspan="2" class="center">
-              2
-              <br/>
-          </Table.Cell>
-          <Table.Cell class="center">
-              Monday, 2/14/20
-          </Table.Cell>
-          <Table.Cell>
-          Checkpoint: Jupyter Notebook + Anaconda + Python Basics (Numpy and Pandas)
-<br/>
-(<a rel="noopener noreferrer" target="_blank" href="https://tinyurl.com/dss-gm-sp20-minilec1">Slides</a>)
-(<a rel="noopener noreferrer" target="_blank" href="https://tinyurl.com/dss-gm-sp20-nb1
-">Notebook</a>)          </Table.Cell>
-          <Table.Cell>
-          Checkpoint: In-Depth Pandas +
-Intro to Project Development
-
-<br/>
-(<a rel="noopener noreferrer" target="_blank" href="tinyurl.com/lecture1sp2020
-">Notebook</a>)          </Table.Cell>
+        <Table.Cell>
+          {c.week}
+        </Table.Cell>
+        <Table.Cell>
+          {new Intl.DateTimeFormat('default', options).format(c.date)}
+        </Table.Cell>
+        <Table.Cell>
+          {c.name}
+        </Table.Cell>
+        <Table.Cell>
+          <a href={c.link}>{c.link}</a>
+        </Table.Cell>
       </Table.Row>
-
-    </Table.Body>
-    <Table.Body id='wk3'>
-      <Table.Row>
-          <Table.Cell rowspan="2" class="center">
-              3
-              <br/>
-          </Table.Cell>
-          <Table.Cell class="center">
-              Monday, 3/2/20
-          </Table.Cell>
-          <Table.Cell>
-          Pandas, Visualization - Part 1
-                                        <br/>
-                                        (<a rel="noopener noreferrer" target="_blank" href="https://tinyurl.com/lec-2-slides">Slides</a>)
-                                        (<a rel="noopener noreferrer" target="_blank" href=":https://tinyurl.com/gm-lec2
-">Notebook</a>)
-                                        (<a rel="noopener noreferrer" target="_blank" href="https://docs.google.com/document/d/17wFZ5tebS1-HyNibQzYM2UHlNQPmE0XXKBVcQ_sBjAU/edit">Reference Sheet</a>)
-
-          </Table.Cell>
-          <Table.Cell>
-          Data Cleaning
-                                        <br/>
-                                        (<a rel="noopener noreferrer" target="_blank" href="https://tinyurl.com/GMsp2020slide2">Slides</a>)
-                                        (<a rel="noopener noreferrer" target="_blank" href="https://tinyurl.com/DSSGM2notebook
-">Notebook</a>)          </Table.Cell>
-      </Table.Row>
-
-    </Table.Body>
-    <Table.Body id='wk4'>
-      <Table.Row>
-          <Table.Cell rowspan="2" class="center">
-              4
-              <br/>
-          </Table.Cell>
-          <Table.Cell class="center">
-              Monday, 3/9/20
-          </Table.Cell>
-          <Table.Cell>
-          Visualizations - Part 2
-                                        <br/>
-                                        (<a rel="noopener noreferrer" target="_blank" href="https://bit.ly/3cCgc55">Slides</a>)
-                                        (<a rel="noopener noreferrer" target="_blank" href="https://bit.ly/2IInNBz" download>Notebook</a>)          </Table.Cell>
-          <Table.Cell>
-          Tableau
-                                        <br/>
-                                        (<a rel="noopener noreferrer" target="_blank" href="https://tinyurl.com/dssgm-sp20-lec3">Slides</a>)
-                                        (<a rel="noopener noreferrer" target="_blank" href="https://tinyurl.com/dssgm-sp20-demo3" download>Notebook</a>)          </Table.Cell>
-      </Table.Row>
-
-    </Table.Body>
-    <Table.Body id='wk5'>
-      <Table.Row>
-          <Table.Cell rowspan="2" class="center">
-              5
-              <br/>
-          </Table.Cell>
-          <Table.Cell class="center">
-              Monday, 3/16/20
-          </Table.Cell>
-          <Table.Cell>
-          Introduction to Hypothesis Testing
-                                        <br/>
-                                        (<a rel="noopener noreferrer" target="_blank" href="https://tinyurl.com/GM-Lec4">Slides</a>)
-                                        (<a rel="noopener noreferrer" target="_blank" href="http://bit.ly/gm-lec4-notebook">Notebook</a>)
-                                        (<a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/a/berkeley.edu/file/d/1B0ygYd-iXZhvlt0KW6EgmDo9fAfXHBQm/view?usp=sharing
-">Recording</a>)
-          </Table.Cell>
-          <Table.Cell>
-          Types of Hypothesis Testing, AB Testing
-                                      <br/>
-                                      (<a rel="noopener noreferrer" target="_blank" href="https://tinyurl.com/gm2-316
-">Slides</a>)
-                                      (<a rel="noopener noreferrer" target="_blank" href="https://tinyurl.com/dss-ab-testing">Notebook</a>)
-          </Table.Cell>
-      </Table.Row>
-
-    </Table.Body>
-    <Table.Body id='wk6'>
-      <Table.Row>
-          <Table.Cell rowspan="2" class="center">
-              6
-              <br/>
-          </Table.Cell>
-          <Table.Cell class="center">
-              Monday, 3/30/20
-          </Table.Cell>
-          <Table.Cell>
-          Introduction to Machine Learning
-                                        <br/><br/>
-                                        Checkpoint: EDA + Visualizations + Hypothesis Ideas
-                                        <br/>
-                                        (<a rel="noopener noreferrer" target="_blank" href="https://tinyurl.com/gm-lec5-slides">Slides</a>)
-                                        (<a rel="noopener noreferrer" target="_blank" href="https://bit.ly/gm-lec5">Notebook</a>)
-                                        (<a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/a/berkeley.edu/file/d/180BIQWqQR6v5i-qZ61dYaR_BxSFZoPo6/view?usp=sharing
-">Recording</a>)          </Table.Cell>
-          <Table.Cell>
-          Types of Machine Learning Models
-                                        <br/><br/>
-                                        Checkpoint: EDA + Visualizations + Hypothesis Ideas
-                                        <br/>
-                                        (<a rel="noopener noreferrer" target="_blank" href="https://tinyurl.com/ML-slides">Slides</a>)
-                                        (<a rel="noopener noreferrer" target="_blank" href="https://tinyurl.com/DSS-GM-DEMO">Notebook</a>)
-          </Table.Cell>
-      </Table.Row>
-
-    </Table.Body>
-    </Table> 
+      )
+    
+    return (
+      <Table >
+      <Table.Header>
+          <Table.Row>
+              <Table.HeaderCell class='col-md-1 center'><b>Week</b></Table.HeaderCell>
+              <Table.HeaderCell class='col-md-1'><b>Date</b></Table.HeaderCell>
+              <Table.HeaderCell class='col-md-3'><b>Topic</b></Table.HeaderCell>
+              <Table.HeaderCell class='col-md-3'><b>YouTube Link</b></Table.HeaderCell>
+          </Table.Row>
+      </Table.Header>
+      <Table.Body>
+          {tableRows}
+      </Table.Body>
+      </Table> 
     )
   }
   updateEmail = (value) => {
@@ -324,7 +209,7 @@ lineHeight: "29px",marginBottom:"56px"}}>
         </Grid.Row>
         <Grid.Row>
 
-{this.loadTable()}
+{this.loadTable({lectures: lectures})}
 </Grid.Row>
 
 
