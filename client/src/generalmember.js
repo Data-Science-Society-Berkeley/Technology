@@ -25,6 +25,12 @@ const lectures = [
     name: "Project Workflow & Deepnote",
     link: "https://youtu.be/WtehoucrTyQ"
   }, 
+  {
+    week: 2,
+    date: new Date('9/28/2020 PST'),
+    name: "Data Mining, Data Cleaning, Feature Engineering",
+    link: "https://youtu.be/UMn-m7mOnKQ"
+  }, 
 ]
 
 // Styles
