@@ -24,13 +24,31 @@ const lectures = [
     date: new Date('9/21/2020 PST'),
     name: "Project Workflow & Deepnote",
     link: "https://youtu.be/WtehoucrTyQ"
-  }, 
+  },
   {
     week: 2,
     date: new Date('9/28/2020 PST'),
     name: "Data Mining, Data Cleaning, Feature Engineering",
     link: "https://youtu.be/UMn-m7mOnKQ"
-  }, 
+  },
+  {
+    week: 3,
+    date: new Date('10/5/2020 PST'),
+    name: "Modelling and Statistical Tests",
+    link: "https://youtu.be/aTmfBmKRmsY"
+  },
+  {
+    week: 4,
+    date: new Date('10/12/2020 PST'),
+    name: "More Modeling and Drawing Conclusions",
+    link: "https://youtu.be/IbITdVOkJLE"
+  },
+  {
+    week: 5,
+    date: new Date('10/19/2020 PST'),
+    name: "Visualizations",
+    link: "https://youtu.be/gSgw5dkgF8I"
+  },
 ]
 
 // Styles
