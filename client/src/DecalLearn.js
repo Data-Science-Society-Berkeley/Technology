@@ -115,7 +115,7 @@ class DecalLearn extends Component {
                 Welcome, Logistics & Python Bootcamp
             </Table.Cell>
             <Table.Cell>
-              
+                    <a href="https://www.youtube.com/watch?v=wCp9sKLPqIQ">Lecture 1</a>
             </Table.Cell>
             <Table.Cell>
               None
@@ -139,7 +139,7 @@ class DecalLearn extends Component {
               Data Manipulation and Wrangling: Pandas Part 1
           </Table.Cell>
           <Table.Cell>
-                    https://www.youtube.com/watch?v=wCp9sKLPqIQ
+                    <a href="https://www.youtube.com/watch?v=TgPONLGK1-4">Lecture 2</a>
           </Table.Cell>
           <Table.Cell>
             
@@ -163,7 +163,7 @@ class DecalLearn extends Component {
               Data Manipulation and Wrangling: Pandas Part 2
           </Table.Cell>
           <Table.Cell>
-
+                    <a href="https://www.youtube.com/watch?v=a-5kJuaku_g&t=413s">Lecture 3</a>
           </Table.Cell>
           <Table.Cell>
             
@@ -187,7 +187,7 @@ class DecalLearn extends Component {
               TA Panel
           </Table.Cell>
           <Table.Cell>
-              N/A 
+             <a href="https://www.youtube.com/watch?v=cNhIUrEjjFc"> TA Panel </a>
           </Table.Cell>
           <Table.Cell>
               N/A
@@ -211,10 +211,10 @@ class DecalLearn extends Component {
               Linear Regression
           </Table.Cell>
           <Table.Cell>
-            
+                    <a href="https://www.youtube.com/watch?v=KcOhWEf68vU">Lecture 5</a>
           </Table.Cell>
           <Table.Cell>
-            None
+            
           </Table.Cell>
           <Table.Cell>
               Tanu, Siddhant
@@ -235,7 +235,7 @@ class DecalLearn extends Component {
               Hypothesis Testing + A/B Testing
           </Table.Cell>
           <Table.Cell>
-            
+                    <a href="https://www.youtube.com/watch?v=4F10-82gO9Y">Lecture 6</a>
           </Table.Cell>
           <Table.Cell>
 
