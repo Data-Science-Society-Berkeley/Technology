@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Image,Grid,Card, Header, Form, Input, Icon, Button,Segment, List, GridColumn } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
+import CustomTitle from './components/CustomTitle.js'
+
 import haas from './Acadev Images/haasdatascienceclub 1.png'
 import bids from './Acadev Images/Berkeley_Institute_for_Data_Science_-_Logo 1.png' 
 import saas from './Acadev Images/saaslogo_square 1.png'
@@ -226,16 +228,13 @@ Academic Development</span>
         <Grid.Row>
         </Grid.Row>
   
-<Grid.Row style={link} centered>
-  <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-675px",marginTop:"33px",marginRight:"-185px"}}> </div > What We Do
-</Grid.Row>
+
+{CustomTitle({title: "What We Do"})}
 <Grid.Row style={{color:"#000000",marginTop:"28px",textAlign:"center",lineHeight:"35px",fontSize:"29px",fontWeight:"300px",fontStyle:"normal",fontFamily:"Montserrat",marginLeft:"400px",marginRight:"400px",marginBottom:"20px"}}>
 The academic development committee hosts a variety of  educational workshops for the greater campus community , and directs our general membership (GM) program open to all skill levels and students. 
 </Grid.Row>
-<Grid.Row style={link} centered>
-<div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-670px",marginTop:"35px",marginRight:"-185px",marginBottom:"3px"}}> </div > 
-Our Initiatives
-</Grid.Row>
+
+{CustomTitle({title: "Our Initiatives"})}
 <Grid.Row centered columns={1}>
   <Card.Group centered >
   <Card style={overlayboxes}>
@@ -344,13 +343,7 @@ Check out the DeCal Committee Page.
 
 
         </Grid.Row>
-        <Grid.Row>
-        <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-625px",marginTop:"113px",marginRight:"-185px"}}> </div > 
-       <div style={link}>
-       AcaDev Directors
-       </div>
-       </Grid.Row>
-
+{CustomTitle({title: "AcaDev Directors"})}
        <Grid.Row>
        <Card.Group stackable doubling style={{marginTop:"56px"}}>
 <Card style={cardstyle}>    <Image  style={imagestyle} src={alleanna}  />
@@ -405,17 +398,10 @@ Check out the DeCal Committee Page.
 </Card.Group>
        </Grid.Row>
 
-       <Grid.Row>
-       </Grid.Row>
-       <Grid.Row style={{marginTop:"0px"}}>
-       <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-400px",marginTop:"115px",marginRight:"-185px"}}> </div > 
-       <div style={link}>
-       Current and Past Collaborations
-       
-              </div>
-              </Grid.Row>
-
-          <Grid.Row>
+<Grid.Row>
+</Grid.Row>
+{CustomTitle({title: "Current and Past Collaborations"})}
+        <Grid.Row>
 
         <Image.Group style={{marginLeft:"195px",marginRight:"195px"}}>
         <Image src={haas} style={{marginRight:"72px"}}>

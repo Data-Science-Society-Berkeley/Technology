@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Image,Grid,Card, Header, Form, Input, Icon, Button,Embed } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link  } from 'react-router-dom';
+import CustomTitle from './components/CustomTitle.js'
+
 import andi from './Leadership Headshots/andi.jpg'
 import kate from './Leadership Headshots/kate.jpg'
 import roshan from './Leadership Headshots/roshan.jpg'
@@ -537,16 +539,13 @@ class About extends Component {
     
 
      </Grid.Row>
-     
+    {/* <div id="who"> */}
+    {CustomTitle({title:"Who We Are", id:"who"})}
+    {/* </div> */}
     <Grid.Row centered columns={1} style={{marginBottom:"100px"}}>
-    <div style={{marginTop:"100px"}}>
-    <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"150px",marginTop:"93px",marginRight:"-185px",marginBottom:"-40px"}}> </div>
-    <div id="who" style={header}> 
-    Who We Are</div>
-    </div>
 
     <Grid.Column style={{marginLeft:"170px",marginRight:"auto",marginTop:"33px"}}>
-    <div style={{fontSize:"36px",lineHeight:"44px",fontWeight:"500px",marginTop:"22px",color:"#B6E5D7",fontFamily:"Montserrat",textAlign:"center",marginLeft:"-280px"}}> A family of passionate individuals looking to make a change.</div>
+    <div style={{fontSize:"36px",lineHeight:"44px",fontWeight:"500px",color:"#B6E5D7",fontFamily:"Montserrat",textAlign:"center",marginLeft:"-280px"}}> A family of passionate individuals looking to make a change.</div>
     <div style={{fontSize:"29px",lineHeight:"35px",fontWeight:"normal",marginTop:"56px",color:"#C4C4C4",fontFamily:"Montserrat",textAlign:"center",marginLeft:"200px",marginRight:"400px"}}>
     Data Science Society is UC Berkeley's first student-run, not-for-profit organization focused on data science and its interdisciplinary applications. Since our founding in 2016, we have united students from a wide range of disciplines behind our shared passion for all things data.
     </div>
@@ -569,12 +568,9 @@ class About extends Component {
  
   </div>
   </Grid.Row>
-  <Grid.Row width={12} centered style={{marginTop:"-250px"}}>
-  <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-735px",marginTop:"43px",marginRight:"-185px",marginBottom:"-80px"}}> </div>
-  <div id="join"  style={header}> Why Join?</div>
-  </Grid.Row>
+  {CustomTitle({title:"Why Join?", id:"join"})}
   <Grid.Row width={12} centered>
-  <div style={{fontSize:"36px",lineHeight:"44px",fontWeight:"500px",marginTop:"-120px",color:"#B6E5D7",fontFamily:"Montserrat",marginBottom:"94px"}}> Simple. To be a part of our family.</div>
+  <div style={{fontSize:"36px",lineHeight:"44px",fontWeight:"500px", color:"#B6E5D7",fontFamily:"Montserrat",marginBottom:"94px"}}> Simple. To be a part of our family.</div>
 
   </Grid.Row>
   <Grid.Row>
@@ -605,10 +601,7 @@ class About extends Component {
   />
                     </div>
   </Grid.Row>
-    <Grid.Row width={12} centered>
-    <div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-655px",marginTop:"43px",marginRight:"-185px",marginBottom:"-80px"}}> </div>
-  <div style={header} id="place">  Find your place</div>
-  </Grid.Row>
+  {CustomTitle({title:"Who We Are", id:"place"})}
     <Grid.Row centered columns={3}  style={{marginTop:"56px"}}>
       <Grid.Column style={{}}>
       <div style={execstyle1}>
@@ -675,15 +668,14 @@ View our current team below!
 </div>
       </Grid.Column>
     </Grid.Row>
-<Grid.Row centered width={12} style={{marginTop:"100px"}}>
-<div style={{position:"relative",width:"189px",height:"13px",background: "#FFC54A",left:"-655px",marginTop:"43px",marginRight:"-185px",marginBottom:"-80px"}}> </div>
-                    <div id="team" style={mybigtext}> Our Exec Team</div>
-                    <Card.Group centered style={{marginTop:"56px"}}>
-                    {leadershipCards} 
-                    </Card.Group>
+          {CustomTitle({title:"Our Exec Team", id:"team"})}
+          <Grid.Row centered width={12} style={{ marginTop: "100px" }}>
+            <Card.Group centered style={{ marginTop: "56px" }}>
+              {leadershipCards}
+            </Card.Group>
 ``
                     </Grid.Row>
-                    
+
 
   <Grid.Row style={{marginTop:"100px",marginLeft:"240px"}}>
   <Header style={mybigtext}> Our Sponsors</Header>
