@@ -266,7 +266,7 @@ class Acadev extends Component {
                 fontFamily: "Montserrat",
                 fontWeight: "bold",
                 fontSize: "5vw",
-                lineHeight: "6vw",
+                lineHeight: "5vw",
               }}
             >
               Academic Development
@@ -312,7 +312,7 @@ class Acadev extends Component {
               <span
                 style={{
                   fontSize: "5vw",
-                  lineHeight: "9vw",
+                  lineHeight: "5vw",
                   font: "Montserrat",
                 }}
               >
@@ -321,9 +321,6 @@ class Acadev extends Component {
               <span
                 style={{
                   fontSize: "2.5vw",
-                  fontWeight: "light",
-                  fontStyle: "normal",
-                  lineHeight: "2.5vw",
                 }}
               >
                 Past General Members
