@@ -52,19 +52,6 @@ import kevinmiao from "./PM Headshots/KevinHeadShot.jpg";
 
 import collab from "./Consulting/consultingheader-compress-min.jpg";
 
-const overlayboxes2 = {
-  background: "#F8F8F8",
-  border: "5px solid #8CD6D1",
-  boxSizing: "border-box",
-  boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
-  borderRadius: "1.5vw",
-  height: "26vw",
-  width: "27vw",
-  marginBottom: "5vw",
-  marginTop: "6vw",
-  marginLeft: "14vw",
-};
-
 const generalmember = {
   fontFamily: "Montserrat",
   fontWeight: "21vw",
@@ -103,11 +90,25 @@ const overlayboxes = {
   boxSizing: "border-box",
   boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
   borderRadius: "1.5vw",
-  height: "26vw",
-  width: "27vw",
+  height: "25vw",
+  width: "26vw",
   marginBottom: "5vw",
   marginTop: "6vw",
 };
+
+const overlayboxes2 = {
+  background: "#F8F8F8",
+  border: "5px solid #8CD6D1",
+  boxSizing: "border-box",
+  boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
+  borderRadius: "1.5vw",
+  height: "25vw",
+  width: "26vw",
+  marginBottom: "5vw",
+  marginTop: "6vw",
+  marginLeft: "14vw",
+};
+
 var circleStyle = {
   padding: "1vw",
   marginLeft: "-3vw",
@@ -541,8 +542,8 @@ class Consulting extends Component {
                 fontWeight: "21vw",
                 fontStyle: "normal",
                 fontFamily: "Montserrat",
-                marginLeft: "30vw",
-                marginRight: "30vw",
+                marginLeft: "20vw",
+                marginRight: "20vw",
               }}
             >
               We believe that the best way to learn about the innovative and
@@ -564,7 +565,7 @@ class Consulting extends Component {
                   fontSize: "1.5vw",
                   lineHeight: "2vw",
                   fontStyle: "normal",
-                  marginLeft: "5vw",
+                  marginLeft: "4vw",
                   marginTop: "4vw",
                 }}
               >
@@ -587,7 +588,7 @@ class Consulting extends Component {
                   fontSize: "1.5vw",
                   lineHeight: "2vw",
                   fontStyle: "normal",
-                  marginLeft: "5vw",
+                  marginLeft: "4vw",
                   marginTop: "4vw",
                 }}
               >
@@ -610,7 +611,7 @@ class Consulting extends Component {
                   fontSize: "1.5vw",
                   lineHeight: "2vw",
                   fontStyle: "normal",
-                  marginLeft: "5vw",
+                  marginLeft: "4vw",
                   marginTop: "4vw",
                 }}
               >

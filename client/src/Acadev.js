@@ -186,7 +186,8 @@ const info = {
   width: "80%",
 };
 const cardDescription = {
-  marginTop: "1vw",
+  marginTop: ".75vw",
+  // marginBottom: "10vw",
   marginLeft: "1.5vw",
   marginRight: "1.5vw",
   fontFamily: "Montserrat",
@@ -266,7 +267,7 @@ class Acadev extends Component {
                 fontFamily: "Montserrat",
                 fontWeight: "bold",
                 fontSize: "5vw",
-                lineHeight: "5vw",
+                lineHeight: "6vw",
               }}
             >
               Academic Development
@@ -331,7 +332,7 @@ class Acadev extends Component {
                 position: "absolute",
                 top: "90%",
                 left: "50%",
-                right: "10",
+                right: "10%",
                 transform: "translate(-50%, -50%)",
                 zIndex: "3",
                 fontFamily: "Montserrat",
