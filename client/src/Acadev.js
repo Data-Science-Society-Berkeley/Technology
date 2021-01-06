@@ -186,7 +186,7 @@ const info = {
   width: "80%",
 };
 const cardDescription = {
-  marginTop: "1.5vw",
+  marginTop: "1vw",
   marginLeft: "1.5vw",
   marginRight: "1.5vw",
   fontFamily: "Montserrat",
@@ -276,6 +276,7 @@ class Acadev extends Component {
                 position: "absolute",
                 top: "55%",
                 left: "5%",
+                right: "50%",
                 zIndex: "3",
                 fontFamily: "Montserrat",
               }}
@@ -283,7 +284,7 @@ class Acadev extends Component {
               <span
                 style={{
                   fontSize: "5vw",
-                  lineHeight: "9vw",
+                  lineHeight: "5vw",
                   // fontWeight: "normal",
                 }}
               >
@@ -292,9 +293,6 @@ class Acadev extends Component {
               <span
                 style={{
                   fontSize: "2.5vw",
-                  fontWeight: "light",
-                  lineHeight: "2.5vw",
-                  font: "Montserrat",
                 }}
               >
                 Semesters of General Membership Completed
@@ -306,6 +304,7 @@ class Acadev extends Component {
                 position: "absolute",
                 top: "55%",
                 left: "60%",
+                right: "5%",
                 zIndex: "3",
                 fontFamily: "Montserrat",
               }}
@@ -335,6 +334,7 @@ class Acadev extends Component {
                 position: "absolute",
                 top: "90%",
                 left: "50%",
+                right: "10",
                 transform: "translate(-50%, -50%)",
                 zIndex: "3",
                 fontFamily: "Montserrat",
@@ -597,7 +597,7 @@ class Acadev extends Component {
                 boxSizing: "border-box",
                 borderRadius: "3vw",
                 width: "25%",
-                height: "12vw",
+                height: "14vw",
                 marginLeft: "8%",
                 marginRight: "5%",
                 fontSize: "2vw",
@@ -608,7 +608,7 @@ class Acadev extends Component {
             >
               <div
                 style={{
-                  marginTop: "2vw",
+                  marginTop: "3vw",
                   marginLeft: "2vw",
                   marginRight: "2vw",
                 }}
@@ -627,7 +627,7 @@ class Acadev extends Component {
                 boxSizing: "border-box",
                 borderRadius: "3vw",
                 width: "40%",
-                height: "12vw",
+                height: "14vw",
                 marginLeft: "8%",
                 marginRight: "7vw",
               }}
@@ -654,7 +654,7 @@ class Acadev extends Component {
                     lineHeight: "2vw",
                     fontWeight: "21vw",
                     fontFamily: "Montserrat",
-                    marginTop: "1vw",
+                    marginTop: "2vw",
                     marginLeft: "2vw",
                     marginRight: "2vw",
                   }}
