@@ -165,8 +165,7 @@ class Decal extends Component {
             <span
               style={{
                 position: "absolute",
-                left: "25%",
-                right: "50%",
+                left: "20%",
                 top: "75%",
                 transform: "translate(-50%, -50%)",
                 zIndex: "3",
