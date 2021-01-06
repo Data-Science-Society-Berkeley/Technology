@@ -252,6 +252,7 @@ class Acadev extends Component {
           <Image src={story}></Image>
           <div
             style={{
+              width: "100%",
               textAlign: "center",
               color: "#FFFFFF",
             }}
@@ -265,7 +266,7 @@ class Acadev extends Component {
                 fontFamily: "Montserrat",
                 fontWeight: "bold",
                 fontSize: "5vw",
-                lineHeight: "88px",
+                lineHeight: "6vw",
               }}
             >
               Academic Development
@@ -273,7 +274,7 @@ class Acadev extends Component {
             <span
               style={{
                 position: "absolute",
-                top: "65%",
+                top: "55%",
                 left: "5%",
                 zIndex: "3",
                 fontFamily: "Montserrat",
@@ -282,7 +283,7 @@ class Acadev extends Component {
               <span
                 style={{
                   fontSize: "5vw",
-                  lineHeight: "117px",
+                  lineHeight: "9vw",
                   // fontWeight: "normal",
                 }}
               >
@@ -292,7 +293,7 @@ class Acadev extends Component {
                 style={{
                   fontSize: "2.5vw",
                   fontWeight: "light",
-                  lineHeight: "37px",
+                  lineHeight: "2.5vw",
                   font: "Montserrat",
                 }}
               >
@@ -303,7 +304,7 @@ class Acadev extends Component {
             <span
               style={{
                 position: "absolute",
-                top: "65%",
+                top: "55%",
                 left: "60%",
                 zIndex: "3",
                 fontFamily: "Montserrat",
@@ -312,7 +313,7 @@ class Acadev extends Component {
               <span
                 style={{
                   fontSize: "5vw",
-                  lineHeight: "117px",
+                  lineHeight: "9vw",
                   font: "Montserrat",
                 }}
               >
@@ -323,7 +324,7 @@ class Acadev extends Component {
                   fontSize: "2.5vw",
                   fontWeight: "light",
                   fontStyle: "normal",
-                  lineHeight: "37px",
+                  lineHeight: "2.5vw",
                 }}
               >
                 Past General Members
@@ -337,13 +338,13 @@ class Acadev extends Component {
                 transform: "translate(-50%, -50%)",
                 zIndex: "3",
                 fontFamily: "Montserrat",
-                lineHeight: "88px",
+                lineHeight: "7vw",
               }}
             >
               <span
                 style={{
                   fontSize: "5vw",
-                  lineHeight: "117px",
+                  lineHeight: "9vw",
                   font: "Montserrat",
                 }}
               >
@@ -352,7 +353,7 @@ class Acadev extends Component {
               <span
                 style={{
                   fontSize: "2.5vw",
-                  lineHeight: "37px",
+                  lineHeight: "2.5vw",
                   textAlign: "center",
                   font: "Montserrat",
                   fontWeight: "light",
@@ -649,12 +650,11 @@ class Acadev extends Component {
                 <div
                   style={{
                     color: "#FFC54A",
-                    marginTop: "3vw",
                     fontSize: "2vw",
                     lineHeight: "2vw",
                     fontWeight: "21vw",
                     fontFamily: "Montserrat",
-                    marginTop: "2vw",
+                    marginTop: "1vw",
                     marginLeft: "2vw",
                     marginRight: "2vw",
                   }}
