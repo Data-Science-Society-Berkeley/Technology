@@ -207,7 +207,7 @@ class Decal extends Component {
             <span
               style={{
                 position: "absolute",
-                left: "70%",
+                left: "60%",
                 top: "75%",
                 transform: "translate(-50%, -50%)",
                 zIndex: "3",
@@ -225,7 +225,6 @@ class Decal extends Component {
                 <span
                   style={{
                     fontSize: "2.5vw",
-                    textAlign: "center",
                   }}
                 >
                   Students Taught
