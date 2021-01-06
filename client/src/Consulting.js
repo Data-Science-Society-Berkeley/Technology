@@ -106,7 +106,7 @@ const overlayboxes2 = {
   width: "27vw",
   marginBottom: "5vw",
   marginTop: "6vw",
-  marginLeft: "10vw",
+  marginLeft: "5vw",
 };
 
 var circleStyle = {
