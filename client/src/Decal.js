@@ -208,6 +208,7 @@ class Decal extends Component {
               style={{
                 position: "absolute",
                 left: "70%",
+                right: "0%",
                 top: "75%",
                 transform: "translate(-50%, -50%)",
                 zIndex: "3",
