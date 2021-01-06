@@ -697,7 +697,7 @@ class Consulting extends Component {
             </div>
           </Grid.Row>
           {CustomTitle({ title: "Testimonials" })}
-          <Grid.Row centered>
+          <Grid.Row centered style={{ marginLeft: "5vw", marginRight: "5vw" }}>
             <Image
               inline
               style={{
@@ -727,7 +727,7 @@ class Consulting extends Component {
               </div>
             </div>
           </Grid.Row>
-          <Grid.Row style={{}}>
+          <Grid.Row style={{ marginLeft: "5vw", marginRight: "5vw" }}>
             <Image
               inline
               style={{
@@ -755,7 +755,7 @@ class Consulting extends Component {
             </div>
           </Grid.Row>
 
-          <Grid.Row>
+          <Grid.Row style={{ marginLeft: "5vw", marginRight: "5vw" }}>
             <Image
               style={{
                 maxHeight: "12vw",
@@ -780,7 +780,7 @@ class Consulting extends Component {
             </div>
           </Grid.Row>
 
-          <Grid.Row>
+          <Grid.Row style={{ marginLeft: "5vw", marginRight: "5vw" }}>
             <Image
               style={{
                 maxHeight: "12vw",
@@ -806,7 +806,7 @@ class Consulting extends Component {
               </div>
             </div>
           </Grid.Row>
-          <Grid.Row>
+          <Grid.Row style={{ marginLeft: "5vw", marginRight: "5vw" }}>
             <Image
               style={{
                 maxHeight: "12vw",
