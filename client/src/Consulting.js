@@ -90,8 +90,8 @@ const overlayboxes = {
   boxSizing: "border-box",
   boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
   borderRadius: "1.5vw",
-  height: "25vw",
-  width: "26vw",
+  height: "26vw",
+  width: "27vw",
   marginBottom: "5vw",
   marginTop: "6vw",
 };
@@ -102,11 +102,11 @@ const overlayboxes2 = {
   boxSizing: "border-box",
   boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
   borderRadius: "1.5vw",
-  height: "25vw",
-  width: "26vw",
+  height: "26vw",
+  width: "27vw",
   marginBottom: "5vw",
   marginTop: "6vw",
-  marginLeft: "14vw",
+  marginLeft: "10vw",
 };
 
 var circleStyle = {
@@ -565,7 +565,7 @@ class Consulting extends Component {
                   fontSize: "1.5vw",
                   lineHeight: "2vw",
                   fontStyle: "normal",
-                  marginLeft: "4vw",
+                  marginLeft: "5vw",
                   marginTop: "4vw",
                 }}
               >
@@ -588,7 +588,7 @@ class Consulting extends Component {
                   fontSize: "1.5vw",
                   lineHeight: "2vw",
                   fontStyle: "normal",
-                  marginLeft: "4vw",
+                  marginLeft: "5vw",
                   marginTop: "4vw",
                 }}
               >
@@ -611,7 +611,7 @@ class Consulting extends Component {
                   fontSize: "1.5vw",
                   lineHeight: "2vw",
                   fontStyle: "normal",
-                  marginLeft: "4vw",
+                  marginLeft: "5vw",
                   marginTop: "4vw",
                 }}
               >
