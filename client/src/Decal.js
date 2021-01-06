@@ -156,7 +156,7 @@ class Decal extends Component {
                 fontFamily: "Montserrat",
                 fontWeight: "bold",
                 fontSize: "5vw",
-                lineHeight: "6vw",
+                lineHeight: "5vw",
               }}
             >
               {" "}
@@ -165,7 +165,8 @@ class Decal extends Component {
             <span
               style={{
                 position: "absolute",
-                left: "25%",
+                left: "10%",
+                right: "50%",
                 top: "75%",
                 transform: "translate(-50%, -50%)",
                 zIndex: "3",
@@ -175,7 +176,7 @@ class Decal extends Component {
               <span
                 style={{
                   fontSize: "5vw",
-                  lineHeight: "6vw",
+                  lineHeight: "5vw",
                   font: "Montserrat",
                 }}
               >
@@ -184,9 +185,7 @@ class Decal extends Component {
               <span
                 style={{
                   fontSize: "2.5vw",
-                  lineHeight: "2.5vw",
                   textAlign: "center",
-                  // width: "10px",
                   font: "Montserrat",
                 }}
               >
@@ -209,7 +208,8 @@ class Decal extends Component {
             <span
               style={{
                 position: "absolute",
-                left: "70%",
+                left: "60%",
+                right: "90%",
                 top: "75%",
                 transform: "translate(-50%, -50%)",
                 zIndex: "3",
@@ -219,7 +219,7 @@ class Decal extends Component {
               <span
                 style={{
                   fontSize: "5vw",
-                  lineHeight: "6vw",
+                  lineHeight: "5vw",
                   font: "Montserrat",
                 }}
               >
@@ -227,7 +227,6 @@ class Decal extends Component {
                 <span
                   style={{
                     fontSize: "2.5vw",
-                    lineHeight: "2.5vw",
                     textAlign: "center",
                   }}
                 >
@@ -292,11 +291,15 @@ class Decal extends Component {
             <Image.Group>
               <Image
                 src={decal1}
-                style={{ height: "25vw", width: "45vw", marginRight: "5vw" }}
+                style={{
+                  height: "20vw",
+                  marginLeft: "10vw",
+                  marginRight: "5vw",
+                }}
               ></Image>
               <Image
                 src={decal2}
-                style={{ height: "25vw", width: "45vw" }}
+                style={{ height: "20vw", marginRight: "10vw" }}
               ></Image>
             </Image.Group>
           </Grid.Row>
@@ -335,10 +338,7 @@ class Decal extends Component {
               <Button style={button}>Course Page</Button>
             </Link>
           </Grid.Row>
-          {/* 
-          <Grid.Row columns={2}>
-            <Grid.Column></Grid.Column>
-          </Grid.Row> */}
+
           <Grid.Row centered columns={2}>
             <Grid.Column
               style={{
@@ -349,17 +349,19 @@ class Decal extends Component {
                 fontWeight: "28vw",
                 fontFamily: "Montserrat",
                 marginBottom: "7vw",
+                left: "5%",
+                right: "50%",
               }}
             >
               Join DSS and apply to be a TA!
-              <Image
+              {/* <Image
                 src={rightarrow}
                 style={{
                   marginLeft: "43vw",
                   marginTop: "4vw",
                   transform: "rotate(10deg)",
                 }}
-              ></Image>
+              ></Image> */}
             </Grid.Column>
             <Grid.Column
               style={{
@@ -370,17 +372,18 @@ class Decal extends Component {
                 fontWeight: "28vw",
                 fontFamily: "Montserrat",
                 marginBottom: "7vw",
+                right: "5%",
               }}
             >
               Apply to be a student!
-              <Image
+              {/* <Image
                 src={leftarrow}
                 style={{
                   marginLeft: "10vw",
                   marginTop: "4vw",
                   transform: "rotate(-15deg)",
                 }}
-              ></Image>
+              ></Image> */}
             </Grid.Column>
           </Grid.Row>
           <Grid.Row centered style={{ marginTop: "-3vw" }}>
