@@ -59,9 +59,7 @@ class Footer extends Component {
         vertical
         style={{
           width: "100%",
-          marginTop: "0px",
-          marginBottom: "0px",
-          height: "600px",
+          height: "43vw",
           background: "#E5E5E5",
         }}
       >
@@ -72,33 +70,34 @@ class Footer extends Component {
                 <Image
                   inline
                   src={logo}
-                  style={{ width: "74px", height: "74px" }}
+                  style={{ width: "5vw", height: "5vw" }}
                 ></Image>
                 <div
                   style={{
-                    marginLeft: "100px",
-                    marginTop: "-40px",
+                    marginLeft: "7vw",
+                    marginTop: "-3vw",
                     fontFamily: "Montserrat",
                     fontStyle: "normal",
-                    fontWeight: "300px",
-                    fontSize: "24px",
-                    lineHeight: "29px",
+                    fontWeight: "21vw",
+                    fontSize: "1.5vw",
+                    lineHeight: "2vw",
                   }}
                 >
                   DATA SCIENCE SOCIETY
                 </div>
               </div>
             </Grid.Row>
-            <Grid.Row style={{ marginBottom: "10px", marginTop: "24px" }}>
+            <Grid.Row style={{ marginBottom: "1vw", marginTop: "1.5vw" }}>
               <Grid.Column width={8}>
-                <Icon.Group
-                  size="huge"
-                  style={{ marginLeft: "-20%", marginTop: "0px" }}
-                >
+                <Icon.Group size="huge" style={{ marginLeft: "-20%" }}>
                   <a href="mailto:info@dss.berkeley.edu">
                     <Icon
                       name="mail outline"
-                      style={{ marginBottom: "14px", color: "#8CD6D1" }}
+                      style={{
+                        marginBottom: "1vw",
+                        color: "#8CD6D1",
+                        height: "3vw",
+                      }}
                     ></Icon>
                   </a>
                   <span style={iconDesc}>
