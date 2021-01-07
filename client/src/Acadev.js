@@ -390,8 +390,8 @@ class Acadev extends Component {
               fontWeight: "21vw",
               fontStyle: "normal",
               fontFamily: "Montserrat",
-              marginLeft: "30vw",
-              marginRight: "30vw",
+              marginLeft: "25vw",
+              marginRight: "25vw",
             }}
           >
             The academic development committee hosts a variety of educational
