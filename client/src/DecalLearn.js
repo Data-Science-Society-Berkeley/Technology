@@ -317,7 +317,7 @@ class DecalLearn extends Component {
   render() {
     return (
       <div>
-        <Grid>
+        <Grid style={{ marginRight: "5vw" }}>
           <Grid.Row>
             <Header style={mybigtext}>
               {" "}

@@ -204,10 +204,9 @@ class DecalLearn extends Component {
   }
   render() {
     return (
-      <Grid>
+      <Grid style={{ marginLeft: "5vw", marginLeft: "5vw" }}>
         <Grid.Row>
           <Header style={mybigtext}>
-            {" "}
             General Membership Program | Fall 2020
           </Header>
         </Grid.Row>

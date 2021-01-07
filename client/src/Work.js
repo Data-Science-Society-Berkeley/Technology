@@ -224,8 +224,7 @@ class Work extends Component {
                   Nike, Eaze, Goodera).
                   <br />
                   <br />
-                  Co-Hosted with Phi Beta Lambda and the Student Association of
-                  Applied Statistics.
+                  Co-Hosted with PBL and SAAS.
                   <br />
                   <br />
                   - 100+ in attendance! <br />
