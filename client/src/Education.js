@@ -169,7 +169,7 @@ class Education extends Component {
                   type="education"
                   style={{
                     height: "18vw",
-                    width: "47vw",
+                    width: "40vw",
                     border: "1px solid #000000",
                     boxSizing: "borderBox",
                     font: "Montserrat",
@@ -193,7 +193,7 @@ class Education extends Component {
                   <div
                     style={{
                       height: "18vw",
-                      width: "47vw",
+                      width: "40vw",
                       border: "1px solid #000000",
                       boxSizing: "borderBox",
                       font: "Montserrat",
