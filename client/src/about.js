@@ -625,8 +625,8 @@ class About extends Component {
                   color: "#000000",
                   fontFamily: "Montserrat",
                   textAlign: "center",
-                  marginLeft: "14vw",
-                  marginRight: "35vw",
+                  marginLeft: "10vw",
+                  marginRight: "30vw",
                 }}
               >
                 Data Science Society is UC Berkeley's first student-run,
@@ -712,7 +712,10 @@ class About extends Component {
             </div>
           </Grid.Row>
           <Grid.Row>
-            <Image src={ret} style={{ width: "100%", height: "auto" }}></Image>
+            <Image
+              src={ret}
+              style={{ width: "100%", maxHeight: "100%" }}
+            ></Image>
           </Grid.Row>
           <Grid.Row centered></Grid.Row>
 
@@ -745,10 +748,18 @@ class About extends Component {
             </div>
           </Grid.Row>
           {CustomTitle({ title: "Where Do You Fit In?", id: "place" })}
-          <Grid.Row centered columns={3} style={{ marginTop: "7vw" }}>
+          <Grid.Row
+            centered
+            columns={3}
+            style={{
+              marginTop: "7vw",
+              marginLeft: "10vw",
+              marginRight: "10vw",
+            }}
+          >
             <Grid.Column>
               <div style={execstyle1}>
-                <div style={{ marginLeft: "2vw" }}>
+                <div style={{ marginLeft: "2vw", paddingTop: "2vw" }}>
                   Executive <br /> Team
                 </div>
                 <div
@@ -803,7 +814,15 @@ class About extends Component {
               </div>
             </Grid.Column>
           </Grid.Row>
-          <Grid.Row centered columns={3} style={{ marginTop: "5vw" }}>
+          <Grid.Row
+            centered
+            columns={3}
+            style={{
+              marginTop: "5vw",
+              marginLeft: "10vw",
+              marginRight: "10vw",
+            }}
+          >
             <Grid.Column>
               <div style={execstyle4}>
                 <div style={{ marginLeft: "2vw", paddingTop: "2vw" }}>
@@ -875,9 +894,9 @@ class About extends Component {
           </Grid.Row> */}
           {CustomTitle({ title: "Our Sponsors", id: "sponsors" })}
           <Grid.Row
+            centered
             style={{
               marginTop: "4vw",
-              marginLeft: "12vw",
             }}
           >
             <Image.Group size={"medium"}>
@@ -915,7 +934,7 @@ class About extends Component {
             </Image.Group>
           </Grid.Row>
           {CustomTitle({ title: "Our Partners", id: "partners" })}
-          <Grid.Row style={{ marginTop: "4vw", marginLeft: "40vw" }}>
+          <Grid.Row centered style={{ marginTop: "4vw" }}>
             <Image.Group
               size={"medium"}
               style={{ marginTop: "2vw", marginBottom: "7vw" }}
