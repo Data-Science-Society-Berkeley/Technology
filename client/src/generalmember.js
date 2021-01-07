@@ -123,7 +123,6 @@ const link = {
   color: "#8CD6D1",
   fontStyle: "normal",
   textAlign: "center",
-  marginTop: "10px,",
 };
 class DecalLearn extends Component {
   constructor(props) {
@@ -266,9 +265,11 @@ class DecalLearn extends Component {
                 Schedule
               </Header>
             </Grid.Row>
-            <Grid.Row>{this.loadTable({ lectures: lectures })}</Grid.Row>
+            <Grid.Row style={{ marginRight: "5vw" }}>
+              {this.loadTable({ lectures: lectures })}
+            </Grid.Row>
           </div>
-          <Grid.Row style={{ marginTop: "8vw", marginBottom: "4vw" }}>
+          <Grid.Row style={{ marginTop: "6vw", marginBottom: "4vw" }}>
             <Header style={link}>General Member Course Staff</Header>
           </Grid.Row>
           <Grid.Row>

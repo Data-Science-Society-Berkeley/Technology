@@ -161,7 +161,7 @@ class Education extends Component {
         <div style={mybigtext}> Education</div>
 
         <Grid divided="vertically" style={gridoffset}>
-          <Grid.Row columns={2} style={{ marginRight: "5vw" }}>
+          <Grid.Row centered columns={2} style={{ marginRight: "5vw" }}>
             <Grid.Column>
               <Link to="/gm">
                 <div
