@@ -247,7 +247,7 @@ class Social extends Component {
                 fontStyle: "normal",
                 fontFamily: "Montserrat",
                 marginLeft: "9vw",
-                marginRight: "9vw",
+                // marginRight: "5vw",
                 marginBottom: "6vw",
                 marginTop: "4vw",
               }}
@@ -300,6 +300,7 @@ class Social extends Component {
                 fontWeight: "normal",
                 fontSize: "2.5vw",
                 lineHeight: "3vw",
+                marginRight: "5vw",
               }}
             >
               {" "}
