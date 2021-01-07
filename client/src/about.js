@@ -703,8 +703,6 @@ class About extends Component {
                 fontWeight: "36vw",
                 color: "#B6E5D7",
                 fontFamily: "Montserrat",
-                // marginTop: "4vw",
-                // marginBottom: "3vw",
               }}
             >
               {" "}
@@ -714,7 +712,12 @@ class About extends Component {
           <Grid.Row>
             <Image
               src={ret}
-              style={{ width: "100%", maxHeight: "100%" }}
+              style={{
+                width: "100%",
+                maxWidth: "100%",
+                maxHeight: "100%",
+                height: "100%",
+              }}
             ></Image>
           </Grid.Row>
           <Grid.Row centered></Grid.Row>
@@ -752,7 +755,7 @@ class About extends Component {
             centered
             columns={3}
             style={{
-              marginTop: "7vw",
+              marginTop: "4vw",
               marginLeft: "10vw",
               marginRight: "10vw",
             }}
@@ -895,14 +898,16 @@ class About extends Component {
           {CustomTitle({ title: "Our Sponsors", id: "sponsors" })}
           <Grid.Row
             centered
-            style={{
-              marginTop: "4vw",
-            }}
+            style={
+              {
+                // marginTop: "4vw",
+              }
+            }
           >
             <Image.Group size={"medium"}>
               <Image
                 src={berkeley}
-                style={{ marginLeft: "1px", width: "15vw" }}
+                style={{ marginLeft: "1px", width: "15vw", marginTop: "3vw" }}
               ></Image>
               <Image
                 src={berkeley2}
@@ -934,10 +939,10 @@ class About extends Component {
             </Image.Group>
           </Grid.Row>
           {CustomTitle({ title: "Our Partners", id: "partners" })}
-          <Grid.Row centered style={{ marginTop: "4vw" }}>
+          <Grid.Row centered>
             <Image.Group
               size={"medium"}
-              style={{ marginTop: "2vw", marginBottom: "7vw" }}
+              style={{ marginTop: "3vw", marginBottom: "7vw" }}
             >
               <Image
                 style={{ marginRight: "1vw", width: "15vw" }}
