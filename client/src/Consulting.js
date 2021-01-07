@@ -731,7 +731,7 @@ class Consulting extends Component {
             <Image
               inline
               style={{
-                maxHeight: "12vw",
+                maxHeight: "10vw",
                 maxWidth: "12vw",
                 verticalAlign: "middle",
               }}
@@ -758,7 +758,7 @@ class Consulting extends Component {
           <Grid.Row style={{ marginLeft: "5vw", marginRight: "5vw" }}>
             <Image
               style={{
-                maxHeight: "12vw",
+                maxHeight: "10vw",
                 maxWidth: "12vw",
                 verticalAlign: "middle",
               }}
@@ -783,7 +783,7 @@ class Consulting extends Component {
           <Grid.Row style={{ marginLeft: "5vw", marginRight: "5vw" }}>
             <Image
               style={{
-                maxHeight: "12vw",
+                maxHeight: "10vw",
                 maxWidth: "12vw",
                 verticalAlign: "middle",
               }}
@@ -809,7 +809,7 @@ class Consulting extends Component {
           <Grid.Row style={{ marginLeft: "5vw", marginRight: "5vw" }}>
             <Image
               style={{
-                height: "auto",
+                maxHeight: "10vw",
                 maxWidth: "12vw",
                 verticalAlign: "middle",
               }}
