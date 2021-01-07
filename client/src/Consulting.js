@@ -436,7 +436,7 @@ class Consulting extends Component {
             style={{
               width: "100%",
               textAlign: "center",
-              background: "rgba(140, 214, 209, 0.6)",
+              background: "rgba(140, 214, 209, 0.5)",
             }}
           >
             <span
@@ -486,7 +486,7 @@ class Consulting extends Component {
             </span>
             <div
               style={{
-                background: "rgba(140, 214, 209, 0.6)",
+                background: "rgba(140, 214, 209, 0.5)",
                 zIndex: "2",
                 position: "absolute",
                 width: "100%",
@@ -809,7 +809,7 @@ class Consulting extends Component {
           <Grid.Row style={{ marginLeft: "5vw", marginRight: "5vw" }}>
             <Image
               style={{
-                maxHeight: "12vw",
+                // maxHeight: "12vw",
                 maxWidth: "12vw",
                 verticalAlign: "middle",
               }}
