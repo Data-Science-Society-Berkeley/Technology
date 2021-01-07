@@ -52,12 +52,15 @@ const rightcol = {
   marginLeft: "14%",
 };
 const mybigtext = {
-  marginBottom: "3.5vw",
   fontFamily: "Montserrat",
+  fontWeight: "normal",
+  lineHeight: "7vw",
+  fontSize: "4.5vw",
+  color: "#8CD6D1",
   fontStyle: "normal",
-  fontWeight: "600",
-  fontSize: "1.5vw",
-  lineHeight: "2vw",
+  textAlign: "left",
+  marginLeft: "5vw",
+  marginBottom: "3vw",
 };
 
 const mymidtext = {

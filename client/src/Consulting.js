@@ -809,7 +809,7 @@ class Consulting extends Component {
           <Grid.Row style={{ marginLeft: "5vw", marginRight: "5vw" }}>
             <Image
               style={{
-                // maxHeight: "12vw",
+                height: "auto",
                 maxWidth: "12vw",
                 verticalAlign: "middle",
               }}
