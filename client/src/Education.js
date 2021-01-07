@@ -83,18 +83,19 @@ const mymidtext = {
 const pasttext = {
   fontFamily: "Montserrat",
   fontWeight: 300,
-  lineHeight: "2vw",
+  lineHeight: "2.5vw",
   fontSize: "2vw",
   color: "#0000000",
   fontStyle: "normal",
   textAlign: "left",
   marginBottom: "5vw",
+  // marginRight: "5vw",
 };
 
 const pasttext2 = {
   fontFamily: "Montserrat",
   fontWeight: 300,
-  lineHeight: "2vw",
+  lineHeight: "2.5vw",
   fontSize: "2vw",
   color: "#0000000",
   fontStyle: "normal",
@@ -160,7 +161,7 @@ class Education extends Component {
         <div style={mybigtext}> Education</div>
 
         <Grid divided="vertically" style={gridoffset}>
-          <Grid.Row columns={2}>
+          <Grid.Row centered columns={2} style={{ marginRight: "5vw" }}>
             <Grid.Column>
               <Link to="/gm">
                 <div
@@ -211,7 +212,10 @@ class Education extends Component {
               </Grid.Row>
             </Grid.Column>
           </Grid.Row>
-          <Grid.Row style={{ marginLeft: "1vw" }} columns={1}>
+          <Grid.Row
+            style={{ marginLeft: "1vw", marginRight: "5vw" }}
+            columns={1}
+          >
             <div style={{ font: "Montserrat" }}>
               <div style={heading}>Past GM Projects (Coming Soon!) </div>
               <div style={pasttext}>
