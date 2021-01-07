@@ -52,16 +52,12 @@ const rightcol = {
   marginLeft: "14%",
 };
 const mybigtext = {
+  marginBottom: "3.5vw",
   fontFamily: "Montserrat",
-  fontWeight: "normal",
-  lineHeight: "7vw",
-  fontSize: "4.5vw",
-  color: "#8CD6D1",
-  // width: "31vw",
   fontStyle: "normal",
-  textAlign: "left",
-  marginLeft: "5vw",
-  marginBottom: "3vw",
+  fontWeight: "600",
+  fontSize: "1.5vw",
+  lineHeight: "2vw",
 };
 
 const mymidtext = {
@@ -222,9 +218,6 @@ class Work extends Component {
                   operations managers, and project managers from a variety of
                   industry-leading companies (Google, Amazon, Uber, Indeed,
                   Nike, Eaze, Goodera).
-                  <br />
-                  <br />
-                  Co-Hosted with PBL and SAAS.
                   <br />
                   <br />
                   - 100+ in attendance! <br />
