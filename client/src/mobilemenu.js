@@ -425,15 +425,6 @@ class NavBar2 extends Component {
                 position: "relative",
               }}
             >
-              <div>
-                <Menu.Item
-                  position="right"
-                  onClick={this.handleToggle}
-                  style={{ color: "#ffffff" }}
-                >
-                  <Icon name="sidebar" color="teal" size="big" />
-                </Menu.Item>
-              </div>
               <div style={{ margin: "auto", width: "30vw" }}>
                 <span>
                   <Image
@@ -466,13 +457,13 @@ class NavBar2 extends Component {
                   Data Science Society @ Berkeley
                 </span>
               </div>
-              {/* <Menu.Item
+              <Menu.Item
                 position="right"
                 onClick={this.handleToggle}
                 style={{ color: "#ffffff" }}
               >
                 <Icon name="sidebar" color="teal" size="big" />
-              </Menu.Item> */}
+              </Menu.Item>
 
               {/* <Menu.Item position="center">
                 <Image size="mini" src={logo} onClick={this.handleToggle} />
