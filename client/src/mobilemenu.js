@@ -425,17 +425,17 @@ class NavBar2 extends Component {
                 position: "relative",
               }}
             >
-              <div>
+              <div style={{ margin: "auto", width: "30vw" }}>
                 <span>
                   <Image
                     src={logo2}
-                    size="mini"
                     style={{
                       position: "absolute",
                       top: "25%",
                       // left: "10%",
                       display: "inline-block",
-                      marginLeft: "5em",
+                      // marginLeft: "5em",
+                      width: "6vw",
                     }}
                   />
                 </span>
@@ -450,8 +450,8 @@ class NavBar2 extends Component {
                     lineHeight: "3vw",
                     color: "#8CD6D1",
                     display: "inline-block",
-                    marginRight: "6em",
-                    marginLeft: "7em",
+                    // marginRight: "6em",
+                    marginLeft: "3em",
                   }}
                 >
                   Data Science Society @ Berkeley
