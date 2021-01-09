@@ -435,7 +435,7 @@ class NavBar2 extends Component {
                       top: "25%",
                       // left: "10%",
                       display: "inline-block",
-                      marginLeft: "7vw",
+                      marginLeft: "10vw",
                     }}
                   />
                 </span>
@@ -451,7 +451,7 @@ class NavBar2 extends Component {
                     color: "#8CD6D1",
                     display: "inline-block",
                     marginRight: "11vw",
-                    marginLeft: "15vw",
+                    marginLeft: "18vw",
                   }}
                 >
                   Data Science Society @ Berkeley
