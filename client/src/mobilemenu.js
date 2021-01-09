@@ -425,6 +425,15 @@ class NavBar2 extends Component {
                 position: "relative",
               }}
             >
+              <div>
+                <Menu.Item
+                  position="right"
+                  onClick={this.handleToggle}
+                  style={{ color: "#ffffff" }}
+                >
+                  <Icon name="sidebar" color="teal" size="big" />
+                </Menu.Item>
+              </div>
               <div style={{ margin: "auto", width: "30vw" }}>
                 <span>
                   <Image
@@ -450,20 +459,20 @@ class NavBar2 extends Component {
                     lineHeight: "3vw",
                     color: "#8CD6D1",
                     display: "inline-block",
-                    // marginRight: "6em",
-                    marginLeft: "3em",
+                    marginRight: "5vw",
+                    marginLeft: "7vw",
                   }}
                 >
                   Data Science Society @ Berkeley
                 </span>
               </div>
-              <Menu.Item
+              {/* <Menu.Item
                 position="right"
                 onClick={this.handleToggle}
                 style={{ color: "#ffffff" }}
               >
                 <Icon name="sidebar" color="teal" size="big" />
-              </Menu.Item>
+              </Menu.Item> */}
 
               {/* <Menu.Item position="center">
                 <Image size="mini" src={logo} onClick={this.handleToggle} />
