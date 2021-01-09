@@ -34,6 +34,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import NavBar from "./Menu";
+import NavBar2 from "./mobilemenu";
 import InMenu from "./inMen";
 import { Helmet } from "react-helmet";
 import WebFont from "webfontloader";
@@ -110,6 +111,7 @@ class App extends Component {
             path="/apply"
             render={(props) => (
               <div>
+                {/* makes background white on page you're going to*/}
                 <Helmet
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
@@ -670,32 +672,190 @@ class App extends Component {
     const { redirect } = this.state;
     // redirecting to the driver page, because the zipcode has been entered and the this.state.vehicleCompletion is True
     // encodes our logic for loading the correct components with respect to each route
-    // if (this.state.mobile) {
-    //   return (
-    //     <Switch>
-    //       <Route
-    //         path="/"
-    //         render={(props) => (
-    //           <div style={{ height: "200%" }}>
-    //             <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
-    //             <iframe
-    //               class="airtable-embed airtable-dynamic-height"
-    //               src="https://airtable.com/embed/shrfYM5C3nk3tacyN?backgroundColor=green"
-    //               frameborder="0"
-    //               onmousewheel=""
-    //               width="100%"
-    //               height="2849"
-    //               style={{
-    //                 background: "transparent",
-    //                 border: "1px solid #ccc",
-    //               }}
-    //             ></iframe>
-    //           </div>
-    //         )}
-    //       />
-    //     </Switch>
-    //   );
-    // }
+    if (this.state.mobile) {
+      return (
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={(props) => (
+              <div>
+                <NavBar2 {...props} componentid={CentralText} />
+                <Footer></Footer>
+              </div>
+            )}
+          />
+
+          <Route
+            exact
+            path="/about"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar2 {...props} componentid={About} />
+                <Footer></Footer>
+              </div>
+            )}
+          />
+
+          <Route
+            exact
+            path="/commitees"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar2 {...props} componentid={Committees} />
+                <Footer></Footer>
+              </div>
+            )}
+          />
+
+          <Route
+            exact
+            path="/consulting"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar2 {...props} componentid={Consulting} />
+                <Footer></Footer>
+              </div>
+            )}
+          />
+
+          <Route
+            exact
+            path="/acadev"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar2 {...props} componentid={Acadev} />
+                <Footer></Footer>
+              </div>
+            )}
+          />
+
+          <Route
+            exact
+            path="/gm"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar2 {...props} componentid={GeneralMember} />
+                <Footer></Footer>
+              </div>
+            )}
+          />
+
+          <Route
+            exact
+            path="/decal"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar2 {...props} componentid={Decal} />
+                <Footer></Footer>
+              </div>
+            )}
+          />
+
+          <Route
+            exact
+            path="/decallearn"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar2 {...props} componentid={DecalLearn} />
+                <Footer></Footer>
+              </div>
+            )}
+          />
+
+          <Route
+            exact
+            path="/socialgood"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar2 {...props} componentid={Social} />
+                <Footer></Footer>
+              </div>
+            )}
+          />
+
+          <Route
+            exact
+            path="/events"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar2 {...props} componentid={Work} />
+                <Footer></Footer>
+              </div>
+            )}
+          />
+
+          <Route
+            exact
+            path="/services"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar2 {...props} componentid={Service} />
+                <Footer></Footer>
+              </div>
+            )}
+          />
+
+          <Route
+            exact
+            path="/education"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar2 {...props} componentid={Education} />
+                <Footer></Footer>
+              </div>
+            )}
+          />
+
+          <Route
+            exact
+            path="/register"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar2 {...props} componentid={Registration} />
+                <Footer></Footer>
+              </div>
+            )}
+          />
+        </Switch>
+      );
+    }
     const login = this.culture();
     return (
       <Router>
@@ -705,3 +865,19 @@ class App extends Component {
   }
 }
 export default withRouter(App);
+
+// <div style={{ height: "200%" }}>
+//   <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+//   <iframe
+//     class="airtable-embed airtable-dynamic-height"
+//     src="https://airtable.com/embed/shrfYM5C3nk3tacyN?backgroundColor=green"
+//     frameborder="0"
+//     onmousewheel=""
+//     width="100%"
+//     height="2849"
+//     style={{
+//       background: "transparent",
+//       border: "1px solid #ccc",
+//     }}
+//   ></iframe>
+// </div>
