@@ -445,12 +445,12 @@ class NavBar2 extends Component {
                     top: "40%",
                     // left: "20%",
                     fontFamily: "Montserrat",
-                    fontSize: "4vw",
+                    fontSize: "3vw",
                     fontWeight: 600,
                     lineHeight: "3vw",
                     color: "#8CD6D1",
                     display: "inline-block",
-                    marginRight: "3vw",
+                    marginRight: "10vw",
                     marginLeft: "13vw",
                   }}
                 >
