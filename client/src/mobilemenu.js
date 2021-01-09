@@ -432,10 +432,10 @@ class NavBar2 extends Component {
                     size="mini"
                     style={{
                       position: "absolute",
-                      top: "20%",
+                      top: "25%",
                       // left: "10%",
                       display: "inline-block",
-                      marginLeft: "3vw",
+                      marginLeft: "7vw",
                     }}
                   />
                 </span>
@@ -450,8 +450,8 @@ class NavBar2 extends Component {
                     lineHeight: "3vw",
                     color: "#8CD6D1",
                     display: "inline-block",
-                    marginRight: "10vw",
-                    marginLeft: "13vw",
+                    marginRight: "11vw",
+                    marginLeft: "15vw",
                   }}
                 >
                   Data Science Society @ Berkeley
