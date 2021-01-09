@@ -433,9 +433,9 @@ class NavBar2 extends Component {
                     style={{
                       position: "absolute",
                       top: "20%",
-                      left: "10%",
+                      // left: "10%",
                       display: "inline-block",
-                      marginLeft: "5vw",
+                      marginLeft: "3vw",
                     }}
                   />
                 </span>
@@ -443,14 +443,15 @@ class NavBar2 extends Component {
                   style={{
                     position: "absolute",
                     top: "40%",
-                    left: "20%",
+                    // left: "20%",
                     fontFamily: "Montserrat",
                     fontSize: "4vw",
                     fontWeight: 600,
-                    lineHeight: "2.5vw",
+                    lineHeight: "3vw",
                     color: "#8CD6D1",
                     display: "inline-block",
-                    marginRight: "5vw",
+                    marginRight: "3vw",
+                    marginLeft: "13vw",
                   }}
                 >
                   Data Science Society @ Berkeley
