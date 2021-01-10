@@ -178,10 +178,31 @@ const aboutlinks = {
   fontWeight: "normal",
   fontSize: "2.5vw",
   lineHeight: "3vw",
+  height: "3vw",
   color: "#FFFFFF",
-  textAlign: "center",
-  paddingTop: "1vw",
+  whiteSpace: "nowrap",
+  // margin: "auto",
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  // textAlign: "center",
+  // top: "20%",
 };
+
+const aboutlinks2 = {
+  fontFamily: "Montserrat",
+  fontWeight: "normal",
+  fontSize: "2.5vw",
+  color: "#FFFFFF",
+  margin: "auto",
+  textAlign: "center",
+  position: "relative",
+
+  // top: "50%",
+  // transform: "translateY(-50%)",
+};
+
 const overlayboxes = {
   background: "#FFFFFF",
   border: "5px solid #8CD6D1",
@@ -578,19 +599,28 @@ class About extends Component {
               width: "100%",
               height: "7vw",
               marginTop: "-3vw",
+              position: "relative",
             }}
           >
-            <Grid.Column width={4} style={aboutlinks}>
-              <div onClick={this.scrollWho}>Who we are</div>
+            <Grid.Column width={4}>
+              <div onClick={this.scrollWho} style={aboutlinks}>
+                Who we are
+              </div>
             </Grid.Column>
-            <Grid.Column style={aboutlinks}>
-              <div onClick={this.scrollJoin}>Why Join?</div>
+            <Grid.Column width={4} style={{ aboutlinks2 }}>
+              <div onClick={this.scrollJoin} style={aboutlinks}>
+                Why Join?
+              </div>
             </Grid.Column>
-            <Grid.Column style={aboutlinks}>
-              <div onClick={this.scrollFind}>Find your place</div>
+            <Grid.Column width={4} style={{ aboutlinks2 }}>
+              <div onClick={this.scrollFind} style={aboutlinks}>
+                Find your place
+              </div>
             </Grid.Column>
-            <Grid.Column style={aboutlinks}>
-              <div onClick={this.scrollTeam}>Our Team</div>
+            <Grid.Column width={4} style={{ aboutlinks2 }}>
+              <div onClick={this.scrollTeam} style={aboutlinks}>
+                Our Team
+              </div>
             </Grid.Column>
           </Grid.Row>
           {/* <div id="who"> */}
