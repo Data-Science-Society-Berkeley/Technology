@@ -25,7 +25,7 @@ import ocf from "./Backgrounds/ocf-hosted-penguin.svg";
 
 let endpoint = "https://dssberkeley.com/";
 const gridoffset = {
-  marginLeft: "7vw",
+  marginLeft: "6vw",
   marginTop: "5vw",
   textAlign: "center",
   fontFamily: "Montserrat",
@@ -39,6 +39,7 @@ const mybigtext = {
   fontStyle: "normal",
   textAlign: "left",
   marginTop: "3vw",
+  marginLeft: "-2vw",
 };
 const mymidtext = {
   fontFamily: "Montserrat",
@@ -49,6 +50,7 @@ const mymidtext = {
   fontStyle: "normal",
   textAlign: "left",
   marginTop: "-2vw",
+  marginLeft: "-2vw",
 };
 
 const overlaytext = {
@@ -345,7 +347,7 @@ class CentralText extends Component {
                 floated="right"
                 src={topright}
               ></Image>
-              <Button.Group style={{ marginRight: "20vw", marginTop: "9vw" }}>
+              <Button.Group style={{ marginRight: "20vw", marginTop: "5vw" }}>
                 <Link to="/apply">
                   <Button style={apply} circular>
                     APPLY
@@ -362,7 +364,7 @@ class CentralText extends Component {
           style={{
             width: "110%",
             backgroundColor: "white",
-            marginTop: "16vw",
+            marginTop: "10vw",
           }}
         >
           <Grid.Row>
