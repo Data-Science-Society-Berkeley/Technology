@@ -342,7 +342,7 @@ class CentralText extends Component {
               textAlign="center"
               floated="right"
               verticalAlign="top"
-              style={{ position: "absolute", left: "30%" }}
+              style={{ position: "absolute", left: "40%" }}
             >
               <Image
                 style={{
