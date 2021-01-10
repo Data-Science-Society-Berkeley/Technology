@@ -32,13 +32,14 @@ class Footer extends Component {
     render() {
         return (
             <Segment vertical
-        style={{
-          width: "100%",
-          height: "43vw",
-          background: "#E5E5E5",
-        }}
-      ></Segment>
-        )
-            
+            style={{
+                width: "100%",
+                height: "43vw",
+            background: "#E5E5E5",
+            }}>
+                
+
+            </Segment>
+        ) 
         
     }

@@ -820,7 +820,7 @@ class App extends Component {
                 <Helmet
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
-                <NavBar2 {...props} componentid={Service} />
+                <NavBar2 {...props} componentid={"services"} />
                 {/* <Footer></Footer> */}
               </div>
             )}

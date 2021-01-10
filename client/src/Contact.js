@@ -55,7 +55,7 @@ const formStyle = {
   marginTop: "1.5vw",
   color: "#FFFFFF",
   borderRadius: "1vw",
-  fontSize: "1.5vw",
+  fontSize: "2vw",
 };
 const formStyle2 = {
   width: "47vw",
@@ -185,6 +185,7 @@ class Login extends Component {
                 width={6}
                 id="text"
                 placeholder="Name"
+                // size="small"
               />
               <br />
               <input

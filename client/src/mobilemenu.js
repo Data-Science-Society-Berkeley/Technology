@@ -219,6 +219,23 @@ class NavBar2 extends Component {
           ></iframe>
         </div>
       );
+    } else if (this.props.componentid === "services") {
+      console.log("Hello", this.props.componentid);
+      return (
+        <div>
+          <Service />
+          <div
+            style={{
+              backgroundColor: "#8CD6D1",
+              marginRight: "-35vw",
+              marginTop: "0px",
+              paddingBottom: "11vw",
+            }}
+          >
+            <Contact></Contact>
+          </div>
+        </div>
+      );
     } else {
       return <this.props.componentid />;
     }
