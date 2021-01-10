@@ -853,6 +853,19 @@ class App extends Component {
               </div>
             )}
           />
+
+          <Route
+            exact
+            path="/apply"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar2 {...props} componentid={"apply"} />
+              </div>
+            )}
+          />
         </Switch>
       );
     }

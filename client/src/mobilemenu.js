@@ -140,7 +140,7 @@ class NavBar2 extends Component {
 
   handleMenuItemClick = () => {
     this.setState({ width: "wide" });
-    console.log("this");
+    // console.log("this");
   };
 
   handleMenuItemClickToggle = (event) => {
@@ -151,7 +151,7 @@ class NavBar2 extends Component {
   handleToggle = (event) => {
     event.stopPropagation();
     this.setState({ visible: !this.state.visible });
-    console.log("hi");
+    // console.log("hi");
   };
   handleSettingVisibleToFalse = (event) => {
     // if (this.state.visible === true) {
@@ -199,9 +199,34 @@ class NavBar2 extends Component {
     );
   }
 
+  generateApplyScreen() {
+    if (this.props.componentid === "apply") {
+      console.log("Hello ", this.props.componentid);
+      return (
+        <div>
+          <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+          <iframe
+            class="airtable-embed airtable-dynamic-height"
+            src="https://airtable.com/embed/shrfYM5C3nk3tacyN?backgroundColor=green"
+            frameborder="0"
+            onmousewheel=""
+            width="100%"
+            height="2849"
+            style={{
+              background: "transparent",
+              border: "1px solid #ccc",
+            }}
+          ></iframe>
+        </div>
+      );
+    } else {
+      return <this.props.componentid />;
+    }
+  }
+
   setCircle() {
     //TODO ensure first guys margin is effectively 24
-    console.log(this.state.activeStyle);
+    // console.log(this.state.activeStyle);
     if (this.state.activeStyle) {
       return whiteLogo;
     } else {
@@ -211,7 +236,7 @@ class NavBar2 extends Component {
 
   setBackgroundMenuColor() {
     //TODO ensure first guys margin is effectively 24
-    console.log(this.state.activeStyle);
+    // console.log(this.state.activeStyle);
     if (!this.state.activeStyle) {
       return "#FFFFFF";
     } else {
@@ -245,10 +270,11 @@ class NavBar2 extends Component {
   // }
 
   render() {
-    var logo = this.setCircle();
-    var backgroundColor = this.setBackgroundMenuColor();
-    var titleColor = this.setTitleColor();
-    var barColor = this.setBarColor();
+    const logo = this.setCircle();
+    const backgroundColor = this.setBackgroundMenuColor();
+    const titleColor = this.setTitleColor();
+    const barColor = this.setBarColor();
+    const screenContent = this.generateApplyScreen();
     return (
       <Sidebar.Pushable>
         <Sidebar
@@ -460,6 +486,31 @@ class NavBar2 extends Component {
               </div>
             </Link>
           </Menu.Item>
+
+          <Menu.Item as="a">
+            <Link to="/apply">
+              <div style={{ marginTop: "2vw", marginBottom: "2vw" }}>
+                <div>
+                  <div
+                    style={{ fontSize: "5vw", color: "#8CD6D1" }}
+                    direction="right"
+                  >
+                    <Icon name="pencil" />
+                  </div>
+                  <div
+                    direction="left"
+                    style={{
+                      fontSize: "3vw",
+                      marginTop: "1vw",
+                      color: "#000000",
+                    }}
+                  >
+                    Apply
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </Menu.Item>
         </Sidebar>
         <Sidebar.Pusher
           dimmed={this.state.visible}
@@ -481,7 +532,6 @@ class NavBar2 extends Component {
                     src={logo}
                     style={{
                       position: "absolute",
-                      onClick: this.handleMenuItemClickToggle,
                       marginTop: "-3vw",
                       display: "inline-block",
                       width: "6vw",
@@ -520,8 +570,7 @@ class NavBar2 extends Component {
                 <Image size="mini" src={logo} onClick={this.handleToggle} />
               </Menu.Item> */}
             </Menu>
-            <this.state.componentActive />
-            <Footer> </Footer>
+            {screenContent}
           </Segment>
         </Sidebar.Pusher>
       </Sidebar.Pushable>

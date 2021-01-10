@@ -404,8 +404,8 @@ class CentralText extends Component {
             style={{
               fontFamily: "Montserrat",
               fontWeight: "21vw",
-              fontSize: "2vw",
-              lineHeight: "2.5vw",
+              fontSize: "2.5vw",
+              lineHeight: "3vw",
               color: "#000000",
               width: "77vw",
               marginLeft: "7vw",

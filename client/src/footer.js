@@ -27,26 +27,26 @@ let endpoint = "http://localhost:8080/test";
 const footer = {
   color: "#000000",
   fontFamily: "Montserrat",
-  fontSize: "18px",
+  fontSize: "1vw",
   fontStyle: "normal",
-  lineHeight: "22px",
+  lineHeight: "1.5vw",
 };
 const iconDesc = {
   color: "#000000",
   fontFamily: "Montserrat",
-  fontSize: "18px",
+  fontSize: "1vw",
   fontStyle: "normal",
-  lineHeight: "22px",
-  marginLeft: "18px",
+  lineHeight: "1.5vw",
+  marginLeft: "1.5vw",
   marginTop: "0px",
   verticalAlign: "middle",
 };
 const link = {
   color: "#000000",
   fontFamily: "Montserrat",
-  fontSize: "18px",
+  fontSize: "1vw",
   fontStyle: "normal",
-  lineHeight: "22px",
+  lineHeight: "1.5vw",
   fontWeight: "600",
 };
 class Footer extends Component {
@@ -66,12 +66,8 @@ class Footer extends Component {
         <Container>
           <Grid divided inverted stackable>
             <Grid.Row>
-              <div style={{ marginLeft: "-20%", marginTop: "24px" }}>
-                <Image
-                  inline
-                  src={logo}
-                  style={{ width: "5vw", height: "5vw" }}
-                ></Image>
+              <div style={{ marginLeft: "-20%", marginTop: "1.5vw" }}>
+                <Image inline src={logo} style={{ width: "5vw" }}></Image>
                 <div
                   style={{
                     marginLeft: "7vw",
@@ -89,26 +85,27 @@ class Footer extends Component {
             </Grid.Row>
             <Grid.Row style={{ marginBottom: "1vw", marginTop: "1.5vw" }}>
               <Grid.Column width={8}>
-                <Icon.Group size="huge" style={{ marginLeft: "-20%" }}>
+                {/* <Icon.Group size="huge" style={{ marginLeft: "-20%" }}> */}
+                <div style={{ fontSize: "3vw" }}>
                   <a href="mailto:info@dss.berkeley.edu">
                     <Icon
                       name="mail outline"
                       style={{
                         marginBottom: "1vw",
                         color: "#8CD6D1",
-                        height: "3vw",
+                        width: "3vw",
                       }}
                     ></Icon>
                   </a>
                   <span style={iconDesc}>
-                    <span style={{ marginLeft: "-8px" }}> Email</span>{" "}
+                    <span style={{ marginLeft: ".5vw" }}> Email</span>{" "}
                   </span>
                   <br />
                   <a href="https://www.instagram.com/dssberkeley/">
                     {" "}
                     <Icon
                       name="instagram"
-                      style={{ marginBottom: "14px", color: "#8CD6D1" }}
+                      style={{ marginBottom: "1vw", color: "#8CD6D1" }}
                     />
                     <span style={iconDesc}> Instagram</span>
                   </a>{" "}
@@ -117,7 +114,7 @@ class Footer extends Component {
                     {" "}
                     <Icon
                       name="facebook"
-                      style={{ marginBottom: "14px", color: "#8CD6D1" }}
+                      style={{ marginBottom: "1vw", color: "#8CD6D1" }}
                     ></Icon>
                     <span style={iconDesc}> Facebook</span>
                   </a>
@@ -126,7 +123,7 @@ class Footer extends Component {
                     {" "}
                     <Icon
                       name="linkedin"
-                      style={{ marginBottom: "14px", color: "#8CD6D1" }}
+                      style={{ marginBottom: "1vw", color: "#8CD6D1" }}
                     ></Icon>
                     <span style={iconDesc}> LinkedIn</span>
                   </a>
@@ -136,18 +133,19 @@ class Footer extends Component {
                     <Icon
                       name="youtube"
                       style={{
-                        marginBottom: "10px",
+                        marginBottom: "1vw",
                         color: "#8CD6D1",
-                        marginLeft: "-8px",
+                        marginLeft: "-.25vw",
                       }}
                     ></Icon>
                     <span style={iconDesc}>
                       {" "}
-                      <span style={{ marginLeft: "-8px" }}>YouTube</span>
+                      <span style={{ marginLeft: ".4vw" }}>YouTube</span>
                     </span>
                   </a>
-                  <br />
-                </Icon.Group>
+                </div>
+                <br />
+                {/* </Icon.Group> */}
               </Grid.Column>
               <Grid.Column width={2}>
                 <div style={link}>General</div>
@@ -233,7 +231,7 @@ class Footer extends Component {
               </Grid.Column>
               <Grid.Column width={2}>
                 <div style={link}>
-                  <div style={{ width: "150px" }}>Program Pages </div>
+                  <div style={{ width: "15vw" }}>Program Pages </div>
                 </div>
                 <List link inverted>
                   <Link to="/gm">
@@ -254,7 +252,7 @@ class Footer extends Component {
               </Grid.Column>
               <Grid.Column
                 width={2}
-                style={{ marginRight: "-100px", marginLeft: "50px" }}
+                style={{ marginRight: "-7vw", marginLeft: "3vw" }}
               >
                 <Link to="/services">
                   {" "}
@@ -270,7 +268,7 @@ class Footer extends Component {
                 </List>
               </Grid.Column>
             </Grid.Row>
-            <Grid.Row centered style={{ marginBottom: "22px" }}>
+            <Grid.Row centered style={{ marginBottom: "1.5vw" }}>
               <div style={footer}>
                 We are a student group acting independently of the University of
                 California. We take full responsibility for our organization and
