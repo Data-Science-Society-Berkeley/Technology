@@ -54,23 +54,34 @@ const button = {
   background: "#8CD6D1",
   marginLeft: "70px",
 };
+const cardstyle = {
+  width: "28vw",
+  maxHeight: "56vw",
+  // height: "800px",
+  marginBottom: "1vw",
+  marginleft: "2vw",
+};
+const imagestyle = {
+  height: "28vw",
+  maxHeight: "28vw",
+  width: "28vw",
+  maxWidth: "28vw",
+};
 const textstyle = {
   fontFamily: "Montserrat",
   fontWeight: 300,
-  fontSize: "37px",
+  fontSize: "3vw",
+  lineHeight: "3vw",
   color: "#8CD6D1",
+  marginTop: ".5vw",
 };
-const cardstyle = {
-  width: "400px",
-  // height: "800px",
-  marginBottom: "10px",
-  marginleft: "20px",
-};
-const imagestyle = {
-  height: "auto",
-  maxHeight: "500px",
-  width: "auto",
-  maxWidth: "400px",
+
+const roleStyle = {
+  fontFamily: "Montserrat",
+  fontWeight: 300,
+  fontSize: "2vw",
+  lineHeight: "2vw",
+  color: "#8CD6D1",
 };
 const mymidtext = {
   fontFamily: "Montserrat",
@@ -320,8 +331,8 @@ class Social extends Component {
                 <Image style={imagestyle} src={charlie} />
                 <Card.Content>
                   <Card.Header style={textstyle}>Charlie Duarte</Card.Header>
-                  <Card.Meta>
-                    <span className="date">Director of 'Good</span>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>Director of 'Good</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>

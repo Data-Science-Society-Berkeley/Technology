@@ -109,18 +109,34 @@ const button = {
 //   maxWidth: "25vw",
 // };
 const cardstyle = {
-  width: "300px",
+  width: "28vw",
+  maxHeight: "56vw",
   // height: "800px",
-  marginBottom: "10px",
-  marginleft: "20vw",
-  // paddingLeft: "5vw",
-  textAlign: "center",
+  marginBottom: "1vw",
+  marginleft: "2vw",
 };
 const imagestyle = {
-  height: "300px",
-  maxHeight: "300px",
-  width: "300px",
-  maxWidth: "300px",
+  height: "28vw",
+  maxHeight: "28vw",
+  width: "28vw",
+  maxWidth: "28vw",
+};
+const textstyleNew = {
+  fontFamily: "Montserrat",
+  fontWeight: 300,
+  fontSize: "3vw",
+  lineHeight: "3vw",
+  color: "#8CD6D1",
+  marginTop: ".5vw",
+};
+
+const roleStyle = {
+  fontFamily: "Montserrat",
+  fontWeight: 300,
+  fontSize: "2vw",
+  lineHeight: "2vw",
+  color: "#8CD6D1",
+  marginBottom: "-1vw",
 };
 const overlayboxes = {
   background: "#F8F8F8",
@@ -509,14 +525,14 @@ class Acadev extends Component {
           </Grid.Row>
           {CustomTitle({ title: "AcaDev Directors" })}
           <Grid.Row>
-            <Card.Group stackable doubling style={{ marginTop: "5vw" }}>
+            <Card.Group style={{ marginTop: "5vw" }}>
               <Card style={cardstyle}>
                 {" "}
                 <Image style={imagestyle} src={alleanna} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Alleanna Clark</Card.Header>
-                  <Card.Meta>
-                    <span className="date">Director of Acadev</span>
+                  <Card.Header style={textstyleNew}>Alleanna Clark</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>Director of Acadev</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
@@ -532,9 +548,9 @@ class Acadev extends Component {
                 {" "}
                 <Image style={imagestyle} src={steph} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Stephanie Lu</Card.Header>
-                  <Card.Meta>
-                    <span className="date">Director of Acadev</span>
+                  <Card.Header style={textstyleNew}>Stephanie Lu</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>Director of Acadev</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
@@ -550,9 +566,9 @@ class Acadev extends Component {
                 {" "}
                 <Image style={imagestyle} src={roshan} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Roshan Lodha</Card.Header>
-                  <Card.Meta>
-                    <span className="date">Director of Acadev</span>
+                  <Card.Header style={textstyleNew}>Roshan Lodha</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>Director of Acadev</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>

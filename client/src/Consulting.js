@@ -64,12 +64,6 @@ const generalmember = {
   marginTop: "1vw",
   textAlign: "left",
 };
-const imagestyle = {
-  height: "300px",
-  maxHeight: "300px",
-  width: "300px",
-  maxWidth: "300px",
-};
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -78,12 +72,7 @@ const gridoffset = {
   textAlign: "center",
   fontFamily: "Montserrat",
 };
-const textstyle = {
-  fontFamily: "Montserrat",
-  fontWeight: 300,
-  fontSize: "2.5vw",
-  color: "#8CD6D1",
-};
+
 const overlayboxes = {
   background: "#F8F8F8",
   border: "5px solid #8CD6D1",
@@ -173,13 +162,35 @@ const smallconsult = {
   marginLeft: "49px",
 };
 const cardstyle = {
-  width: "300px",
+  width: "28vw",
+  maxHeight: "56vw",
   // height: "800px",
-  marginBottom: "10px",
-  marginleft: "20vw",
-  // paddingLeft: "5vw",
-  textAlign: "center",
+  marginBottom: "1vw",
+  marginleft: "2vw",
 };
+const imagestyle = {
+  height: "28vw",
+  maxHeight: "28vw",
+  width: "28vw",
+  maxWidth: "28vw",
+};
+const textstyle = {
+  fontFamily: "Montserrat",
+  fontWeight: 300,
+  fontSize: "3vw",
+  lineHeight: "3vw",
+  color: "#8CD6D1",
+  marginTop: ".5vw",
+};
+
+const roleStyle = {
+  fontFamily: "Montserrat",
+  fontWeight: 300,
+  fontSize: "2vw",
+  lineHeight: "2vw",
+  color: "#8CD6D1",
+};
+
 const link = {
   fontFamily: "Montserrat",
   fontWeight: 300,
@@ -233,8 +244,8 @@ class Consulting extends Component {
         <Image src={samir} style={imagestyle} />
         <Card.Content>
           <Card.Header style={textstyle}>Samir Puranik</Card.Header>
-          <Card.Meta style={{ textAlign: "center" }}>
-            <span className="date">Director of Consulting</span>
+          <Card.Meta style={{ marginTop: "1vw" }}>
+            <span style={roleStyle}>Director of Consulting</span>
             {/* TODO: Remove "date" class and use regular centered text instead */}
           </Card.Meta>
         </Card.Content>
@@ -251,10 +262,8 @@ class Consulting extends Component {
         <Image src={rick} style={imagestyle} />
         <Card.Content>
           <Card.Header style={textstyle}>Rick Zhang</Card.Header>
-          <Card.Meta>
-            <span className="date" style={{ textAlign: "center" }}>
-              PM
-            </span>
+          <Card.Meta style={{ marginTop: "1vw" }}>
+            <span style={roleStyle}>PM</span>
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
@@ -270,8 +279,8 @@ class Consulting extends Component {
         <Image src={pranav} style={imagestyle} />
         <Card.Content>
           <Card.Header style={textstyle}>Pranav Krishnan</Card.Header>
-          <Card.Meta>
-            <span className="date">PM</span>
+          <Card.Meta style={{ marginTop: "1vw" }}>
+            <span style={roleStyle}>PM</span>
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
@@ -287,8 +296,8 @@ class Consulting extends Component {
         <Image src={alina} style={imagestyle} />
         <Card.Content>
           <Card.Header style={textstyle}>Alina Trinh</Card.Header>
-          <Card.Meta>
-            <span className="date">PM</span>
+          <Card.Meta style={{ marginTop: "1vw" }}>
+            <span style={roleStyle}>PM</span>
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
@@ -306,8 +315,8 @@ class Consulting extends Component {
         <Image src={kevinmiao} yle={imagestyle} />
         <Card.Content>
           <Card.Header style={textstyle}>Kevin Miao</Card.Header>
-          <Card.Meta>
-            <span className="date">PM</span>
+          <Card.Meta style={{ marginTop: "1vw" }}>
+            <span style={roleStyle}>PM</span>
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
@@ -323,8 +332,8 @@ class Consulting extends Component {
         <Image src={pooja} style={imagestyle} />
         <Card.Content>
           <Card.Header style={textstyle}>Pooja Eega</Card.Header>
-          <Card.Meta>
-            <span className="date">PM</span>
+          <Card.Meta style={{ marginTop: "1vw" }}>
+            <span style={roleStyle}>PM</span>
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
@@ -340,8 +349,8 @@ class Consulting extends Component {
         <Image src={avik} style={imagestyle} />
         <Card.Content>
           <Card.Header style={textstyle}>Avik Sethia</Card.Header>
-          <Card.Meta>
-            <span className="date">PM</span>
+          <Card.Meta style={{ marginTop: "1vw" }}>
+            <span style={roleStyle}>PM</span>
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
@@ -357,8 +366,8 @@ class Consulting extends Component {
         <Image src={andy} style={imagestyle} />
         <Card.Content>
           <Card.Header style={textstyle}>Andy Xia</Card.Header>
-          <Card.Meta>
-            <span className="date">PM</span>
+          <Card.Meta style={{ marginTop: "1vw" }}>
+            <span style={roleStyle}>PM</span>
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
@@ -376,8 +385,8 @@ class Consulting extends Component {
         <Image src={grace} style={imagestyle} />
         <Card.Content>
           <Card.Header style={textstyle}>Grace Qiu</Card.Header>
-          <Card.Meta>
-            <span className="date">PM</span>
+          <Card.Meta style={{ marginTop: "1vw" }}>
+            <span style={roleStyle}>PM</span>
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
@@ -393,8 +402,8 @@ class Consulting extends Component {
         <Image src={aadiraj} style={imagestyle} />
         <Card.Content>
           <Card.Header style={textstyle}>Aadiraj Batlaw</Card.Header>
-          <Card.Meta>
-            <span className="date">PM</span>
+          <Card.Meta style={{ marginTop: "1vw" }}>
+            <span style={roleStyle}>PM</span>
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
@@ -410,8 +419,8 @@ class Consulting extends Component {
         <Image src={young} style={imagestyle} />
         <Card.Content>
           <Card.Header style={textstyle}>Youngli Hong</Card.Header>
-          <Card.Meta>
-            <span className="date">PM</span>
+          <Card.Meta style={{ marginTop: "1vw" }}>
+            <span style={roleStyle}>PM</span>
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>

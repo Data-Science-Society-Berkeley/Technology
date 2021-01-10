@@ -93,6 +93,7 @@ const textstyle = {
   fontSize: "3vw",
   lineHeight: "3vw",
   color: "#8CD6D1",
+  marginTop: ".5vw",
 };
 
 const roleStyle = {

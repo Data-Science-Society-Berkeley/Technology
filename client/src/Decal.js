@@ -59,24 +59,34 @@ const button = {
   textAlign: "center",
   background: "#8CD6D1",
 };
+const cardstyle = {
+  width: "28vw",
+  maxHeight: "56vw",
+  // height: "800px",
+  marginBottom: "1vw",
+  marginleft: "2vw",
+};
+const imagestyle = {
+  height: "28vw",
+  maxHeight: "28vw",
+  width: "28vw",
+  maxWidth: "28vw",
+};
 const textstyle = {
   fontFamily: "Montserrat",
   fontWeight: 300,
-  fontSize: "2.5vw",
+  fontSize: "3vw",
+  lineHeight: "3vw",
   color: "#8CD6D1",
+  marginTop: ".5vw",
 };
-const cardstyle = {
-  width: "300px",
-  // height: "800px",
-  marginBottom: "10px",
-  marginleft: "20vw",
-  textAlign: "center",
-};
-const imagestyle = {
-  height: "300px",
-  maxHeight: "300px",
-  width: "300px",
-  maxWidth: "300px",
+
+const roleStyle = {
+  fontFamily: "Montserrat",
+  fontWeight: 300,
+  fontSize: "2vw",
+  lineHeight: "2vw",
+  color: "#8CD6D1",
 };
 const mymidtext = {
   fontFamily: "Montserrat",
@@ -399,8 +409,8 @@ class Decal extends Component {
                 <Image style={imagestyle} src={kate} />
                 <Card.Content>
                   <Card.Header style={textstyle}>Kate Miller</Card.Header>
-                  <Card.Meta>
-                    <span className="date">Director of DeCal</span>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>Director of DeCal</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
@@ -416,9 +426,9 @@ class Decal extends Component {
                 {" "}
                 <Image style={imagestyle} src={uma} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Uma Krishnaswamy</Card.Header>
-                  <Card.Meta>
-                    <span className="date">Director of DeCal</span>
+                  <Card.Header style={textstyle}>Uma K</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>Director of DeCal</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
@@ -435,8 +445,8 @@ class Decal extends Component {
                 <Image style={imagestyle} src={gaya} />
                 <Card.Content>
                   <Card.Header style={textstyle}>Gayatri Babel</Card.Header>
-                  <Card.Meta>
-                    <span className="date">Director of DeCal</span>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>Director of DeCal</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
