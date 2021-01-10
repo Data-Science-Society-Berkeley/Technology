@@ -29,7 +29,6 @@ const gridoffset = {
   marginTop: "5vw",
   textAlign: "center",
   fontFamily: "Montserrat",
-  position: "relative",
 };
 const mybigtext = {
   fontFamily: "Montserrat",
@@ -325,7 +324,7 @@ class CentralText extends Component {
               <Header as="h1" style={mymidtext}>
                 At Berkeley
               </Header>
-              <Image
+              {/* <Image
                 style={{
                   height: "25vw",
                   marginTop: "3vw",
@@ -334,25 +333,21 @@ class CentralText extends Component {
                 }}
                 floated="left"
                 src={bottomright}
-              ></Image>
+              ></Image> */}
             </Grid.Column>
 
             <Grid.Column textAlign="center" floated="right" verticalAlign="top">
               <Image
                 style={{
                   height: "25vw",
-                  marginTop: "-25vw",
+                  marginTop: "-20vw",
                   // marginBottom: "-10vw",
-                  // top: "10%",
-                  left: "20%",
-                  // transform: "translate(-50, -50)",
                   marginRight: "1.5vw",
-                  position: "absolute",
                 }}
                 floated="right"
                 src={topright}
               ></Image>
-              <Button.Group style={{ marginRight: "20vw", marginTop: "15vw" }}>
+              {/* <Button.Group style={{ marginRight: "20vw", marginTop: "15vw" }}>
                 <Link to="/apply">
                   <Button style={apply} circular>
                     APPLY
@@ -361,7 +356,7 @@ class CentralText extends Component {
                 <Button onClick={this.moveAbout} style={learn} circular>
                   LEARN MORE{" "}
                 </Button>
-              </Button.Group>
+              </Button.Group> */}
             </Grid.Column>
           </Grid.Row>
         </Grid>
