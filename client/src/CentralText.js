@@ -337,18 +337,17 @@ class CentralText extends Component {
             </Grid.Column>
 
             <Grid.Column textAlign="center" floated="right" verticalAlign="top">
-              <Header></Header>
               <Image
                 style={{
                   height: "25vw",
-                  marginBottom: "7vw",
                   marginTop: "-25vw",
+                  marginBottom: "-10vw",
                   marginRight: "1.5vw",
                 }}
                 floated="right"
                 src={topright}
               ></Image>
-              <Button.Group style={{ marginRight: "20vw", marginTop: "5vw" }}>
+              <Button.Group style={{ marginRight: "20vw", marginTop: "15vw" }}>
                 <Link to="/apply">
                   <Button style={apply} circular>
                     APPLY
