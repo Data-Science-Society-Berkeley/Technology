@@ -559,11 +559,12 @@ class NavBar2 extends Component {
                 </span>
               </div>
               <Menu.Item
+                // size="small"
                 position="right"
                 onClick={this.handleToggle}
                 style={{ color: "#ffffff" }}
               >
-                <Icon name="sidebar" style={{ color: barColor }} size="big" />
+                <Icon name="sidebar" style={{ color: barColor }} size="med" />
               </Menu.Item>
 
               {/* <Menu.Item position="center">
