@@ -171,7 +171,7 @@ class Login extends Component {
           <Grid.Column
             width={6}
             verticalAlign="center"
-            style={{ position: "absolute", left: "0%", width: "50vw" }}
+            style={{ position: "absolute", left: "-5%", width: "50vw" }}
           >
             <Header as="h1" style={mybigtext}>
               Contact us Here!
@@ -181,7 +181,7 @@ class Login extends Component {
           <Grid.Column
             width={6}
             floated="left"
-            style={{ position: "relative", left: "40%", width: "50vw" }}
+            style={{ position: "relative", left: "33%", width: "50vw" }}
           >
             <Form
               success={this.state.success}
