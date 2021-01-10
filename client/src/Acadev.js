@@ -253,7 +253,7 @@ class Acadev extends Component {
           <Image src={story}></Image>
           <div
             style={{
-              width: "100%",
+              width: "120%",
               textAlign: "center",
               color: "#FFFFFF",
             }}

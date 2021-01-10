@@ -26,9 +26,11 @@ import ocf from "./Backgrounds/ocf-hosted-penguin.svg";
 let endpoint = "https://dssberkeley.com/";
 const gridoffset = {
   marginLeft: "6vw",
-  marginTop: "5vw",
+  // marginTop: "5vw",
   textAlign: "center",
   fontFamily: "Montserrat",
+  position: "relative",
+  marginBottom: "33vw",
 };
 const mybigtext = {
   fontFamily: "Montserrat",
@@ -318,7 +320,10 @@ class CentralText extends Component {
         {/* <NavBar2 {...this.props} /> */}
         {/* <Segment style={{ padding: "8em 0em" }} vertical> */}
         <Grid divided="vertically" style={gridoffset} className="pusher">
-          <Grid.Row columns={2}>
+          <Grid.Row
+            columns={2}
+            style={{ marginTop: "0", position: "relative" }}
+          >
             <Grid.Column width={9}>
               <Header style={mybigtext}>Data Science Society</Header>
               <Header as="h1" style={mymidtext}>
@@ -336,18 +341,30 @@ class CentralText extends Component {
               ></Image>
             </Grid.Column>
 
-            <Grid.Column textAlign="center" floated="right" verticalAlign="top">
+            <Grid.Column
+              textAlign="center"
+              floated="right"
+              verticalAlign="top"
+              style={{ position: "absolute", left: "60%" }}
+            >
               <Image
                 style={{
                   height: "25vw",
-                  marginTop: "-20vw",
-                  marginBottom: "-10vw",
-                  marginRight: "1.5vw",
+                  // marginTop: "-20vw",
+                  // marginBottom: "-10vw",
+                  // marginRight: "1.5vw",
+                  // marginLeft: "20vw",
+                  position: "absolute",
                 }}
                 floated="right"
                 src={topright}
               ></Image>
-              <Button.Group style={{ marginRight: "20vw", marginTop: "15vw" }}>
+              <Button.Group
+                style={{
+                  marginRight: "100vw",
+                  marginTop: "35vw",
+                }}
+              >
                 <Link to="/apply">
                   <Button style={apply} circular>
                     APPLY
