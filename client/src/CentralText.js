@@ -324,7 +324,7 @@ class CentralText extends Component {
               <Header as="h1" style={mymidtext}>
                 At Berkeley
               </Header>
-              {/* <Image
+              <Image
                 style={{
                   height: "25vw",
                   marginTop: "3vw",
@@ -333,7 +333,7 @@ class CentralText extends Component {
                 }}
                 floated="left"
                 src={bottomright}
-              ></Image> */}
+              ></Image>
             </Grid.Column>
 
             <Grid.Column textAlign="center" floated="right" verticalAlign="top">
@@ -341,13 +341,13 @@ class CentralText extends Component {
                 style={{
                   height: "25vw",
                   marginTop: "-20vw",
-                  // marginBottom: "-10vw",
+                  marginBottom: "-10vw",
                   marginRight: "1.5vw",
                 }}
                 floated="right"
                 src={topright}
               ></Image>
-              {/* <Button.Group style={{ marginRight: "20vw", marginTop: "15vw" }}>
+              <Button.Group style={{ marginRight: "20vw", marginTop: "15vw" }}>
                 <Link to="/apply">
                   <Button style={apply} circular>
                     APPLY
@@ -356,7 +356,7 @@ class CentralText extends Component {
                 <Button onClick={this.moveAbout} style={learn} circular>
                   LEARN MORE{" "}
                 </Button>
-              </Button.Group> */}
+              </Button.Group>
             </Grid.Column>
           </Grid.Row>
         </Grid>
@@ -418,7 +418,7 @@ class CentralText extends Component {
                   fontSize: "2.5vw",
                   lineHeight: "3vw",
                   color: "#FFC54A",
-                  marginLeft: "17vw",
+                  marginLeft: "10vw",
                 }}
               >
                 Learn More >
