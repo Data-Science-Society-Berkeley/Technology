@@ -500,7 +500,7 @@ class CentralText extends Component {
           </Grid.Row>
           <Grid.Row columns={1}>
             <Grid.Column
-              width={6}
+              width={10}
               style={{
                 marginLeft: "7vw",
                 fontFamily: "Montserrat",
