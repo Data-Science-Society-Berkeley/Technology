@@ -337,6 +337,7 @@ class CentralText extends Component {
             </Grid.Column>
 
             <Grid.Column textAlign="center" floated="right" verticalAlign="top">
+              <Header></Header>
               <Image
                 style={{
                   height: "25vw",
