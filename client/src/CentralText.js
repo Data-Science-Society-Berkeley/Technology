@@ -29,6 +29,7 @@ const gridoffset = {
   marginTop: "5vw",
   textAlign: "center",
   fontFamily: "Montserrat",
+  position: "relative",
 };
 const mybigtext = {
   fontFamily: "Montserrat",
@@ -341,8 +342,12 @@ class CentralText extends Component {
                 style={{
                   height: "25vw",
                   marginTop: "-25vw",
-                  marginBottom: "-10vw",
+                  // marginBottom: "-10vw",
+                  // top: "10%",
+                  left: "20%",
+                  // transform: "translate(-50, -50)",
                   marginRight: "1.5vw",
+                  position: "absolute",
                 }}
                 floated="right"
                 src={topright}
