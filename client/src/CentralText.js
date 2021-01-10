@@ -34,7 +34,7 @@ const mybigtext = {
   fontFamily: "Montserrat",
   fontWeight: 600,
   lineHeight: "8vw",
-  fontSize: "7vw",
+  fontSize: "5vw",
   color: "#FFFBFB",
   fontStyle: "normal",
   textAlign: "left",
@@ -48,6 +48,7 @@ const mymidtext = {
   color: "#FFFFFF",
   fontStyle: "normal",
   textAlign: "left",
+  marginTop: "-2vw",
 };
 
 const overlaytext = {
