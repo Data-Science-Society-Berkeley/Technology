@@ -528,10 +528,7 @@ class CentralText extends Component {
               Collaborate with us and grow our data science community!
             </Grid.Column>
             <Grid.Column textAlign="center">
-              <Card.Group
-                centered
-                style={{ marginTop: "6vw", marginRight: "14vw" }}
-              >
+              <Card.Group centered style={{ marginTop: "6vw" }}>
                 {process}
               </Card.Group>
             </Grid.Column>
