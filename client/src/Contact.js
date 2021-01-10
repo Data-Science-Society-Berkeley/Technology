@@ -47,7 +47,7 @@ const mymidtext = {
   marginLeft: "10%",
 };
 const formStyle = {
-  width: "47vw",
+  width: "40vw",
   height: "6vw",
   border: "2px solid #FFFAFA",
   boxSizing: "borderBox",
@@ -58,7 +58,7 @@ const formStyle = {
   fontSize: "2vw",
 };
 const formStyle2 = {
-  width: "47vw",
+  width: "40vw",
   height: "17vw",
   border: "2px solid #FFFAFA",
   boxSizing: "borderBox",
