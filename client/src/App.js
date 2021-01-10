@@ -658,7 +658,7 @@ class App extends Component {
     }
   }
   resize() {
-    let currentMobile = window.innerWidth <= 760;
+    let currentMobile = window.innerWidth <= 1000;
     if (currentMobile !== this.state.mobile) {
       this.setState({ mobile: currentMobile });
     }

@@ -337,7 +337,7 @@ class NavBar2 extends Component {
                     style={{ fontSize: "5vw", color: "#8CD6D1" }}
                     direction="right"
                   >
-                    <Icon name="users" />
+                    <Icon name="magnify" />
                   </div>
                   <div
                     direction="left"
