@@ -25,26 +25,26 @@ import ocf from "./Backgrounds/ocf-hosted-penguin.svg";
 
 let endpoint = "https://dssberkeley.com/";
 const gridoffset = {
-  marginLeft: "100px",
-  // marginTop: "-50vw",
+  marginLeft: "7vw",
+  marginTop: "5vw",
   textAlign: "center",
   fontFamily: "Montserrat",
 };
 const mybigtext = {
   fontFamily: "Montserrat",
   fontWeight: 600,
-  lineHeight: "110px",
-  fontSize: "78px",
+  lineHeight: "8vw",
+  fontSize: "7vw",
   color: "#FFFBFB",
   fontStyle: "normal",
   textAlign: "left",
-  marginTop: "35px",
+  marginTop: "3vw",
 };
 const mymidtext = {
   fontFamily: "Montserrat",
   fontWeight: 600,
-  lineHeight: "76px",
-  fontSize: "50px",
+  lineHeight: "6vw",
+  fontSize: "4vw",
   color: "#FFFFFF",
   fontStyle: "normal",
   textAlign: "left",
@@ -52,91 +52,93 @@ const mymidtext = {
 
 const overlaytext = {
   fontFamily: "Montserrat",
-  fontWeight: 500,
-  lineHeight: "78px",
-  fontSize: "64px",
-  color: "#000000",
+  fontWeight: "normal",
+  lineHeight: "5vw",
+  fontSize: "5vw",
+  color: "#FFFFFF",
   fontStyle: "normal",
   textAlign: "left",
-  marginLeft: "85px",
-  paddingTop: "83px",
+  marginLeft: "7vw",
+  paddingTop: "5vw",
 };
 const underlaytext = {
   fontFamily: "Montserrat",
   fontWeight: 300,
-  lineHeight: "37px",
-  fontSize: "30px",
+  lineHeight: "2.5vw",
+  fontSize: "2.5vw",
   color: "#000000",
   fontStyle: "normal",
   textAlign: "left",
-  marginLeft: "85px",
-  paddingTop: "85px",
+  marginLeft: "7vw",
+  paddingTop: "6vw",
 };
 const apply = {
-  minWidth: "325px",
+  minWidth: "23vw",
   fontFamily: "Montserrat",
   fontWeight: 600,
-  lineHeight: "55px",
-  fontSize: "36px",
-  borderRadius: "40px",
+  lineHeight: "4vw",
+  fontSize: "2.5vw",
+  borderRadius: "3vw",
   color: "#FFC54A",
   fontStyle: "normal",
   background: "#FFFFFF",
 };
 const learn = {
-  minWidth: "325px",
+  minWidth: "23vw",
   fontFamily: "Montserrat",
   fontWeight: 600,
-  lineHeight: "55px",
-  fontSize: "36px",
-  borderRadius: "40px",
+  lineHeight: "4vw",
+  fontSize: "2.5vw",
+  borderRadius: "3vw",
   color: "#FFC54A",
   fontStyle: "normal",
   background: "#FFFFFF",
-  marginLeft: "40px",
+  marginLeft: "5vw",
 };
 const formStyle = {
-  width: "1168px",
-  height: "88px",
+  width: "83vw",
+  height: "6vw",
   border: "1px solid #000000",
   boxSizing: "borderBox",
   backgroundColor: "transparent",
-  marginTop: "22px",
-  marginLeft: "93px",
+  marginTop: "1.5vw",
+  marginLeft: "7vw",
   color: "#000000",
-  fontSize: "24px",
+  fontSize: "1.5vw",
 };
 const buttonStyle = {
-  width: "289px",
-  height: "76px",
+  width: "21vw",
+  height: "5vw",
   fontFamily: "Montserrat",
   fontWeight: 300,
-  lineHeight: "37px",
-  fontSize: "24px",
+  lineHeight: "2.5vw",
+  fontSize: "1.5vw",
   color: "#FFFFFF",
   fontStyle: "normal",
   background: "#8CD6D1",
-  borderRadius: "40px",
-  marginTop: "44px",
+  borderRadius: "3vw",
+  marginTop: "3vw",
   boxSizing: "borderBox",
-  marginLeft: "980px",
+  marginLeft: "70vw",
 };
 const value_card = {
-  minWidth: "284px",
-  height: "306px",
+  // minWidth: "20vw",
+  height: "22vw",
+  width: "22vw",
+  // minHeight: "20vw",
   fontFamily: "Montserrat",
   fontWeight: 300,
-  lineHeight: "55px",
-  fontSize: "36px",
-  borderRadius: "40px",
+  lineHeight: "4vw",
+  fontSize: "2.5vw",
+  borderRadius: "2vw",
   color: "#FFC54A",
   fontStyle: "normal",
   background: "#8CD6D1",
   border: "5px solid #8CD6D1",
   boxSizing: "border-box",
   boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
-  borderRadius: "20px",
-  marginLeft: "61px",
+  borderRadius: "1.5vw",
+  marginLeft: "4vw",
 };
 class CentralText extends Component {
   constructor(props) {
@@ -174,11 +176,11 @@ class CentralText extends Component {
           style={{
             fontFamily: "Montserrat",
             fontStyle: "normal",
-            fontWeight: "600px",
-            fontSize: "48px",
-            lineHeight: "59px",
+            fontWeight: "45vw",
+            fontSize: "4vw",
+            lineHeight: "4vw",
             color: "#FFFFFF",
-            marginTop: "23px",
+            marginTop: "2vw",
           }}
         >
           1
@@ -188,14 +190,14 @@ class CentralText extends Component {
             style={{
               fontFamily: "Montserrat",
               fontStyle: "normal",
-              fontWeight: "500px",
-              fontSize: "28px",
-              lineHeight: "34px",
+              fontWeight: "40vw",
+              fontSize: "2vw",
+              lineHeight: "2.5vw",
               color: "#FFFFFF",
-              width: "258px",
-              marginTop: "35px",
-              marginBottom: "37px",
-              marginLeft: "15px",
+              width: "18vw",
+              marginTop: "2.5vw",
+              marginBottom: "2.5vw",
+              marginLeft: "1vw",
             }}
           >
             Contact us for consulting services.
@@ -207,11 +209,11 @@ class CentralText extends Component {
           style={{
             fontFamily: "Montserrat",
             fontStyle: "normal",
-            fontWeight: "600px",
-            fontSize: "48px",
-            lineHeight: "59px",
+            fontWeight: "45vw",
+            fontSize: "4vw",
+            lineHeight: "4vw",
             color: "#FFFFFF",
-            marginTop: "23px",
+            marginTop: "2vw",
           }}
         >
           2
@@ -221,14 +223,14 @@ class CentralText extends Component {
             style={{
               fontFamily: "Montserrat",
               fontStyle: "normal",
-              fontWeight: "500px",
-              fontSize: "28px",
-              lineHeight: "34px",
+              fontWeight: "40vw",
+              fontSize: "2vw",
+              lineHeight: "2.5vw",
               color: "#FFFFFF",
-              width: "258px",
-              marginTop: "35px",
-              marginBottom: "37px",
-              marginLeft: "15px",
+              width: "18vw",
+              marginTop: "2.5vw",
+              marginBottom: "2.5vw",
+              marginLeft: "1vw",
             }}
           >
             Like what we do? Sponsor us today!{" "}
@@ -240,11 +242,11 @@ class CentralText extends Component {
           style={{
             fontFamily: "Montserrat",
             fontStyle: "normal",
-            fontWeight: "600px",
-            fontSize: "48px",
-            lineHeight: "59px",
+            fontWeight: "45vw",
+            fontSize: "4vw",
+            lineHeight: "4vw",
             color: "#FFFFFF",
-            marginTop: "23px",
+            marginTop: "2vw",
           }}
         >
           3
@@ -254,14 +256,14 @@ class CentralText extends Component {
             style={{
               fontFamily: "Montserrat",
               fontStyle: "normal",
-              fontWeight: "500px",
-              fontSize: "28px",
-              lineHeight: "34px",
+              fontWeight: "40vw",
+              fontSize: "2vw",
+              lineHeight: "2.5vw",
               color: "#FFFFFF",
-              width: "258px",
-              marginTop: "35px",
-              marginBottom: "37px",
-              marginLeft: "15px",
+              width: "18vw",
+              marginTop: "2.5vw",
+              marginBottom: "2.5vw",
+              marginLeft: "1vw",
             }}
           >
             Connect with us and let’s host an event!{" "}
@@ -308,7 +310,7 @@ class CentralText extends Component {
     console.log(this.state.height, this.state.width);
     let process = this.join();
     return (
-      <div style={{ marginTop: "15vw" }}>
+      <div style={{ marginTop: "1vw" }}>
         {/* <NavBar2 {...this.props} /> */}
         {/* <Segment style={{ padding: "8em 0em" }} vertical> */}
         <Grid divided="vertically" style={gridoffset} className="pusher">
@@ -320,10 +322,10 @@ class CentralText extends Component {
               </Header>
               <Image
                 style={{
-                  height: "355px",
-                  marginTop: "42px",
-                  marginLeft: "-75px",
-                  marginBottom: "-350px",
+                  height: "25vw",
+                  marginTop: "3vw",
+                  marginLeft: "-5vw",
+                  marginBottom: "-25vw",
                 }}
                 floated="left"
                 src={bottomright}
@@ -333,17 +335,15 @@ class CentralText extends Component {
             <Grid.Column textAlign="center" floated="right" verticalAlign="top">
               <Image
                 style={{
-                  height: "355px",
-                  marginBottom: "94px",
-                  marginTop: "-450px",
-                  marginRight: "25px",
+                  height: "25vw",
+                  marginBottom: "7vw",
+                  marginTop: "-35vw",
+                  marginRight: "1.5vw",
                 }}
                 floated="right"
                 src={topright}
               ></Image>
-              <Button.Group
-                style={{ marginRight: "275px", marginTop: "125px" }}
-              >
+              <Button.Group style={{ marginRight: "20vw", marginTop: "9vw" }}>
                 <Link to="/apply">
                   <Button style={apply} circular>
                     APPLY
@@ -360,37 +360,37 @@ class CentralText extends Component {
           style={{
             width: "110%",
             backgroundColor: "white",
-            marginTop: "229px",
+            marginTop: "16vw",
           }}
         >
           <Grid.Row>
-            <Header
+            <Grid.Column
               id="about"
               style={{
                 fontFamily: "Montserrat",
-                marginLeft: "100px",
+                marginLeft: "7vw",
                 font: "Montserrat",
                 fontStyle: "normal",
                 fontWeight: "400",
-                fontSize: "64px",
-                lineHeight: "78px",
+                fontSize: "5vw",
+                lineHeight: "5vw",
                 color: "#8CD6D1",
-                paddingTop: "69px",
+                marginTop: "5vw",
               }}
             >
               About Us
-            </Header>
+            </Grid.Column>
           </Grid.Row>
           <Grid.Row
             style={{
               fontFamily: "Montserrat",
-              fontWeight: "300px",
-              fontSize: "30px",
-              lineHeight: "37px",
+              fontWeight: "21vw",
+              fontSize: "2vw",
+              lineHeight: "2.5vw",
               color: "#000000",
-              width: "1082px",
-              marginLeft: "85px",
-              marginTop: "25px",
+              width: "77vw",
+              marginLeft: "7vw",
+              marginTop: "1.5vw",
             }}
           >
             <Grid.Column width={9}>
@@ -403,18 +403,18 @@ class CentralText extends Component {
               width={6}
               floated="right"
               verticalAlign="middle"
-              style={{ height: "38px", marginBottom: "52px" }}
+              style={{ height: "2.5vw", marginBottom: "4vw" }}
             >
               <Link
                 to="/about"
                 style={{
                   fontFamily: "Montserrat",
                   fontStyle: "normal",
-                  fontWeight: "600px",
-                  fontSize: "36px",
-                  lineHeight: "44px",
+                  fontWeight: "42vw",
+                  fontSize: "2.5vw",
+                  lineHeight: "3vw",
                   color: "#FFC54A",
-                  marginLeft: "300px",
+                  marginLeft: "17vw",
                 }}
               >
                 Learn More >
@@ -426,8 +426,8 @@ class CentralText extends Component {
           <Grid.Row
             columns={1}
             style={{
-              width: "2000px",
-              height: "406px",
+              width: "143vw",
+              height: "29vw",
               backgroundImage: `url(${educate})`,
               backgroundSize: "100%",
             }}
@@ -447,7 +447,7 @@ class CentralText extends Component {
                 </Link>
                 <Link to="/decal">
                   {" "}
-                  <div style={{ marginTop: "29px", color: "#000000" }}>
+                  <div style={{ marginTop: "2vw", color: "#000000" }}>
                     Check out our DeCal >>
                   </div>
                 </Link>
@@ -458,7 +458,7 @@ class CentralText extends Component {
             columns={1}
             style={{
               width: "100%",
-              height: "406px",
+              height: "29vw",
               backgroundImage: `url(${innovate})`,
               backgroundSize: "100%",
             }}
@@ -477,14 +477,15 @@ class CentralText extends Component {
           <Grid.Row
             columns={1}
             style={{
-              width: "2000px",
-              height: "406px",
+              width: "143vw",
+              height: "29vw",
               backgroundImage: `url(${engage})`,
               backgroundSize: "100%",
-              backgroundColor: "#FFFFFF",
             }}
           >
-            <div style={overlaytext}>engage.</div>
+            <Grid.Column>
+              <div style={overlaytext}>engage.</div>
+            </Grid.Column>
             <Grid.Column>
               <Link to="/events">
                 <div style={underlaytext}>
@@ -497,14 +498,14 @@ class CentralText extends Component {
             <Grid.Column
               width={6}
               style={{
-                marginLeft: "100px",
+                marginLeft: "7vw",
                 fontFamily: "Montserrat",
                 fontStyle: "normal",
                 fontWeight: "400",
-                fontSize: "74px",
-                lineHeight: "78px",
+                fontSize: "5vw",
+                lineHeight: "5vw",
                 color: "#8CD6D1",
-                paddingTop: "100px",
+                paddingTop: "7vw",
               }}
             >
               Work with Us
@@ -512,12 +513,12 @@ class CentralText extends Component {
             <Grid.Column
               width={12}
               style={{
-                marginLeft: "100px",
+                marginLeft: "7vw",
                 fontWeight: "300",
-                fontSize: "24px",
-                lineHeight: "29px",
+                fontSize: "2.5vw",
+                lineHeight: "2vw",
                 fontFamily: "Montserrat",
-                marginTop: "25px",
+                marginTop: "3vw",
               }}
             >
               Collaborate with us and grow our data science community!
@@ -525,40 +526,40 @@ class CentralText extends Component {
             <Grid.Column textAlign="center">
               <Card.Group
                 centered
-                style={{ marginTop: "90px", marginRight: "200px" }}
+                style={{ marginTop: "6vw", marginRight: "14vw" }}
               >
                 {process}
               </Card.Group>
             </Grid.Column>
             <Grid.Column
               style={{
-                marginLeft: "100px",
+                marginLeft: "7vw",
                 fontFamily: "Montserrat",
                 fontStyle: "normal",
                 fontWeight: "400",
-                fontSize: "74px",
-                lineHeight: "78px",
+                fontSize: "5vw",
+                lineHeight: "5vw",
                 color: "#8CD6D1",
-                paddingTop: "100px",
+                marginTop: "8vw",
               }}
             >
               Subscribe to our newsletter!
             </Grid.Column>
             <Grid.Column
               style={{
-                marginLeft: "100px",
+                marginLeft: "7vw",
                 fontWeight: "300",
-                fontSize: "24px",
-                lineHeight: "29px",
+                fontSize: "2.5vw",
+                lineHeight: "2vw",
                 fontFamily: "Montserrat",
-                marginTop: "25px",
+                marginTop: "3vw",
               }}
             >
               Stay updated on our events, recruiting, and other on-campus
               initiatives.{" "}
             </Grid.Column>
-            <Grid.Column style={{ marginBottom: "100px" }}>
-              <Form success={this.state.success} style={{ marginTop: "100px" }}>
+            <Grid.Column style={{ marginBottom: "7vw" }}>
+              <Form success={this.state.success} style={{ marginTop: "7vw" }}>
                 <Form.Input
                   onChange={this.onEChange}
                   style={formStyle}

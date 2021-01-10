@@ -19,11 +19,12 @@ import {
 } from "semantic-ui-react";
 import PasswordStrengthBar from "react-password-strength-bar";
 import validator from "validator";
-import logo from "./Backgrounds/DSS-logo-white.png";
+import logo from "./Backgrounds/dss-logo-turquoise.png";
 import logo2 from "./Backgrounds/DSS-logo-black-transparent.png";
+import whiteLogo from "./Backgrounds/DSS-logo-white.png";
 import { event } from "react-ga";
 import CentralText from "./CentralText";
-import { isThisTypeNode } from "typescript";
+import { isThisTypeNode, transform } from "typescript";
 
 import Login from "./Login";
 import Registration from "./Register";
@@ -198,7 +199,56 @@ class NavBar2 extends Component {
     );
   }
 
+  setCircle() {
+    //TODO ensure first guys margin is effectively 24
+    console.log(this.state.activeStyle);
+    if (this.state.activeStyle) {
+      return whiteLogo;
+    } else {
+      return logo;
+    }
+  }
+
+  setBackgroundMenuColor() {
+    //TODO ensure first guys margin is effectively 24
+    console.log(this.state.activeStyle);
+    if (!this.state.activeStyle) {
+      return "#FFFFFF";
+    } else {
+      return "#8CD6D1";
+    }
+  }
+
+  setTitleColor() {
+    if (!this.state.activeStyle) {
+      return "#8CD6D1";
+    } else {
+      return "#FFFFFF";
+    }
+  }
+
+  setBarColor() {
+    if (!this.state.activeStyle) {
+      return "#8CD6D1";
+    } else {
+      return "#FFFFFF";
+    }
+  }
+  // setApply() {
+  //   //TODO ensure first guys margin is effectively 24
+  //   console.log(this.state.activeStyle);
+  //   if (this.state.activeStyle) {
+  //     return logo2;
+  //   } else {
+  //     return apply1;
+  //   }
+  // }
+
   render() {
+    var logo = this.setCircle();
+    var backgroundColor = this.setBackgroundMenuColor();
+    var titleColor = this.setTitleColor();
+    var barColor = this.setBarColor();
     return (
       <Sidebar.Pushable>
         <Sidebar
@@ -414,27 +464,26 @@ class NavBar2 extends Component {
         <Sidebar.Pusher
           dimmed={this.state.visible}
           onClick={this.handleSettingVisibleToFalse}
-          style={{ minHeight: "75vw" }}
+          // style={{ minHeight: "75vw" }}
         >
           <Segment basic>
             <Menu
               // fixed="top"
               // inverted
               style={{
-                backgroundColor: "#ffffff",
+                backgroundColor: backgroundColor,
                 position: "relative",
               }}
             >
               <div style={{ margin: "auto", width: "30vw" }}>
                 <span>
                   <Image
-                    src={logo2}
+                    src={logo}
                     style={{
                       position: "absolute",
-                      top: "25%",
-                      // left: "10%",
+                      onClick: this.handleMenuItemClickToggle,
+                      marginTop: "-3vw",
                       display: "inline-block",
-                      // marginLeft: "5em",
                       width: "6vw",
                     }}
                   />
@@ -442,16 +491,18 @@ class NavBar2 extends Component {
                 <span
                   style={{
                     position: "absolute",
-                    top: "40%",
+                    // top: "40%",
+                    marginTop: "-1.25vw",
+
                     // left: "20%",
                     fontFamily: "Montserrat",
                     fontSize: "3vw",
                     fontWeight: 600,
                     lineHeight: "3vw",
-                    color: "#8CD6D1",
+                    color: titleColor,
                     display: "inline-block",
                     marginRight: "5vw",
-                    marginLeft: "7vw",
+                    marginLeft: "8vw",
                   }}
                 >
                   Data Science Society @ Berkeley
@@ -462,7 +513,7 @@ class NavBar2 extends Component {
                 onClick={this.handleToggle}
                 style={{ color: "#ffffff" }}
               >
-                <Icon name="sidebar" color="teal" size="big" />
+                <Icon name="sidebar" style={{ color: barColor }} size="big" />
               </Menu.Item>
 
               {/* <Menu.Item position="center">
@@ -470,6 +521,7 @@ class NavBar2 extends Component {
               </Menu.Item> */}
             </Menu>
             <this.state.componentActive />
+            <Footer> </Footer>
           </Segment>
         </Sidebar.Pusher>
       </Sidebar.Pushable>
