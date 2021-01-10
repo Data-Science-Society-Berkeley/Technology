@@ -74,7 +74,7 @@ const underlaytext = {
   paddingTop: "6vw",
 };
 const apply = {
-  minWidth: "23vw",
+  minWidth: "15vw",
   fontFamily: "Montserrat",
   fontWeight: 600,
   lineHeight: "4vw",
@@ -83,9 +83,10 @@ const apply = {
   color: "#FFC54A",
   fontStyle: "normal",
   background: "#FFFFFF",
+  // marginLeft: "5vw",
 };
 const learn = {
-  minWidth: "23vw",
+  maxWidth: "26vw",
   fontFamily: "Montserrat",
   fontWeight: 600,
   lineHeight: "4vw",
@@ -95,6 +96,7 @@ const learn = {
   fontStyle: "normal",
   background: "#FFFFFF",
   marginLeft: "5vw",
+  textAlign: "right",
 };
 const formStyle = {
   width: "83vw",
@@ -338,7 +340,7 @@ class CentralText extends Component {
                 style={{
                   height: "25vw",
                   marginBottom: "7vw",
-                  marginTop: "-35vw",
+                  marginTop: "-25vw",
                   marginRight: "1.5vw",
                 }}
                 floated="right"
