@@ -36,7 +36,7 @@ const mybigtext = {
   fontFamily: "Montserrat",
   fontWeight: 600,
   lineHeight: "8vw",
-  fontSize: "5vw",
+  fontSize: "4vw",
   color: "#FFFBFB",
   fontStyle: "normal",
   textAlign: "left",
@@ -47,7 +47,7 @@ const mymidtext = {
   fontFamily: "Montserrat",
   fontWeight: 600,
   lineHeight: "6vw",
-  fontSize: "4vw",
+  fontSize: "3vw",
   color: "#FFFFFF",
   fontStyle: "normal",
   textAlign: "left",
@@ -330,7 +330,7 @@ class CentralText extends Component {
                 style={{
                   height: "25vw",
                   marginTop: "3vw",
-                  marginLeft: "-6vw",
+                  marginLeft: "-5vw",
                   marginBottom: "-25vw",
                 }}
                 floated="left"
@@ -360,6 +360,8 @@ class CentralText extends Component {
                 style={{
                   // marginRight: "0vw",
                   marginTop: "10vw",
+                  position: "absolute",
+                  top: "100%",
                 }}
               >
                 <Link to="/apply">
