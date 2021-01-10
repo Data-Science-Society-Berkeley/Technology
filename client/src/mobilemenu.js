@@ -322,7 +322,7 @@ class NavBar2 extends Component {
             DSS
           </Menu.Item>
           <Menu.Item as="a">
-            <Link to="/">
+            <Link to="/" onClick={this.handleSettingVisibleToFalse}>
               <div style={{ marginTop: "2vw", marginBottom: "2vw" }}>
                 <div>
                   <div
@@ -347,7 +347,7 @@ class NavBar2 extends Component {
           </Menu.Item>
 
           <Menu.Item as="a">
-            <Link to="/about">
+            <Link to="/about" onClick={this.handleSettingVisibleToFalse}>
               <div style={{ marginTop: "2vw", marginBottom: "2vw" }}>
                 <div>
                   <div
@@ -454,7 +454,7 @@ class NavBar2 extends Component {
 
           {/* <Link to="/about"> */}
           <Menu.Item as="a">
-            <Link to="events">
+            <Link to="events" onClick={this.handleSettingVisibleToFalse}>
               <div style={{ marginTop: "2vw", marginBottom: "2vw" }}>
                 <div>
                   <div
@@ -480,7 +480,7 @@ class NavBar2 extends Component {
           {/* </Link> */}
 
           <Menu.Item as="a">
-            <Link to="services">
+            <Link to="services" onClick={this.handleSettingVisibleToFalse}>
               <div style={{ marginTop: "2vw", marginBottom: "2vw" }}>
                 <div>
                   <div
@@ -505,7 +505,7 @@ class NavBar2 extends Component {
           </Menu.Item>
 
           <Menu.Item as="a">
-            <Link to="/apply">
+            <Link to="/apply" onClick={this.handleSettingVisibleToFalse}>
               <div style={{ marginTop: "2vw", marginBottom: "2vw" }}>
                 <div>
                   <div
