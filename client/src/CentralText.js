@@ -83,7 +83,7 @@ const apply = {
   color: "#FFC54A",
   fontStyle: "normal",
   background: "#FFFFFF",
-  // marginLeft: "5vw",
+  marginLeft: "-10vw",
 };
 const learn = {
   maxWidth: "26vw",
@@ -96,7 +96,6 @@ const learn = {
   fontStyle: "normal",
   background: "#FFFFFF",
   marginLeft: "5vw",
-  textAlign: "right",
 };
 const formStyle = {
   width: "83vw",
