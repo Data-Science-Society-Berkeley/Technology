@@ -87,7 +87,7 @@ const apply = {
   color: "#FFC54A",
   fontStyle: "normal",
   background: "#FFFFFF",
-  marginLeft: "-10vw",
+  marginLeft: "-7vw",
 };
 const learn = {
   maxWidth: "26vw",
@@ -358,9 +358,8 @@ class CentralText extends Component {
               ></Image>
               <Button.Group
                 style={{
-                  // marginRight: "0vw",
                   marginTop: "10vw",
-                  position: "absolute",
+                  // position: "absolute",
                   top: "100%",
                 }}
               >
