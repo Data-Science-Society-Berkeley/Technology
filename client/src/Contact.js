@@ -26,7 +26,7 @@ const mybigtext = {
   fontFamily: "Montserrat",
   fontWeight: 600,
   lineHeight: "8vw",
-  fontSize: "7vw",
+  fontSize: "5vw",
   color: "#FFFBFB",
   // width:"438px",
   fontStyle: "normal",
@@ -166,23 +166,30 @@ class Login extends Component {
   }
   render() {
     return (
-      <Grid style={gridoffset} style={{ marginLeft: "-4vw" }}>
-        <Grid.Row columns={2}>
-          <Grid.Column width={6} verticalAlign="center">
+      <Grid style={gridoffset}>
+        <Grid.Row columns={2} style={{ position: "relative" }}>
+          <Grid.Column
+            width={6}
+            verticalAlign="center"
+            style={{ position: "absolute", left: "0%", width: "50vw" }}
+          >
             <Header as="h1" style={mybigtext}>
               Contact us Here!
             </Header>
           </Grid.Column>
 
-          <Grid.Column floated="left">
+          <Grid.Column
+            width={6}
+            floated="left"
+            style={{ position: "relative", left: "40%", width: "50vw" }}
+          >
             <Form
               success={this.state.success}
-              style={{ marginTop: "5%", marginRight: "75%" }}
+              style={{ marginTop: "5%", marginRight: "100%" }}
             >
               <input
                 onChange={this.onPChange}
                 style={formStyle}
-                width={6}
                 id="text"
                 placeholder="Name"
                 // size="small"
@@ -191,7 +198,6 @@ class Login extends Component {
               <input
                 style={formStyle}
                 onChange={this.onEChange}
-                width={6}
                 id="text"
                 placeholder="E-mail"
               />
@@ -209,12 +215,7 @@ class Login extends Component {
                 content="We've received your outreach"
               />
 
-              <Form.Button
-                width={6}
-                onClick={this.loginUser}
-                rounded
-                style={buttonStyle}
-              >
+              <Form.Button onClick={this.loginUser} rounded style={buttonStyle}>
                 SUBMIT
               </Form.Button>
             </Form>
