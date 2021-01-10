@@ -25,7 +25,7 @@ import ocf from "./Backgrounds/ocf-hosted-penguin.svg";
 
 let endpoint = "https://dssberkeley.com/";
 const gridoffset = {
-  marginLeft: "6vw",
+  marginLeft: "5vw",
   // marginTop: "5vw",
   textAlign: "center",
   fontFamily: "Montserrat",
@@ -330,7 +330,7 @@ class CentralText extends Component {
                 style={{
                   height: "25vw",
                   marginTop: "3vw",
-                  marginLeft: "-5vw",
+                  marginLeft: "-6vw",
                   marginBottom: "-25vw",
                 }}
                 floated="left"
@@ -342,7 +342,7 @@ class CentralText extends Component {
               textAlign="center"
               floated="right"
               verticalAlign="top"
-              style={{ position: "absolute", left: "40%" }}
+              style={{ position: "absolute", left: "45%" }}
             >
               <Image
                 style={{
