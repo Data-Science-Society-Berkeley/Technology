@@ -342,7 +342,7 @@ class CentralText extends Component {
               textAlign="center"
               floated="right"
               verticalAlign="top"
-              style={{ position: "absolute", left: "40%" }}
+              style={{ position: "absolute", left: "30%" }}
             >
               <Image
                 style={{
@@ -358,8 +358,8 @@ class CentralText extends Component {
               ></Image>
               <Button.Group
                 style={{
-                  marginRight: "100vw",
-                  marginTop: "15vw",
+                  // marginRight: "0vw",
+                  marginTop: "10vw",
                 }}
               >
                 <Link to="/apply">
