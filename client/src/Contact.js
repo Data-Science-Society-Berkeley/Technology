@@ -166,7 +166,7 @@ class Login extends Component {
   }
   render() {
     return (
-      <Grid divided="vertically" style={gridoffset}>
+      <Grid style={gridoffset} style={{ marginLeft: "-4vw" }}>
         <Grid.Row columns={2}>
           <Grid.Column width={6} verticalAlign="center">
             <Header as="h1" style={mybigtext}>
