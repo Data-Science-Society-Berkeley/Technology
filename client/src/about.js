@@ -75,23 +75,34 @@ const header = {
   fontStyle: "normal",
 };
 const cardstyle = {
-  width: "400px",
+  width: "28vw",
+  maxHeight: "56vw",
   // height: "800px",
-  marginBottom: "10px",
-  marginleft: "20px",
+  marginBottom: "1vw",
+  marginleft: "2vw",
 };
 const imagestyle = {
-  height: "400px",
-  maxHeight: "400px",
-  width: "400px",
-  maxWidth: "400px",
+  height: "28vw",
+  maxHeight: "28vw",
+  width: "28vw",
+  maxWidth: "28vw",
 };
 const textstyle = {
   fontFamily: "Montserrat",
   fontWeight: 300,
-  fontSize: "37px",
+  fontSize: "3vw",
+  lineHeight: "3vw",
   color: "#8CD6D1",
 };
+
+const roleStyle = {
+  fontFamily: "Montserrat",
+  fontWeight: 300,
+  fontSize: "2vw",
+  lineHeight: "2vw",
+  color: "#8CD6D1",
+};
+
 const execstyle1 = {
   fontFamily: "Montserrat",
   fontWeight: "normal",
@@ -239,8 +250,8 @@ const leadershipCards = [
     <Image src={andi} style={imagestyle} />
     <Card.Content>
       <Card.Header style={textstyle}>Andi Halim</Card.Header>
-      <Card.Meta>
-        <span className="date">President</span>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>President</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
@@ -256,8 +267,8 @@ const leadershipCards = [
     <Image src={eric} style={imagestyle} />
     <Card.Content>
       <Card.Header style={textstyle}>Eric Gan</Card.Header>
-      <Card.Meta>
-        <span className="date">Internal Vice President</span>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>Internal Vice President</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
@@ -274,8 +285,8 @@ const leadershipCards = [
     <Image style={imagestyle} src={varunmu} />
     <Card.Content>
       <Card.Header style={textstyle}>Varun Murthy</Card.Header>
-      <Card.Meta>
-        <span className="date">External Vice President</span>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>External Vice President</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
@@ -292,8 +303,8 @@ const leadershipCards = [
     <Image style={imagestyle} src={alleanna} />
     <Card.Content>
       <Card.Header style={textstyle}>Alleanna Clark</Card.Header>
-      <Card.Meta>
-        <span className="date">Director of Acadev</span>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>Director of Acadev</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
@@ -310,8 +321,8 @@ const leadershipCards = [
     <Image style={imagestyle} src={steph} />
     <Card.Content>
       <Card.Header style={textstyle}>Stephanie Lu</Card.Header>
-      <Card.Meta>
-        <span className="date">Director of Acadev</span>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>Director of Acadev</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
@@ -328,8 +339,8 @@ const leadershipCards = [
     <Image style={imagestyle} src={roshan} />
     <Card.Content>
       <Card.Header style={textstyle}>Roshan Lodha</Card.Header>
-      <Card.Meta>
-        <span className="date">Director of Acadev</span>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>Director of Acadev</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
@@ -346,8 +357,8 @@ const leadershipCards = [
     <Image style={imagestyle} src={kate} />
     <Card.Content>
       <Card.Header style={textstyle}>Kate Miller</Card.Header>
-      <Card.Meta>
-        <span className="date">Director of DeCal</span>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>Director of DeCal</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
@@ -363,9 +374,9 @@ const leadershipCards = [
     {" "}
     <Image style={imagestyle} src={uma} />
     <Card.Content>
-      <Card.Header style={textstyle}>Uma Krishnawamy</Card.Header>
-      <Card.Meta>
-        <span className="date">Director of DeCal</span>
+      <Card.Header style={textstyle}>Uma K</Card.Header>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>Director of DeCal</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
@@ -382,8 +393,8 @@ const leadershipCards = [
     <Image style={imagestyle} src={gaya} />
     <Card.Content>
       <Card.Header style={textstyle}>Gayatri Babel</Card.Header>
-      <Card.Meta>
-        <span className="date">Director of DeCal</span>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>Director of DeCal</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
@@ -400,6 +411,9 @@ const leadershipCards = [
     <Image style={imagestyle} src={samir} />
     <Card.Content>
       <Card.Header style={textstyle}>Samir Puranik</Card.Header>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>Director of Consulting</span>
+      </Card.Meta>
     </Card.Content>
     <Card.Content extra>
       <a href="mailto:samir.puranik@berkeley.edu">
@@ -415,8 +429,8 @@ const leadershipCards = [
     <Image style={imagestyle} src={charlie} />
     <Card.Content>
       <Card.Header style={textstyle}>Charlie Duarte</Card.Header>
-      <Card.Meta>
-        <span className="date">VP of Finance & Director of Social Good</span>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>Director of Social Good</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
@@ -433,8 +447,8 @@ const leadershipCards = [
     <Image style={imagestyle} src={arjun} />
     <Card.Content>
       <Card.Header style={textstyle}>Arjun Mishra</Card.Header>
-      <Card.Meta>
-        <span className="date">VP of Tech</span>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>VP of Tech</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
@@ -451,8 +465,8 @@ const leadershipCards = [
     <Image style={imagestyle} src={varunmi} />
     <Card.Content>
       <Card.Header style={textstyle}>Varun Mittal</Card.Header>
-      <Card.Meta>
-        <span className="date">VP of Marketing</span>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>VP of Marketing</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
@@ -469,8 +483,8 @@ const leadershipCards = [
     <Image style={imagestyle} src={kanu} />
     <Card.Content>
       <Card.Header style={textstyle}>Kanu Grover</Card.Header>
-      <Card.Meta>
-        <span className="date">VP of Culture</span>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>VP of Culture</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
