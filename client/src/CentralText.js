@@ -320,10 +320,7 @@ class CentralText extends Component {
         {/* <NavBar2 {...this.props} /> */}
         {/* <Segment style={{ padding: "8em 0em" }} vertical> */}
         <Grid divided="vertically" style={gridoffset} className="pusher">
-          <Grid.Row
-            columns={2}
-            style={{ marginTop: "0", position: "relative" }}
-          >
+          <Grid.Row columns={2} style={{ position: "relative" }}>
             <Grid.Column width={9}>
               <Header style={mybigtext}>Data Science Society</Header>
               <Header as="h1" style={mymidtext}>
@@ -345,7 +342,7 @@ class CentralText extends Component {
               textAlign="center"
               floated="right"
               verticalAlign="top"
-              style={{ position: "absolute", left: "60%" }}
+              style={{ position: "absolute", left: "40%" }}
             >
               <Image
                 style={{
@@ -354,7 +351,7 @@ class CentralText extends Component {
                   // marginBottom: "-10vw",
                   // marginRight: "1.5vw",
                   // marginLeft: "20vw",
-                  position: "absolute",
+                  // position: "absolute",
                 }}
                 floated="right"
                 src={topright}
@@ -362,7 +359,7 @@ class CentralText extends Component {
               <Button.Group
                 style={{
                   marginRight: "100vw",
-                  marginTop: "35vw",
+                  marginTop: "15vw",
                 }}
               >
                 <Link to="/apply">
