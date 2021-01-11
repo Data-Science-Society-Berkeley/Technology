@@ -498,7 +498,7 @@ class CentralText extends Component {
             </Grid.Column>
 
             <Grid.Column
-              width={8}
+              width={6}
               style={{
                 marginLeft: "5vw",
                 position: "absolute",
@@ -632,7 +632,7 @@ class CentralText extends Component {
             </Grid.Column>
 
             <Grid.Column
-              width={7}
+              width={6}
               style={{
                 marginLeft: "5vw",
                 position: "absolute",
