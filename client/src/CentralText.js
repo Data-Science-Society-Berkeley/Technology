@@ -20,6 +20,8 @@ import educate from "./landing/education-opacity.png";
 import topright from "./landing/WebsiteLandingPage-2.png";
 import bottomright from "./landing/WebsiteLandingPage-2rotate.png";
 import NavBar2 from "./mobilemenu";
+import rectangleSingle from "./landing/rectangleSingle.png";
+import rectangleGroup from "./landing/rectangleGroup.png";
 
 import ocf from "./Backgrounds/ocf-hosted-penguin.svg";
 
@@ -411,7 +413,13 @@ class CentralText extends Component {
                 marginTop: "5vw",
               }}
             >
-              About Us
+              <div>About Us</div>
+              <div>
+                <Image
+                  src={rectangleGroup}
+                  style={{ width: "27vw", marginTop: "1vw" }}
+                ></Image>
+              </div>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row
@@ -500,6 +508,12 @@ class CentralText extends Component {
               }}
             >
               <div style={overlaytext}>educate.</div>
+              <div>
+                <Image
+                  src={rectangleSingle}
+                  style={{ width: "25vw", margin: "auto", marginTop: ".5vw" }}
+                ></Image>
+              </div>
               <div style={underlaytext}>
                 <Link to="/acadev">
                   {" "}
@@ -541,14 +555,21 @@ class CentralText extends Component {
             }}
           >
             <Grid.Column
-              width={8}
+              width={6}
               style={{
                 position: "absolute",
                 top: "40%",
                 transform: "translateY(-50%)",
+                marginLeft: "7vw",
               }}
             >
               <div style={overlaytextCustom}>innovate.</div>
+              <div>
+                <Image
+                  src={rectangleSingle}
+                  style={{ width: "25vw", margin: "auto", marginTop: ".5vw" }}
+                ></Image>
+              </div>
               <Link to="/consulting">
                 <div style={underlaytext}>
                   Learn about our consulting projects >>
@@ -621,6 +642,12 @@ class CentralText extends Component {
               }}
             >
               <div style={overlaytext}>engage.</div>
+              <div>
+                <Image
+                  src={rectangleSingle}
+                  style={{ width: "25vw", margin: "auto", marginTop: "1vw" }}
+                ></Image>
+              </div>
               <div style={underlaytext}>
                 <Link to="/acadev">
                   {" "}
