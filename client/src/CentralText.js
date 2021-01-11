@@ -22,6 +22,8 @@ import bottomright from "./landing/WebsiteLandingPage-2rotate.png";
 import NavBar2 from "./mobilemenu";
 import rectangleSingle from "./landing/rectangleSingle.png";
 import rectangleGroup from "./landing/rectangleGroup.png";
+import squiggly1 from "./landing/squiggly1.png";
+import squiggly2 from "./landing/squiggly2.png";
 
 import ocf from "./Backgrounds/ocf-hosted-penguin.svg";
 
@@ -554,6 +556,17 @@ class CentralText extends Component {
               position: "relative",
             }}
           >
+            <div>
+              <Image
+                src={squiggly1}
+                style={{
+                  left: "0%",
+                  width: "25vw",
+                  position: "absolute",
+                  top: "0%",
+                }}
+              ></Image>
+            </div>
             <Grid.Column
               width={6}
               style={{
@@ -602,7 +615,7 @@ class CentralText extends Component {
           <Grid.Row
             columns={2}
             style={{
-              width: "143vw",
+              // width: "143vw",
               height: "29vw",
               backgroundColor: "#8CD6D1",
               backgroundSize: "100%",
@@ -610,6 +623,17 @@ class CentralText extends Component {
               position: "relative",
             }}
           >
+            <div>
+              <Image
+                src={squiggly2}
+                style={{
+                  left: "70%",
+                  width: "40vw",
+                  position: "absolute",
+                  top: "0%",
+                }}
+              ></Image>
+            </div>
             <Grid.Column
               style={{
                 position: "absolute",
