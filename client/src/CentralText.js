@@ -498,7 +498,7 @@ class CentralText extends Component {
             </Grid.Column>
 
             <Grid.Column
-              width={6}
+              width={8}
               style={{
                 marginLeft: "5vw",
                 position: "absolute",
@@ -521,7 +521,7 @@ class CentralText extends Component {
                     style={{
                       color: "#FFFFFF",
                       fontWeight: 500,
-                      marginRight: "5vw",
+                      // marginRight: "5vw",
                     }}
                   >
                     {" "}
@@ -632,7 +632,7 @@ class CentralText extends Component {
             </Grid.Column>
 
             <Grid.Column
-              width={6}
+              width={7}
               style={{
                 marginLeft: "5vw",
                 position: "absolute",
@@ -655,11 +655,11 @@ class CentralText extends Component {
                     style={{
                       color: "#FFFFFF",
                       fontWeight: 500,
-                      marginRight: "5vw",
+                      // marginRight: "5vw",
                     }}
                   >
                     {" "}
-                    Learn more about our campus-wide events >>{" "}
+                    Learn more about our campus wide events >>{" "}
                   </div>{" "}
                 </Link>
               </div>
