@@ -59,12 +59,13 @@ const overlaytext = {
   fontFamily: "Montserrat",
   fontWeight: "normal",
   lineHeight: "5vw",
+  fontWeight: 500,
   fontSize: "5vw",
   color: "#FFFFFF",
   fontStyle: "normal",
-  textAlign: "left",
-  marginLeft: "7vw",
-  paddingTop: "5vw",
+  textAlign: "center",
+  // marginLeft: "7vw",
+  paddingTop: "3vw",
 };
 const underlaytext = {
   fontFamily: "Montserrat",
@@ -73,9 +74,8 @@ const underlaytext = {
   fontSize: "2.5vw",
   color: "#000000",
   fontStyle: "normal",
-  textAlign: "left",
-  marginLeft: "7vw",
-  paddingTop: "6vw",
+  textAlign: "center",
+  paddingTop: "2vw",
 };
 const apply = {
   minWidth: "15vw",
@@ -441,38 +441,73 @@ class CentralText extends Component {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-        <Grid style={{ width: "110%", backgroundColor: "white" }}>
+        {/* Insert HERE */}
+        <Grid style={{ width: "110%" }}>
           <Grid.Row
-            columns={1}
+            columns={2}
             style={{
               width: "143vw",
               height: "29vw",
-              backgroundImage: `url(${educate})`,
+              backgroundColor: "#8CD6D1",
               backgroundSize: "100%",
+              zIndex: "1",
+              position: "relative",
+              overflow: "hidden",
+              margin: "0",
             }}
           >
             <Grid.Column>
-              <div style={overlaytext}>educate.</div>
+              <Image
+                style={{
+                  marginLeft: "7vw",
+                  zIndex: "2",
+                  borderStyle: "solid",
+                  borderColor: "#EDE8C4",
+                  borderWidth: "1vw",
+                  backgroundColor: "#FFFFFF",
+                  position: "absolute",
+                  width: "50vw",
+                  top: "50%",
+
+                  transform: "translateY(-50%)",
+                  objectFit: "contain",
+                }}
+                src={educate}
+              ></Image>
             </Grid.Column>
 
-            <Grid.Column>
+            <Grid.Column centered>
+              <div style={overlaytext}>educate.</div>
               <div style={underlaytext}>
                 <Link to="/acadev">
                   {" "}
-                  <div style={{ color: "#000000" }}>
+                  <div
+                    style={{
+                      color: "#FFFFFF",
+                      fontWeight: 500,
+                      marginRight: "5vw",
+                    }}
+                  >
                     {" "}
                     Learn more about our Academic Development programs >>{" "}
                   </div>{" "}
                 </Link>
                 <Link to="/decal">
                   {" "}
-                  <div style={{ marginTop: "2vw", color: "#000000" }}>
+                  <div
+                    style={{
+                      marginTop: "2vw",
+                      color: "#FFFFFF",
+                      fontWeight: 500,
+                    }}
+                  >
                     Check out our DeCal >>
                   </div>
                 </Link>
               </div>
             </Grid.Column>
           </Grid.Row>
+
           <Grid.Row
             columns={1}
             style={{
@@ -513,6 +548,7 @@ class CentralText extends Component {
               </Link>
             </Grid.Column>
           </Grid.Row>
+
           <Grid.Row columns={1}>
             <Grid.Column
               width={10}
@@ -604,3 +640,78 @@ class CentralText extends Component {
   }
 }
 export default CentralText;
+
+{
+  /* <Grid style={{ width: "110%", backgroundColor: "white" }}>
+<Grid.Row
+  columns={1}
+  style={{
+    width: "143vw",
+    height: "29vw",
+    backgroundImage: `url(${educate})`,
+    backgroundSize: "100%",
+  }}
+>
+  <Grid.Column>
+    <div style={overlaytext}>educate.</div>
+  </Grid.Column>
+
+  <Grid.Column>
+    <div style={underlaytext}>
+      <Link to="/acadev">
+        {" "}
+        <div style={{ color: "#000000" }}>
+          {" "}
+          Learn more about our Academic Development programs >>{" "}
+        </div>{" "}
+      </Link>
+      <Link to="/decal">
+        {" "}
+        <div style={{ marginTop: "2vw", color: "#000000" }}>
+          Check out our DeCal >>
+        </div>
+      </Link>
+    </div>
+  </Grid.Column>
+</Grid.Row>
+<Grid.Row
+  columns={1}
+  style={{
+    width: "100%",
+    height: "29vw",
+    backgroundImage: `url(${innovate})`,
+    backgroundSize: "100%",
+  }}
+>
+  <Grid.Column>
+    <div style={overlaytext}>innovate.</div>
+  </Grid.Column>
+  <Grid.Column>
+    <Link to="/consulting">
+      <div style={underlaytext}>
+        Learn more about our consulting projects >>
+      </div>
+    </Link>
+  </Grid.Column>
+</Grid.Row>
+<Grid.Row
+  columns={1}
+  style={{
+    width: "143vw",
+    height: "29vw",
+    backgroundImage: `url(${engage})`,
+    backgroundSize: "100%",
+  }}
+>
+  <Grid.Column>
+    <div style={overlaytext}>engage.</div>
+  </Grid.Column>
+  <Grid.Column>
+    <Link to="/events">
+      <div style={underlaytext}>
+        Learn more about our campus-wide events >>
+      </div>
+    </Link>
+  </Grid.Column>
+</Grid.Row> */
+}

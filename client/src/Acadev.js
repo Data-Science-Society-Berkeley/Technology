@@ -41,13 +41,6 @@ const gridoffset = {
   fontFamily: "Montserrat",
 };
 
-const textstyle = {
-  fontFamily: "Montserrat",
-  fontWeight: 300,
-  fontSize: "2.5vw",
-  color: "#8CD6D1",
-};
-
 const mybigtext = {
   fontFamily: "Montserrat",
   fontWeight: 600,
@@ -121,7 +114,7 @@ const imagestyle = {
   width: "28vw",
   maxWidth: "28vw",
 };
-const textstyleNew = {
+const textstyle = {
   fontFamily: "Montserrat",
   fontWeight: 300,
   fontSize: "3vw",
@@ -136,7 +129,6 @@ const roleStyle = {
   fontSize: "2vw",
   lineHeight: "2vw",
   color: "#8CD6D1",
-  marginBottom: "-1vw",
 };
 const overlayboxes = {
   background: "#F8F8F8",
@@ -530,7 +522,7 @@ class Acadev extends Component {
                 {" "}
                 <Image style={imagestyle} src={alleanna} />
                 <Card.Content>
-                  <Card.Header style={textstyleNew}>Alleanna Clark</Card.Header>
+                  <Card.Header style={textstyle}>Alleanna Clark</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={roleStyle}>Director of Acadev</span>
                   </Card.Meta>
@@ -548,7 +540,7 @@ class Acadev extends Component {
                 {" "}
                 <Image style={imagestyle} src={steph} />
                 <Card.Content>
-                  <Card.Header style={textstyleNew}>Stephanie Lu</Card.Header>
+                  <Card.Header style={textstyle}>Stephanie Lu</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={roleStyle}>Director of Acadev</span>
                   </Card.Meta>
@@ -566,7 +558,7 @@ class Acadev extends Component {
                 {" "}
                 <Image style={imagestyle} src={roshan} />
                 <Card.Content>
-                  <Card.Header style={textstyleNew}>Roshan Lodha</Card.Header>
+                  <Card.Header style={textstyle}>Roshan Lodha</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={roleStyle}>Director of Acadev</span>
                   </Card.Meta>
