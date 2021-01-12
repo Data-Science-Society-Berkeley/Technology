@@ -34,6 +34,7 @@ import arnav from "./Leadership Headshots/ArnavHeadshot.jpg";
 import cindy from "./Leadership Headshots/CindyHeadshot.jpg";
 import sabrina from "./Leadership Headshots/SabrinaHeadshot.jpeg";
 import rick from "./Leadership Headshots/Rick.jpeg";
+import elton from "./Leadership Headshots/EltonHeadshot.jpg";
 
 import pm from "./About/_MG_59681.png";
 import exec from "./About/group1.png";
@@ -353,7 +354,7 @@ const leadershipCards = [
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={kanu} />
+    <Image style={imagestyle} src={elton} />
     <Card.Content>
       <Card.Header style={textstyle}>Elton Chan</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
