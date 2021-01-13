@@ -17,9 +17,9 @@ import CustomTitle from "./components/CustomTitle.js";
 
 import berk from "./Decal Images/berkeleyischool-logo-alternate-blue-lg.png";
 import datacamp from "./Decal Images/datacamp-logo 1.png";
-import roshan from "./Leadership Headshots/roshan.jpg";
-import alleanna from "./Leadership Headshots/alleanna2.jpeg";
-import steph from "./Leadership Headshots/steph.jpg";
+import atharva from "./Leadership Headshots/AtharvaHeadshot.png";
+import arnav from "./Leadership Headshots/ArnavHeadshot.jpg";
+import sabrina from "./Leadership Headshots/SabrinaHeadshot.jpeg";
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -285,11 +285,11 @@ class DecalLearn extends Component {
             <Card.Group centered>
               <Card style={cardstyle}>
                 {" "}
-                <Image style={imagestyle} src={alleanna} />
+                <Image style={imagestyle} src={atharva} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Alleanna Clark</Card.Header>
-                  <Card.Meta style={{marginTop: "1vw"}}>
-                    <span style={{roleStyle}}>
+                  <Card.Header style={textstyle}>Atharva Mehendale</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={{ roleStyle }}>
                       Director of Academic Development
                     </span>
                   </Card.Meta>
@@ -305,11 +305,11 @@ class DecalLearn extends Component {
               </Card>
               <Card style={cardstyle}>
                 {" "}
-                <Image style={imagestyle} src={steph} />
+                <Image style={imagestyle} src={sabrina} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Stephanie Lu</Card.Header>
-                  <Card.Meta style={{marginTop: "1vw"}}>
-                  <span style={{roleStyle}}>
+                  <Card.Header style={textstyle}>Sabrina Wu</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={{ roleStyle }}>
                       Director of Academic Development
                     </span>
                   </Card.Meta>
@@ -325,11 +325,11 @@ class DecalLearn extends Component {
               </Card>
               <Card style={cardstyle}>
                 {" "}
-                <Image style={imagestyle} src={roshan} />
+                <Image style={imagestyle} src={arnav} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Roshan Lodha</Card.Header>
-                  <Card.Meta style={{marginTop: "1vw"}}>
-                  <span style={{roleStyle}}>
+                  <Card.Header style={textstyle}>Arnav Patel</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={{ roleStyle }}>
                       Director of Academic Development
                     </span>
                   </Card.Meta>

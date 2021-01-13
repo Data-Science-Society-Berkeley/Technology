@@ -16,7 +16,9 @@ import CustomTitle from "./components/CustomTitle.js";
 import berk from "./Decal Images/berkeleyischool-logo-alternate-blue-lg.png";
 import datacamp from "./Decal Images/datacamp-logo 1.png";
 import decal from "./Decal Images/decalberkeleylogo 1.png";
+import andi from "./Leadership Headshots/andi.jpg";
 import charlie from "./Leadership Headshots/charlie.jpg";
+import evelyn from "./PM Headshots/evelyn.png";
 import story from "./SocialGood/socialgoodheader-compress-min.jpg";
 import hype from "./SocialGood/SoialGoodPic.png";
 import heart from "./SocialGood/dssg1.jpeg";
@@ -81,7 +83,7 @@ const roleStyle = {
   fontWeight: 300,
   fontSize: "2vw",
   lineHeight: "2vw",
-  color: "#8CD6D1",
+  color: "#000000",
 };
 const mymidtext = {
   fontFamily: "Montserrat",
@@ -332,7 +334,61 @@ class Social extends Component {
                 <Card.Content>
                   <Card.Header style={textstyle}>Charlie Duarte</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>Director of 'Good</span>
+                    <span style={roleStyle}>Director of Social Good</span>
+                  </Card.Meta>
+                </Card.Content>
+                <Card.Content extra>
+                  <a href="mailto:roshanlodha@berkeley.edu">
+                    <Icon name="mail" />
+                  </a>
+                  <a href="http://linkedin.com/in/roshanlodha">
+                    <Icon name="linkedin" />
+                  </a>
+                </Card.Content>
+              </Card>
+              <Card style={cardstyle}>
+                {" "}
+                <Image style={imagestyle} src={andi} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Andi Halim</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>Director of Social Good</span>
+                  </Card.Meta>
+                </Card.Content>
+                <Card.Content extra>
+                  <a href="mailto:roshanlodha@berkeley.edu">
+                    <Icon name="mail" />
+                  </a>
+                  <a href="http://linkedin.com/in/roshanlodha">
+                    <Icon name="linkedin" />
+                  </a>
+                </Card.Content>
+              </Card>
+              <Card style={cardstyle}>
+                {" "}
+                <Image style={imagestyle} src={evelyn} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Evelyn Lu</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>PM</span>
+                  </Card.Meta>
+                </Card.Content>
+                <Card.Content extra>
+                  <a href="mailto:roshanlodha@berkeley.edu">
+                    <Icon name="mail" />
+                  </a>
+                  <a href="http://linkedin.com/in/roshanlodha">
+                    <Icon name="linkedin" />
+                  </a>
+                </Card.Content>
+              </Card>
+              <Card style={cardstyle}>
+                {" "}
+                <Image style={imagestyle} src={andi} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Steven Chen</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>PM</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>

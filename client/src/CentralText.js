@@ -492,7 +492,7 @@ class CentralText extends Component {
                   borderStyle: "solid",
                   borderColor: "#EDE8C4",
                   borderWidth: "1.25vw",
-                  backgroundColor: "#FFFFFF",
+                  backgroundColor: "#cccccc",
                   width: "60vw",
                 }}
                 src={educate}
@@ -604,7 +604,7 @@ class CentralText extends Component {
                   borderStyle: "solid",
                   borderColor: "#B6E5D7",
                   borderWidth: "1.25vw",
-                  backgroundColor: "#FFFFFF",
+                  backgroundColor: "#cccccc",
                   width: "50vw",
                 }}
                 src={innovate}
@@ -648,7 +648,7 @@ class CentralText extends Component {
                   borderStyle: "solid",
                   borderColor: "#EDE8C4",
                   borderWidth: "1.25vw",
-                  backgroundColor: "#FFFFFF",
+                  backgroundColor: "#cccccc",
                   width: "60vw",
                 }}
                 src={engage}

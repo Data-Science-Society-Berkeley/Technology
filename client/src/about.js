@@ -15,8 +15,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CustomTitle from "./components/CustomTitle.js";
 
 import andi from "./Leadership Headshots/andi.jpg";
-import roshan from "./Leadership Headshots/roshan.jpg";
-import kanu from "./Leadership Headshots/kanu.jpg";
+import kanu from "./Leadership Headshots/KanuHeadshot.jpg";
 import charlie from "./Leadership Headshots/charlie.jpg";
 import alleanna from "./Leadership Headshots/alleanna2.jpeg";
 import varunmi from "./Leadership Headshots/varunmi.jpeg";
@@ -100,7 +99,7 @@ const roleStyle = {
   fontWeight: 300,
   fontSize: "2vw",
   lineHeight: "2vw",
-  color: "#8CD6D1",
+  color: "#000000",
 };
 
 const execstyle1 = {
@@ -255,10 +254,10 @@ const leadershipCards = [
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:andihalim@berkeley.edu">
+      <a href="mailto:alleanna@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/andihalim/">
+      <a href="https://www.linkedin.com/in/alleanna-clark-5b37aa16a/ ">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
@@ -272,10 +271,10 @@ const leadershipCards = [
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:ericgan@berkeley.edu">
+      <a href="mailto:varunmittal@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/eric-gan/">
+      <a href="https://www.linkedin.com/in/varun-mittal-727559181/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
@@ -298,24 +297,7 @@ const leadershipCards = [
       </a>
     </Card.Content>
   </Card>,
-  <Card style={cardstyle}>
-    {" "}
-    <Image style={imagestyle} src={rick} />
-    <Card.Content>
-      <Card.Header style={textstyle}>Rick Zhang</Card.Header>
-      <Card.Meta style={{ marginTop: "1vw" }}>
-        <span style={roleStyle}>Director of Consulting</span>
-      </Card.Meta>
-    </Card.Content>
-    <Card.Content extra>
-      <a href="mailto:samir.puranik@berkeley.edu">
-        <Icon size="large" name="mail" />
-      </a>
-      <a href="https://linkedin.com/in/samir-puranik">
-        <Icon name="linkedin" size="large" />
-      </a>
-    </Card.Content>
-  </Card>,
+
   <Card style={cardstyle}>
     {" "}
     <Image style={imagestyle} src={kanu} />
@@ -326,10 +308,10 @@ const leadershipCards = [
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:arjunmishra@berkeley.edu">
+      <a href="mailto:grover.kanu@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/arjun-mishra-8163b7149/">
+      <a href="https://www.linkedin.com/in/kanu-grover-a89983187/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
@@ -361,11 +343,22 @@ const leadershipCards = [
         <span style={roleStyle}>VP of Culture</span>
       </Card.Meta>
     </Card.Content>
+    <Card.Content extra></Card.Content>
+  </Card>,
+  <Card style={cardstyle}>
+    {" "}
+    <Image style={imagestyle} src={rick} />
+    <Card.Content>
+      <Card.Header style={textstyle}>Rick Zhang</Card.Header>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>Director of Consulting</span>
+      </Card.Meta>
+    </Card.Content>
     <Card.Content extra>
-      <a href="mailto:grover.kanu@berkeley.edu">
+      <a href="mailto:rickzhang@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/kanu-grover-a89983187/">
+      <a href="https://www.linkedin.com/in/rick-zhang/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
@@ -507,10 +500,10 @@ const leadershipCards = [
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:charlieduarte@berkeley.edu">
+      <a href="mailto:andihalim@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/charlie-duarte/">
+      <a href="https://www.linkedin.com/in/andihalim/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>

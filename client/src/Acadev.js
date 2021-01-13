@@ -26,9 +26,9 @@ import mlab from "./Acadev Images/mlabberkeley.png";
 import uea from "./Acadev Images/berkuea 1.png";
 import berk from "./Acadev Images/cdssberk 1.png";
 import data8 from "./Acadev Images/data8logo 1.png";
-import roshan from "./Leadership Headshots/roshan.jpg";
-import alleanna from "./Leadership Headshots/alleanna2.jpeg";
-import steph from "./Leadership Headshots/steph.jpg";
+import atharva from "./Leadership Headshots/AtharvaHeadshot.png";
+import arnav from "./Leadership Headshots/ArnavHeadshot.jpg";
+import sabrina from "./Leadership Headshots/SabrinaHeadshot.jpeg";
 import story from "./Acadev Images/AcaDevBanner-compress-min.jpg";
 import haas2 from "./Acadev Images/hbsa.jpg";
 import ascend from "./Acadev Images/Ascend-Logo.jpg";
@@ -520,9 +520,9 @@ class Acadev extends Component {
             <Card.Group style={{ marginTop: "5vw" }}>
               <Card style={cardstyle}>
                 {" "}
-                <Image style={imagestyle} src={alleanna} />
+                <Image style={imagestyle} src={atharva} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Alleanna Clark</Card.Header>
+                  <Card.Header style={textstyle}>Atharva Mehendale</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={roleStyle}>Director of Acadev</span>
                   </Card.Meta>
@@ -538,9 +538,9 @@ class Acadev extends Component {
               </Card>
               <Card style={cardstyle}>
                 {" "}
-                <Image style={imagestyle} src={steph} />
+                <Image style={imagestyle} src={sabrina} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Stephanie Lu</Card.Header>
+                  <Card.Header style={textstyle}>Sabrina Wu</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={roleStyle}>Director of Acadev</span>
                   </Card.Meta>
@@ -556,9 +556,9 @@ class Acadev extends Component {
               </Card>
               <Card style={cardstyle}>
                 {" "}
-                <Image style={imagestyle} src={roshan} />
+                <Image style={imagestyle} src={arnav} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Roshan Lodha</Card.Header>
+                  <Card.Header style={textstyle}>Arnav Patel</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={roleStyle}>Director of Acadev</span>
                   </Card.Meta>
