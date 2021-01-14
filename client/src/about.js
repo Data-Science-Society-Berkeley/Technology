@@ -587,8 +587,18 @@ class About extends Component {
     }
   }
 
+  screenWidthBigEnoughforInterMargin() {
+    if (window.innerWidth < 500) {
+      return "10vw";
+    } else {
+      return "auto";
+    }
+  }
+
   render() {
     const screenSizeResult = this.screenWidthBigEnough();
+
+    const screenInterMarginResult = this.screenWidthBigEnoughforInterMargin();
 
     return (
       <div>
@@ -883,11 +893,12 @@ class About extends Component {
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
                   minWidth: "29vw",
+                  // marginLeft: screenInterMarginResult,
                 }}
               >
                 <div
                   style={{
-                    fontSize: "3vw",
+                    fontSize: "2.5vw",
                     lineHeight: "5vw",
                   }}
                 >
@@ -920,7 +931,7 @@ class About extends Component {
                   borderColor: "#8CD6D1",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
-                  minWidth: "32vw",
+                  minWidth: "30vw",
                 }}
               >
                 <div
