@@ -1001,7 +1001,7 @@ class About extends Component {
                     width: "25vw",
                     margin: "2vw auto",
                     alignText: "center",
-                    marginBottom: "3.25vw",
+                    marginBottom: "3.5vw",
                   }}
                 >
                   GMs complete and present semester-long research projects under
@@ -1037,7 +1037,7 @@ class About extends Component {
                     fontSize: "2vw",
                     lineHeight: "2.5vw",
                     width: "25vw",
-                    margin: "2vw auto",
+                    margin: "2.25vw auto",
                     alignText: "center",
                   }}
                 >
