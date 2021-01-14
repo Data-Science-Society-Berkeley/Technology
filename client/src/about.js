@@ -33,7 +33,7 @@ import arnav from "./Leadership Headshots/ArnavHeadshot.jpg";
 import cindy from "./Leadership Headshots/CindyHeadshot.jpg";
 import sabrina from "./Leadership Headshots/SabrinaHeadshot.jpeg";
 import rick from "./Leadership Headshots/Rick.jpeg";
-import elton from "./Leadership Headshots/EltonHeadshot.jpg";
+import elton from "./Leadership Headshots/elton.jpeg";
 
 import pm from "./About/_MG_59681.png";
 import exec from "./About/group1.png";
@@ -110,12 +110,14 @@ const execstyle1 = {
   // width: "25%",
   // maxWidth: "356px",
   // height: "auto",
-  height: "25vw",
+  height: "15vw",
   width: "25vw",
   borderRadius: "1vw",
   backgroundImage: `url(${exec})`,
+  // objectPosition: "20% 10%",
+  clip: "rect(0vw, 20vw, 20vw, 20vw)",
   margin: "0 auto",
-  backgroundSize: "contain",
+  // objectFit: "cover",
 };
 const execstyle2 = {
   fontFamily: "Montserrat",
@@ -289,11 +291,11 @@ const leadershipCards = [
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:murthy@berkeley.edu">
-        <Icon size="large" name="mail" />
+      <a href="mailto:gbabel@berkeley.edu">
+        <Icon size="large" name="mail" size="large" />
       </a>
-      <a href="https://linkedin.com/in/Murthy1999">
-        <Icon size="large" name="linkedin" />
+      <a href="https://www.linkedin.com/in/gayatri-babel/">
+        <Icon size="large" name="linkedin" size="large" />
       </a>
     </Card.Content>
   </Card>,
@@ -304,7 +306,7 @@ const leadershipCards = [
     <Card.Content>
       <Card.Header style={textstyle}>Kanu Grover</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
-        <span style={roleStyle}>VP of Tech</span>
+        <span style={roleStyle}>VP of Technology</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
@@ -326,10 +328,10 @@ const leadershipCards = [
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:varunmittal@berkeley.edu">
+      <a href="mailto:cindycy@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/varun-mittal-727559181/">
+      <a href="https://www.linkedin.com/in/cindy-yang-8b921a187/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
@@ -343,7 +345,14 @@ const leadershipCards = [
         <span style={roleStyle}>VP of Culture</span>
       </Card.Meta>
     </Card.Content>
-    <Card.Content extra></Card.Content>
+    <Card.Content extra>
+      <a href="mailto:chanelton@berkeley.edu">
+        <Icon size="large" name="mail" />
+      </a>
+      <a href="https://www.linkedin.com/in/chan-elton/">
+        <Icon size="large" name="linkedin" />
+      </a>
+    </Card.Content>
   </Card>,
   <Card style={cardstyle}>
     {" "}
@@ -373,10 +382,10 @@ const leadershipCards = [
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:alleanna@berkeley.edu">
+      <a href="mailto:atharva@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/alleanna-clark-5b37aa16a/ ">
+      <a href="https://www.linkedin.com/in/atharvamehendale/ ">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
@@ -391,10 +400,10 @@ const leadershipCards = [
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:stephanie.lu@berkeley.edu">
+      <a href="mailto:sabrinaywu@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/stephanie-l-705a29175/">
+      <a href="https://www.linkedin.com/in/sabrinayihwu/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
@@ -409,10 +418,10 @@ const leadershipCards = [
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:roshanlodha@berkeley.edu">
+      <a href="mailto:arnavp418@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="http://linkedin.com/in/roshanlodha">
+      <a href="https://www.linkedin.com/in/arnavpatel360/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
@@ -817,16 +826,34 @@ class About extends Component {
             }}
           >
             <Grid.Column>
-              <div style={execstyle1}>
-                <div style={{ marginLeft: "2vw", paddingTop: "2vw" }}>
-                  Executive <br /> Team
-                </div>
+              <div
+                style={{
+                  textAlign: "center",
+                  borderStyle: "solid",
+                  borderColor: "#8CD6D1",
+                  borderWidth: ".5vw",
+                  borderRadius: "3vw",
+                }}
+              >
                 <div
                   style={{
-                    fontSize: "1.5vw",
-                    lineHeight: "2vw",
-                    marginTop: "10vw",
-                    marginLeft: "1.5vw",
+                    fontSize: "3vw",
+                    lineHeight: "5vw",
+                  }}
+                >
+                  Executive Team
+                </div>
+                <Image
+                  src={exec}
+                  style={{ width: "25vw", margin: "2vw auto" }}
+                ></Image>
+                <div
+                  style={{
+                    fontSize: "2vw",
+                    lineHeight: "2.5vw",
+                    width: "25vw",
+                    margin: "2vw auto",
+                    alignText: "center",
                   }}
                 >
                   Our team of execs is in charge of all the club operations.
@@ -835,35 +862,71 @@ class About extends Component {
               </div>
             </Grid.Column>
             <Grid.Column>
-              <div style={execstyle2}>
-                <div style={{ marginLeft: "2vw", paddingTop: "2vw" }}>
-                  Project <br /> Manager
-                </div>
+              <div
+                style={{
+                  textAlign: "center",
+                  borderStyle: "solid",
+                  borderColor: "#FFC54A",
+                  borderWidth: ".5vw",
+                  borderRadius: "3vw",
+                }}
+              >
                 <div
                   style={{
-                    fontSize: "1.5vw",
-                    lineHeight: "2vw",
-                    marginTop: "5vw",
-                    marginLeft: "1.5vw",
+                    fontSize: "3vw",
+                    lineHeight: "5vw",
                   }}
                 >
-                  Project managers apply their past consulting experience and
-                  analytics expertise to lead our teams. Typically, we have 10
-                  PMs to lead 5 consulting projects per semester.
+                  Project Managers
+                </div>
+                <Image
+                  src={pm}
+                  style={{ width: "25vw", margin: "2vw auto" }}
+                ></Image>
+                <div
+                  style={{
+                    fontSize: "2vw",
+                    lineHeight: "2.5vw",
+                    width: "25vw",
+                    margin: "2vw auto",
+                    alignText: "center",
+                  }}
+                >
+                  Project managers apply their analytics expertise to lead
+                  consulting teams. We have 10 PMs across 5 projects.
                 </div>
               </div>
             </Grid.Column>
+
             <Grid.Column>
-              <div style={execstyle3}>
-                <div style={{ marginLeft: "2vw", paddingTop: "2vw" }}>
-                  Committee Member
-                </div>
+              <div
+                style={{
+                  textAlign: "center",
+                  borderStyle: "solid",
+                  borderColor: "#8CD6D1",
+                  borderWidth: ".5vw",
+                  borderRadius: "3vw",
+                }}
+              >
                 <div
                   style={{
-                    fontSize: "1.5vw",
-                    lineHeight: "2vw",
-                    marginTop: "3vw",
-                    marginLeft: "1.5vw",
+                    fontSize: "3vw",
+                    lineHeight: "5vw",
+                  }}
+                >
+                  Committee Members
+                </div>
+                <Image
+                  src={commit}
+                  style={{ width: "25vw", margin: "2vw auto" }}
+                ></Image>
+                <div
+                  style={{
+                    fontSize: "2vw",
+                    lineHeight: "2.5vw",
+                    width: "25vw",
+                    margin: "2vw auto",
+                    alignText: "center",
                   }}
                 >
                   CMs are responsibile of their respective committees: Academic
@@ -883,16 +946,34 @@ class About extends Component {
             }}
           >
             <Grid.Column>
-              <div style={execstyle4}>
-                <div style={{ marginLeft: "2vw", paddingTop: "2vw" }}>
-                  General <br /> Member
-                </div>
+              <div
+                style={{
+                  textAlign: "center",
+                  borderStyle: "solid",
+                  borderColor: "#FFC54A",
+                  borderWidth: ".5vw",
+                  borderRadius: "3vw",
+                }}
+              >
                 <div
                   style={{
-                    fontSize: "1.5vw",
-                    lineHeight: "2vw",
-                    marginTop: "8vw",
-                    marginLeft: "1.5vw",
+                    fontSize: "3vw",
+                    lineHeight: "5vw",
+                  }}
+                >
+                  General Members
+                </div>
+                <Image
+                  src={commit}
+                  style={{ width: "25vw", margin: "2vw auto" }}
+                ></Image>
+                <div
+                  style={{
+                    fontSize: "2vw",
+                    lineHeight: "2.5vw",
+                    width: "25vw",
+                    margin: "2vw auto",
+                    alignText: "center",
                   }}
                 >
                   GMs complete semester-long research projects under the
@@ -901,16 +982,34 @@ class About extends Component {
               </div>
             </Grid.Column>
             <Grid.Column>
-              <div style={execstyle5}>
-                <div style={{ marginLeft: "2vw", paddingTop: "2vw" }}>
-                  DeCal <br /> Student
-                </div>
+              <div
+                style={{
+                  textAlign: "center",
+                  borderStyle: "solid",
+                  borderColor: "#8CD6D1",
+                  borderWidth: ".5vw",
+                  borderRadius: "3vw",
+                }}
+              >
                 <div
                   style={{
-                    fontSize: "1.5vw",
-                    lineHeight: "2vw",
-                    marginTop: "3vw",
-                    marginLeft: "1.5vw",
+                    fontSize: "3vw",
+                    lineHeight: "5vw",
+                  }}
+                >
+                  Decal Student
+                </div>
+                <Image
+                  src={decal}
+                  style={{ width: "25vw", margin: "2vw auto" }}
+                ></Image>
+                <div
+                  style={{
+                    fontSize: "2vw",
+                    lineHeight: "2.5vw",
+                    width: "25vw",
+                    margin: "2vw auto",
+                    alignText: "center",
                   }}
                 >
                   DeCal students enroll in our 2-unit course: Essential Tools
@@ -920,18 +1019,36 @@ class About extends Component {
                 </div>
               </div>
             </Grid.Column>
+
             <Grid.Column>
-              <div style={execstyle6}>
-                <div style={{ marginLeft: "2vw", paddingTop: "2vw" }}>
-                  Senior
-                  <br /> Advisor
-                </div>
+              <div
+                style={{
+                  textAlign: "center",
+                  borderStyle: "solid",
+                  borderColor: "#FFC54A",
+                  borderWidth: ".5vw",
+                  borderRadius: "3vw",
+                }}
+              >
                 <div
                   style={{
-                    fontSize: "1.5vw",
-                    lineHeight: "2vw",
-                    marginTop: "3vw",
-                    marginLeft: "1.5vw",
+                    fontSize: "3vw",
+                    lineHeight: "5vw",
+                  }}
+                >
+                  Senior Advisers
+                </div>
+                <Image
+                  src={senior}
+                  style={{ width: "25vw", margin: "2vw auto" }}
+                ></Image>
+                <div
+                  style={{
+                    fontSize: "2vw",
+                    lineHeight: "2.5vw",
+                    width: "25vw",
+                    margin: "2vw auto",
+                    alignText: "center",
                   }}
                 >
                   Our Senior Advisors are made up of students who have been

@@ -16,9 +16,10 @@ import CustomTitle from "./components/CustomTitle.js";
 import berk from "./Decal Images/berkeleyischool-logo-alternate-blue-lg.png";
 import datacamp from "./Decal Images/datacamp-logo 1.png";
 import decal from "./Decal Images/decalberkeleylogo 1.png";
+import evelyn from "./PM Headshots/evelyn.png";
+import steven from "./PM Headshots/steven.jpg";
 import andi from "./Leadership Headshots/andi.jpg";
 import charlie from "./Leadership Headshots/charlie.jpg";
-import evelyn from "./PM Headshots/evelyn.png";
 import story from "./SocialGood/socialgoodheader-compress-min.jpg";
 import hype from "./SocialGood/SoialGoodPic.png";
 import heart from "./SocialGood/dssg1.jpeg";
@@ -338,11 +339,11 @@ class Social extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:roshanlodha@berkeley.edu">
-                    <Icon name="mail" />
+                  <a href="mailto:charlieduarte@berkeley.edu">
+                    <Icon size="large" name="mail" />
                   </a>
-                  <a href="http://linkedin.com/in/roshanlodha">
-                    <Icon name="linkedin" />
+                  <a href="https://www.linkedin.com/in/charlie-duarte/">
+                    <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
@@ -356,11 +357,11 @@ class Social extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:roshanlodha@berkeley.edu">
-                    <Icon name="mail" />
+                  <a href="mailto:andihalim@berkeley.edu">
+                    <Icon size="large" name="mail" />
                   </a>
-                  <a href="http://linkedin.com/in/roshanlodha">
-                    <Icon name="linkedin" />
+                  <a href="https://www.linkedin.com/in/andihalim/">
+                    <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
@@ -374,17 +375,17 @@ class Social extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:roshanlodha@berkeley.edu">
+                  <a href="mailto:steven.chen@berkeley.edu">
                     <Icon name="mail" />
                   </a>
-                  <a href="http://linkedin.com/in/roshanlodha">
+                  <a href="https://www.linkedin.com/in/evelyn-lu-026450153/">
                     <Icon name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
               <Card style={cardstyle}>
                 {" "}
-                <Image style={imagestyle} src={andi} />
+                <Image style={imagestyle} src={steven} />
                 <Card.Content>
                   <Card.Header style={textstyle}>Steven Chen</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
@@ -392,10 +393,10 @@ class Social extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:roshanlodha@berkeley.edu">
+                  <a href="mailto:steven.chen@berkeley.edu">
                     <Icon name="mail" />
                   </a>
-                  <a href="http://linkedin.com/in/roshanlodha">
+                  <a href="https://www.linkedin.com/in/steven-z-chen/">
                     <Icon name="linkedin" />
                   </a>
                 </Card.Content>

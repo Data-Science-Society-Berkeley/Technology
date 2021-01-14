@@ -88,19 +88,6 @@ const button = {
   marginRight: "15vw",
 };
 
-// const cardstyle = {
-//   width: "25vw",
-//   // height: "25vw",
-//   marginBottom: "1vw",
-//   marginleft: "22vw",
-//   textAlign: "center",
-// };
-// const imagestyle = {
-//   height: "25vw",
-//   maxHeight: "25vw",
-//   width: "25vw",
-//   maxWidth: "25vw",
-// };
 const cardstyle = {
   width: "28vw",
   maxHeight: "56vw",
@@ -128,7 +115,7 @@ const roleStyle = {
   fontWeight: 300,
   fontSize: "2vw",
   lineHeight: "2vw",
-  color: "#8CD6D1",
+  color: "#000000",
 };
 const overlayboxes = {
   background: "#F8F8F8",

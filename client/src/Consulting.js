@@ -46,7 +46,7 @@ import avik from "./PM Headshots/Avik.jpg";
 import anita from "./PM Headshots/anita.jpg";
 import annie from "./PM Headshots/annie.jpg";
 import advait from "./PM Headshots/advait.png";
-import pranav from "./PM Headshots/Pranav.png";
+import pranav from "./PM Headshots/pranav.png";
 import erica from "./PM Headshots/erica.jpg";
 
 import collab from "./Consulting/consultingheader-compress-min.jpg";
@@ -319,10 +319,10 @@ class Consulting extends Component {
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
-          <a href="mailto:graceq@berkeley.edu">
+          <a href="mailto:cheongh@berkeley.edu">
             <Icon size="large" name="mail" />
           </a>
-          <a href="linkedin.com/in/graqiu">
+          <a href="https://www.linkedin.com/in/cheongh/">
             <Icon size="large" name="linkedin" />
           </a>
         </Card.Content>
@@ -336,10 +336,10 @@ class Consulting extends Component {
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
-          <a href="kevinmiao@berkeley.edu">
+          <a href="anitashen@berkeley.edu">
             <Icon size="large" name="mail" />
           </a>
-          <a href="http://www.linkedin.com/in/miaok">
+          <a href="https://www.linkedin.com/in/shenanita/">
             <Icon size="large" name="linkedin" />
           </a>
         </Card.Content>
@@ -353,10 +353,10 @@ class Consulting extends Component {
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
-          <a href="mailto:graceq@berkeley.edu">
+          <a href="mailto:ericaz@berkeley.edu">
             <Icon size="large" name="mail" />
           </a>
-          <a href="linkedin.com/in/graqiu">
+          <a href="https://www.linkedin.com/in/ericazhu00/">
             <Icon size="large" name="linkedin" />
           </a>
         </Card.Content>
@@ -371,10 +371,10 @@ class Consulting extends Component {
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
-          <a href="mailto:andyxia124@berkeley.edu">
+          <a href="mailto:anniedai@berkeley.edu">
             <Icon size="large" name="mail" />
           </a>
-          <a href="https://www.linkedin.com/in/andy-xia-6577b6171/">
+          <a href="https://www.linkedin.com/in/annie-dai0/">
             <Icon size="large" name="linkedin" />
           </a>
         </Card.Content>
@@ -382,7 +382,7 @@ class Consulting extends Component {
     ];
     let temp2 = [
       <Card style={cardstyle}>
-        <Image src={advait} style={imagestyle} />
+        <Image src={pranav} style={imagestyle} />
         <Card.Content>
           <Card.Header style={textstyle}>Pranav Sukumar</Card.Header>
           <Card.Meta style={{ marginTop: "1vw" }}>
@@ -390,10 +390,10 @@ class Consulting extends Component {
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
-          <a href="mailto:graceq@berkeley.edu">
+          <a href="mailto:pranavsukumar@berkeley.edu">
             <Icon size="large" name="mail" />
           </a>
-          <a href="linkedin.com/in/graqiu">
+          <a href="https://www.linkedin.com/in/pranav-sukumar/">
             <Icon size="large" name="linkedin" />
           </a>
         </Card.Content>
@@ -407,10 +407,10 @@ class Consulting extends Component {
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
-          <a href="mailto:graceq@berkeley.edu">
+          <a href="mailto:advaitmarathe@berkeley.edu">
             <Icon size="large" name="mail" />
           </a>
-          <a href="linkedin.com/in/graqiu">
+          <a href="https://www.linkedin.com/in/advaitumarathe/">
             <Icon size="large" name="linkedin" />
           </a>
         </Card.Content>

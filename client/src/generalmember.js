@@ -115,7 +115,7 @@ const roleStyle = {
   fontWeight: 300,
   fontSize: "2vw",
   lineHeight: "2vw",
-  color: "#8CD6D1",
+  color: "#000000",
 };
 const mymidtext = {
   marginBottom: "3.5vw",
