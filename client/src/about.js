@@ -833,6 +833,7 @@ class About extends Component {
                   borderColor: "#8CD6D1",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
+                  minWidth: "30vw",
                 }}
               >
                 <div
@@ -870,6 +871,7 @@ class About extends Component {
                   borderColor: "#FFC54A",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
+                  minWidth: "30vw",
                 }}
               >
                 <div
@@ -907,6 +909,7 @@ class About extends Component {
                   borderColor: "#8CD6D1",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
+                  minWidth: "30vw",
                 }}
               >
                 <div
@@ -954,6 +957,7 @@ class About extends Component {
                   borderColor: "#FFC54A",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
+                  minWidth: "30vw",
                 }}
               >
                 <div
@@ -991,6 +995,7 @@ class About extends Component {
                   borderColor: "#8CD6D1",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
+                  minWidth: "30vw",
                 }}
               >
                 <div
@@ -1028,6 +1033,7 @@ class About extends Component {
                   borderColor: "#FFC54A",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
+                  minWidth: "30vw",
                 }}
               >
                 <div
