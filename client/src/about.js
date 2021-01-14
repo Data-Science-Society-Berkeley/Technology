@@ -581,7 +581,7 @@ class About extends Component {
 
   screenWidthBigEnough() {
     if (window.innerWidth < 500) {
-      return "0vw";
+      return "1vw";
     } else {
       return "10vw";
     }
@@ -844,7 +844,7 @@ class About extends Component {
                   borderColor: "#8CD6D1",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
-                  minWidth: "30vw",
+                  minWidth: "29vw",
                 }}
               >
                 <div
@@ -882,7 +882,7 @@ class About extends Component {
                   borderColor: "#FFC54A",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
-                  minWidth: "30vw",
+                  minWidth: "29vw",
                 }}
               >
                 <div
@@ -920,7 +920,7 @@ class About extends Component {
                   borderColor: "#8CD6D1",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
-                  minWidth: "33vw",
+                  minWidth: "32vw",
                 }}
               >
                 <div
@@ -968,7 +968,7 @@ class About extends Component {
                   borderColor: "#FFC54A",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
-                  minWidth: "31vw",
+                  minWidth: "29vw",
                 }}
               >
                 <div
@@ -1006,7 +1006,7 @@ class About extends Component {
                   borderColor: "#8CD6D1",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
-                  minWidth: "31vw",
+                  minWidth: "29vw",
                 }}
               >
                 <div
@@ -1044,7 +1044,7 @@ class About extends Component {
                   borderColor: "#FFC54A",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
-                  minWidth: "31vw",
+                  minWidth: "29vw",
                 }}
               >
                 <div
