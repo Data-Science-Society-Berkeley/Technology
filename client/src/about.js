@@ -859,7 +859,7 @@ class About extends Component {
               >
                 <div
                   style={{
-                    fontSize: "3vw",
+                    fontSize: "2.5vw",
                     lineHeight: "5vw",
                   }}
                 >
@@ -930,13 +930,13 @@ class About extends Component {
                   borderStyle: "solid",
                   borderColor: "#8CD6D1",
                   borderWidth: ".5vw",
-                  borderRadius: "3vw",
+                  borderRadiust: "3vw",
                   minWidth: "30vw",
                 }}
               >
                 <div
                   style={{
-                    fontSize: "3vw",
+                    fontSize: "2.5vw",
                     lineHeight: "5vw",
                   }}
                 >
@@ -984,7 +984,7 @@ class About extends Component {
               >
                 <div
                   style={{
-                    fontSize: "3vw",
+                    fontSize: "2.5vw",
                     lineHeight: "5vw",
                   }}
                 >
@@ -1022,7 +1022,7 @@ class About extends Component {
               >
                 <div
                   style={{
-                    fontSize: "3vw",
+                    fontSize: "2.5vw",
                     lineHeight: "5vw",
                   }}
                 >
@@ -1060,7 +1060,7 @@ class About extends Component {
               >
                 <div
                   style={{
-                    fontSize: "3vw",
+                    fontSize: "2.5vw",
                     lineHeight: "5vw",
                   }}
                 >
