@@ -854,7 +854,7 @@ class About extends Component {
                   borderColor: "#8CD6D1",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
-                  minWidth: "29vw",
+                  minWidth: "28vw",
                 }}
               >
                 <div
@@ -892,7 +892,7 @@ class About extends Component {
                   borderColor: "#FFC54A",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
-                  minWidth: "29vw",
+                  minWidth: "28vw",
                   // marginLeft: screenInterMarginResult,
                 }}
               >
@@ -930,8 +930,8 @@ class About extends Component {
                   borderStyle: "solid",
                   borderColor: "#8CD6D1",
                   borderWidth: ".5vw",
-                  borderRadiust: "3vw",
-                  minWidth: "30vw",
+                  borderRadius: "3vw",
+                  minWidth: "28vw",
                 }}
               >
                 <div
@@ -979,7 +979,7 @@ class About extends Component {
                   borderColor: "#FFC54A",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
-                  minWidth: "29vw",
+                  minWidth: "28vw",
                 }}
               >
                 <div
@@ -1017,7 +1017,7 @@ class About extends Component {
                   borderColor: "#8CD6D1",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
-                  minWidth: "29vw",
+                  minWidth: "28vw",
                 }}
               >
                 <div
@@ -1055,7 +1055,7 @@ class About extends Component {
                   borderColor: "#FFC54A",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
-                  minWidth: "29vw",
+                  minWidth: "28vw",
                 }}
               >
                 <div
