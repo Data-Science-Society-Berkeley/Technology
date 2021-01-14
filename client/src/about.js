@@ -844,7 +844,7 @@ class About extends Component {
                   borderColor: "#8CD6D1",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
-                  minWidth: "30vw",
+                  minWidth: "35vw",
                 }}
               >
                 <div
@@ -882,7 +882,7 @@ class About extends Component {
                   borderColor: "#FFC54A",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
-                  minWidth: "30vw",
+                  minWidth: "35vw",
                 }}
               >
                 <div
@@ -902,7 +902,7 @@ class About extends Component {
                     fontSize: "2vw",
                     lineHeight: "2.5vw",
                     width: "25vw",
-                    margin: "2vw auto",
+                    margin: "1.5vw auto",
                     alignText: "center",
                   }}
                 >
@@ -920,7 +920,7 @@ class About extends Component {
                   borderColor: "#8CD6D1",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
-                  minWidth: "30vw",
+                  minWidth: "35vw",
                 }}
               >
                 <div
@@ -945,8 +945,8 @@ class About extends Component {
                     marginBottom: "3.5vw",
                   }}
                 >
-                  CMs take charge of their respective committees: Academic
-                  Development, Consulting, DeCal, and Social Good!
+                  CMs take charge of their committees: Academic Development,
+                  Consulting, DeCal, and Social Good!
                 </div>
               </div>
             </Grid.Column>
@@ -968,7 +968,7 @@ class About extends Component {
                   borderColor: "#FFC54A",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
-                  minWidth: "30vw",
+                  minWidth: "35vw",
                 }}
               >
                 <div
@@ -993,8 +993,8 @@ class About extends Component {
                     marginBottom: "3.25vw",
                   }}
                 >
-                  GMs complete semester-long research projects under the
-                  guidance of our Academic Development committee.
+                  GMs complete and present semester-long research projects under
+                  the guidance of our Academic Development committee.
                 </div>
               </div>
             </Grid.Column>
@@ -1006,7 +1006,7 @@ class About extends Component {
                   borderColor: "#8CD6D1",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
-                  minWidth: "30vw",
+                  minWidth: "35vw",
                 }}
               >
                 <div
@@ -1044,7 +1044,7 @@ class About extends Component {
                   borderColor: "#FFC54A",
                   borderWidth: ".5vw",
                   borderRadius: "3vw",
-                  minWidth: "30vw",
+                  minWidth: "35vw",
                 }}
               >
                 <div
@@ -1053,7 +1053,7 @@ class About extends Component {
                     lineHeight: "5vw",
                   }}
                 >
-                  Senior Advisers
+                  Senior Advisor
                 </div>
                 <Image
                   src={senior}
