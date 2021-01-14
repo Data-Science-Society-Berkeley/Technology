@@ -35,12 +35,12 @@ import sabrina from "./Leadership Headshots/SabrinaHeadshot.jpeg";
 import rick from "./Leadership Headshots/Rick.jpeg";
 import elton from "./Leadership Headshots/elton.jpeg";
 
-import pm from "./About/_MG_59681.png";
-import exec from "./About/group1.png";
-import commit from "./About/dsssp20-biglittlereveal-groupphoto1.png";
-import gen from "./About/operationanalytics21.png";
-import decal from "./About/learn.png";
-import senior from "./About/widsberkeleydssspring20201.png";
+import pm from "./About/ProjectManager.JPG";
+import exec from "./About/ExecutiveTeam.JPG";
+import commit from "./About/CommitteeMember.jpg";
+import gen from "./About/GeneralMember.jpg";
+import decal from "./About/DeCal.png";
+import senior from "./About/SeniorAdvisor.png";
 import join from "./About/JoinUs.jpg";
 //import story from './About/OurStory.jpg'
 import story from "./About/OurStory-Compressed-min.jpg";
@@ -854,6 +854,7 @@ class About extends Component {
                     width: "25vw",
                     margin: "2vw auto",
                     alignText: "center",
+                    marginBottom: "2.5vw",
                   }}
                 >
                   Our team of execs is in charge of all the club operations.
@@ -877,7 +878,7 @@ class About extends Component {
                     lineHeight: "5vw",
                   }}
                 >
-                  Project Managers
+                  Project Manager
                 </div>
                 <Image
                   src={pm}
@@ -914,7 +915,7 @@ class About extends Component {
                     lineHeight: "5vw",
                   }}
                 >
-                  Committee Members
+                  Committee Member
                 </div>
                 <Image
                   src={commit}
@@ -927,11 +928,11 @@ class About extends Component {
                     width: "25vw",
                     margin: "2vw auto",
                     alignText: "center",
+                    marginBottom: "3.5vw",
                   }}
                 >
-                  CMs are responsibile of their respective committees: Academic
-                  Development, Consulting, DeCal and Social Good! They can also
-                  join our internal committees like Tech and Culture.
+                  CMs take charge of their respective committees: Academic
+                  Development, Consulting, DeCal, and Social Good!
                 </div>
               </div>
             </Grid.Column>
@@ -961,7 +962,7 @@ class About extends Component {
                     lineHeight: "5vw",
                   }}
                 >
-                  General Members
+                  General Member
                 </div>
                 <Image
                   src={commit}
@@ -974,6 +975,7 @@ class About extends Component {
                     width: "25vw",
                     margin: "2vw auto",
                     alignText: "center",
+                    marginBottom: "3.25vw",
                   }}
                 >
                   GMs complete semester-long research projects under the
@@ -1012,10 +1014,8 @@ class About extends Component {
                     alignText: "center",
                   }}
                 >
-                  DeCal students enroll in our 2-unit course: Essential Tools
-                  for Data Science and learn various DS topics that prepare you
-                  for industry. This is completely student-run by our DeCal
-                  committee.
+                  DeCal students enroll in our DeCal - run by our DeCal
+                  committee - and learn about industry relevant DS tools.
                 </div>
               </div>
             </Grid.Column>
@@ -1051,10 +1051,8 @@ class About extends Component {
                     alignText: "center",
                   }}
                 >
-                  Our Senior Advisors are made up of students who have been
-                  committee members for 2+ semesters! Their obligations vary
-                  from advising consulting teams to guest lecturing to holding
-                  internal coffee chats!
+                  Our Senior Advisors consist of previous committee members who
+                  help advise teams, give guest lectures, and present workshops.
                 </div>
               </div>
             </Grid.Column>

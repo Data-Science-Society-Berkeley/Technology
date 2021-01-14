@@ -4,7 +4,7 @@ import { Grid } from "semantic-ui-react";
 function CustomTitle(props) {
   return (
     <Grid.Row id={props.id} style={{ marginTop: "6vw" }} centered>
-      <Grid.Column width={4} style={{ position: "relative" }}>
+      <Grid.Column width={3} style={{ position: "relative" }}>
         <div
           style={{
             height: "1vw",
@@ -26,11 +26,11 @@ function CustomTitle(props) {
           // left: "-7vw",
           textAlign: "center",
         }}
-        width={8}
+        width={10}
       >
         {props.title}
       </Grid.Column>
-      <Grid.Column width={4}>
+      <Grid.Column width={3}>
         <div
           style={{
             height: "1vw",

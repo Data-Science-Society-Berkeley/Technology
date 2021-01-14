@@ -42,7 +42,7 @@ import alina from "./PM Headshots/Alina.png";
 import grace from "./PM Headshots/Grace.jpg";
 import pooja from "./PM Headshots/Pooja.png";
 import rick from "./PM Headshots/Rick.jpeg";
-import avik from "./PM Headshots/Avik.jpg";
+import devesh from "./PM Headshots/devesh.png";
 import anita from "./PM Headshots/anita.jpg";
 import annie from "./PM Headshots/annie.jpg";
 import advait from "./PM Headshots/advait.png";
@@ -402,6 +402,23 @@ class Consulting extends Component {
         <Image src={advait} style={imagestyle} />
         <Card.Content>
           <Card.Header style={textstyle}>Advait Marathe</Card.Header>
+          <Card.Meta style={{ marginTop: "1vw" }}>
+            <span style={roleStyle}>PM</span>
+          </Card.Meta>
+        </Card.Content>
+        <Card.Content extra>
+          <a href="mailto:advaitmarathe@berkeley.edu">
+            <Icon size="large" name="mail" />
+          </a>
+          <a href="https://www.linkedin.com/in/advaitumarathe/">
+            <Icon size="large" name="linkedin" />
+          </a>
+        </Card.Content>
+      </Card>,
+      <Card style={cardstyle}>
+        <Image src={devesh} style={imagestyle} />
+        <Card.Content>
+          <Card.Header style={textstyle}>Devesh Agrawal</Card.Header>
           <Card.Meta style={{ marginTop: "1vw" }}>
             <span style={roleStyle}>PM</span>
           </Card.Meta>
