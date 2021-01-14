@@ -578,7 +578,18 @@ class About extends Component {
   scrollTeam() {
     document.getElementById("team").scrollIntoView();
   }
+
+  screenWidthBigEnough() {
+    if (window.innerWidth < 500) {
+      return "0vw";
+    } else {
+      return "10vw";
+    }
+  }
+
   render() {
+    const screenSizeResult = this.screenWidthBigEnough();
+
     return (
       <div>
         <div style={{ zIndex: "1", position: "relative" }}>
@@ -821,8 +832,8 @@ class About extends Component {
             columns={3}
             style={{
               marginTop: "4vw",
-              marginLeft: "10vw",
-              marginRight: "10vw",
+              marginRight: screenSizeResult,
+              marginLeft: screenSizeResult,
             }}
           >
             <Grid.Column>
@@ -945,8 +956,8 @@ class About extends Component {
             columns={3}
             style={{
               marginTop: "5vw",
-              marginLeft: "10vw",
-              marginRight: "10vw",
+              marginRight: screenSizeResult,
+              marginLeft: screenSizeResult,
             }}
           >
             <Grid.Column>
