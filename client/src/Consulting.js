@@ -269,7 +269,7 @@ class Consulting extends Component {
           <a href="mailto:graceq@berkeley.edu">
             <Icon size="large" name="mail" />
           </a>
-          <a href="linkedin.com/in/graqiu">
+          <a href="https://www.linkedin.com/in/graqiu">
             <Icon size="large" name="linkedin" />
           </a>
         </Card.Content>
@@ -424,7 +424,7 @@ class Consulting extends Component {
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
-          <a href="mailto:advaitmarathe@berkeley.edu">
+          <a href="mailto:deveshagarwal@berkeley.edu">
             <Icon size="large" name="mail" />
           </a>
           <a href="https://www.linkedin.com/in/advaitumarathe/">

@@ -515,11 +515,11 @@ class Acadev extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:alleanna@berkeley.edu">
-                    <Icon name="mail" />
+                  <a href="mailto:atharva@berkeley.edu">
+                    <Icon size="large" name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/in/alleanna-clark-5b37aa16a/ ">
-                    <Icon name="linkedin" />
+                  <a href="https://www.linkedin.com/in/atharvamehendale/ ">
+                    <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
@@ -533,11 +533,11 @@ class Acadev extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:stephanie.lu@berkeley.edu">
-                    <Icon name="mail" />
+                  <a href="mailto:sabrinaywu@berkeley.edu">
+                    <Icon size="large" name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/in/stephanie-l-705a29175/">
-                    <Icon name="linkedin" />
+                  <a href="https://www.linkedin.com/in/sabrinayihwu/">
+                    <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
@@ -551,11 +551,11 @@ class Acadev extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:roshanlodha@berkeley.edu">
-                    <Icon name="mail" />
+                  <a href="mailto:arnavp418@erkeley.edu">
+                    <Icon size="large" name="mail" />
                   </a>
-                  <a href="http://linkedin.com/in/roshanlodha">
-                    <Icon name="linkedin" />
+                  <a href="https://www.linkedin.com/in/arnavpatel360/">
+                    <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
