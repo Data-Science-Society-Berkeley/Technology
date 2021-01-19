@@ -48,6 +48,7 @@ import annie from "./PM Headshots/annie.jpg";
 import advait from "./PM Headshots/advait.png";
 import pranav from "./PM Headshots/pranav.png";
 import erica from "./PM Headshots/erica.jpg";
+import henry from "./PM Headshots/henry.jpg";
 
 import collab from "./Consulting/consultingheader-compress-min.jpg";
 
@@ -286,7 +287,7 @@ class Consulting extends Component {
           <a href="mailto:pooja.eega@berkeley.edu">
             <Icon size="large" name="mail" />
           </a>
-          <a href="www.linkedin.com/in/pooja-eega ">
+          <a href="https://www.linkedin.com/in/pooja-eega ">
             <Icon size="large" name="linkedin" />
           </a>
         </Card.Content>
@@ -311,7 +312,7 @@ class Consulting extends Component {
     ];
     let temp1 = [
       <Card style={cardstyle}>
-        <Image src={advait} style={imagestyle} />
+        <Image src={henry} style={imagestyle} />
         <Card.Content>
           <Card.Header style={textstyle}>Henry Cheong</Card.Header>
           <Card.Meta style={{ marginTop: "1vw" }}>
