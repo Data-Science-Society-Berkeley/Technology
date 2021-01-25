@@ -87,7 +87,7 @@ class App extends Component {
           <Route
             path="/zoom"
             component={() => {
-              window.location.href = "https://berkeley.zoom.us/j/98744924975";
+              window.location.href = "https://berkeley.zoom.us/j/97919712836";
               return null;
             }}
           />
@@ -363,7 +363,7 @@ class App extends Component {
           <Route
             path="/zoom"
             component={() => {
-              window.location.href = "https://berkeley.zoom.us/j/98744924975";
+              window.location.href = "https://berkeley.zoom.us/j/97919712836";
               return null;
             }}
           />
