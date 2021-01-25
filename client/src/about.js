@@ -845,7 +845,7 @@ class About extends Component {
               marginRight: screenSizeResult,
               marginLeft: screenSizeResult,
             }}
-          >
+          >p,
             <Grid.Column>
               <div
                 style={{

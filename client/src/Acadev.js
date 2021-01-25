@@ -551,7 +551,7 @@ class Acadev extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:arnavp418@erkeley.edu">
+                  <a href="mailto:arnavp418@berkeley.edu">
                     <Icon size="large" name="mail" />
                   </a>
                   <a href="https://www.linkedin.com/in/arnavpatel360/">
