@@ -266,7 +266,7 @@ class Acadev extends Component {
                 lineHeight: "6vw",
               }}
             >
-              Academic Development
+              Decal Development
             </span>
             <span
               style={{
