@@ -15,6 +15,10 @@ import {
 } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CustomTitle from "./components/CustomTitle.js";
+import CustomTitleBlack from "./components/CustomTitleBlack.js";
+
+import gmLine from "./Acadev Images/gmLine.png";
+import workshopLine from "./Acadev Images/workshopLine.png";
 
 import haas from "./Acadev Images/haasdatascienceclub 1.png";
 import bids from "./Acadev Images/Berkeley_Institute_for_Data_Science_-_Logo 1.png";
@@ -188,7 +192,7 @@ const cardDescription = {
   fontFamily: "Montserrat",
   fontSize: "1.25vw",
   lineHeight: "2vw",
-  textAlign: "Left",
+  textAlign: "center",
 };
 const bulletedPoints = {
   textAlign: "left",
@@ -374,8 +378,7 @@ class Acadev extends Component {
 
         <Grid centered>
           <Grid.Row></Grid.Row>
-
-          {CustomTitle({ title: "What We Do" })}
+          
           <Grid.Row
             style={{
               color: "#000000",
@@ -390,65 +393,46 @@ class Acadev extends Component {
               marginRight: "25vw",
             }}
           >
-            The academic development committee hosts a variety of educational
-            workshops for the greater campus community , and directs our general
-            membership (GM) program open to all skill levels and students.
+            The academic development committee hosts a variety of 
+            educational workshops for the {" "}
+            <strong style={{ color: "#8CD6D1" }}>
+                    greater campus community
+            </strong> {" "}
+            , and directs our general membership (GM) program open to 
+            <strong style={{ color: "#8CD6D1" }}>
+            all skill levels and students
+            </strong> {" "}.
           </Grid.Row>
 
-          {CustomTitle({ title: "Our Initiatives" })}
+          {CustomTitleBlack({ title: "General Membership" })}
+          <div>
+            <Image
+              src={gmLine}
+            ></Image>
+          </div>
+
           <Grid.Row centered>
             <Card.Group centered>
               <Card style={overlayboxes}>
                 <Card.Header style={generalmember}>
-                  General Membership
+                  Committee Member
                 </Card.Header>
-                <div style={circleStyle}> 1</div>
 
                 <Card.Description style={cardDescription}>
-                  We provide members with a mentor and weekly lectures covering
-                  the data science lifecycle and project collaboration. Our goal
-                  is to get you to a completed data science research project by
-                  the end of the semester.
-                  <br />
-                  <List bulleted>
-                    <List.Header style={whatYoullDo}>
-                      What you’ll do:
-                      <br />
-                    </List.Header>
-                    <List.Item style={bulletedPoints}>
-                      Collaborate with students to develop a semester long
-                      project of your choosing.
-                    </List.Item>
-                    <List.Item style={bulletedPoints}>
-                      Present at the Berkeley Data Science Research Symposium
-                      and create a publication to post on our website.
-                    </List.Item>
-                  </List>
+                  Act as a mentor for projects and 
+                  teach relevant skills for  research! 
+                  Conduct  lectures covering Data 
+                  Science and project collaboration!
                 </Card.Description>
               </Card>
               <Card style={overlayboxes}>
-                <Card.Header style={generalmember}>Workshops</Card.Header>
-                <div style={circleStyle}> 2</div>
+                <Card.Header style={generalmember}>General Member</Card.Header>
                 <Card.Description style={cardDescription}>
-                  Collaborate with students from a variety of backgrounds and
-                  other organizations to educate the campus community of
-                  practical problems, phenomena and tools related to data
-                  science.
-                  <br />
-                  <List bulleted>
-                    <List.Header style={whatYoullDo}>
-                      What you’ll do:
-                    </List.Header>
-
-                    <List.Item style={bulletedPoints}>
-                      Communicate with your fellow team members and other orgs
-                      to develop workshop materials
-                    </List.Item>
-                    <List.Item style={bulletedPoints}>
-                      Present to a wide audience and support the campus data
-                      science community!
-                    </List.Item>
-                  </List>
+                  Collaborate and develop a 
+                  semester-long project of your 
+                  choosing! Present at the Berkeley 
+                  Data Science Research Symposium 
+                  and publish on the DSS website!
                 </Card.Description>
               </Card>
             </Card.Group>
@@ -468,27 +452,7 @@ class Acadev extends Component {
             columns={2}
             style={{ marginTop: "8vw", right: "3vw" }}
           >
-            <Grid.Column width={6} textAlign="center">
-              <Link to="/apply">
-                <div style={info}>
-                  <strong style={{ color: "#FFC54A" }}>
-                    Interested in teaching?{" "}
-                  </strong>
-                  Apply to become an AcaDev Committee Member!
-                </div>
-              </Link>
-            </Grid.Column>
-            <Grid.Column width={6} textAlign="center">
-              <Link to="/apply">
-                <div style={info}>
-                  <strong style={{ color: "#FFC54A" }}>
-                    {" "}
-                    Interested in learning?{" "}
-                  </strong>
-                  Apply to become a General Member!
-                </div>
-              </Link>
-            </Grid.Column>
+            
             {/* No Decal Spring 2021 rip:( */}
             {/* <Grid.Column width={4} textAlign="center">
               <Link to="/decal">
@@ -502,7 +466,20 @@ class Acadev extends Component {
               </Link>
             </Grid.Column> */}
           </Grid.Row>
-          {CustomTitle({ title: "AcaDev Directors" })}
+          {CustomTitleBlack({ title: "Workshops" })}
+          <Grid.Row>
+          <div>
+            <Image
+              src={workshopLine}
+            ></Image>
+          </div>
+          <Card.Group style={{ marginTop: "5vw" }}>
+
+          </Card.Group>
+          
+          
+          </Grid.Row>
+          {CustomTitleBlack({ title: "AcaDev Directors" })}
           <Grid.Row>
             <Card.Group style={{ marginTop: "5vw" }}>
               <Card style={cardstyle}>
