@@ -19,6 +19,10 @@ import CustomTitleBlack from "./components/CustomTitleBlack.js";
 
 import gmLine from "./Acadev Images/gmLine.png";
 import workshopLine from "./Acadev Images/workshopLine.png";
+import yellowUnderline from "./Acadev Images/yellowUnderline.png";
+import CMImage from "./Acadev Images/CMImage.png";
+import GMImage from "./Acadev Images/GMImage.png";
+import WSImage from "./Acadev Images/WSImage.png";
 
 import haas from "./Acadev Images/haasdatascienceclub 1.png";
 import bids from "./Acadev Images/Berkeley_Institute_for_Data_Science_-_Logo 1.png";
@@ -105,6 +109,7 @@ const imagestyle = {
   width: "28vw",
   maxWidth: "28vw",
 };
+
 const textstyle = {
   fontFamily: "Montserrat",
   fontWeight: 300,
@@ -123,16 +128,16 @@ const roleStyle = {
 };
 const overlayboxes = {
   background: "#F8F8F8",
-  border: ".5vw solid #8CD6D1",
+  border: ".4vw solid #FFC54A",
   boxSizing: "border-box",
-  boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
+  //boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
   borderRadius: "1.5vw",
-  height: "32vw",
-  width: "32vw",
+  height: "40vw",
+  width: "40vw",
   marginBottom: "5vw",
   marginTop: "6vw",
-  marginLeft: "10vw",
-  marginRight: "10vw",
+  marginLeft: "5vw",
+  marginRight: "5vw",
 };
 // const overlayboxes2 = {
 //   background: "#F8F8F8",
@@ -146,16 +151,26 @@ const overlayboxes = {
 //   marginLeft: "438px",
 //   marginTop: "80px",
 // };
-const generalmember = {
+const cardHeader = {
   fontFamily: "Montserrat",
-  fontWeight: 300,
+  fontWeight: 500,
   lineHeight: "3vw",
-  fontSize: "2vw",
+  fontSize: "2.75vw",
   color: "#000000",
   textAlign: "center",
   marginLeft: "2vw",
   marginTop: "1.5vw",
+  marginBottom: "0.5vw",
 };
+
+const cardUnderlineStyle = {
+  height: "0.5vw",
+  maxHeight: "28vw",
+  width: "28vw",
+  maxWidth: "28vw",
+  marginBottom: "2vw",
+};
+
 const circleStyle = {
   padding: ".75vw",
   marginLeft: "-3vw",
@@ -389,35 +404,34 @@ class Acadev extends Component {
               fontWeight: "21vw",
               fontStyle: "normal",
               fontFamily: "Montserrat",
-              marginLeft: "25vw",
-              marginRight: "25vw",
+              marginLeft: "20vw",
+              marginRight: "20vw",
             }}
           >
             The academic development committee hosts a variety of 
-            educational workshops for the {" "}
-            <strong style={{ color: "#8CD6D1" }}>
-                    greater campus community
-            </strong> {" "}
+            educational workshops for the 
+            <strong style={{ color: "#8CD6D1" }}> {" "}
+              greater campus community {" "}
+            </strong> 
             , and directs our general membership (GM) program open to 
-            <strong style={{ color: "#8CD6D1" }}>
-            all skill levels and students
-            </strong> {" "}.
+            <strong style={{ color: "#8CD6D1" }}> {" "}
+              all skill levels and students {" "}
+            </strong>.
           </Grid.Row>
 
           {CustomTitleBlack({ title: "General Membership" })}
           <div>
-            <Image
-              src={gmLine}
-            ></Image>
+            <Image src={gmLine}></Image>
           </div>
 
           <Grid.Row centered>
             <Card.Group centered>
               <Card style={overlayboxes}>
-                <Card.Header style={generalmember}>
+                <Card.Header style={cardHeader}>
                   Committee Member
                 </Card.Header>
-
+                <Image style={cardUnderlineStyle} src={yellowUnderline}></Image>
+                <Image src={CMImage}></Image>
                 <Card.Description style={cardDescription}>
                   Act as a mentor for projects and 
                   teach relevant skills for  research! 
@@ -426,7 +440,9 @@ class Acadev extends Component {
                 </Card.Description>
               </Card>
               <Card style={overlayboxes}>
-                <Card.Header style={generalmember}>General Member</Card.Header>
+                <Card.Header style={cardHeader}>General Member</Card.Header>
+                <Image style={cardUnderlineStyle} src={yellowUnderline}></Image>
+                <Image src={GMImage}></Image>
                 <Card.Description style={cardDescription}>
                   Collaborate and develop a 
                   semester-long project of your 
@@ -437,13 +453,10 @@ class Acadev extends Component {
               </Card>
             </Card.Group>
           </Grid.Row>
-          <Grid.Row centered columns={2}>
+          <Grid.Row centered columns={1}>
             <Button.Group centered>
               <Link to="education">
-                <Button style={button}>Past GM Projects</Button>
-              </Link>
-              <Link to="education">
-                <Button style={button}>Past Workshops</Button>
+                <Button style={button}>Apply to become a General Member!</Button>
               </Link>
             </Button.Group>
           </Grid.Row>
@@ -473,93 +486,55 @@ class Acadev extends Component {
               src={workshopLine}
             ></Image>
           </div>
-          <Card.Group style={{ marginTop: "5vw" }}>
-
-          </Card.Group>
           
-          
+          <Grid.Row centered style={{ marginBottom: "9vw", marginTop: "4vw" }}>
+            <div
+              style={{
+                background: "#FFFFFF",
+                border: "5px solid #8CD6D1",
+                boxSizing: "border-box",
+                borderRadius: "3vw",
+                width: "25%",
+                height: "14vw",
+                marginLeft: "8%",
+                marginRight: "5%",
+                fontSize: "2vw",
+                lineHeight: "2vw",
+                fontWeight: "21.5vw",
+                fontFamily: "Montserrat",
+              }}
+            >
+              <div
+                style={{
+                  marginTop: "3vw",
+                  marginLeft: "2vw",
+                  marginRight: "2vw",
+                }}
+              >
+                Collaborate with students from a variety of backgrounds 
+                and other organizations to educate the campus 
+                community of practical problems, phenomena and tools 
+                related to data science. 
+              </div>
+            </div>
           </Grid.Row>
-          {CustomTitleBlack({ title: "AcaDev Directors" })}
-          <Grid.Row>
-            <Card.Group style={{ marginTop: "5vw" }}>
-              <Card style={cardstyle}>
-                {" "}
-                <Image style={imagestyle} src={atharva} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Atharva Mehendale</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>Director of Acadev</span>
-                  </Card.Meta>
-                </Card.Content>
-                <Card.Content extra>
-                  <a href="mailto:atharva@berkeley.edu">
-                    <Icon size="large" name="mail" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/atharvamehendale/ ">
-                    <Icon size="large" name="linkedin" />
-                  </a>
-                </Card.Content>
-              </Card>
-              <Card style={cardstyle}>
-                {" "}
-                <Image style={imagestyle} src={sabrina} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Sabrina Wu</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>Director of Acadev</span>
-                  </Card.Meta>
-                </Card.Content>
-                <Card.Content extra>
-                  <a href="mailto:sabrinaywu@berkeley.edu">
-                    <Icon size="large" name="mail" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/sabrinayihwu/">
-                    <Icon size="large" name="linkedin" />
-                  </a>
-                </Card.Content>
-              </Card>
-              <Card style={cardstyle}>
-                {" "}
-                <Image style={imagestyle} src={arnav} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Arnav Patel</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>Director of Acadev</span>
-                  </Card.Meta>
-                </Card.Content>
-                <Card.Content extra>
-                  <a href="mailto:arnavp418@berkeley.edu">
-                    <Icon size="large" name="mail" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/arnavpatel360/">
-                    <Icon size="large" name="linkedin" />
-                  </a>
-                </Card.Content>
+
+          <Grid.Row centered>
+            <Card.Group centered>
+              <Card style={overlayboxes}>
+                <Image src={WSImage}></Image>
+                <Card.Description style={cardDescription}>
+                  Communicate with fellow team 
+                  members and other organizations 
+                  to develop workshop materials! 
+                  Teach diverse audiences and 
+                  support the data science 
+                  community on and off-campus!
+                </Card.Description>
               </Card>
             </Card.Group>
           </Grid.Row>
-
-          <Grid.Row></Grid.Row>
-          {CustomTitle({ title: "Current and Past Collaborations" })}
-          <Grid.Row>
-            <Image.Group style={{ marginLeft: "14vw", marginRight: "14vw" }}>
-              <Image src={haas} style={{ marginRight: "5vw" }}></Image>
-              <Image src={saas} style={{ marginRight: "4.5vw" }}></Image>
-              <Image src={pcs} style={{ marginRight: "5vw" }}></Image>
-              <Image src={cal} style={{ marginRight: "5vw" }}></Image>
-              <Image src={pbl} style={{ marginRight: "5vw" }}></Image>
-              <Image src={mlab} style={{ marginRight: "5vw" }}></Image>
-              <Image src={uea} style={{ marginRight: "7vw" }}></Image>
-              <Image src={bids} style={{ marginRight: "5vw" }}></Image>
-              <Image src={berk} style={{ marginRight: "5vw" }}></Image>
-              <Image src={data8} style={{ marginRight: "4.5vw" }}></Image>
-              <Image src={haas2} style={{ marginRight: "1vw" }}></Image>
-              <Image
-                src={ascend}
-                style={{ marginRight: "1vw", height: "8vw", width: "21vw" }}
-              ></Image>
-            </Image.Group>
-          </Grid.Row>
+          
           <Grid.Row centered style={{ marginBottom: "9vw", marginTop: "4vw" }}>
             <div
               style={{
@@ -635,6 +610,90 @@ class Acadev extends Component {
               </Link>
             </div>
           </Grid.Row>
+          
+          </Grid.Row>
+          {CustomTitleBlack({ title: "AcaDev Directors" })}
+          <Grid.Row>
+            <Card.Group style={{ marginTop: "5vw" }}>
+              <Card style={cardstyle}>
+                {" "}
+                <Image style={imagestyle} src={atharva} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Atharva Mehendale</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>Director of Acadev</span>
+                  </Card.Meta>
+                </Card.Content>
+                <Card.Content extra>
+                  <a href="mailto:atharva@berkeley.edu">
+                    <Icon size="large" name="mail" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/atharvamehendale/ ">
+                    <Icon size="large" name="linkedin" />
+                  </a>
+                </Card.Content>
+              </Card>
+              <Card style={cardstyle}>
+                {" "}
+                <Image style={imagestyle} src={sabrina} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Sabrina Wu</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>Director of Acadev</span>
+                  </Card.Meta>
+                </Card.Content>
+                <Card.Content extra>
+                  <a href="mailto:sabrinaywu@berkeley.edu">
+                    <Icon size="large" name="mail" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/sabrinayihwu/">
+                    <Icon size="large" name="linkedin" />
+                  </a>
+                </Card.Content>
+              </Card>
+              <Card style={cardstyle}>
+                {" "}
+                <Image style={imagestyle} src={arnav} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Arnav Patel</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>Director of Acadev</span>
+                  </Card.Meta>
+                </Card.Content>
+                <Card.Content extra>
+                  <a href="mailto:arnavp418@berkeley.edu">
+                    <Icon size="large" name="mail" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/arnavpatel360/">
+                    <Icon size="large" name="linkedin" />
+                  </a>
+                </Card.Content>
+              </Card>
+            </Card.Group>
+          </Grid.Row>
+
+          <Grid.Row></Grid.Row>
+          {CustomTitle({ title: "Current and Past Collaborations" })}
+          <Grid.Row>
+            <Image.Group style={{ marginLeft: "14vw", marginRight: "14vw", marginBottom: "7vw" }}>
+              <Image src={haas} style={{ marginRight: "5vw" }}></Image>
+              <Image src={saas} style={{ marginRight: "4.5vw" }}></Image>
+              <Image src={pcs} style={{ marginRight: "5vw" }}></Image>
+              <Image src={cal} style={{ marginRight: "5vw" }}></Image>
+              <Image src={pbl} style={{ marginRight: "5vw" }}></Image>
+              <Image src={mlab} style={{ marginRight: "5vw" }}></Image>
+              <Image src={uea} style={{ marginRight: "7vw" }}></Image>
+              <Image src={bids} style={{ marginRight: "5vw" }}></Image>
+              <Image src={berk} style={{ marginRight: "5vw" }}></Image>
+              <Image src={data8} style={{ marginRight: "4.5vw" }}></Image>
+              <Image src={haas2} style={{ marginRight: "1vw" }}></Image>
+              <Image
+                src={ascend}
+                style={{ marginRight: "1vw", height: "8vw", width: "21vw" }}
+              ></Image>
+            </Image.Group>
+          </Grid.Row>
+          
         </Grid>
       </div>
     );
