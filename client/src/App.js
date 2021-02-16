@@ -134,6 +134,32 @@ class App extends Component {
           />
           <Route
             exact
+            path="/shoutouts"
+            render={(props) => (
+              <div>
+                {/* makes background white on page you're going to*/}
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar {...props} />
+                <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+                <iframe
+                  class="airtable-embed airtable-dynamic-height"
+                  src="https://airtable.com/embed/shrYLcS7BfC3UdHqN?backgroundColor=teal"
+                  frameborder="0"
+                  onmousewheel=""
+                  width="100%"
+                  height="2849"
+                  style={{
+                    background: "transparent",
+                    border: "1px solid #ccc",
+                  }}
+                ></iframe>
+              </div>
+            )}
+          />
+          <Route
+            exact
             path="/about"
             render={(props) => (
               <div>
