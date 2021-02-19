@@ -127,13 +127,13 @@ const roleStyle = {
   color: "#000000",
 };
 const overlayboxes = {
-  background: "#F8F8F8",
+  background: "#ffffff",
   border: ".4vw solid #FFC54A",
   boxSizing: "border-box",
   //boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
   borderRadius: "1.5vw",
-  height: "40vw",
-  width: "40vw",
+  height: "37.5vw",
+  width: "37.5vw",
   marginBottom: "5vw",
   marginTop: "6vw",
   marginLeft: "5vw",
@@ -160,7 +160,6 @@ const cardHeader = {
   textAlign: "center",
   marginLeft: "2vw",
   marginTop: "1.5vw",
-  marginBottom: "0.5vw",
 };
 
 const cardUnderlineStyle = {
@@ -168,8 +167,15 @@ const cardUnderlineStyle = {
   maxHeight: "28vw",
   width: "28vw",
   maxWidth: "28vw",
-  marginBottom: "2vw",
+  margin: "1vw auto",
 };
+
+const cardImageSyle = {
+  width: "17vw", 
+  margin: "1vw auto",
+  marginTop: '2vw',
+  backgroundColor: 'transparent',
+}
 
 const circleStyle = {
   padding: ".75vw",
@@ -205,7 +211,7 @@ const cardDescription = {
   marginLeft: "1.5vw",
   marginRight: "1.5vw",
   fontFamily: "Montserrat",
-  fontSize: "1.25vw",
+  fontSize: "1.5vw",
   lineHeight: "2vw",
   textAlign: "center",
 };
@@ -424,79 +430,16 @@ class Acadev extends Component {
             <Image src={gmLine}></Image>
           </div>
 
-          <Grid.Row centered>
-            <Card.Group centered>
-              <Card style={overlayboxes}>
-                <Card.Header style={cardHeader}>
-                  Committee Member
-                </Card.Header>
-                <Image style={cardUnderlineStyle} src={yellowUnderline}></Image>
-                <Image src={CMImage}></Image>
-                <Card.Description style={cardDescription}>
-                  Act as a mentor for projects and 
-                  teach relevant skills for  research! 
-                  Conduct  lectures covering Data 
-                  Science and project collaboration!
-                </Card.Description>
-              </Card>
-              <Card style={overlayboxes}>
-                <Card.Header style={cardHeader}>General Member</Card.Header>
-                <Image style={cardUnderlineStyle} src={yellowUnderline}></Image>
-                <Image src={GMImage}></Image>
-                <Card.Description style={cardDescription}>
-                  Collaborate and develop a 
-                  semester-long project of your 
-                  choosing! Present at the Berkeley 
-                  Data Science Research Symposium 
-                  and publish on the DSS website!
-                </Card.Description>
-              </Card>
-            </Card.Group>
-          </Grid.Row>
-          <Grid.Row centered columns={1}>
-            <Button.Group centered>
-              <Link to="education">
-                <Button style={button}>Apply to become a General Member!</Button>
-              </Link>
-            </Button.Group>
-          </Grid.Row>
-          <Grid.Row
-            centered
-            columns={2}
-            style={{ marginTop: "8vw", right: "3vw" }}
-          >
-            
-            {/* No Decal Spring 2021 rip:( */}
-            {/* <Grid.Column width={4} textAlign="center">
-              <Link to="/decal">
-                <div style={info}>
-                  <strong style={{ color: "#FFC54A" }}>
-                    {" "}
-                    Interested in being a part of our DeCal instead?{" "}
-                  </strong>
-                  Check out the DeCal Committee Page.
-                </div>
-              </Link>
-            </Grid.Column> */}
-          </Grid.Row>
-          {CustomTitleBlack({ title: "Workshops" })}
-          <Grid.Row>
-          <div>
-            <Image
-              src={workshopLine}
-            ></Image>
-          </div>
-          
-          <Grid.Row centered style={{ marginBottom: "9vw", marginTop: "4vw" }}>
+          <Grid.Row centered style={{ marginBottom: "-1.75vw", marginTop: "2vw" }}>
             <div
               style={{
                 background: "#FFFFFF",
                 border: "5px solid #8CD6D1",
                 boxSizing: "border-box",
                 borderRadius: "3vw",
-                width: "25%",
-                height: "14vw",
-                marginLeft: "8%",
+                width: "55%",
+                height: "12vw",
+                marginLeft: "5%",
                 marginRight: "5%",
                 fontSize: "2vw",
                 lineHeight: "2vw",
@@ -518,11 +461,115 @@ class Acadev extends Component {
               </div>
             </div>
           </Grid.Row>
+          
+          <Grid.Row centered>
+            <Card.Group centered>
+              <Card style={overlayboxes}>
+                <Card.Header style={cardHeader}>
+                  Committee Member
+                </Card.Header>
+                <Image style={cardUnderlineStyle} src={yellowUnderline}></Image>
+                <Image style={cardImageSyle} src={CMImage}></Image>
+                <Card.Description style={cardDescription}>
+                  Act as a mentor for projects and 
+                  teach relevant skills for  research! 
+                  Conduct  lectures covering Data 
+                  Science and project collaboration!
+                </Card.Description>
+              </Card>
+              <Card style={overlayboxes}>
+                <Card.Header style={cardHeader}>General Member</Card.Header>
+                <Image style={cardUnderlineStyle} src={yellowUnderline}></Image>
+                <Image style={cardImageSyle} src={GMImage}></Image>
+                <Card.Description style={cardDescription}>
+                  Collaborate and develop a 
+                  semester-long project of your 
+                  choosing! Present at the Berkeley 
+                  Data Science Research Symposium 
+                  and publish on the DSS website!
+                </Card.Description>
+              </Card>
+            </Card.Group>
+          </Grid.Row>
+          <Grid.Row centered columns={1} style={{marginBottom: "-1.5vw"}}>
+            <Button.Group centered>
+              <Link to="education">
+                <Button style={button}>Apply to become a General Member!</Button>
+              </Link>
+            </Button.Group>
+          </Grid.Row>
+          
+          
+          <Grid.Row
+            centered
+            columns={2}
+            style={{ marginTop: "4vw", right: "3vw" }}
+          >
+            
+            {/* No Decal Spring 2021 rip:( */}
+            {/* <Grid.Column width={4} textAlign="center">
+              <Link to="/decal">
+                <div style={info}>
+                  <strong style={{ color: "#FFC54A" }}>
+                    {" "}
+                    Interested in being a part of our DeCal instead?{" "}
+                  </strong>
+                  Check out the DeCal Committee Page.
+                </div>
+              </Link>
+            </Grid.Column> */}
+          
+          </Grid.Row>
+          {CustomTitleBlack({ title: "Workshops" })}
+          <Grid.Row>
+          <div>
+            <Image
+              src={workshopLine}
+            ></Image>
+          </div>
+          
+          <Grid.Row centered style={{ marginBottom: "-1vw", marginTop: "3.5vw" }}>
+            <div
+              style={{
+                background: "#FFFFFF",
+                border: "5px solid #8CD6D1",
+                boxSizing: "border-box",
+                borderRadius: "3vw",
+                width: "55%",
+                height: "12vw",
+                //marginLeft: "5%",
+                //marginRight: "5%",
+                fontSize: "2vw",
+                lineHeight: "2vw",
+                fontWeight: "21.5vw",
+                fontFamily: "Montserrat",
+                margin: 'auto',
+              }}
+            >
+              <div
+                style={{
+                  marginTop: "3vw",
+                  marginLeft: "2vw",
+                  marginRight: "2vw",
+                }}
+              >
+                Collaborate with students from a variety of backgrounds 
+                and other organizations to educate the campus 
+                community of practical problems, phenomena and tools 
+                related to data science. 
+              </div>
+            </div>
+          </Grid.Row>
 
           <Grid.Row centered>
             <Card.Group centered>
               <Card style={overlayboxes}>
-                <Image src={WSImage}></Image>
+                <Image src={WSImage} style={{
+                  width: "17vw", 
+                  margin: "1vw auto",
+                  marginTop: '4vw',
+                  backgroundColor: 'transparent',}}
+                ></Image>
                 <Card.Description style={cardDescription}>
                   Communicate with fellow team 
                   members and other organizations 
@@ -535,7 +582,7 @@ class Acadev extends Component {
             </Card.Group>
           </Grid.Row>
           
-          <Grid.Row centered style={{ marginBottom: "9vw", marginTop: "4vw" }}>
+          <Grid.Row centered style={{ marginBottom: "4vw", marginTop: "0vw"}}>
             <div
               style={{
                 background: "#FFFFFF",
@@ -544,7 +591,7 @@ class Acadev extends Component {
                 borderRadius: "3vw",
                 width: "25%",
                 height: "14vw",
-                marginLeft: "8%",
+                marginLeft: "5%",
                 marginRight: "5%",
                 fontSize: "2vw",
                 lineHeight: "2vw",
@@ -566,6 +613,7 @@ class Acadev extends Component {
                 page to view our past academic collaborations.
               </div>
             </div>
+            
             <div
               style={{
                 background: "#FFFFFF",
@@ -574,16 +622,16 @@ class Acadev extends Component {
                 borderRadius: "3vw",
                 width: "40%",
                 height: "14vw",
-                marginLeft: "8%",
+                marginLeft: "5%",
                 marginRight: "7vw",
+                fontSize: "2vw",
+                lineHeight: "2vw",
+                fontWeight: "21vw",
+                fontFamily: "Montserrat",
               }}
             >
               <div
                 style={{
-                  fontSize: "2vw",
-                  lineHeight: "2vw",
-                  fontWeight: "21vw",
-                  fontFamily: "Montserrat",
                   marginTop: "2vw",
                   marginLeft: "2vw",
                   marginRight: "2vw",
@@ -671,6 +719,7 @@ class Acadev extends Component {
               </Card>
             </Card.Group>
           </Grid.Row>
+
 
           <Grid.Row></Grid.Row>
           {CustomTitle({ title: "Current and Past Collaborations" })}
