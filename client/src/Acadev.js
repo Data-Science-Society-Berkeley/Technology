@@ -134,8 +134,8 @@ const overlayboxes = {
   borderRadius: "1.5vw",
   height: "37.5vw",
   width: "37.5vw",
-  marginBottom: "5vw",
-  marginTop: "6vw",
+  marginBottom: "4vw",
+  marginTop: "4vw",
   marginLeft: "5vw",
   marginRight: "5vw",
 };
@@ -171,7 +171,7 @@ const cardUnderlineStyle = {
 };
 
 const cardImageSyle = {
-  width: "17vw", 
+  width: "15vw", 
   margin: "1vw auto",
   marginTop: '2vw',
   backgroundColor: 'transparent',
@@ -403,7 +403,7 @@ class Acadev extends Component {
           <Grid.Row
             style={{
               color: "#000000",
-              marginTop: "2vw",
+              marginTop: "7vw",
               textAlign: "center",
               lineHeight: "4vw",
               fontSize: "2vw",
@@ -494,7 +494,32 @@ class Acadev extends Component {
           <Grid.Row centered columns={1} style={{marginBottom: "-1.5vw"}}>
             <Button.Group centered>
               <Link to="education">
-                <Button style={button}>Apply to become a General Member!</Button>
+                <Button style={{
+                  background: "#FFFFFF",
+                  border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  borderRadius: "3vw",
+                  width: "100%",
+                  height: "7.5vw",
+                  marginTop: "-1.5vw",
+                  marginBottom: "-1.5vw",
+                  //marginLeft: "5%",
+                  //marginRight: "5%",
+                  fontSize: "2.5vw",
+                  lineHeight: "2vw",
+                  fontWeight: 200,
+                  fontFamily: "Montserrat",
+                }}>
+                  <div
+                    style={{
+                      marginTop: "-0.5vw",
+                      marginLeft: "0vw",
+                      marginRight: "0vw",
+                    }}
+                  >
+                    Apply to become a General Member! 
+                  </div>
+                </Button>
               </Link>
             </Button.Group>
           </Grid.Row>
@@ -565,9 +590,9 @@ class Acadev extends Component {
             <Card.Group centered>
               <Card style={overlayboxes}>
                 <Image src={WSImage} style={{
-                  width: "17vw", 
+                  width: "19vw", 
                   margin: "1vw auto",
-                  marginTop: '4vw',
+                  marginTop: '3vw',
                   backgroundColor: 'transparent',}}
                 ></Image>
                 <Card.Description style={cardDescription}>
@@ -582,55 +607,52 @@ class Acadev extends Component {
             </Card.Group>
           </Grid.Row>
           
-          <Grid.Row centered style={{ marginBottom: "4vw", marginTop: "0vw"}}>
-            <div
-              style={{
+
+          <Grid.Row centered style={{ marginBottom: "3vw", marginTop: "-1.5vw"}}>
+            <Card.Group centered>
+              <Card style={{
                 background: "#FFFFFF",
                 border: "5px solid #8CD6D1",
                 boxSizing: "border-box",
                 borderRadius: "3vw",
                 width: "25%",
                 height: "14vw",
-                marginLeft: "5%",
-                marginRight: "5%",
+                //marginLeft: "8%",
+                //marginRight: "5%",
                 fontSize: "2vw",
                 lineHeight: "2vw",
                 fontWeight: "21.5vw",
                 fontFamily: "Montserrat",
-              }}
-            >
-              <div
+              }}>
+                <div
                 style={{
                   marginTop: "3vw",
                   marginLeft: "2vw",
                   marginRight: "2vw",
                 }}
-              >
-                Check out our{" "}
-                <Link to="/events">
-                  <strong style={{ color: "#FFC54A" }}> Events</strong>
-                </Link>{" "}
-                page to view our past academic collaborations.
-              </div>
-            </div>
-            
-            <div
-              style={{
+                >
+                  Check out our{" "}
+                  <Link to="/events">
+                    <strong style={{ color: "#FFC54A" }}> Events</strong>
+                  </Link>{" "}
+                  page to view our past academic collaborations.
+                </div>
+              </Card>
+              <Card style={{
                 background: "#FFFFFF",
                 border: "5px solid #8CD6D1",
                 boxSizing: "border-box",
                 borderRadius: "3vw",
                 width: "40%",
                 height: "14vw",
-                marginLeft: "5%",
-                marginRight: "7vw",
                 fontSize: "2vw",
                 lineHeight: "2vw",
                 fontWeight: "21vw",
                 fontFamily: "Montserrat",
-              }}
-            >
-              <div
+                //marginLeft: "8%",
+                //marginRight: "7vw",
+              }}>
+                <div
                 style={{
                   marginTop: "2vw",
                   marginLeft: "2vw",
@@ -640,23 +662,24 @@ class Acadev extends Component {
                 Interested in DSS hosting a workshop for you? Interested in
                 co-hosting a workshop with us?
               </div>
-              <Link to="/services">
-                <div
-                  style={{
-                    color: "#FFC54A",
-                    fontSize: "2vw",
-                    lineHeight: "2vw",
-                    fontWeight: "21vw",
-                    fontFamily: "Montserrat",
-                    marginTop: "2vw",
-                    marginLeft: "2vw",
-                    marginRight: "2vw",
-                  }}
-                >
-                  Contact us here >>
-                </div>
-              </Link>
-            </div>
+                <Link to="/services">
+                  <div
+                    style={{
+                      color: "#FFC54A",
+                      fontSize: "2vw",
+                      lineHeight: "2vw",
+                      fontWeight: "21vw",
+                      fontFamily: "Montserrat",
+                      marginTop: "2vw",
+                      marginLeft: "2vw",
+                      marginRight: "2vw",
+                    }}
+                  >
+                    Contact us here >>
+                  </div>
+                </Link>
+              </Card>
+            </Card.Group>
           </Grid.Row>
           
           </Grid.Row>
