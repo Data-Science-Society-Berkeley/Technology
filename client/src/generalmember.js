@@ -21,7 +21,7 @@ import atharva from "./Leadership Headshots/AtharvaHeadshot.png";
 import arnav from "./Leadership Headshots/ArnavHeadshot.jpg";
 import sabrina from "./Leadership Headshots/SabrinaHeadshot.jpeg";
 import proj1 from "./GM Proj Images/workforce-housing.png";
-import proj2 from "./GM Proj Images/workforce-housing.png";
+import proj2 from "./GM Proj Images/word-complexity.jpg";
 import proj3 from "./GM Proj Images/workforce-housing.png";
 import proj4 from "./GM Proj Images/workforce-housing.png";
 import proj5 from "./GM Proj Images/workforce-housing.png";
