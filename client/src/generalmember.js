@@ -295,10 +295,10 @@ class DecalLearn extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:alleanna@berkeley.edu">
+                  <a href="mailto:atharva@berkeley.edu">
                     <Icon name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/in/alleanna-clark-5b37aa16a/ ">
+                  <a href="https://www.linkedin.com/in/atharvamehendale/ ">
                     <Icon name="linkedin" />
                   </a>
                 </Card.Content>
@@ -315,10 +315,10 @@ class DecalLearn extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:stephanie.lu@berkeley.edu">
+                  <a href="mailto:sabrinaywu@berkeley.eduu">
                     <Icon name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/in/stephanie-l-705a29175/">
+                  <a href="https://www.linkedin.com/in/sabrinayihwu/">
                     <Icon name="linkedin" />
                   </a>
                 </Card.Content>
@@ -335,10 +335,10 @@ class DecalLearn extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:roshanlodha@berkeley.edu">
+                  <a href="mailto:arnavp418@berkeley.edu">
                     <Icon name="mail" />
                   </a>
-                  <a href="http://linkedin.com/in/roshanlodha">
+                  <a href="https://www.linkedin.com/in/arnavpatel360/">
                     <Icon name="linkedin" />
                   </a>
                 </Card.Content>
