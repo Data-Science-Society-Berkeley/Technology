@@ -20,6 +20,12 @@ import datacamp from "./Decal Images/datacamp-logo 1.png";
 import atharva from "./Leadership Headshots/AtharvaHeadshot.png";
 import arnav from "./Leadership Headshots/ArnavHeadshot.jpg";
 import sabrina from "./Leadership Headshots/SabrinaHeadshot.jpeg";
+import proj1 from "./GM Proj Images/workforce-housing.png";
+import proj2 from "./GM Proj Images/workforce-housing.png";
+import proj3 from "./GM Proj Images/workforce-housing.png";
+import proj4 from "./GM Proj Images/workforce-housing.png";
+import proj5 from "./GM Proj Images/workforce-housing.png";
+import proj6 from "./GM Proj Images/workforce-housing.png";
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -130,6 +136,23 @@ const link = {
   fontWeight: 300,
   lineHeight: "6vw",
   fontSize: "3vw",
+  color: "#8CD6D1",
+  fontStyle: "normal",
+  textAlign: "center",
+};
+const headTextStyle = {
+  fontFamily: "Montserrat",
+  fontWeight: 300,
+  fontSize: "2vw",
+  lineHeight: "2vw",
+  color: "#000000",
+  textAlign: "center",
+};
+const inTextLink = {
+  fontFamily: "Montserrat",
+  fontWeight: 300,
+  lineHeight: "2vw",
+  fontSize: "2vw",
   color: "#8CD6D1",
   fontStyle: "normal",
   textAlign: "center",
@@ -260,26 +283,20 @@ class DecalLearn extends Component {
           </Grid.Row>
 
           <div>
-            <Grid.Row style={{ marginTop: "6vw" }}>
-              <Header
-                style={{
-                  fontFamily: "Montserrat",
-                  fontStyle: "normal",
-                  fontWeight: "600",
-                  fontSize: "1.5vw",
-                  lineHeight: "2vw",
-                  marginBottom: "4vw",
-                }}
-              >
-                Schedule
-              </Header>
-            </Grid.Row>
+          <Grid.Row style={{ marginTop: "6vw", marginBottom: "4vw" }}>
+            <Header style={link}>Schedule</Header>
+          </Grid.Row>
             <Grid.Row style={{ marginRight: "5vw" }}>
               {this.loadTable({ lectures: lectures })}
             </Grid.Row>
           </div>
+          
           <Grid.Row style={{ marginTop: "6vw", marginBottom: "4vw" }}>
-            <Header style={link}>General Member Course Staff</Header>
+            <Header style={headTextStyle}>For all course materials, click <a style={inTextLink} href="http://www.google.com">here</a></Header>
+          </Grid.Row>
+
+          <Grid.Row style={{ marginTop: "6vw", marginBottom: "4vw" }}>
+            <Header style={link}>Course Staff</Header>
           </Grid.Row>
           <Grid.Row>
             <Card.Group centered>
@@ -345,6 +362,92 @@ class DecalLearn extends Component {
               </Card>
             </Card.Group>
           </Grid.Row>
+
+          <Grid.Row style={{ marginTop: "6vw", marginBottom: "4vw" }}>
+            <Header style={link}>Fall 2020 Projects</Header>
+          </Grid.Row>
+
+          <Grid.Row>
+            <Card.Group centered itemsPerRow={3}>
+              <Card style={cardstyle} href='https://docs.google.com/presentation/d/1UKztQg67ZjjskCrqMhdgmbnVVO9al-IPx-xR2-LkIEA/edit?usp=sharing' target="_blank">
+                {" "}
+                
+                <Image style={imagestyle} src={proj1} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Predicting Housing Prices</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={{ roleStyle }}>
+                    Kian Golestaneh, Sarang Deshpande, Yash Bhargava, Max Liu, Grant Wagner
+                    </span>
+                  </Card.Meta>
+                </Card.Content>
+              </Card>
+              <Card style={cardstyle}>
+                {" "}
+                <Image style={imagestyle} src={proj2} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Predicting Word Complexity</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={{ roleStyle }}>
+                      Wendy Kim, Yu Xi Gui, Fakhri Widodo
+                    </span>
+                  </Card.Meta>
+                </Card.Content>
+              </Card>
+              <Card style={cardstyle}>
+                {" "}
+                <Image style={imagestyle} src={proj3} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Effect of Fires on COVID Deaths</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={{ roleStyle }}>
+                    Lili Wang, Fatima Fadel, Vaishak Krishna, Cesar Gonzalez Renteria
+                    </span>
+                  </Card.Meta>
+                </Card.Content>
+              </Card>
+              <Card style={cardstyle}>
+                {" "}
+                <Image style={imagestyle} src={proj4} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Impact of Economic Factors in Online Education</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={{ roleStyle }}>
+                    Katherine Zheng, Daniel Yao, Risheek Somu, Jonathan Chan
+                    </span>
+                  </Card.Meta>
+                </Card.Content>
+              </Card>
+              
+              <Card style={cardstyle}>
+                {" "}
+                <Image style={imagestyle} src={proj5} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Evaluating the Performance of the Stock Market in 2020</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={{ roleStyle }}>
+                    Adi, Austin, Damon, James, Tommy, Winston
+                    </span>
+                  </Card.Meta>
+                </Card.Content>
+                
+              </Card>
+              <Card style={cardstyle}>
+                {" "}
+                <Image style={imagestyle} src={proj6} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Sentiment Analysis of Draft Picks</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={{ roleStyle }}>
+                    Richard Liu, Ying Lin, Andrew Zhao, Jake Kim
+                    </span>
+                  </Card.Meta>
+                </Card.Content>
+                
+              </Card>
+            </Card.Group>
+          </Grid.Row>
+
         </div>
       </Grid>
     );
