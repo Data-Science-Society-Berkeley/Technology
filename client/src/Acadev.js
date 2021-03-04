@@ -158,14 +158,14 @@ const cardHeader = {
   fontSize: "2.75vw",
   color: "#000000",
   textAlign: "center",
-  marginLeft: "2vw",
+  
   marginTop: "1.5vw",
 };
 
 const cardUnderlineStyle = {
-  height: "0.5vw",
+  height: "auto",
   maxHeight: "28vw",
-  width: "28vw",
+  width: "auto",
   maxWidth: "28vw",
   margin: "1vw auto",
 };
@@ -426,7 +426,7 @@ class Acadev extends Component {
           </Grid.Row>
 
           {CustomTitleBlack({ title: "General Membership" })}
-          <div>
+          <div style={{width: '50vw'}}>
             <Image src={gmLine}></Image>
           </div>
 
@@ -438,7 +438,7 @@ class Acadev extends Component {
                 boxSizing: "border-box",
                 borderRadius: "3vw",
                 width: "55%",
-                height: "12vw",
+                height: "9vw",
                 marginLeft: "5%",
                 marginRight: "5%",
                 fontSize: "2vw",
@@ -449,15 +449,14 @@ class Acadev extends Component {
             >
               <div
                 style={{
-                  marginTop: "3vw",
+                  marginTop: "2vw",
                   marginLeft: "2vw",
                   marginRight: "2vw",
                 }}
               >
-                Collaborate with students from a variety of backgrounds 
-                and other organizations to educate the campus 
-                community of practical problems, phenomena and tools 
-                related to data science. 
+                We hope to help students just starting out 
+                in Data Science to complete their first Data 
+                Science research project!
               </div>
             </div>
           </Grid.Row>
@@ -479,7 +478,10 @@ class Acadev extends Component {
               </Card>
               <Card style={overlayboxes}>
                 <Card.Header style={cardHeader}>General Member</Card.Header>
-                <Image style={cardUnderlineStyle} src={yellowUnderline}></Image>
+                <div>
+                  <Image style={cardUnderlineStyle} src={yellowUnderline}></Image>
+                </div>
+                
                 <Image style={cardImageSyle} src={GMImage}></Image>
                 <Card.Description style={cardDescription}>
                   Collaborate and develop a 
@@ -547,13 +549,11 @@ class Acadev extends Component {
           </Grid.Row>
           {CustomTitleBlack({ title: "Workshops" })}
           <Grid.Row>
-          <div>
-            <Image
-              src={workshopLine}
-            ></Image>
+          <div style={{width: '30vw'}}>
+            <Image src={workshopLine}></Image>
           </div>
           
-          <Grid.Row centered style={{ marginBottom: "-1vw", marginTop: "3.5vw" }}>
+          <Grid.Row centered style={{ marginBottom: "0vw", marginTop: "3.5vw" }}>
             <div
               style={{
                 background: "#FFFFFF",
@@ -573,7 +573,7 @@ class Acadev extends Component {
             >
               <div
                 style={{
-                  marginTop: "3vw",
+                  marginTop: "2vw",
                   marginLeft: "2vw",
                   marginRight: "2vw",
                 }}
@@ -608,7 +608,7 @@ class Acadev extends Component {
           </Grid.Row>
           
 
-          <Grid.Row centered style={{ marginBottom: "3vw", marginTop: "-1.5vw"}}>
+          <Grid.Row centered style={{ marginBottom: "3vw", marginTop: "0vw"}}>
             <Card.Group centered>
               <Card style={{
                 background: "#FFFFFF",
