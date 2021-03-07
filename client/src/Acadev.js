@@ -23,6 +23,9 @@ import yellowUnderline from "./Acadev Images/yellowUnderline.png";
 import CMImage from "./Acadev Images/CMImage.png";
 import GMImage from "./Acadev Images/GMImage.png";
 import WSImage from "./Acadev Images/WSImage.png";
+import acadev_back from "./Acadev Images/acadevBack.png";
+import squiggly1 from "./Acadev Images/squiggly1.png";
+import squiggly2 from "./Acadev Images/squiggly2.png";
 
 import haas from "./Acadev Images/haasdatascienceclub 1.png";
 import bids from "./Acadev Images/Berkeley_Institute_for_Data_Science_-_Logo 1.png";
@@ -126,6 +129,24 @@ const roleStyle = {
   lineHeight: "2vw",
   color: "#000000",
 };
+
+const headerbox = {
+  background: "#FFFFFF",
+  border: "6px solid  #c7ebe8",
+  // borderStyle: 'groove',
+  boxSizing: "border-box",
+  // boxshadow: "120px 80px 40px 20px #0ff",
+  // boxShadow: "5px 4px 10px 1px rgba(0, 0, 0, 0.1)",
+  boxShadow: "0px 0px 20px 3px rgba(0, 0, 0, 0.1)",
+  borderRadius: "5vw",
+  height: "17vw",
+  width: "70%",
+  marginBottom: "5vw",
+  marginTop: "20vw",
+  marginLeft: "10vw",
+  marginRight: "10vw",
+};
+
 const overlayboxes = {
   background: "#ffffff",
   border: ".4vw solid #FFC54A",
@@ -269,133 +290,216 @@ class Acadev extends Component {
 
     return (
       <div>
-        <div style={{ zIndex: "1", position: "relative" }}>
-          <Image src={story}></Image>
-          <div
-            style={{
-              width: "100%",
-              height: "auto",
-              textAlign: "center",
-              color: "#FFFFFF",
-            }}
-          >
-            <span
-              style={{
-                position: "absolute",
-                top: "35%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-                fontWeight: "bold",
-                fontSize: "5vw",
-                lineHeight: "6vw",
-              }}
-            >
-              Academic Development
-            </span>
-            <span
-              style={{
-                position: "absolute",
-                top: "55%",
-                left: "5%",
-                right: "50%",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: "5vw",
-                  lineHeight: "5vw",
-                  // fontWeight: "normal",
-                }}
-              >
-                4{" "}
-              </span>{" "}
-              <span
-                style={{
-                  fontSize: "2.5vw",
-                }}
-              >
-                Semesters of General Membership Completed
-              </span>
-            </span>
-
-            <span
-              style={{
-                position: "absolute",
-                top: "55%",
-                left: "60%",
-                right: "5%",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: "5vw",
-                  lineHeight: "5vw",
-                  font: "Montserrat",
-                }}
-              >
-                350+{" "}
-              </span>{" "}
-              <span
-                style={{
-                  fontSize: "2.5vw",
-                }}
-              >
-                Past General Members
-              </span>
-            </span>
-            <span
-              style={{
-                position: "absolute",
-                top: "90%",
-                left: "50%",
-                right: "10%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-                lineHeight: "7vw",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: "5vw",
-                  lineHeight: "9vw",
-                  font: "Montserrat",
-                }}
-              >
-                64{" "}
-              </span>{" "}
-              <span
-                style={{
-                  fontSize: "2.5vw",
-                  lineHeight: "2.5vw",
-                  textAlign: "center",
-                  font: "Montserrat",
-                  fontWeight: "light",
-                }}
-              >
-                Workshops Hosted
-              </span>{" "}
-            </span>
-            <div
-              style={{
-                background: "rgba(140, 214, 209, 0.5)",
-                zIndex: "2",
-                position: "absolute",
-                width: "100%",
-                height: "100%",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-              }}
-            ></div>
-          </div>
+        <h1
+          style={{
+          width: "100%",
+          height: "auto",
+          textAlign: "center",
+          color: "black",
+          margin: 'auto',
+          marginBottom:'10vw',
+          marginTop: "10vw",
+          position: "relative",
+          // transform: "translate(-50%, -50%)",
+          fontFamily: "Montserrat",
+          fontWeight: "bold",
+          fontSize: "5vw",
+          lineHeight: "6vw",
+        }}
+        >Academic Development    
+        </h1>
+        <div>
+          <Image style={{position: 'relative',
+          marginTop: '20vw',
+          marginBottom: '50%',
+          margin: 'auto',
+          height: "28vw",
+          maxHeight: "28vw",
+          width: "28vw",
+          maxWidth: "28vw",
+          }}
+          src={acadev_back}></Image>
         </div>
+        <Grid centered>
+        <Grid.Row centered style={headerbox}>
+            <Card.Group centered>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  borderRadius: "5vw",
+                  width: "10%",
+                  height: "14vw",
+                  // marginLeft: "2%",
+                  // marginRight: "5%",
+                  // fontSize: "2vw",
+                  // lineHeight: "2vw",
+                  // fontWeight: "21.5vw",
+                  fontFamily: "Montserrat",
+                }}
+              >
+                <div
+                  style={{
+                    marginTop: "4vw",
+                    marginLeft: "2%",
+                    // marginRight: "2vw",
+                    fontSize: "8vw",
+                    lineHeight: "8vw",
+                    color: '#8CD6D1',
+                    fontWeight: "501",
+
+                  }}
+                >
+                  4
+                </div>
+              </div>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  // borderRadius: "3vw",
+                  width: "20%",
+                  height: "14vw",
+                  // marginLeft: "8%",
+                  // marginRight: "7vw",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "3vw",
+                    lineHeight: "4vw",
+                    fontWeight: "21vw",
+                    fontFamily: "Montserrat",
+                    marginTop: "2vw",
+                    // marginLeft: "2vw",
+                    // marginRight: "2vw",
+                    color: '#8CD6D1',
+                  }}
+                >
+                  Semesters of General Membership
+                </div>
+              </div>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  // borderRadius: "3vw",
+                  width: "10%",
+                  height: "14vw",
+                  // marginLeft: "8%",
+                  // marginRight: "5%",
+                  // fontSize: "2vw",
+                  // lineHeight: "2vw",
+                  // fontWeight: "21.5vw",
+                  fontFamily: "Montserrat",
+                }}
+              >
+                <div
+                  style={{
+                    marginTop: "4vw",
+                    marginLeft: "2%",
+                    // marginRight: "2vw",
+                    fontSize: "8vw",
+                    lineHeight: "8vw",
+                    color: '#8CD6D1',
+                    fontWeight: "501",
+
+                  }}
+                >
+                  64
+                </div>
+              </div>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  // borderRadius: "3vw",
+                  width: "20%",
+                  height: "14vw",
+                  // marginLeft: "8%",
+                  // marginRight: "7vw",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "3vw",
+                    lineHeight: "4vw",
+                    fontWeight: "21vw",
+                    fontFamily: "Montserrat",
+                    marginTop: "4vw",
+                    // marginLeft: "2vw",
+                    // marginRight: "2vw",
+                    color: '#8CD6D1',
+                  }}
+                >
+                  Workshops hosted
+                </div>
+              </div>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  // borderRadius: "3vw",
+                  width: "17%",
+                  height: "14vw",
+                  marginLeft: "2%",
+                  // marginRight: "5%",
+                  // fontSize: "2vw",
+                  // lineHeight: "2vw",
+                  // fontWeight: "21.5vw",
+                  fontFamily: "Montserrat",
+                }}
+              >
+                <div
+                  style={{
+                    marginTop: "4vw",
+                    // marginLeft: "2vw",
+                    // marginRight: "2vw",
+                    fontSize: "8vw",
+                    lineHeight: "8vw",
+                    color: '#8CD6D1',
+                    fontWeight: "501",
+
+                  }}
+                >
+                  350+{" "}
+                </div>{" "}
+              </div>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  borderRadius: "5vw",
+                  width: "20%",
+                  height: "14vw",
+                  // marginLeft: "8%",
+                  // marginRight: "2%",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "3vw",
+                    lineHeight: "4vw",
+                    fontWeight: "21vw",
+                    fontFamily: "Montserrat",
+                    marginTop: "4vw",
+                    // marginLeft: "2vw",
+                    marginRight: "2vw",
+                    color: '#8CD6D1',
+                  }}
+                >
+                  Past General Members
+                </div>
+              </div>
+            </Card.Group>
+          </Grid.Row>
+        </Grid>
 
         <Grid centered>
           <Grid.Row></Grid.Row>
@@ -423,10 +527,35 @@ class Acadev extends Component {
             <strong style={{ color: "#8CD6D1" }}> {" "}
               all skill levels and students {" "}
             </strong>.
+            <div>
+              <Image
+                src={squiggly1}
+                style={{
+                  right: "-22%",
+                  width: "70vw",
+                  position: "absolute",
+                  top: "-130%",
+                }}
+              ></Image>
+            </div>
           </Grid.Row>
 
-          {CustomTitleBlack({ title: "General Membership" })}
-          <div style={{width: '50vw'}}>
+          <Grid.Row>
+            <div>
+              <Image
+                src={squiggly2}
+                style={{
+                  left: "-20%",
+                  width: "50vw",
+                  position: "absolute",
+                  top: "-10%",
+                }}
+              ></Image>
+            </div>
+            {CustomTitleBlack({ title: "General Membership" })}
+          </Grid.Row>
+          
+          <div style={{alignItems: 'center', justifyContent: 'center'}}>
             <Image src={gmLine}></Image>
           </div>
 
@@ -494,6 +623,7 @@ class Acadev extends Component {
             </Card.Group>
           </Grid.Row>
           <Grid.Row centered columns={1} style={{marginBottom: "-1.5vw"}}>
+            
             <Button.Group centered>
               <Link to="education">
                 <Button style={{
@@ -524,6 +654,17 @@ class Acadev extends Component {
                 </Button>
               </Link>
             </Button.Group>
+            <div>
+              <Image
+                src={squiggly1}
+                style={{
+                  right: "-10%",
+                  width: "70vw",
+                  position: "absolute",
+                  top: "0%",
+                }}
+              ></Image>
+            </div>
           </Grid.Row>
           
           
@@ -549,7 +690,7 @@ class Acadev extends Component {
           </Grid.Row>
           {CustomTitleBlack({ title: "Workshops" })}
           <Grid.Row>
-          <div style={{width: '30vw'}}>
+          <div style={{alignItems: 'center', justifyContent: 'center'}}>
             <Image src={workshopLine}></Image>
           </div>
           
