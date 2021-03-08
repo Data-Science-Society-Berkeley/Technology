@@ -26,6 +26,7 @@ import WSImage from "./Acadev Images/WSImage.png";
 import acadev_back from "./Acadev Images/acadevBack.png";
 import squiggly1 from "./Acadev Images/squiggly1.png";
 import squiggly2 from "./Acadev Images/squiggly2.png";
+import squiggly3 from "./Acadev Images/squiggly3.png";
 import upright from "./Acadev Images/upRight.png";
 import bottomleft from "./Acadev Images/bottomLeft.png";
 
@@ -145,9 +146,10 @@ const headerbox = {
   height: "17vw",
   width: "70%",
   marginBottom: "5vw",
-  marginTop: "20vw",
+  marginTop: "-3.5vw",
   marginLeft: "10vw",
   marginRight: "10vw",
+  // position: "absolute",
 };
 
 const overlayboxes = {
@@ -332,10 +334,10 @@ class Acadev extends Component {
           // marginTop: '5vw',
           left: "50vw",
           right: "50vw", 
-          bottom: "15vw",
+          // bottom: "15vw",
           // margin: 'auto',
           // margintop: "10vw",
-          marginBottom: '15vw',
+          // marginBottom: '22vw',
           height: "28vw",
           maxHeight: "28vw",
           width: "28vw",
@@ -347,14 +349,27 @@ class Acadev extends Component {
           <Image src={bottomleft}
           style= {{
             left:"5vw",
-            top:"50vw",
-            position: "absolute",
+            top:"6vw",
+            position: "relative",
             height: "18vw",
             maxHeight: "18vw",
             width: "30vw",
             maxWidth: "30vw",
           }}>
           </Image>
+          <div>
+          <Image src={squiggly3}
+          style= {{
+            left:"0vw",
+            top:"-5vw",
+            position: "relative",
+            height: "25vw",
+            maxHeight: "25vw",
+            width: "30vw",
+            maxWidth: "30vw",
+          }}>
+          </Image>
+        </div>
         </div>
         <Grid centered>
         <Grid.Row centered style={headerbox}>
@@ -362,7 +377,7 @@ class Acadev extends Component {
               <div
                 style={{
                   background: "#FFFFFF",
-                  // border: "5px solid #8CD6D1",
+                  border: "1px solid none",
                   boxSizing: "border-box",
                   borderRadius: "5vw",
                   width: "10%",
