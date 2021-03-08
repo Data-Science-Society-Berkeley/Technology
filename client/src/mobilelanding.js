@@ -13,7 +13,7 @@ import {
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import edu from "./landing/AcaDev.png";
 import collab from "./landing/Rectangle66.png";
-import socialize from "./landing/Rectangle69.png";
+import socialize from "./landing/.Rectangle69.png.icloud";
 import socialgood from "./landing/SocialGood.png";
 import ocf from "./Backgrounds/ocf-hosted-penguin.svg";
 

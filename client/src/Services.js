@@ -16,7 +16,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import berk from "./Decal Images/berkeleyischool-logo-alternate-blue-lg.png";
 import datacamp from "./Decal Images/datacamp-logo 1.png";
 import decal from "./Decal Images/decalberkeleylogo 1.png";
-import charlie from "./Leadership Headshots/charlie.jpg";
+import charlie from "./Leadership Headshots/.charlie.jpg.icloud";
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {

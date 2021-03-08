@@ -32,6 +32,11 @@ import sabrina from "./Leadership Headshots/SabrinaHeadshot.jpeg";
 import story from "./Acadev Images/AcaDevBanner-compress-min.jpg";
 import haas2 from "./Acadev Images/hbsa.jpg";
 import ascend from "./Acadev Images/Ascend-Logo.jpg";
+import Girl from "./Acadev Images/Girl.JPEG";
+import sparkleLeft from "./Acadev Images/sparkleLeft.png";
+import sparkleRight from "./Acadev Images/sparkleRight.png";
+import squiglyLeft from "./Acadev Images/squiglyLeft.png";
+import squiglyRight from "./Acadev Images/squiglyRight.png";
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -244,134 +249,71 @@ class Acadev extends Component {
 
     return (
       <div>
-        <div style={{ zIndex: "1", position: "relative" }}>
-          <Image src={story}></Image>
-          <div
-            style={{
-              width: "100%",
-              height: "auto",
-              textAlign: "center",
-              color: "#FFFFFF",
-            }}
-          >
+          <img src={sparkleRight} alt="sparkleRight" style={{
+            position: "absolute",
+            top: "150px",
+            width: "366.91px",
+            height: "250px",
+            right: "38.09px"
+          }}/>
+          <div style={{
+            position: "relative",
+            top: "165px",
+            marginLeft: "237px",
+            marginBottom: "669px"
+          }}>
             <span
               style={{
-                position: "absolute",
-                top: "35%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
+                width: "1030px",
+                height: "126px",
                 fontFamily: "Montserrat",
+                fontStyle: "normal",
                 fontWeight: "bold",
-                fontSize: "5vw",
-                lineHeight: "6vw",
+                fontSize: "72px",
+                lineHeight: "88px",
+                color: "#000000",
+                textAlign: "left",
               }}
             >
               Academic Development
             </span>
-            <span
+            <div style={{
+              marginLeft: "26vw",
+            }}>
+              <img src={Girl} alt="girl"
               style={{
-                position: "absolute",
-                top: "55%",
-                left: "5%",
-                right: "50%",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: "5vw",
-                  lineHeight: "5vw",
-                  // fontWeight: "normal",
-                }}
-              >
-                4{" "}
-              </span>{" "}
-              <span
-                style={{
-                  fontSize: "2.5vw",
-                }}
-              >
-                Semesters of General Membership Completed
-              </span>
-            </span>
-
-            <span
-              style={{
-                position: "absolute",
-                top: "55%",
-                left: "60%",
-                right: "5%",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: "5vw",
-                  lineHeight: "5vw",
-                  font: "Montserrat",
-                }}
-              >
-                350+{" "}
-              </span>{" "}
-              <span
-                style={{
-                  fontSize: "2.5vw",
-                }}
-              >
-                Past General Members
-              </span>
-            </span>
-            <span
-              style={{
-                position: "absolute",
-                top: "90%",
-                left: "50%",
-                right: "10%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-                lineHeight: "7vw",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: "5vw",
-                  lineHeight: "9vw",
-                  font: "Montserrat",
-                }}
-              >
-                64{" "}
-              </span>{" "}
-              <span
-                style={{
-                  fontSize: "2.5vw",
-                  lineHeight: "2.5vw",
-                  textAlign: "center",
-                  font: "Montserrat",
-                  fontWeight: "light",
-                }}
-              >
-                Workshops Hosted
-              </span>{" "}
-            </span>
-            <div
-              style={{
-                background: "rgba(140, 214, 209, 0.5)",
-                zIndex: "2",
-                position: "absolute",
-                width: "100%",
-                height: "100%",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-              }}
-            ></div>
-          </div>
+                width: "364px",
+                height: "364px",
+                top: "60px",
+                left: "38.09px"
+              }}/>
+            </div>
         </div>
-
+        <div>
+          <img src={sparkleLeft} alt="sparkleLeft" style={{
+            position: "absolute",
+            height: "250px",
+            width: "366.91px",
+            top: "698px",
+            left: "104px"
+          }}/>
+          <img src={squiglyLeft} alt="squigleLeft" style={{
+            position: "absolute",
+            width: "368px",
+            height: "285px",
+            left: "-15px",
+            top: "900px"
+          }}/>
+          <img src={squiglyRight} alt="squigleRight" style={{
+            position: "absolute",
+            width: "1126px",
+            height: "235px",
+            right: "-100px",
+            top: "1200px",
+            paddingBottom: "100px"
+          }}/>
+        </div>
+        <div>
         <Grid centered>
           <Grid.Row></Grid.Row>
 
@@ -659,6 +601,7 @@ class Acadev extends Component {
             </div>
           </Grid.Row>
         </Grid>
+        </div>
       </div>
     );
   }

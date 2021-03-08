@@ -16,7 +16,7 @@ import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import event5 from "./Events/quoratechtalk.jpg";
-import event4 from "./Events/dssdatathon-img.jpg";
+import event4 from "./Events/.dssdatathon-img.jpg.icloud";
 import event3 from "./Events/dssdatathon-crop.jpg";
 import event2 from "./Events/operationanalytics-img.jpg";
 import event1 from "./Events/operationanalyticseventbannerdss.jpg";

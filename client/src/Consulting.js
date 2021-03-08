@@ -40,10 +40,10 @@ import workwus from "./Consulting/WorkWithUs.png";
 
 import alina from "./PM Headshots/Alina.png";
 import grace from "./PM Headshots/Grace.jpg";
-import pooja from "./PM Headshots/Pooja.png";
+import pooja from "./PM Headshots/.Pooja.png.icloud";
 import rick from "./PM Headshots/Rick.jpeg";
 import devesh from "./PM Headshots/devesh.png";
-import anita from "./PM Headshots/anita.jpg";
+import anita from "./PM Headshots/.anita.jpg.icloud";
 import annie from "./PM Headshots/annie.jpg";
 import advait from "./PM Headshots/advait.png";
 import pranav from "./PM Headshots/pranav.png";

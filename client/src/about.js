@@ -14,11 +14,11 @@ import {
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CustomTitle from "./components/CustomTitle.js";
 
-import andi from "./Leadership Headshots/andi.jpg";
+import andi from "./Leadership Headshots/.andi.jpg.icloud";
 import kanu from "./Leadership Headshots/KanuHeadshot.jpg";
-import charlie from "./Leadership Headshots/charlie.jpg";
+import charlie from "./Leadership Headshots/.charlie.jpg.icloud";
 import alleanna from "./Leadership Headshots/alleanna2.jpeg";
-import varunmi from "./Leadership Headshots/varunmi.jpeg";
+import varunmi from "./Leadership Headshots/.varunmi.jpeg.icloud";
 import edlyft from "./Leadership Headshots/edlyft-logo.jpg";
 import asuc from "./Leadership Headshots/asuc_logo.png";
 import berkeley from "./Leadership Headshots/berkeley_cdss_logo.png";
@@ -35,13 +35,13 @@ import sabrina from "./Leadership Headshots/SabrinaHeadshot.jpeg";
 import rick from "./Leadership Headshots/Rick.jpeg";
 import elton from "./Leadership Headshots/elton.jpeg";
 
-import pm from "./About/ProjectManager.JPG";
-import exec from "./About/ExecutiveTeam.JPG";
+import pm from "./About/.ProjectManager.JPG.icloud";
+import exec from "./About/.ExecutiveTeam.JPG.icloud";
 import commit from "./About/CommitteeMember.jpg";
 import gen from "./About/GeneralMember.jpg";
 import decal from "./About/DeCal.png";
 import senior from "./About/SeniorAdvisor.png";
-import join from "./About/JoinUs.jpg";
+import join from "./About/.JoinUs.jpg.icloud";
 //import story from './About/OurStory.jpg'
 import story from "./About/OurStory-Compressed-min.jpg";
 import popout from "./About/popoutDesign.png";

@@ -40,7 +40,7 @@ import { Helmet } from "react-helmet";
 import WebFont from "webfontloader";
 import ReactGA from "react-ga";
 import background from "./Backgrounds/Rectangle1.png";
-import background1 from "./Backgrounds/dsswallpapergif.gif";
+import background1 from "./Backgrounds/.dsswallpapergif.gif.icloud";
 
 ReactGA.pageview(window.location.pathname + window.location.search);
 ReactGA.initialize("UA-175785074-1");
