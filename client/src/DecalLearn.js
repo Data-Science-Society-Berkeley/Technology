@@ -146,7 +146,7 @@ class DecalLearn extends Component {
                 Lecture 1
               </a>
             </Table.Cell>
-            <Table.Cell>None</Table.Cell>
+            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Kate</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -165,7 +165,7 @@ class DecalLearn extends Component {
                 Lecture 2
               </a>
             </Table.Cell>
-            <Table.Cell></Table.Cell>
+            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Siddhant, Elton</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -184,7 +184,7 @@ class DecalLearn extends Component {
                 Lecture 3
               </a>
             </Table.Cell>
-            <Table.Cell></Table.Cell>
+            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Dhruv, Spencer</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -219,7 +219,7 @@ class DecalLearn extends Component {
                 Lecture 5
               </a>
             </Table.Cell>
-            <Table.Cell></Table.Cell>
+            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Tanu, Siddhant</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -236,7 +236,7 @@ class DecalLearn extends Component {
                 Lecture 6
               </a>
             </Table.Cell>
-            <Table.Cell></Table.Cell>
+            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Spencer, Saeed</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -248,8 +248,12 @@ class DecalLearn extends Component {
             </Table.Cell>
             <Table.Cell class="center">Monday, 10/26/20</Table.Cell>
             <Table.Cell>SQL + Spreadsheets</Table.Cell>
-            <Table.Cell></Table.Cell>
-            <Table.Cell></Table.Cell>
+            <Table.Cell>
+              <a href="https://www.youtube.com/watch?v=v2DcJ_W3MsI">
+                Lecture 7
+              </a>
+            </Table.Cell>
+            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Jared, Jae Hee</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -263,8 +267,12 @@ class DecalLearn extends Component {
             <Table.Cell>
               Matplotlib + Seaborn In-Depth (Data Visualizations)
             </Table.Cell>
-            <Table.Cell></Table.Cell>
-            <Table.Cell></Table.Cell>
+            <Table.Cell>
+              <a href="https://www.youtube.com/watch?v=gpXHJ7mmUZo">
+                Lecture 8
+              </a>
+            </Table.Cell>
+            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Elton, Dhruv, Jae Hee</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -275,11 +283,15 @@ class DecalLearn extends Component {
               9
               <br />
             </Table.Cell>
-            <Table.Cell class="center">Monday, 11/16/20</Table.Cell>
-            <Table.Cell>Power BI + Tableau</Table.Cell>
-            <Table.Cell></Table.Cell>
-            <Table.Cell></Table.Cell>
-            <Table.Cell>Tanu, Jasmine</Table.Cell>
+            <Table.Cell class="center">Monday, 11/9/20</Table.Cell>
+            <Table.Cell>Guest Lecture: Data Arts</Table.Cell>
+            <Table.Cell>
+              <a href="https://www.youtube.com/watch?v=ZfrKyE1VSTU">
+                Lecture 9
+              </a>
+            </Table.Cell>
+            <Table.Cell>N/A</Table.Cell>
+            <Table.Cell>Professor Greg Niemeyer</Table.Cell>
           </Table.Row>
         </Table.Body>
         <Table.Body id="wk10">
@@ -288,11 +300,32 @@ class DecalLearn extends Component {
               10
               <br />
             </Table.Cell>
-            <Table.Cell class="center">Monday, 11/23/20</Table.Cell>
-            <Table.Cell>Guest Lecture</Table.Cell>
-            <Table.Cell></Table.Cell>
-            <Table.Cell></Table.Cell>
+            <Table.Cell class="center">Monday, 11/16/20</Table.Cell>
+            <Table.Cell>Tableau + Power BI</Table.Cell>
+            <Table.Cell>
+              <a href="https://youtu.be/torqQLIPYBE">
+                Lecture 10
+              </a>
+            </Table.Cell>
             <Table.Cell>N/A</Table.Cell>
+            <Table.Cell>Tanu, Jasmine</Table.Cell>
+          </Table.Row>
+        </Table.Body>
+        <Table.Body id="wk11">
+          <Table.Row>
+            <Table.Cell rowspan="2" class="center">
+              11
+              <br />
+            </Table.Cell>
+            <Table.Cell class="center">Monday, 11/23/20</Table.Cell>
+            <Table.Cell>Data Storytelling</Table.Cell>
+            <Table.Cell>
+              <a href="https://youtu.be/YyEDKkskTPQ">
+                Lecture 11
+              </a>
+            </Table.Cell>
+            <Table.Cell>N/A</Table.Cell>
+            <Table.Cell>Dhruv, Siddhant</Table.Cell>
           </Table.Row>
         </Table.Body>
       </Table>
