@@ -26,6 +26,9 @@ import WSImage from "./Acadev Images/WSImage.png";
 import acadev_back from "./Acadev Images/acadevBack.png";
 import squiggly1 from "./Acadev Images/squiggly1.png";
 import squiggly2 from "./Acadev Images/squiggly2.png";
+import upright from "./Acadev Images/upRight.png";
+import bottomleft from "./Acadev Images/bottomLeft.png";
+
 
 import haas from "./Acadev Images/haasdatascienceclub 1.png";
 import bids from "./Acadev Images/Berkeley_Institute_for_Data_Science_-_Logo 1.png";
@@ -290,35 +293,68 @@ class Acadev extends Component {
 
     return (
       <div>
+        <div>
+          <Image src={upright}
+          style= {{
+            right:"5vw",
+            top:"12vw",
+            position: "absolute",
+            height: "18vw",
+            maxHeight: "18vw",
+            width: "30vw",
+            maxWidth: "30vw",
+          }}>
+          </Image>
+        </div>
         <h1
           style={{
+          top:"20vw",
           width: "100%",
           height: "auto",
           textAlign: "center",
           color: "black",
           margin: 'auto',
-          marginBottom:'10vw',
-          marginTop: "10vw",
-          position: "relative",
+          // marginBottom:'5vw',
+          //marginTop: "5vw",
+          position: "absolute",
           // transform: "translate(-50%, -50%)",
           fontFamily: "Montserrat",
           fontWeight: "bold",
-          fontSize: "5vw",
+          fontSize: "6vw",
           lineHeight: "6vw",
         }}
         >Academic Development    
         </h1>
+        
         <div>
           <Image style={{position: 'relative',
-          marginTop: '20vw',
-          marginBottom: '50%',
-          margin: 'auto',
+          top: "20vw",
+          // marginTop: '5vw',
+          left: "50vw",
+          right: "50vw", 
+          bottom: "15vw",
+          // margin: 'auto',
+          // margintop: "10vw",
+          marginBottom: '15vw',
           height: "28vw",
           maxHeight: "28vw",
           width: "28vw",
           maxWidth: "28vw",
           }}
           src={acadev_back}></Image>
+        </div>
+        <div>
+          <Image src={bottomleft}
+          style= {{
+            left:"5vw",
+            top:"50vw",
+            position: "absolute",
+            height: "18vw",
+            maxHeight: "18vw",
+            width: "30vw",
+            maxWidth: "30vw",
+          }}>
+          </Image>
         </div>
         <Grid centered>
         <Grid.Row centered style={headerbox}>
@@ -331,12 +367,14 @@ class Acadev extends Component {
                   borderRadius: "5vw",
                   width: "10%",
                   height: "14vw",
+                  // marginTop: "10vw",
                   // marginLeft: "2%",
                   // marginRight: "5%",
                   // fontSize: "2vw",
                   // lineHeight: "2vw",
                   // fontWeight: "21.5vw",
                   fontFamily: "Montserrat",
+                  margintop: "10vw"
                 }}
               >
                 <div
@@ -555,7 +593,7 @@ class Acadev extends Component {
             {CustomTitleBlack({ title: "General Membership" })}
           </Grid.Row>
           
-          <div style={{alignItems: 'center', justifyContent: 'center'}}>
+          <div style={{maxWidth: "50vw"}}>
             <Image src={gmLine}></Image>
           </div>
 
@@ -690,7 +728,7 @@ class Acadev extends Component {
           </Grid.Row>
           {CustomTitleBlack({ title: "Workshops" })}
           <Grid.Row>
-          <div style={{alignItems: 'center', justifyContent: 'center'}}>
+          <div style={{maxWidth: "27vw"}}>
             <Image src={workshopLine}></Image>
           </div>
           

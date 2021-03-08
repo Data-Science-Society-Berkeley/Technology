@@ -21,6 +21,8 @@ import ClientLine from "./Consulting/ClientLine.png";
 import BizIntelImage from "./Consulting/BizIntelImage.png";
 import MLImage from "./Consulting/MLImage.png";
 import SDImage from "./Consulting/SDImage.png";
+import squiggle2 from "./Consulting/squiggle2.png";
+import squiggle3 from "./Consulting/squiggle3.png";
 
 import paypal from "./Consulting/paypallogo.png";
 import paypallogo2 from "./Consulting/paypallogo.jpg";
@@ -605,30 +607,54 @@ class Consulting extends Component {
         
         <Grid centered>
           <Grid.Row>
+            <div>
+              <Image
+                src={squiggle2}
+                style={{
+                  left: "-10%",
+                  width: "50vw",
+                  position: "absolute",
+                  top: "-10%",
+                }}
+              ></Image>
+            </div>
             <Grid.Row
               style={{
                 color: "#000000",
                 marginTop: "7vw",
+                marginBottom: "5vw",
                 textAlign: "center",
                 lineHeight: "4vw",
                 fontSize: "2vw",
                 fontWeight: "21vw",
                 fontStyle: "normal",
                 fontFamily: "Montserrat",
-                marginLeft: "20vw",
-                marginRight: "20vw",
+                marginLeft: "30vw",
+                marginRight: "30vw",
               }}
             >
+
               We believe that the best way to learn about the innovative and
               pioneering data science techniques is to work with companies in
               industry. Our past clients include a wide range of companies from
               industry-leaders like PayPal to unicorn startups such as SoFi, all
               who have been impacted by the work Data Science Society provides.
             </Grid.Row>
+            <div>
+              <Image
+                src={squiggle3}
+                style={{
+                  left: "-10%",
+                  width: "70vw",
+                  position: "absolute",
+                  top: "60%",
+                }}
+              ></Image>
+            </div>
           </Grid.Row>
 
           {CustomTitleBlack({ title: "Our Expertise" })}
-          <div>
+          <div style= {{maxWidth: "30vw"}}>
             <Image src={ExpertiseLine}></Image>
           </div>
 
@@ -662,7 +688,18 @@ class Consulting extends Component {
             </Card>
           </Card.Group>
 
-          <Grid.Row centered columns={1} style={{marginTop: "2vw"}}>
+          <Grid.Row centered columns={1} style={{marginTop: "6vw"}}>
+            <div>
+              <Image
+                src={squiggle2}
+                style={{
+                  right: "0%",
+                  width: "50vw",
+                  position: "absolute",
+                  top: "-180%",
+                }}
+              ></Image>
+            </div>
             <Button.Group centered>
               <Link>
                 <Button onClick={this.testa} style={{
@@ -675,7 +712,7 @@ class Consulting extends Component {
                   marginTop: "-1.5vw",
                   marginBottom: "-1.5vw",
                   //marginLeft: "5%",
-                  //marginRight: "5%",
+                  //marginRight: "1vw",
                   fontSize: "2.5vw",
                   lineHeight: "2vw",
                   fontWeight: 200,
@@ -692,7 +729,6 @@ class Consulting extends Component {
                   </div>
                 </Button>
               </Link>
-
               <Link to="services">
                 <Button style={{
                   background: "#FFFFFF",
@@ -722,6 +758,17 @@ class Consulting extends Component {
                 </Button>
               </Link>
             </Button.Group>
+            <div>
+              <Image
+                src={squiggle3}
+                style={{
+                  left: "0%",
+                  width: "30vw",
+                  position: "absolute",
+                  top: "60%",
+                }}
+              ></Image>
+            </div>
           </Grid.Row>
 
 
