@@ -23,6 +23,9 @@ import MLImage from "./Consulting/MLImage.png";
 import SDImage from "./Consulting/SDImage.png";
 import squiggle2 from "./Consulting/squiggle2.png";
 import squiggle3 from "./Consulting/squiggle3.png";
+import upright from "./Consulting/topRight.png";
+import bottomleft from "./Consulting/bottomLeft.png";
+import logo from "./Consulting/logo.png";
 
 import paypal from "./Consulting/paypallogo.png";
 import paypallogo2 from "./Consulting/paypallogo.jpg";
@@ -71,6 +74,21 @@ const gridoffset = {
   textAlign: "center",
   fontFamily: "Montserrat",
 };
+
+const headerbox = {
+  background: "#FFFFFF",
+  border: "6px solid  #c7ebe8",
+  boxSizing: "border-box",
+  boxShadow: "0px 0px 20px 3px rgba(0, 0, 0, 0.1)",
+  borderRadius: "5vw",
+  height: "19vw",
+  width: "70%",
+  marginBottom: "5vw",
+  marginTop: "6vw",
+  marginLeft: "10vw",
+  marginRight: "10vw",
+};
+
 
 const overlayboxes = {
   background: "#ffffff",
@@ -501,123 +519,211 @@ class Consulting extends Component {
 
     return (
       <div>
-        <div style={{ zIndex: "1", position: "relative" }}>
-          <Image
-            src={collab}
-            style={{ width: "100%", height: "auto", zIndex: "2" }}
-          ></Image>
-          <div
-            style={{
-              width: "100%",
-              textAlign: "center",
-              background: "rgba(140, 214, 209, 0.5)",
-            }}
-          >
-            <span
-              style={{
-                position: "absolute",
-                top: "35%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-                fontWeight: "bold",
-                fontSize: "5vw",
-                lineHeight: "6vw",
-                color: "#FFFFFF",
-              }}
-            >
-              Consulting
-            </span>
-            <span
-              style={{
-                position: "absolute",
-                left: "30%",
-                top: "65%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
-                color: "#FFFFFF",
-                fontFamily: "Montserrat",
-              }}
-            >
-              <span
+        <div>
+          <Image src={upright}
+          style= {{
+            right:"5vw",
+            top:"12vw",
+            position: "absolute",
+            height: "18vw",
+            maxHeight: "18vw",
+            width: "30vw",
+            maxWidth: "30vw",
+          }}>
+          </Image>
+        </div>
+        <h1
+          style={{
+          top:"20vw",
+          width: "100%",
+          height: "auto",
+          textAlign: "center",
+          color: "black",
+          margin: 'auto',
+          // marginBottom:'5vw',
+          //marginTop: "5vw",
+          position: "absolute",
+          // transform: "translate(-50%, -50%)",
+          fontFamily: "Montserrat",
+          fontWeight: "bold",
+          fontSize: "6vw",
+          lineHeight: "6vw",
+        }}
+        >Consulting  
+        </h1>
+        
+        <div>
+          <Image style={{position: 'relative',
+          top: "20vw",
+          // marginTop: '5vw',
+          left: "50vw",
+          right: "50vw", 
+          bottom: "15vw",
+          // margin: 'auto',
+          // margintop: "10vw",
+          marginBottom: '15vw',
+          height: "28vw",
+          maxHeight: "28vw",
+          width: "28vw",
+          maxWidth: "28vw",
+          }}
+          src={logo}></Image>
+        </div>
+        <div>
+          <Image src={bottomleft}
+          style= {{
+            left:"5vw",
+            top:"55vw",
+            position: "absolute",
+            height: "18vw",
+            maxHeight: "18vw",
+            width: "30vw",
+            maxWidth: "30vw",
+          }}>
+          </Image>
+        </div>
+        <div>
+          <Image src={squiggle2}
+          style= {{
+            left:"-7vw",
+            bottom:"-37vw",
+            position: "relative",
+            height: "18vw",
+            maxHeight: "18vw",
+            width: "50vw",
+            maxWidth: "40vw",
+          }}>
+          </Image>
+        </div>
+        <Grid centered>
+        <Grid.Row centered style={headerbox}>
+            <Card.Group centered>
+              <div
                 style={{
-                  fontSize: "5vw",
-                  lineHeight: "9vw",
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  borderRadius: "5vw",
+                  width: "10%",
+                  height: "14vw",
+                  // marginTop: "10vw",
+                  marginLeft: "0",
+                  marginRight: "0",
+                  // fontSize: "2vw",
+                  // lineHeight: "2vw",
+                  // fontWeight: "21.5vw",
+                  fontFamily: "Montserrat",
+                  margintop: "10vw"
                 }}
               >
-                5{" "}
-              </span>{" "}
-              <span
-                style={{
-                  fontSize: "2.5vw",
-                  // fontWeight: "light",
-                  lineHeight: "2.5vw",
-                  font: "Montserrat",
-                }}
-              >
-                Projects per Semester
-              </span>
-            </span>
-            <div
-              style={{
-                background: "rgba(140, 214, 209, 0.5)",
-                zIndex: "2",
-                position: "absolute",
-                width: "100%",
-                height: "100%",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-              }}
-            ></div>
-            <span
-              style={{
-                position: "absolute",
-                left: "65%",
-                top: "66%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-                color: "#FFFFFF",
-              }}
-            >
-              <span
-                style={{
-                  marginLeft: "9vw",
-                  fontSize: "5vw",
-                  marginTop: "10px",
-                }}
-              >
-                6{" "}
-                <span
+                <div
                   style={{
-                    fontSize: "2.5vw",
-                    lineHeight: "2.5vw",
-                    // fontWeight: "light",
+                    marginTop: "4vw",
+                    // marginLeft: "8%",
+                    marginRight: "0",
+                    fontSize: "8vw",
+                    lineHeight: "8vw",
+                    color: '#8CD6D1',
+                    fontWeight: "501",
+
                   }}
                 >
-                  consultants per team
-                </span>
-              </span>
-            </span>
-          </div>
-        </div>
+                  5
+                </div>
+              </div>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  // borderRadius: "3vw",
+                  width: "25%",
+                  height: "14vw",
+                  marginLeft: "0%",
+                  marginRight: "7.5vw",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "3.5vw",
+                    lineHeight: "4vw",
+                    fontWeight: "21vw",
+                    fontFamily: "Montserrat",
+                    marginTop: "4vw",
+                    // marginLeft: "2vw",
+                    // marginRight: "2vw",
+                    color: '#8CD6D1',
+                  }}
+                >Ongoing Projects
+                </div>
+              </div>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  // borderRadius: "3vw",
+                  width: "30%",
+                  height: "14vw",
+                  // marginLeft: "8%",
+                  // marginRight: "5%",
+                  // fontSize: "2vw",
+                  // lineHeight: "2vw",
+                  // fontWeight: "21.5vw",
+                  fontFamily: "Montserrat",
+                }}
+              >
+                <div
+                  style={{
+                    marginTop: "4vw",
+                    left:"20vw",
+                    marginLeft: "30%",
+                    marginRight: "0",
+                    fontSize: "8vw",
+                    lineHeight: "8vw",
+                    color: '#8CD6D1',
+                    fontWeight: "501",
+
+                  }}
+                >
+                  33
+                </div>
+              </div>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  // borderRadius: "3vw",
+                  width: "20%",
+                  height: "14vw",
+                  // marginLeft: "8%",
+                  marginRight: "3vw",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "3.5vw",
+                    lineHeight: "4vw",
+                    fontWeight: "21vw",
+                    fontFamily: "Montserrat",
+                    marginTop: "4vw",
+                    // marginLeft: "3vw",
+                    // marginRight: "2vw",
+                    color: '#8CD6D1',
+                  }}
+                >
+                  Completed Projects
+                </div>
+              </div>
+            </Card.Group>
+          </Grid.Row>
+        </Grid>
         
         
         <Grid centered>
           <Grid.Row>
-            <div>
-              <Image
-                src={squiggle2}
-                style={{
-                  left: "-10%",
-                  width: "50vw",
-                  position: "absolute",
-                  top: "-10%",
-                }}
-              ></Image>
-            </div>
+            
             <Grid.Row
               style={{
                 color: "#000000",
@@ -701,7 +807,7 @@ class Consulting extends Component {
               ></Image>
             </div>
             <Button.Group centered>
-              <Link>
+              <Link style={{marginRight: '4vw'}}>
                 <Button onClick={this.testa} style={{
                   background: "#FFFFFF",
                   border: "5px solid #8CD6D1",
@@ -1020,6 +1126,8 @@ class Consulting extends Component {
         <div
           style={{
             fontSize: "1.5vw",
+            fontStyle: "normal",
+            fontFamily: "Montserrat",
             marginLeft: "28vw",
             marginRight: "28vw",
             marginBottom: "8vw",
