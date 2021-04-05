@@ -33,13 +33,12 @@ const gridoffset = {
 
 const mybigtext = {
   fontFamily: "Montserrat",
-  fontWeight: "normal",
+  fontWeight: "550",
   lineHeight: "7vw",
   fontSize: "4.5vw",
-  color: "#8CD6D1",
   fontStyle: "normal",
-  textAlign: "left",
-  marginLeft: "5vw",
+  textAlign: "center",
+  marginLeft: "23vw",
   marginBottom: "3vw",
 };
 
@@ -89,7 +88,8 @@ const mymidtext = {
   fontFamily: "Montserrat",
   fontStyle: "normal",
   fontWeight: "600",
-  fontSize: "1.5vw",
+  fontSize: "2vw",
+  color: "#8CD6D1",
   lineHeight: "2vw",
 };
 const link = {
@@ -349,27 +349,28 @@ class DecalLearn extends Component {
     return (
       <div>
         <Grid style={{ marginRight: "5vw" }}>
-        <Grid.Row style={{ marginRight: "5vw" }}>
+        <Grid.Row style={{ marginLeft: "5vw" }}>
             <Image
               src={uppercorner}
               style={{
-                height: "14vw",
-                width: "39vw",
+                height: "20vw",
+                width: "25vw",
+                marginLeft: "100vw"
               }}
             ></Image>
           </Grid.Row>
           <Grid.Row>
             <Header style={mybigtext}>
               {" "}
-              DeCal: Essential Tools for Data Science | Fall 2020{" "}
+              DeCal: Essential Tools for Data Science{" "}
             </Header>
           </Grid.Row>
           <Grid.Row style={{ marginLeft: "5vw" }}>
             <Image
               src={lowercorner}
               style={{
-                height: "14vw",
-                width: "39vw",
+                height: "20vw",
+                width: "25vw",
               }}
             ></Image>
           </Grid.Row>
@@ -381,15 +382,11 @@ class DecalLearn extends Component {
               fontFamily: "Montserrat",
               fontStyle: "normal",
               fontWeight: "300",
-              fontSize: "1.5vw",
-              lineHeight: "2vw",
+              fontSize: "1.8vw",
+              lineHeight: "2.1vw",
             }}
           >
             <Grid.Row>
-              <div>
-                <b style={mymidtext}>Essential Tools for Data Science</b> | Fall
-                2020{" "}
-              </div>
               <div style={{ marginTop: "4vw" }}>
                 Welcome to Data Science Society at Berkeley&rsquo;s very own
                 DeCal: Essential Tools for Data Scientists! This course is
@@ -452,13 +449,10 @@ class DecalLearn extends Component {
                   <List.Item>Attendance: 20% </List.Item>
                   <List.Item>Weekly Assignments: 80% </List.Item>
                 </List>
-                <Header
-                  style={{
-                    marginTop: "4vw",
-                    marginBottom: "4vw",
-                  }}
-                >
-                  Schedule
+                <Header style={{ 
+                  marginTop: "4vw" ,
+                  marginBottom: "2vw"}}>
+                  <b style={mymidtext}> Schedule</b>
                 </Header>
               </Grid.Row>
               <Grid.Row style={{ marginRight: "5vw" }}>
@@ -466,7 +460,7 @@ class DecalLearn extends Component {
               </Grid.Row>
             </div>
             <Grid.Row style={{ marginTop: "6vw" }}>
-              <Header style={link}>DeCal Course Staff</Header>
+              <Header style={link}> Course Staff</Header>
               <Card.Group centered style={{ marginTop: "56px" }}>
                 <Card style={cardstyle}>
                   {" "}
