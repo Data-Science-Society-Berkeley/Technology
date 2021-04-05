@@ -19,6 +19,8 @@ import decal from "./Decal Images/decalberkeleylogo 1.png";
 import kate from "./Leadership Headshots/kate.jpg";
 import uma from "./Leadership Headshots/uma.png";
 import gaya from "./Leadership Headshots/gayatri.png";
+import uppercorner from "./landing/WebsiteLandingPage-2.png";
+import lowercorner from "./landing/WebsiteLandingPage-2rotate.png";
 
 import steph from "./Leadership Headshots/steph.jpg";
 let endpoint = "http://localhost:8080";
@@ -31,13 +33,12 @@ const gridoffset = {
 
 const mybigtext = {
   fontFamily: "Montserrat",
-  fontWeight: "normal",
+  fontWeight: "550",
   lineHeight: "7vw",
   fontSize: "4.5vw",
-  color: "#8CD6D1",
   fontStyle: "normal",
-  textAlign: "left",
-  marginLeft: "5vw",
+  textAlign: "center",
+  marginLeft: "23vw",
   marginBottom: "3vw",
 };
 
@@ -87,7 +88,8 @@ const mymidtext = {
   fontFamily: "Montserrat",
   fontStyle: "normal",
   fontWeight: "600",
-  fontSize: "1.5vw",
+  fontSize: "2vw",
+  color: "#8CD6D1",
   lineHeight: "2vw",
 };
 const link = {
@@ -125,9 +127,6 @@ class DecalLearn extends Component {
               <b>Resources</b>
             </Table.HeaderCell>
             <Table.HeaderCell class="col-md-2">
-              <b>Assignments</b>
-            </Table.HeaderCell>
-            <Table.HeaderCell class="col-md-2">
               <b>Lecturers</b>
             </Table.HeaderCell>
           </Table.Row>
@@ -146,7 +145,6 @@ class DecalLearn extends Component {
                 Lecture 1
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Kate</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -165,7 +163,6 @@ class DecalLearn extends Component {
                 Lecture 2
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Siddhant, Elton</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -184,7 +181,6 @@ class DecalLearn extends Component {
                 Lecture 3
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Dhruv, Spencer</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -202,7 +198,6 @@ class DecalLearn extends Component {
                 TA Panel{" "}
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>All</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -219,7 +214,6 @@ class DecalLearn extends Component {
                 Lecture 5
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Tanu, Siddhant</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -236,7 +230,6 @@ class DecalLearn extends Component {
                 Lecture 6
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Spencer, Saeed</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -253,7 +246,6 @@ class DecalLearn extends Component {
                 Lecture 7
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Jared, Jae Hee</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -272,7 +264,6 @@ class DecalLearn extends Component {
                 Lecture 8
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Elton, Dhruv, Jae Hee</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -290,7 +281,6 @@ class DecalLearn extends Component {
                 Lecture 9
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Professor Greg Niemeyer</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -307,7 +297,6 @@ class DecalLearn extends Component {
                 Lecture 10
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Tanu, Jasmine</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -324,7 +313,6 @@ class DecalLearn extends Component {
                 Lecture 11
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Dhruv, Siddhant</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -361,11 +349,30 @@ class DecalLearn extends Component {
     return (
       <div>
         <Grid style={{ marginRight: "5vw" }}>
+        <Grid.Row style={{ marginLeft: "5vw" }}>
+            <Image
+              src={uppercorner}
+              style={{
+                height: "20vw",
+                width: "25vw",
+                marginLeft: "100vw"
+              }}
+            ></Image>
+          </Grid.Row>
           <Grid.Row>
             <Header style={mybigtext}>
               {" "}
-              DeCal: Essential Tools for Data Science | Fall 2020{" "}
+              DeCal: Essential Tools for Data Science{" "}
             </Header>
+          </Grid.Row>
+          <Grid.Row style={{ marginLeft: "5vw" }}>
+            <Image
+              src={lowercorner}
+              style={{
+                height: "20vw",
+                width: "25vw",
+              }}
+            ></Image>
           </Grid.Row>
 
           <div
@@ -375,15 +382,11 @@ class DecalLearn extends Component {
               fontFamily: "Montserrat",
               fontStyle: "normal",
               fontWeight: "300",
-              fontSize: "1.5vw",
-              lineHeight: "2vw",
+              fontSize: "1.8vw",
+              lineHeight: "2.1vw",
             }}
           >
             <Grid.Row>
-              <div>
-                <b style={mymidtext}>Essential Tools for Data Science</b> | Fall
-                2020{" "}
-              </div>
               <div style={{ marginTop: "4vw" }}>
                 Welcome to Data Science Society at Berkeley&rsquo;s very own
                 DeCal: Essential Tools for Data Scientists! This course is
@@ -446,13 +449,10 @@ class DecalLearn extends Component {
                   <List.Item>Attendance: 20% </List.Item>
                   <List.Item>Weekly Assignments: 80% </List.Item>
                 </List>
-                <Header
-                  style={{
-                    marginTop: "4vw",
-                    marginBottom: "4vw",
-                  }}
-                >
-                  Schedule
+                <Header style={{ 
+                  marginTop: "4vw" ,
+                  marginBottom: "2vw"}}>
+                  <b style={mymidtext}> Schedule</b>
                 </Header>
               </Grid.Row>
               <Grid.Row style={{ marginRight: "5vw" }}>
@@ -460,7 +460,7 @@ class DecalLearn extends Component {
               </Grid.Row>
             </div>
             <Grid.Row style={{ marginTop: "6vw" }}>
-              <Header style={link}>DeCal Course Staff</Header>
+              <Header style={link}> Course Staff</Header>
               <Card.Group centered style={{ marginTop: "56px" }}>
                 <Card style={cardstyle}>
                   {" "}
@@ -472,10 +472,10 @@ class DecalLearn extends Component {
                     </Card.Meta>
                   </Card.Content>
                   <Card.Content extra>
-                    <a href="mailto:roshanlodha@berkeley.edu">
+                    <a href="mailto:katevmiller@berkeley.edu">
                       <Icon name="mail" />
                     </a>
-                    <a href="http://linkedin.com/in/roshanlodha">
+                    <a href="https://www.linkedin.com/in/kate-miller-7a884719b/">
                       <Icon name="linkedin" />
                     </a>
                   </Card.Content>
@@ -492,10 +492,10 @@ class DecalLearn extends Component {
                     </Card.Meta>
                   </Card.Content>
                   <Card.Content extra>
-                    <a href="mailto:alleanna@berkeley.edu">
+                    <a href="mailto:umakrishnaswamy@berkeley.edu">
                       <Icon name="mail" />
                     </a>
-                    <a href="https://www.linkedin.com/in/alleanna-clark-5b37aa16a/ ">
+                    <a href="https://www.linkedin.com/in/umakrishnaswamy/">
                       <Icon name="linkedin" />
                     </a>
                   </Card.Content>
@@ -510,10 +510,10 @@ class DecalLearn extends Component {
                     </Card.Meta>
                   </Card.Content>
                   <Card.Content extra>
-                    <a href="mailto:stephanie.lu@berkeley.edu">
+                    <a href="mailto:gbabel@berkeley.edu">
                       <Icon name="mail" />
                     </a>
-                    <a href="https://www.linkedin.com/in/stephanie-l-705a29175/">
+                    <a href="https://www.linkedin.com/in/gayatri-babel/">
                       <Icon name="linkedin" />
                     </a>
                   </Card.Content>
