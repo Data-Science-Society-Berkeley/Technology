@@ -585,12 +585,12 @@ class Consulting extends Component {
         <div>
           <Image src={squiggle2}
           style= {{
-            left:"-7vw",
-            bottom:"-37vw",
+            left:"-5vw",
+            bottom:"-35vw",
             position: "relative",
-            height: "18vw",
+            height: "15vw",
             maxHeight: "18vw",
-            width: "50vw",
+            width: "40vw",
             maxWidth: "40vw",
           }}>
           </Image>
@@ -895,7 +895,7 @@ class Consulting extends Component {
             </div>
           </Grid.Row>
           {CustomTitleBlack({ title: "Client Testimonials" })}
-          <div>
+          <div style= {{maxWidth: "50vw"}}>
             <Image src={ClientLine}></Image>
           </div>
           <Grid.Row centered style={{ marginLeft: "5vw", marginRight: "5vw", marginTop: "3vw" }}>
