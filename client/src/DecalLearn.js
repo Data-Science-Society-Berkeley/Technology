@@ -19,6 +19,8 @@ import decal from "./Decal Images/decalberkeleylogo 1.png";
 import kate from "./Leadership Headshots/kate.jpg";
 import uma from "./Leadership Headshots/uma.png";
 import gaya from "./Leadership Headshots/gayatri.png";
+import uppercorner from "./landing/WebsiteLandingPage-2.png";
+import lowercorner from "./landing/WebsiteLandingPage-2rotate.png";
 
 import steph from "./Leadership Headshots/steph.jpg";
 let endpoint = "http://localhost:8080";
@@ -125,9 +127,6 @@ class DecalLearn extends Component {
               <b>Resources</b>
             </Table.HeaderCell>
             <Table.HeaderCell class="col-md-2">
-              <b>Assignments</b>
-            </Table.HeaderCell>
-            <Table.HeaderCell class="col-md-2">
               <b>Lecturers</b>
             </Table.HeaderCell>
           </Table.Row>
@@ -146,7 +145,6 @@ class DecalLearn extends Component {
                 Lecture 1
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Kate</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -165,7 +163,6 @@ class DecalLearn extends Component {
                 Lecture 2
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Siddhant, Elton</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -184,7 +181,6 @@ class DecalLearn extends Component {
                 Lecture 3
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Dhruv, Spencer</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -202,7 +198,6 @@ class DecalLearn extends Component {
                 TA Panel{" "}
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>All</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -219,7 +214,6 @@ class DecalLearn extends Component {
                 Lecture 5
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Tanu, Siddhant</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -236,7 +230,6 @@ class DecalLearn extends Component {
                 Lecture 6
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Spencer, Saeed</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -253,7 +246,6 @@ class DecalLearn extends Component {
                 Lecture 7
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Jared, Jae Hee</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -272,7 +264,6 @@ class DecalLearn extends Component {
                 Lecture 8
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Elton, Dhruv, Jae Hee</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -290,7 +281,6 @@ class DecalLearn extends Component {
                 Lecture 9
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Professor Greg Niemeyer</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -307,7 +297,6 @@ class DecalLearn extends Component {
                 Lecture 10
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Tanu, Jasmine</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -324,7 +313,6 @@ class DecalLearn extends Component {
                 Lecture 11
               </a>
             </Table.Cell>
-            <Table.Cell>N/A</Table.Cell>
             <Table.Cell>Dhruv, Siddhant</Table.Cell>
           </Table.Row>
         </Table.Body>
@@ -361,11 +349,29 @@ class DecalLearn extends Component {
     return (
       <div>
         <Grid style={{ marginRight: "5vw" }}>
+        <Grid.Row style={{ marginRight: "5vw" }}>
+            <Image
+              src={uppercorner}
+              style={{
+                height: "14vw",
+                width: "39vw",
+              }}
+            ></Image>
+          </Grid.Row>
           <Grid.Row>
             <Header style={mybigtext}>
               {" "}
               DeCal: Essential Tools for Data Science | Fall 2020{" "}
             </Header>
+          </Grid.Row>
+          <Grid.Row style={{ marginLeft: "5vw" }}>
+            <Image
+              src={lowercorner}
+              style={{
+                height: "14vw",
+                width: "39vw",
+              }}
+            ></Image>
           </Grid.Row>
 
           <div
