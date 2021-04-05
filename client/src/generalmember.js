@@ -22,10 +22,21 @@ import arnav from "./Leadership Headshots/ArnavHeadshot.jpg";
 import sabrina from "./Leadership Headshots/SabrinaHeadshot.jpeg";
 import proj1 from "./GM Proj Images/workforce-housing.png";
 import proj2 from "./GM Proj Images/word-complexity.jpg";
-import proj3 from "./GM Proj Images/workforce-housing.png";
-import proj4 from "./GM Proj Images/workforce-housing.png";
-import proj5 from "./GM Proj Images/workforce-housing.png";
-import proj6 from "./GM Proj Images/workforce-housing.png";
+import proj3 from "./GM Proj Images/forestfire.jpg";
+import proj4 from "./GM Proj Images/education.jpg";
+import proj5 from "./GM Proj Images/stock_project_gm.jpg";
+import proj6 from "./GM Proj Images/fake_news_gm.jpg";
+import squiggly1 from "./Acadev Images/squiggly1.png";
+import squiggly1_rotate from "./Acadev Images/squiggly1_rotate.png";
+import CustomTitleBlack from "./components/CustomTitleBlack.js";
+import gmLine from "./Acadev Images/gmLine.png";
+import gmLine2 from "./Acadev Images/gmLine2.png";
+import schedLine from "./Acadev Images/schedLine.png";
+import projLine from "./Acadev Images/projLine.png";
+import light from "./GM Proj Images/lightbulb.png";
+import upright from "./Acadev Images/upRight.png";
+import bottomleft from "./Acadev Images/bottomLeft.png";
+
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -40,32 +51,68 @@ const gridoffset = {
 const lectures = [
   {
     week: 1,
-    date: new Date("9/21/2020 PST"),
-    name: "Project Workflow & Deepnote",
+    date: new Date("2/7/2021 PST"),
+    name: "GM Overtown + Gathertown",
     link: "https://youtu.be/WtehoucrTyQ",
   },
   {
     week: 2,
-    date: new Date("9/28/2020 PST"),
-    name: "Data Mining, Data Cleaning, Feature Engineering",
+    date: new Date("2/15/2021 PST"),
+    name: "Pandas Numpy + Deepnote Lecture",
     link: "https://youtu.be/UMn-m7mOnKQ",
   },
   {
     week: 3,
-    date: new Date("10/5/2020 PST"),
-    name: "Modelling and Statistical Tests",
+    date: new Date("2/22/2021 PST"),
+    name: "Data Lifecycle + Dataset/Q's",
     link: "https://youtu.be/aTmfBmKRmsY",
   },
   {
     week: 4,
-    date: new Date("10/12/2020 PST"),
-    name: "More Modeling and Drawing Conclusions",
+    date: new Date("3/1/2021 PST"),
+    name: "Data Cleaning Lab",
     link: "https://youtu.be/IbITdVOkJLE",
   },
   {
     week: 5,
-    date: new Date("10/19/2020 PST"),
-    name: "Visualizations",
+    date: new Date("3/8/2021 PST"),
+    name: "Guest Speaker",
+    link: "https://youtu.be/gSgw5dkgF8I",
+  },
+  {
+    week: 6,
+    date: new Date("3/15/2021 PST"),
+    name: "Modeling + Stats Analysis Lab",
+    link: "https://youtu.be/gSgw5dkgF8I",
+  },
+  {
+    week: 7,
+    date: new Date("3/22/2021 PST"),
+    name: "Visualization Lab",
+    link: "https://youtu.be/gSgw5dkgF8I",
+  },
+  {
+    week: 8,
+    date: new Date("3/29/2021 PST"),
+    name: "Academic Panel",
+    link: "https://youtu.be/gSgw5dkgF8I",
+  },
+  {
+    week: 9,
+    date: new Date("4/5/2021 PST"),
+    name: "Lab",
+    link: "https://youtu.be/gSgw5dkgF8I",
+  },
+  {
+    week: 10,
+    date: new Date("4/19/2021 PST"),
+    name: "Career Panel",
+    link: "https://youtu.be/gSgw5dkgF8I",
+  },
+  {
+    week: 11,
+    date: new Date("4/26/2021 PST"),
+    name: "Symposium",
     link: "https://youtu.be/gSgw5dkgF8I",
   },
 ];
@@ -147,16 +194,32 @@ const headTextStyle = {
   lineHeight: "2vw",
   color: "#000000",
   textAlign: "center",
+  //fontWeight: "bold",
 };
 const inTextLink = {
   fontFamily: "Montserrat",
-  fontWeight: 300,
+  fontWeight: "bold",
   lineHeight: "2vw",
   fontSize: "2vw",
   color: "#8CD6D1",
   fontStyle: "normal",
   textAlign: "center",
+  
 };
+const titletext = {
+  fontFamily: "Montserrat",
+  fontWeight: "bold",
+  lineHeight: "3vw",
+  fontSize: "3vw",
+  color: "#000000",
+  fontStyle: "normal",
+  textAlign: "center",
+  marginLeft: "20vw",
+  //marginBottom: "3vw",
+  
+};
+
+
 class DecalLearn extends Component {
   constructor(props) {
     super(props);
@@ -237,13 +300,56 @@ class DecalLearn extends Component {
   }
   render() {
     return (
-      <Grid>
-        <Grid.Row>
-          <Header style={mybigtext}>
-            General Membership Program | Fall 2020
-          </Header>
-        </Grid.Row>
+      <div>
 
+        <div>
+          <Image src={upright}
+          style= {{
+            right:"5vw",
+            top:"12vw",
+            position: "absolute",
+            height: "18vw",
+            maxHeight: "18vw",
+            width: "30vw",
+            maxWidth: "30vw",
+          }}>
+          </Image>
+        </div>
+
+        <h1
+          style={{
+          top:"27vw",
+          width: "100%",
+          height: "auto",
+          textAlign: "center",
+          color: "black",
+          margin: 'auto',
+          // marginBottom:'5vw',
+          //marginTop: "5vw",
+          position: "absolute",
+          // transform: "translate(-50%, -50%)",
+          fontFamily: "Montserrat",
+          fontWeight: "bold",
+          fontSize: "3vw",
+          lineHeight: "6vw",
+          }}
+        >General Membership Program | Fall 2021  
+        </h1>
+        <div>
+          <Image src={bottomleft}
+          style= {{
+            left:"5vw",
+            top:"19vw",
+            position: "relative",
+            height: "18vw",
+            maxHeight: "18vw",
+            width: "30vw",
+            maxWidth: "30vw",
+          }}>
+          </Image>
+        </div>
+      
+        <Grid centered>
         <div
           style={{
             marginBottom: "3.5vw",
@@ -256,13 +362,15 @@ class DecalLearn extends Component {
             marginRight: "5vw",
           }}
         >
+          
           <Grid.Row>
-            <div>
-              <b style={mymidtext}>General Membership</b> | Fall 2020{" "}
-            </div>
-          </Grid.Row>
-          <Grid.Row>
-            <div style={{ marginTop: "4vw" }}>
+            <div style={{ 
+              marginTop: "25vw", 
+              textAlign: "center",
+              lineHeight: "2.3vw",
+              fontSize: "2vw",
+              fontWeight: "21.5vw",
+            }}>
               Welcome to Data Science Society at Berkeley&rsquo;s very own
               General Member Program: Essential Tools for Data Scientists! This
               course is geared towards exposing students to essential data
@@ -279,14 +387,70 @@ class DecalLearn extends Component {
               Excel and Tableau, to other essential skills through a
               personalized data science project that includes data cleaning,
               visualization, statistical analysis, and machine learning.
+
+              <Image
+                src={squiggly1}
+                style={{
+                  left: "60%",
+                  width: "40vw",
+                  position: "absolute",
+                  //top: "60%",
+                  marginBottom: "40vw",
+                }}
+              ></Image>
+
+              
             </div>
+
+            
           </Grid.Row>
+          
+          
+          <Grid.Row
+            centered
+            columns={2}
+            style={{ marginTop: "4vw", right: "3vw" }}
+          >
+           
+              <Grid.Column>
+                <div style={{ textAlign: "center", marginTop: "10vw",}}>
+                  {CustomTitleBlack({ title: "Schedule" })}
+
+                  <div style={{margin: "0 auto", maxWidth: "22vw"}}>
+                    <Image src={gmLine}></Image>
+                  </div>
+                </div>
+
+                
+              </Grid.Column>
+              
+              <Grid.Column>
+                
+                <Image 
+                  src={light}
+                  style={{
+                    top: "10%",
+                    left: "62%",
+                    marginTop: "-7vw",
+                  //down: "30%",
+                  //marginTop: "10vw",
+                  }}>
+                </Image>
+              </Grid.Column>
+              
+            
+
+          </Grid.Row>
+          
+          
+
 
           <div>
-          <Grid.Row style={{ marginTop: "6vw", marginBottom: "4vw" }}>
-            <Header style={link}>Schedule</Header>
-          </Grid.Row>
-            <Grid.Row style={{ marginRight: "5vw" }}>
+            <Grid.Row 
+              style={{ 
+                marginRight: "5vw", 
+                 marginTop: "5vw",
+                }}>
               {this.loadTable({ lectures: lectures })}
             </Grid.Row>
           </div>
@@ -296,8 +460,14 @@ class DecalLearn extends Component {
           </Grid.Row>
 
           <Grid.Row style={{ marginTop: "6vw", marginBottom: "4vw" }}>
-            <Header style={link}>Course Staff</Header>
+          {CustomTitleBlack({ title: "Course Staff" })}
+          
+          <div style={{margin: "0 auto", maxWidth: "28vw"}}>
+                    <Image src={gmLine}></Image>
+          </div>
+
           </Grid.Row>
+
           <Grid.Row>
             <Card.Group centered>
               <Card style={cardstyle}>
@@ -361,11 +531,29 @@ class DecalLearn extends Component {
                 </Card.Content>
               </Card>
             </Card.Group>
+
+            <Image
+                src={squiggly1_rotate}
+                style={{
+                  left: "0%",
+                  width: "40vw",
+                  position: "absolute",
+                  //top: "60%",
+                  //marginTop: "5vw",
+                  marginBottom: "9vw",
+                }}
+              ></Image>
           </Grid.Row>
 
-          <Grid.Row style={{ marginTop: "6vw", marginBottom: "4vw" }}>
-            <Header style={link}>Fall 2020 Projects</Header>
+          <Grid.Row style={{ marginTop: "8vw", marginBottom: "5vw" }}>
+            {CustomTitleBlack({ title: "Fall 2020 Projects" })}
+
+            <div style={{marginLeft: "25vw", maxWidth: "65vw"}}>
+                    <Image src={projLine}></Image>
+            </div>
           </Grid.Row>
+
+          
 
           <Grid.Row>
             <Card.Group centered itemsPerRow={3}>
@@ -382,7 +570,7 @@ class DecalLearn extends Component {
                   </Card.Meta>
                 </Card.Content>
               </Card>
-              <Card style={cardstyle}>
+              <Card style={cardstyle} href='https://deepnote.com/project/FA20-Group-1-0i9tyJ2oQH6OCthlzOVWwg' target="_blank">
                 {" "}
                 <Image style={imagestyle} src={proj2} />
                 <Card.Content>
@@ -394,7 +582,7 @@ class DecalLearn extends Component {
                   </Card.Meta>
                 </Card.Content>
               </Card>
-              <Card style={cardstyle}>
+              <Card style={cardstyle} href='https://docs.google.com/presentation/d/1KzOJAMd_vBhIXN925wrUJ8qbOw8QnASRBHX0Zdo8abI/edit?usp=sharing' target="_blank">
                 {" "}
                 <Image style={imagestyle} src={proj3} />
                 <Card.Content>
@@ -406,7 +594,7 @@ class DecalLearn extends Component {
                   </Card.Meta>
                 </Card.Content>
               </Card>
-              <Card style={cardstyle}>
+              <Card style={cardstyle} href='https://docs.google.com/presentation/d/1bRQK0e5U2oSt6XvDN-VudbxUU9vRYA_Tyi2NY8RttXA/edit?usp=sharing' target="_blank">
                 {" "}
                 <Image style={imagestyle} src={proj4} />
                 <Card.Content>
@@ -419,7 +607,7 @@ class DecalLearn extends Component {
                 </Card.Content>
               </Card>
               
-              <Card style={cardstyle}>
+              <Card style={cardstyle} href='https://docs.google.com/presentation/d/1ce1H9ZcV6GY-15wkIqw9orR7AMtiJiijKQ2GGLVe--8/edit?usp=sharing' target="_blank">
                 {" "}
                 <Image style={imagestyle} src={proj5} />
                 <Card.Content>
@@ -432,14 +620,14 @@ class DecalLearn extends Component {
                 </Card.Content>
                 
               </Card>
-              <Card style={cardstyle}>
+              <Card style={cardstyle} href='https://deepnote.com/project/7acf0dbb-348f-4776-a97d-2d77186b4297#%2FNLP%20fake%20news%2Ffake.ipynb' target="_blank">
                 {" "}
                 <Image style={imagestyle} src={proj6} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Sentiment Analysis of Draft Picks</Card.Header>
+                  <Card.Header style={textstyle}>Detecting Fake News</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={{ roleStyle }}>
-                    Richard Liu, Ying Lin, Andrew Zhao, Jake Kim
+                    Roshun, Wilson, Rithwik, Richard
                     </span>
                   </Card.Meta>
                 </Card.Content>
@@ -450,6 +638,7 @@ class DecalLearn extends Component {
 
         </div>
       </Grid>
+    </div>
     );
   }
 }

@@ -460,7 +460,7 @@ class CentralText extends Component {
                   marginLeft: "10vw",
                 }}
               >
-                Learn More >
+                Learn More 
               </Link>
             </Grid.Column>
           </Grid.Row>
