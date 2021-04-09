@@ -653,7 +653,7 @@ class Acadev extends Component {
                     marginRight: "2vw",
                   }}
                 >
-                  Contact us here >>
+                  Contact us here 
                 </div>
               </Link>
             </div>
