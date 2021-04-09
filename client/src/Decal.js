@@ -481,6 +481,7 @@ class Decal extends Component {
                   <Image style={{
                     position: "absolute",
                     left: "-15vw",
+                    top: "5vw", 
                     width: "86vw",
                     height: "16vh",
                     transform: "rotate(18deg)",
