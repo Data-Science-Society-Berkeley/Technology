@@ -305,7 +305,7 @@ class DecalLearn extends Component {
         <div>
           <Image src={upright}
           style= {{
-            right:"5vw",
+            right:"4vw",
             top:"12vw",
             position: "absolute",
             height: "18vw",
@@ -338,7 +338,7 @@ class DecalLearn extends Component {
         <div>
           <Image src={bottomleft}
           style= {{
-            left:"5vw",
+            left:"4vw",
             top:"19vw",
             position: "relative",
             height: "18vw",
@@ -354,12 +354,14 @@ class DecalLearn extends Component {
           style={{
             marginBottom: "3.5vw",
             marginLeft: "5vw",
+            marginRight: "5vw",
+            //margin: "0 auto",
             fontFamily: "Montserrat",
             fontStyle: "normal",
             fontWeight: "300",
             fontSize: "1.5vw",
             lineHeight: "2vw",
-            marginRight: "5vw",
+            
           }}
         >
           
@@ -409,7 +411,10 @@ class DecalLearn extends Component {
           <Grid.Row
             centered
             columns={2}
-            style={{ marginTop: "4vw", right: "3vw" }}
+            style={{ 
+              marginTop: "4vw", 
+              right: "3vw" 
+            }}
           >
            
               <Grid.Column>
@@ -556,7 +561,7 @@ class DecalLearn extends Component {
           
 
           <Grid.Row>
-            <Card.Group centered itemsPerRow={3}>
+            <Card.Group itemsPerRow={3}>
               <Card style={cardstyle} href='https://docs.google.com/presentation/d/1UKztQg67ZjjskCrqMhdgmbnVVO9al-IPx-xR2-LkIEA/edit?usp=sharing' target="_blank">
                 {" "}
                 
