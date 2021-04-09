@@ -27,6 +27,14 @@ import datalab from "./Decal Images/DeCal_Logo.png";
 import arrow from "./Decal Images/Arrow.png";
 import leftarrow from "./Decal Images/OrangeArrow2.png";
 import rightarrow from "./Decal Images/OrangeArrow1.png";
+import classroom from "./Decal Images/classroom.png";
+import sparkleLeft from "./Decal Images/sparkleLeft.png"
+import test4 from "./Decal Images/test 4.png";
+import squiggly2 from "./Decal Images/squiggly2.png";
+import pen from "./Decal Images/pen.png";
+import test5 from "./Decal Images/test 5.png";
+import course from "./Decal Images/course.png"
+import test6 from "./Decal Images/test 5.png";
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -50,14 +58,18 @@ const mybigtext = {
 };
 
 const button = {
+  background: "#FFFFFF",
+  border: "5px solid #8CD6D1",
+  boxSizing: "border-box",
+  borderRadius: "3vw",
+  width: "100%",
+  height: "7.5vw",
+  marginTop: "-1.5vw",
+  fontSize: "3.5vw",
+  lineHeight: "1.5vw",
+  fontWeight: "400",
   fontFamily: "Montserrat",
-  fontWeight: "21vw",
-  lineHeight: "2vw",
-  fontSize: "2vw",
-  color: "#FFFFFF",
-  fontStyle: "normal",
-  textAlign: "center",
-  background: "#8CD6D1",
+  color: "#000000"
 };
 const cardstyle = {
   width: "28vw",
@@ -108,6 +120,19 @@ const link = {
   fontStyle: "normal",
   textAlign: "center",
 };
+const headerbox = {
+  background: "#FFFFFF",
+  border: "6px solid  #c7ebe8",
+  boxSizing: "border-box",
+  boxShadow: "0px 0px 20px 3px rgba(0, 0, 0, 0.1)",
+  borderRadius: "5vw",
+  height: "17vw",
+  width: "70%",
+  marginBottom: "5vw",
+  marginTop: "-3.5vw",
+  marginLeft: "10vw",
+  marginRight: "10vw",
+};
 class Decal extends Component {
   constructor(props) {
     super(props);
@@ -145,359 +170,525 @@ class Decal extends Component {
   render() {
     return (
       <div>
-        <div style={{ zIndex: "1", position: "relative" }}>
-          <Image
-            src={story}
-            style={{ width: "120%", height: "auto", zIndex: "2" }}
-          ></Image>
-          <div
-            style={{
-              width: "100%",
-              textAlign: "center",
-              color: "#FFFFFF",
+          <h1
+           style={{
+             display: "flex",
+             justifyContent: "center",
+             top: "20vw",
+             width: "100%",
+             height: "auto",
+             textAlign: "center",
+             color: "black",
+             position: "absolute",
+             fontFamily: "Montserrat",
+             fontWeight: "bold",
+             fontSize: "6vw",
+             lineHeight: "6vw"
+           }}>
+             Decal
+          </h1>
+          
+          <div>
+            <Image style={{
+              position: "relative",
+              top: "20vw",
+              left: "52vw",
+              right: "50vw",
+              height: "28vw",
+              maxHeight: "28vw",
+              width: "28vw",
+              maxWidth: "28vw",
             }}
-          >
-            <span
-              style={{
-                position: "absolute",
-                top: "35%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-                fontWeight: "bold",
-                fontSize: "5vw",
-                lineHeight: "5vw",
-              }}
-            >
-              {" "}
-              Essential Tools for Data Science DeCal
-            </span>
-            <span
-              style={{
-                position: "absolute",
-                left: "20%",
-                top: "75%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: "5vw",
-                  lineHeight: "5vw",
-                  font: "Montserrat",
-                }}
-              >
-                6{" "}
-              </span>{" "}
-              <span
-                style={{
-                  fontSize: "2.5vw",
-                  textAlign: "center",
-                  font: "Montserrat",
-                }}
-              >
-                Semesters Completed
-              </span>
-            </span>
-            <div
-              style={{
-                background: "rgba(140, 214, 209, 0.5)",
-                zIndex: "2",
-                position: "absolute",
-                width: "100%",
-                height: "100%",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-              }}
-            ></div>
-            <span
-              style={{
-                position: "absolute",
-                left: "70%",
-                right: "0%",
-                top: "75%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: "5vw",
-                  lineHeight: "5vw",
-                  font: "Montserrat",
-                }}
-              >
-                400+{" "}
-                <span
+            src={classroom}></Image>
+          </div>
+          <div>
+            <Image style={{
+              left: "5vw",
+              top: "3.04vw",
+              position: "relative",
+              height: "18vw",
+              maxHeight: "18vw",
+              width: "30vw",
+              maxWidth: "30vw"
+            }}
+            src={sparkleLeft}></Image>
+          </div>
+          <p style={{
+            color: "#000000",
+            marginTop: "7vw",
+            textAlign: "center",
+            lineHeight: "4vw",
+            fontSize: "2.95vw",
+            fontFamily: "Montserrat",
+            marginLeft: "20vw",
+            marginRight: "20vw",
+          }}>
+            DeCal introduces everyone to the <br /><strong style={{color: "#8CD6D1" }}> {" "}fascinating world of data analytics.</strong>
+          </p>
+
+          <div style={{
+            paddingBottom: "0",
+          }}>
+            <Image style={{
+              position: "relative",
+              left: "-22vw",
+              top: "-4.5vh",
+              height: "15.8vw",
+              maxHeight: "15.8vw",
+              width: "67vw",
+              maxWidth: "67vw",
+              zIndex: 0
+            }}
+            src={test4}></Image>
+          </div>
+          <div style={{
+            position: "relative",
+            top: "-1.26vh",
+            zIndex: 1,
+            marginBottom: "0px"
+          }}>
+            <Grid centered>
+            <Grid.Row centered style={headerbox}>
+              <Card.Group centered>
+                <div
                   style={{
-                    fontSize: "2.5vw",
+                    background: "#FFFFFF",
+                    border: "1px solid none",
+                    boxSizing: "border-box",
+                    borderRadius: "5vw",
+                    width: "10%",
+                    height: "14vw",
+                    fontFamily: "Montserrat",
                   }}
                 >
-                  Students Taught
-                </span>
-              </span>
-            </span>
-          </div>
+                  <div
+                    style={{
+                      position: "absolute",
+                      left: "15.15vw",
+                      marginTop: "4vw",
+                      fontSize: "8vw",
+                      lineHeight: "8vw",
+                      color: '#8CD6D1',
+                      fontWeight: "501",
+                    }}
+                  >
+                    6
+                  </div>
+                </div>
+                <div
+                  style={{
+                    background: "#FFFFFF",
+                    boxSizing: "border-box",
+                    width: "20%",
+                    height: "14vw",
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "absolute",
+                      left: "22vw",
+                      fontSize: "3vw",
+                      lineHeight: "4vw",
+                      fontWeight: "21vw",
+                      fontFamily: "Montserrat",
+                      marginTop: "4vw",
+                      color: '#8CD6D1',
+                    }}
+                  >
+                    <p>Semesters <br/>Completed</p>
+                  </div>
+                </div>
+                <div
+                  style={{
+                    background: "#FFFFFF",
+                    border: "1px solid none",
+                    boxSizing: "border-box",
+                    borderRadius: "5vw",
+                    width: "10%",
+                    height: "14vw",
+                    fontFamily: "Montserrat",
+                    margintop: "10vw"
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "absolute",
+                      left: "56.36vw",
+                      marginTop: "4vw",
+                      fontSize: "8vw",
+                      lineHeight: "8vw",
+                      color: '#8CD6D1',
+                      fontWeight: "501",
+                    }}
+                  >
+                    400+
+                  </div>
+                </div>
+                <div
+                  style={{
+                    background: "#FFFFFF",
+                    boxSizing: "border-box",
+                    width: "20%",
+                    height: "14vw",
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "absolute",
+                      left: "80vw",
+                      fontSize: "3vw",
+                      lineHeight: "4vw",
+                      fontWeight: "21vw",
+                      fontFamily: "Montserrat",
+                      marginTop: "4vw",
+                      color: '#8CD6D1',
+                    }}
+                  >
+                    <p>Students <br/>Taught</p>
+                  </div>
+                </div>
+              </Card.Group>
+            </Grid.Row>
+          </Grid>
         </div>
-        <Grid centered>
-          {CustomTitle({ title: "What We Do" })}
-          <Grid.Row>
-            <Grid.Column
-              verticalAlign="top"
-              width={7}
-              style={{
-                textAlign: "left",
-                lineHeight: "2.5vw",
-                fontSize: "2vw",
-                fontWeight: "21.5vw",
-                fontFamily: "Montserrat",
-                marginBottom: "6vw",
-                marginTop: "4vw",
-              }}
-            >
-              Everywhere, data is being collected and used to make{" "}
-              <strong> decisions </strong> –- starting from your news feed in
-              the morning, to the Instagram stories you binge during lunch, and
-              even the best transit routes back home.
-              <Image
-                src={arrow}
-                style={{ marginLeft: "0px", marginTop: "6vw", height: "25vw" }}
-              ></Image>
-            </Grid.Column>
-            <Grid.Column verticalAlign="top" width={6}>
-              <Image
-                src={daily}
-                style={{ height: "38vw", width: "38vw" }}
-              ></Image>
-            </Grid.Column>
+        <div>
+            <Image style={{
+              position: "absolute",
+              left: "80vw",
+              height: "29.07vh",
+              maxHeight: "29.07vw",
+              width: "53.55vw",
+              maxWidth: "53.55vw",
+              zIndex: 0,
+              marginTop: "-6.5vh"
+            }}
+            src={squiggly2}></Image>
+        </div>
+        <p style={{
+            color: "#000000",
+            marginTop: "7vw",
+            textAlign: "center",
+            lineHeight: "4vw",
+            fontSize: "2.95vw",
+            fontFamily: "Montserrat",
+            marginLeft: "20vw",
+            marginRight: "20vw",
+          }}>
+            There are <strong style={{color: "#8CD6D1" }}> {" "}no prerequisites,</strong> and people of <strong style={{color: "#8CD6D1" }}> {" "}ALL <br/> majors, backgrounds</strong>, and <strong style={{color: "#8CD6D1" }}> {" "}interests</strong> are actively <br/>encouraged to apply!
+          </p>
+          <div style={{
+            paddingBottom: "0",
+          }}>
+            <Image style={{
+              position: "relative",
+              left: "9vw",
+              top: "-10vh",
+              height: "26vw",
+              width: "26vw",
+              zIndex: 0
+            }}
+            src={pen}></Image>
+          </div>
+          <div>
+            <Image style={{
+              position: "relative",
+              top: "-14vh",
+              right: "-73%",
+              height: "9.56vh",
+              width: "37.95vw",
+              zIndex: 0
+            }}
+            src={test5}></Image>
+          </div>
+        <div style={{
+          position: "relative",
+          marginTop: "-16vh"
+        }}>
+          <Grid centered>
+            <Grid.Row centered>
+              <div style={{
+                width: "100%",
+                marginTop: "-1vh"
+              }}>
+                <div style={{
+                  marginBottom: "7vw"
+                }}>
+                  <h1
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    width: "100%",
+                    height: "auto",
+                    textAlign: "center",
+                    color: "black",
+                    position: "absolute",
+                    fontFamily: "Montserrat",
+                    fontWeight: "bold",
+                    fontSize: "6vw",
+                    lineHeight: "6vw"
+                  }}>
+                    The Course
+                  </h1>
+                </div>
+                <div style={{
+                }}>
+                  <Image style={{
+                    justifyContent: "center",
+                    position: "relative",
+                    marginLeft: "47vw",
+                    marginBottom: "2vw",
+                    width: "40vw",
+                    height: "1.36vh"
+                  }}
+                  src={course}>
+                  </Image>
+                </div>
+                <div>
+                  <Image
+                    src={datalab}
+                    style={{
+                      position: "relative",
+                      marginLeft: "45vw",
+                      marginBottom: "-2vw",
+                      height: "14vw",
+                      width: "39vw",
+                    }}
+                  ></Image>
+                </div>
+              </div>
+            </Grid.Row>
             <Grid.Row
               style={{
-                textAlign: "right",
-                lineHeight: "2.5vw",
-                fontSize: "2vw",
+                textAlign: "center",
+                lineHeight: "4vw",
+                fontSize: "2.95vw",
                 fontWeight: "21vw",
                 fontFamily: "Montserrat",
-                marginLeft: "28vw",
-                marginRight: "28vw",
+                marginLeft: "15vw",
+                marginRight: "15vw",
                 marginBottom: "5vw",
-                marginTop: "-10vw",
               }}
             >
-              This DeCal introduces <strong>EVERYONE</strong> to the fascinating
-              world of data analytics and insight. There are absolutely{" "}
-              <strong> NO prerequisites</strong>, and people of{" "}
-              <strong>ALL majors, backgrounds, and interests</strong> are
-              actively encouraged to apply!
+              Our goal is to educate people with little to no experience in the
+              field about the languages, software, and other tools that data
+              scientists across the globe use daily. We place a special emphasis
+              on practical tools not otherwise emphasized in Berkeley academic
+              curricula.
             </Grid.Row>
-          </Grid.Row>
-          <Grid.Row centered>
-            <Image.Group>
-              <Image
-                src={decal1}
-                style={{
-                  height: "20vw",
-                  marginLeft: "10vw",
-                  marginRight: "5vw",
-                }}
-              ></Image>
-              <Image
-                src={decal2}
-                style={{ height: "20vw", marginRight: "10vw" }}
-              ></Image>
-            </Image.Group>
-          </Grid.Row>
-          <break></break>
-          {CustomTitle({ title: "The Course" })}
-          <Grid.Row centered>
-            <Image
-              src={datalab}
-              style={{
-                height: "14vw",
-                width: "39vw",
-              }}
-            ></Image>
-          </Grid.Row>
-          <Grid.Row
-            style={{
-              // color: "#000000",
-              textAlign: "center",
-              lineHeight: "2.5vw",
-              fontSize: "2vw",
-              fontWeight: "21vw",
-              fontFamily: "Montserrat",
-              marginLeft: "15vw",
-              marginRight: "15vw",
-              marginBottom: "5vw",
-            }}
-          >
-            Our goal is to educate people with little to no experience in the
-            field about the languages, software, and other tools that data
-            scientists across the globe use daily. We place a special emphasis
-            on practical tools not otherwise emphasized in Berkeley academic
-            curricula.
-          </Grid.Row>
-          <Grid.Row style={{ marginBottom: "5vw" }}>
-            <Link to="/decallearn">
-              <Button style={button}>Course Page</Button>
-            </Link>
-          </Grid.Row>
+            <Grid.Row style={{ marginBottom: "19vw" }}>
+            <div>
+              <div>
+                  <Image style={{
+                    position: "absolute",
+                    left: "-15vw",
+                    width: "86vw",
+                    height: "16vh",
+                    transform: "rotate(18deg)",
+                    transform: "scaleX(-1)"
+                  }}
+                  src={test6}>
+                  </Image>
+                </div>
+                <div>
+                  <Link to="/decallearn">
+                    <Button style={button}>Course Page</Button>
+                  </Link>
+                </div>
+              </div>
+            </Grid.Row>
 
-          <Grid.Row centered columns={2}>
-            <Grid.Column
-              style={{
-                color: "#8CD6D1",
-                textAlign: "center",
-                lineHeight: "4vw",
-                fontSize: "3vw",
-                fontWeight: "28vw",
-                fontFamily: "Montserrat",
-                marginBottom: "7vw",
-                left: "5%",
-                right: "50%",
+            <div style={{
+                width: "100%",
+                marginTop: "-1vh"
+              }}>
+                <div style={{
+                  marginBottom: "7vw"
+                }}>
+                  <h1
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    width: "100%",
+                    height: "auto",
+                    textAlign: "center",
+                    color: "black",
+                    position: "absolute",
+                    fontFamily: "Montserrat",
+                    fontWeight: "bold",
+                    fontSize: "6vw",
+                    lineHeight: "6vw"
+                  }}>
+                    Decal Directors
+                  </h1>
+                </div>
+                <div style={{
+                }}>
+                  <Image style={{
+                    position: "relative",
+                    marginLeft: "40vw",
+                    marginBottom: "2vw",
+                    width: "53vw",
+                    height: "1.36vh"
+                  }}
+                  src={course}>
+                  </Image>
+                </div>
+              </div>
+            <Grid.Row style={{ marginTop: "4vw" }}>
+              <Card.Group centered>
+                <Card style={cardstyle}>
+                  {" "}
+                  <Image style={imagestyle} src={kate} />
+                  <Card.Content>
+                    <Card.Header style={textstyle}>Kate Miller</Card.Header>
+                    <Card.Meta style={{ marginTop: "1vw" }}>
+                      <span style={roleStyle}>Director of DeCal</span>
+                    </Card.Meta>
+                  </Card.Content>
+                  <Card.Content extra>
+                    <a href="mailto:roshanlodha@berkeley.edu">
+                      <Icon name="mail" />
+                    </a>
+                    <a href="http://linkedin.com/in/roshanlodha">
+                      <Icon name="linkedin" />
+                    </a>
+                  </Card.Content>
+                </Card>
+                <Card style={cardstyle}>
+                  {" "}
+                  <Image style={imagestyle} src={uma} />
+                  <Card.Content>
+                    <Card.Header style={textstyle}>Uma K</Card.Header>
+                    <Card.Meta style={{ marginTop: "1vw" }}>
+                      <span style={roleStyle}>Director of DeCal</span>
+                    </Card.Meta>
+                  </Card.Content>
+                  <Card.Content extra>
+                    <a href="mailto:alleanna@berkeley.edu">
+                      <Icon name="mail" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/alleanna-clark-5b37aa16a/ ">
+                      <Icon name="linkedin" />
+                    </a>
+                  </Card.Content>
+                </Card>
+                <Card style={cardstyle}>
+                  {" "}
+                  <Image style={imagestyle} src={gaya} />
+                  <Card.Content>
+                    <Card.Header style={textstyle}>Gayatri Babel</Card.Header>
+                    <Card.Meta style={{ marginTop: "1vw" }}>
+                      <span style={roleStyle}>Director of DeCal</span>
+                    </Card.Meta>
+                  </Card.Content>
+                  <Card.Content extra>
+                    <a href="mailto:stephanie.lu@berkeley.edu">
+                      <Icon name="mail" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/stephanie-l-705a29175/">
+                      <Icon name="linkedin" />
+                    </a>
+                  </Card.Content>
+                </Card>
+              </Card.Group>
+            </Grid.Row>
+            <Grid.Row>
+              <div style={{ margin: "auto" }}></div>
+            </Grid.Row>
+            <div>
+              <Image style={{
+                position: "absolute",
+                left: "88vw",
+                height: "41vh",
+                maxHeight: "41vw",
+                width: "50vw",
+                maxWidth: "50vw",
+                zIndex: 0,
+                marginTop: "-20vw",
+                transform: "scaleY(-1)"
               }}
-            >
-              Join DSS and apply to be a TA!
-              {/* <Image
-                src={rightarrow}
+              src={squiggly2}></Image>
+            </div>
+            <div style={{
+                width: "100%",
+                marginTop: "-1vh"
+              }}>
+                <div style={{
+                  marginTop: "20vw",
+                }}>
+                  <h1
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    width: "100%",
+                    height: "auto",
+                    textAlign: "center",
+                    color: "black",
+                    position: "absolute",
+                    fontFamily: "Montserrat",
+                    fontWeight: "500",
+                    fontSize: "6vw",
+                    lineHeight: "6vw",
+                    color: "#8CD6D1"
+                  }}>
+                    Our Sponsors
+                  </h1>
+                </div>
+              </div>
+            <Grid.Row>
+              <Image.Group
                 style={{
-                  marginLeft: "43vw",
-                  marginTop: "4vw",
-                  transform: "rotate(10deg)",
+                  margin: "auto",
+                  marginBottom: "5vw",
+                  marginTop: "10vw",
                 }}
-              ></Image> */}
-            </Grid.Column>
-            <Grid.Column
+              >
+                <Image
+                  style={{ marginRight: "5vw", height: "15vw" }}
+                  src={decal}
+                ></Image>
+                <Image
+                  style={{ marginRight: "3vw", height: "15vw" }}
+                  src={berk}
+                ></Image>
+                <Image
+                  style={{ marginRight: "3vw", height: "15vw" }}
+                  src={datacamp}
+                ></Image>
+              </Image.Group>
+            </Grid.Row>
+            <Grid.Row
               style={{
-                color: "#8CD6D1",
-                textAlign: "center",
-                lineHeight: "4vw",
-                fontSize: "3vw",
-                fontWeight: "28vw",
-                fontFamily: "Montserrat",
-                marginBottom: "7vw",
-                right: "5%",
-              }}
-            >
-              Apply to be a student!
-              {/* <Image
-                src={leftarrow}
-                style={{
-                  marginLeft: "10vw",
-                  marginTop: "4vw",
-                  transform: "rotate(-15deg)",
-                }}
-              ></Image> */}
-            </Grid.Column>
-          </Grid.Row>
-          <Grid.Row centered style={{ marginTop: "-3vw" }}>
-            <Button style={button}>
-              <Link to="/apply" style={{ color: "white" }}>
-                Fall 2020 App
-              </Link>
-            </Button>
-          </Grid.Row>
-          {CustomTitle({ title: "DeCal Directors" })}
-          <Grid.Row style={{ marginTop: "4vw" }}>
-            <Card.Group centered>
-              <Card style={cardstyle}>
-                {" "}
-                <Image style={imagestyle} src={kate} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Kate Miller</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>Director of DeCal</span>
-                  </Card.Meta>
-                </Card.Content>
-                <Card.Content extra>
-                  <a href="mailto:roshanlodha@berkeley.edu">
-                    <Icon name="mail" />
-                  </a>
-                  <a href="http://linkedin.com/in/roshanlodha">
-                    <Icon name="linkedin" />
-                  </a>
-                </Card.Content>
-              </Card>
-              <Card style={cardstyle}>
-                {" "}
-                <Image style={imagestyle} src={uma} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Uma K</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>Director of DeCal</span>
-                  </Card.Meta>
-                </Card.Content>
-                <Card.Content extra>
-                  <a href="mailto:alleanna@berkeley.edu">
-                    <Icon name="mail" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/alleanna-clark-5b37aa16a/ ">
-                    <Icon name="linkedin" />
-                  </a>
-                </Card.Content>
-              </Card>
-              <Card style={cardstyle}>
-                {" "}
-                <Image style={imagestyle} src={gaya} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Gayatri Babel</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>Director of DeCal</span>
-                  </Card.Meta>
-                </Card.Content>
-                <Card.Content extra>
-                  <a href="mailto:stephanie.lu@berkeley.edu">
-                    <Icon name="mail" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/stephanie-l-705a29175/">
-                    <Icon name="linkedin" />
-                  </a>
-                </Card.Content>
-              </Card>
-            </Card.Group>
-          </Grid.Row>
-          <Grid.Row>
-            <div style={{ margin: "auto" }}></div>
-          </Grid.Row>
-          {CustomTitle({ title: "Our Sponsors" })}
-          <Grid.Row>
-            <Image.Group
-              style={{
-                margin: "auto",
-                marginBottom: "5vw",
+                fontFamily: "Monteserrat",
+                fontSize: "1.5vw",
+                marginLeft: "12vw",
+                marginRight: "12vw",
+                marginBottom: "1vw",
                 marginTop: "4vw",
+                lineHeight: "2vw",
               }}
-            >
-              <Image
-                style={{ marginRight: "5vw", height: "15vw" }}
-                src={decal}
-              ></Image>
-              <Image
-                style={{ marginRight: "3vw", height: "15vw" }}
-                src={berk}
-              ></Image>
-              <Image
-                style={{ marginRight: "3vw", height: "15vw" }}
-                src={datacamp}
-              ></Image>
-            </Image.Group>
-          </Grid.Row>
-          <Grid.Row
-            style={{
-              fontFamily: "Monteserrat",
-              fontSize: "1.5vw",
-              marginLeft: "12vw",
-              marginRight: "12vw",
-              marginBottom: "9vw",
-              marginTop: "4vw",
-              lineHeight: "2vw",
-            }}
-          ></Grid.Row>
-        </Grid>
+            ></Grid.Row>
+          </Grid>
+        </div>
+        <div style={{
+          marginTop: "-12vw",
+          width: "100%",
+        }}>
+          <p style={{
+            alignText: "center",
+            marginBottom: "2vw",
+            fontFamily: "Montserrat",
+            fontStyle: "normal",
+            fontWeight: "300",
+            fontSize: "2vw",
+            lineHeight: "29px",
+            textAlign: "center",
+            color: "#000000"
+          }}>DataCamp offers a free 6 month premium membership to participating students!</p>
+        </div>
+        <div style={{
+          height: "30vh"
+        }}></div>
       </div>
     );
   }
