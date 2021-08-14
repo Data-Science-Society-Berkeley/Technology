@@ -29,7 +29,6 @@ import proj6 from "./GM Proj Images/fake_news_gm.jpg";
 import squiggly1 from "./Acadev Images/squiggly1.png";
 import squiggly1_rotate from "./Acadev Images/squiggly1_rotate.png";
 import CustomTitleBlack from "./components/CustomTitleBlack.js";
-import gmLine from "./Acadev Images/gmLine.png";
 import gmLine2 from "./Acadev Images/gmLine2.png";
 import schedLine from "./Acadev Images/schedLine.png";
 import projLine from "./Acadev Images/projLine.png";
@@ -422,7 +421,7 @@ class DecalLearn extends Component {
                   {CustomTitleBlack({ title: "Schedule" })}
 
                   <div style={{margin: "0 auto", maxWidth: "22vw"}}>
-                    <Image src={gmLine}></Image>
+                    <Image src={gmLine2}></Image>
                   </div>
                 </div>
 
@@ -468,7 +467,7 @@ class DecalLearn extends Component {
           {CustomTitleBlack({ title: "Course Staff" })}
           
           <div style={{margin: "0 auto", maxWidth: "28vw"}}>
-                    <Image src={gmLine}></Image>
+                    <Image src={gmLine2}></Image>
           </div>
 
           </Grid.Row>
