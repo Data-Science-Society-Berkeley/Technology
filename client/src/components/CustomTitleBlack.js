@@ -14,7 +14,6 @@ function CustomTitleBlack(props) {
           position: "relative",
           // left: "-7vw",
           textAlign: "center",
-          //marginTop: "8vw",
         }}
         width={10}
       >
