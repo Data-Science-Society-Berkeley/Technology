@@ -48,6 +48,11 @@ import popout from "./About/popoutDesign.png";
 import ret from "./About/RetreatPic.png";
 import datacamp from "./Decal Images/datacamp-logo 1.png";
 import youtubeback from "./About/youtubevideo-cover.jpg";
+import upright from "./About/cross_up.png";
+import bottomleft from "./About/cross_down.png";
+import rectangle from "./About/rectangle.png";
+
+
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -602,49 +607,93 @@ class About extends Component {
 
     return (
       <div>
-        <div style={{ zIndex: "1", position: "relative" }}>
-          <Image
-            src={story}
-            style={{ width: "120%", height: "auto", zIndex: "2" }}
-          ></Image>
-          <div
-            style={{
-              width: "100%",
-              textAlign: "center",
-              background: "rgba(140, 214, 209, 0.6)",
-            }}
-          >
-            <span
-              style={{
-                position: "absolute",
-                top: "35%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-                // fontStyle: "normal",
-                fontWeight: "bold",
-                fontSize: "5vw",
-                lineHeight: "5vw",
-                color: "#FFFFFF",
-              }}
-            >
-              {" "}
-              OUR STORY
-            </span>
-            <div
-              style={{
-                background: "rgba(140, 214, 209, 0.5)",
-                zIndex: "2",
-                position: "absolute",
-                width: "100%",
-                height: "100%",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-              }}
-            ></div>
-          </div>
+        <div>
+          <Image src={upright}
+          style= {{
+            right:"5vw",
+            top:"12vw",
+            position: "absolute",
+            height: "18vw",
+            maxHeight: "18vw",
+            width: "30vw",
+            maxWidth: "30vw",
+          }}>
+          </Image>
+        </div>
+        <div>
+          <Image src={rectangle}
+          style= {{
+            position: 'absolute',
+            top: "19vw",
+            left: '80vw',
+            height: "1.5vw",
+            maxHeight: "1.5vw",
+            width: "17vw",
+            maxWidth: "17vw",
+          }}>
+          </Image>
+        </div>
+        <h1
+          style={{
+          top:"20vw",
+          width: "100%",
+          height: "auto",
+          textAlign: "center",
+          color: "black",
+          margin: 'auto',
+          // marginBottom:'10vw',
+          //marginTop: "5vw",
+          position: "absolute",
+          // transform: "translate(-50%, -50%)",
+          fontFamily: "Montserrat",
+          fontWeight: "bold",
+          fontSize: "6vw",
+          lineHeight: "6vw",
+        }}
+        >About Us  
+        </h1>
+        <div>
+          <Image src={rectangle}
+          style= {{
+            position: 'absolute',
+            top: "28vw",
+            left: '35vw',
+            height: "2.8vw",
+            maxHeight: "2.8vw",
+            width: "32vw",
+            maxWidth: "32vw",
+          }}>
+          </Image>
+        </div>
+        <div>
+          <Image style={{position: 'relative',
+          top: "20vw",
+          // marginTop: '3vw',
+          left: "30vw",
+          right: "30vw", 
+          bottom: "15vw",
+          // margin: 'auto',
+          // margintop: "10vw",
+          marginBottom: '15vw',
+          height: "38vw",
+          maxHeight: "38vw",
+          width: "71vw",
+          maxWidth: "71vw",
+          }}
+          src={story}></Image>
+        </div>
+        <div>
+          <Image src={bottomleft}
+          style= {{
+            left:"0vw",
+            top:"0vw",
+            position: "relative",
+            height: "18vw",
+            maxHeight: "18vw",
+            width: "30vw",
+            maxWidth: "30vw",
+          }}>
+          </Image>
         </div>
         <Grid entered style={gridoffset}>
           <Grid.Row
