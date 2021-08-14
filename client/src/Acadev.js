@@ -15,6 +15,21 @@ import {
 } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CustomTitle from "./components/CustomTitle.js";
+import CustomTitleBlack from "./components/CustomTitleBlack.js";
+
+import gmLine from "./Acadev Images/gmLine.png";
+import workshopLine from "./Acadev Images/workshopLine.png";
+import yellowUnderline from "./Acadev Images/yellowUnderline.png";
+import CMImage from "./Acadev Images/CMImage.png";
+import GMImage from "./Acadev Images/GMImage.png";
+import WSImage from "./Acadev Images/WSImage.png";
+import acadev_back from "./Acadev Images/acadevBack.png";
+import squiggly1 from "./Acadev Images/squiggly1.png";
+import squiggly2 from "./Acadev Images/squiggly2.png";
+import squiggly3 from "./Acadev Images/squiggly3.png";
+import upright from "./Acadev Images/upRight.png";
+import bottomleft from "./Acadev Images/bottomLeft.png";
+
 
 import haas from "./Acadev Images/haasdatascienceclub 1.png";
 import bids from "./Acadev Images/Berkeley_Institute_for_Data_Science_-_Logo 1.png";
@@ -101,6 +116,7 @@ const imagestyle = {
   width: "28vw",
   maxWidth: "28vw",
 };
+
 const textstyle = {
   fontFamily: "Montserrat",
   fontWeight: 300,
@@ -117,18 +133,37 @@ const roleStyle = {
   lineHeight: "2vw",
   color: "#000000",
 };
-const overlayboxes = {
-  background: "#F8F8F8",
-  border: ".5vw solid #8CD6D1",
+
+const headerbox = {
+  background: "#FFFFFF",
+  border: "6px solid  #c7ebe8",
+  // borderStyle: 'groove',
   boxSizing: "border-box",
-  boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
-  borderRadius: "1.5vw",
-  height: "32vw",
-  width: "32vw",
+  // boxshadow: "120px 80px 40px 20px #0ff",
+  // boxShadow: "5px 4px 10px 1px rgba(0, 0, 0, 0.1)",
+  boxShadow: "0px 0px 20px 3px rgba(0, 0, 0, 0.1)",
+  borderRadius: "5vw",
+  height: "17vw",
+  width: "70%",
   marginBottom: "5vw",
-  marginTop: "6vw",
+  marginTop: "-3.5vw",
   marginLeft: "10vw",
   marginRight: "10vw",
+  // position: "absolute",
+};
+
+const overlayboxes = {
+  background: "#ffffff",
+  border: ".4vw solid #FFC54A",
+  boxSizing: "border-box",
+  //boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
+  borderRadius: "1.5vw",
+  height: "37.5vw",
+  width: "37.5vw",
+  marginBottom: "4vw",
+  marginTop: "4vw",
+  marginLeft: "5vw",
+  marginRight: "5vw",
 };
 // const overlayboxes2 = {
 //   background: "#F8F8F8",
@@ -142,16 +177,32 @@ const overlayboxes = {
 //   marginLeft: "438px",
 //   marginTop: "80px",
 // };
-const generalmember = {
+const cardHeader = {
   fontFamily: "Montserrat",
-  fontWeight: 300,
+  fontWeight: 500,
   lineHeight: "3vw",
-  fontSize: "2vw",
+  fontSize: "2.75vw",
   color: "#000000",
   textAlign: "center",
-  marginLeft: "2vw",
+  
   marginTop: "1.5vw",
 };
+
+const cardUnderlineStyle = {
+  height: "auto",
+  maxHeight: "28vw",
+  width: "auto",
+  maxWidth: "28vw",
+  margin: "1vw auto",
+};
+
+const cardImageSyle = {
+  width: "15vw", 
+  margin: "1vw auto",
+  marginTop: '2vw',
+  backgroundColor: 'transparent',
+}
+
 const circleStyle = {
   padding: ".75vw",
   marginLeft: "-3vw",
@@ -186,9 +237,9 @@ const cardDescription = {
   marginLeft: "1.5vw",
   marginRight: "1.5vw",
   fontFamily: "Montserrat",
-  fontSize: "1.25vw",
+  fontSize: "1.5vw",
   lineHeight: "2vw",
-  textAlign: "Left",
+  textAlign: "center",
 };
 const bulletedPoints = {
   textAlign: "left",
@@ -244,251 +295,438 @@ class Acadev extends Component {
 
     return (
       <div>
-        <div style={{ zIndex: "1", position: "relative" }}>
-          <Image src={story}></Image>
-          <div
-            style={{
-              width: "100%",
-              height: "auto",
-              textAlign: "center",
-              color: "#FFFFFF",
-            }}
-          >
-            <span
-              style={{
-                position: "absolute",
-                top: "35%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-                fontWeight: "bold",
-                fontSize: "5vw",
-                lineHeight: "6vw",
-              }}
-            >
-              Academic Development
-            </span>
-            <span
-              style={{
-                position: "absolute",
-                top: "55%",
-                left: "5%",
-                right: "50%",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: "5vw",
-                  lineHeight: "5vw",
-                  // fontWeight: "normal",
-                }}
-              >
-                4{" "}
-              </span>{" "}
-              <span
-                style={{
-                  fontSize: "2.5vw",
-                }}
-              >
-                Semesters of General Membership Completed
-              </span>
-            </span>
-
-            <span
-              style={{
-                position: "absolute",
-                top: "55%",
-                left: "60%",
-                right: "5%",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: "5vw",
-                  lineHeight: "5vw",
-                  font: "Montserrat",
-                }}
-              >
-                350+{" "}
-              </span>{" "}
-              <span
-                style={{
-                  fontSize: "2.5vw",
-                }}
-              >
-                Past General Members
-              </span>
-            </span>
-            <span
-              style={{
-                position: "absolute",
-                top: "90%",
-                left: "50%",
-                right: "10%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-                lineHeight: "7vw",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: "5vw",
-                  lineHeight: "9vw",
-                  font: "Montserrat",
-                }}
-              >
-                64{" "}
-              </span>{" "}
-              <span
-                style={{
-                  fontSize: "2.5vw",
-                  lineHeight: "2.5vw",
-                  textAlign: "center",
-                  font: "Montserrat",
-                  fontWeight: "light",
-                }}
-              >
-                Workshops Hosted
-              </span>{" "}
-            </span>
-            <div
-              style={{
-                background: "rgba(140, 214, 209, 0.5)",
-                zIndex: "2",
-                position: "absolute",
-                width: "100%",
-                height: "100%",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-              }}
-            ></div>
-          </div>
+        <div>
+          <Image src={upright}
+          style= {{
+            right:"5vw",
+            top:"12vw",
+            position: "absolute",
+            height: "18vw",
+            maxHeight: "18vw",
+            width: "30vw",
+            maxWidth: "30vw",
+          }}>
+          </Image>
         </div>
+        <h1
+          style={{
+          top:"20vw",
+          width: "100%",
+          height: "auto",
+          textAlign: "center",
+          color: "black",
+          margin: 'auto',
+          // marginBottom:'5vw',
+          //marginTop: "5vw",
+          position: "absolute",
+          // transform: "translate(-50%, -50%)",
+          fontFamily: "Montserrat",
+          fontWeight: "bold",
+          fontSize: "6vw",
+          lineHeight: "6vw",
+        }}
+        >Academic Development    
+        </h1>
+        
+        <div>
+          <Image style={{position: 'relative',
+          top: "20vw",
+          // marginTop: '5vw',
+          left: "50vw",
+          right: "50vw", 
+          // bottom: "15vw",
+          // margin: 'auto',
+          // margintop: "10vw",
+          // marginBottom: '22vw',
+          height: "28vw",
+          maxHeight: "28vw",
+          width: "28vw",
+          maxWidth: "28vw",
+          }}
+          src={acadev_back}></Image>
+        </div>
+        <div>
+          <Image src={bottomleft}
+          style= {{
+            left:"5vw",
+            top:"6vw",
+            position: "relative",
+            height: "18vw",
+            maxHeight: "18vw",
+            width: "30vw",
+            maxWidth: "30vw",
+          }}>
+          </Image>
+          <div>
+          <Image src={squiggly3}
+          style= {{
+            left:"0vw",
+            top:"-5vw",
+            position: "relative",
+            height: "25vw",
+            maxHeight: "25vw",
+            width: "30vw",
+            maxWidth: "30vw",
+          }}>
+          </Image>
+        </div>
+        </div>
+        <Grid centered>
+        <Grid.Row centered style={headerbox}>
+            <Card.Group centered>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  border: "1px solid none",
+                  boxSizing: "border-box",
+                  borderRadius: "5vw",
+                  width: "10%",
+                  height: "14vw",
+                  // marginTop: "10vw",
+                  // marginLeft: "2%",
+                  // marginRight: "5%",
+                  // fontSize: "2vw",
+                  // lineHeight: "2vw",
+                  // fontWeight: "21.5vw",
+                  fontFamily: "Montserrat",
+                  margintop: "10vw"
+                }}
+              >
+                <div
+                  style={{
+                    marginTop: "4vw",
+                    marginLeft: "2%",
+                    // marginRight: "2vw",
+                    fontSize: "8vw",
+                    lineHeight: "8vw",
+                    color: '#8CD6D1',
+                    fontWeight: "501",
+
+                  }}
+                >
+                  4
+                </div>
+              </div>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  // borderRadius: "3vw",
+                  width: "20%",
+                  height: "14vw",
+                  // marginLeft: "8%",
+                  // marginRight: "7vw",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "3vw",
+                    lineHeight: "4vw",
+                    fontWeight: "21vw",
+                    fontFamily: "Montserrat",
+                    marginTop: "2vw",
+                    // marginLeft: "2vw",
+                    // marginRight: "2vw",
+                    color: '#8CD6D1',
+                  }}
+                >
+                  Semesters of General Membership
+                </div>
+              </div>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  // borderRadius: "3vw",
+                  width: "10%",
+                  height: "14vw",
+                  // marginLeft: "8%",
+                  // marginRight: "5%",
+                  // fontSize: "2vw",
+                  // lineHeight: "2vw",
+                  // fontWeight: "21.5vw",
+                  fontFamily: "Montserrat",
+                }}
+              >
+                <div
+                  style={{
+                    marginTop: "4vw",
+                    marginLeft: "2%",
+                    // marginRight: "2vw",
+                    fontSize: "8vw",
+                    lineHeight: "8vw",
+                    color: '#8CD6D1',
+                    fontWeight: "501",
+
+                  }}
+                >
+                  64
+                </div>
+              </div>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  // borderRadius: "3vw",
+                  width: "20%",
+                  height: "14vw",
+                  // marginLeft: "8%",
+                  // marginRight: "7vw",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "3vw",
+                    lineHeight: "4vw",
+                    fontWeight: "21vw",
+                    fontFamily: "Montserrat",
+                    marginTop: "4vw",
+                    // marginLeft: "2vw",
+                    // marginRight: "2vw",
+                    color: '#8CD6D1',
+                  }}
+                >
+                  Workshops hosted
+                </div>
+              </div>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  // borderRadius: "3vw",
+                  width: "17%",
+                  height: "14vw",
+                  marginLeft: "2%",
+                  // marginRight: "5%",
+                  // fontSize: "2vw",
+                  // lineHeight: "2vw",
+                  // fontWeight: "21.5vw",
+                  fontFamily: "Montserrat",
+                }}
+              >
+                <div
+                  style={{
+                    marginTop: "4vw",
+                    // marginLeft: "2vw",
+                    // marginRight: "2vw",
+                    fontSize: "8vw",
+                    lineHeight: "8vw",
+                    color: '#8CD6D1',
+                    fontWeight: "501",
+
+                  }}
+                >
+                  350+{" "}
+                </div>{" "}
+              </div>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  borderRadius: "5vw",
+                  width: "20%",
+                  height: "14vw",
+                  // marginLeft: "8%",
+                  // marginRight: "2%",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "3vw",
+                    lineHeight: "4vw",
+                    fontWeight: "21vw",
+                    fontFamily: "Montserrat",
+                    marginTop: "4vw",
+                    // marginLeft: "2vw",
+                    marginRight: "2vw",
+                    color: '#8CD6D1',
+                  }}
+                >
+                  Past General Members
+                </div>
+              </div>
+            </Card.Group>
+          </Grid.Row>
+        </Grid>
 
         <Grid centered>
           <Grid.Row></Grid.Row>
-
-          {CustomTitle({ title: "What We Do" })}
+          
           <Grid.Row
             style={{
               color: "#000000",
-              marginTop: "2vw",
+              marginTop: "7vw",
               textAlign: "center",
               lineHeight: "4vw",
               fontSize: "2vw",
               fontWeight: "21vw",
               fontStyle: "normal",
               fontFamily: "Montserrat",
-              marginLeft: "25vw",
-              marginRight: "25vw",
+              marginLeft: "20vw",
+              marginRight: "20vw",
             }}
           >
-            The academic development committee hosts a variety of educational
-            workshops for the greater campus community , and directs our general
-            membership (GM) program open to all skill levels and students.
+            The academic development committee hosts a variety of 
+            educational workshops for the 
+            <strong style={{ color: "#8CD6D1" }}> {" "}
+              greater campus community {" "}
+            </strong> 
+            , and directs our general membership (GM) program open to 
+            <strong style={{ color: "#8CD6D1" }}> {" "}
+              all skill levels and students {" "}
+            </strong>.
+            <div>
+              <Image
+                src={squiggly1}
+                style={{
+                  right: "-22%",
+                  width: "70vw",
+                  position: "absolute",
+                  top: "-130%",
+                }}
+              ></Image>
+            </div>
           </Grid.Row>
 
-          {CustomTitle({ title: "Our Initiatives" })}
+          <Grid.Row>
+            <div>
+              <Image
+                src={squiggly2}
+                style={{
+                  left: "-20%",
+                  width: "50vw",
+                  position: "absolute",
+                  top: "-10%",
+                }}
+              ></Image>
+            </div>
+            {CustomTitleBlack({ title: "General Membership" })}
+          </Grid.Row>
+          
+          <div style={{maxWidth: "50vw"}}>
+            <Image src={gmLine}></Image>
+          </div>
+
+          <Grid.Row centered style={{ marginBottom: "-1.75vw", marginTop: "2vw" }}>
+            <div
+              style={{
+                background: "#FFFFFF",
+                border: "5px solid #8CD6D1",
+                boxSizing: "border-box",
+                borderRadius: "3vw",
+                width: "55%",
+                height: "9vw",
+                marginLeft: "5%",
+                marginRight: "5%",
+                fontSize: "2vw",
+                lineHeight: "2vw",
+                fontWeight: "21.5vw",
+                fontFamily: "Montserrat",
+              }}
+            >
+              <div
+                style={{
+                  marginTop: "2vw",
+                  marginLeft: "2vw",
+                  marginRight: "2vw",
+                }}
+              >
+                We hope to help students just starting out 
+                in Data Science to complete their first Data 
+                Science research project!
+              </div>
+            </div>
+          </Grid.Row>
+          
           <Grid.Row centered>
             <Card.Group centered>
               <Card style={overlayboxes}>
-                <Card.Header style={generalmember}>
-                  General Membership
+                <Card.Header style={cardHeader}>
+                  Committee Member
                 </Card.Header>
-                <div style={circleStyle}> 1</div>
-
+                <Image style={cardUnderlineStyle} src={yellowUnderline}></Image>
+                <Image style={cardImageSyle} src={CMImage}></Image>
                 <Card.Description style={cardDescription}>
-                  We provide members with a mentor and weekly lectures covering
-                  the data science lifecycle and project collaboration. Our goal
-                  is to get you to a completed data science research project by
-                  the end of the semester.
-                  <br />
-                  <List bulleted>
-                    <List.Header style={whatYoullDo}>
-                      What you’ll do:
-                      <br />
-                    </List.Header>
-                    <List.Item style={bulletedPoints}>
-                      Collaborate with students to develop a semester long
-                      project of your choosing.
-                    </List.Item>
-                    <List.Item style={bulletedPoints}>
-                      Present at the Berkeley Data Science Research Symposium
-                      and create a publication to post on our website.
-                    </List.Item>
-                  </List>
+                  Act as a mentor for projects and 
+                  teach relevant skills for  research! 
+                  Conduct  lectures covering Data 
+                  Science and project collaboration!
                 </Card.Description>
               </Card>
               <Card style={overlayboxes}>
-                <Card.Header style={generalmember}>Workshops</Card.Header>
-                <div style={circleStyle}> 2</div>
+                <Card.Header style={cardHeader}>General Member</Card.Header>
+                <div>
+                  <Image style={cardUnderlineStyle} src={yellowUnderline}></Image>
+                </div>
+                
+                <Image style={cardImageSyle} src={GMImage}></Image>
                 <Card.Description style={cardDescription}>
-                  Collaborate with students from a variety of backgrounds and
-                  other organizations to educate the campus community of
-                  practical problems, phenomena and tools related to data
-                  science.
-                  <br />
-                  <List bulleted>
-                    <List.Header style={whatYoullDo}>
-                      What you’ll do:
-                    </List.Header>
-
-                    <List.Item style={bulletedPoints}>
-                      Communicate with your fellow team members and other orgs
-                      to develop workshop materials
-                    </List.Item>
-                    <List.Item style={bulletedPoints}>
-                      Present to a wide audience and support the campus data
-                      science community!
-                    </List.Item>
-                  </List>
+                  Collaborate and develop a 
+                  semester-long project of your 
+                  choosing! Present at the Berkeley 
+                  Data Science Research Symposium 
+                  and publish on the DSS website!
                 </Card.Description>
               </Card>
             </Card.Group>
           </Grid.Row>
-          <Grid.Row centered columns={2}>
+          <Grid.Row centered columns={1} style={{marginBottom: "-1.5vw"}}>
+            
             <Button.Group centered>
               <Link to="education">
-                <Button style={button}>Past GM Projects</Button>
-              </Link>
-              <Link to="education">
-                <Button style={button}>Past Workshops</Button>
+                <Button style={{
+                  background: "#FFFFFF",
+                  border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  borderRadius: "3vw",
+                  width: "100%",
+                  height: "7.5vw",
+                  marginTop: "-1.5vw",
+                  marginBottom: "-1.5vw",
+                  //marginLeft: "5%",
+                  //marginRight: "5%",
+                  fontSize: "2.5vw",
+                  lineHeight: "2vw",
+                  fontWeight: 200,
+                  fontFamily: "Montserrat",
+                }}>
+                  <div
+                    style={{
+                      marginTop: "-0.5vw",
+                      marginLeft: "0vw",
+                      marginRight: "0vw",
+                    }}
+                  >
+                    Apply to become a General Member! 
+                  </div>
+                </Button>
               </Link>
             </Button.Group>
+            <div>
+              <Image
+                src={squiggly1}
+                style={{
+                  right: "-10%",
+                  width: "70vw",
+                  position: "absolute",
+                  top: "0%",
+                }}
+              ></Image>
+            </div>
           </Grid.Row>
+          
+          
           <Grid.Row
             centered
             columns={2}
-            style={{ marginTop: "8vw", right: "3vw" }}
+            style={{ marginTop: "4vw", right: "3vw" }}
           >
-            <Grid.Column width={6} textAlign="center">
-              <Link to="/apply">
-                <div style={info}>
-                  <strong style={{ color: "#FFC54A" }}>
-                    Interested in teaching?{" "}
-                  </strong>
-                  Apply to become an AcaDev Committee Member!
-                </div>
-              </Link>
-            </Grid.Column>
-            <Grid.Column width={6} textAlign="center">
-              <Link to="/apply">
-                <div style={info}>
-                  <strong style={{ color: "#FFC54A" }}>
-                    {" "}
-                    Interested in learning?{" "}
-                  </strong>
-                  Apply to become a General Member!
-                </div>
-              </Link>
-            </Grid.Column>
+            
             {/* No Decal Spring 2021 rip:( */}
             {/* <Grid.Column width={4} textAlign="center">
               <Link to="/decal">
@@ -501,8 +739,145 @@ class Acadev extends Component {
                 </div>
               </Link>
             </Grid.Column> */}
+          
           </Grid.Row>
-          {CustomTitle({ title: "AcaDev Directors" })}
+          {CustomTitleBlack({ title: "Workshops" })}
+          <Grid.Row>
+          <div style={{maxWidth: "27vw"}}>
+            <Image src={workshopLine}></Image>
+          </div>
+          
+          <Grid.Row centered style={{ marginBottom: "0vw", marginTop: "3.5vw" }}>
+            <div
+              style={{
+                background: "#FFFFFF",
+                border: "5px solid #8CD6D1",
+                boxSizing: "border-box",
+                borderRadius: "3vw",
+                width: "55%",
+                height: "12vw",
+                //marginLeft: "5%",
+                //marginRight: "5%",
+                fontSize: "2vw",
+                lineHeight: "2vw",
+                fontWeight: "21.5vw",
+                fontFamily: "Montserrat",
+                margin: 'auto',
+              }}
+            >
+              <div
+                style={{
+                  marginTop: "2vw",
+                  marginLeft: "2vw",
+                  marginRight: "2vw",
+                }}
+              >
+                Collaborate with students from a variety of backgrounds 
+                and other organizations to educate the campus 
+                community of practical problems, phenomena and tools 
+                related to data science. 
+              </div>
+            </div>
+          </Grid.Row>
+
+          <Grid.Row centered>
+            <Card.Group centered>
+              <Card style={overlayboxes}>
+                <Image src={WSImage} style={{
+                  width: "19vw", 
+                  margin: "1vw auto",
+                  marginTop: '3vw',
+                  backgroundColor: 'transparent',}}
+                ></Image>
+                <Card.Description style={cardDescription}>
+                  Communicate with fellow team 
+                  members and other organizations 
+                  to develop workshop materials! 
+                  Teach diverse audiences and 
+                  support the data science 
+                  community on and off-campus!
+                </Card.Description>
+              </Card>
+            </Card.Group>
+          </Grid.Row>
+          
+
+          <Grid.Row centered style={{ marginBottom: "3vw", marginTop: "0vw"}}>
+            <Card.Group centered>
+              <Card style={{
+                background: "#FFFFFF",
+                border: "5px solid #8CD6D1",
+                boxSizing: "border-box",
+                borderRadius: "3vw",
+                width: "25%",
+                height: "14vw",
+                //marginLeft: "8%",
+                //marginRight: "5%",
+                fontSize: "2vw",
+                lineHeight: "2vw",
+                fontWeight: "21.5vw",
+                fontFamily: "Montserrat",
+              }}>
+                <div
+                style={{
+                  marginTop: "3vw",
+                  marginLeft: "2vw",
+                  marginRight: "2vw",
+                }}
+                >
+                  Check out our{" "}
+                  <Link to="/events">
+                    <strong style={{ color: "#FFC54A" }}> Events</strong>
+                  </Link>{" "}
+                  page to view our past academic collaborations.
+                </div>
+              </Card>
+              <Card style={{
+                background: "#FFFFFF",
+                border: "5px solid #8CD6D1",
+                boxSizing: "border-box",
+                borderRadius: "3vw",
+                width: "40%",
+                height: "14vw",
+                fontSize: "2vw",
+                lineHeight: "2vw",
+                fontWeight: "21vw",
+                fontFamily: "Montserrat",
+                //marginLeft: "8%",
+                //marginRight: "7vw",
+              }}>
+                <div
+                style={{
+                  marginTop: "2vw",
+                  marginLeft: "2vw",
+                  marginRight: "2vw",
+                }}
+              >
+                Interested in DSS hosting a workshop for you? Interested in
+                co-hosting a workshop with us?
+              </div>
+                <Link to="/services">
+                  <div
+                    style={{
+                      color: "#FFC54A",
+                      fontSize: "2vw",
+                      lineHeight: "2vw",
+                      fontWeight: "21vw",
+                      fontFamily: "Montserrat",
+                      marginTop: "2vw",
+                      marginLeft: "2vw",
+                      marginRight: "2vw",
+                    }}
+                  >
+                    Contact us here >>
+                  </div>
+                </Link>
+              </Card>
+            </Card.Group>
+          </Grid.Row>
+          
+          </Grid.Row>
+          {CustomTitleBlack({ title: "AcaDev Directors" })}
           <Grid.Row>
             <Card.Group style={{ marginTop: "5vw" }}>
               <Card style={cardstyle}>
@@ -562,10 +937,11 @@ class Acadev extends Component {
             </Card.Group>
           </Grid.Row>
 
+
           <Grid.Row></Grid.Row>
           {CustomTitle({ title: "Current and Past Collaborations" })}
           <Grid.Row>
-            <Image.Group style={{ marginLeft: "14vw", marginRight: "14vw" }}>
+            <Image.Group style={{ marginLeft: "14vw", marginRight: "14vw", marginBottom: "7vw" }}>
               <Image src={haas} style={{ marginRight: "5vw" }}></Image>
               <Image src={saas} style={{ marginRight: "4.5vw" }}></Image>
               <Image src={pcs} style={{ marginRight: "5vw" }}></Image>
@@ -583,81 +959,7 @@ class Acadev extends Component {
               ></Image>
             </Image.Group>
           </Grid.Row>
-          <Grid.Row centered style={{ marginBottom: "9vw", marginTop: "4vw" }}>
-            <div
-              style={{
-                background: "#FFFFFF",
-                border: "5px solid #8CD6D1",
-                boxSizing: "border-box",
-                borderRadius: "3vw",
-                width: "25%",
-                height: "14vw",
-                marginLeft: "8%",
-                marginRight: "5%",
-                fontSize: "2vw",
-                lineHeight: "2vw",
-                fontWeight: "21.5vw",
-                fontFamily: "Montserrat",
-              }}
-            >
-              <div
-                style={{
-                  marginTop: "3vw",
-                  marginLeft: "2vw",
-                  marginRight: "2vw",
-                }}
-              >
-                Check out our{" "}
-                <Link to="/events">
-                  <strong style={{ color: "#FFC54A" }}> Events</strong>
-                </Link>{" "}
-                page to view our past academic collaborations.
-              </div>
-            </div>
-            <div
-              style={{
-                background: "#FFFFFF",
-                border: "5px solid #8CD6D1",
-                boxSizing: "border-box",
-                borderRadius: "3vw",
-                width: "40%",
-                height: "14vw",
-                marginLeft: "8%",
-                marginRight: "7vw",
-              }}
-            >
-              <div
-                style={{
-                  fontSize: "2vw",
-                  lineHeight: "2vw",
-                  fontWeight: "21vw",
-                  fontFamily: "Montserrat",
-                  marginTop: "2vw",
-                  marginLeft: "2vw",
-                  marginRight: "2vw",
-                }}
-              >
-                Interested in DSS hosting a workshop for you? Interested in
-                co-hosting a workshop with us?
-              </div>
-              <Link to="/services">
-                <div
-                  style={{
-                    color: "#FFC54A",
-                    fontSize: "2vw",
-                    lineHeight: "2vw",
-                    fontWeight: "21vw",
-                    fontFamily: "Montserrat",
-                    marginTop: "2vw",
-                    marginLeft: "2vw",
-                    marginRight: "2vw",
-                  }}
-                >
-                  Contact us here 
-                </div>
-              </Link>
-            </div>
-          </Grid.Row>
+          
         </Grid>
       </div>
     );
