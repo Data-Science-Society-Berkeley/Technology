@@ -10,9 +10,22 @@ import {
   Icon,
   Button,
   List,
+  CardDescription,
 } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CustomTitle from "./components/CustomTitle.js";
+import CustomTitleBlack from "./components/CustomTitleBlack.js";
+
+import ExpertiseLine from "./Consulting/ExpertiseLine.png";
+import ClientLine from "./Consulting/ClientLine.png";
+import BizIntelImage from "./Consulting/BizIntelImage.png";
+import MLImage from "./Consulting/MLImage.png";
+import SDImage from "./Consulting/SDImage.png";
+import squiggle2 from "./Consulting/squiggle2.png";
+import squiggle3 from "./Consulting/squiggle3.png";
+import upright from "./Consulting/topRight.png";
+import bottomleft from "./Consulting/bottomLeft.png";
+import logo from "./Consulting/logo.png";
 
 import paypal from "./Consulting/paypallogo.png";
 import paypallogo2 from "./Consulting/paypallogo.jpg";
@@ -52,18 +65,7 @@ import henry from "./PM Headshots/henry.jpg";
 
 import collab from "./Consulting/consultingheader-compress-min.jpg";
 
-const generalmember = {
-  fontFamily: "Montserrat",
-  fontWeight: "21vw",
-  lineHeight: "3vw",
-  fontSize: "2.5vw",
-  color: "#000000",
-  fontStyle: "normal",
-  textAlign: "center",
-  marginLeft: "6vw",
-  marginTop: "1vw",
-  textAlign: "left",
-};
+
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -73,30 +75,76 @@ const gridoffset = {
   fontFamily: "Montserrat",
 };
 
-const overlayboxes = {
-  background: "#F8F8F8",
-  border: "5px solid #8CD6D1",
+const headerbox = {
+  background: "#FFFFFF",
+  border: "6px solid  #c7ebe8",
   boxSizing: "border-box",
-  boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
-  borderRadius: "1.5vw",
-  height: "26vw",
-  width: "27vw",
+  boxShadow: "0px 0px 20px 3px rgba(0, 0, 0, 0.1)",
+  borderRadius: "5vw",
+  height: "19vw",
+  width: "70%",
   marginBottom: "5vw",
   marginTop: "6vw",
+  marginLeft: "10vw",
+  marginRight: "10vw",
+};
+
+
+const overlayboxes = {
+  background: "#ffffff",
+  border: ".4vw solid #8CD6D1",
+  boxSizing: "border-box",
+  //boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
+  borderRadius: "1.5vw",
+  height: "34vw",
+  width: "34vw",
+  marginBottom: "4vw",
+  marginTop: "4vw",
+  marginLeft: "3vw",
+  marginRight: "3vw",
 };
 
 const overlayboxes2 = {
-  background: "#F8F8F8",
-  border: "5px solid #8CD6D1",
+  background: "#ffffff",
+  border: ".4vw solid #FFC54A",
   boxSizing: "border-box",
-  boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
+  //boxShadow: "5px 4px 10px 2px rgba(0, 0, 0, 0.25)",
   borderRadius: "1.5vw",
-  height: "26vw",
-  width: "27vw",
-  marginBottom: "5vw",
-  marginTop: "6vw",
-  marginLeft: "5vw",
+  height: "34vw",
+  width: "34vw",
+  marginBottom: "4vw",
+  marginTop: "4vw",
+  marginLeft: "3vw",
+  marginRight: "3vw",
 };
+
+const cardHeader = {
+  fontFamily: "Montserrat",
+  fontWeight: 500,
+  lineHeight: "3vw",
+  fontSize: "2.5vw",
+  color: "#000000",
+  textAlign: "center",
+  marginTop: "1.5vw",
+};
+
+const cardDescription = {
+  marginTop: "1vw",
+  // marginBottom: "10vw",
+  marginLeft: "1.5vw",
+  marginRight: "1.5vw",
+  fontFamily: "Montserrat",
+  fontSize: "1.5vw",
+  lineHeight: "2vw",
+  textAlign: "center",
+};
+
+const cardImageSyle = {
+  width: "15vw", 
+  margin: "1vw auto",
+  marginTop: '3vw',
+  backgroundColor: 'transparent',
+}
 
 var circleStyle = {
   padding: "1vw",
@@ -471,262 +519,368 @@ class Consulting extends Component {
 
     return (
       <div>
-        <div style={{ zIndex: "1", position: "relative" }}>
-          <Image
-            src={collab}
-            style={{ width: "100%", height: "auto", zIndex: "2" }}
-          ></Image>
-          <div
-            style={{
-              width: "100%",
-              textAlign: "center",
-              background: "rgba(140, 214, 209, 0.5)",
-            }}
-          >
-            <span
-              style={{
-                position: "absolute",
-                top: "35%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-                fontWeight: "bold",
-                fontSize: "5vw",
-                lineHeight: "6vw",
-                color: "#FFFFFF",
-              }}
-            >
-              Consulting
-            </span>
-            <span
-              style={{
-                position: "absolute",
-                left: "30%",
-                top: "65%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
-                color: "#FFFFFF",
-                fontFamily: "Montserrat",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: "5vw",
-                  lineHeight: "9vw",
-                }}
-              >
-                5{" "}
-              </span>{" "}
-              <span
-                style={{
-                  fontSize: "2.5vw",
-                  // fontWeight: "light",
-                  lineHeight: "2.5vw",
-                  font: "Montserrat",
-                }}
-              >
-                Projects per Semester
-              </span>
-            </span>
-            <div
-              style={{
-                background: "rgba(140, 214, 209, 0.5)",
-                zIndex: "2",
-                position: "absolute",
-                width: "100%",
-                height: "100%",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-              }}
-            ></div>
-            <span
-              style={{
-                position: "absolute",
-                left: "65%",
-                top: "66%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-                color: "#FFFFFF",
-              }}
-            >
-              <span
-                style={{
-                  marginLeft: "9vw",
-                  fontSize: "5vw",
-                  marginTop: "10px",
-                }}
-              >
-                6{" "}
-                <span
-                  style={{
-                    fontSize: "2.5vw",
-                    lineHeight: "2.5vw",
-                    // fontWeight: "light",
-                  }}
-                >
-                  consultants per team
-                </span>
-              </span>
-            </span>
-          </div>
+        <div>
+          <Image src={upright}
+          style= {{
+            right:"5vw",
+            top:"12vw",
+            position: "absolute",
+            height: "18vw",
+            maxHeight: "18vw",
+            width: "30vw",
+            maxWidth: "30vw",
+          }}>
+          </Image>
+        </div>
+        <h1
+          style={{
+          top:"20vw",
+          width: "100%",
+          height: "auto",
+          textAlign: "center",
+          color: "black",
+          margin: 'auto',
+          // marginBottom:'5vw',
+          //marginTop: "5vw",
+          position: "absolute",
+          // transform: "translate(-50%, -50%)",
+          fontFamily: "Montserrat",
+          fontWeight: "bold",
+          fontSize: "6vw",
+          lineHeight: "6vw",
+        }}
+        >Consulting  
+        </h1>
+        
+        <div>
+          <Image style={{position: 'relative',
+          top: "20vw",
+          // marginTop: '5vw',
+          left: "50vw",
+          right: "50vw", 
+          bottom: "15vw",
+          // margin: 'auto',
+          // margintop: "10vw",
+          marginBottom: '15vw',
+          height: "28vw",
+          maxHeight: "28vw",
+          width: "28vw",
+          maxWidth: "28vw",
+          }}
+          src={logo}></Image>
+        </div>
+        <div>
+          <Image src={bottomleft}
+          style= {{
+            left:"5vw",
+            top:"55vw",
+            position: "absolute",
+            height: "18vw",
+            maxHeight: "18vw",
+            width: "30vw",
+            maxWidth: "30vw",
+          }}>
+          </Image>
+        </div>
+        <div>
+          <Image src={squiggle2}
+          style= {{
+            left:"-5vw",
+            bottom:"-35vw",
+            position: "relative",
+            height: "15vw",
+            maxHeight: "18vw",
+            width: "40vw",
+            maxWidth: "40vw",
+          }}>
+          </Image>
         </div>
         <Grid centered>
-          {CustomTitle({ title: "What We Do" })}
+        <Grid.Row centered style={headerbox}>
+            <Card.Group centered>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  borderRadius: "5vw",
+                  width: "10%",
+                  height: "14vw",
+                  // marginTop: "10vw",
+                  marginLeft: "0",
+                  marginRight: "0",
+                  // fontSize: "2vw",
+                  // lineHeight: "2vw",
+                  // fontWeight: "21.5vw",
+                  fontFamily: "Montserrat",
+                  margintop: "10vw"
+                }}
+              >
+                <div
+                  style={{
+                    marginTop: "4vw",
+                    // marginLeft: "8%",
+                    marginRight: "0",
+                    fontSize: "8vw",
+                    lineHeight: "8vw",
+                    color: '#8CD6D1',
+                    fontWeight: "501",
+
+                  }}
+                >
+                  5
+                </div>
+              </div>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  // borderRadius: "3vw",
+                  width: "25%",
+                  height: "14vw",
+                  marginLeft: "0%",
+                  marginRight: "7.5vw",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "3.5vw",
+                    lineHeight: "4vw",
+                    fontWeight: "21vw",
+                    fontFamily: "Montserrat",
+                    marginTop: "4vw",
+                    // marginLeft: "2vw",
+                    // marginRight: "2vw",
+                    color: '#8CD6D1',
+                  }}
+                >Ongoing Projects
+                </div>
+              </div>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  // borderRadius: "3vw",
+                  width: "30%",
+                  height: "14vw",
+                  // marginLeft: "8%",
+                  // marginRight: "5%",
+                  // fontSize: "2vw",
+                  // lineHeight: "2vw",
+                  // fontWeight: "21.5vw",
+                  fontFamily: "Montserrat",
+                }}
+              >
+                <div
+                  style={{
+                    marginTop: "4vw",
+                    left:"20vw",
+                    marginLeft: "30%",
+                    marginRight: "0",
+                    fontSize: "8vw",
+                    lineHeight: "8vw",
+                    color: '#8CD6D1',
+                    fontWeight: "501",
+
+                  }}
+                >
+                  33
+                </div>
+              </div>
+              <div
+                style={{
+                  background: "#FFFFFF",
+                  // border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  // borderRadius: "3vw",
+                  width: "20%",
+                  height: "14vw",
+                  // marginLeft: "8%",
+                  marginRight: "3vw",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: "3.5vw",
+                    lineHeight: "4vw",
+                    fontWeight: "21vw",
+                    fontFamily: "Montserrat",
+                    marginTop: "4vw",
+                    // marginLeft: "3vw",
+                    // marginRight: "2vw",
+                    color: '#8CD6D1',
+                  }}
+                >
+                  Completed Projects
+                </div>
+              </div>
+            </Card.Group>
+          </Grid.Row>
+        </Grid>
+        
+        
+        <Grid centered>
           <Grid.Row>
+            
             <Grid.Row
               style={{
                 color: "#000000",
-                marginTop: "2vw",
+                marginTop: "7vw",
+                marginBottom: "5vw",
                 textAlign: "center",
                 lineHeight: "4vw",
                 fontSize: "2vw",
                 fontWeight: "21vw",
                 fontStyle: "normal",
                 fontFamily: "Montserrat",
-                marginLeft: "20vw",
-                marginRight: "20vw",
+                marginLeft: "30vw",
+                marginRight: "30vw",
               }}
             >
+
               We believe that the best way to learn about the innovative and
               pioneering data science techniques is to work with companies in
               industry. Our past clients include a wide range of companies from
               industry-leaders like PayPal to unicorn startups such as SoFi, all
               who have been impacted by the work Data Science Society provides.
             </Grid.Row>
-          </Grid.Row>
-          {CustomTitle({ title: "Our Expertise" })}
-          <Card.Group centered>
-            <Card style={overlayboxes}>
-              <Card.Header style={generalmember}>Machine Learning</Card.Header>
-              <div style={circleStyle}> 1</div>
-              <List
-                bulleted
-                style={{
-                  textAlign: "left",
-                  fontSize: "1.5vw",
-                  lineHeight: "2vw",
-                  fontStyle: "normal",
-                  marginLeft: "5vw",
-                  marginTop: "4vw",
-                }}
-              >
-                <List.Item>NLP</List.Item>
-                <List.Item>Predictive Analysis</List.Item>
-                <List.Item>Data Mining</List.Item>
-                <List.Item>Clustering</List.Item>
-                <List.Item>Modeling</List.Item>
-              </List>
-            </Card>
-            <Card style={overlayboxes2}>
-              <Card.Header style={generalmember}>
-                Business Intelligence
-              </Card.Header>
-              <div style={circleStyle}> 2</div>
-              <List
-                bulleted
-                style={{
-                  textAlign: "left",
-                  fontSize: "1.5vw",
-                  lineHeight: "2vw",
-                  fontStyle: "normal",
-                  marginLeft: "5vw",
-                  marginTop: "4vw",
-                }}
-              >
-                <List.Item>Visualizations</List.Item>
-                <List.Item>Customer Segmentation</List.Item>
-                <List.Item>Price Optimization</List.Item>
-                <List.Item>Customer Churn</List.Item>
-                <List.Item>Operations Effeciency</List.Item>
-              </List>
-            </Card>
-            <Card style={overlayboxes2}>
-              <Card.Header style={generalmember}>
-                Software Development
-              </Card.Header>
-              <div style={circleStyle}> 3</div>
-              <List
-                bulleted
-                style={{
-                  textAlign: "left",
-                  fontSize: "1.5vw",
-                  lineHeight: "2vw",
-                  fontStyle: "normal",
-                  marginLeft: "5vw",
-                  marginTop: "4vw",
-                }}
-              >
-                <List.Item>Warehousing</List.Item>
-                <List.Item>Systems Integration</List.Item>
-                <List.Item>Cloud Computing</List.Item>
-                <List.Item>Front-End Development</List.Item>
-                <List.Item>Back-End Development</List.Item>
-              </List>
-            </Card>
-          </Card.Group>
-          <Grid.Row>
-            <div style={{ marginLeft: "8vw" }}>
+            <div>
               <Image
-                inline
-                src={down}
+                src={squiggle3}
                 style={{
-                  marginLeft: "-21vw",
-                  marginBottom: "-7vw",
-                  height: "3vw",
+                  left: "-10%",
+                  width: "70vw",
+                  position: "absolute",
+                  top: "60%",
                 }}
               ></Image>
-              <div
-                onClick={this.testa}
-                style={{
-                  fontFamily: "Montserrat",
-                  fontStyle: "normal",
-                  fontWeight: "43vw",
-                  fontSize: "2vw",
-                  lineHeight: "2.5vw",
-                  textAlign: "center",
-                  width: "15vw",
-                  color: "#FFC54A",
-                }}
-              >
-                Client Testimonials
-              </div>
-            </div>
-            <div>
-              <div
-                style={{
-                  marginLeft: "17vw",
-                  zIndex: "1",
-                  backgroundImage: `url(${workwus})`,
-                  width: "19vw",
-                  height: "10vw",
-                  marginTop: "-1vw",
-                }}
-              ></div>
-              <Link to="services">
-                <div
-                  style={{
-                    fontFamily: "Montserrat",
-                    fontStyle: "normal",
-                    fontWeight: "43vw",
-                    fontSize: "2vw",
-                    lineHeight: "2.5vw",
-                    textAlign: "center",
-                    width: "11vw",
-                    marginTop: "-8vw",
-                    marginLeft: "18vw",
-                    color: "#FFC54A",
-                  }}
-                >
-                  {" "}
-                  Work with us
-                </div>
-              </Link>
             </div>
           </Grid.Row>
-          {CustomTitle({ title: "Project Managers" })}
+
+          {CustomTitleBlack({ title: "Our Expertise" })}
+          <div style= {{maxWidth: "30vw"}}>
+            <Image src={ExpertiseLine}></Image>
+          </div>
+
+          <Card.Group centered>
+            <Card style={overlayboxes}>
+              <Image style={cardImageSyle} src={MLImage}></Image>
+              <Card.Header style={cardHeader}>Machine Learning</Card.Header>
+              <div style={cardDescription}>
+                NLP, Predictive Analysis, Data Mining, Clustering, Modeling
+              </div>
+            </Card>
+            <Card style={overlayboxes2}>
+              <Image style={cardImageSyle} src={BizIntelImage}></Image>
+              <Card.Header style={cardHeader}>
+                Business Intelligence
+              </Card.Header>
+              <div style={cardDescription}>
+                Visualizations, Customer Segmentation, Price Optimization, 
+                Customer Churn, Operations Effeciency
+              </div>
+            </Card>
+            <Card style={overlayboxes}>
+              <Image style={cardImageSyle} src={SDImage}></Image>
+              <Card.Header style={cardHeader}>
+                Software Development
+              </Card.Header>
+              <div style={cardDescription}>
+                Warehousing, Systems Integration, Cloud Computing, 
+                Front-End Development, Back-End Development
+              </div>
+            </Card>
+          </Card.Group>
+
+          <Grid.Row centered columns={1} style={{marginTop: "6vw"}}>
+            <div>
+              <Image
+                src={squiggle2}
+                style={{
+                  right: "0%",
+                  width: "50vw",
+                  position: "absolute",
+                  top: "-180%",
+                }}
+              ></Image>
+            </div>
+            <Button.Group centered>
+              <Link style={{marginRight: '4vw'}}>
+                <Button onClick={this.testa} style={{
+                  background: "#FFFFFF",
+                  border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  borderRadius: "3vw",
+                  width: "100%",
+                  height: "7.5vw",
+                  marginTop: "-1.5vw",
+                  marginBottom: "-1.5vw",
+                  //marginLeft: "5%",
+                  //marginRight: "1vw",
+                  fontSize: "2.5vw",
+                  lineHeight: "2vw",
+                  fontWeight: 200,
+                  fontFamily: "Montserrat",
+                }}>
+                  <div
+                    style={{
+                      marginTop: "-0.5vw",
+                      marginLeft: "0vw",
+                      marginRight: "0vw",
+                    }}
+                  >
+                    Client Testimonials 
+                  </div>
+                </Button>
+              </Link>
+              <Link to="services">
+                <Button style={{
+                  background: "#FFFFFF",
+                  border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  borderRadius: "3vw",
+                  width: "100%",
+                  height: "7.5vw",
+                  marginTop: "-1.5vw",
+                  marginBottom: "-1.5vw",
+                  //marginLeft: "5%",
+                  //marginRight: "5%",
+                  fontSize: "2.5vw",
+                  lineHeight: "2vw",
+                  fontWeight: 200,
+                  fontFamily: "Montserrat",
+                }}>
+                  <div
+                    style={{
+                      marginTop: "-0.5vw",
+                      marginLeft: "0vw",
+                      marginRight: "0vw",
+                    }}
+                  >
+                    Work With Us 
+                  </div>
+                </Button>
+              </Link>
+            </Button.Group>
+            <div>
+              <Image
+                src={squiggle3}
+                style={{
+                  left: "0%",
+                  width: "30vw",
+                  position: "absolute",
+                  top: "60%",
+                }}
+              ></Image>
+            </div>
+          </Grid.Row>
+
+
+
+          
+          {CustomTitleBlack({ title: "Project Managers" })}
           <Grid.Row>
             <div
               style={{
@@ -740,8 +894,11 @@ class Consulting extends Component {
               <Card.Group centered>{temp2}</Card.Group>
             </div>
           </Grid.Row>
-          {CustomTitle({ title: "Testimonials" })}
-          <Grid.Row centered style={{ marginLeft: "5vw", marginRight: "5vw" }}>
+          {CustomTitleBlack({ title: "Client Testimonials" })}
+          <div style= {{maxWidth: "50vw"}}>
+            <Image src={ClientLine}></Image>
+          </div>
+          <Grid.Row centered style={{ marginLeft: "5vw", marginRight: "5vw", marginTop: "3vw" }}>
             <Image
               inline
               style={{
@@ -969,6 +1126,8 @@ class Consulting extends Component {
         <div
           style={{
             fontSize: "1.5vw",
+            fontStyle: "normal",
+            fontFamily: "Montserrat",
             marginLeft: "28vw",
             marginRight: "28vw",
             marginBottom: "8vw",
