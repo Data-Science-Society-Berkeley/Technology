@@ -33,6 +33,7 @@ import alina from "./Leadership Headshots/alina.jpeg";
 import marlon from "./Leadership Headshots/marlon.jpeg";
 import pranati from "./Leadership Headshots/pranati.jpeg";
 import steven from "./Leadership Headshots/steven.jpg";
+import michelle from "./Leadership Headshots/michelle.png";
 
 import pm from "./About/ProjectManager.JPG";
 import exec from "./About/ExecutiveTeam.JPG";
@@ -368,10 +369,10 @@ const leadershipCards = [
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:rickzhang@berkeley.edu">
+      <a href="mailto:tutrinh@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/rick-zhang/">
+      <a href="https://www.linkedin.com/in/tu-trinh/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
@@ -386,17 +387,17 @@ const leadershipCards = [
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:atharva@berkeley.edu">
+      <a href="mailto:marlonfu@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/atharvamehendale/ ">
+      <a href="https://www.linkedin.com/in/marlonfu/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={sabrina} />
+    <Image style={imagestyle} src={michelle} />
     <Card.Content>
       <Card.Header style={textstyle}>Michelle Li</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
@@ -404,10 +405,10 @@ const leadershipCards = [
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:sabrinaywu@berkeley.edu">
+      <a href="mailto:mko357@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/sabrinayihwu/">
+      <a href="https://www.linkedin.com/in/michelle-l-6ba957135/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
@@ -422,10 +423,10 @@ const leadershipCards = [
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:arnavp418@berkeley.edu">
+      <a href="mailto:pmodumudi@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/arnavpatel360/">
+      <a href="https://www.linkedin.com/in/pranatimodumudi/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
@@ -495,10 +496,10 @@ const leadershipCards = [
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:charlieduarte@berkeley.edu">
+      <a href="mailto:schen1822@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/charlie-duarte/">
+      <a href="https://www.linkedin.com/in/steven-z-chen">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>

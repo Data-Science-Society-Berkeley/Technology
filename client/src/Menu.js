@@ -259,12 +259,12 @@ class NavBar extends Component {
             >
               <Dropdown style={linkStyling} item text="education">
                 <Dropdown.Menu>
-                  <Link to="/education">
+                  {/* <Link to="/education">
                     <Dropdown.Item
                       icon="folder"
                       text="Overview"
                     ></Dropdown.Item>
-                  </Link>
+                  </Link> */}
                   <Link to="/gm">
                     <Dropdown.Item
                       icon="bookmark"
