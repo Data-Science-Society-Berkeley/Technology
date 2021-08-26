@@ -116,7 +116,7 @@ class App extends Component {
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar {...props} />
-                <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+                {/* <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
                 <iframe
                   class="airtable-embed airtable-dynamic-height"
                   src="https://airtable.com/embed/shrqlxFIopQmX4PZX?backgroundColor=red"
@@ -128,7 +128,7 @@ class App extends Component {
                     background: "transparent",
                     border: "1px solid #ccc",
                   }}
-                ></iframe>
+                ></iframe> */}
               </div>
             )}
           />
@@ -142,7 +142,7 @@ class App extends Component {
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar {...props} />
-                <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+                {/* <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
                 <iframe
                   class="airtable-embed airtable-dynamic-height"
                   src="https://airtable.com/embed/shrmRyFDRJ9nKLmi4?backgroundColor=purple"
@@ -154,7 +154,7 @@ class App extends Component {
                     background: "transparent",
                     border: "1px solid #ccc",
                   }}
-                ></iframe>
+                ></iframe> */}
               </div>
             )}
           />
@@ -168,7 +168,7 @@ class App extends Component {
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar {...props} />
-                <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+                {/* <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
                 <iframe
                   class="airtable-embed airtable-dynamic-height"
                   src="https://airtable.com/embed/shrKLwan5Jjt5Rkkl?backgroundColor=purple"
@@ -180,7 +180,7 @@ class App extends Component {
                     background: "transparent",
                     border: "1px solid #ccc",
                   }}
-                ></iframe>
+                ></iframe> */}
               </div>
             )}
           />
