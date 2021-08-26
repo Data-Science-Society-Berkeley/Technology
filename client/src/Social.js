@@ -17,13 +17,16 @@ import berk from "./Decal Images/berkeleyischool-logo-alternate-blue-lg.png";
 import datacamp from "./Decal Images/datacamp-logo 1.png";
 import decal from "./Decal Images/decalberkeleylogo 1.png";
 import evelyn from "./PM Headshots/evelyn.png";
-import steven from "./PM Headshots/steven.jpg";
+import steven from "./Leadership Headshots/steven.jpg";
 import andi from "./Leadership Headshots/andi.jpg";
 import charlie from "./Leadership Headshots/charlie.jpg";
+import ingrid from "./PM Headshots/ingrid.jpg";
+import aditi from "./PM Headshots/aditi.jpeg";
 import story from "./SocialGood/socialgoodheader-compress-min.jpg";
 import hype from "./SocialGood/SoialGoodPic.png";
 import heart from "./SocialGood/dssg1.jpeg";
 import arrow from "./SocialGood/Arrow3.png";
+
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -331,40 +334,23 @@ class Social extends Component {
             <Card.Group centered>
               <Card style={cardstyle}>
                 {" "}
-                <Image style={imagestyle} src={charlie} />
+                <Image style={imagestyle} src={steven} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Charlie Duarte</Card.Header>
+                  <Card.Header style={textstyle}>Steven Chen</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={roleStyle}>Director of Social Good</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:charlieduarte@berkeley.edu">
+                  <a href="mailto:schen1822@berkeley.edu">
                     <Icon size="large" name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/in/charlie-duarte/">
+                  <a href="https://www.linkedin.com/in/steven-z-chen">
                     <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
-              <Card style={cardstyle}>
-                {" "}
-                <Image style={imagestyle} src={andi} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Andi Halim</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>Director of Social Good</span>
-                  </Card.Meta>
-                </Card.Content>
-                <Card.Content extra>
-                  <a href="mailto:andihalim@berkeley.edu">
-                    <Icon size="large" name="mail" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/andihalim/">
-                    <Icon size="large" name="linkedin" />
-                  </a>
-                </Card.Content>
-              </Card>
+              
               <Card style={cardstyle}>
                 {" "}
                 <Image style={imagestyle} src={evelyn} />
@@ -375,7 +361,7 @@ class Social extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:steven.chen@berkeley.edu">
+                  <a href="mailto:yunerlu@berkeley.edu">
                     <Icon name="mail" />
                   </a>
                   <a href="https://www.linkedin.com/in/evelyn-lu-026450153/">
@@ -383,24 +369,64 @@ class Social extends Component {
                   </a>
                 </Card.Content>
               </Card>
+
               <Card style={cardstyle}>
                 {" "}
                 <Image style={imagestyle} src={steven} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Steven Chen</Card.Header>
+                  <Card.Header style={textstyle}>Rithik Goli</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={roleStyle}>PM</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:steven.chen@berkeley.edu">
+                  <a href="mailto:rithikgoli@berkeley.edu">
                     <Icon name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/in/steven-z-chen/">
+                  <a href="https://www.linkedin.com/in/rithikgoli824/">
                     <Icon name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
+
+              <Card style={cardstyle}>
+                {" "}
+                <Image style={imagestyle} src={ingrid} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Ingrid Chien</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>PM</span>
+                  </Card.Meta>
+                </Card.Content>
+                <Card.Content extra>
+                  <a href="mailto:ingrid070401@berkeley.edu">
+                    <Icon name="mail" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/ingridchien/">
+                    <Icon name="linkedin" />
+                  </a>
+                </Card.Content>
+              </Card>
+
+              <Card style={cardstyle}>
+                {" "}
+                <Image style={imagestyle} src={aditi} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Aditi Raja</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>PM</span>
+                  </Card.Meta>
+                </Card.Content>
+                <Card.Content extra>
+                  <a href="mailto:aditiraja@berkeley.edu">
+                    <Icon name="mail" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/aditi-raja">
+                    <Icon name="linkedin" />
+                  </a>
+                </Card.Content>
+              </Card>
+              
             </Card.Group>
           </Grid.Row>
           <Grid.Row style={{ marginTop: "5vw" }}>

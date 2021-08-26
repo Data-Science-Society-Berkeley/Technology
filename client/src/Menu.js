@@ -242,9 +242,9 @@ class NavBar extends Component {
                   <Link to="/consulting" style={linkStyling}>
                     <Dropdown.Item icon="exchange" text="Consulting" />
                   </Link>
-                  <Link to="/decal" style={linkStyling}>
+                  {/* <Link to="/decal" style={linkStyling}>
                     <Dropdown.Item icon="book" text="DeCal" />
-                  </Link>
+                  </Link> */}
                   <Link to="/socialgood" style={linkStyling}>
                     <Dropdown.Item icon="like" text="Social Good" />
                   </Link>
@@ -259,24 +259,24 @@ class NavBar extends Component {
             >
               <Dropdown style={linkStyling} item text="education">
                 <Dropdown.Menu>
-                  <Link to="/education">
+                  {/* <Link to="/education">
                     <Dropdown.Item
                       icon="folder"
                       text="Overview"
                     ></Dropdown.Item>
-                  </Link>
+                  </Link> */}
                   <Link to="/gm">
                     <Dropdown.Item
                       icon="bookmark"
                       text="GM Landing"
                     ></Dropdown.Item>
                   </Link>
-                  <Link to="/decallearn">
+                  {/* <Link to="/decallearn">
                     <Dropdown.Item
                       icon="grid layout"
                       text="DeCal Landing"
                     ></Dropdown.Item>
-                  </Link>
+                  </Link> */}
                 </Dropdown.Menu>
               </Dropdown>
             </Menu.Item>
