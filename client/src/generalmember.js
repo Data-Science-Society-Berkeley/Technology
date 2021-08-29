@@ -18,7 +18,6 @@ import CustomTitle from "./components/CustomTitle.js";
 import berk from "./Decal Images/berkeleyischool-logo-alternate-blue-lg.png";
 import datacamp from "./Decal Images/datacamp-logo 1.png";
 import atharva from "./Leadership Headshots/AtharvaHeadshot.png";
-import arnav from "./Leadership Headshots/ArnavHeadshot.jpg";
 import sabrina from "./Leadership Headshots/SabrinaHeadshot.jpeg";
 import proj1 from "./GM Proj Images/workforce-housing.png";
 import proj2 from "./GM Proj Images/word-complexity.jpg";
@@ -37,7 +36,8 @@ import upright from "./Acadev Images/upRight.png";
 import bottomleft from "./Acadev Images/bottomLeft.png";
 import marlon from "./Leadership Headshots/marlon.jpeg";
 import pranati from "./Leadership Headshots/pranati.jpeg";
-import michelle from "./Leadership Headshots/michelle.png";
+import michelle from "./Leadership Headshots/michelle.jpeg";
+import acadevdirs from "./Acadev Images/acadevdirs.jpeg";
 
 
 let endpoint = "http://localhost:8080";
@@ -538,6 +538,7 @@ class DecalLearn extends Component {
                 </Card.Content>
               </Card>
             </Card.Group>
+    
 
             <Image
                 src={squiggly1_rotate}
@@ -551,6 +552,7 @@ class DecalLearn extends Component {
                 }}
               ></Image>
           </Grid.Row>
+          
 
           <Grid.Row style={{ marginTop: "8vw", marginBottom: "5vw" }}>
             {CustomTitleBlack({ title: "Fall 2020 Projects" })}

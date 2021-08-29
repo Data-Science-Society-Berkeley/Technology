@@ -16,12 +16,14 @@ import CustomTitle from "./components/CustomTitle.js";
 import berk from "./Decal Images/berkeleyischool-logo-alternate-blue-lg.png";
 import datacamp from "./Decal Images/datacamp-logo 1.png";
 import decal from "./Decal Images/decalberkeleylogo 1.png";
-import evelyn from "./PM Headshots/evelyn.png";
-import steven from "./Leadership Headshots/steven.jpg";
+import evelyn from "./PM Headshots/evelyn.jpeg";
+import steven from "./Leadership Headshots/steven.jpeg";
 import andi from "./Leadership Headshots/andi.jpg";
 import charlie from "./Leadership Headshots/charlie.jpg";
-import ingrid from "./PM Headshots/ingrid.jpg";
+import ingrid from "./PM Headshots/ingrid.jpeg";
 import aditi from "./PM Headshots/aditi.jpeg";
+import rithik from "./PM Headshots/rithik.jpeg";
+import spencer from "./PM Headshots/spencer.jpeg";
 import story from "./SocialGood/socialgoodheader-compress-min.jpg";
 import hype from "./SocialGood/SoialGoodPic.png";
 import heart from "./SocialGood/dssg1.jpeg";
@@ -372,7 +374,7 @@ class Social extends Component {
 
               <Card style={cardstyle}>
                 {" "}
-                <Image style={imagestyle} src={steven} />
+                <Image style={imagestyle} src={rithik} />
                 <Card.Content>
                   <Card.Header style={textstyle}>Rithik Goli</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
@@ -426,6 +428,25 @@ class Social extends Component {
                   </a>
                 </Card.Content>
               </Card>
+
+              <Card style={cardstyle}>
+                {" "}
+                <Image style={imagestyle} src={spencer} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Spencer Jenkins</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>PM</span>
+                  </Card.Meta>
+                </Card.Content>
+                <Card.Content extra>
+                  <a href="mailto:spencerrjenkins@berkeley.edu">
+                    <Icon name="mail" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/spencer-r-jenkins/">
+                    <Icon name="linkedin" />
+                  </a>
+                </Card.Content>
+              </Card>
               
             </Card.Group>
           </Grid.Row>
@@ -444,7 +465,7 @@ class Social extends Component {
                 marginRight: "14vw",
               }}
             >
-              This Fall 2020 Semester is the first semester for the Social Good
+              Fall 2020 Semester was the first semester for the Social Good
               committee. Stay tuned for updates!
             </Grid.Column>
           </Grid.Row>

@@ -41,15 +41,13 @@ import mlab from "./Acadev Images/mlabberkeley.png";
 import uea from "./Acadev Images/berkuea 1.png";
 import berk from "./Acadev Images/cdssberk 1.png";
 import data8 from "./Acadev Images/data8logo 1.png";
-import atharva from "./Leadership Headshots/AtharvaHeadshot.png";
-import arnav from "./Leadership Headshots/ArnavHeadshot.jpg";
 import sabrina from "./Leadership Headshots/SabrinaHeadshot.jpeg";
 import story from "./Acadev Images/AcaDevBanner-compress-min.jpg";
 import haas2 from "./Acadev Images/hbsa.jpg";
 import ascend from "./Acadev Images/Ascend-Logo.jpg";
 import marlon from "./Leadership Headshots/marlon.jpeg";
 import pranati from "./Leadership Headshots/pranati.jpeg";
-import michelle from "./Leadership Headshots/michelle.png";
+import michelle from "./Leadership Headshots/michelle.jpeg";
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {

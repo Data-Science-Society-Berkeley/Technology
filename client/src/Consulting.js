@@ -52,18 +52,14 @@ import down from "./Consulting/ClientTestimonials.png";
 import workwus from "./Consulting/WorkWithUs.png";
 
 import alina from "./Leadership Headshots/alina.jpeg";
-import grace from "./PM Headshots/Grace.jpg";
-import pooja from "./PM Headshots/Pooja.png";
-import rick from "./PM Headshots/Rick.jpeg";
-import devesh from "./PM Headshots/devesh.png";
-import anita from "./PM Headshots/anita.jpg";
-import annie from "./PM Headshots/annie.jpg";
-import advait from "./PM Headshots/advait.png";
-import pranav from "./PM Headshots/pranav.png";
-import erica from "./PM Headshots/erica.jpg";
-import henry from "./PM Headshots/henry.jpg";
+import anita from "./PM Headshots/anita.jpeg";
+import advait from "./PM Headshots/advait.jpeg";
+import pranav from "./PM Headshots/pranav.jpeg";
+import erica from "./PM Headshots/erica.jpeg";
+import henry from "./PM Headshots/henry.jpeg";
 import ann from "./PM Headshots/ann.jpeg";
 import taylor from "./PM Headshots/taylor.jpeg";
+import noor from "./PM Headshots/noor.jpeg";
 
 import collab from "./Consulting/consultingheader-compress-min.jpg";
 
@@ -326,7 +322,7 @@ class Consulting extends Component {
       </Card.Content>
     </Card>,
       <Card style={cardstyle}>
-      <Image src={anita} yle={imagestyle} />
+      <Image src={anita} style={imagestyle} />
       <Card.Content>
         <Card.Header style={textstyle}>Anita Shen</Card.Header>
         <Card.Meta style={{ marginTop: "1vw" }}>
@@ -396,7 +392,7 @@ class Consulting extends Component {
       </Card.Content>
     </Card>,
       <Card style={cardstyle}>
-        <Image src={erica} style={imagestyle} />
+        <Image src={noor} style={imagestyle} />
         <Card.Content>
           <Card.Header style={textstyle}>Noor Hanafi</Card.Header>
           <Card.Meta style={{ marginTop: "1vw" }}>
