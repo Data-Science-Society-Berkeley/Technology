@@ -15,7 +15,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CustomTitle from "./components/CustomTitle.js";
 
 
-import varunmi from "./Leadership Headshots/varunmi.jpeg";
+import varunmi from "./Leadership Headshots/varun.jpeg";
 import edlyft from "./Leadership Headshots/edlyft-logo.jpg";
 import asuc from "./Leadership Headshots/asuc_logo.png";
 import berkeley from "./Leadership Headshots/berkeley_cdss_logo.png";
@@ -24,20 +24,22 @@ import wids from "./Leadership Headshots/wids-berkeley-logo.jpg";
 import sponsor1 from "./Leadership Headshots/dsnexus-logo.png";
 import sponsor2 from "./Leadership Headshots/leadcenter_logo.png";
 import sponsor3 from "./Leadership Headshots/haas-ds-club-logo.png";
-import atharva from "./Leadership Headshots/AtharvaHeadshot.png";
-import arnav from "./Leadership Headshots/ArnavHeadshot.jpg";
-import cindy from "./Leadership Headshots/CindyHeadshot.jpg";
-import sabrina from "./Leadership Headshots/SabrinaHeadshot.jpeg";
-import labanya from "./Leadership Headshots/labanya.jpg";
+import atharva from "./Leadership Headshots/atharva.jpeg";
+import arnav from "./Leadership Headshots/arnav.jpeg";
+import cindy from "./Leadership Headshots/cindy.jpeg";
+import sabrina from "./Leadership Headshots/sabrina.jpeg";
+import labanya from "./Leadership Headshots/labanya.jpeg";
 import alina from "./Leadership Headshots/alina.jpeg";
 import marlon from "./Leadership Headshots/marlon.jpeg";
 import pranati from "./Leadership Headshots/pranati.jpeg";
-import steven from "./Leadership Headshots/steven.jpg";
-import michelle from "./Leadership Headshots/michelle.png";
+import steven from "./Leadership Headshots/steven.jpeg";
+import michelle from "./Leadership Headshots/michelle.jpeg";
+import siddhant from "./Leadership Headshots/siddhanth.jpg";
 
-import pm from "./About/ProjectManager.JPG";
-import exec from "./About/ExecutiveTeam.JPG";
+import pm from "./About/pmgroup.jpeg";
+import exec from "./About/exec.jpeg";
 import commit from "./About/CommitteeMember.jpg";
+import socgood from "./About/socgoodgroup.jpeg";
 import gen from "./About/GeneralMember.jpg";
 import decal from "./About/DeCal.png";
 import senior from "./About/SeniorAdvisor.png";
@@ -359,6 +361,24 @@ const leadershipCards = [
       </a>
     </Card.Content>
   </Card>,
+  <Card style={cardstyle}>
+  {" "}
+  <Image style={imagestyle} src={siddhant} />
+  <Card.Content>
+    <Card.Header style={textstyle}>Siddhant Satapathy </Card.Header>
+    <Card.Meta style={{ marginTop: "1vw" }}>
+      <span style={roleStyle}>VP of Finance</span>
+    </Card.Meta>
+  </Card.Content>
+  <Card.Content extra>
+    <a href="mailto:sidsata@berkeley.edu">
+      <Icon size="large" name="mail" />
+    </a>
+    <a href="https://www.linkedin.com/in/siddhant-satapathy/">
+      <Icon size="large" name="linkedin" />
+    </a>
+  </Card.Content>
+</Card>,
   <Card style={cardstyle}>
     {" "}
     <Image style={imagestyle} src={alina} />
@@ -974,7 +994,7 @@ class About extends Component {
                   Committee Member
                 </div>
                 <Image
-                  src={commit}
+                  src={socgood}
                   style={{ width: "25vw", margin: "2vw auto" }}
                 ></Image>
                 <div
