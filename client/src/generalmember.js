@@ -421,12 +421,17 @@ class DecalLearn extends Component {
            
               <Grid.Column>
                 <div style={{ textAlign: "center", marginTop: "10vw",}}>
-                  {CustomTitleBlack({ title: "Schedule (Spring 2020)" })}
+                  {CustomTitleBlack({ title: "Schedule" })}
 
                   <div style={{margin: "0 auto", maxWidth: "22vw"}}>
                     <Image src={gmLine2}></Image>
                   </div>
+
+                  <div style={{margin: "0 auto", maxWidth: "22vw"}}>
+                    <h1>(Spring 2020)</h1>
+                  </div>
                 </div>
+
 
                 
               </Grid.Column>
@@ -438,7 +443,7 @@ class DecalLearn extends Component {
                   style={{
                     top: "10%",
                     left: "62%",
-                    marginTop: "-7vw",
+                    marginTop: "-1vw",
                   //down: "30%",
                   //marginTop: "10vw",
                   }}>
@@ -555,9 +560,9 @@ class DecalLearn extends Component {
           
 
           <Grid.Row style={{ marginTop: "8vw", marginBottom: "5vw" }}>
-            {CustomTitleBlack({ title: "Fall 2020 Projects" })}
+            {CustomTitleBlack({ title: "Previous Projects" })}
 
-            <div style={{marginLeft: "25vw", maxWidth: "65vw"}}>
+            <div style={{marginLeft: "41vw", maxWidth: "65vw"}}>
                     <Image src={projLine}></Image>
             </div>
           </Grid.Row>
