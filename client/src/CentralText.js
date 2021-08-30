@@ -19,6 +19,7 @@ import innovate from "./landing/innovate-opacity.png";
 import educate from "./landing/education-opacity.png";
 import topright from "./landing/WebsiteLandingPage-2.png";
 import bottomright from "./landing/WebsiteLandingPage-2rotate.png";
+import recruitbanner from "./landing/dssfall2021recruitment.png";
 import NavBar2 from "./mobilemenu";
 import rectangleSingle from "./landing/rectangleSingle.png";
 import rectangleGroup from "./landing/rectangleGroup.png";
@@ -354,7 +355,36 @@ class CentralText extends Component {
                 floated="left"
                 src={bottomright}
               ></Image>
+
+              {/* <Image
+                style={{
+                  height: "25vw",
+                  marginTop: "-15vw",
+                    //marginBottom: "30vw",
+                  marginLeft: "10vw",
+                  
+                    // position: "absolute",
+                }}
+                floated="right"
+                src={recruitbanner}
+              ></Image> */}
+
             </Grid.Column>
+            
+            {/* <Grid.Column width={18}>
+              <Image
+                  style={{
+                    height: "30vw",
+                    marginTop: "10vw",
+                    //marginBottom: "30vw",
+                    marginRight: "60vw",
+                    marginLeft: "-20vw",
+                    // position: "absolute",
+                  }}
+                  
+                  src={recruitbanner}
+                ></Image>
+              </Grid.Column> */}
 
             <Grid.Column
               textAlign="center"
@@ -362,7 +392,7 @@ class CentralText extends Component {
               verticalAlign="top"
               style={{ position: "absolute", left: "45%" }}
             >
-              <Image
+              {/* <Image
                 style={{
                   height: "25vw",
                   // marginTop: "-20vw",
@@ -373,7 +403,24 @@ class CentralText extends Component {
                 }}
                 floated="right"
                 src={topright}
+              ></Image> */}
+
+              <Image
+                style={{
+                  //height: "30vw",
+                  marginTop: "-0.5vw",
+                    //marginBottom: "30vw",
+                  //marginLeft: "10vw",
+                  
+                    // position: "absolute",
+                }}
+                
+                src={recruitbanner}
               ></Image>
+              
+
+              
+
               <Button.Group
                 style={{
                   marginTop: "10vw",
