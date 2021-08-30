@@ -421,7 +421,7 @@ class DecalLearn extends Component {
            
               <Grid.Column>
                 <div style={{ textAlign: "center", marginTop: "10vw",}}>
-                  {CustomTitleBlack({ title: "Schedule" })}
+                  {CustomTitleBlack({ title: "Schedule (Spring 2020)" })}
 
                   <div style={{margin: "0 auto", maxWidth: "22vw"}}>
                     <Image src={gmLine2}></Image>
@@ -467,7 +467,7 @@ class DecalLearn extends Component {
           </Grid.Row>
 
           <Grid.Row style={{ marginTop: "6vw", marginBottom: "4vw" }}>
-          {CustomTitleBlack({ title: "Course Staff" })}
+          {CustomTitleBlack({ title: "Directors" })}
           
           <div style={{margin: "0 auto", maxWidth: "28vw"}}>
                     <Image src={gmLine2}></Image>
@@ -521,7 +521,7 @@ class DecalLearn extends Component {
                 {" "}
                 <Image style={imagestyle} src={pranati} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Pranati Modumodi</Card.Header>
+                  <Card.Header style={textstyle}>Pranati Modumudi</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={{ roleStyle }}>
                       Director of Academic Development

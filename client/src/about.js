@@ -34,7 +34,7 @@ import marlon from "./Leadership Headshots/marlon.jpeg";
 import pranati from "./Leadership Headshots/pranati.jpeg";
 import steven from "./Leadership Headshots/steven.jpeg";
 import michelle from "./Leadership Headshots/michelle.jpeg";
-import siddhant from "./Leadership Headshots/siddhanth.jpg";
+import siddhant from "./Leadership Headshots/siddhant.jpeg";
 
 import pm from "./About/pmgroup.jpeg";
 import exec from "./About/exec.jpeg";
@@ -437,7 +437,7 @@ const leadershipCards = [
     {" "}
     <Image style={imagestyle} src={pranati} />
     <Card.Content>
-      <Card.Header style={textstyle}>Pranati Modumodi</Card.Header>
+      <Card.Header style={textstyle}>Pranati Modumudi</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
         <span style={roleStyle}>Director of Acadev</span>
       </Card.Meta>

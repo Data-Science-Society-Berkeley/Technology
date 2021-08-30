@@ -172,14 +172,14 @@ class Footer extends Component {
                     </List.Item>
                   </Link>
                   <br /> <br />
-                  <Link to="/decal">
+                  {/* <Link to="/decal">
                     {" "}
                     <List.Item as="a" style={footer}>
                       {" "}
                       DeCal{" "}
                     </List.Item>
                   </Link>
-                  <br /> <br />
+                  <br /> <br /> */}
                   <Link to="socialgood">
                     {" "}
                     <List.Item as="a" style={footer}>
@@ -240,12 +240,12 @@ class Footer extends Component {
                       General Membership{" "}
                     </List.Item>
                   </Link>
-                  <br /> <br />
+                  {/* <br /> <br />
                   <Link to="/decallearn">
                     <List.Item as="a" style={footer}>
                       DeCal Course{" "}
                     </List.Item>
-                  </Link>{" "}
+                  </Link>{" "} */}
                   <br />
                   <br />
                 </List>
