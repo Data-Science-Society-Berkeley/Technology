@@ -214,14 +214,14 @@ class Footer extends Component {
                     </List.Item>{" "}
                   </Link>
                   <br /> <br />
-                  <Link to="/education">
+                  {/* <Link to="/education">
                     {" "}
                     <List.Item as="a" style={footer}>
                       Workshops
                     </List.Item>
                   </Link>
-                  <br /> <br />
-                  <Link to="/education">
+                  <br /> <br /> */}
+                  <Link to="/gm">
                     {" "}
                     <List.Item as="a" style={footer}>
                       GM Projects

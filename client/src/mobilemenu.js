@@ -205,7 +205,7 @@ class NavBar2 extends Component {
       return (
         <div>
           <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
-          <iframe
+          {/* <iframe
             class="airtable-embed airtable-dynamic-height"
             src="https://airtable.com/embed/shrqlxFIopQmX4PZX?backgroundColor=red"
             frameborder="0"
@@ -216,7 +216,16 @@ class NavBar2 extends Component {
               background: "transparent",
               border: "1px solid #ccc",
             }}
-          ></iframe>
+          ></iframe> */}
+          <iframe 
+            class="airtable-embed airtable-dynamic-height" 
+            src="https://airtable.com/embed/shrgxP6fay1ABIlYN?backgroundColor=blue" 
+            frameborder="0" onmousewheel="" width="100%" height="2849" 
+            style={{
+            background: "transparent",
+            border: "1px solid #ccc",
+           }}>
+          </iframe>
         </div>
       );
     } else if (this.props.componentid === "services") {
