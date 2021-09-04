@@ -24,10 +24,13 @@ import ingrid from "./PM Headshots/ingrid.jpeg";
 import aditi from "./PM Headshots/aditi.jpeg";
 import rithik from "./PM Headshots/rithik.jpeg";
 import spencer from "./PM Headshots/spencer.jpeg";
-import story from "./SocialGood/socialgoodheader-compress-min.jpg";
+//import story from "./SocialGood/socialgoodheader-compress-min.jpg";
+import story from "./SocialGood/sgheader.jpeg";
 import hype from "./SocialGood/SoialGoodPic.png";
 import heart from "./SocialGood/dssg1.jpeg";
 import arrow from "./SocialGood/Arrow3.png";
+import medmobile from "./SocialGood/MedicMobile.png";
+import mep from "./SocialGood/MEP-logo.svg";
 
 
 let endpoint = "http://localhost:8080";
@@ -323,10 +326,9 @@ class Social extends Component {
               }}
             >
               {" "}
-              We seek to use these same tools and our datafied way of thinking
-              to promise and act for change. We want to use the power of data
-              science in service of humankind and offer creative solutions to
-              address the world’s most urgent societal challenges.
+              The Social Good Committee conducts analytical projects over the course of the semester with 
+              both local and global non-profit organizations. Our goal is to use the power of data science 
+              in service of human-kind and offer creative solutions to address the world's most urgent societal challenges.
             </span>
           </div>
         </div>
@@ -450,7 +452,7 @@ class Social extends Component {
               
             </Card.Group>
           </Grid.Row>
-          <Grid.Row style={{ marginTop: "5vw" }}>
+          {/* <Grid.Row style={{ marginTop: "5vw" }}>
             <Grid.Column
               style={{
                 color: "#8CD6D1",
@@ -468,6 +470,20 @@ class Social extends Component {
               Fall 2020 Semester was the first semester for the Social Good
               committee. Stay tuned for updates!
             </Grid.Column>
+          </Grid.Row> */}
+          {CustomTitle({ title: "Past Clients" })}
+          <Grid.Row style={{ marginTop: "3vw" }}>
+            <Image.Group style={{ marginLeft: "11vw", marginRight: "11vw" }}>
+            <Image
+                src={medmobile}
+                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+              />
+              <Image
+                src={mep}
+                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+              />
+              
+            </Image.Group>
           </Grid.Row>
         </Grid>
       </div>

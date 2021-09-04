@@ -468,7 +468,7 @@ class DecalLearn extends Component {
           </div>
           
           <Grid.Row style={{ marginTop: "6vw", marginBottom: "4vw" }}>
-            <Header style={headTextStyle}>For all course materials, click <a style={inTextLink} href="http://www.google.com">here</a></Header>
+            <Header style={headTextStyle}>For all course materials, click <a style={inTextLink} href="https://drive.google.com/drive/folders/15I7X9a95b1kox6TdLxjS622AxJNWMVXM?usp=sharing">here</a></Header>
           </Grid.Row>
 
           <Grid.Row style={{ marginTop: "6vw", marginBottom: "4vw" }}>
