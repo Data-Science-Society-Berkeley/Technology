@@ -53,69 +53,75 @@ const gridoffset = {
 const lectures = [
   {
     week: 1,
-    date: new Date("2/7/2021 PST"),
-    name: "GM Overtown + Gathertown",
-    link: "https://youtu.be/WtehoucrTyQ",
+    date: new Date("9/21/2021 PST"),
+    name: "Welcome, Icebreakers, Starting Your Project",
+    link: "https://tinyurl.com/4unszu42",
   },
   {
     week: 2,
-    date: new Date("2/15/2021 PST"),
-    name: "Pandas Numpy + Deepnote Lecture",
-    link: "https://youtu.be/UMn-m7mOnKQ",
+    date: new Date("9/28/2021 PST"),
+    name: "Data Science Lifecycle, Using Python Libraries, Intro to Pandas",
+    link: "",
   },
   {
     week: 3,
-    date: new Date("2/22/2021 PST"),
-    name: "Data Lifecycle + Dataset/Q's",
-    link: "https://youtu.be/aTmfBmKRmsY",
+    date: new Date("10/5/2021 PST"),
+    name: "Data Cleaning with Pandas",
+    link: "",
   },
   {
     week: 4,
-    date: new Date("3/1/2021 PST"),
-    name: "Data Cleaning Lab",
-    link: "https://youtu.be/IbITdVOkJLE",
+    date: new Date("10/12/2021 PST"),
+    name: "Data Visualization and Exploratory Data Analysis",
+    link: "",
   },
   {
     week: 5,
-    date: new Date("3/8/2021 PST"),
-    name: "Guest Speaker",
-    link: "https://youtu.be/gSgw5dkgF8I",
+    date: new Date("10/19/2021 PST"),
+    name: "Hypothesis Testing in Python",
+    link: "",
   },
   {
     week: 6,
-    date: new Date("3/15/2021 PST"),
-    name: "Modeling + Stats Analysis Lab",
-    link: "https://youtu.be/gSgw5dkgF8I",
+    date: new Date("10/26/2021 PST"),
+    name: "Basic Machine Learning Models",
+    link: "",
   },
   {
     week: 7,
-    date: new Date("3/22/2021 PST"),
-    name: "Visualization Lab",
-    link: "https://youtu.be/gSgw5dkgF8I",
+    date: new Date("11/02/2021 PST"),
+    name: "Model Evaluation & Cross Validation",
+    link: "",
   },
   {
     week: 8,
-    date: new Date("3/29/2021 PST"),
-    name: "Academic Panel",
-    link: "https://youtu.be/gSgw5dkgF8I",
+    date: new Date("11/09/2021 PST"),
+    name: "Career Panel (Alumni guest speakers)",
+    link: "",
   },
   {
     week: 9,
-    date: new Date("4/5/2021 PST"),
-    name: "Lab",
-    link: "https://youtu.be/gSgw5dkgF8I",
+    date: new Date("11/16/2021 PST"),
+    name: "How to Create an Engaging Deliverable (Deepnote guest speaker)",
+    link: "",
   },
   {
     week: 10,
     date: new Date("4/19/2021 PST"),
     name: "Career Panel",
-    link: "https://youtu.be/gSgw5dkgF8I",
+    link: "",
   },
   {
     week: 11,
-    date: new Date("4/26/2021 PST"),
-    name: "Symposium",
-    link: "https://youtu.be/gSgw5dkgF8I",
+    date: new Date("11/23/2021 PST"),
+    name: "THANKSGIVING, NO MEETING",
+    link: "",
+  },
+  {
+    week: 12,
+    date: new Date("11/30/2021 PST"),
+    name: "GM Symposium!",
+    link: "",
   },
 ];
 
@@ -266,7 +272,7 @@ class DecalLearn extends Component {
               <b>Topic</b>
             </Table.HeaderCell>
             <Table.HeaderCell class="col-md-3">
-              <b>YouTube Link</b>
+              <b>Meeting Slides</b>
             </Table.HeaderCell>
           </Table.Row>
         </Table.Header>
@@ -371,26 +377,18 @@ class DecalLearn extends Component {
             <div style={{ 
               marginTop: "25vw", 
               textAlign: "center",
-              lineHeight: "2.3vw",
+              lineHeight: "3vw",
               fontSize: "2vw",
               fontWeight: "21.5vw",
             }}>
-              Welcome to Data Science Society at Berkeley&rsquo;s very own
-              General Member Program: Essential Tools for Data Scientists! This
-              course is geared towards exposing students to essential data
-              science skills that are demanded in industry and are meant to be
-              taken as a follow-up or alongside Data 8. The course covers the
-              bits of data science and machine learning that aren’t
-              traditionally taught in the classroom like advanced Pandas and
-              Seaborn, and visualization dashboards that will challenge you,
-              sharpen your skills and elevate you in the internship game.
-              <br />
-              <br />
-              In this course, you will learn everything you need to know from
-              the ground up from an introduction on Python, to software like
-              Excel and Tableau, to other essential skills through a
-              personalized data science project that includes data cleaning,
-              visualization, statistical analysis, and machine learning.
+              Welcome to Data Science Society at Berkeley&rsquo;s General Member Program! 
+              This semester-long program is geared towards introducing students to essential data science skills through 
+              project based learning. Our program takes a departure from the traditional classroom setting by allowing members 
+              to work collaboratively on an original data science project of their choosing. 
+              
+              Members will have full creative control and will receive mentorship from our Academic Development committee members. We will cover every step of the 
+              data science lifecycle: from formulating a data-centric project idea, to extracting stories with exploratory data analysis, 
+              to finally creating and evaluating machine learning models.
 
               <Image
                 src={squiggly1}
@@ -428,7 +426,7 @@ class DecalLearn extends Component {
                   </div>
 
                   <div style={{margin: "0 auto", maxWidth: "22vw"}}>
-                    <h1>(Spring 2020)</h1>
+                    <h1>(Fall 2021)</h1>
                   </div>
                 </div>
 

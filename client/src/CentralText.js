@@ -392,7 +392,7 @@ class CentralText extends Component {
               verticalAlign="top"
               style={{ position: "absolute", left: "45%" }}
             >
-              {/* <Image
+              <Image
                 style={{
                   height: "25vw",
                   // marginTop: "-20vw",
@@ -403,9 +403,9 @@ class CentralText extends Component {
                 }}
                 floated="right"
                 src={topright}
-              ></Image> */}
+              ></Image>
 
-              <Image
+              {/* <Image
                 style={{
                   //height: "30vw",
                   marginTop: "-0.5vw",
@@ -416,7 +416,7 @@ class CentralText extends Component {
                 }}
                 
                 src={recruitbanner}
-              ></Image>
+              ></Image> */}
               
 
               
