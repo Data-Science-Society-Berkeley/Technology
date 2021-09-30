@@ -106,20 +106,15 @@ const lectures = [
     name: "How to Create an Engaging Deliverable (Deepnote guest speaker)",
     link: "",
   },
+  
   {
     week: 10,
-    date: new Date("4/19/2021 PST"),
-    name: "Career Panel",
-    link: "",
-  },
-  {
-    week: 11,
     date: new Date("11/23/2021 PST"),
     name: "THANKSGIVING, NO MEETING",
     link: "",
   },
   {
-    week: 12,
+    week: 11,
     date: new Date("11/30/2021 PST"),
     name: "GM Symposium!",
     link: "",
