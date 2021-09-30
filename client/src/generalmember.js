@@ -61,7 +61,8 @@ const lectures = [
     week: 2,
     date: new Date("9/28/2021 PST"),
     name: "Data Science Lifecycle, Using Python Libraries, Intro to Pandas",
-    link: "",
+    link: "https://tinyurl.com/2bhcbpxp",
+    nbook: "https://tinyurl.com/mini-lecture-notebook",
   },
   {
     week: 3,
@@ -255,6 +256,9 @@ class DecalLearn extends Component {
         <Table.Cell>
           <a href={c.link}>{c.link}</a>
         </Table.Cell>
+        <Table.Cell>
+          <a href={c.nbook}>{c.nbook}</a>
+        </Table.Cell>
       </Table.Row>
     ));
 
@@ -273,6 +277,9 @@ class DecalLearn extends Component {
             </Table.HeaderCell>
             <Table.HeaderCell class="col-md-3">
               <b>Meeting Slides</b>
+            </Table.HeaderCell>
+            <Table.HeaderCell class="col-md-3">
+              <b>Notebook</b>
             </Table.HeaderCell>
           </Table.Row>
         </Table.Header>
