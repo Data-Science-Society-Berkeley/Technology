@@ -68,7 +68,7 @@ const lectures = [
     week: 3,
     date: new Date("10/5/2021 PST"),
     name: "Data Cleaning with Pandas",
-    link: "",
+    link: "https://tinyurl.com/jaxxvt3r",
   },
   {
     week: 4,
