@@ -92,6 +92,13 @@ class App extends Component {
             }}
           />
           <Route
+            path="/datathon"
+            component={() => {
+              window.location.href = "https://www.notion.so/dssberkeley/Analyzing-and-Accelerating-Global-Development-with-Data-Science-dd2e1e8f04a9424ebddbe184ebcf0af5";
+              return null;
+            }}
+          />
+          <Route
             exact
             path="/"
             render={(props) => (
@@ -129,7 +136,7 @@ class App extends Component {
                     border: "1px solid #ccc",
                   }}
                 ></iframe> */}
-                <iframe 
+                <iframe
                   class="airtable-embed airtable-dynamic-height" 
                   src="https://airtable.com/embed/shrQR31H3cM5giZGG?backgroundColor=blue"
                   frameborder="0" onmousewheel="" width="100%" height="2849" 
@@ -141,6 +148,7 @@ class App extends Component {
               </div>
             )}
           />
+          
           <Route
             exact
             path="/shoutouts"
