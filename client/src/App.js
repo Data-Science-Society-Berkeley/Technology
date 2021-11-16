@@ -19,6 +19,7 @@ import Social from "./Social.js";
 import Education from "./Education.js";
 import Service from "./Services.js";
 import GeneralMember from "./generalmember.js";
+import Hierarchy from "./hierarchy";
 import Culture from "./Culture.js";
 
 import Footer from "./footer";
@@ -88,6 +89,13 @@ class App extends Component {
             path="/zoom"
             component={() => {
               window.location.href = "https://berkeley.zoom.us/j/91729580693";
+              return null;
+            }}
+          />
+          <Route
+            path="/family"
+            component={() => {
+              window.location.href = "https://trusting-montalcini-b87ad0.netlify.app/";
               return null;
             }}
           />
@@ -456,7 +464,13 @@ class App extends Component {
               window.location.href = "https://berkeley.zoom.us/j/91729580693";
               return null;
             }}
-          />
+          /><Route
+          path="/family"
+          component={() => {
+            window.location.href = "https://trusting-montalcini-b87ad0.netlify.app/";
+            return null;
+          }}
+        />
           <Route
             exact
             path="/"
@@ -578,6 +592,21 @@ class App extends Component {
               </div>
             )}
           />
+          {/* <Route
+            exact
+            path="/family"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar {...props} />
+                <Hierarchy></Hierarchy>
+                <div style={{ marginTop: "100px" }}></div>
+                <Footer></Footer>
+              </div>
+            )}
+          /> */}
           <Route
             exact
             path="/decal"
