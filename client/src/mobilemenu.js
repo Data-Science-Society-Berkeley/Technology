@@ -219,7 +219,7 @@ class NavBar2 extends Component {
           ></iframe> */}
           <iframe 
             class="airtable-embed airtable-dynamic-height" 
-            ssrc="https://airtable.com/embed/shrQR31H3cM5giZGG?backgroundColor=blue" 
+            src="https://airtable.com/embed/shrQR31H3cM5giZGG?backgroundColor=blue" 
             frameborder="0" onmousewheel="" width="100%" height="2849" 
             style={{
             background: "transparent",

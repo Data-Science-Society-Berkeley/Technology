@@ -19,6 +19,7 @@ import Social from "./Social.js";
 import Education from "./Education.js";
 import Service from "./Services.js";
 import GeneralMember from "./generalmember.js";
+import Hierarchy from "./hierarchy";
 import Culture from "./Culture.js";
 
 import Footer from "./footer";
@@ -87,7 +88,21 @@ class App extends Component {
           <Route
             path="/zoom"
             component={() => {
-              window.location.href = "https://berkeley.zoom.us/j/93293612130";
+              window.location.href = "https://berkeley.zoom.us/j/91729580693";
+              return null;
+            }}
+          />
+          <Route
+            path="/family"
+            component={() => {
+              window.location.href = "https://trusting-montalcini-b87ad0.netlify.app/";
+              return null;
+            }}
+          />
+          <Route
+            path="/datathon"
+            component={() => {
+              window.location.href = "https://www.notion.so/dssberkeley/Analyzing-and-Accelerating-Global-Development-with-Data-Science-dd2e1e8f04a9424ebddbe184ebcf0af5";
               return null;
             }}
           />
@@ -129,7 +144,7 @@ class App extends Component {
                     border: "1px solid #ccc",
                   }}
                 ></iframe> */}
-                <iframe 
+                <iframe
                   class="airtable-embed airtable-dynamic-height" 
                   src="https://airtable.com/embed/shrQR31H3cM5giZGG?backgroundColor=blue"
                   frameborder="0" onmousewheel="" width="100%" height="2849" 
@@ -141,6 +156,7 @@ class App extends Component {
               </div>
             )}
           />
+          
           <Route
             exact
             path="/shoutouts"
@@ -445,10 +461,16 @@ class App extends Component {
           <Route
             path="/zoom"
             component={() => {
-              window.location.href = "https://berkeley.zoom.us/j/93293612130";
+              window.location.href = "https://berkeley.zoom.us/j/91729580693";
               return null;
             }}
-          />
+          /><Route
+          path="/family"
+          component={() => {
+            window.location.href = "https://trusting-montalcini-b87ad0.netlify.app/";
+            return null;
+          }}
+        />
           <Route
             exact
             path="/"
@@ -570,6 +592,21 @@ class App extends Component {
               </div>
             )}
           />
+          {/* <Route
+            exact
+            path="/family"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar {...props} />
+                <Hierarchy></Hierarchy>
+                <div style={{ marginTop: "100px" }}></div>
+                <Footer></Footer>
+              </div>
+            )}
+          /> */}
           <Route
             exact
             path="/decal"

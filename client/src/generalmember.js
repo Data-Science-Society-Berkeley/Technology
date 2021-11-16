@@ -68,14 +68,15 @@ const lectures = [
     week: 3,
     date: new Date("10/5/2021 PST"),
     name: "Data Cleaning with Pandas",
-    link: "",
-    nbook: "https://tinyurl.com/wvyeuvfa"
+    link: "https://tinyurl.com/jaxxvt3r",
+    nbook: "https://tinyurl.com/wvyeuvfa",
   },
   {
     week: 4,
     date: new Date("10/12/2021 PST"),
     name: "Data Visualization and Exploratory Data Analysis",
-    link: "",
+    link: "https://tinyurl.com/nskxf7n4",
+    nbook: "https://tinyurl.com/tbzdstay",
   },
   {
     week: 5,
