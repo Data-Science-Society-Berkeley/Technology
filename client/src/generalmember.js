@@ -82,7 +82,8 @@ const lectures = [
     week: 5,
     date: new Date("10/19/2021 PST"),
     name: "Hypothesis Testing in Python",
-    link: "",
+    link: "https://tinyurl.com/3s3pfxbs",
+    nbook: "https://tinyurl.com/xs36xv23",
   },
   {
     week: 6,
