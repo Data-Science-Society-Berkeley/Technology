@@ -89,13 +89,15 @@ const lectures = [
     week: 6,
     date: new Date("10/26/2021 PST"),
     name: "Basic Machine Learning Models",
-    link: "",
+    link: "https://tinyurl.com/yr9dpppr",
+    nbook: "https://tinyurl.com/5t46ntcs"
   },
   {
     week: 7,
     date: new Date("11/02/2021 PST"),
     name: "Model Evaluation & Cross Validation",
-    link: "",
+    link: "https://tinyurl.com/ppn3xjn8",
+    nbook: "https://tinyurl.com/5t46ntcs"
   },
   {
     week: 8,
