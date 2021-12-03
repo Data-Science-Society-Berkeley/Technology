@@ -103,13 +103,13 @@ const lectures = [
     week: 8,
     date: new Date("11/09/2021 PST"),
     name: "Career Panel (Alumni guest speakers)",
-    link: "",
+    link: "https://tinyurl.com/2p99deap",
   },
   {
     week: 9,
     date: new Date("11/16/2021 PST"),
     name: "How to Create an Engaging Deliverable (Deepnote guest speaker)",
-    link: "",
+    link: "https://tinyurl.com/2p9c8368",
   },
   
   {
