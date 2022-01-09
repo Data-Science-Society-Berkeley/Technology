@@ -496,7 +496,6 @@ class Social extends Component {
               </Card>
             </Card.Group>
 
-
           </Grid.Row>
         </Grid>
       </div>

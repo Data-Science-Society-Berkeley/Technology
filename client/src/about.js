@@ -200,13 +200,10 @@ const aboutlinks = {
   height: "3vw",
   color: "#FFFFFF",
   whiteSpace: "nowrap",
-  // margin: "auto",
   position: "absolute",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  // textAlign: "center",
-  // top: "20%",
 };
 
 const aboutlinks2 = {
@@ -217,9 +214,6 @@ const aboutlinks2 = {
   margin: "auto",
   textAlign: "center",
   position: "relative",
-
-  // top: "50%",
-  // transform: "translateY(-50%)",
 };
 
 const overlayboxes = {
