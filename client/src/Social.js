@@ -13,9 +13,6 @@ import {
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CustomTitle from "./components/CustomTitle.js";
 
-import berk from "./Decal Images/berkeleyischool-logo-alternate-blue-lg.png";
-import datacamp from "./Decal Images/datacamp-logo 1.png";
-import decal from "./Decal Images/decalberkeleylogo 1.png";
 import evelyn from "./PM Headshots/evelyn.jpeg";
 import steven from "./Leadership Headshots/steven.jpeg";
 import andi from "./Leadership Headshots/andi.jpg";
@@ -24,11 +21,7 @@ import ingrid from "./PM Headshots/ingrid.jpeg";
 import aditi from "./PM Headshots/aditi.jpeg";
 import rithik from "./PM Headshots/rithik.jpeg";
 import spencer from "./PM Headshots/spencer.jpeg";
-//import story from "./SocialGood/socialgoodheader-compress-min.jpg";
 import story from "./SocialGood/sgheader.jpeg";
-import hype from "./SocialGood/SoialGoodPic.png";
-import heart from "./SocialGood/dssg1.jpeg";
-import arrow from "./SocialGood/Arrow3.png";
 import medmobile from "./SocialGood/MedicMobile.png";
 import mep from "./SocialGood/MEP-logo.svg";
 
@@ -114,6 +107,40 @@ const link = {
   fontStyle: "normal",
   textAlign: "center",
 };
+
+const bodyText = {
+  fontFamily: "Montserrat",
+  fontStyle: "light",
+  textAlign: "center",
+  fontWeight: "21vw",
+  fontSize: "2vw",
+  lineHeight: "3vw",
+}
+const aboutlinks = {
+  fontFamily: "Montserrat",
+  fontWeight: "normal",
+  fontSize: "2.5vw",
+  lineHeight: "3vw",
+  height: "3vw",
+  color: "#FFFFFF",
+  whiteSpace: "nowrap",
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+};
+
+const aboutlinks2 = {
+  fontFamily: "Montserrat",
+  fontWeight: "normal",
+  fontSize: "2.5vw",
+  color: "#FFFFFF",
+  margin: "auto",
+  textAlign: "center",
+  position: "relative",
+};
+
+
 class Social extends Component {
   constructor(props) {
     super(props);
@@ -148,196 +175,116 @@ class Social extends Component {
   sendData(data) {
     this.props.buttonClick(data);
   }
+  scrollMission() {
+    document.getElementById("mission").scrollIntoView();
+  }
+  scrollTeam() {
+    document.getElementById("team").scrollIntoView();
+  }
+  scrollProjects() {
+    document.getElementById("projects").scrollIntoView();
+  }
   render() {
     return (
       <div>
-        <div style={{ zIndex: "1", position: "relative" }}>
+        <div style={{ zIndex: "1", position: "relative"}}>
           <Image
             src={story}
-            style={{ width: "120%", height: "auto", zIndex: "2" }}
+            style={{ width: "100%", zIndex: "2" }}
           ></Image>
           <div
             style={{
-              width: "100%",
-              textAlign: "center",
-              color: "#FFFFFF",
-              // background: "rgba(140, 214, 209, 0.6)",
-            }}
-          >
-            <span
-              style={{
-                position: "absolute",
-                top: "35%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-                fontWeight: "bolder",
-                fontSize: "5vw",
-                lineHeight: "5vw",
-              }}
-            >
-              {" "}
-              Social Good
-            </span>
-            <span
-              style={{
-                position: "absolute",
-                left: "25%",
-                top: "75%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-                // color: "#FFFFFF",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: "5vw",
-                  lineHeight: "5vw",
-                  font: "Montserrat",
-                }}
-              >
-                2{" "}
-              </span>{" "}
-              <span
-                style={{
-                  fontSize: "2.5vw",
-                  textAlign: "center",
-                  font: "Montserrat",
-                }}
-              >
-                Projects per Semester
-              </span>
-            </span>
-            <div
-              style={{
-                background: "rgba(140, 214, 209, 0.6)",
-                zIndex: "2",
-                position: "absolute",
-                width: "100%",
-                height: "100%",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-              }}
-            ></div>
-            <span
-              style={{
-                position: "absolute",
-                left: "70%",
-                top: "75%",
-                transform: "translate(-50%, -50%)",
-                zIndex: "3",
-                fontFamily: "Montserrat",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: "5vw",
-                  lineHeight: "5v1",
-                  font: "Montserrat",
-                  fontWeigt: "bold",
-                }}
-              >
-                {" "}
-                5{" "}
-                <span
-                  style={{
-                    fontSize: "2.5vw",
-                    lineHeight: "2.5vw",
-                  }}
-                >
-                  researchers per team{" "}
-                </span>{" "}
-              </span>
-            </span>
-          </div>
-        </div>
-        <Grid centered>
-          {CustomTitle({ title: "Committee Origin" })}
-          <Grid.Row columns={2}>
-            <Grid.Column
-              verticalAlign="top"
-              width={4}
-              style={{
-                color: "#000000",
-                textAlign: "left",
-                lineHeight: "2.5vw",
-                fontSize: "2vw",
-                fontWeight: "21vw",
-                fontStyle: "normal",
-                fontFamily: "Montserrat",
-                marginLeft: "9vw",
-                // marginRight: "5vw",
-                marginBottom: "6vw",
-                marginTop: "4vw",
-              }}
-            >
-              Data science has exploded in popularity due to its influence on
-              the business landscape. The technological capabilities with data
-              has provided business with a competitive advantage, opportunity to
-              optimize efficiency, and in essence, more profit.
-              <Image src={arrow} style={{ marginLeft: "35vw" }}></Image>
-            </Grid.Column>
-            <Grid.Column
-              verticalAlign="top"
-              style={{ marginBottom: "11vw", marginTop: "4vw" }}
-            >
-              <Image
-                inline
-                src={hype}
-                style={{ height: "27vw", width: "27vw", marginTop: "-5vw" }}
-              ></Image>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-        <div style={{ zIndex: "1", position: "relative" }}>
-          <Image
-            src={heart}
-            style={{
-              width: "120%",
-              height: "auto",
+              background: "rgba(140, 214, 209, 0.6)",
               zIndex: "2",
-              marginBottom: "5vw",
-            }}
-          ></Image>
-          <div
-            style={{
+              position: "absolute",
               width: "100%",
-              textAlign: "center",
+              height: "100%",
+              top: 0,
+              left: 0,
             }}
           >
             <span
               style={{
                 position: "absolute",
                 top: "10%",
-                left: "65%",
-                textAlign: "left",
-                fontWeight: "21vw",
+                left: "10%",
                 zIndex: "3",
-                width: "36vw",
                 fontFamily: "Montserrat",
-                fontStyle: "normal",
-                fontWeight: "normal",
-                fontSize: "2.5vw",
-                lineHeight: "3vw",
-                marginRight: "5vw",
+                fontWeight: "bolder",
+                fontSize: "5vw",
+                lineHeight: "5vw",
+                color: "#FFFFFF"
               }}
             >
-              {" "}
-              The Social Good Committee conducts analytical projects over the course of the semester with 
-              both local and global non-profit organizations. Our goal is to use the power of data science 
-              in service of human-kind and offer creative solutions to address the world's most urgent societal challenges.
+              Social Good
             </span>
-          </div>
+            
+            <span
+              style={{
+                position: "absolute",
+                top: "20%",
+                left: "10%",
+                zIndex: "3",
+                fontFamily: "Montserrat",
+                fontWeight: "light",
+                fontSize: "3vw",
+                lineHeight: "4vw",
+                color: "#FFFFFF"
+              }}
+            >
+              We are passionate about working with non-profit organizations to provide data-driven insights and actionable solutions through advanced analytical methods.
+            </span>
+
+          </div>         
         </div>
         <Grid centered>
-          {CustomTitle({ title: "Our Team" })}
+          <Grid.Row
+            columns={3}
+            style={{
+              backgroundColor: "#8CD6D1",
+              width: "100%",
+              height: "7vw",
+              position: "relative",
+            }}
+          >
+            <Grid.Column width={4}>
+              <div onClick={this.scrollMission} style={aboutlinks}>
+                Mission
+              </div>
+            </Grid.Column>
+            <Grid.Column width={4} style={{ aboutlinks2 }}>
+              <div onClick={this.scrollTeam} style={aboutlinks}>
+                Our Team
+              </div>
+            </Grid.Column>
+            <Grid.Column width={4} style={{ aboutlinks2 }}>
+              <div onClick={this.scrollProjects} style={aboutlinks}>
+                Past Projects
+              </div>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+
+        <Grid centered>
+          {CustomTitle({ title: "Our Mission" , id: "mission"})}
+        </Grid>
+
+        <p style={bodyText}
+          >
+          Data science has exploded in popularity due to its influence on the business landscape. The technological capabilities with data has provided 
+          business with a competitive advantage, opportunity to optimize efficiency, and in essence, more profit. 
+          <br/>
+          <br/>
+          We seek to combine these same tools with a human-centered, datafied way of thinking to promise and act for change. We want to use the power of 
+          data science in service of humankind and offer creative solutions to support organizations addressing the world’s most urgent societal challenges.
+        </p>
+
+        <Grid centered>
+          {CustomTitle({ title: "Our Team" , id: "team"})}
           <Grid.Row style={{ marginTop: "4vw" }}>
             <Card.Group centered>
+
               <Card style={cardstyle}>
-                {" "}
                 <Image style={imagestyle} src={steven} />
                 <Card.Content>
                   <Card.Header style={textstyle}>Steven Chen</Card.Header>
@@ -356,7 +303,6 @@ class Social extends Component {
               </Card>
               
               <Card style={cardstyle}>
-                {" "}
                 <Image style={imagestyle} src={evelyn} />
                 <Card.Content>
                   <Card.Header style={textstyle}>Evelyn Lu</Card.Header>
@@ -366,16 +312,15 @@ class Social extends Component {
                 </Card.Content>
                 <Card.Content extra>
                   <a href="mailto:yunerlu@berkeley.edu">
-                    <Icon name="mail" />
+                    <Icon size="large" name="mail" />
                   </a>
                   <a href="https://www.linkedin.com/in/evelyn-lu-026450153/">
-                    <Icon name="linkedin" />
+                    <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
 
               <Card style={cardstyle}>
-                {" "}
                 <Image style={imagestyle} src={rithik} />
                 <Card.Content>
                   <Card.Header style={textstyle}>Rithik Goli</Card.Header>
@@ -385,16 +330,18 @@ class Social extends Component {
                 </Card.Content>
                 <Card.Content extra>
                   <a href="mailto:rithikgoli@berkeley.edu">
-                    <Icon name="mail" />
+                    <Icon size="large" name="mail" />
                   </a>
                   <a href="https://www.linkedin.com/in/rithikgoli824/">
-                    <Icon name="linkedin" />
+                    <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
+            
+            </Card.Group>
+            <Card.Group centered>
 
               <Card style={cardstyle}>
-                {" "}
                 <Image style={imagestyle} src={ingrid} />
                 <Card.Content>
                   <Card.Header style={textstyle}>Ingrid Chien</Card.Header>
@@ -404,16 +351,15 @@ class Social extends Component {
                 </Card.Content>
                 <Card.Content extra>
                   <a href="mailto:ingrid070401@berkeley.edu">
-                    <Icon name="mail" />
+                    <Icon size="large" name="mail" />
                   </a>
                   <a href="https://www.linkedin.com/in/ingridchien/">
-                    <Icon name="linkedin" />
+                    <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
 
               <Card style={cardstyle}>
-                {" "}
                 <Image style={imagestyle} src={aditi} />
                 <Card.Content>
                   <Card.Header style={textstyle}>Aditi Raja</Card.Header>
@@ -423,10 +369,10 @@ class Social extends Component {
                 </Card.Content>
                 <Card.Content extra>
                   <a href="mailto:aditiraja@berkeley.edu">
-                    <Icon name="mail" />
+                    <Icon size="large" name="mail" />
                   </a>
                   <a href="https://www.linkedin.com/in/aditi-raja">
-                    <Icon name="linkedin" />
+                    <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
@@ -442,48 +388,115 @@ class Social extends Component {
                 </Card.Content>
                 <Card.Content extra>
                   <a href="mailto:spencerrjenkins@berkeley.edu">
-                    <Icon name="mail" />
+                    <Icon size="large" name="mail" />
                   </a>
                   <a href="https://www.linkedin.com/in/spencer-r-jenkins/">
-                    <Icon name="linkedin" />
+                    <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
               
             </Card.Group>
           </Grid.Row>
-          {/* <Grid.Row style={{ marginTop: "5vw" }}>
-            <Grid.Column
-              style={{
-                color: "#8CD6D1",
-                textAlign: "center",
-                lineHeight: "4vw",
-                fontSize: "3vw",
-                fontWeight: "36vw",
-                fontStyle: "normal",
-                fontFamily: "Montserrat",
-                marginBottom: "7vw",
-                marginLeft: "14vw",
-                marginRight: "14vw",
-              }}
-            >
-              Fall 2020 Semester was the first semester for the Social Good
-              committee. Stay tuned for updates!
-            </Grid.Column>
-          </Grid.Row> */}
-          {CustomTitle({ title: "Past Clients" })}
-          <Grid.Row style={{ marginTop: "3vw" }}>
-            <Image.Group style={{ marginLeft: "11vw", marginRight: "11vw" }}>
-            <Image
-                src={medmobile}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
-              />
-              <Image
-                src={mep}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
-              />
-              
-            </Image.Group>
+        </Grid>
+
+        <Grid centered>
+          {CustomTitle({ title: "Past Projects" , id: "projects"})}
+          <Grid.Row style={{ marginTop: "4vw" }}>
+            <Card.Group centered>
+
+              <Card style={cardstyle}>
+                <Image style={imagestyle} src={medmobile} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Medic</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>Shippable Maps for the Community Health Toolkit [Fall '21]</span>
+                  </Card.Meta>
+                </Card.Content>
+                <Card.Content extra>
+                  <p>Medic builds world-class, open-source software that supports health workers delivering equitable care 
+                    that reaches the hardest-to-reach communities.
+                    
+                    Medic serves as the technical lead and a core contributor to the Community Health Toolkit, which helps health 
+                    workers ensure safe deliveries, track outbreaks faster, treat illnesses door-to-door, keep stock of essential 
+                    medicines, communicate about emergencies, and more.</p>
+                </Card.Content>
+              </Card>
+
+              <Card style={cardstyle}>
+                <Image style={imagestyle} src={mep} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Mara Elephant Project</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>Maasai Mara Elephant Speed Maps [Spring '21, Fall '20]</span>
+                  </Card.Meta>
+                </Card.Content>
+                <Card.Content extra>
+                  <p>MEP protects elephants to conserve the greater Mara ecosystem. MEP’s focus on elephant protection in the Maasai Mara, 
+                    Kenya in turn increases the protection of wildlife, communities and habitat in our expanding areas of operation. 
+                    Their boots on the ground rangers, applied research and collaborative approach help work towards their goal to maintain a 
+                    harmonic balance between wildlife, communities and habitat and move the Mara from conflict to co-existence.</p>
+                </Card.Content>
+              </Card>
+
+              <Card style={cardstyle}>
+                <Image style={imagestyle} src={medmobile} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Medic</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>Shippable Maps for the Community Health Toolkit [Fall '21]</span>
+                  </Card.Meta>
+                </Card.Content>
+                <Card.Content extra>
+                  <p>Medic builds world-class, open-source software that supports health workers delivering equitable care 
+                    that reaches the hardest-to-reach communities.
+                    
+                    Medic serves as the technical lead and a core contributor to the Community Health Toolkit, which helps health 
+                    workers ensure safe deliveries, track outbreaks faster, treat illnesses door-to-door, keep stock of essential 
+                    medicines, communicate about emergencies, and more.</p>
+                </Card.Content>
+              </Card>
+
+            </Card.Group>
+            <Card.Group centered>
+              <Card style={cardstyle}>
+                  <Image style={imagestyle} src={medmobile} />
+                  <Card.Content>
+                    <Card.Header style={textstyle}>Medic</Card.Header>
+                    <Card.Meta style={{ marginTop: "1vw" }}>
+                      <span style={roleStyle}>Shippable Maps for the Community Health Toolkit [Fall '21]</span>
+                    </Card.Meta>
+                  </Card.Content>
+                  <Card.Content extra>
+                    <p>Medic builds world-class, open-source software that supports health workers delivering equitable care 
+                      that reaches the hardest-to-reach communities.
+                      
+                      Medic serves as the technical lead and a core contributor to the Community Health Toolkit, which helps health 
+                      workers ensure safe deliveries, track outbreaks faster, treat illnesses door-to-door, keep stock of essential 
+                      medicines, communicate about emergencies, and more.</p>
+                  </Card.Content>
+                </Card>
+
+              <Card style={cardstyle}>
+                <Image style={imagestyle} src={medmobile} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Medic</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>Shippable Maps for the Community Health Toolkit [Fall '21]</span>
+                  </Card.Meta>
+                </Card.Content>
+                <Card.Content extra>
+                  <p>Medic builds world-class, open-source software that supports health workers delivering equitable care 
+                    that reaches the hardest-to-reach communities.
+                    
+                    Medic serves as the technical lead and a core contributor to the Community Health Toolkit, which helps health 
+                    workers ensure safe deliveries, track outbreaks faster, treat illnesses door-to-door, keep stock of essential 
+                    medicines, communicate about emergencies, and more.</p>
+                </Card.Content>
+              </Card>
+            </Card.Group>
+
+
           </Grid.Row>
         </Grid>
       </div>
