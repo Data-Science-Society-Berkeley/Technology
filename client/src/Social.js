@@ -21,10 +21,12 @@ import ingrid from "./PM Headshots/ingrid.jpeg";
 import aditi from "./PM Headshots/aditi.jpeg";
 import rithik from "./PM Headshots/rithik.jpeg";
 import spencer from "./PM Headshots/spencer.jpeg";
-import story from "./SocialGood/sgheader.jpeg";
-import medmobile from "./SocialGood/MedicMobile.png";
-import mep from "./SocialGood/MEP-logo.svg";
-
+import story from "./SocialGood/sgheader_short.jpg";
+import medic from "./SocialGood/medic-logo.png";
+import mep from "./SocialGood/MEP-logo.jpg";
+import ctn from "./SocialGood/CTN-logo.png";
+import techsoup from "./SocialGood/techsoup-logo.png"
+import graphic1 from "./SocialGood/sggraphic.svg";
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -60,10 +62,8 @@ const button = {
 };
 const cardstyle = {
   width: "28vw",
-  maxHeight: "56vw",
-  // height: "800px",
-  marginBottom: "1vw",
-  marginleft: "2vw",
+  //maxHeight: "100vw",
+  margin: "2.5vw"
 };
 const imagestyle = {
   height: "28vw",
@@ -115,6 +115,9 @@ const bodyText = {
   fontWeight: "21vw",
   fontSize: "2vw",
   lineHeight: "3vw",
+  marginTop: "4vw",
+  marginLeft: "15vw",
+  marginRight: "15vw"
 }
 const aboutlinks = {
   fontFamily: "Montserrat",
@@ -187,7 +190,7 @@ class Social extends Component {
   render() {
     return (
       <div>
-        <div style={{ zIndex: "1", position: "relative"}}>
+        {/* <div style={{ zIndex: "1", position: "relative"}}>
           <Image
             src={story}
             style={{ width: "100%", zIndex: "2" }}
@@ -203,45 +206,96 @@ class Social extends Component {
               left: 0,
             }}
           >
-            <span
+          </div>
+        </div> */}
+
+            {/* <span
               style={{
-                position: "absolute",
-                top: "10%",
-                left: "10%",
-                zIndex: "3",
+                // position: "absolute",
+                // top: "10%",
+                // left: "10%",
+                // zIndex: "3",
                 fontFamily: "Montserrat",
                 fontWeight: "bolder",
                 fontSize: "5vw",
                 lineHeight: "5vw",
-                color: "#FFFFFF"
+                // color: "#FFFFFF"
+                color: "#8CD6D1",
+                textAlign: "center"
               }}
             >
               Social Good
             </span>
-            
+            <br/>
             <span
               style={{
-                position: "absolute",
-                top: "20%",
-                left: "10%",
-                zIndex: "3",
+                // position: "absolute",
+                // top: "20%",
+                // left: "10%",
+                // zIndex: "3",
                 fontFamily: "Montserrat",
                 fontWeight: "light",
                 fontSize: "3vw",
                 lineHeight: "4vw",
-                color: "#FFFFFF"
+                //color: "#FFFFFF",
+                color: "#8CD6D1",
+                marginRight: "20%",
               }}
             >
               We are passionate about working with non-profit organizations to provide data-driven insights and actionable solutions through advanced analytical methods.
-            </span>
-
+            </span> */}
+            
+        {/*
           </div>         
         </div>
+        */}
+
         <Grid centered>
+          <div
+            style={{
+              background: "#8CD6D1",//"rgba(140, 214, 209, 0.6)",
+              zIndex: "2",
+              width: "100%",
+              height: "100%",
+              marginTop: ".5vw",
+              top: 0,
+              left: 0,
+            }}
+          >
+            <p
+              style={{
+                fontFamily: "Montserrat",
+                fontWeight: "bolder",
+                fontSize: "5vw",
+                lineHeight: "5vw",
+                color: "#FFFFFF",
+                textAlign: "left",
+                marginTop: "5vw",
+                marginLeft: "10vw",
+                zIndex: "1"
+              }}>
+                The Social Good Committee
+              </p>
+            <p
+              style={{
+                fontFamily: "Montserrat",
+                fontWeight: "light",
+                fontSize: "3vw",
+                lineHeight: "4vw",
+                color: "#FFFFFF",
+                textAlign: "left",
+                marginBottom: "5vw",
+                marginLeft: "10vw",
+                marginRight: "20%",
+                zIndex:"1"
+            }}>
+              We are passionate about working with non-profit organizations to provide data-driven insights and actionable solutions through advanced analytical methods.
+            </p>
+          </div>
           <Grid.Row
             columns={3}
             style={{
-              backgroundColor: "#8CD6D1",
+              backgroundColor: "rgba(140, 214, 209, 0.85)",//"#8CD6D1",
               width: "100%",
               height: "7vw",
               position: "relative",
@@ -265,7 +319,7 @@ class Social extends Component {
           </Grid.Row>
         </Grid>
 
-        <Grid centered>
+        <Grid centered >
           {CustomTitle({ title: "Our Mission" , id: "mission"})}
         </Grid>
 
@@ -278,6 +332,11 @@ class Social extends Component {
           We seek to combine these same tools with a human-centered, datafied way of thinking to promise and act for change. We want to use the power of 
           data science in service of humankind and offer creative solutions to support organizations addressing the world’s most urgent societal challenges.
         </p>
+
+        <Image
+            src={graphic1}
+            style={{display: "block", marginLeft: "auto", marginRight: "auto", marginTop: "5vw"}}
+        ></Image>
 
         <Grid centered>
           {CustomTitle({ title: "Our Team" , id: "team"})}
@@ -402,94 +461,90 @@ class Social extends Component {
 
         <Grid centered>
           {CustomTitle({ title: "Past Projects" , id: "projects"})}
-          <Grid.Row style={{ marginTop: "4vw" }}>
+          <Grid.Row style={{ marginTop: "4vw", marginBottom: "4vw"}}>
             <Card.Group centered>
 
               <Card style={cardstyle}>
-                <Image style={imagestyle} src={medmobile} />
+                <Image style={imagestyle} src={medic} />
                 <Card.Content>
                   <Card.Header style={textstyle}>Medic</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>Shippable Maps for the Community Health Toolkit [Fall '21]</span>
+                    <span style={roleStyle}>Shippable Maps for the Community Health Toolkit [FA '21]</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
                   <p>Medic builds world-class, open-source software that supports health workers delivering equitable care 
                     that reaches the hardest-to-reach communities.
                     
-                    Medic serves as the technical lead and a core contributor to the Community Health Toolkit, which helps health 
+                    They are the technical lead to the Community Health Toolkit, which helps health 
                     workers ensure safe deliveries, track outbreaks faster, treat illnesses door-to-door, keep stock of essential 
                     medicines, communicate about emergencies, and more.</p>
                 </Card.Content>
               </Card>
 
               <Card style={cardstyle}>
-                <Image style={imagestyle} src={mep} />
+                <Image style={imagestyle} src={ctn} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Mara Elephant Project</Card.Header>
+                  <Card.Header style={textstyle}>Community Tech Network</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>Maasai Mara Elephant Speed Maps [Spring '21, Fall '20]</span>
+                    <span style={roleStyle}>Decreasing Senior Citizen Social Isolation [FA '21]</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <p>MEP protects elephants to conserve the greater Mara ecosystem. MEP’s focus on elephant protection in the Maasai Mara, 
-                    Kenya in turn increases the protection of wildlife, communities and habitat in our expanding areas of operation. 
-                    Their boots on the ground rangers, applied research and collaborative approach help work towards their goal to maintain a 
-                    harmonic balance between wildlife, communities and habitat and move the Mara from conflict to co-existence.</p>
+                  <p>Community Tech Network is a nonprofit organization whose mission is to unite organizations and volunteers to transform lives 
+                    through digital literacy! 
+                    CTN seeks to improve the quality of life, the capacity, and the self-sufficiency of CTN’s learners, trainers, and our partner 
+                    organizations.</p>
                 </Card.Content>
               </Card>
 
               <Card style={cardstyle}>
-                <Image style={imagestyle} src={medmobile} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Medic</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>Shippable Maps for the Community Health Toolkit [Fall '21]</span>
-                  </Card.Meta>
-                </Card.Content>
-                <Card.Content extra>
-                  <p>Medic builds world-class, open-source software that supports health workers delivering equitable care 
-                    that reaches the hardest-to-reach communities.
-                    
-                    Medic serves as the technical lead and a core contributor to the Community Health Toolkit, which helps health 
-                    workers ensure safe deliveries, track outbreaks faster, treat illnesses door-to-door, keep stock of essential 
-                    medicines, communicate about emergencies, and more.</p>
-                </Card.Content>
-              </Card>
+                  <Image style={imagestyle} src={techsoup} />
+                  <Card.Content id="card-top">
+                    <Card.Header style={textstyle}>TechSoup</Card.Header>
+                    <Card.Meta style={{ marginTop: "1vw" }}>
+                      <span style={roleStyle}>Revenue Analysis of Nonprofit Technology Sales [FA '21]</span>
+                    </Card.Meta>
+                  </Card.Content>
+                  <Card.Content extra>
+                    <p>TechSoup is a nonprofit international network of non-governmental organizations (NGOs) that provides technical support 
+                      and technological tools to other nonprofits. 
+                      
+                      Based in SF and founded in 1987, TechSoup supports nonprofits, charities, and libraries by providing access to donations and 
+                      discounts on software, hardware, and services from major brands.</p>
+                  </Card.Content>
+                </Card>
 
             </Card.Group>
             <Card.Group centered>
               <Card style={cardstyle}>
-                  <Image style={imagestyle} src={medmobile} />
+                  <Image style={imagestyle} src={mep} />
                   <Card.Content>
-                    <Card.Header style={textstyle}>Medic</Card.Header>
-                    <Card.Meta style={{ marginTop: "1vw" }}>
-                      <span style={roleStyle}>Shippable Maps for the Community Health Toolkit [Fall '21]</span>
+                    <Card.Header style={textstyle}>Mara Elephant Project</Card.Header>
+                    <Card.Meta style={{ marginTop: "1vw",  }}>
+                      <span style={roleStyle}>Maasai Mara Elephant Speed Maps [SP '21]</span>
                     </Card.Meta>
                   </Card.Content>
                   <Card.Content extra>
-                    <p>Medic builds world-class, open-source software that supports health workers delivering equitable care 
-                      that reaches the hardest-to-reach communities.
-                      
-                      Medic serves as the technical lead and a core contributor to the Community Health Toolkit, which helps health 
-                      workers ensure safe deliveries, track outbreaks faster, treat illnesses door-to-door, keep stock of essential 
-                      medicines, communicate about emergencies, and more.</p>
+                    <p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater
+                       Mara Ecosystem. Their collaboratibe approach of boots on the ground rangers and applied research has disrupted poaching in the region 
+                       and combatted conflict and habitat loss.</p>
                   </Card.Content>
                 </Card>
 
               <Card style={cardstyle}>
-                <Image style={imagestyle} src={medmobile} />
+                <Image style={imagestyle} src={medic} />
                 <Card.Content>
                   <Card.Header style={textstyle}>Medic</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>Shippable Maps for the Community Health Toolkit [Fall '21]</span>
+                    <span style={roleStyle}>Shippable Maps for the Community Health Toolkit [FA '21]</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
                   <p>Medic builds world-class, open-source software that supports health workers delivering equitable care 
                     that reaches the hardest-to-reach communities.
                     
-                    Medic serves as the technical lead and a core contributor to the Community Health Toolkit, which helps health 
+                    They are the technical lead to the Community Health Toolkit, which helps health 
                     workers ensure safe deliveries, track outbreaks faster, treat illnesses door-to-door, keep stock of essential 
                     medicines, communicate about emergencies, and more.</p>
                 </Card.Content>
