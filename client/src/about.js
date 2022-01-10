@@ -200,13 +200,10 @@ const aboutlinks = {
   height: "3vw",
   color: "#FFFFFF",
   whiteSpace: "nowrap",
-  // margin: "auto",
   position: "absolute",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  // textAlign: "center",
-  // top: "20%",
 };
 
 const aboutlinks2 = {
@@ -217,9 +214,6 @@ const aboutlinks2 = {
   margin: "auto",
   textAlign: "center",
   position: "relative",
-
-  // top: "50%",
-  // transform: "translateY(-50%)",
 };
 
 const overlayboxes = {
@@ -451,61 +445,6 @@ const leadershipCards = [
       </a>
     </Card.Content>
   </Card>,
-  // <Card style={cardstyle}>
-  //   {" "}
-  //   <Image style={imagestyle} src={kate} />
-  //   <Card.Content>
-  //     <Card.Header style={textstyle}>Kate Miller</Card.Header>
-  //     <Card.Meta style={{ marginTop: "1vw" }}>
-  //       <span style={roleStyle}>Director of DeCal</span>
-  //     </Card.Meta>
-  //   </Card.Content>
-  //   <Card.Content extra>
-  //     <a href="mailto:katevmiller@berkeley.edu">
-  //       <Icon size="large" name="mail" />
-  //     </a>
-  //     <a href="https://www.linkedin.com/in/kate-miller-7a884719b/">
-  //       <Icon size="large" name="linkedin" />
-  //     </a>
-  //   </Card.Content>
-  // </Card>,
-  // <Card style={cardstyle}>
-  //   {" "}
-  //   <Image style={imagestyle} src={uma} />
-  //   <Card.Content>
-  //     <Card.Header style={textstyle}>Uma K</Card.Header>
-  //     <Card.Meta style={{ marginTop: "1vw" }}>
-  //       <span style={roleStyle}>Director of DeCal</span>
-  //     </Card.Meta>
-  //   </Card.Content>
-  //   <Card.Content extra>
-  //     <a href="mailto:umakrishnaswamy@berkeley.edu">
-  //       <Icon size="large" name="mail" />
-  //     </a>
-  //     <a href="https://www.linkedin.com/in/uma-k-369ba4122/">
-  //       <Icon size="large" name="linkedin" />
-  //     </a>
-  //   </Card.Content>
-  // </Card>,
-  // <Card style={cardstyle}>
-  //   {" "}
-  //   <Image style={imagestyle} src={gaya} />
-  //   <Card.Content>
-  //     <Card.Header style={textstyle}>Gayatri Babel</Card.Header>
-  //     <Card.Meta style={{ marginTop: "1vw" }}>
-  //       <span style={roleStyle}>Director of DeCal</span>
-  //     </Card.Meta>
-  //   </Card.Content>
-  //   <Card.Content extra>
-  //     <a href="mailto:gbabel@berkeley.edu">
-  //       <Icon size="large" name="mail" size="large" />
-  //     </a>
-  //     <a href="https://www.linkedin.com/in/gayatri-babel/">
-  //       <Icon size="large" name="linkedin" size="large" />
-  //     </a>
-  //   </Card.Content>
-  // </Card>,
-
   <Card style={cardstyle}>
     {" "}
     <Image style={imagestyle} src={steven} />
