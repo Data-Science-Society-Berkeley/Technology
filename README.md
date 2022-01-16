@@ -8,4 +8,4 @@ Spring 2020 | Varun Murthy | murthy@
 Fall 2020 | Arjun Mishra | arjunmishra@
 Spring 2021 | Kanu Grover | grover.kanu@
 Fall 2021 | Labanya Mukhopadhyay | labanya.mukho@
-Spring 2021 | Michelle Li | mko357@
+Spring 2022 | Michelle Li | mko357@
