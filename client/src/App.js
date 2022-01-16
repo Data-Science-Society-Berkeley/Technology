@@ -1,7 +1,7 @@
 import React, { Fragment, Component } from "react";
 import "./App.css";
 import { Button, Container, Menu, Image, Header } from "semantic-ui-react";
-import Login from "./Login";
+//import Login from "./Login";
 import Registration from "./Register";
 import About from "./about";
 import Committees from "./committees";
@@ -145,9 +145,9 @@ class App extends Component {
                   }}
                 ></iframe> */}
                 <iframe
-                  class="airtable-embed airtable-dynamic-height" 
+                  class="airtable-embed airtable-dynamic-height"
                   src="https://airtable.com/embed/shrQR31H3cM5giZGG?backgroundColor=blue"
-                  frameborder="0" onmousewheel="" width="100%" height="2849" 
+                  frameborder="0" onmousewheel="" width="100%" height="2849"
                   style={{
                     background: "transparent",
                     border: "1px solid #ccc",
@@ -156,7 +156,7 @@ class App extends Component {
               </div>
             )}
           />
-          
+
           <Route
             exact
             path="/shoutouts"
@@ -181,11 +181,11 @@ class App extends Component {
                   }}
                 ></iframe> */}
 
-                <iframe 
-                  class="airtable-embed" 
-                  src="https://airtable.com/embed/shrQR31H3cM5giZGG?backgroundColor=blue" 
-                  frameborder="0" onmousewheel="" width="100%" height="2849" 
-                
+                <iframe
+                  class="airtable-embed"
+                  src="https://airtable.com/embed/shrQR31H3cM5giZGG?backgroundColor=blue"
+                  frameborder="0" onmousewheel="" width="100%" height="2849"
+
                   style={{
                     background: "transparent",
                     border: "1px solid #ccc",
@@ -217,11 +217,11 @@ class App extends Component {
                     border: "1px solid #ccc",
                   }}
                 ></iframe> */}
-                <iframe 
-                  class="airtable-embed" 
+                <iframe
+                  class="airtable-embed"
                   src="https://airtable.com/embed/shrQR31H3cM5giZGG?backgroundColor=blue"
-                  frameborder="0" onmousewheel="" width="100%" height="2849" 
-                  
+                  frameborder="0" onmousewheel="" width="100%" height="2849"
+
                   style={{
                     background: "transparent",
                     border: "1px solid #ccc",
