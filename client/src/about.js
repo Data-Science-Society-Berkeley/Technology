@@ -34,6 +34,7 @@ import steven from "./Leadership Headshots/steven.jpeg";
 import michelle from "./Leadership Headshots/michelle.jpeg";
 import siddhant from "./Leadership Headshots/siddhant.jpeg";
 import elton from "./Leadership Headshots/EltonHeadshot.jpg";
+import angeline from "./Leadership Headshots/angeline.jpg";
 
 import pm from "./About/pmgroup.jpeg";
 import exec from "./About/exec.jpeg";
