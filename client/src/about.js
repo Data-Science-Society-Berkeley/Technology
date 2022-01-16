@@ -249,28 +249,11 @@ var circleStyle = {
 };
 const leadershipCards = [
   <Card style={cardstyle}>
-    <Image src={varunmi} style={imagestyle} />
-    <Card.Content>
-      <Card.Header style={textstyle}>Varun Mittal</Card.Header>
-      <Card.Meta style={{ marginTop: "1vw" }}>
-        <span style={roleStyle}>President</span>
-      </Card.Meta>
-    </Card.Content>
-    <Card.Content extra>
-      <a href="mailto:varunmittal@berkeley.edu">
-        <Icon size="large" name="mail" />
-      </a>
-      <a href="https://www.linkedin.com/in/varun-mittal-727559181/">
-        <Icon size="large" name="linkedin" />
-      </a>
-    </Card.Content>
-  </Card>,
-  <Card style={cardstyle}>
     <Image src={arnav} style={imagestyle} />
     <Card.Content>
       <Card.Header style={textstyle}>Arnav Patel</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
-        <span style={roleStyle}>Internal Vice President</span>
+        <span style={roleStyle}>President</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
@@ -283,19 +266,36 @@ const leadershipCards = [
     </Card.Content>
   </Card>,
   <Card style={cardstyle}>
-    {" "}
-    <Image style={imagestyle} src={atharva} />
+    <Image src={siddhant} style={imagestyle} />
     <Card.Content>
-      <Card.Header style={textstyle}>Atharva Mehendale</Card.Header>
+      <Card.Header style={textstyle}>Siddhant Satapathy</Card.Header>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>Internal Vice President</span>
+      </Card.Meta>
+    </Card.Content>
+    <Card.Content extra>
+      <a href="mailto:sidsata@berkeley.edu">
+        <Icon size="large" name="mail" />
+      </a>
+      <a href="https://www.linkedin.com/in/siddhant-satapathy/">
+        <Icon size="large" name="linkedin" />
+      </a>
+    </Card.Content>
+  </Card>,
+  <Card style={cardstyle}>
+    {" "}
+    <Image src={marlon} style={imagestyle}/>
+    <Card.Content>
+      <Card.Header style={textstyle}>Marlon Fu</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
         <span style={roleStyle}>External Vice President</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:atharva@berkeley.edu">
+      <a href="mailto:marlonfu@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/atharvamehendale/ ">
+      <a href="https://www.linkedin.com/in/marlonfu/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
@@ -591,7 +591,7 @@ class About extends Component {
           fontSize: "6vw",
           lineHeight: "6vw",
         }}
-        >About Us  
+        >About Us
         </h1>
         <div>
           <Image src={rectangle}
@@ -611,7 +611,7 @@ class About extends Component {
           top: "20vw",
           // marginTop: '3vw',
           left: "30vw",
-          right: "30vw", 
+          right: "30vw",
           bottom: "15vw",
           // margin: 'auto',
           // margintop: "10vw",
