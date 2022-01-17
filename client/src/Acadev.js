@@ -185,7 +185,7 @@ const cardHeader = {
   fontSize: "2.75vw",
   color: "#000000",
   textAlign: "center",
-  
+
   marginTop: "1.5vw",
 };
 
@@ -198,7 +198,7 @@ const cardUnderlineStyle = {
 };
 
 const cardImageSyle = {
-  width: "15vw", 
+  width: "15vw",
   margin: "1vw auto",
   marginTop: '2vw',
   backgroundColor: 'transparent',
@@ -326,15 +326,15 @@ class Acadev extends Component {
           fontSize: "6vw",
           lineHeight: "6vw",
         }}
-        >Academic Development    
+        >Academic Development
         </h1>
-        
+
         <div>
           <Image style={{position: 'relative',
           top: "20vw",
           // marginTop: '5vw',
           left: "50vw",
-          right: "50vw", 
+          right: "50vw",
           // bottom: "15vw",
           // margin: 'auto',
           // margintop: "10vw",
@@ -521,7 +521,7 @@ class Acadev extends Component {
 
                   }}
                 >
-                  350+{" "}
+                  400+{" "}
                 </div>{" "}
               </div>
               <div
@@ -557,7 +557,7 @@ class Acadev extends Component {
 
         <Grid centered>
           <Grid.Row></Grid.Row>
-          
+
           <Grid.Row
             style={{
               color: "#000000",
@@ -572,12 +572,12 @@ class Acadev extends Component {
               marginRight: "20vw",
             }}
           >
-            The academic development committee hosts a variety of 
-            educational workshops for the 
+            The academic development committee hosts a variety of
+            educational workshops for the
             <strong style={{ color: "#8CD6D1" }}> {" "}
               greater campus community {" "}
-            </strong> 
-            , and directs our general membership (GM) program open to 
+            </strong>
+            , and directs our decal program open to
             <strong style={{ color: "#8CD6D1" }}> {" "}
               all skill levels and students {" "}
             </strong>.
@@ -606,9 +606,9 @@ class Acadev extends Component {
                 }}
               ></Image>
             </div>
-            {CustomTitleBlack({ title: "General Membership" })}
+            {CustomTitleBlack({ title: "Decal Student" })}
           </Grid.Row>
-          
+
           <div style={{maxWidth: "50vw"}}>
             <Image src={gmLine}></Image>
           </div>
@@ -637,13 +637,13 @@ class Acadev extends Component {
                   marginRight: "2vw",
                 }}
               >
-                We hope to help students just starting out 
-                in Data Science to complete their first Data 
+                We hope to help students just starting out
+                in Data Science to complete their first Data
                 Science research project!
               </div>
             </div>
           </Grid.Row>
-          
+
           <Grid.Row centered>
             <Card.Group centered>
               <Card style={overlayboxes}>
@@ -653,101 +653,36 @@ class Acadev extends Component {
                 <Image style={cardUnderlineStyle} src={yellowUnderline}></Image>
                 <Image style={cardImageSyle} src={CMImage}></Image>
                 <Card.Description style={cardDescription}>
-                  Act as a mentor for projects and 
-                  teach relevant skills for  research! 
-                  Conduct  lectures covering Data 
+                  Act as a mentor for projects and
+                  teach relevant skills for  research!
+                  Conduct  lectures covering Data
                   Science and project collaboration!
                 </Card.Description>
               </Card>
               <Card style={overlayboxes}>
-                <Card.Header style={cardHeader}>General Member</Card.Header>
+                <Card.Header style={cardHeader}>Decal Student</Card.Header>
                 <div>
                   <Image style={cardUnderlineStyle} src={yellowUnderline}></Image>
                 </div>
-                
+
                 <Image style={cardImageSyle} src={GMImage}></Image>
                 <Card.Description style={cardDescription}>
-                  Collaborate and develop a 
-                  semester-long project of your 
-                  choosing! Present at the Berkeley 
-                  Data Science Research Symposium 
+                  Collaborate and develop a
+                  semester-long project of your
+                  choosing! Present at the Berkeley
+                  Data Science Research Symposium
                   and publish on the DSS website!
                 </Card.Description>
               </Card>
             </Card.Group>
           </Grid.Row>
-          <Grid.Row centered columns={1} style={{marginBottom: "-1.5vw"}}>
-            
-            <Button.Group centered>
-              <Link to="education">
-                <Button style={{
-                  background: "#FFFFFF",
-                  border: "5px solid #8CD6D1",
-                  boxSizing: "border-box",
-                  borderRadius: "3vw",
-                  width: "100%",
-                  height: "7.5vw",
-                  marginTop: "-1.5vw",
-                  marginBottom: "-1.5vw",
-                  //marginLeft: "5%",
-                  //marginRight: "5%",
-                  fontSize: "2.5vw",
-                  lineHeight: "2vw",
-                  fontWeight: 200,
-                  fontFamily: "Montserrat",
-                }}>
-                  <div
-                    style={{
-                      marginTop: "-0.5vw",
-                      marginLeft: "0vw",
-                      marginRight: "0vw",
-                    }}
-                  >
-                    Apply to become a General Member! 
-                  </div>
-                </Button>
-              </Link>
-            </Button.Group>
-            <div>
-              <Image
-                src={squiggly1}
-                style={{
-                  right: "-10%",
-                  width: "70vw",
-                  position: "absolute",
-                  top: "0%",
-                }}
-              ></Image>
-            </div>
-          </Grid.Row>
-          
-          
-          <Grid.Row
-            centered
-            columns={2}
-            style={{ marginTop: "4vw", right: "3vw" }}
-          >
-            
-            {/* No Decal Spring 2021 rip:( */}
-            {/* <Grid.Column width={4} textAlign="center">
-              <Link to="/decal">
-                <div style={info}>
-                  <strong style={{ color: "#FFC54A" }}>
-                    {" "}
-                    Interested in being a part of our DeCal instead?{" "}
-                  </strong>
-                  Check out the DeCal Committee Page.
-                </div>
-              </Link>
-            </Grid.Column> */}
-          
-          </Grid.Row>
+
           {CustomTitleBlack({ title: "Workshops" })}
           <Grid.Row>
           <div style={{maxWidth: "27vw"}}>
             <Image src={workshopLine}></Image>
           </div>
-          
+
           <Grid.Row centered style={{ marginBottom: "0vw", marginTop: "3.5vw" }}>
             <div
               style={{
@@ -757,8 +692,6 @@ class Acadev extends Component {
                 borderRadius: "3vw",
                 width: "55%",
                 height: "12vw",
-                //marginLeft: "5%",
-                //marginRight: "5%",
                 fontSize: "2vw",
                 lineHeight: "2vw",
                 fontWeight: "21.5vw",
@@ -773,10 +706,10 @@ class Acadev extends Component {
                   marginRight: "2vw",
                 }}
               >
-                Collaborate with students from a variety of backgrounds 
-                and other organizations to educate the campus 
-                community of practical problems, phenomena and tools 
-                related to data science. 
+                Collaborate with students from a variety of backgrounds
+                and other organizations to educate the campus
+                community of practical problems, phenomena and tools
+                related to data science.
               </div>
             </div>
           </Grid.Row>
@@ -785,23 +718,23 @@ class Acadev extends Component {
             <Card.Group centered>
               <Card style={overlayboxes}>
                 <Image src={WSImage} style={{
-                  width: "19vw", 
+                  width: "19vw",
                   margin: "1vw auto",
                   marginTop: '3vw',
                   backgroundColor: 'transparent',}}
                 ></Image>
                 <Card.Description style={cardDescription}>
-                  Communicate with fellow team 
-                  members and other organizations 
-                  to develop workshop materials! 
-                  Teach diverse audiences and 
-                  support the data science 
+                  Communicate with fellow team
+                  members and other organizations
+                  to develop workshop materials!
+                  Teach diverse audiences and
+                  support the data science
                   community on and off-campus!
                 </Card.Description>
               </Card>
             </Card.Group>
           </Grid.Row>
-          
+
 
           <Grid.Row centered style={{ marginBottom: "3vw", marginTop: "0vw"}}>
             <Card.Group centered>
@@ -812,8 +745,6 @@ class Acadev extends Component {
                 borderRadius: "3vw",
                 width: "25%",
                 height: "14vw",
-                //marginLeft: "8%",
-                //marginRight: "5%",
                 fontSize: "2vw",
                 lineHeight: "2vw",
                 fontWeight: "21.5vw",
@@ -870,13 +801,13 @@ class Acadev extends Component {
                       marginRight: "2vw",
                     }}
                   >
-                    Contact us here 
+                    Contact us here
                   </div>
                 </Link>
               </Card>
             </Card.Group>
           </Grid.Row>
-          
+
           </Grid.Row>
           {CustomTitleBlack({ title: "AcaDev Directors" })}
           <Grid.Row>
@@ -960,7 +891,7 @@ class Acadev extends Component {
               ></Image>
             </Image.Group>
           </Grid.Row>
-          
+
         </Grid>
       </div>
     );
