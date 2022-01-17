@@ -33,7 +33,7 @@ import pranati from "./Leadership Headshots/pranati.jpeg";
 import steven from "./Leadership Headshots/steven.jpeg";
 import michelle from "./Leadership Headshots/michelle.jpeg";
 import siddhant from "./Leadership Headshots/siddhant.jpeg";
-import elton from "./Leadership Headshots/EltonHeadshot.jpg";
+import elton from "./Leadership Headshots/elton.jpeg";
 import angeline from "./Leadership Headshots/angeline.jpg";
 import andi from "./Leadership Headshots/andi.jpg";
 import savvy from "./Leadership Headshots/pranati.jpeg";
