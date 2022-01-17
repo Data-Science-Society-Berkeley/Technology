@@ -35,6 +35,7 @@ import michelle from "./Leadership Headshots/michelle.jpeg";
 import siddhant from "./Leadership Headshots/siddhant.jpeg";
 import elton from "./Leadership Headshots/EltonHeadshot.jpg";
 import angeline from "./Leadership Headshots/angeline.jpg";
+import andi from "./Leadership Headshots/andi.jpg";
 
 import pm from "./About/pmgroup.jpeg";
 import exec from "./About/exec.jpeg";
@@ -346,10 +347,10 @@ const leadershipCards = [
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:sabrinaywu@berkeley.edu">
+      <a href="mailto:chanelton@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/sabrinayihwu/">
+      <a href="https://www.linkedin.com/in/chan-elton/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
@@ -400,10 +401,10 @@ const leadershipCards = [
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:marlonfu@berkeley.edu">
+      <a href="mailto:angelinelyk@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/marlonfu/">
+      <a href="https://www.linkedin.com/in/angelineleeyingkee/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
@@ -446,18 +447,18 @@ const leadershipCards = [
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={steven} />
+    <Image style={imagestyle} src={andi} />
     <Card.Content>
-      <Card.Header style={textstyle}>Steven Chen</Card.Header>
+      <Card.Header style={textstyle}>Andi Halim</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
         <span style={roleStyle}>Director of Social Good</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:schen1822@berkeley.edu">
+      <a href="mailto:andihalim@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/steven-z-chen">
+      <a href="https://www.linkedin.com/in/andihalim/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
