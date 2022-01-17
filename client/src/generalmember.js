@@ -54,7 +54,7 @@ const lectures = [
   {
     week: 1,
     date: new Date("9/21/2021 PST"),
-    name: "Welcome, Icebreakers! :D",
+    name: "Welcome, Icebreakers, Starting Your Project",
     link: "https://tinyurl.com/4unszu42",
   },
   {
