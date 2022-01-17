@@ -442,7 +442,7 @@ const leadershipCards = [
       <a href="mailto:sstreitman@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/pranatimodumudi/">
+      <a href="https://www.linkedin.com/company/dssberkeley/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
