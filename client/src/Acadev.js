@@ -405,19 +405,15 @@ class Acadev extends Component {
 
                   }}
                 >
-                  4
+                  6
                 </div>
               </div>
               <div
                 style={{
                   background: "#FFFFFF",
-                  // border: "5px solid #8CD6D1",
                   boxSizing: "border-box",
-                  // borderRadius: "3vw",
                   width: "20%",
                   height: "14vw",
-                  // marginLeft: "8%",
-                  // marginRight: "7vw",
                 }}
               >
                 <div
@@ -427,8 +423,7 @@ class Acadev extends Component {
                     fontWeight: "21vw",
                     fontFamily: "Montserrat",
                     marginTop: "2vw",
-                    // marginLeft: "2vw",
-                    // marginRight: "2vw",
+
                     color: '#8CD6D1',
                   }}
                 >
@@ -438,16 +433,9 @@ class Acadev extends Component {
               <div
                 style={{
                   background: "#FFFFFF",
-                  // border: "5px solid #8CD6D1",
                   boxSizing: "border-box",
-                  // borderRadius: "3vw",
                   width: "10%",
                   height: "14vw",
-                  // marginLeft: "8%",
-                  // marginRight: "5%",
-                  // fontSize: "2vw",
-                  // lineHeight: "2vw",
-                  // fontWeight: "21.5vw",
                   fontFamily: "Montserrat",
                 }}
               >
@@ -455,7 +443,6 @@ class Acadev extends Component {
                   style={{
                     marginTop: "4vw",
                     marginLeft: "2%",
-                    // marginRight: "2vw",
                     fontSize: "8vw",
                     lineHeight: "8vw",
                     color: '#8CD6D1',
@@ -469,13 +456,9 @@ class Acadev extends Component {
               <div
                 style={{
                   background: "#FFFFFF",
-                  // border: "5px solid #8CD6D1",
                   boxSizing: "border-box",
-                  // borderRadius: "3vw",
                   width: "20%",
                   height: "14vw",
-                  // marginLeft: "8%",
-                  // marginRight: "7vw",
                 }}
               >
                 <div
@@ -485,8 +468,6 @@ class Acadev extends Component {
                     fontWeight: "21vw",
                     fontFamily: "Montserrat",
                     marginTop: "4vw",
-                    // marginLeft: "2vw",
-                    // marginRight: "2vw",
                     color: '#8CD6D1',
                   }}
                 >
@@ -496,16 +477,10 @@ class Acadev extends Component {
               <div
                 style={{
                   background: "#FFFFFF",
-                  // border: "5px solid #8CD6D1",
                   boxSizing: "border-box",
-                  // borderRadius: "3vw",
                   width: "17%",
                   height: "14vw",
                   marginLeft: "2%",
-                  // marginRight: "5%",
-                  // fontSize: "2vw",
-                  // lineHeight: "2vw",
-                  // fontWeight: "21.5vw",
                   fontFamily: "Montserrat",
                 }}
               >
@@ -521,7 +496,7 @@ class Acadev extends Component {
 
                   }}
                 >
-                  400+{" "}
+                  350+{" "}
                 </div>{" "}
               </div>
               <div
