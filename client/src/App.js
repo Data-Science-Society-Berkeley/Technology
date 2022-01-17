@@ -1,7 +1,7 @@
 import React, { Fragment, Component } from "react";
 import "./App.css";
 import { Button, Container, Menu, Image, Header } from "semantic-ui-react";
-//import Login from "./Login";
+import Login from "./Login";
 import Registration from "./Register";
 import About from "./about";
 import Committees from "./committees";
