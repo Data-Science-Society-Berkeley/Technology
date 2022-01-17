@@ -300,7 +300,7 @@ class NavBar extends Component {
                 services
               </Link>
             </Menu.Item>
-            /*<Menu.Item
+            <Menu.Item
               name="login"
               active={activeItem === "login"}
               onClick={this.handleItemClick}
@@ -309,7 +309,7 @@ class NavBar extends Component {
               <Link style={linkStyling} to="login">
                 login
               </Link>
-            </Menu.Item>*/
+            </Menu.Item>
             <Menu.Item
               name="apply"
               active={activeItem === "apply"}
