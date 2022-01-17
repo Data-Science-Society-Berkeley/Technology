@@ -259,7 +259,7 @@ class NavBar extends Component {
                   <Link to="/gm">
                     <Dropdown.Item
                       icon="bookmark"
-                      text="GM Landing"
+                      text="Decal Landing"
                     ></Dropdown.Item>
                   </Link>
                 </Dropdown.Menu>

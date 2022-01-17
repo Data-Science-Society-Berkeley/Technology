@@ -348,7 +348,7 @@ class DecalLearn extends Component {
           fontSize: "3vw",
           lineHeight: "6vw",
           }}
-        >General Membership Program | Fall 2021
+        >Decal | Spring 2022
         </h1>
         <div>
           <Image src={bottomleft}
@@ -388,14 +388,14 @@ class DecalLearn extends Component {
               fontSize: "2vw",
               fontWeight: "21.5vw",
             }}>
-              Welcome to Data Science Society at Berkeley&rsquo;s General Member Program!
+              Welcome to Data Science Society at Berkeley&rsquo;s Decal Program!
               This semester-long program is geared towards introducing students to essential data science skills through
               project based learning. Our program takes a departure from the traditional classroom setting by allowing members
               to work collaboratively on an original data science project of their choosing.
 
               Members will have full creative control and will receive mentorship from our Academic Development committee members. We will cover every step of the
               data science lifecycle: from formulating a data-centric project idea, to extracting stories with exploratory data analysis,
-              to finally creating and evaluating machine learning models.
+              to finally creating and evaluating machine learning models. Below is the schedule from last semester, this semester's schedule will be updated accordingly! 
 
               <Image
                 src={squiggly1}
