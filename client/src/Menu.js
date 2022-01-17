@@ -237,14 +237,11 @@ class NavBar extends Component {
               <Dropdown style={linkStyling} item text="committees">
                 <Dropdown.Menu>
                   <Link to="/acadev" style={linkStyling}>
-                    <Dropdown.Item icon="pencil" text="DeCal" />
+                    <Dropdown.Item icon="pencil" text="Acadev" />
                   </Link>
                   <Link to="/consulting" style={linkStyling}>
                     <Dropdown.Item icon="exchange" text="Consulting" />
                   </Link>
-                  {/* <Link to="/decal" style={linkStyling}>
-                    <Dropdown.Item icon="book" text="DeCal" />
-                  </Link> */}
                   <Link to="/socialgood" style={linkStyling}>
                     <Dropdown.Item icon="like" text="Social Good" />
                   </Link>
@@ -259,24 +256,12 @@ class NavBar extends Component {
             >
               <Dropdown style={linkStyling} item text="education">
                 <Dropdown.Menu>
-                  {/* <Link to="/education">
-                    <Dropdown.Item
-                      icon="folder"
-                      text="Overview"
-                    ></Dropdown.Item>
-                  </Link> */}
                   <Link to="/gm">
                     <Dropdown.Item
                       icon="bookmark"
                       text="GM Landing"
                     ></Dropdown.Item>
                   </Link>
-                  {/* <Link to="/decallearn">
-                    <Dropdown.Item
-                      icon="grid layout"
-                      text="DeCal Landing"
-                    ></Dropdown.Item>
-                  </Link> */}
                 </Dropdown.Menu>
               </Dropdown>
             </Menu.Item>
@@ -316,9 +301,13 @@ class NavBar extends Component {
               onClick={this.handleItemClick}
               style={navbar}
             >
-              <Link style={applystyle} to="/apply">
-                apply
-              </Link>
+            <Dropdown style={linkStyling} item text="apply">
+              <Dropdown.Menu>
+                <Link to="/apply" style={linkStyling}>
+                  <Dropdown.Item text="Application" />
+                </Link>
+              </Dropdown.Menu>
+            </Dropdown>
             </Menu.Item>
             <Menu.Item header></Menu.Item>
           </Menu.Menu>
