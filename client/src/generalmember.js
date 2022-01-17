@@ -389,13 +389,14 @@ class DecalLearn extends Component {
               fontWeight: "21.5vw",
             }}>
               Welcome to Data Science Society at Berkeley&rsquo;s Decal Program!
+              Our program tailored towards beginner data scientists (previously known as General Membership) is now a Decal!
               This semester-long program is geared towards introducing students to essential data science skills through
               project based learning. Our program takes a departure from the traditional classroom setting by allowing members
               to work collaboratively on an original data science project of their choosing.
 
               Members will have full creative control and will receive mentorship from our Academic Development committee members. We will cover every step of the
               data science lifecycle: from formulating a data-centric project idea, to extracting stories with exploratory data analysis,
-              to finally creating and evaluating machine learning models. Below is the schedule from last semester, this semester's schedule will be updated accordingly! 
+              to finally creating and evaluating machine learning models. Below is the schedule from last semester, this semester's schedule will be updated accordingly!
 
               <Image
                 src={squiggly1}
