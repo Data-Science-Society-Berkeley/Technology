@@ -375,18 +375,18 @@ const leadershipCards = [
 </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={alina} />
+    <Image style={imagestyle} src={advait} />
     <Card.Content>
-      <Card.Header style={textstyle}>Alina Trinh</Card.Header>
+      <Card.Header style={textstyle}>Advait Marathe</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
         <span style={roleStyle}>Director of Consulting</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:tutrinh@berkeley.edu">
+      <a href="mailto:advaitmarathe@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/tu-trinh/">
+      <a href="https://www.linkedin.com/in/advaitumarathe/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
@@ -429,15 +429,15 @@ const leadershipCards = [
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={pranati} />
+    <Image style={imagestyle} src={savvy} />
     <Card.Content>
-      <Card.Header style={textstyle}>Pranati Modumudi</Card.Header>
+      <Card.Header style={textstyle}>Savannah Streitman</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
         <span style={roleStyle}>Director of Acadev</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:pmodumudi@berkeley.edu">
+      <a href="mailto:sstreitman@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
       <a href="https://www.linkedin.com/in/pranatimodumudi/">
