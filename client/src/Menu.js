@@ -294,7 +294,7 @@ class NavBar extends Component {
             <Dropdown style={linkStyling} item text="apply">
               <Dropdown.Menu>
                 <Link to="/apply" style={linkStyling}>
-                  <Dropdown.Item text="Application" />
+                  <Dropdown.Item icon="edit" text="Application" />
                 </Link>
               </Dropdown.Menu>
             </Dropdown>
