@@ -963,44 +963,7 @@ class About extends Component {
               marginLeft: screenSizeResult,
             }}
           >
-            <Grid.Column>
-              <div
-                style={{
-                  textAlign: "center",
-                  borderStyle: "solid",
-                  borderColor: "#FFC54A",
-                  borderWidth: ".5vw",
-                  borderRadius: "3vw",
-                  minWidth: "28vw",
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: "2.5vw",
-                    lineHeight: "5vw",
-                  }}
-                >
-                  General Member
-                </div>
-                <Image
-                  src={commit}
-                  style={{ width: "25vw", margin: "2vw auto" }}
-                ></Image>
-                <div
-                  style={{
-                    fontSize: "2vw",
-                    lineHeight: "2.5vw",
-                    width: "25vw",
-                    margin: "2vw auto",
-                    alignText: "center",
-                    marginBottom: "3.5vw",
-                  }}
-                >
-                  GMs complete and present semester-long research projects under
-                  the guidance of our Academic Development committee.
-                </div>
-              </div>
-            </Grid.Column>
+
             <Grid.Column>
               <div
                 style={{
@@ -1033,7 +996,7 @@ class About extends Component {
                     alignText: "center",
                   }}
                 >
-                  DeCal students enroll in our DeCal - run by our DeCal
+                  DeCal students enroll in our DeCal - run by our Acadev
                   committee - and learn about industry relevant DS tools.
                 </div>
               </div>
