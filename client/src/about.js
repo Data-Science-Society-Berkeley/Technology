@@ -949,7 +949,7 @@ class About extends Component {
                   }}
                 >
                   CMs take charge of their committees: Academic Development,
-                  Consulting, DeCal, and Social Good!
+                  Consulting, and Social Good!
                 </div>
               </div>
             </Grid.Column>

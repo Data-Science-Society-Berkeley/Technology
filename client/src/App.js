@@ -122,6 +122,13 @@ class App extends Component {
             )}
           />
           <Route
+            path="/coffee"
+            component={() => {
+              window.location.href = "https://tinyurl.com/dsscoffeechat";
+              return null;
+            }}
+          />
+          <Route
             exact
             path="/apply"
             render={(props) => (
