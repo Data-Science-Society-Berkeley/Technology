@@ -54,7 +54,7 @@ const lectures = [
   {
     week: 1,
     date: new Date("9/21/2021 PST"),
-    name: "Welcome, Icebreakers, Starting Your Project",
+    name: "Welcome, Icebreakers! :D",
     link: "https://tinyurl.com/4unszu42",
   },
   {
@@ -111,7 +111,7 @@ const lectures = [
     name: "How to Create an Engaging Deliverable (Deepnote guest speaker)",
     link: "https://tinyurl.com/2p9c8368",
   },
-  
+
   {
     week: 10,
     date: new Date("11/23/2021 PST"),
@@ -213,7 +213,7 @@ const inTextLink = {
   color: "#8CD6D1",
   fontStyle: "normal",
   textAlign: "center",
-  
+
 };
 const titletext = {
   fontFamily: "Montserrat",
@@ -225,7 +225,7 @@ const titletext = {
   textAlign: "center",
   marginLeft: "20vw",
   //marginBottom: "3vw",
-  
+
 };
 
 
@@ -348,7 +348,7 @@ class DecalLearn extends Component {
           fontSize: "3vw",
           lineHeight: "6vw",
           }}
-        >General Membership Program | Fall 2021  
+        >General Membership Program | Fall 2021
         </h1>
         <div>
           <Image src={bottomleft}
@@ -363,7 +363,7 @@ class DecalLearn extends Component {
           }}>
           </Image>
         </div>
-      
+
         <Grid centered>
         <div
           style={{
@@ -376,25 +376,25 @@ class DecalLearn extends Component {
             fontWeight: "300",
             fontSize: "1.5vw",
             lineHeight: "2vw",
-            
+
           }}
         >
-          
+
           <Grid.Row>
-            <div style={{ 
-              marginTop: "25vw", 
+            <div style={{
+              marginTop: "25vw",
               textAlign: "center",
               lineHeight: "3vw",
               fontSize: "2vw",
               fontWeight: "21.5vw",
             }}>
-              Welcome to Data Science Society at Berkeley&rsquo;s General Member Program! 
-              This semester-long program is geared towards introducing students to essential data science skills through 
-              project based learning. Our program takes a departure from the traditional classroom setting by allowing members 
-              to work collaboratively on an original data science project of their choosing. 
-              
-              Members will have full creative control and will receive mentorship from our Academic Development committee members. We will cover every step of the 
-              data science lifecycle: from formulating a data-centric project idea, to extracting stories with exploratory data analysis, 
+              Welcome to Data Science Society at Berkeley&rsquo;s General Member Program!
+              This semester-long program is geared towards introducing students to essential data science skills through
+              project based learning. Our program takes a departure from the traditional classroom setting by allowing members
+              to work collaboratively on an original data science project of their choosing.
+
+              Members will have full creative control and will receive mentorship from our Academic Development committee members. We will cover every step of the
+              data science lifecycle: from formulating a data-centric project idea, to extracting stories with exploratory data analysis,
               to finally creating and evaluating machine learning models.
 
               <Image
@@ -408,22 +408,22 @@ class DecalLearn extends Component {
                 }}
               ></Image>
 
-              
+
             </div>
 
-            
+
           </Grid.Row>
-          
-          
+
+
           <Grid.Row
             centered
             columns={2}
-            style={{ 
-              marginTop: "4vw", 
-              right: "3vw" 
+            style={{
+              marginTop: "4vw",
+              right: "3vw"
             }}
           >
-           
+
               <Grid.Column>
                 <div style={{ textAlign: "center", marginTop: "10vw",}}>
                   {CustomTitleBlack({ title: "Schedule" })}
@@ -438,12 +438,12 @@ class DecalLearn extends Component {
                 </div>
 
 
-                
+
               </Grid.Column>
-              
+
               <Grid.Column>
-                
-                <Image 
+
+                <Image
                   src={light}
                   style={{
                     top: "10%",
@@ -454,31 +454,31 @@ class DecalLearn extends Component {
                   }}>
                 </Image>
               </Grid.Column>
-              
-            
+
+
 
           </Grid.Row>
-          
-          
+
+
 
 
           <div>
-            <Grid.Row 
-              style={{ 
-                marginRight: "5vw", 
+            <Grid.Row
+              style={{
+                marginRight: "5vw",
                  marginTop: "5vw",
                 }}>
               {this.loadTable({ lectures: lectures })}
             </Grid.Row>
           </div>
-          
+
           <Grid.Row style={{ marginTop: "6vw", marginBottom: "4vw" }}>
             <Header style={headTextStyle}>For all course materials, click <a style={inTextLink} href="https://drive.google.com/drive/folders/15I7X9a95b1kox6TdLxjS622AxJNWMVXM?usp=sharing">here</a></Header>
           </Grid.Row>
 
           <Grid.Row style={{ marginTop: "6vw", marginBottom: "4vw" }}>
           {CustomTitleBlack({ title: "Directors" })}
-          
+
           <div style={{margin: "0 auto", maxWidth: "28vw"}}>
                     <Image src={gmLine2}></Image>
           </div>
@@ -548,7 +548,7 @@ class DecalLearn extends Component {
                 </Card.Content>
               </Card>
             </Card.Group>
-    
+
 
             <Image
                 src={squiggly1_rotate}
@@ -562,7 +562,7 @@ class DecalLearn extends Component {
                 }}
               ></Image>
           </Grid.Row>
-          
+
 
           <Grid.Row style={{ marginTop: "8vw", marginBottom: "5vw" }}>
             {CustomTitleBlack({ title: "Previous Projects" })}
@@ -572,13 +572,13 @@ class DecalLearn extends Component {
             </div>
           </Grid.Row>
 
-          
+
 
           <Grid.Row>
             <Card.Group itemsPerRow={3}>
               <Card style={cardstyle} href='https://docs.google.com/presentation/d/1UKztQg67ZjjskCrqMhdgmbnVVO9al-IPx-xR2-LkIEA/edit?usp=sharing' target="_blank">
                 {" "}
-                
+
                 <Image style={imagestyle} src={proj1} />
                 <Card.Content>
                   <Card.Header style={textstyle}>Predicting Housing Prices</Card.Header>
@@ -625,7 +625,7 @@ class DecalLearn extends Component {
                   </Card.Meta>
                 </Card.Content>
               </Card>
-              
+
               <Card style={cardstyle} href='https://docs.google.com/presentation/d/1ce1H9ZcV6GY-15wkIqw9orR7AMtiJiijKQ2GGLVe--8/edit?usp=sharing' target="_blank">
                 {" "}
                 <Image style={imagestyle} src={proj5} />
@@ -637,7 +637,7 @@ class DecalLearn extends Component {
                     </span>
                   </Card.Meta>
                 </Card.Content>
-                
+
               </Card>
               <Card style={cardstyle} href='https://deepnote.com/project/7acf0dbb-348f-4776-a97d-2d77186b4297#%2FNLP%20fake%20news%2Ffake.ipynb' target="_blank">
                 {" "}
@@ -650,7 +650,7 @@ class DecalLearn extends Component {
                     </span>
                   </Card.Meta>
                 </Card.Content>
-                
+
               </Card>
             </Card.Group>
           </Grid.Row>
