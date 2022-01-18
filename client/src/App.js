@@ -139,21 +139,9 @@ class App extends Component {
                 />
                 <NavBar {...props} />
                 <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
-                {/* <iframe
-                  class="airtable-embed airtable-dynamic-height"
-                  src="https://airtable.com/embed/shrqlxFIopQmX4PZX?backgroundColor=red"
-                  frameborder="0"
-                  onmousewheel=""
-                  width="100%"
-                  height="2849"
-                  style={{
-                    background: "transparent",
-                    border: "1px solid #ccc",
-                  }}
-                ></iframe> */}
                 <iframe
                   class="airtable-embed airtable-dynamic-height"
-                  src="https://airtable.com/embed/shrQR31H3cM5giZGG?backgroundColor=blue"
+                  src="https://airtable.com/embed/shraY96qjV1X6O09w?"
                   frameborder="0" onmousewheel="" width="100%" height="2849"
                   style={{
                     background: "transparent",
@@ -169,28 +157,15 @@ class App extends Component {
             path="/shoutouts"
             render={(props) => (
               <div>
-                {/* makes background white on page you're going to*/}
                 <Helmet
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar {...props} />
                 <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
-                {/* <iframe
-                  class="airtable-embed airtable-dynamic-height"
-                  src="https://airtable.com/embed/shrmRyFDRJ9nKLmi4?backgroundColor=purple"
-                  frameborder="0"
-                  onmousewheel=""
-                  width="100%"
-                  height="2849"
-                  style={{
-                    background: "transparent",
-                    border: "1px solid #ccc",
-                  }}
-                ></iframe> */}
 
                 <iframe
                   class="airtable-embed"
-                  src="https://airtable.com/embed/shrQR31H3cM5giZGG?backgroundColor=blue"
+                  src="https://airtable.com/embed/shraY96qjV1X6O09w?"
                   frameborder="0" onmousewheel="" width="100%" height="2849"
 
                   style={{
@@ -212,21 +187,9 @@ class App extends Component {
                 />
                 <NavBar {...props} />
                 <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
-                {/* <iframe
-                  class="airtable-embed airtable-dynamic-height"
-                  src="https://airtable.com/embed/shrKLwan5Jjt5Rkkl?backgroundColor=purple"
-                  frameborder="0"
-                  onmousewheel=""
-                  width="100%"
-                  height="2849"
-                  style={{
-                    background: "transparent",
-                    border: "1px solid #ccc",
-                  }}
-                ></iframe> */}
                 <iframe
                   class="airtable-embed"
-                  src="https://airtable.com/embed/shrQR31H3cM5giZGG?backgroundColor=blue"
+                  src="https://airtable.com/embed/shraY96qjV1X6O09w?"
                   frameborder="0" onmousewheel="" width="100%" height="2849"
 
                   style={{
@@ -1004,19 +967,3 @@ class App extends Component {
   }
 }
 export default withRouter(App);
-
-// <div style={{ height: "200%" }}>
-//   <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
-//   <iframe
-//     class="airtable-embed airtable-dynamic-height"
-//     src="https://airtable.com/embed/shrfYM5C3nk3tacyN?backgroundColor=green"
-//     frameborder="0"
-//     onmousewheel=""
-//     width="100%"
-//     height="2849"
-//     style={{
-//       background: "transparent",
-//       border: "1px solid #ccc",
-//     }}
-//   ></iframe>
-// </div>
