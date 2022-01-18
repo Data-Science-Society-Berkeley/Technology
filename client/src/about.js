@@ -36,7 +36,7 @@ import siddhant from "./Leadership Headshots/siddhant.jpeg";
 import elton from "./Leadership Headshots/elton.jpeg";
 import angeline from "./Leadership Headshots/angeline.jpg";
 import andi from "./Leadership Headshots/andi.jpg";
-import savvy from "./Leadership Headshots/pranati.jpeg";
+import savvy from "./Leadership Headshots/savvy.jpeg";
 import advait from "./Leadership Headshots/advait.jpeg";
 
 import pm from "./About/pmgroup.jpeg";
