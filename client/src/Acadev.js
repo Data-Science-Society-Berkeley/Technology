@@ -45,9 +45,9 @@ import sabrina from "./Leadership Headshots/SabrinaHeadshot.jpeg";
 import story from "./Acadev Images/AcaDevBanner-compress-min.jpg";
 import haas2 from "./Acadev Images/hbsa.jpg";
 import ascend from "./Acadev Images/Ascend-Logo.jpg";
-import marlon from "./Leadership Headshots/marlon.jpeg";
+import angeline from "./Leadership Headshots/angeline.jpg";
 import pranati from "./Leadership Headshots/pranati.jpeg";
-import michelle from "./Leadership Headshots/michelle.jpeg";
+import savvy from "./Leadership Headshots/savvy.jpeg";
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -789,36 +789,18 @@ class Acadev extends Component {
             <Card.Group style={{ marginTop: "5vw" }}>
               <Card style={cardstyle}>
                 {" "}
-                <Image style={imagestyle} src={marlon} />
+                <Image style={imagestyle} src={angeline} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Marlon Fu</Card.Header>
+                  <Card.Header style={textstyle}>Angeline Lee</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={roleStyle}>Director of Acadev</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:marlonfu@berkeley.edu">
+                  <a href="mailto:angelinelyk@berkeley.edu">
                     <Icon size="large" name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/in/marlonfu/">
-                    <Icon size="large" name="linkedin" />
-                  </a>
-                </Card.Content>
-              </Card>
-              <Card style={cardstyle}>
-                {" "}
-                <Image style={imagestyle} src={michelle} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Michelle Li</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>Director of Acadev</span>
-                  </Card.Meta>
-                </Card.Content>
-                <Card.Content extra>
-                  <a href="mailto:mko357@berkeley.edu">
-                    <Icon size="large" name="mail" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/michelle-l-6ba957135/">
+                  <a href="https://www.linkedin.com/in/angelineleeyingkee/">
                     <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
@@ -837,6 +819,24 @@ class Acadev extends Component {
                     <Icon size="large" name="mail" />
                   </a>
                   <a href="https://www.linkedin.com/in/pranatimodumudi/">
+                    <Icon size="large" name="linkedin" />
+                  </a>
+                </Card.Content>
+              </Card>
+              <Card style={cardstyle}>
+                {" "}
+                <Image style={imagestyle} src={savvy} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Savannah Streitman</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>Director of Acadev</span>
+                  </Card.Meta>
+                </Card.Content>
+                <Card.Content extra>
+                  <a href="mailto:sstreitman@berkeley.edu">
+                    <Icon size="large" name="mail" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/dssberkeley/">
                     <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
