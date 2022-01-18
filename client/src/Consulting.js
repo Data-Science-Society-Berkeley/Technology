@@ -138,7 +138,7 @@ const cardDescription = {
 };
 
 const cardImageSyle = {
-  width: "15vw", 
+  width: "15vw",
   margin: "1vw auto",
   marginTop: '3vw',
   backgroundColor: 'transparent',
@@ -287,19 +287,19 @@ class Consulting extends Component {
   render() {
     let temp = [
       <Card style={cardstyle}>
-        <Image src={alina} style={imagestyle} />
+        <Image src={advait} style={imagestyle} />
         <Card.Content>
-          <Card.Header style={textstyle}>Alina Trinh</Card.Header>
+          <Card.Header style={textstyle}>Advait Marathe</Card.Header>
           <Card.Meta style={{ marginTop: "1vw" }}>
             <span style={roleStyle}>Director of Consulting</span>
             {/* TODO: Remove "date" class and use regular centered text instead */}
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
-          <a href="mailto:tutrinh@berkeley.edu">
+          <a href="mailto:advaitmarathe.edu">
             <Icon size="large" name="mail" />
           </a>
-          <a href="https://www.linkedin.com/in/tu-trinh/">
+          <a href="https://www.linkedin.com/in/advaitumarathe/">
             <Icon size="large" name="linkedin" />
           </a>
         </Card.Content>
@@ -375,18 +375,18 @@ class Consulting extends Component {
         </Card.Content>
       </Card>,
       <Card style={cardstyle}>
-      <Image src={advait} style={imagestyle} />
+      <Image src={alina} style={imagestyle} />
       <Card.Content>
-        <Card.Header style={textstyle}>Advait Marathe</Card.Header>
+        <Card.Header style={textstyle}>Alina Trinh</Card.Header>
         <Card.Meta style={{ marginTop: "1vw" }}>
           <span style={roleStyle}>PM</span>
         </Card.Meta>
       </Card.Content>
       <Card.Content extra>
-        <a href="mailto:advaitmarathe@berkeley.edu">
+        <a href="mailto:tutrinh@berkeley.edu">
           <Icon size="large" name="mail" />
         </a>
-        <a href="https://www.linkedin.com/in/advaitumarathe/">
+        <a href="https://www.linkedin.com/in/tu-trinh/">
           <Icon size="large" name="linkedin" />
         </a>
       </Card.Content>
@@ -409,7 +409,7 @@ class Consulting extends Component {
         </Card.Content>
       </Card>,
 
-      
+
     ];
     let temp2 = [
       <Card style={cardstyle}>
@@ -480,15 +480,15 @@ class Consulting extends Component {
           fontSize: "6vw",
           lineHeight: "6vw",
         }}
-        >Consulting  
+        >Consulting
         </h1>
-        
+
         <div>
           <Image style={{position: 'relative',
           top: "20vw",
           // marginTop: '5vw',
           left: "50vw",
-          right: "50vw", 
+          right: "50vw",
           bottom: "15vw",
           // margin: 'auto',
           // margintop: "10vw",
@@ -650,11 +650,11 @@ class Consulting extends Component {
             </Card.Group>
           </Grid.Row>
         </Grid>
-        
-        
+
+
         <Grid centered>
           <Grid.Row>
-            
+
             <Grid.Row
               style={{
                 color: "#000000",
@@ -709,7 +709,7 @@ class Consulting extends Component {
                 Business Intelligence
               </Card.Header>
               <div style={cardDescription}>
-                Visualizations, Customer Segmentation, Price Optimization, 
+                Visualizations, Customer Segmentation, Price Optimization,
                 Customer Churn, Operations Effeciency
               </div>
             </Card>
@@ -719,7 +719,7 @@ class Consulting extends Component {
                 Software Development
               </Card.Header>
               <div style={cardDescription}>
-                Warehousing, Systems Integration, Cloud Computing, 
+                Warehousing, Systems Integration, Cloud Computing,
                 Front-End Development, Back-End Development
               </div>
             </Card>
@@ -762,7 +762,7 @@ class Consulting extends Component {
                       marginRight: "0vw",
                     }}
                   >
-                    Client Testimonials 
+                    Client Testimonials
                   </div>
                 </Button>
               </Link>
@@ -790,7 +790,7 @@ class Consulting extends Component {
                       marginRight: "0vw",
                     }}
                   >
-                    Work With Us 
+                    Work With Us
                   </div>
                 </Button>
               </Link>
@@ -810,7 +810,7 @@ class Consulting extends Component {
 
 
 
-          
+
           {CustomTitleBlack({ title: "Project Managers" })}
           <Grid.Row>
             <div

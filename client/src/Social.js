@@ -244,9 +244,9 @@ class Social extends Component {
             >
               We are passionate about working with non-profit organizations to provide data-driven insights and actionable solutions through advanced analytical methods.
             </span> */}
-            
+
         {/*
-          </div>         
+          </div>
         </div>
         */}
 
@@ -325,11 +325,11 @@ class Social extends Component {
 
         <p style={bodyText}
           >
-          Data science has exploded in popularity due to its influence on the business landscape. The technological capabilities with data has provided 
-          business with a competitive advantage, opportunity to optimize efficiency, and in essence, more profit. 
+          Data science has exploded in popularity due to its influence on the business landscape. The technological capabilities with data has provided
+          business with a competitive advantage, opportunity to optimize efficiency, and in essence, more profit.
           <br/>
           <br/>
-          We seek to combine these same tools with a human-centered, datafied way of thinking to promise and act for change. We want to use the power of 
+          We seek to combine these same tools with a human-centered, datafied way of thinking to promise and act for change. We want to use the power of
           data science in service of humankind and offer creative solutions to support organizations addressing the world’s most urgent societal challenges.
         </p>
 
@@ -344,23 +344,23 @@ class Social extends Component {
             <Card.Group centered>
 
               <Card style={cardstyle}>
-                <Image style={imagestyle} src={steven} />
+                <Image style={imagestyle} src={andi} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Steven Chen</Card.Header>
+                  <Card.Header style={textstyle}>Andi Halim</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={roleStyle}>Director of Social Good</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:schen1822@berkeley.edu">
+                  <a href="mailto:andihalim@berkeley.edu">
                     <Icon size="large" name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/in/steven-z-chen">
+                  <a href="https://www.linkedin.com/in/andihalim/">
                     <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
-              
+
               <Card style={cardstyle}>
                 <Image style={imagestyle} src={evelyn} />
                 <Card.Content>
@@ -396,7 +396,7 @@ class Social extends Component {
                   </a>
                 </Card.Content>
               </Card>
-            
+
             </Card.Group>
             <Card.Group centered>
 
@@ -454,7 +454,7 @@ class Social extends Component {
                   </a>
                 </Card.Content>
               </Card>
-              
+
             </Card.Group>
           </Grid.Row>
         </Grid>
@@ -473,11 +473,11 @@ class Social extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <p>Medic builds world-class, open-source software that supports health workers delivering equitable care 
+                  <p>Medic builds world-class, open-source software that supports health workers delivering equitable care
                     that reaches the hardest-to-reach communities.
-                    
-                    They are the technical lead to the Community Health Toolkit, which helps health 
-                    workers ensure safe deliveries, track outbreaks faster, treat illnesses door-to-door, keep stock of essential 
+
+                    They are the technical lead to the Community Health Toolkit, which helps health
+                    workers ensure safe deliveries, track outbreaks faster, treat illnesses door-to-door, keep stock of essential
                     medicines, communicate about emergencies, and more.</p>
                 </Card.Content>
               </Card>
@@ -491,9 +491,9 @@ class Social extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <p>Community Tech Network is a nonprofit organization whose mission is to unite organizations and volunteers to transform lives 
-                    through digital literacy! 
-                    CTN seeks to improve the quality of life, the capacity, and the self-sufficiency of CTN’s learners, trainers, and our partner 
+                  <p>Community Tech Network is a nonprofit organization whose mission is to unite organizations and volunteers to transform lives
+                    through digital literacy!
+                    CTN seeks to improve the quality of life, the capacity, and the self-sufficiency of CTN’s learners, trainers, and our partner
                     organizations.</p>
                 </Card.Content>
               </Card>
@@ -507,10 +507,10 @@ class Social extends Component {
                     </Card.Meta>
                   </Card.Content>
                   <Card.Content extra>
-                    <p>TechSoup is a nonprofit international network of non-governmental organizations (NGOs) that provides technical support 
-                      and technological tools to other nonprofits. 
-                      
-                      Based in SF and founded in 1987, TechSoup supports nonprofits, charities, and libraries by providing access to donations and 
+                    <p>TechSoup is a nonprofit international network of non-governmental organizations (NGOs) that provides technical support
+                      and technological tools to other nonprofits.
+
+                      Based in SF and founded in 1987, TechSoup supports nonprofits, charities, and libraries by providing access to donations and
                       discounts on software, hardware, and services from major brands.</p>
                   </Card.Content>
                 </Card>
@@ -527,7 +527,7 @@ class Social extends Component {
                   </Card.Content>
                   <Card.Content extra>
                     <p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater
-                       Mara Ecosystem. Their collaboratibe approach of boots on the ground rangers and applied research has disrupted poaching in the region 
+                       Mara Ecosystem. Their collaboratibe approach of boots on the ground rangers and applied research has disrupted poaching in the region
                        and combatted conflict and habitat loss.</p>
                   </Card.Content>
                 </Card>
@@ -541,11 +541,11 @@ class Social extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <p>Medic builds world-class, open-source software that supports health workers delivering equitable care 
+                  <p>Medic builds world-class, open-source software that supports health workers delivering equitable care
                     that reaches the hardest-to-reach communities.
-                    
-                    They are the technical lead to the Community Health Toolkit, which helps health 
-                    workers ensure safe deliveries, track outbreaks faster, treat illnesses door-to-door, keep stock of essential 
+
+                    They are the technical lead to the Community Health Toolkit, which helps health
+                    workers ensure safe deliveries, track outbreaks faster, treat illnesses door-to-door, keep stock of essential
                     medicines, communicate about emergencies, and more.</p>
                 </Card.Content>
               </Card>
