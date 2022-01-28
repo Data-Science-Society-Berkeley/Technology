@@ -24,6 +24,7 @@ import wids from "./Leadership Headshots/wids-berkeley-logo.jpg";
 import sponsor1 from "./Leadership Headshots/dsnexus-logo.png";
 import sponsor2 from "./Leadership Headshots/leadcenter_logo.png";
 import sponsor3 from "./Leadership Headshots/haas-ds-club-logo.png";
+import deepnote from "./Leadership Headshots/deepnote.png";
 import arnav from "./Leadership Headshots/arnav.jpeg";
 import sabrina from "./Leadership Headshots/sabrina.jpeg";
 import labanya from "./Leadership Headshots/labanya.jpeg";
@@ -1088,6 +1089,10 @@ class About extends Component {
               ></Image>
               <Image
                 src={edlyft}
+                style={{ marginLeft: "5vw", width: "15vw" }}
+              ></Image>
+              <Image
+                src={deepnote}
                 style={{ marginLeft: "5vw", width: "15vw" }}
               ></Image>
             </Image.Group>
