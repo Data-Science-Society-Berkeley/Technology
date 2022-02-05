@@ -133,21 +133,29 @@ class App extends Component {
             path="/apply"
             render={(props) => (
               <div>
-                {/* makes background white on page you're going to*/}
                 <Helmet
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar {...props} />
-                <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
-                <iframe
-                  class="airtable-embed airtable-dynamic-height"
-                  src="https://airtable.com/embed/shraY96qjV1X6O09w?"
-                  frameborder="0" onmousewheel="" width="100%" height="2849"
+
+                <div
                   style={{
-                    background: "transparent",
-                    border: "1px solid #ccc",
-                  }}>
-                  </iframe>
+                    color: "#000000",
+                    textAlign: "center",
+                    lineHeight: "59px",
+                    fontSize: "48px",
+                    fontWeight: "300",
+                    fontFamily: "Montserrat",
+                    marginTop: "56px",
+                    marginBottom: "56px",
+                    marginLeft: "180px",
+                    marginRight: "180px",
+                  }}
+                >
+                  Applications for Spring 2022 are now closed. Please check back at the beginning of next semester!
+                  <br />
+                  <br />
+                </div>
               </div>
             )}
           />
