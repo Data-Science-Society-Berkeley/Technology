@@ -13,13 +13,13 @@ import {
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CustomTitle from "./components/CustomTitle.js";
 
-import evelyn from "./PM Headshots/evelyn.jpeg";
+import wendy from "./PM Headshots/wendy.jpg"
 import steven from "./Leadership Headshots/steven.jpeg";
 import andi from "./Leadership Headshots/andi.jpg";
 import charlie from "./Leadership Headshots/charlie.jpg";
 import ingrid from "./PM Headshots/ingrid.jpeg";
 import aditi from "./PM Headshots/aditi.jpeg";
-import rithik from "./PM Headshots/rithik.jpeg";
+import natraj from "./PM Headshots/natraj.jpg";
 import spencer from "./PM Headshots/spencer.jpeg";
 import story from "./SocialGood/sgheader_short.jpg";
 import medic from "./SocialGood/medic-logo.png";
@@ -362,36 +362,36 @@ class Social extends Component {
               </Card>
 
               <Card style={cardstyle}>
-                <Image style={imagestyle} src={evelyn} />
+                <Image style={imagestyle} src={wendy} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Evelyn Lu</Card.Header>
+                  <Card.Header style={textstyle}>Wendy Kim</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={roleStyle}>PM</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:yunerlu@berkeley.edu">
+                  <a href="mailto:wendykimm@berkeley.edu">
                     <Icon size="large" name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/in/evelyn-lu-026450153/">
+                  <a href="https://www.linkedin.com/in/wendysbkim/">
                     <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
 
               <Card style={cardstyle}>
-                <Image style={imagestyle} src={rithik} />
+                <Image style={imagestyle} src={natraj} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Rithik Goli</Card.Header>
+                  <Card.Header style={textstyle}>Natraj Vairavan</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={roleStyle}>PM</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:rithikgoli@berkeley.edu">
+                  <a href="mailto:natrajvairavan5@berkeley.edu">
                     <Icon size="large" name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/in/rithikgoli824/">
+                  <a href="https://www.linkedin.com/in/natraj-vairavan-526a7a177/">
                     <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
