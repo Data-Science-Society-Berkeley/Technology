@@ -56,10 +56,12 @@ import anita from "./PM Headshots/anita.jpeg";
 import advait from "./PM Headshots/advait.jpeg";
 import pranav from "./PM Headshots/pranav.jpeg";
 import erica from "./PM Headshots/erica.jpeg";
-import henry from "./PM Headshots/henry.jpeg";
 import ann from "./PM Headshots/ann.jpeg";
 import taylor from "./PM Headshots/taylor.jpeg";
 import noor from "./PM Headshots/noor.jpeg";
+import jasmine from "./PM Headshots/jasmine.jpg";
+import tej from "./PM Headshots/tej.jpg";
+
 
 import collab from "./Consulting/consultingheader-compress-min.jpg";
 
@@ -305,35 +307,35 @@ class Consulting extends Component {
         </Card.Content>
       </Card>,
       <Card style={cardstyle}>
-      <Image src={henry} style={imagestyle} />
+      <Image src={jasmine} style={imagestyle} />
       <Card.Content>
-        <Card.Header style={textstyle}>Henry Cheong</Card.Header>
+        <Card.Header style={textstyle}>Jasmine Wang</Card.Header>
         <Card.Meta style={{ marginTop: "1vw" }}>
           <span style={roleStyle}>PM</span>
         </Card.Meta>
       </Card.Content>
       <Card.Content extra>
-        <a href="mailto:cheongh@berkeley.edu">
+        <a href="mailto:wangjasmine0525@berkeley.edu">
           <Icon size="large" name="mail" />
         </a>
-        <a href="https://www.linkedin.com/in/cheongh/">
+        <a href="https://www.linkedin.com/in/jasmine-tai-chen-wang-4674371b5/">
           <Icon size="large" name="linkedin" />
         </a>
       </Card.Content>
     </Card>,
       <Card style={cardstyle}>
-      <Image src={anita} style={imagestyle} />
+      <Image src={tej} style={imagestyle} />
       <Card.Content>
-        <Card.Header style={textstyle}>Anita Shen</Card.Header>
+        <Card.Header style={textstyle}>Tej Sathe</Card.Header>
         <Card.Meta style={{ marginTop: "1vw" }}>
           <span style={roleStyle}>PM</span>
         </Card.Meta>
       </Card.Content>
       <Card.Content extra>
-        <a href="anitashen@berkeley.edu">
+        <a href="trs37@berkeley.edu">
           <Icon size="large" name="mail" />
         </a>
-        <a href="https://www.linkedin.com/in/shenanita/">
+        <a href="https://www.linkedin.com/in/tej-sathe-910b18168">
           <Icon size="large" name="linkedin" />
         </a>
       </Card.Content>
