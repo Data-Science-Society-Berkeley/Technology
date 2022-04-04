@@ -55,9 +55,7 @@ import alina from "./Leadership Headshots/alina.jpeg";
 import anita from "./PM Headshots/anita.jpeg";
 import advait from "./PM Headshots/advait.jpeg";
 import pranav from "./PM Headshots/pranav.jpeg";
-import erica from "./PM Headshots/erica.jpeg";
-import ann from "./PM Headshots/ann.jpeg";
-import taylor from "./PM Headshots/taylor.jpeg";
+import claudea from "./PM Headshots/claudea.jpg";
 import noor from "./PM Headshots/noor.jpeg";
 import jasmine from "./PM Headshots/jasmine.jpg";
 import tej from "./PM Headshots/tej.jpg";
@@ -341,18 +339,18 @@ class Consulting extends Component {
       </Card.Content>
     </Card>,
       <Card style={cardstyle}>
-      <Image src={erica} style={imagestyle} />
+      <Image src={claudea} style={imagestyle} />
       <Card.Content>
-        <Card.Header style={textstyle}>Erica Zhu</Card.Header>
+        <Card.Header style={textstyle}>Claudea Jennefer</Card.Header>
         <Card.Meta style={{ marginTop: "1vw" }}>
           <span style={roleStyle}>PM</span>
         </Card.Meta>
       </Card.Content>
       <Card.Content extra>
-        <a href="mailto:ericaz@berkeley.edu">
+        <a href="mailto:claudea@berkeley.edu">
           <Icon size="large" name="mail" />
         </a>
-        <a href="https://www.linkedin.com/in/ericazhu00/">
+        <a href="https://www.linkedin.com/in/cjennefer/">
           <Icon size="large" name="linkedin" />
         </a>
       </Card.Content>
@@ -412,42 +410,6 @@ class Consulting extends Component {
       </Card>,
 
 
-    ];
-    let temp2 = [
-      <Card style={cardstyle}>
-        <Image src={taylor} style={imagestyle} />
-        <Card.Content>
-          <Card.Header style={textstyle}>Taylor Lee</Card.Header>
-          <Card.Meta style={{ marginTop: "1vw" }}>
-            <span style={roleStyle}>PM</span>
-          </Card.Meta>
-        </Card.Content>
-        <Card.Content extra>
-          <a href="mailto:taylorylee@berkeley.edu">
-            <Icon size="large" name="mail" />
-          </a>
-          <a href="https://www.linkedin.com/in/taylor-lee27/">
-            <Icon size="large" name="linkedin" />
-          </a>
-        </Card.Content>
-      </Card>,
-      <Card style={cardstyle}>
-        <Image src={ann} style={imagestyle} />
-        <Card.Content>
-          <Card.Header style={textstyle}>Ann Wang</Card.Header>
-          <Card.Meta style={{ marginTop: "1vw" }}>
-            <span style={roleStyle}>PM</span>
-          </Card.Meta>
-        </Card.Content>
-        <Card.Content extra>
-          <a href="mailto:annljwang@berkeley.edu">
-            <Icon size="large" name="mail" />
-          </a>
-          <a href="https://www.linkedin.com/in/annljwang/">
-            <Icon size="large" name="linkedin" />
-          </a>
-        </Card.Content>
-      </Card>,
     ];
 
     return (
@@ -824,7 +786,6 @@ class Consulting extends Component {
             >
               <Card.Group centered>{temp}</Card.Group>
               <Card.Group centered>{temp1}</Card.Group>
-              <Card.Group centered>{temp2}</Card.Group>
             </div>
           </Grid.Row>
           {CustomTitleBlack({ title: "Client Testimonials" })}
