@@ -129,6 +129,13 @@ class App extends Component {
             }}
           />
           <Route
+            path="/dsforum"
+            component={() => {
+              window.location.href = "https://www.eventbrite.com/e/berkeley-data-science-forum-2022-registration-298324987067";
+              return null;
+            }}
+          />
+          <Route
             exact
             path="/apply"
             render={(props) => (
