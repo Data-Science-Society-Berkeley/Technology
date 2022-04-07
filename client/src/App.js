@@ -136,6 +136,13 @@ class App extends Component {
             }}
           />
           <Route
+            path="/dsforumfb"
+            component={() => {
+              window.location.href = "https://fb.me/e/1N6v2HPX3";
+              return null;
+            }}
+          />
+          <Route
             exact
             path="/apply"
             render={(props) => (
