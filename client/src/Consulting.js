@@ -934,85 +934,85 @@ class Consulting extends Component {
                 src={paypal}
                 style={{
                   marginLeft: "4vw",
-                  maxWidth: "28vw",
+                  maxWidth: "16vw",
                   height: "14vw",
                 }}
               />
               <Image
                 src={sofi}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw" }}
               />
               <Image
                 src={monday}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw" }}
               />
               <Image
                 src={metromile}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw"  }}
               />
               <Image
                 src={simmer}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw"  }}
               />
               <Image
                 src={kyocera}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw"  }}
               />
               <Image
                 src={venmo}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw"  }}
               />
               <Image
                 src={edify}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw"  }}
               />
               <Image
                 src={compliance}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw"  }}
               />
               <Image
                 src={pegasus}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw"  }}
               />
               <Image
                 src={oust}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw"  }}
               />
               <Image
                 src={ongo}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw"  }}
               />
               <Image
                 src={kiva}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw"  }}
               />
               <Image
                 src={fair}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw"  }}
               />
               <Image
                 src={nom}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw"  }}
               />
               <Image
                 src={fti}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw"  }}
               />
               <Image
                 src={openride}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw"  }}
               />
               <Image
                 src={hcup}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw"  }}
               />
               <Image
                 src={amp}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw"  }}
               />
               <Image
                 src={berkeleycrisis}
-                style={{ marginLeft: "5vw", maxWidth: "28vw" }}
+                style={{ marginLeft: "5vw", maxWidth: "16vw", maxHeight: "14vw" }}
               />
             </Image.Group>
           </Grid.Row>
