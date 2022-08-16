@@ -48,6 +48,9 @@ import ascend from "./Acadev Images/Ascend-Logo.jpg";
 import angeline from "./Leadership Headshots/angeline.jpg";
 import pranati from "./Leadership Headshots/pranati.jpeg";
 import savvy from "./Leadership Headshots/savvy.jpeg";
+import bella from "./Leadership Headshots/bella.png"
+import paul from "./Leadership Headshots/paul.jpeg"
+import stephen from "./Leadership Headshots/stephen.jpg"
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -787,60 +790,60 @@ class Acadev extends Component {
           {CustomTitleBlack({ title: "AcaDev Directors" })}
           <Grid.Row>
             <Card.Group style={{ marginTop: "5vw" }}>
-              <Card style={cardstyle}>
-                {" "}
-                <Image style={imagestyle} src={angeline} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Angeline Lee</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>Director of Acadev</span>
-                  </Card.Meta>
-                </Card.Content>
-                <Card.Content extra>
-                  <a href="mailto:angelinelyk@berkeley.edu">
-                    <Icon size="large" name="mail" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/angelineleeyingkee/">
-                    <Icon size="large" name="linkedin" />
-                  </a>
-                </Card.Content>
-              </Card>
-              <Card style={cardstyle}>
-                {" "}
-                <Image style={imagestyle} src={pranati} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Pranati Modumodi</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>Director of Acadev</span>
-                  </Card.Meta>
-                </Card.Content>
-                <Card.Content extra>
-                  <a href="mailto:pmodumudi@berkeley.edu">
-                    <Icon size="large" name="mail" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/pranatimodumudi/">
-                    <Icon size="large" name="linkedin" />
-                  </a>
-                </Card.Content>
-              </Card>
-              <Card style={cardstyle}>
-                {" "}
-                <Image style={imagestyle} src={savvy} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Savannah Streitman</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>Director of Acadev</span>
-                  </Card.Meta>
-                </Card.Content>
-                <Card.Content extra>
-                  <a href="mailto:sstreitman@berkeley.edu">
-                    <Icon size="large" name="mail" />
-                  </a>
-                  <a href="https://www.linkedin.com/company/dssberkeley/">
-                    <Icon size="large" name="linkedin" />
-                  </a>
-                </Card.Content>
-              </Card>
+            <Card style={cardstyle}>
+              {" "}
+              <Image style={imagestyle} src={bella} />
+              <Card.Content>
+                <Card.Header style={textstyle}>Bella Chang</Card.Header>
+                <Card.Meta style={{ marginTop: "1vw" }}>
+                  <span style={roleStyle}>Director of Acadev</span>
+                </Card.Meta>
+              </Card.Content>
+              <Card.Content extra>
+                <a href="mailto:bellachang@berkeley.edu">
+                  <Icon size="large" name="mail" />
+                </a>
+                <a href="https://www.linkedin.com/in/bellaachang/">
+                  <Icon size="large" name="linkedin" />
+                </a>
+              </Card.Content>
+            </Card>,
+            <Card style={cardstyle}>
+              {" "}
+              <Image style={imagestyle} src={paul} />
+              <Card.Content>
+                <Card.Header style={textstyle}>Paul Jacobs</Card.Header>
+                <Card.Meta style={{ marginTop: "1vw" }}>
+                  <span style={roleStyle}>Director of Acadev</span>
+                </Card.Meta>
+              </Card.Content>
+              <Card.Content extra>
+                <a href="mailto:pauljacobs@berkeley.edu">
+                  <Icon size="large" name="mail" />
+                </a>
+                <a href="https://www.linkedin.com/in/paul-jacobs-955422235/">
+                  <Icon size="large" name="linkedin" />
+                </a>
+              </Card.Content>
+            </Card>,
+            <Card style={cardstyle}>
+              {" "}
+              <Image style={imagestyle} src={stephen} />
+              <Card.Content>
+                <Card.Header style={textstyle}>Stephen Liu</Card.Header>
+                <Card.Meta style={{ marginTop: "1vw" }}>
+                  <span style={roleStyle}>Director of Acadev</span>
+                </Card.Meta>
+              </Card.Content>
+              <Card.Content extra>
+                <a href="mailto:Stephen.liu@berkeley.edu">
+                  <Icon size="large" name="mail" />
+                </a>
+                <a href="https://www.linkedin.com/in/liu-stephen">
+                  <Icon size="large" name="linkedin" />
+                </a>
+              </Card.Content>
+            </Card>,
             </Card.Group>
           </Grid.Row>
 

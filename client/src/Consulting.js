@@ -59,6 +59,13 @@ import claudea from "./PM Headshots/claudea.jpg";
 import noor from "./PM Headshots/noor.jpeg";
 import jasmine from "./PM Headshots/jasmine.jpg";
 import tej from "./PM Headshots/tej.jpg";
+import catherine from "./PM Headshots/catherine.jpeg"
+import reese from "./PM Headshots/reese.jpeg"
+import rohan from "./PM Headshots/rohan.jpg"
+import ryusuke from "./PM Headshots/ryusuke.jpeg"
+import savi from "./PM Headshots/savi.jpeg"
+import sean from "./PM Headshots/sean.jpeg"
+
 
 
 import collab from "./Consulting/consultingheader-compress-min.jpg";
@@ -287,70 +294,70 @@ class Consulting extends Component {
   render() {
     let temp = [
       <Card style={cardstyle}>
-        <Image src={advait} style={imagestyle} />
+        <Image src={tej} style={imagestyle} />
         <Card.Content>
-          <Card.Header style={textstyle}>Advait Marathe</Card.Header>
+          <Card.Header style={textstyle}>Tej Sathe</Card.Header>
           <Card.Meta style={{ marginTop: "1vw" }}>
             <span style={roleStyle}>Director of Consulting</span>
             {/* TODO: Remove "date" class and use regular centered text instead */}
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
-          <a href="mailto:advaitmarathe.edu">
+          <a href="mailto:trs37@berkeley.edu">
             <Icon size="large" name="mail" />
           </a>
-          <a href="https://www.linkedin.com/in/advaitumarathe/">
+          <a href="https://www.linkedin.com/in/tej-sathe-910b18168">
             <Icon size="large" name="linkedin" />
           </a>
         </Card.Content>
       </Card>,
       <Card style={cardstyle}>
-      <Image src={jasmine} style={imagestyle} />
+      <Image src={catherine} style={imagestyle} />
       <Card.Content>
-        <Card.Header style={textstyle}>Jasmine Wang</Card.Header>
+        <Card.Header style={textstyle}>Catherine Chu</Card.Header>
         <Card.Meta style={{ marginTop: "1vw" }}>
           <span style={roleStyle}>PM</span>
         </Card.Meta>
       </Card.Content>
       <Card.Content extra>
-        <a href="mailto:wangjasmine0525@berkeley.edu">
+        <a href="mailto:catherine.chu@berkeley.edu">
           <Icon size="large" name="mail" />
         </a>
-        <a href="https://www.linkedin.com/in/jasmine-tai-chen-wang-4674371b5/">
+        <a href="https://linkedin.com/in/catherine-chu-139213220">
           <Icon size="large" name="linkedin" />
         </a>
       </Card.Content>
     </Card>,
       <Card style={cardstyle}>
-      <Image src={tej} style={imagestyle} />
+      <Image src={reese} style={imagestyle} />
       <Card.Content>
-        <Card.Header style={textstyle}>Tej Sathe</Card.Header>
+        <Card.Header style={textstyle}>Reese Carlton</Card.Header>
         <Card.Meta style={{ marginTop: "1vw" }}>
           <span style={roleStyle}>PM</span>
         </Card.Meta>
       </Card.Content>
       <Card.Content extra>
-        <a href="trs37@berkeley.edu">
+        <a href="mailto:reesejcarlton@berkeley.edu">
           <Icon size="large" name="mail" />
         </a>
-        <a href="https://www.linkedin.com/in/tej-sathe-910b18168">
+        <a href="https://www.linkedin.com/in/reese-carlton-749982174/">
           <Icon size="large" name="linkedin" />
         </a>
       </Card.Content>
     </Card>,
       <Card style={cardstyle}>
-      <Image src={claudea} style={imagestyle} />
+      <Image src={rohan} style={imagestyle} />
       <Card.Content>
-        <Card.Header style={textstyle}>Claudea Jennefer</Card.Header>
+        <Card.Header style={textstyle}>Rohan Venkateswaran</Card.Header>
         <Card.Meta style={{ marginTop: "1vw" }}>
           <span style={roleStyle}>PM</span>
         </Card.Meta>
       </Card.Content>
       <Card.Content extra>
-        <a href="mailto:claudea@berkeley.edu">
+        <a href="mailto:vrohan@berkeley.edu">
           <Icon size="large" name="mail" />
         </a>
-        <a href="https://www.linkedin.com/in/cjennefer/">
+        <a href="https://linkedin.com/in/rohan-venkateswaran">
           <Icon size="large" name="linkedin" />
         </a>
       </Card.Content>
@@ -358,52 +365,52 @@ class Consulting extends Component {
     ];
     let temp1 = [
       <Card style={cardstyle}>
-        <Image src={pranav} style={imagestyle} />
+        <Image src={ryusuke} style={imagestyle} />
         <Card.Content>
-          <Card.Header style={textstyle}>Pranav Sukumar</Card.Header>
+          <Card.Header style={textstyle}>Ryusuke Suehiro</Card.Header>
           <Card.Meta style={{ marginTop: "1vw" }}>
             <span style={roleStyle}>PM</span>
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
-          <a href="mailto:pranavsukumar@berkeley.edu">
+          <a href="mailto:ryusukesuehiro@berkeley.edu">
             <Icon size="large" name="mail" />
           </a>
-          <a href="https://www.linkedin.com/in/pranav-sukumar/">
+          <a href="https://www.linkedin.com/in/ryusukesuehiro">
             <Icon size="large" name="linkedin" />
           </a>
         </Card.Content>
       </Card>,
       <Card style={cardstyle}>
-      <Image src={alina} style={imagestyle} />
+      <Image src={savi} style={imagestyle} />
       <Card.Content>
-        <Card.Header style={textstyle}>Alina Trinh</Card.Header>
+        <Card.Header style={textstyle}>Savinay Chandrupatla</Card.Header>
         <Card.Meta style={{ marginTop: "1vw" }}>
           <span style={roleStyle}>PM</span>
         </Card.Meta>
       </Card.Content>
       <Card.Content extra>
-        <a href="mailto:tutrinh@berkeley.edu">
+        <a href="mailto:savinay@berkeley.edu">
           <Icon size="large" name="mail" />
         </a>
-        <a href="https://www.linkedin.com/in/tu-trinh/">
+        <a href="https://www.linkedin.com/in/savinay-c/">
           <Icon size="large" name="linkedin" />
         </a>
       </Card.Content>
     </Card>,
       <Card style={cardstyle}>
-        <Image src={noor} style={imagestyle} />
+        <Image src={sean} style={imagestyle} />
         <Card.Content>
-          <Card.Header style={textstyle}>Noor Hanafi</Card.Header>
+          <Card.Header style={textstyle}>Sean Wei</Card.Header>
           <Card.Meta style={{ marginTop: "1vw" }}>
             <span style={roleStyle}>PM</span>
           </Card.Meta>
         </Card.Content>
         <Card.Content extra>
-          <a href="mailto:nhanafi@berkeley.edu">
+          <a href="mailto:seanwei2001@berkeley.edu">
             <Icon size="large" name="mail" />
           </a>
-          <a href="https://www.linkedin.com/in/noor-hanafi-34106598/">
+          <a href="https://www.linkedin.com/in/seanwei2001">
             <Icon size="large" name="linkedin" />
           </a>
         </Card.Content>

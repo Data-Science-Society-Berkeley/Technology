@@ -14,13 +14,12 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CustomTitle from "./components/CustomTitle.js";
 
 import wendy from "./PM Headshots/wendy.jpg"
-import steven from "./Leadership Headshots/steven.jpeg";
-import andi from "./Leadership Headshots/andi.jpg";
-import charlie from "./Leadership Headshots/charlie.jpg";
-import ingrid from "./PM Headshots/ingrid.jpeg";
-import aditi from "./PM Headshots/aditi.jpeg";
-import natraj from "./PM Headshots/natraj.jpg";
-import spencer from "./PM Headshots/spencer.jpeg";
+import sandya from "./PM Headshots/sandya.jpg"
+import bond from "./PM Headshots/bond.jpeg";
+import nicole from "./PM Headshots/nicole.jpeg";
+import tess from "./PM Headshots/tess.jpg";
+import sumin from "./PM Headshots/sumin.jpeg";
+import zack from "./PM Headshots/zack.png"
 import story from "./SocialGood/sgheader_short.jpg";
 import medic from "./SocialGood/medic-logo.png";
 import mep from "./SocialGood/MEP-logo.jpg";
@@ -344,29 +343,12 @@ class Social extends Component {
             <Card.Group centered>
 
               <Card style={cardstyle}>
-                <Image style={imagestyle} src={andi} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Andi Halim</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>Director of Social Good</span>
-                  </Card.Meta>
-                </Card.Content>
-                <Card.Content extra>
-                  <a href="mailto:andihalim@berkeley.edu">
-                    <Icon size="large" name="mail" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/andihalim/">
-                    <Icon size="large" name="linkedin" />
-                  </a>
-                </Card.Content>
-              </Card>
-
-              <Card style={cardstyle}>
+                {" "}
                 <Image style={imagestyle} src={wendy} />
                 <Card.Content>
                   <Card.Header style={textstyle}>Wendy Kim</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>PM</span>
+                    <span style={roleStyle}>Director of Social Good</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
@@ -377,21 +359,39 @@ class Social extends Component {
                     <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
-              </Card>
+              </Card>,
 
               <Card style={cardstyle}>
-                <Image style={imagestyle} src={natraj} />
+                <Image style={imagestyle} src={bond} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Natraj Vairavan</Card.Header>
+                  <Card.Header style={textstyle}>Bond Chaiprasit</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={roleStyle}>PM</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:natrajvairavan5@berkeley.edu">
+                  <a href="mailto:bc15@berkeley.edu">
                     <Icon size="large" name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/in/natraj-vairavan-526a7a177/">
+                  <a href="https://www.linkedin.com/in/thanachot-bond-chaiprasit-772144173/">
+                    <Icon size="large" name="linkedin" />
+                  </a>
+                </Card.Content>
+              </Card>,
+
+              <Card style={cardstyle}>
+                <Image style={imagestyle} src={nicole} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Nicole Park</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>PM</span>
+                  </Card.Meta>
+                </Card.Content>
+                <Card.Content extra>
+                  <a href="mailto:nicolepark@berkeley.edu">
+                    <Icon size="large" name="mail" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/nicpark">
                     <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
@@ -401,36 +401,18 @@ class Social extends Component {
             <Card.Group centered>
 
               <Card style={cardstyle}>
-                <Image style={imagestyle} src={ingrid} />
+                <Image style={imagestyle} src={tess} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Ingrid Chien</Card.Header>
+                  <Card.Header style={textstyle}>Tess U-Vongcharoen</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={roleStyle}>PM</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:ingrid070401@berkeley.edu">
+                  <a href="mailto:tess.uvongcharoen@berkeley.edu">
                     <Icon size="large" name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/in/ingridchien/">
-                    <Icon size="large" name="linkedin" />
-                  </a>
-                </Card.Content>
-              </Card>
-
-              <Card style={cardstyle}>
-                <Image style={imagestyle} src={aditi} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Aditi Raja</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={roleStyle}>PM</span>
-                  </Card.Meta>
-                </Card.Content>
-                <Card.Content extra>
-                  <a href="mailto:aditiraja@berkeley.edu">
-                    <Icon size="large" name="mail" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/aditi-raja">
+                  <a href="https://www.linkedin.com/in/tess-u-vongcharoen/">
                     <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
@@ -438,18 +420,56 @@ class Social extends Component {
 
               <Card style={cardstyle}>
                 {" "}
-                <Image style={imagestyle} src={spencer} />
+                <Image style={imagestyle} src={sandya} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Spencer Jenkins</Card.Header>
+                  <Card.Header style={textstyle}>Sandya Wijaya</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={roleStyle}>PM</span>
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:spencerrjenkins@berkeley.edu">
+                  <a href="mailto:sandya.wijaya@berkeley.edu">
                     <Icon size="large" name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/in/spencer-r-jenkins/">
+                  <a href="https://www.linkedin.com/in/sandyawijaya/">
+                    <Icon size="large" name="linkedin" />
+                  </a>
+                </Card.Content>
+              </Card>
+
+              <Card style={cardstyle}>
+                {" "}
+                <Image style={imagestyle} src={sumin} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Su Min Park</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>PM</span>
+                  </Card.Meta>
+                </Card.Content>
+                <Card.Content extra>
+                  <a href="mailto:m.suminpark@berkeley.edu">
+                    <Icon size="large" name="mail" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/su-min-park-89a103220//">
+                    <Icon size="large" name="linkedin" />
+                  </a>
+                </Card.Content>
+              </Card>
+
+              <Card style={cardstyle}>
+                {" "}
+                <Image style={imagestyle} src={zack} />
+                <Card.Content>
+                  <Card.Header style={textstyle}>Zackary Oon</Card.Header>
+                  <Card.Meta style={{ marginTop: "1vw" }}>
+                    <span style={roleStyle}>PM</span>
+                  </Card.Meta>
+                </Card.Content>
+                <Card.Content extra>
+                  <a href="mailto:zackaryoon134@berkeley.edu">
+                    <Icon size="large" name="mail" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/zackary-oon-9693401b7/">
                     <Icon size="large" name="linkedin" />
                   </a>
                 </Card.Content>
