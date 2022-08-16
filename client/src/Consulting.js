@@ -63,7 +63,7 @@ import catherine from "./PM Headshots/catherine.jpeg"
 import reese from "./PM Headshots/reese.jpeg"
 import rohan from "./PM Headshots/rohan.jpg"
 import ryusuke from "./PM Headshots/ryusuke.jpeg"
-import savi from "./PM Headshots/savi.jpeg"
+import savi from "./PM Headshots/savi.png"
 import sean from "./PM Headshots/sean.jpeg"
 
 
