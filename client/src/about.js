@@ -43,7 +43,7 @@ import rachael from "./Leadership Headshots/rachael.jpeg"
 import bella from "./Leadership Headshots/bella.png"
 import tej from "./PM Headshots/tej.jpg";
 import paul from "./Leadership Headshots/paul.jpeg"
-import stephen from "./Leadership Headshots/stephen.jpeg"
+import stephen from "./Leadership Headshots/stephen.jpg"
 
 import pm from "./About/pmgroup.jpeg";
 import exec from "./About/exec.jpeg";
@@ -286,7 +286,7 @@ const leadershipCards = [
       <a href="mailto:sstreitman@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/company/dssberkeley/">
+      <a href="www.linkedin.com/in/savannah-streitman">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>

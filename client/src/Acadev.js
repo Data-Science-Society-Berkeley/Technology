@@ -50,7 +50,7 @@ import pranati from "./Leadership Headshots/pranati.jpeg";
 import savvy from "./Leadership Headshots/savvy.jpeg";
 import bella from "./Leadership Headshots/bella.png"
 import paul from "./Leadership Headshots/paul.jpeg"
-import stephen from "./Leadership Headshots/stephen.jpeg"
+import stephen from "./Leadership Headshots/stephen.jpg"
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
