@@ -96,7 +96,7 @@ class App extends Component {
           <Route
             path="/join"
             component={() => {
-              window.location.href = "https://dssberkeley.com/join-us";
+              window.location.href = "https://dssberkeley.com/joinus";
               return null;
             }}
           />
@@ -274,7 +274,7 @@ class App extends Component {
           />
           <Route
             exact
-            path="/join-us"
+            path="/joinus"
             render={(props) => (
               <div>
                 <Helmet
@@ -550,7 +550,7 @@ class App extends Component {
           /> */}
           <Route
             exact
-            path="/join-us"
+            path="/joinus"
             render={(props) => (
               <div>
                 <Helmet
