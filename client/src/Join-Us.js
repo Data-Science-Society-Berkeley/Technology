@@ -497,7 +497,7 @@ class Consulting extends Component {
               {/* <Image style={cardImageSyle} src={MLImage}></Image> */}
               <Card.Header style={cardHeader}>Apply to a committee</Card.Header>
               <div style={cardDescription}>
-              Apply to join a DSS committee if you are interested in working on Consulting/Social Good projects or are interested in helping facilitate the DSS Decal as an Academic Development committee member. 
+              Apply to join a DSS committee if you are interested in working on Consulting/Social Good projects or are interested in helping facilitate the DSS Decal as an Academic Development committee member. Check out some of our committee pages to learn more about each committee.
               </div>
               <Button.Group centered>
               <Link to="applycommittee" style={{marginRight: '4vw'}}>
@@ -508,7 +508,7 @@ class Consulting extends Component {
                   borderRadius: "3vw",
                   width: "100%",
                   height: "5vw",
-                  marginTop: "12vw",
+                  marginTop: "8vw",
                   // marginBottom: "1%",
                   marginLeft: "50%",
                   marginRight: "1vw",
