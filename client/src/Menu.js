@@ -291,7 +291,7 @@ class NavBar extends Component {
               onClick={this.handleItemClick}
               style={navbar}
             >
-            <Link style={linkStyling} to="/join-us">
+            <Link style={linkStyling} to="/joinus">
                   join us
             </Link>
             </Menu.Item>

@@ -504,7 +504,7 @@ class NavBar2 extends Component {
           </Menu.Item>
 
           <Menu.Item as="a">
-            <Link to="/join-us" onClick={this.handleSettingVisibleToFalse}>
+            <Link to="/joinus" onClick={this.handleSettingVisibleToFalse}>
               <div style={{ marginTop: "2vw", marginBottom: "2vw" }}>
                 <div>
                   <div

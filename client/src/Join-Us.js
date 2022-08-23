@@ -26,6 +26,7 @@ import squiggle3 from "./Consulting/squiggle3.png";
 import upright from "./Consulting/topRight.png";
 import bottomleft from "./Consulting/bottomLeft.png";
 import logo from "./Consulting/logo.png";
+import flyer from "./Backgrounds/flyer.png"
 
 
 import down from "./Consulting/ClientTestimonials.png";
@@ -94,7 +95,7 @@ const cardHeader = {
   fontSize: "2.5vw",
   color: "#000000",
   textAlign: "center",
-  marginTop: "1.5vw",
+  marginTop: "3vw",
 };
 
 const cardDescription = {
@@ -259,7 +260,7 @@ class Consulting extends Component {
 
     return (
       <div>
-        <h1
+        {/* <h1
           style={{
           top:"20vw",
           width: "100%",
@@ -276,27 +277,27 @@ class Consulting extends Component {
           fontSize: "6vw",
           lineHeight: "6vw",
         }}
-        >Consulting
-        </h1>
+        >Join Us
+        </h1> */}
 
         <div>
           <Image style={{position: 'relative',
-          top: "20vw",
+          top: "5vw",
           // marginTop: '5vw',
-          left: "50vw",
-          right: "50vw",
+          left: "10vw",
+          right: "15vw",
           bottom: "15vw",
           // margin: 'auto',
           // margintop: "10vw",
           marginBottom: '15vw',
-          height: "28vw",
-          maxHeight: "28vw",
-          width: "28vw",
-          maxWidth: "28vw",
+          height: "75vw",
+          // maxHeight: "28vw",
+          width: "115vw",
+          // maxWidth: "28vw",
           }}
-          src={logo}></Image>
+          src={flyer}></Image>
         </div>
-        <div>
+        {/* <div>
           <Image src={bottomleft}
           style= {{
             left:"5vw",
@@ -308,8 +309,8 @@ class Consulting extends Component {
             maxWidth: "30vw",
           }}>
           </Image>
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <Image src={squiggle2}
           style= {{
             left:"-5vw",
@@ -321,8 +322,8 @@ class Consulting extends Component {
             maxWidth: "40vw",
           }}>
           </Image>
-        </div>
-        <Grid centered>
+        </div> */}
+        {/* <Grid centered>
         <Grid.Row centered style={headerbox}>
             <Card.Group centered>
               <div
@@ -445,7 +446,7 @@ class Consulting extends Component {
               </div>
             </Card.Group>
           </Grid.Row>
-        </Grid>
+        </Grid> */}
 
 
         <Grid centered>
@@ -486,38 +487,129 @@ class Consulting extends Component {
             </div>
           </Grid.Row>
 
-          {CustomTitleBlack({ title: "Our Expertise" })}
+          {CustomTitleBlack({ title: "How To Get Involved" })}
           <div style= {{maxWidth: "30vw"}}>
             <Image src={ExpertiseLine}></Image>
           </div>
 
           <Card.Group centered>
             <Card style={overlayboxes}>
-              <Image style={cardImageSyle} src={MLImage}></Image>
-              <Card.Header style={cardHeader}>Machine Learning</Card.Header>
+              {/* <Image style={cardImageSyle} src={MLImage}></Image> */}
+              <Card.Header style={cardHeader}>Apply to a committee</Card.Header>
               <div style={cardDescription}>
-                NLP, Predictive Analysis, Data Mining, Clustering, Modeling
+              Apply to join a DSS committee if you are interested in working on Consulting/Social Good projects or are interested in helping facilitate the DSS Decal as an Academic Development committee member. 
               </div>
+              <Button.Group centered>
+              <Link to="applycommittee" style={{marginRight: '4vw'}}>
+                <Button onclick={"window.location='http://dssberkeley.com/applycommittee'"} style={{
+                  background: "#FFFFFF",
+                  border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  borderRadius: "3vw",
+                  width: "100%",
+                  height: "5vw",
+                  marginTop: "12vw",
+                  // marginBottom: "1%",
+                  marginLeft: "50%",
+                  marginRight: "1vw",
+                  fontSize: "2.5vw",
+                  lineHeight: "2vw",
+                  fontWeight: 200,
+                  fontFamily: "Montserrat",
+                }}>
+                  <div
+                    style={{
+                      marginTop: "-0.5vw",
+                      marginBottom: "-0.5vw",
+                      marginLeft: "0vw",
+                      marginRight: "0vw",
+                    }}
+                  >
+                    Apply
+                  </div>
+                </Button>
+              </Link>
+            </Button.Group>
             </Card>
             <Card style={overlayboxes2}>
-              <Image style={cardImageSyle} src={BizIntelImage}></Image>
+              {/* <Image style={cardImageSyle} src={BizIntelImage}></Image> */}
               <Card.Header style={cardHeader}>
-                Business Intelligence
+                Register for Decal
               </Card.Header>
               <div style={cardDescription}>
-                Visualizations, Customer Segmentation, Price Optimization,
-                Customer Churn, Operations Effeciency
+              Ever wonder what all the rage about data science is? Our DeCal offers a fun introduction to the world of data! In this DeCal you will work in teams to develop your own original data science project from scratch, with weekly mini-lectures and workshops, and access to mentorship. This course is designed for students with introductory-level data science experience. 
               </div>
+              <Button.Group centered>
+              <Link to="applydecal" style={{marginRight: '4vw'}}>
+                <Button onclick={"window.location='http://dssberkeley.com/applydecal'"} style={{
+                  background: "#FFFFFF",
+                  border: "5px solid #FFC54A",
+                  boxSizing: "border-box",
+                  borderRadius: "3vw",
+                  width: "100%",
+                  height: "5vw",
+                  marginTop: "4vw",
+                  // marginBottom: "1%",
+                  marginLeft: "50%",
+                  marginRight: "1vw",
+                  fontSize: "2.5vw",
+                  lineHeight: "2vw",
+                  fontWeight: 200,
+                  fontFamily: "Montserrat",
+                }}>
+                  <div
+                    style={{
+                      marginTop: "-0.5vw",
+                      marginBottom: "-0.5vw",
+                      marginLeft: "0vw",
+                      marginRight: "0vw",
+                    }}
+                  >
+                    Enroll
+                  </div>
+                </Button>
+              </Link>
+            </Button.Group>
             </Card>
             <Card style={overlayboxes}>
-              <Image style={cardImageSyle} src={SDImage}></Image>
+              {/* <Image style={cardImageSyle} src={SDImage}></Image> */}
               <Card.Header style={cardHeader}>
-                Software Development
+                Join Mailing List
               </Card.Header>
               <div style={cardDescription}>
-                Warehousing, Systems Integration, Cloud Computing,
-                Front-End Development, Back-End Development
+              Interested in what DSS has to offer but don’t have the bandwidth to be a Decal student or committee member? Join the Mailing List and keep in touch with us for any events we put out! 
               </div>
+              <Button.Group centered>
+              <Link to="mailinglist" style={{marginRight: '4vw'}}>
+                <Button onclick={"window.location='http://dssberkeley.com/mailinglist'"} style={{
+                  background: "#FFFFFF",
+                  border: "5px solid #8CD6D1",
+                  boxSizing: "border-box",
+                  borderRadius: "3vw",
+                  width: "100%",
+                  height: "5vw",
+                  marginTop: "14vw",
+                  // marginBottom: "1%",
+                  marginLeft: "30%",
+                  marginRight: "1vw",
+                  fontSize: "2.5vw",
+                  lineHeight: "2vw",
+                  fontWeight: 200,
+                  fontFamily: "Montserrat",
+                }}>
+                  <div
+                    style={{
+                      marginTop: "-0.5vw",
+                      marginBottom: "-0.5vw",
+                      marginLeft: "0vw",
+                      marginRight: "0vw",
+                    }}
+                  >
+                    Subscribe
+                  </div>
+                </Button>
+              </Link>
+            </Button.Group>
             </Card>
           </Card.Group>
 
@@ -529,11 +621,11 @@ class Consulting extends Component {
                   right: "0%",
                   width: "50vw",
                   position: "absolute",
-                  top: "-180%",
+                  top: "-100%",
                 }}
               ></Image>
             </div>
-            <Button.Group centered>
+            {/* <Button.Group centered>
               <Link style={{marginRight: '4vw'}}>
                 <Button onClick={this.testa} style={{
                   background: "#FFFFFF",
@@ -590,8 +682,8 @@ class Consulting extends Component {
                   </div>
                 </Button>
               </Link>
-            </Button.Group>
-            <div>
+            </Button.Group> */}
+            {/* <div>
               <Image
                 src={squiggle3}
                 style={{
@@ -601,13 +693,13 @@ class Consulting extends Component {
                   top: "60%",
                 }}
               ></Image>
-            </div>
+            </div> */}
           </Grid.Row>
 
 
 
 
-          {CustomTitleBlack({ title: "Project Managers" })}
+          {/* {CustomTitleBlack({ title: "Project Managers" })}
           <Grid.Row>
             <div
               style={{
@@ -617,8 +709,8 @@ class Consulting extends Component {
               }}
             >
             </div>
-          </Grid.Row>
-          {CustomTitleBlack({ title: "Client Testimonials" })}
+          </Grid.Row> */}
+          {CustomTitleBlack({ title: "Frequently Asked Questions" })}
           <div style= {{maxWidth: "50vw"}}>
             <Image src={ClientLine}></Image>
           </div>
