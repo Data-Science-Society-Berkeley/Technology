@@ -168,7 +168,7 @@ class CentralText extends Component {
 
             <Grid.Column style={{ marginLeft: "484px", marginTop: "-250px" }}>
               <Button style={apply} circular>
-                APPLY
+                Join Us
               </Button>
             </Grid.Column>
           </Grid.Row>

@@ -44,6 +44,7 @@ import Education from "./Education.js";
 import Service from "./Services.js";
 import GeneralMember from "./generalmember.js";
 import Culture from "./Culture.js";
+import Join from "./Join-Us.js"
 
 import Footer from "./footer";
 import MobileMenu from "./mobilemenu.js";
@@ -199,33 +200,22 @@ class NavBar2 extends Component {
     );
   }
 
-  generateApplyScreen() {
-    if (this.props.componentid === "apply") {
+  generateJoinScreen() {
+    if (this.props.componentid === "join") {
       console.log("Hello ", this.props.componentid);
       return (
         <div>
-          <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
-          {/* <iframe
-            class="airtable-embed airtable-dynamic-height"
-            src="https://airtable.com/embed/shrqlxFIopQmX4PZX?backgroundColor=red"
-            frameborder="0"
-            onmousewheel=""
-            width="100%"
-            height="2849"
+          <Service />
+          <div
             style={{
-              background: "transparent",
-              border: "1px solid #ccc",
+              backgroundColor: "#8CD6D1",
+              marginRight: "-35vw",
+              marginTop: "0px",
+              paddingBottom: "11vw",
             }}
-          ></iframe> */}
-          <iframe 
-            class="airtable-embed airtable-dynamic-height" 
-            src="https://airtable.com/embed/shrQR31H3cM5giZGG?backgroundColor=blue" 
-            frameborder="0" onmousewheel="" width="100%" height="2849" 
-            style={{
-            background: "transparent",
-            border: "1px solid #ccc",
-           }}>
-          </iframe>
+          >
+            <Join></Join>
+          </div>
         </div>
       );
     } else if (this.props.componentid === "services") {
@@ -300,7 +290,7 @@ class NavBar2 extends Component {
     const backgroundColor = this.setBackgroundMenuColor();
     const titleColor = this.setTitleColor();
     const barColor = this.setBarColor();
-    const screenContent = this.generateApplyScreen();
+    const screenContent = this.generateJoinScreen();
     return (
       <Sidebar.Pushable>
         <Sidebar
@@ -514,7 +504,7 @@ class NavBar2 extends Component {
           </Menu.Item>
 
           <Menu.Item as="a">
-            <Link to="/apply" onClick={this.handleSettingVisibleToFalse}>
+            <Link to="/joinus" onClick={this.handleSettingVisibleToFalse}>
               <div style={{ marginTop: "2vw", marginBottom: "2vw" }}>
                 <div>
                   <div
@@ -531,7 +521,7 @@ class NavBar2 extends Component {
                       color: "#000000",
                     }}
                   >
-                    Apply
+                    join us
                   </div>
                 </div>
               </div>

@@ -99,7 +99,7 @@ var circle2 = {
   width: 100,
   height: 100,
 };
-const apply1 = {
+const join1 = {
   fontFamily: "Montserrat",
   fontSize: "24px",
   fontWeight: 600,
@@ -107,7 +107,7 @@ const apply1 = {
   marginLeft: "24px",
   color: "#EDE8C4",
 };
-const apply2 = {
+const join2 = {
   fontFamily: "Montserrat",
   fontSize: "24px",
   fontWeight: 600,
@@ -125,7 +125,7 @@ class NavBar extends Component {
     };
     this.setMenu = this.setMenu.bind(this);
     this.setCircle = this.setCircle.bind(this);
-    this.setApply = this.setApply.bind(this);
+    this.setJoin = this.setJoin.bind(this);
     console.log(this.props.match.path);
   }
   registerUser = () => {
@@ -186,13 +186,13 @@ class NavBar extends Component {
       );
     }
   }
-  setApply() {
+  setJoin() {
     //TODO ensure first guys margin is effectively 24
     console.log(this.state.activeStyle);
     if (this.state.activeStyle) {
-      return apply2;
+      return join2;
     } else {
-      return apply1;
+      return join1;
     }
   }
   setMenu() {
@@ -210,7 +210,7 @@ class NavBar extends Component {
     var linkStyling = this.setMenu();
     console.log(linkStyling, this.state.activeStyle);
     var logo = this.setCircle();
-    let applystyle = this.setApply();
+    let applystyle = this.setJoin();
     return (
       <div className="NavBar">
         <Menu style={mynav} borderless={true}>
@@ -286,18 +286,14 @@ class NavBar extends Component {
               </Link>
             </Menu.Item>
             <Menu.Item
-              name="apply"
-              active={activeItem === "apply"}
+              name="join"
+              active={activeItem === "join"}
               onClick={this.handleItemClick}
               style={navbar}
             >
-            <Dropdown style={linkStyling} item text="apply">
-              <Dropdown.Menu>
-                <Link to="/apply" style={linkStyling}>
-                  <Dropdown.Item icon="edit" text="Application" />
-                </Link>
-              </Dropdown.Menu>
-            </Dropdown>
+            <Link style={linkStyling} to="/joinus">
+                  join us
+            </Link>
             </Menu.Item>
             <Menu.Item header></Menu.Item>
           </Menu.Menu>

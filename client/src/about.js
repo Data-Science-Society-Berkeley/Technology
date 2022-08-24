@@ -266,7 +266,7 @@ const leadershipCards = [
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:mailto:marlonfu@berkeley.edu">
+      <a href="mailto:marlonfu@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
       <a href="https://www.linkedin.com/in/marlonfu/">

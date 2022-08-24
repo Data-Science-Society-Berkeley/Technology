@@ -428,9 +428,9 @@ class CentralText extends Component {
                   top: "100%",
                 }}
               >
-                <Link to="/apply">
+                <Link to="/joinus">
                   <Button style={apply} circular>
-                    APPLY
+                    Join Us
                   </Button>
                 </Link>
                 <Button onClick={this.moveAbout} style={learn} circular>

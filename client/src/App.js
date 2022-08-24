@@ -20,6 +20,7 @@ import Education from "./Education.js";
 import Service from "./Services.js";
 import GeneralMember from "./generalmember.js";
 import Hierarchy from "./hierarchy";
+import Join from "./Join-Us"
 import Culture from "./Culture.js";
 
 import Footer from "./footer";
@@ -88,7 +89,14 @@ class App extends Component {
           <Route
             path="/zoom"
             component={() => {
-              window.location.href = "https://berkeley.zoom.us/j/91729580693";
+              window.location.href = "https://berkeley.zoom.us/j/92287537123";
+              return null;
+            }}
+          />
+          <Route
+            path="/join"
+            component={() => {
+              window.location.href = "https://dssberkeley.com/joinus";
               return null;
             }}
           />
@@ -100,9 +108,23 @@ class App extends Component {
             }}
           />
           <Route
-            path="/datathon"
+            path="/mailinglist"
             component={() => {
-              window.location.href = "https://www.notion.so/dssberkeley/Analyzing-and-Accelerating-Global-Development-with-Data-Science-dd2e1e8f04a9424ebddbe184ebcf0af5";
+              window.location.href = "https://airtable.com/shr084vc5JtxBydJK";
+              return null;
+            }}
+          />
+          <Route
+            path="/applycommittee"
+            component={() => {
+              window.location.href = "https://airtable.com/shrAQtHBreBD5Yrfm";
+              return null;
+            }}
+          />
+          <Route
+            path="/applydecal"
+            component={() => {
+              window.location.href = "https://airtable.com/shrvZhCsPAiN7xhnM";
               return null;
             }}
           />
@@ -124,7 +146,7 @@ class App extends Component {
           <Route
             path="/coffee"
             component={() => {
-              window.location.href = "https://tinyurl.com/dsscoffeechat";
+              window.location.href = "https://dssberkeley.notion.site/DSS-Fall-2022-Coffee-Chat-Sign-ups-f70c6204f92542f3848283485d5876cb";
               return null;
             }}
           />
@@ -142,9 +164,9 @@ class App extends Component {
               return null;
             }}
           />
-          <Route
+          {/* <Route
             exact
-            path="/apply"
+            path="/join"
             render={(props) => (
               <div>
                 <Helmet
@@ -172,7 +194,7 @@ class App extends Component {
                 </div>
               </div>
             )}
-          />
+          /> */}
 
           <Route
             exact
@@ -246,6 +268,20 @@ class App extends Component {
                 />
                 <NavBar {...props} />
                 <Committees></Committees>
+                <Footer></Footer>
+              </div>
+            )}
+          />
+          <Route
+            exact
+            path="/joinus"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar {...props} />
+                <Join></Join>
                 <Footer></Footer>
               </div>
             )}
@@ -453,7 +489,7 @@ class App extends Component {
           <Route
             path="/zoom"
             component={() => {
-              window.location.href = "https://berkeley.zoom.us/j/91729580693";
+              window.location.href = "https://berkeley.zoom.us/j/92287537123";
               return null;
             }}
           /><Route
@@ -478,9 +514,9 @@ class App extends Component {
               </div>
             )}
           />
-          <Route
+          {/* <Route
             exact
-            path="/apply"
+            path="/join"
             render={(props) => (
               <div>
                 <Helmet
@@ -509,6 +545,20 @@ class App extends Component {
                   <br />
                   Join our Discord at discord.gg/nrSntva !
                 </div>
+              </div>
+            )}
+          /> */}
+          <Route
+            exact
+            path="/joinus"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar {...props} />
+                <Acadev></Acadev>
+                <Footer></Footer>
               </div>
             )}
           />
@@ -961,19 +1011,6 @@ class App extends Component {
                 />
                 <NavBar2 {...props} componentid={Registration} />
                 {/* <Footer></Footer> */}
-              </div>
-            )}
-          />
-
-          <Route
-            exact
-            path="/apply"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar2 {...props} componentid={"apply"} />
               </div>
             )}
           />
