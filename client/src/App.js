@@ -124,7 +124,7 @@ class App extends Component {
           <Route
             path="/applydecal"
             component={() => {
-              window.location.href = "https://airtable.com/shrvZhCsPAiN7xhnM";
+              window.location.href = "https://forms.gle/A2N9ZBhnHJH2nUvy8";
               return null;
             }}
           />
