@@ -259,10 +259,10 @@ class Footer extends Component {
                   <div style={link}>Contact Us </div>{" "}
                 </Link>
                 <List link inverted>
-                  <Link to="/apply">
+                  <Link to="/join">
                     <List.Item as="a" style={link}>
                       {" "}
-                      Apply{" "}
+                      Join Us{" "}
                     </List.Item>
                   </Link>
                 </List>

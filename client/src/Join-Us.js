@@ -10,6 +10,7 @@ import {
   Icon,
   Button,
   List,
+  Accordion,
   CardDescription,
 } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -219,7 +220,8 @@ const link = {
   textAlign: "center",
   marginTop: "80px",
 };
-class Consulting extends Component {
+
+class Join extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -256,8 +258,15 @@ class Consulting extends Component {
   sendData(data) {
     this.props.buttonClick(data);
   }
-  render() {
+  handleClick = (e, titleProps) => {
+    const { index } = titleProps;
+    const { activeIndex } = this.state;
+    const newIndex = activeIndex === index ? -1 : index;
 
+    this.setState({ activeIndex: newIndex });
+  };
+  render() {
+    const { activeIndex } = this.state;
     return (
       <div>
         {/* <h1
@@ -721,25 +730,140 @@ class Consulting extends Component {
               style={{
                 color: "#000000",
                 marginTop: "1vw",
-                marginBottom: "5vw",
+                marginBottom: "0.5vw",
                 textAlign: "center",
                 lineHeight: "4vw",
                 fontSize: "2vw",
                 fontWeight: "21vw",
                 fontStyle: "normal",
                 fontFamily: "Montserrat",
-                marginLeft: "10vw",
-                marginRight: "10vw",
+                marginLeft: "6vw",
+                marginRight: "6vw",
               }}
             >
 
             In past semesters, our members have reported these questions as being most frequently asked. 
-            If you have further questions, email <a href="mailto:info@dss.berkeley.edu"> info@dss.berkeley.edu </a>      or schedule a coffee chat at     <a href="coffee"> dssberkeley.com/coffee. </a>
+            If you have further questions, email info@dss.berkeley.edu or schedule a coffee chat at dssberkeley.com/coffee. 
 
             </Grid.Row>
+        </Grid>
+
+        <Grid>
+          <Grid.Row>
+          <Accordion style={{ center:"left", marginLeft:"15%", marginBottom:"2vw", marginRight:"6vw" }}>
+              <Accordion.Title
+                active={activeIndex === 0}
+                index={0}
+                onClick={this.handleClick} 
+                style={{ fontSize: "2vw" }}
+              >
+                <Icon name="dropdown" />
+                What makes DSS different from other tech/consulting clubs?
+              </Accordion.Title>
+              <Accordion.Content active={activeIndex === 0} style={{ fontSize: "2vw" }}>
+                <p>1: We prioritize leaving a positive impact on our fellow students in the data science community at Berkeley. Every semester we host a variety of free events and workshops dedicated to providing educational and career opportunities to those interested.</p>
+                <p>2: We are the only club at UC Berkeley to annually host a Datathon for Social Good. Members of any DSS Committee can get involved in organizing this event. Anyone (non-UC Berkeley students included) is welcome and invited to enjoy the Annual Datathon for Social Good!</p>
+                <p>3: We have programs and opportunities tailored to ALL backgrounds and experience levels. Our DeCal is designed to teach beginners to think creatively using data and essential data science tools. And our Consulting and Social Good Committees provide further exposure to industry-level machine learning and analytics projects. Our Academic Development Committee enables students to share their expertise through leading workshops for and mentoring our DeCal students. Finally, our external events are free and open to anyone and everyone!</p>
+                
+              </Accordion.Content>
+
+              <Accordion.Title
+                active={activeIndex === 1}
+                index={1}
+                onClick={this.handleClick}
+                style={{ fontSize: "2vw" }}
+              >
+                <Icon name="dropdown" />
+                Do I need experience to join?
+              </Accordion.Title>
+              <Accordion.Content active={activeIndex === 1} style={{ fontSize: "2vw" }}>
+                <p>DeCal: Nope! We will teach you data science from the ground up. Just come prepared with an open mind and lots of creativity!</p>
+                <p>Committee: Knowledge of Python and data science libraries at the CS61A and Data 8 levels is highly recommended. For the Academic Development Committee, prior experience in teaching and mentorship is also preferred.Taking our DeCal is a great way to learn some of the concepts we use in our Committees!</p>
+              </Accordion.Content>
+
+              <Accordion.Title
+                active={activeIndex === 2}
+                index={2}
+                onClick={this.handleClick}
+                style={{ fontSize: "2vw" }}
+              >
+                <Icon name="dropdown" />
+                What’s the difference between the consulting and social good committees?
+              </Accordion.Title>
+              <Accordion.Content active={activeIndex === 2} style={{ fontSize: "2vw" }}>
+                <p>While our Consulting Committee focuses on developing machine learning and analytics projects for large companies with well-established data infrastructure, our Social Good Committee works flexibly with nonprofits and NGOs on meeting their needs, whether that be delivering analytics or building up data infrastructure.</p>
+              </Accordion.Content>
+
+              <Accordion.Title
+                active={activeIndex === 3}
+                index={3}
+                onClick={this.handleClick}
+                style={{ fontSize: "2vw" }}
+              >
+                <Icon name="dropdown" />
+                Can I apply to be a Committee Member and a DeCal Student?
+              </Accordion.Title>
+              <Accordion.Content active={activeIndex === 3} style={{ fontSize: "2vw" }}>
+                <p>Yes, you can apply to both a Committee and the DeCal, but may only choose one to participate in.</p>
+              </Accordion.Content>
+
+              <Accordion.Title
+                active={activeIndex === 4}
+                index={4}
+                onClick={this.handleClick}
+                style={{ fontSize: "2vw" }}
+                >
+                <Icon name="dropdown" />
+                What makes the DSS DeCal different from Data 8 or Data 100?
+              </Accordion.Title>
+              <Accordion.Content active={activeIndex === 4} style={{ fontSize: "2vw" }}>
+              <p>Courses such as Data 8 and Data 100 provide a fantastic foundation for learning technical data science concepts. Our DeCal aims to supplement UC Berkeley’s data science curriculum by challenging students to collaboratively brainstorm their own original data science project ideas and learn the practical steps needed to see their project through to completion.</p>
+              </Accordion.Content> 
+
+              <Accordion.Title
+                active={activeIndex === 5}
+                index={5}
+                onClick={this.handleClick}
+                style={{ fontSize: "2vw" }}
+                >
+                <Icon name="dropdown" />
+                Are there ways to get involved apart from applying to a committee or registering for the DeCal?
+              </Accordion.Title>
+              <Accordion.Content active={activeIndex === 5} style={{ fontSize: "2vw" }}>
+              <p>Every semester we host a variety of events open to the public, which are great ways to mingle with other data science students! We have an upcoming data science focused career fair, Datathon for Social Good, and more! Add our external event calendar (hyperlink pls) to obtain calendar invites to all our upcoming events, and subscribe to the mailing list (hyperlink pls) for updates as events come up!</p>
+              </Accordion.Content> 
+
+              <Accordion.Title
+                active={activeIndex === 6}
+                index={6}
+                onClick={this.handleClick}
+                style={{ fontSize: "2vw" }}
+                >
+                <Icon name="dropdown" />
+                When is the DeCal? Does the class allow conflicts?
+              </Accordion.Title>
+              <Accordion.Content active={activeIndex === 6} style={{ fontSize: "2vw" }}>
+              <p>The DeCal will be Wednesdays from 6-8PM. We will not allow time conflicts and attendance will be mandatory because you will be working in groups on your projects!</p>
+              </Accordion.Content> 
+            </Accordion>
+          </Grid.Row>
         </Grid>
       </div>
     );
   }
 }
-export default Consulting;
+export default Join;
+
+
+{/* <Accordion.Title
+active={activeIndex === 0}
+index={0}
+onClick={this.handleClick}
+style={{ fontSize: "2vw" }}
+>
+<Icon name="dropdown" />
+q1
+</Accordion.Title>
+<Accordion.Content active={activeIndex === 0} style={{ fontSize: "1.5vw" }}>
+<p>TBD</p>
+</Accordion.Content> */}
