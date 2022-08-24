@@ -296,6 +296,7 @@ class Join extends Component {
           left: "1.5vw",
           right: "1.5vw",
           bottom: "15vw",
+          position: "absolute",
           // margin: 'auto',
           // margintop: "10vw",
           marginBottom: '15vw',
@@ -466,6 +467,7 @@ class Join extends Component {
                 color: "#000000",
                 marginTop: "1vw",
                 marginBottom: "5vw",
+                position: "relative",
                 textAlign: "center",
                 lineHeight: "4vw",
                 fontSize: "2vw",
@@ -513,6 +515,7 @@ class Join extends Component {
                   border: "5px solid #8CD6D1",
                   boxSizing: "border-box",
                   borderRadius: "3vw",
+                  position: "relative",
                   width: "100%",
                   height: "5vw",
                   marginTop: "8vw",
@@ -556,6 +559,7 @@ class Join extends Component {
                   width: "100%",
                   height: "5vw",
                   marginTop: "4vw",
+                  position: "relative",
                   // marginBottom: "1%",
                   marginLeft: "50%",
                   marginRight: "1vw",
@@ -593,6 +597,7 @@ class Join extends Component {
                   border: "5px solid #8CD6D1",
                   boxSizing: "border-box",
                   borderRadius: "3vw",
+                  position: "relative",
                   width: "100%",
                   height: "5vw",
                   marginTop: "14vw",
@@ -735,6 +740,7 @@ class Join extends Component {
                 lineHeight: "4vw",
                 fontSize: "2vw",
                 fontWeight: "21vw",
+                position: "relative",
                 fontStyle: "normal",
                 fontFamily: "Montserrat",
                 marginLeft: "6vw",
@@ -750,7 +756,7 @@ class Join extends Component {
 
         <Grid>
           <Grid.Row>
-          <Accordion style={{ center:"left", marginLeft:"15%", marginBottom:"2vw", marginRight:"6vw" }}>
+          <Accordion style={{ center:"left", marginLeft:"15%", marginBottom:"2vw", marginRight:"6vw", position: "relative" }}>
               <Accordion.Title
                 active={activeIndex === 0}
                 index={0}
@@ -830,7 +836,7 @@ class Join extends Component {
                 Are there ways to get involved apart from applying to a committee or registering for the DeCal?
               </Accordion.Title>
               <Accordion.Content active={activeIndex === 5} style={{ fontSize: "2vw" }}>
-              <p>Every semester we host a variety of events open to the public, which are great ways to mingle with other data science students! We have an upcoming data science focused career fair, Datathon for Social Good, and more! Add our <a href="https://calendar.google.com/calendar/u/2?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">external event calendar</a> to obtain calendar invites to all our upcoming events, and subscribe to <a href="https://dss.berkeley.com/mailinglist">the mailing list</a> for updates as events come up!</p>
+              <p>Every semester we host a variety of events open to the public, which are great ways to mingle with other data science students! We have an upcoming data science focused career fair, Datathon for Social Good, and more! Add our <a href="https://calendar.google.com/calendar/u/2?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">external event calendar</a> to obtain calendar invites to all our upcoming events, and subscribe to <a href="https://dssberkeley.com/mailinglist">the mailing list</a> for updates as events come up!</p>
               </Accordion.Content> 
 
               <Accordion.Title
