@@ -300,7 +300,7 @@ class Join extends Component {
           // margintop: "10vw",
           marginBottom: '15vw',
           height: "58vw",
-          // maxHeight: "28vw",
+          maxHeight: "58vw",
           // width: "115vw",
           // maxWidth: "28vw",
           }}
@@ -830,7 +830,7 @@ class Join extends Component {
                 Are there ways to get involved apart from applying to a committee or registering for the DeCal?
               </Accordion.Title>
               <Accordion.Content active={activeIndex === 5} style={{ fontSize: "2vw" }}>
-              <p>Every semester we host a variety of events open to the public, which are great ways to mingle with other data science students! We have an upcoming data science focused career fair, Datathon for Social Good, and more! Add our external event calendar (hyperlink pls) to obtain calendar invites to all our upcoming events, and subscribe to the mailing list (hyperlink pls) for updates as events come up!</p>
+              <p>Every semester we host a variety of events open to the public, which are great ways to mingle with other data science students! We have an upcoming data science focused career fair, Datathon for Social Good, and more! Add our <a href="https://calendar.google.com/calendar/u/2?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">external event calendar</a> to obtain calendar invites to all our upcoming events, and subscribe to <a href="https://dss.berkeley.com/mailinglist">the mailing list</a> for updates as events come up!</p>
               </Accordion.Content> 
 
               <Accordion.Title
