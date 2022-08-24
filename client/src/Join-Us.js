@@ -26,7 +26,7 @@ import squiggle3 from "./Consulting/squiggle3.png";
 import upright from "./Consulting/topRight.png";
 import bottomleft from "./Consulting/bottomLeft.png";
 import logo from "./Consulting/logo.png";
-import flyer from "./Backgrounds/flyer.png"
+import flyer from "./Backgrounds/fa22.png"
 
 
 import down from "./Consulting/ClientTestimonials.png";
@@ -284,15 +284,15 @@ class Consulting extends Component {
           <Image style={{position: 'relative',
           top: "5vw",
           // marginTop: '5vw',
-          left: "10vw",
-          right: "15vw",
+          left: "1.5vw",
+          right: "1.5vw",
           bottom: "15vw",
           // margin: 'auto',
           // margintop: "10vw",
           marginBottom: '15vw',
-          height: "75vw",
+          height: "58vw",
           // maxHeight: "28vw",
-          width: "115vw",
+          // width: "115vw",
           // maxWidth: "28vw",
           }}
           src={flyer}></Image>
@@ -455,7 +455,7 @@ class Consulting extends Component {
             <Grid.Row
               style={{
                 color: "#000000",
-                marginTop: "7vw",
+                marginTop: "1vw",
                 marginBottom: "5vw",
                 textAlign: "center",
                 lineHeight: "4vw",
@@ -468,11 +468,8 @@ class Consulting extends Component {
               }}
             >
 
-              We believe that the best way to learn about the innovative and
-              pioneering data science techniques is to work with companies in
-              industry. Our past clients include a wide range of companies from
-              industry-leaders like PayPal to unicorn startups such as SoFi, all
-              who have been impacted by the work Data Science Society provides.
+            Hey there! Thank you so much for taking the time to learn about DSS. On this page you will find all the different ways you can get involved with DSS, as well as what our recruitment timeline will look like for the upcoming semester. To stay up to date with all our events, including our recruitment events, you can add <a href="https://calendar.google.com/calendar/u/2?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">our external calendar</a> to receive invites on everything. If you have any questions, feel free to reach out to us at <a href="mailto:info@dss.berkeley.edu">info@dss.berkeley.edu</a>. We hope to see you very soon!
+
             </Grid.Row>
             <div>
               <Image
@@ -481,7 +478,8 @@ class Consulting extends Component {
                   left: "-10%",
                   width: "70vw",
                   position: "absolute",
-                  top: "60%",
+                  top: "70%",
+                  bottom: "5%"
                 }}
               ></Image>
             </div>
@@ -717,44 +715,29 @@ class Consulting extends Component {
 
           <Grid.Row style={{ marginLeft: "5vw", marginRight: "5vw" }}>
             <div style={consult}>
-              <div
-                style={{
-                  marginTop: "1vw",
-                  marginLeft: "-1vw",
-                }}
-              >
-                “Our team worked with DSS to analyze and model our member
-                behavior. The consultants delivered high quality presentations
-                of their insights. Their metrics, visualizations, and model
-                provided new perspectives for us to consider when evaluating
-                engagement. The team was very professional and skilled, and they
-                were a pleasure to work with.” - Michelle Leahy, Business
-                Operations Manager, Data & Engineering at SoFi
-              </div>
             </div>
           </Grid.Row>
-          {CustomTitle({ title: "Past Clients" })}
-          <Grid.Row style={{ marginTop: "3vw" }}>
-          </Grid.Row>
+          <Grid.Row
+              style={{
+                color: "#000000",
+                marginTop: "1vw",
+                marginBottom: "5vw",
+                textAlign: "center",
+                lineHeight: "4vw",
+                fontSize: "2vw",
+                fontWeight: "21vw",
+                fontStyle: "normal",
+                fontFamily: "Montserrat",
+                marginLeft: "10vw",
+                marginRight: "10vw",
+              }}
+            >
+
+            In past semesters, our members have reported these questions as being most frequently asked. 
+            If you have further questions, email <a href="mailto:info@dss.berkeley.edu"> info@dss.berkeley.edu </a>      or schedule a coffee chat at     <a href="coffee"> dssberkeley.com/coffee. </a>
+
+            </Grid.Row>
         </Grid>
-        <div
-          style={{
-            fontSize: "1.5vw",
-            fontStyle: "normal",
-            fontFamily: "Montserrat",
-            marginLeft: "28vw",
-            marginRight: "28vw",
-            marginBottom: "8vw",
-            marginTop: "4vw",
-            lineHeight: "2vw",
-            textAlign: "center",
-          }}
-        >
-          Additionally, we offer our clients sponsorship opportunities to
-          connect our clients with UC Berkeley’s top talent, from setting up
-          events (Info-sessions, Career Fairs, Case Competitions, Hackathons,
-          and Coffee Chats) to compiling extensive Resume Booklets.
-        </div>
       </div>
     );
   }
