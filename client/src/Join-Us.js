@@ -296,7 +296,6 @@ class Join extends Component {
           left: "1.5vw",
           right: "1.5vw",
           bottom: "15vw",
-          position: "absolute",
           // margin: 'auto',
           // margintop: "10vw",
           marginBottom: '15vw',
@@ -467,7 +466,6 @@ class Join extends Component {
                 color: "#000000",
                 marginTop: "1vw",
                 marginBottom: "5vw",
-                position: "relative",
                 textAlign: "center",
                 lineHeight: "4vw",
                 fontSize: "2vw",
@@ -488,9 +486,9 @@ class Join extends Component {
                 style={{
                   left: "-10%",
                   width: "70vw",
-                  position: "absolute",
                   top: "70%",
-                  bottom: "5%"
+                  bottom: "7%",
+                  position: "absolute"
                 }}
               ></Image>
             </div>
@@ -512,10 +510,9 @@ class Join extends Component {
               <Link to="applycommittee" style={{marginRight: '4vw'}}>
                 <Button onclick={"window.location='http://dssberkeley.com/applycommittee'"} style={{
                   background: "#FFFFFF",
-                  border: "5px solid #8CD6D1",
+                  border: "0.5vw solid #8CD6D1",
                   boxSizing: "border-box",
-                  borderRadius: "3vw",
-                  position: "relative",
+                  borderRadius: "1.5vw",
                   width: "100%",
                   height: "5vw",
                   marginTop: "8vw",
@@ -553,13 +550,12 @@ class Join extends Component {
               <Link to="applydecal" style={{marginRight: '4vw'}}>
                 <Button onclick={"window.location='http://dssberkeley.com/applydecal'"} style={{
                   background: "#FFFFFF",
-                  border: "5px solid #FFC54A",
+                  border: "0.5vw solid #FFC54A",
                   boxSizing: "border-box",
                   borderRadius: "3vw",
                   width: "100%",
                   height: "5vw",
                   marginTop: "4vw",
-                  position: "relative",
                   // marginBottom: "1%",
                   marginLeft: "50%",
                   marginRight: "1vw",
@@ -594,7 +590,7 @@ class Join extends Component {
               <Link to="mailinglist" style={{marginRight: '4vw'}}>
                 <Button onclick={"window.location='http://dssberkeley.com/mailinglist'"} style={{
                   background: "#FFFFFF",
-                  border: "5px solid #8CD6D1",
+                  border: "0.5vw solid #8CD6D1",
                   boxSizing: "border-box",
                   borderRadius: "3vw",
                   position: "relative",
