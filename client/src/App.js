@@ -1014,6 +1014,20 @@ class App extends Component {
               </div>
             )}
           />
+
+          <Route
+            exact
+            path="/joinus"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar2 {...props} componentid={Join} />
+                {/* <Footer></Footer> */}
+              </div>
+            )}
+          />
         </Switch>
       );
     }
