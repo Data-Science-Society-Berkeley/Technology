@@ -434,7 +434,7 @@ class CentralText extends Component {
                   </Button>
                 </Link>
                 <Button onClick={this.moveAbout} style={learn} circular>
-                  LEARN MORE{" "}
+                  Learn More{" "}
                 </Button>
               </Button.Group>
             </Grid.Column>
