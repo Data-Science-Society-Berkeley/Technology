@@ -94,6 +94,13 @@ class App extends Component {
             }}
           />
           <Route
+            path='/tej'
+            component={() => {
+              window.location.href = "https://berkeley.zoom.us/j/9748494523";
+              return null;
+            }}
+          />
+          <Route
             path="/join"
             component={() => {
               window.location.href = "https://dssberkeley.com/joinus";
