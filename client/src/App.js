@@ -108,6 +108,13 @@ class App extends Component {
             }}
           />
           <Route
+            path='/technotes'
+            component={() => {
+              window.location.href = "https://www.notion.so/dssberkeley/FALL-2022-Notes-a1e7ebcf7e0e46d2ae623fbfe5cf9c24";
+              return null;
+            }}
+          />
+          <Route
             path='/kuhu'
             component={() => {
               window.location.href = "https://berkeley.zoom.us/my/kuhusharma";
