@@ -37,6 +37,9 @@ import bottomleft from "./Acadev Images/bottomLeft.png";
 import angeline from "./Leadership Headshots/angeline.jpg";
 import pranati from "./Leadership Headshots/pranati.jpeg";
 import savvy from "./Leadership Headshots/savvy.jpeg";
+import bella from "./Leadership Headshots/bella.png"
+import paul from "./Leadership Headshots/paul.jpeg"
+import stephen from "./Leadership Headshots/stephen.jpg"
 import acadevdirs from "./Acadev Images/acadevdirs.jpeg";
 
 
@@ -490,9 +493,9 @@ class DecalLearn extends Component {
             <Card.Group centered>
               <Card style={cardstyle}>
                 {" "}
-                <Image style={imagestyle} src={angeline} />
+                <Image style={imagestyle} src={bella} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Angeline Lee</Card.Header>
+                  <Card.Header style={textstyle}>Bella Chang</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={{ roleStyle }}>
                       Director of Academic Development
@@ -500,19 +503,19 @@ class DecalLearn extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:angelinelyk@berkeley.edu">
+                  <a href="mailto:bellachang@berkeley.edu">
                     <Icon name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/in/angelineleeyingkee/">
+                  <a href="https://www.linkedin.com/in/bellaachang/">
                     <Icon name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
               <Card style={cardstyle}>
                 {" "}
-                <Image style={imagestyle} src={pranati} />
+                <Image style={imagestyle} src={paul} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Pranati Modumudi</Card.Header>
+                  <Card.Header style={textstyle}>Paul Jacobs</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={{ roleStyle }}>
                       Director of Academic Development
@@ -520,19 +523,19 @@ class DecalLearn extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:pmodumudi@berkeley.edu">
+                  <a href="mailto:pauljacobs@berkeley.edu">
                     <Icon name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/in/pranatimodumudi/">
+                  <a href="https://www.linkedin.com/in/paul-jacobs-955422235/">
                     <Icon name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
               <Card style={cardstyle}>
                 {" "}
-                <Image style={imagestyle} src={savvy} />
+                <Image style={imagestyle} src={stephen} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Savannah Streitman</Card.Header>
+                  <Card.Header style={textstyle}>Stephen Liu</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={{ roleStyle }}>
                       Director of Academic Development
@@ -540,10 +543,10 @@ class DecalLearn extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:sstreitman@berkeley.edu">
+                  <a href="mailto:stephen.liu@berkeley.edu">
                     <Icon name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/company/dssberkeley/">
+                  <a href="https://www.linkedin.com/in/liu-stephen">
                     <Icon name="linkedin" />
                   </a>
                 </Card.Content>
