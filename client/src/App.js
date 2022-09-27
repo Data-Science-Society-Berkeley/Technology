@@ -101,6 +101,13 @@ class App extends Component {
             }}
           />
           <Route
+            path='/shoutouts'
+            component={() => {
+              window.location.href = "https://airtable.com/shr5OyNH5Rv7RastW";
+              return null;
+            }}
+          />
+          <Route
             path='/preetha'
             component={() => {
               window.location.href = "https://berkeley.zoom.us/j/4802333671";
