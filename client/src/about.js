@@ -62,6 +62,7 @@ import youtubeback from "./About/youtubevideo-cover.jpg";
 import upright from "./About/cross_up.png";
 import bottomleft from "./About/cross_down.png";
 import rectangle from "./About/rectangle.png";
+import micron from "./About/micron.png"
 
 
 
@@ -1050,7 +1051,7 @@ class About extends Component {
             <Image.Group size={"medium"}>
               <Image
                 src={berkeley}
-                style={{ marginLeft: "1px", width: "15vw", marginTop: "3vw" }}
+                style={{ marginLeft: "-3px", width: "15vw", marginTop: "3vw" }}
               ></Image>
               <Image
                 src={berkeley2}
@@ -1073,6 +1074,10 @@ class About extends Component {
               ></Image>
               <Image
                 src={wids}
+                style={{ marginLeft: "5vw", width: "15vw" }}
+              ></Image>
+              <Image
+                src={micron}
                 style={{ marginLeft: "5vw", width: "15vw" }}
               ></Image>
               <Image
