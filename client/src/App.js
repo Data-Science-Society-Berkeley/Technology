@@ -200,6 +200,13 @@ class App extends Component {
             }}
           />
           <Route
+            path="/datathon"
+            component={() => {
+              window.location.href = "https://www.eventbrite.com/e/450550156647";
+              return null;
+            }}
+          />
+          <Route
             path="/dsforum"
             component={() => {
               window.location.href = "https://www.eventbrite.com/e/berkeley-data-science-forum-2022-registration-298324987067";
