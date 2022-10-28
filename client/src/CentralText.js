@@ -343,7 +343,7 @@ class CentralText extends Component {
             <Grid.Column width={9}>
               <Header style={mybigtext}>Data Science Society</Header>
               <Header as="h1" style={mymidtext}>
-                At Berkeley
+                AT BERKELEY
               </Header>
               <Image
                 style={{
