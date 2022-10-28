@@ -199,27 +199,6 @@ class App extends Component {
               </div>
             )}
           />
-          <Route
-            path="/coffee"
-            component={() => {
-              window.location.href = "https://dssberkeley.notion.site/DSS-Fall-2022-Coffee-Chat-Sign-ups-f70c6204f92542f3848283485d5876cb";
-              return null;
-            }}
-          />
-          <Route
-            path="/dsforum"
-            component={() => {
-              window.location.href = "https://www.eventbrite.com/e/berkeley-data-science-forum-2022-registration-298324987067";
-              return null;
-            }}
-          />
-          <Route
-            path="/dsforumfb"
-            component={() => {
-              window.location.href = "https://fb.me/e/1N6v2HPX3";
-              return null;
-            }}
-          />
           {/* <Route
             exact
             path="/join"
