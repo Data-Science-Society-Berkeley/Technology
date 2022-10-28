@@ -103,7 +103,7 @@ class App extends Component {
           <Route
             path='/tej'
             component={() => {
-              window.location.href = "https://www.eventbrite.com/e/450550156647";
+              window.location.href = "https://berkeley.zoom.us/j/9748494523";
               return null;
             }}
           />
