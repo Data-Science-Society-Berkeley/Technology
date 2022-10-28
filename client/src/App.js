@@ -94,6 +94,13 @@ class App extends Component {
             }}
           />
           <Route
+            path="/datathon"
+            component={() => {
+              window.location.href = "https://www.eventbrite.com/e/450550156647";
+              return null;
+            }}
+          />
+          <Route
             path='/tej'
             component={() => {
               window.location.href = "https://berkeley.zoom.us/j/9748494523";
@@ -196,13 +203,6 @@ class App extends Component {
             path="/coffee"
             component={() => {
               window.location.href = "https://dssberkeley.notion.site/DSS-Fall-2022-Coffee-Chat-Sign-ups-f70c6204f92542f3848283485d5876cb";
-              return null;
-            }}
-          />
-          <Route
-            path="/datathon"
-            component={() => {
-              window.location.href = "https://www.eventbrite.com/e/450550156647";
               return null;
             }}
           />
