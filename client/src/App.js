@@ -94,7 +94,7 @@ class App extends Component {
             }}
           />
           <Route
-            path="/datathon"
+            path="/bleh"
             component={() => {
               window.location.href = "https://www.eventbrite.com/e/450550156647";
               return null;
