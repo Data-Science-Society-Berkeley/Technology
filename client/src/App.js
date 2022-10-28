@@ -94,7 +94,7 @@ class App extends Component {
             }}
           />
           <Route
-            path="/datathon"
+            path='/datathon'
             component={() => {
               window.location.href = "https://www.eventbrite.com/e/450550156647";
               return null;
@@ -153,13 +153,6 @@ class App extends Component {
             path="/join"
             component={() => {
               window.location.href = "https://dssberkeley.com/joinus";
-              return null;
-            }}
-          />
-          <Route
-            path="/family"
-            component={() => {
-              window.location.href = "https://trusting-montalcini-b87ad0.netlify.app/";
               return null;
             }}
           />
