@@ -18,6 +18,7 @@ import Cookies from "js-cookie";
 import Social from "./Social.js";
 import Education from "./Education.js";
 import Service from "./Services.js";
+import Resources from "./Resources.js";
 import GeneralMember from "./generalmember.js";
 import Hierarchy from "./hierarchy";
 import Join from "./Join-Us"
@@ -954,6 +955,20 @@ class App extends Component {
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar2 {...props} componentid={GeneralMember} />
+                {/* <Footer></Footer> */}
+              </div>
+            )}
+          />
+
+          <Route
+            exact
+            path="/resources"
+            render={(props) => (
+              <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar2 {...props} componentid={Resources} />
                 {/* <Footer></Footer> */}
               </div>
             )}
