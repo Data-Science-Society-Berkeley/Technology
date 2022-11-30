@@ -53,81 +53,14 @@ const gridoffset = {
 
 // Lecture list
 // Add each lecture entry in the identical js object format inside this array
-const lectures = [
+/*const lectures = [
   {
     week: 1,
     date: new Date("9/21/2021 PST"),
     name: "Welcome, Icebreakers, Starting Your Project",
     link: "https://tinyurl.com/4unszu42",
-  },
-  {
-    week: 2,
-    date: new Date("9/28/2021 PST"),
-    name: "Data Science Lifecycle, Using Python Libraries, Intro to Pandas",
-    link: "https://tinyurl.com/2bhcbpxp",
-    nbook: "https://tinyurl.com/mini-lecture-notebook",
-  },
-  {
-    week: 3,
-    date: new Date("10/5/2021 PST"),
-    name: "Data Cleaning with Pandas",
-    link: "https://tinyurl.com/jaxxvt3r",
-    nbook: "https://tinyurl.com/wvyeuvfa",
-  },
-  {
-    week: 4,
-    date: new Date("10/12/2021 PST"),
-    name: "Data Visualization and Exploratory Data Analysis",
-    link: "https://tinyurl.com/nskxf7n4",
-    nbook: "https://tinyurl.com/tbzdstay",
-  },
-  {
-    week: 5,
-    date: new Date("10/19/2021 PST"),
-    name: "Hypothesis Testing in Python",
-    link: "https://tinyurl.com/3s3pfxbs",
-    nbook: "https://tinyurl.com/xs36xv23",
-  },
-  {
-    week: 6,
-    date: new Date("10/26/2021 PST"),
-    name: "Basic Machine Learning Models",
-    link: "https://tinyurl.com/yr9dpppr",
-    nbook: "https://tinyurl.com/5t46ntcs"
-  },
-  {
-    week: 7,
-    date: new Date("11/02/2021 PST"),
-    name: "Model Evaluation & Cross Validation",
-    link: "https://tinyurl.com/ppn3xjn8",
-    nbook: "https://tinyurl.com/5t46ntcs"
-  },
-  {
-    week: 8,
-    date: new Date("11/09/2021 PST"),
-    name: "Career Panel (Alumni guest speakers)",
-    link: "https://tinyurl.com/2p99deap",
-  },
-  {
-    week: 9,
-    date: new Date("11/16/2021 PST"),
-    name: "How to Create an Engaging Deliverable (Deepnote guest speaker)",
-    link: "https://tinyurl.com/2p9c8368",
-  },
-
-  {
-    week: 10,
-    date: new Date("11/23/2021 PST"),
-    name: "THANKSGIVING, NO MEETING",
-    link: "",
-  },
-  {
-    week: 11,
-    date: new Date("11/30/2021 PST"),
-    name: "GM Symposium!",
-    link: "",
-  },
-];
+  }
+];*/
 
 // Styles
 const mybigtext = {
@@ -241,7 +174,7 @@ class DecalLearn extends Component {
     this.join = this.join.bind(this);
   }
   // Generate Table based on lectures list
-  loadTable(props) {
+  /*loadTable(props) {
     const lectures = props.lectures;
     const options = {
       year: "numeric",
@@ -289,7 +222,7 @@ class DecalLearn extends Component {
         <Table.Body>{tableRows}</Table.Body>
       </Table>
     );
-  }
+    } */
   updateEmail = (value) => {
     // TODO if its an invalid email we can prompt them for an error later
     this.setState({ email: value.target.value });
@@ -320,7 +253,7 @@ class DecalLearn extends Component {
     return (
       <div>
 
-        <div>
+        {/*<div>
           <Image src={upright}
           style= {{
             right:"4vw",
@@ -332,7 +265,7 @@ class DecalLearn extends Component {
             maxWidth: "30vw",
           }}>
           </Image>
-        </div>
+        </div>*/}
 
         <h1
           style={{
@@ -351,9 +284,10 @@ class DecalLearn extends Component {
           fontSize: "3vw",
           lineHeight: "6vw",
           }}
-        >Decal | Spring 2022
+        >Decal
         </h1>
-        <div>
+        
+        {/*<div>
           <Image src={bottomleft}
           style= {{
             left:"4vw",
@@ -365,14 +299,14 @@ class DecalLearn extends Component {
             maxWidth: "30vw",
           }}>
           </Image>
-        </div>
+        </div>*/}
 
         <Grid centered>
         <div
           style={{
             marginBottom: "3.5vw",
-            marginLeft: "5vw",
-            marginRight: "5vw",
+            marginLeft: "6vw",
+            marginRight: "6vw",
             //margin: "0 auto",
             fontFamily: "Montserrat",
             fontStyle: "normal",
@@ -384,41 +318,86 @@ class DecalLearn extends Component {
         >
 
           <Grid.Row>
+          <div style={{
+            /*
+            top:"25vw",
+            width: "100%",
+            height: "auto",
+            textAlign: "center",
+            color: "black",
+            marginTop: "30vw",
+            margin: 'auto',
+            marginBottom:'5vw',
+            position: "absolute",
+            transform: "translate(-50%, -50%)",
+            fontFamily: "Montserrat",
+            fontSize: "2vw",
+            lineHeight: "6vw",
+            fontWeight: "bold"*/
+            marginTop: "35vw",
+            textAlign: "center",
+            lineHeight: "3vw",
+            fontSize: "2.3vw",
+            fontWeight: "21.5vw",
+            fontWeight: "bold"
+          }}
+        >Intro to Real World Data Science
+            </div>
+
             <div style={{
-              marginTop: "25vw",
+              marginTop: "5vw",
               textAlign: "center",
               lineHeight: "3vw",
               fontSize: "2vw",
               fontWeight: "21.5vw",
             }}>
-              Welcome to Data Science Society at Berkeley&rsquo;s Decal Program!
-              Our program tailored towards beginner data scientists (previously known as General Membership) is now a Decal!
-              This semester-long program is geared towards introducing students to essential data science skills through
-              project based learning. Our program takes a departure from the traditional classroom setting by allowing members
-              to work collaboratively on an original data science project of their choosing.
-
-              Members will have full creative control and will receive mentorship from our Academic Development committee members. We will cover every step of the
-              data science lifecycle: from formulating a data-centric project idea, to extracting stories with exploratory data analysis,
-              to finally creating and evaluating machine learning models. Below is the schedule from last semester, this semester's schedule will be updated accordingly!
-
-              <Image
-                src={squiggly1}
-                style={{
-                  left: "60%",
-                  width: "40vw",
-                  position: "absolute",
-                  //top: "60%",
-                  marginBottom: "40vw",
-                }}
-              ></Image>
-
+              Data Science Society is UC Berkeley's first student-run, not-for-profit organization focused on data science and its 
+              interdisciplinary applications. Since our founding in 2016, we have united students from a wide range of disciplines behind our
+              shared passion for all things data.
 
             </div>
-
-
           </Grid.Row>
 
+          <Grid.Row>
+          <div style={{
+            marginTop: "35vw",
+            textAlign: "center",
+            lineHeight: "3vw",
+            fontSize: "2.3vw",
+            fontWeight: "21.5vw",
+            fontWeight: "bold"
+          }}
+        >Mission and Values
+            </div>
 
+            <div style={{
+              marginTop: "5vw",
+              textAlign: "center",
+              lineHeight: "3vw",
+              fontSize: "2vw",
+              fontWeight: "21.5vw",
+            }}>Our mission is to foster a strong data science community on campus by advocating 
+            for educational workshops, professional events, and corporate projects. Our educational 
+            and consulting initiatives have impacted thousands of students in a variety of majors 
+            across campus and given them the technical and soft skills needed to thrive in an 
+            increasingly data-centric world.
+
+            </div>
+          </Grid.Row>
+
+          <Grid.Row>
+          <div style={{
+            marginTop: "30vw",
+            textAlign: "center",
+            lineHeight: "3vw",
+            fontSize: "2.5vw",
+            fontWeight: "21.5vw",
+            fontWeight: "bold"
+          }}>Our Committees
+
+          </div>
+
+          </Grid.Row>
           <Grid.Row
             centered
             columns={2}
@@ -426,9 +405,9 @@ class DecalLearn extends Component {
               marginTop: "4vw",
               right: "3vw"
             }}
-          >
+          > 
 
-              <Grid.Column>
+              {/*<Grid.Column>
                 <div style={{ textAlign: "center", marginTop: "10vw",}}>
                   {CustomTitleBlack({ title: "Schedule" })}
 
@@ -441,9 +420,7 @@ class DecalLearn extends Component {
                   </div>
                 </div>
 
-
-
-              </Grid.Column>
+          </Grid.Column>
 
               <Grid.Column>
 
@@ -457,28 +434,10 @@ class DecalLearn extends Component {
                   //marginTop: "10vw",
                   }}>
                 </Image>
-              </Grid.Column>
-
-
-
+              </Grid.Column>*/}
           </Grid.Row>
 
 
-
-
-          <div>
-            <Grid.Row
-              style={{
-                marginRight: "5vw",
-                 marginTop: "5vw",
-                }}>
-              {this.loadTable({ lectures: lectures })}
-            </Grid.Row>
-          </div>
-
-          <Grid.Row style={{ marginTop: "6vw", marginBottom: "4vw" }}>
-            <Header style={headTextStyle}>For all course materials, click <a style={inTextLink} href="https://drive.google.com/drive/folders/15I7X9a95b1kox6TdLxjS622AxJNWMVXM?usp=sharing">here</a></Header>
-          </Grid.Row>
 
           <Grid.Row style={{ marginTop: "6vw", marginBottom: "4vw" }}>
           {CustomTitleBlack({ title: "Directors" })}

@@ -783,7 +783,7 @@ class CentralText extends Component {
                 marginTop: "8vw",
               }}
             >
-              Subscribe to our newsletter!
+              Join Our Mailing List!
             </Grid.Column>
             <Grid.Column
               style={{
@@ -798,8 +798,18 @@ class CentralText extends Component {
               Stay updated on our events, recruiting, and other on-campus
               initiatives.{" "}
             </Grid.Column>
-            <Grid.Column style={{ marginBottom: "7vw" }}>
-              <Form success={this.state.success} style={{ marginTop: "7vw" }}>
+            <Grid.Column 
+              width={12}
+              style={{
+                marginLeft: "7vw",
+                fontWeight: "300",
+                fontSize: "2.5vw",
+                lineHeight: "2vw",
+                fontFamily: "Montserrat",
+                marginTop: "3vw",
+                marginBottom: "7vw" }}>
+              Join our mailing list <a href="https://airtable.com/shr084vc5JtxBydJK">here!</a>
+              {/* <Form success={this.state.success} style={{ marginTop: "7vw" }}>
                 <Form.Input
                   onChange={this.onEChange}
                   style={formStyle}
@@ -818,7 +828,7 @@ class CentralText extends Component {
                   header="Form Completed"
                   content="Thanks for signing up for our newsletter!"
                 />
-              </Form>
+              </Form> */}
             </Grid.Column>
           </Grid.Row>
         </Grid>
