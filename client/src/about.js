@@ -203,24 +203,94 @@ const execstyle6 = {
 };
 const aboutlinks = {
   fontFamily: "Montserrat",
-  fontWeight: "normal",
-  fontSize: "2.5vw",
+  fontWeight: "600",
+  fontSize: "2vw",
   lineHeight: "3vw",
-  height: "3vw",
-  color: "#FFFFFF",
+  height: "0vw",
+  color: "black",
   whiteSpace: "nowrap",
   position: "absolute",
-  top: "50%",
+  top: "20%",
   left: "50%",
+  textAlign: "center",
   transform: "translate(-50%, -50%)",
 };
 
 const aboutlinks2 = {
   fontFamily: "Montserrat",
-  fontWeight: "normal",
+  fontWeight: "600",
   fontSize: "2.5vw",
-  color: "#FFFFFF",
-  margin: "auto",
+  color: "black",
+  marginLeft: "auto",
+  left: "0vw",
+  textAlign: "center",
+  position: "relative",
+};
+
+const aboutlinks3 = {
+  fontFamily: "Montserrat",
+  fontWeight: "600",
+  fontSize: "2vw",
+  lineHeight: "3vw",
+  width: "20vw",
+  height: "3vw",
+  color: "black",
+  position: "absolute",
+  top: "20%",
+  left: "50%",
+  textAlign: "center",
+  transform: "translate(-50%, -50%)"
+};
+
+const aboutstats = {
+  fontFamily: "Montserrat",
+  fontWeight: "bold",
+  fontSize: "4.8vw",
+  lineHeight: "3vw",
+  width: "10vw",
+  height: "3vw",
+  color: "#FFC54A",
+  position: "absolute",
+  top: "20%",
+  left: "100%",
+  textAlign: "center",
+  marginBottom: "3vw",
+  transform: "translate(-50%, -50%)"
+};
+
+const aboutstats2 = {
+  fontFamily: "Montserrat",
+  fontWeight: "bold",
+  fontSize: "4.8vw",
+  color: "#FFC54A",
+  marginLeft: "14vw",
+  textAlign: "center",
+  position: "relative",
+};
+
+const aboutstats3 = {
+  fontFamily: "Montserrat",
+  fontWeight: "normal",
+  fontSize: "2vw",
+  lineHeight: "3vw",
+  width: "20vw",
+  height: "3vw",
+  color: "black",
+  position: "relative",
+  top: "20%",
+  left: "80%",
+  textAlign: "center",
+  transform: "translate(-50%, -50%)",
+  marginTop: "65px",
+  marginLeft: "35px"
+};
+
+const aboutstats4 = {
+  fontFamily: "Montserrat",
+  fontWeight: "normal",
+  fontSize: "2vw",
+  color: "000000",
+  left: "0vw",
   textAlign: "center",
   position: "relative",
 };
@@ -503,17 +573,20 @@ class About extends Component {
   sendData(data) {
     this.props.buttonClick(data);
   }
-  scrollJoin() {
-    document.getElementById("join").scrollIntoView();
+  scrollSponsor() {
+    document.getElementById("sponsors").scrollIntoView();
   }
   scrollWho() {
     document.getElementById("who").scrollIntoView();
   }
-  scrollFind() {
-    document.getElementById("place").scrollIntoView();
+  scrollCommittee() {
+    document.getElementById("committees").scrollIntoView();
   }
   scrollTeam() {
     document.getElementById("team").scrollIntoView();
+  }
+  scrollMission() {
+    document.getElementById("mission").scrollIntoView();
   }
 
   screenWidthBigEnough() {
@@ -539,7 +612,7 @@ class About extends Component {
 
     return (
       <div>
-        <div>
+        {/* <div>
           <Image src={upright}
           style= {{
             right:"5vw",
@@ -551,8 +624,8 @@ class About extends Component {
             maxWidth: "30vw",
           }}>
           </Image>
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <Image src={rectangle}
           style= {{
             position: 'absolute',
@@ -564,14 +637,44 @@ class About extends Component {
             maxWidth: "17vw",
           }}>
           </Image>
+        </div> */}
+        {/* <div>
+          <Image src={rectangle}
+          style= {{
+            position: 'absolute',
+            top: "28vw",
+            left: '35vw',
+            height: "2.8vw",
+            maxHeight: "2.8vw",
+            width: "32vw",
+            maxWidth: "32vw",
+          }}>
+          </Image>
+        </div> */}
+        <div>
+          <Image style={{position: 'relative',
+          top: "0vw",
+          // marginTop: '3vw',
+          left: "0vw",
+          right: "30vw",
+          bottom: "15vw",
+          // margin: 'auto',
+          // margintop: "10vw",
+          // marginBottom: '0vw',
+          // height: "70vw",
+          // maxHeight: "80vw",
+          width: "100%",
+          maxWidth: "100%",
+          }}
+          src={story}></Image>
         </div>
         <h1
           style={{
-          top:"20vw",
+          top:"23vw",
           width: "100%",
           height: "auto",
           textAlign: "center",
-          color: "black",
+          color: "white",
           margin: 'auto',
           // marginBottom:'10vw',
           //marginTop: "5vw",
@@ -584,37 +687,7 @@ class About extends Component {
         }}
         >About Us
         </h1>
-        <div>
-          <Image src={rectangle}
-          style= {{
-            position: 'absolute',
-            top: "28vw",
-            left: '35vw',
-            height: "2.8vw",
-            maxHeight: "2.8vw",
-            width: "32vw",
-            maxWidth: "32vw",
-          }}>
-          </Image>
-        </div>
-        <div>
-          <Image style={{position: 'relative',
-          top: "20vw",
-          // marginTop: '3vw',
-          left: "30vw",
-          right: "30vw",
-          bottom: "15vw",
-          // margin: 'auto',
-          // margintop: "10vw",
-          marginBottom: '15vw',
-          height: "38vw",
-          maxHeight: "38vw",
-          width: "71vw",
-          maxWidth: "71vw",
-          }}
-          src={story}></Image>
-        </div>
-        <div>
+        {/* <div>
           <Image src={bottomleft}
           style= {{
             left:"0vw",
@@ -626,420 +699,452 @@ class About extends Component {
             maxWidth: "30vw",
           }}>
           </Image>
-        </div>
+        </div> */}
         <Grid entered style={gridoffset}>
           <Grid.Row
             width={16}
-            columns={4}
+            columns={5}
             style={{
               backgroundColor: "#8CD6D1",
-              width: "100%",
+              width: "100vw",
               height: "7vw",
               marginTop: "-3vw",
               position: "relative",
             }}
           >
-            <Grid.Column width={4}>
+            <Grid.Column width={3} style={aboutlinks2}>
               <div onClick={this.scrollWho} style={aboutlinks}>
                 Who we are
               </div>
             </Grid.Column>
-            <Grid.Column width={4} style={{ aboutlinks2 }}>
-              <div onClick={this.scrollJoin} style={aboutlinks}>
-                Why Join?
+            <Grid.Column width={3} style={aboutlinks2}>
+              <div onClick={this.scrollMission} style={aboutlinks}>
+                Mission & Values
               </div>
             </Grid.Column>
-            <Grid.Column width={4} style={{ aboutlinks2 }}>
-              <div onClick={this.scrollFind} style={aboutlinks}>
-                Find your place
+            <Grid.Column width={3} style={aboutlinks2}>
+              <div onClick={this.scrollCommittee} style={aboutlinks}>
+                Our Committees
               </div>
             </Grid.Column>
-            <Grid.Column width={4} style={{ aboutlinks2 }}>
+            <Grid.Column width={3} style={aboutlinks2}>
               <div onClick={this.scrollTeam} style={aboutlinks}>
-                Our Team
+                Executive Team
+              </div>
+            </Grid.Column>
+            <Grid.Column width={3} style={aboutlinks2}>
+              <div onClick={this.scrollSponsor} style={aboutlinks3}>
+                Sponsors & Collaborators
               </div>
             </Grid.Column>
           </Grid.Row>
-          {/* <div id="who"> */}
-          {CustomTitle({ title: "Who We Are", id: "who" })}
-          {/* </div> */}
+          <div id="who">
+          </div>
           <Grid.Row centered columns={1} style={{ marginBottom: "7vw" }}>
-            <Grid.Column
+          <div
+            style={{
+              zIndex: "1",
+              position: "relative",
+              marginBottom: "-25vw",
+            }}
+            >
+          </div>
+            <div
               style={{
-                marginLeft: "12vw",
-                marginRight: "auto",
+                position: "relative",
+                textShadow: "none",
+                top: "25vw",
+                left: "1vw",
+                zIndex: "3",
+                fontFamily: "Montserrat",
+                fontStyle: "43vw",
+                fontWeight: "bold",
+                fontSize: "2vw",
+                lineHeight: "6vw",
+                color: "black",
+                marginBottom: "3vw",
+                alignText: "center",
               }}
             >
-              <div
-                style={{
-                  fontSize: "2.5vw",
-                  lineHeight: "3vw",
-                  fontWeight: "36vw",
-                  color: "#B6E5D7",
-                  fontFamily: "Montserrat",
-                  textAlign: "center",
-                  marginLeft: "-20vw",
-                }}
-              >
-                A family of passionate individuals looking to make a change.
+            <span>Who We Are</span>
+            </div>
+            <div
+              centered
+              style={{
+                position: "relative",
+                textShadow: "none",
+                width: "89vw",
+                top: "22vw",
+                left: "23vw",
+                zIndex: "4",
+                fontFamily: "Montserrat",
+                fontStyle: "normal",
+                fontWeight: "normal",
+                fontSize: "2.1vw",
+                lineHeight: "2.5vw",
+                color: "black",
+                alignText: "center",
+              }}
+            >
+              Data Science Society is UC Berkeley's first student-run, not-for-profit organization 
+              focused on data science and its interdisciplinary applications. Since our founding in 
+              2016, we have united students from a wide range of disciplines behind our shared 
+              passion for all things data.
+          </div>
+          </Grid.Row>
+          {/* <Grid entered style={gridoffset}> */}
+          <Grid.Row
+            width={10}
+            columns={4}
+            style={{
+              // backgroundColor: "#8CD6D1",
+              width: "50%",
+              height: "3vw",
+              marginTop: "17vw",
+              left: "10vw",
+              position: "relative",
+            }}
+          >
+            <Grid.Column width={1} style={aboutstats2}>
+              <div style={aboutstats}>
+                42
               </div>
-              <div
-                style={{
-                  fontSize: "2vw",
-                  lineHeight: "3vw",
-                  fontWeight: "normal",
-                  marginTop: "4vw",
-                  color: "#000000",
-                  fontFamily: "Montserrat",
-                  textAlign: "center",
-                  marginLeft: "10vw",
-                  marginRight: "30vw",
-                }}
-              >
-                Data Science Society is UC Berkeley's first student-run,
-                not-for-profit organization focused on data science and its
-                interdisciplinary applications. Since our founding in 2016, we
-                have united students from a wide range of disciplines behind our
-                shared passion for all things data.
+              <div style={{height: "2vw"}}></div>
+              <div style={aboutstats3}>
+                Completed Client Projects
+              </div>
+            </Grid.Column>
+            <Grid.Column width={1} style={aboutstats2}>
+              <div style={aboutstats}>
+                68
+              </div>
+              <div style={{height: "2vw"}}></div>
+              <div style={aboutstats3}>
+                Past Workshops and Events Hosted
+              </div>
+            </Grid.Column>
+            <Grid.Column width={1} style={aboutstats2}>
+              <div style={aboutstats}>
+                300+
+              </div>
+              <div style={{height: "2vw"}}></div>
+              <div style={aboutstats3}>
+                Datathon Past Participants
+              </div>
+            </Grid.Column>
+            <Grid.Column width={1} style={aboutstats2}>
+              <div style={aboutstats}>
+                800+
+              </div>
+              <div style={{height: "2vw"}}></div>
+              <div style={aboutstats3}>
+                Past Members and DeCal Students
               </div>
             </Grid.Column>
           </Grid.Row>
-          <Grid.Row>
-            <div
-              style={{
-                zIndex: "1",
-                position: "relative",
-                marginBottom: "-25vw",
-              }}
-            >
-              <Image
-                src={popout}
-                style={{ zIndex: "2", height: "35vw" }}
-              ></Image>
-              <div
-                style={{
-                  position: "relative",
-                  textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-                  top: "-30vw",
-                  left: "-23vw",
-                  zIndex: "3",
-                  fontFamily: "Montserrat",
-                  fontStyle: "43vw",
-                  fontWeight: "bold",
-                  fontSize: "5vw",
-                  lineHeight: "6vw",
-                  color: "#FFFFFF",
-                  marginBottom: "3vw",
-                }}
-              >
-                <span>Our mission</span>
-                <div
-                  style={{
-                    position: "relative",
-                    textShadow: "none",
-                    width: "61vw",
-                    top: "2.5vw",
-                    left: "30vw",
-                    zIndex: "4",
-                    fontFamily: "Montserrat",
-                    fontStyle: "normal",
-                    fontWeight: "normal",
-                    fontSize: "2vw",
-                    lineHeight: "2.5vw",
-                    color: "#FFFFFF",
-                    textAlign: "left",
-                  }}
-                >
-                  We aim to foster a strong data science community on campus by
-                  advocating data science education and practice through our
-                  various committees and internal and external programs. Our
-                  educational and consulting initiatives have impacted hundreds
-                  of students in a variety of majors across campus and given
-                  them the technical and soft skills needed to thrive in an
-                  increasingly data-centric world.
-                </div>
-              </div>
-            </div>
-          </Grid.Row>
-          {CustomTitle({ title: "Why Join?", id: "join" })}
-          <Grid.Row width={12} centered>
-            <div
-              style={{
-                fontSize: "2.5vw",
-                lineHeight: "3vw",
-                fontWeight: "36vw",
-                color: "#B6E5D7",
-                fontFamily: "Montserrat",
-              }}
-            >
-              {" "}
-              Simple. To be a part of our family.
-            </div>
-          </Grid.Row>
-          <Grid.Row>
-            <Image
-              src={ret}
-              style={{
-                width: "100%",
-                maxWidth: "100%",
-                maxHeight: "100%",
-                height: "100%",
-              }}
-            ></Image>
-          </Grid.Row>
-          <Grid.Row centered></Grid.Row>
-
-          <Grid.Row
+          <div id="mission">
+          </div>
+          <Grid.Row centered columns={1} style={{ marginBottom: "7vw" }}>
+          <div
+            style={{
+              position: "relative",
+              textShadow: "none",
+              top: "15vw",
+              left: "1vw",
+              zIndex: "3",
+              fontFamily: "Montserrat",
+              fontStyle: "43vw",
+              fontWeight: "bold",
+              fontSize: "2vw",
+              lineHeight: "6vw",
+              color: "black",
+              marginBottom: "3vw",
+              alignText: "center",
+            }}
+          >
+          <span>Mission and Values</span>
+          </div>
+          <div
             centered
             style={{
+              position: "relative",
+              textShadow: "none",
+              width: "92vw",
+              top: "13vw",
+              left: "23vw",
+              zIndex: "4",
               fontFamily: "Montserrat",
               fontStyle: "normal",
-              fontSize: "3vw",
-              lineHeight: "4vw",
-              color: " #8CD6D1",
+              fontWeight: "normal",
+              fontSize: "2.1vw",
+              lineHeight: "2.5vw",
+              color: "black",
+              alignText: "center",
             }}
-          >
-            Check out our Fall 2020 Recruitment Video!
-          </Grid.Row>
-          <Grid.Row width={12} centered style={{ marginBottom: "3vw" }}>
-            <div
-              style={{
-                width: "78vw",
-                border: "10px solid #B6E5D7",
-                boxSizing: "borderBox",
-                marginTop: "5vw",
-              }}
             >
-              <Embed
-                id="XW7Zkzf7_C8"
-                source="youtube"
-                placeholder={youtubeback}
-              />
-            </div>
-          </Grid.Row>
-          {CustomTitle({ title: "Where Do You Fit In?", id: "place" })}
-          <Grid.Row
-            centered
-            columns={3}
+              Our mission is to foster a strong data science community on campus by advocating
+              for educational workshops, professional events, and corporate projects. Our educational 
+              and consulting initiatives have impacted thousands of students in a variety of majors 
+              across campus and given them the technical and soft skills needed to thrive in an 
+              increasingly data-centric world.`
+          </div>
+        </Grid.Row>
+        <div id="committees">
+          </div>
+        <Grid.Row centered columns={1} style={{ marginBottom: "7vw" }}>
+        <div
+          style={{
+            zIndex: "1",
+            position: "relative",
+            marginBottom: "-25vw",
+          }}
+          >
+        </div>
+        <div
             style={{
-              marginTop: "4vw",
-              marginRight: screenSizeResult,
-              marginLeft: screenSizeResult,
+              position: "absolute",
+              textShadow: "none",
+              width: "45vw",
+              top: "15vw",
+              left: "46vw",
+              zIndex: "3",
+              fontFamily: "Montserrat",
+              fontStyle: "43vw",
+              fontWeight: "bold",
+              fontSize: "2.5vw",
+              lineHeight: "4vw",
+              color: "black",
+              marginBottom: "7vw",
+              alignText: "center",
             }}
           >
-            <Grid.Column>
-              <div
-                style={{
-                  textAlign: "center",
-                  borderStyle: "solid",
-                  borderColor: "#8CD6D1",
-                  borderWidth: ".5vw",
-                  borderRadius: "3vw",
-                  minWidth: "28vw",
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: "2.5vw",
-                    lineHeight: "5vw",
-                  }}
-                >
-                  Executive Team
-                </div>
-                <Image
-                  src={exec}
-                  style={{ width: "25vw", margin: "2vw auto" }}
-                ></Image>
-                <div
-                  style={{
-                    fontSize: "2vw",
-                    lineHeight: "2.5vw",
-                    width: "25vw",
-                    margin: "2vw auto",
-                    alignText: "center",
-                    marginBottom: "2.5vw",
-                  }}
-                >
-                  Our team of execs is in charge of all the club operations.
-                  View our current team below!
-                </div>
-              </div>
-            </Grid.Column>
-            <Grid.Column>
-              <div
-                style={{
-                  textAlign: "center",
-                  borderStyle: "solid",
-                  borderColor: "#FFC54A",
-                  borderWidth: ".5vw",
-                  borderRadius: "3vw",
-                  minWidth: "28vw",
-                  // marginLeft: screenInterMarginResult,
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: "2.5vw",
-                    lineHeight: "5vw",
-                  }}
-                >
-                  Project Manager
-                </div>
-                <Image
-                  src={pm}
-                  style={{ width: "25vw", margin: "2vw auto" }}
-                ></Image>
-                <div
-                  style={{
-                    fontSize: "2vw",
-                    lineHeight: "2.5vw",
-                    width: "25vw",
-                    margin: "1.5vw auto",
-                    alignText: "center",
-                  }}
-                >
-                  Project managers apply their analytics expertise to lead
-                  consulting teams. We have 10 PMs across 5 projects.
-                </div>
-              </div>
-            </Grid.Column>
+          <span>How We Achieve This Mission: Our Committees</span>
+          </div>
+          <div>
+            <Image src={rectangle}
+            style= {{
+              position: 'relative',
+              top: "48vw",
+              left: '49vw',
+              height: "0.75vw",
+              maxHeight: "1.5vw",
+              width: "40vw"
+            }}>
+            </Image>
+          </div>
+        <div
+          style={{
+            position: "relative",
+            textShadow: "none",
+            top: "50vw",
+            left: "1.5vw",
+            zIndex: "3",
+            fontFamily: "Montserrat",
+            fontStyle: "43vw",
+            fontWeight: "bold",
+            fontSize: "2vw",
+            lineHeight: "6vw",
+            color: "black",
+            marginBottom: "2.5vw",
+            alignText: "center",
+          }}
+        >
+        <span>Academic Development</span>
+        </div>
+        <div
+          centered
+          style={{
+            position: "relative",
+            textShadow: "none",
+            width: "82vw",
+            top: "50vw",
+            left: "28vw",
+            zIndex: "4",
+            fontFamily: "Montserrat",
+            fontStyle: "normal",
+            fontWeight: "normal",
+            fontSize: "2.1vw",
+            lineHeight: "2.5vw",
+            color: "black",
+            marginBottom: "5vw",
+            alignText: "center",
+          }}
+          >
+            The academic development committee directs our decal program open to
+            all skill levels and students and hosts a variety of educational workshops for the
+            greater campus community.
+        </div>
+        <div
+          style={{
+            position: "relative",
+            textShadow: "none",
+            top: "50vw",
+            left: "1vw",
+            zIndex: "3",
+            fontFamily: "Montserrat",
+            fontStyle: "43vw",
+            fontWeight: "bold",
+            fontSize: "2vw",
+            lineHeight: "6vw",
+            color: "black",
+            marginBottom: "2.5vw",
+            alignText: "center",
+          }}
+        >
+        <span>Social Good</span>
+        </div>
+        <div
+          centered
+          style={{
+            position: "relative",
+            textShadow: "none",
+            width: "87vw",
+            top: "50vw",
+            left: "26vw",
+            zIndex: "4",
+            fontFamily: "Montserrat",
+            fontStyle: "normal",
+            fontWeight: "normal",
+            fontSize: "2.1vw",
+            lineHeight: "2.5vw",
+            color: "black",
+            marginBottom: "5vw",
+            alignText: "center",
+          }}
+          >
+            We are passionate about contributing to tech for good by identifying 
+            data-driven insights and actionable solutions for the missions of 
+            non-profit organizations.
+        </div>
+        <div
+          style={{
+            position: "relative",
+            textShadow: "none",
+            top: "50vw",
+            left: "1vw",
+            zIndex: "3",
+            fontFamily: "Montserrat",
+            fontStyle: "43vw",
+            fontWeight: "bold",
+            fontSize: "2vw",
+            lineHeight: "6vw",
+            color: "black",
+            marginBottom: "2.5vw",
+            alignText: "center",
+          }}
+        >
+        <span>Consulting</span>
+        </div>
+        <div
+          centered
+          style={{
+            position: "relative",
+            textShadow: "none",
+            width: "85vw",
+            top: "50vw",
+            left: "26vw",
+            zIndex: "4",
+            fontFamily: "Montserrat",
+            fontStyle: "normal",
+            fontWeight: "normal",
+            fontSize: "2.1vw",
+            lineHeight: "2.5vw",
+            color: "black",
+            marginBottom: "10vw",
+            alignText: "center",
+          }}
+          >
+            We are passionate about working with non-profit organizations 
+            to provide data-driven insights and actionable solutions through 
+            advanced analytical methods.
+        </div>
+        </Grid.Row>
+          <Grid
+            container
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+          >
+            
+          </Grid>
+          {/* <Grid.Row centered></Grid.Row> */}
 
-            <Grid.Column>
-              <div
-                style={{
-                  textAlign: "center",
-                  borderStyle: "solid",
-                  borderColor: "#8CD6D1",
-                  borderWidth: ".5vw",
-                  borderRadius: "3vw",
-                  minWidth: "28vw",
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: "2.5vw",
-                    lineHeight: "5vw",
-                  }}
-                >
-                  Committee Member
-                </div>
-                <Image
-                  src={socgood}
-                  style={{ width: "25vw", margin: "2vw auto" }}
-                ></Image>
-                <div
-                  style={{
-                    fontSize: "2vw",
-                    lineHeight: "2.5vw",
-                    width: "25vw",
-                    margin: "2vw auto",
-                    alignText: "center",
-                    marginBottom: "3.5vw",
-                  }}
-                >
-                  CMs take charge of their committees: Academic Development,
-                  Consulting, and Social Good!
-                </div>
-              </div>
-            </Grid.Column>
-          </Grid.Row>
-          <Grid.Row
-            centered
-            columns={3}
+          <Grid.Row centered width={12} style={{ marginTop: "40vw" }}>
+            {/* {CustomTitle({ title: "Our Executive Team", id: "team" })} */}
+            <div
             style={{
-              marginTop: "5vw",
-              marginRight: screenSizeResult,
-              marginLeft: screenSizeResult,
+              position: "absolute",
+              textShadow: "none",
+              width: "45vw",
+              top: "0vw",
+              left: "46vw",
+              zIndex: "3",
+              fontFamily: "Montserrat",
+              fontStyle: "43vw",
+              fontWeight: "bold",
+              fontSize: "2.5vw",
+              lineHeight: "4vw",
+              color: "black",
+              marginBottom: "10vw",
+              alignText: "center",
             }}
           >
-
-            <Grid.Column>
-              <div
-                style={{
-                  textAlign: "center",
-                  borderStyle: "solid",
-                  borderColor: "#8CD6D1",
-                  borderWidth: ".5vw",
-                  borderRadius: "3vw",
-                  minWidth: "28vw",
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: "2.5vw",
-                    lineHeight: "5vw",
-                  }}
-                >
-                  Decal Student
-                </div>
-                <Image
-                  src={decal}
-                  style={{ width: "25vw", margin: "2vw auto" }}
-                ></Image>
-                <div
-                  style={{
-                    fontSize: "2vw",
-                    lineHeight: "2.5vw",
-                    width: "25vw",
-                    margin: "2.25vw auto",
-                    alignText: "center",
-                  }}
-                >
-                  DeCal students enroll in our DeCal - run by our Acadev
-                  committee - and learn about industry relevant DS tools.
-                </div>
-              </div>
-            </Grid.Column>
-
-            <Grid.Column>
-              <div
-                style={{
-                  textAlign: "center",
-                  borderStyle: "solid",
-                  borderColor: "#FFC54A",
-                  borderWidth: ".5vw",
-                  borderRadius: "3vw",
-                  minWidth: "28vw",
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: "2.5vw",
-                    lineHeight: "5vw",
-                  }}
-                >
-                  Senior Advisor
-                </div>
-                <Image
-                  src={senior}
-                  style={{ width: "25vw", margin: "2vw auto" }}
-                ></Image>
-                <div
-                  style={{
-                    fontSize: "2vw",
-                    lineHeight: "2.5vw",
-                    width: "25vw",
-                    margin: "2vw auto",
-                    alignText: "center",
-                  }}
-                >
-                  Our Senior Advisors consist of previous committee members who
-                  help advise teams, give guest lectures, and present workshops.
-                </div>
-              </div>
-            </Grid.Column>
-          </Grid.Row>
-          {CustomTitle({ title: "Our Exec Team", id: "team" })}
-          <Grid.Row centered width={12} style={{ marginTop: "7vw" }}>
+          <span>Our Executive Team</span>
+          </div>
+          <div>
+            <Image src={rectangle}
+            style= {{
+              position: 'relative',
+              top: "4vw",
+              left: '1.5vw',
+              height: "0.75vw",
+              maxHeight: "1.5vw",
+              width: "40vw",
+              marginBottom: "10vw"
+            }}>
+            </Image>
+          </div>
             <Card.Group centered>{leadershipCards}</Card.Group>
             ``
           </Grid.Row>
 
-          {/* <Grid.Row style={{ marginTop: "7vw", marginLeft: "17vw" }}>
-            <Header style={mybigtext}> Our Sponsors</Header>
-          </Grid.Row> */}
-          {CustomTitle({ title: "Our Sponsors", id: "sponsors" })}
+          <Grid.Row style={{ marginTop: "7vw", marginLeft: "17vw" }}>
+          <div
+            style={{
+              position: "absolute",
+              textShadow: "none",
+              width: "45vw",
+              top: "0vw",
+              left: "29vw",
+              zIndex: "3",
+              fontFamily: "Montserrat",
+              fontStyle: "43vw",
+              fontWeight: "bold",
+              fontSize: "2.5vw",
+              lineHeight: "4vw",
+              color: "black",
+              marginBottom: "10vw",
+              alignText: "center",
+            }}
+          >
+          <span>Sponsors</span>
+          </div>
+          <div>
+            <Image src={rectangle}
+            style= {{
+              position: 'relative',
+              top: "4vw",
+              left: '31vw',
+              height: "0.75vw",
+              maxHeight: "1.5vw",
+              width: "40vw",
+              marginBottom: "10vw"
+            }}>
+            </Image>
+            </div>
+          </Grid.Row>
           <Grid.Row
+
             centered
             style={
               {
@@ -1085,8 +1190,44 @@ class About extends Component {
               ></Image>
             </Image.Group>
           </Grid.Row>
-          {CustomTitle({ title: "Our Partners", id: "partners" })}
+          {/* {CustomTitle({ title: "Our Partners", id: "partners" })} */}
           <Grid.Row centered>
+            <div
+              style={{
+                position: "absolute",
+                textShadow: "none",
+                width: "45vw",
+                top: "0vw",
+                left: "46vw",
+                zIndex: "3",
+                fontFamily: "Montserrat",
+                fontStyle: "43vw",
+                fontWeight: "bold",
+                fontSize: "2.5vw",
+                lineHeight: "4vw",
+                color: "black",
+                marginBottom: "10vw",
+                marginTop: "10vw",
+                alignText: "center",
+              }}
+            >
+            <span>Current and Past Collaborators</span>
+            </div>
+            <div>
+              <Image src={rectangle}
+              style= {{
+                position: 'relative',
+                top: "15vw",
+                left: '1.5vw',
+                height: "0.75vw",
+                maxHeight: "1.5vw",
+                width: "55vw",
+                marginBottom: "17vw"
+              }}>
+              </Image>
+            </div>
+            </Grid.Row>
+            <Grid.Row centered>
             <Image.Group
               size={"medium"}
               style={{ marginTop: "3vw", marginBottom: "7vw" }}
