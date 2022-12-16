@@ -37,9 +37,10 @@ import bottomleft from "./Acadev Images/bottomLeft.png";
 import angeline from "./Leadership Headshots/angeline.jpg";
 import pranati from "./Leadership Headshots/pranati.jpeg";
 import savvy from "./Leadership Headshots/savvy.jpeg";
-import bella from "./Leadership Headshots/bella.png"
-import paul from "./Leadership Headshots/paul.jpeg"
-import stephen from "./Leadership Headshots/stephen.jpg"
+import bella from "./Leadership Headshots/bella2.png"
+import paul from "./Leadership Headshots/paul2.png"
+import stephen from "./Leadership Headshots/stephen2.png"
+import mentors from "./Decal Images/acadevmentors_fall22.png";
 import acadevdirs from "./Acadev Images/acadevdirs.jpeg";
 
 
@@ -53,81 +54,14 @@ const gridoffset = {
 
 // Lecture list
 // Add each lecture entry in the identical js object format inside this array
-const lectures = [
+/*const lectures = [
   {
     week: 1,
     date: new Date("9/21/2021 PST"),
     name: "Welcome, Icebreakers, Starting Your Project",
     link: "https://tinyurl.com/4unszu42",
-  },
-  {
-    week: 2,
-    date: new Date("9/28/2021 PST"),
-    name: "Data Science Lifecycle, Using Python Libraries, Intro to Pandas",
-    link: "https://tinyurl.com/2bhcbpxp",
-    nbook: "https://tinyurl.com/mini-lecture-notebook",
-  },
-  {
-    week: 3,
-    date: new Date("10/5/2021 PST"),
-    name: "Data Cleaning with Pandas",
-    link: "https://tinyurl.com/jaxxvt3r",
-    nbook: "https://tinyurl.com/wvyeuvfa",
-  },
-  {
-    week: 4,
-    date: new Date("10/12/2021 PST"),
-    name: "Data Visualization and Exploratory Data Analysis",
-    link: "https://tinyurl.com/nskxf7n4",
-    nbook: "https://tinyurl.com/tbzdstay",
-  },
-  {
-    week: 5,
-    date: new Date("10/19/2021 PST"),
-    name: "Hypothesis Testing in Python",
-    link: "https://tinyurl.com/3s3pfxbs",
-    nbook: "https://tinyurl.com/xs36xv23",
-  },
-  {
-    week: 6,
-    date: new Date("10/26/2021 PST"),
-    name: "Basic Machine Learning Models",
-    link: "https://tinyurl.com/yr9dpppr",
-    nbook: "https://tinyurl.com/5t46ntcs"
-  },
-  {
-    week: 7,
-    date: new Date("11/02/2021 PST"),
-    name: "Model Evaluation & Cross Validation",
-    link: "https://tinyurl.com/ppn3xjn8",
-    nbook: "https://tinyurl.com/5t46ntcs"
-  },
-  {
-    week: 8,
-    date: new Date("11/09/2021 PST"),
-    name: "Career Panel (Alumni guest speakers)",
-    link: "https://tinyurl.com/2p99deap",
-  },
-  {
-    week: 9,
-    date: new Date("11/16/2021 PST"),
-    name: "How to Create an Engaging Deliverable (Deepnote guest speaker)",
-    link: "https://tinyurl.com/2p9c8368",
-  },
-
-  {
-    week: 10,
-    date: new Date("11/23/2021 PST"),
-    name: "THANKSGIVING, NO MEETING",
-    link: "",
-  },
-  {
-    week: 11,
-    date: new Date("11/30/2021 PST"),
-    name: "GM Symposium!",
-    link: "",
-  },
-];
+  }
+];*/
 
 // Styles
 const mybigtext = {
@@ -158,11 +92,11 @@ const cardstyle = {
   maxHeight: "56vw",
   // height: "800px",
   marginBottom: "1vw",
-  marginleft: "2vw",
+  marginleft: "10vw",
 };
 const imagestyle = {
-  height: "28vw",
-  maxHeight: "28vw",
+  height: "40vw",
+  maxHeight: "35w",
   width: "28vw",
   maxWidth: "28vw",
 };
@@ -231,6 +165,59 @@ const titletext = {
 
 };
 
+const aboutstats = {
+  fontFamily: "Montserrat",
+  fontWeight: "bold",
+  fontSize: "4.8vw",
+  lineHeight: "3vw",
+  width: "10vw",
+  height: "3vw",
+  color: "#FFC54A",
+  position: "absolute",
+  top: "20%",
+  left: "100%",
+  textAlign: "center",
+  marginBottom: "3vw",
+  transform: "translate(-50%, -50%)"
+};
+
+const aboutstats2 = {
+  fontFamily: "Montserrat",
+  fontWeight: "bold",
+  fontSize: "4.8vw",
+  color: "#FFC54A",
+  marginLeft: "14vw",
+  textAlign: "center",
+  position: "relative",
+};
+
+const aboutstats3 = {
+  fontFamily: "Montserrat",
+  fontWeight: "normal",
+  fontSize: "2vw",
+  lineHeight: "3vw",
+  width: "20vw",
+  height: "3vw",
+  color: "black",
+  position: "relative",
+  top: "20%",
+  left: "80%",
+  textAlign: "center",
+  transform: "translate(-50%, -50%)",
+  marginTop: "65px",
+  marginLeft: "35px"
+};
+
+const aboutstats4 = {
+  fontFamily: "Montserrat",
+  fontWeight: "normal",
+  fontSize: "2vw",
+  color: "000000",
+  left: "0vw",
+  textAlign: "center",
+  position: "relative",
+};
+
 
 class DecalLearn extends Component {
   constructor(props) {
@@ -240,56 +227,7 @@ class DecalLearn extends Component {
     };
     this.join = this.join.bind(this);
   }
-  // Generate Table based on lectures list
-  loadTable(props) {
-    const lectures = props.lectures;
-    const options = {
-      year: "numeric",
-      month: "numeric",
-      day: "numeric",
-      weekday: "long",
-    };
-    const tableRows = lectures.map((c) => (
-      <Table.Row>
-        <Table.Cell>{c.week}</Table.Cell>
-        <Table.Cell>
-          {new Intl.DateTimeFormat("default", options).format(c.date)}
-        </Table.Cell>
-        <Table.Cell>{c.name}</Table.Cell>
-        <Table.Cell>
-          <a href={c.link}>{c.link}</a>
-        </Table.Cell>
-        <Table.Cell>
-          <a href={c.nbook}>{c.nbook}</a>
-        </Table.Cell>
-      </Table.Row>
-    ));
 
-    return (
-      <Table>
-        <Table.Header>
-          <Table.Row>
-            <Table.HeaderCell class="col-md-1 center">
-              <b>Week</b>
-            </Table.HeaderCell>
-            <Table.HeaderCell class="col-md-1">
-              <b>Date</b>
-            </Table.HeaderCell>
-            <Table.HeaderCell class="col-md-3">
-              <b>Topic</b>
-            </Table.HeaderCell>
-            <Table.HeaderCell class="col-md-3">
-              <b>Meeting Slides</b>
-            </Table.HeaderCell>
-            <Table.HeaderCell class="col-md-3">
-              <b>Notebook</b>
-            </Table.HeaderCell>
-          </Table.Row>
-        </Table.Header>
-        <Table.Body>{tableRows}</Table.Body>
-      </Table>
-    );
-  }
   updateEmail = (value) => {
     // TODO if its an invalid email we can prompt them for an error later
     this.setState({ email: value.target.value });
@@ -320,7 +258,7 @@ class DecalLearn extends Component {
     return (
       <div>
 
-        <div>
+        {/*<div>
           <Image src={upright}
           style= {{
             right:"4vw",
@@ -332,28 +270,9 @@ class DecalLearn extends Component {
             maxWidth: "30vw",
           }}>
           </Image>
-        </div>
-
-        <h1
-          style={{
-          top:"27vw",
-          width: "100%",
-          height: "auto",
-          textAlign: "center",
-          color: "black",
-          margin: 'auto',
-          // marginBottom:'5vw',
-          //marginTop: "5vw",
-          position: "absolute",
-          // transform: "translate(-50%, -50%)",
-          fontFamily: "Montserrat",
-          fontWeight: "bold",
-          fontSize: "3vw",
-          lineHeight: "6vw",
-          }}
-        >Decal | Spring 2022
-        </h1>
-        <div>
+        </div>*/}
+        
+        {/*<div>
           <Image src={bottomleft}
           style= {{
             left:"4vw",
@@ -365,70 +284,335 @@ class DecalLearn extends Component {
             maxWidth: "30vw",
           }}>
           </Image>
+        </div>*/}
+
+        <div>
+          <Image style={{position: 'relative',
+          top: "0vw",
+          // marginTop: '3vw',
+          left: "0vw",
+          right: "30vw",
+          bottom: "15vw",
+          // margin: 'auto',
+          // margintop: "10vw",
+          // marginBottom: '0vw',
+          // height: "70vw",
+          // maxHeight: "80vw",
+          width: "100%",
+          maxWidth: "100%",
+          }}
+          src={mentors}></Image>
         </div>
 
-        <Grid centered>
-        <div
+        <Grid entered style={gridoffset}>
+          <Grid.Row
+            width={16}
+            columns={5}
+            style={{
+              //backgroundColor: "#8CD6D1",
+              width: "80vw",
+              height: "7vw",
+              marginTop: "3vw",
+              position: "relative",
+            }}
+          >
+          <div
           style={{
-            marginBottom: "3.5vw",
-            marginLeft: "5vw",
-            marginRight: "5vw",
-            //margin: "0 auto",
-            fontFamily: "Montserrat",
-            fontStyle: "normal",
-            fontWeight: "300",
-            fontSize: "1.5vw",
-            lineHeight: "2vw",
-
+          top:"2vw",
+          //width: "100%",
+          //height: "auto",
+          textAlign: "start",
+          color: "black",
+          //textIndent: "5vw",
+          //margin: 'auto',
+          // marginBottom:'5vw',
+          //marginTop: "5vw",
+          position: "relative",
+          //transform: "translate(-50%, -50%)",
+          fontFamily: "Montserrat",
+          fontWeight: "bold",
+          fontSize: "5vw",
+          lineHeight: "6vw",
+          left: "10vw"
           }}
-        >
+        >DeCal
+        
 
+        </div>
+        </Grid.Row>
           <Grid.Row>
+          <div style={{
+            /*
+            top:"25vw",
+            width: "100%",
+            height: "auto",
+            textAlign: "center",
+            color: "black",
+            marginTop: "30vw",
+            margin: 'auto',
+            marginBottom:'5vw',
+            position: "absolute",
+            transform: "translate(-50%, -50%)",
+            fontFamily: "Montserrat",
+            fontSize: "2vw",
+            lineHeight: "6vw",
+            fontWeight: "bold"*/
+            marginTop: "3vw",
+            textAlign: "start",
+            lineHeight: "3vw",
+            fontSize: "2.3vw",
+            fontWeight: "21.5vw",
+            position: "relative",
+            left: "10vw"
+          }}
+        >Data 198: <i>Intro to Real World Data Science</i>
+            </div>
+
             <div style={{
-              marginTop: "25vw",
-              textAlign: "center",
+              marginTop: "5vw",
+              marginRight: "20vw",
+              paddingRight:"10vw",
+              textAlign: "start",
               lineHeight: "3vw",
               fontSize: "2vw",
               fontWeight: "21.5vw",
+              position: "relative",
+              left: "10vw"
             }}>
-              Welcome to Data Science Society at Berkeley&rsquo;s Decal Program!
-              Our program tailored towards beginner data scientists (previously known as General Membership) is now a Decal!
-              This semester-long program is geared towards introducing students to essential data science skills through
-              project based learning. Our program takes a departure from the traditional classroom setting by allowing members
-              to work collaboratively on an original data science project of their choosing.
-
-              Members will have full creative control and will receive mentorship from our Academic Development committee members. We will cover every step of the
-              data science lifecycle: from formulating a data-centric project idea, to extracting stories with exploratory data analysis,
-              to finally creating and evaluating machine learning models. Below is the schedule from last semester, this semester's schedule will be updated accordingly!
-
-              <Image
-                src={squiggly1}
-                style={{
-                  left: "60%",
-                  width: "40vw",
-                  position: "absolute",
-                  //top: "60%",
-                  marginBottom: "40vw",
-                }}
-              ></Image>
-
+              The goal of our DeCal is to provide <b>data science education</b> and <b>experience</b> for students with little to no prior 
+              knowledge of the field. Our course focuses on practical tools not otherwise emphasized in Berkeley’s academic curricula, 
+              and allows for students to explore their domain interests in a semester-long project.
 
             </div>
+          </Grid.Row>
 
-
+          <Grid.Row
+            width={10}
+            columns={4}
+            style={{
+              // backgroundColor: "#8CD6D1",
+              width: "40%",
+              height: "3vw",
+              marginTop: "17vw",
+              left: "10vw",
+              position: "relative",
+            }}
+          >
+            <Grid.Column width={1} style={aboutstats2}>
+              <div style={aboutstats}>
+                42
+              </div>
+              <div style={{height: "2vw"}}></div>
+              <div style={aboutstats3}>
+                Completed Client Projects
+              </div>
+            </Grid.Column>
+            <Grid.Column width={1} style={aboutstats2}>
+              <div style={aboutstats}>
+                68
+              </div>
+              <div style={{height: "2vw"}}></div>
+              <div style={aboutstats3}>
+                Past Workshops and Events Hosted
+              </div>
+            </Grid.Column>
+            <Grid.Column width={1} style={aboutstats2}>
+              <div style={aboutstats}>
+                300+
+              </div>
+              <div style={{height: "2vw"}}></div>
+              <div style={aboutstats3}>
+                Datathon Past Participants
+              </div>
+            </Grid.Column>
+            <Grid.Column width={1} style={aboutstats2}>
+              <div style={aboutstats}>
+                800+
+              </div>
+              <div style={{height: "2vw"}}></div>
+              <div style={aboutstats3}>
+                Past Members and DeCal Students
+              </div>
+            </Grid.Column>
           </Grid.Row>
 
 
-          <Grid.Row
-            centered
-            columns={2}
-            style={{
-              marginTop: "4vw",
-              right: "3vw"
-            }}
-          >
 
-              <Grid.Column>
+
+          <Grid.Row>
+          <div style={{
+            marginTop: "20vw",
+            textAlign: "start",
+            lineHeight: "3vw",
+            fontSize: "2.3vw",
+            fontWeight: "21.5vw",
+            fontWeight: "bold",
+            position: "relative",
+            left: "10vw"
+          }}
+        >What will you learn in the DeCal?
+            </div>
+            </Grid.Row>
+            <Grid.Row>
+            <div style={{
+              marginTop: "3w",
+              width: "95vw",
+              textAlign: "start",
+              lineHeight: "3vw",
+              fontSize: "2vw",
+              fontWeight: "21.5vw",
+              position: "relative",
+              left: "10vw",
+              //alignText: "center"
+            }}>This semester-long course focuses on introducing students to essential data science skills in an interactive setting. 
+            As a DeCal student, you will learn every step of the data science lifecycle: from formulating a data-centric project idea, 
+            to extracting stories with exploratory data analysis, and finally creating and evaluating predictive models.
+            <br />
+            <br />
+            Using your new skills and knowledge, you will have the opportunity to develop a project of your choosing with other 
+            undergraduate students under a DSS mentor. You will also be able to present your findings and final project at Berkeley’s 
+            semesterly Data Science Research Symposium and publish your project on DSS’s website.
+            </div>
+          </Grid.Row>
+
+          <Grid.Row>
+          <div style={{
+            marginTop: "10vw",
+            textAlign: "start",
+            lineHeight: "3vw",
+            fontSize: "2.5vw",
+            fontWeight: "21.5vw",
+            fontWeight: "bold",
+            position: "relative",
+            left: "10vw",
+            //alignText: "center"
+          }}>What project do you work on?
+          </div>
+          </Grid.Row>
+          <Grid.Row>
+          <div style={{
+              marginTop: "3vw",
+              textAlign: "start",
+              lineHeight: "3vw",
+              fontSize: "2vw",
+              fontWeight: "21.5vw",
+              width:"95vw",
+              position: "relative",
+              left: "10vw",
+              right: "10vw"
+            }}>You may chooes your own project! Decal students in past semesters have worked on projects related to various 
+            different disciplines like Economics, Public Health, Linguistics, Biology, and much more! Feel free to look at 
+            previous projects below for some inspiration. Be creative! 
+            </div>
+          </Grid.Row>
+
+          <Grid.Row>
+          <div style={{
+            marginTop: "10vw",
+            textAlign: "start",
+            lineHeight: "3vw",
+            fontSize: "2.5vw",
+            fontWeight: "21.5vw",
+            fontWeight: "bold",
+            position: "relative",
+            left: "10vw"
+          }}>Who can take the DeCal?
+          </div>
+          </Grid.Row>
+          <Grid.Row>
+          <div style={{
+              marginTop: "3vw",
+              textAlign: "start",
+              lineHeight: "3vw",
+              fontSize: "2vw",
+              fontWeight: "21.5vw",
+              width:"95vw",
+              position: "relative",
+              left: "10vw",
+              right: "10vw"
+            }}>There are no formal prerequisites for this course. However, it is recommended to have some level of basic programming 
+            experience in Python; many of our past students have taken this DeCal concurrently or after DATA 8. Above all, we are looking for beginners in 
+            data science who are passionate about learning more about the field and willing to dedicate themselves to the required semester-long project.
+            </div>
+          </Grid.Row>
+
+          <Grid.Row>
+          <div style={{
+            marginTop: "10vw",
+            textAlign: "start",
+            lineHeight: "3vw",
+            fontSize: "2.5vw",
+            fontWeight: "21.5vw",
+            fontWeight: "bold",
+            position: "relative",
+            left: "10vw",
+            right: "10vw"
+          }}>How can you apply?
+          </div>
+          </Grid.Row>
+          <Grid.Row>
+          <div style={{
+              marginTop: "3vw",
+              textAlign: "start",
+              lineHeight: "3vw",
+              fontSize: "2vw",
+              fontWeight: "21.5vw",
+              width:"95vw",
+              position: "relative",
+              left: "10vw",
+              right: "10vw"
+            }}>You can apply through the form linked below. Keep an eye out for our application 
+            deadline next semester to apply!
+            </div>
+          </Grid.Row>
+
+
+          <Grid.Row>
+          <div style={{
+            marginTop: "10vw",
+            textAlign: "start",
+            lineHeight: "3vw",
+            fontSize: "2.5vw",
+            fontWeight: "21.5vw",
+            fontWeight: "bold",
+            position: "relative",
+            left: "10vw",
+          }}>Further details
+          </div>
+          </Grid.Row>
+          <Grid.Row>
+          <div style={{
+              marginTop: "3vw",
+              textAlign: "start",
+              lineHeight: "3vw",
+              fontSize: "2vw",
+              fontWeight: "21.5vw",
+              width:"95vw",
+              position: "relative",
+              left: "10vw",
+              right: "10vw"
+            }}>The DeCal is 2 units (P/NP) and there is a mandatory lecture on Wednesdays from 6-8pm. We allow two unexcused absences 
+            before it affects your grade. The commitments for this course include: homeworks graded on completion, a final project and symposium presentations.
+            </div>
+          </Grid.Row>
+
+
+          <Grid.Row>
+          <div style={{
+            marginTop: "10vw",
+            marginBottom: "10vw",
+            textAlign: "start",
+            lineHeight: "3vw",
+            fontSize: "2.5vw",
+            fontWeight: "21.5vw",
+            fontWeight: "bold",
+            position: "relative",
+            left: "10vw"
+          }}>Course Staff
+          </div>
+          </Grid.Row>
+
+              {/*<Grid.Column>
                 <div style={{ textAlign: "center", marginTop: "10vw",}}>
                   {CustomTitleBlack({ title: "Schedule" })}
 
@@ -441,9 +625,7 @@ class DecalLearn extends Component {
                   </div>
                 </div>
 
-
-
-              </Grid.Column>
+          </Grid.Column>
 
               <Grid.Column>
 
@@ -457,39 +639,23 @@ class DecalLearn extends Component {
                   //marginTop: "10vw",
                   }}>
                 </Image>
-              </Grid.Column>
+              </Grid.Column>*/}
+          
 
 
 
-          </Grid.Row>
+          {/*<Grid.Row style={{ marginTop: "6vw", textAlign: "start", marginBottom: "4vw" }}>
+          {CustomTitleBlack({ title: "Course Staff" })}
 
 
-
-
-          <div>
-            <Grid.Row
-              style={{
-                marginRight: "5vw",
-                 marginTop: "5vw",
-                }}>
-              {this.loadTable({ lectures: lectures })}
-            </Grid.Row>
-          </div>
-
-          <Grid.Row style={{ marginTop: "6vw", marginBottom: "4vw" }}>
-            <Header style={headTextStyle}>For all course materials, click <a style={inTextLink} href="https://drive.google.com/drive/folders/15I7X9a95b1kox6TdLxjS622AxJNWMVXM?usp=sharing">here</a></Header>
-          </Grid.Row>
-
-          <Grid.Row style={{ marginTop: "6vw", marginBottom: "4vw" }}>
-          {CustomTitleBlack({ title: "Directors" })}
-
-          <div style={{margin: "0 auto", maxWidth: "28vw"}}>
-                    <Image src={gmLine2}></Image>
-          </div>
-
-          </Grid.Row>
-
+            </Grid.Row>*/}
+          
           <Grid.Row>
+          <div style={{
+            textAlign: "center"
+          }}
+          >
+          
             <Card.Group centered>
               <Card style={cardstyle}>
                 {" "}
@@ -552,114 +718,10 @@ class DecalLearn extends Component {
                 </Card.Content>
               </Card>
             </Card.Group>
-
-
-            <Image
-                src={squiggly1_rotate}
-                style={{
-                  left: "0%",
-                  width: "40vw",
-                  position: "absolute",
-                  //top: "60%",
-                  //marginTop: "5vw",
-                  marginBottom: "9vw",
-                }}
-              ></Image>
-          </Grid.Row>
-
-
-          <Grid.Row style={{ marginTop: "8vw", marginBottom: "5vw" }}>
-            {CustomTitleBlack({ title: "Previous Projects" })}
-
-            <div style={{marginLeft: "41vw", maxWidth: "65vw"}}>
-                    <Image src={projLine}></Image>
+            
             </div>
           </Grid.Row>
-
-
-
-          <Grid.Row>
-            <Card.Group itemsPerRow={3}>
-              <Card style={cardstyle} href='https://docs.google.com/presentation/d/1UKztQg67ZjjskCrqMhdgmbnVVO9al-IPx-xR2-LkIEA/edit?usp=sharing' target="_blank">
-                {" "}
-
-                <Image style={imagestyle} src={proj1} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Predicting Housing Prices</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={{ roleStyle }}>
-                    Kian Golestaneh, Sarang Deshpande, Yash Bhargava, Max Liu, Grant Wagner
-                    </span>
-                  </Card.Meta>
-                </Card.Content>
-              </Card>
-              <Card style={cardstyle} href='https://deepnote.com/project/FA20-Group-1-0i9tyJ2oQH6OCthlzOVWwg' target="_blank">
-                {" "}
-                <Image style={imagestyle} src={proj2} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Predicting Word Complexity</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={{ roleStyle }}>
-                      Wendy Kim, Yu Xi Gui, Fakhri Widodo
-                    </span>
-                  </Card.Meta>
-                </Card.Content>
-              </Card>
-              <Card style={cardstyle} href='https://docs.google.com/presentation/d/1KzOJAMd_vBhIXN925wrUJ8qbOw8QnASRBHX0Zdo8abI/edit?usp=sharing' target="_blank">
-                {" "}
-                <Image style={imagestyle} src={proj3} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Effect of Fires on COVID Deaths</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={{ roleStyle }}>
-                    Lili Wang, Fatima Fadel, Vaishak Krishna, Cesar Gonzalez Renteria
-                    </span>
-                  </Card.Meta>
-                </Card.Content>
-              </Card>
-              <Card style={cardstyle} href='https://docs.google.com/presentation/d/1bRQK0e5U2oSt6XvDN-VudbxUU9vRYA_Tyi2NY8RttXA/edit?usp=sharing' target="_blank">
-                {" "}
-                <Image style={imagestyle} src={proj4} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Impact of Economic Factors in Online Education</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={{ roleStyle }}>
-                    Katherine Zheng, Daniel Yao, Risheek Somu, Jonathan Chan
-                    </span>
-                  </Card.Meta>
-                </Card.Content>
-              </Card>
-
-              <Card style={cardstyle} href='https://docs.google.com/presentation/d/1ce1H9ZcV6GY-15wkIqw9orR7AMtiJiijKQ2GGLVe--8/edit?usp=sharing' target="_blank">
-                {" "}
-                <Image style={imagestyle} src={proj5} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Evaluating the Performance of the Stock Market in 2020</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={{ roleStyle }}>
-                    Adi, Austin, Damon, James, Tommy, Winston
-                    </span>
-                  </Card.Meta>
-                </Card.Content>
-
-              </Card>
-              <Card style={cardstyle} href='https://deepnote.com/project/7acf0dbb-348f-4776-a97d-2d77186b4297#%2FNLP%20fake%20news%2Ffake.ipynb' target="_blank">
-                {" "}
-                <Image style={imagestyle} src={proj6} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Detecting Fake News</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={{ roleStyle }}>
-                    Roshun, Wilson, Rithwik, Richard
-                    </span>
-                  </Card.Meta>
-                </Card.Content>
-
-              </Card>
-            </Card.Group>
-          </Grid.Row>
-
-        </div>
+          
       </Grid>
     </div>
     );
