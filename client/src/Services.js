@@ -145,7 +145,8 @@ class Education extends Component {
   }
   render() {
     const { activeIndex } = this.state;
-
+    return <p>Hi</p>
+    /*
     return (
       <div>
         <Header style={mybigtext}> SERVICES</Header>
@@ -200,6 +201,7 @@ class Education extends Component {
         </Card.Group>
       </div>
     );
+    */
   }
 }
 export default Education;

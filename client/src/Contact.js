@@ -164,7 +164,10 @@ class Login extends Component {
       // if response not valid throw an error on the page
     }
   }
+ 
   render() {
+    return <p>hi</p>;
+    /*
     return (
       <Grid style={gridoffset}>
         <Grid.Row columns={2} style={{ position: "relative" }}>
@@ -223,6 +226,9 @@ class Login extends Component {
         </Grid.Row>
       </Grid>
     );
+    */
   }
 }
+
+
 export default Login;
