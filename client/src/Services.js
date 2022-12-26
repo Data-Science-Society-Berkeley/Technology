@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import './Services.css';
+import './services.css';
 import {
   Image,
   Grid,
@@ -192,7 +192,7 @@ class Education extends Component {
                   </ul>
               </div>
               <div class="card">
-                  <img style={{width: "40px", margin: "7px auto 10px 0px",}} src={sweIcon}></img> 
+                  <img style={{width: "40px", margin: "7px auto 10px auto",}} src={sweIcon}></img> 
                   <h3 style={{margin: "12px -1px 5px 0px", fontSize: "22px",}}>SOFTWARE DEVELOPMENT</h3>
                   <ul style={{listStyle: "none", paddingLeft: "0", textAlign: "center", fontSize:"16px",}}>
                       <li>Data Warehousing</li>
