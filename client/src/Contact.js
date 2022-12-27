@@ -166,7 +166,7 @@ class Login extends Component {
   }
  
   render() {
-    return <p>hi</p>;
+    return null;
     /*
     return (
       <Grid style={gridoffset}>

@@ -53,7 +53,7 @@ const bannerText = {
     fontFamily: "Montserrat", 
     fontWeight: "600",
     position: "absolute",
-    top: "1em",
+    top: "-7vw",
     bottom: "1em",
     right: "1em",
     left: "1em",
@@ -61,7 +61,6 @@ const bannerText = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    top: "-5vw",
     resize: "none",
 
     
@@ -92,7 +91,7 @@ const whiteSpaceText = {
     margin: "50px 0px 20px 0px",
     position: "relative",
     color: "black",
-    fontSize: "32px",
+    fontSize: "max(3vw, 28px)",
     fontWeight: "Bold",
     fontFamily: "Montserrat", 
     gridColumn: "span 3",
@@ -144,7 +143,7 @@ class Education extends Component {
   render() {
     const { activeIndex } = this.state;
     return (
-      <div style={{fontSize: "16px", width: "100%", height: "100%",}}>
+      <div style={{fontSize: "max(2vw, 16px)", width: "100%", height: "100%",}}>
           {/*Services Banner + Intro*/}
           <div style={{display: "grid", gridTemplateColumns: "repeat(3, 1fr)", margin: "-8px -8px 1.3rem -8px", gap: "5px"}}>
               <figure style={banner}>
@@ -162,15 +161,15 @@ class Education extends Component {
                   <p style ={{
                       position: "relative",
                       textAlign: "left",
-                      margin: "0vw 14vw 0vw 14vw",
+                      margin: "0vw 10vw 0vw 10vw",
                       }}>We partner with corporations and non-profit organizations to provide data-driven insights and actionable solutions through advanced analytical methods. We believe that the skills that we have learned in university can and should be applied to support and uplift communities equitably, not just for private tech and those who exclusively benefit from it. 
                   </p>
               </div>
 
               <div class="card">
                   <img style={{width: "35px", margin: "3px auto 5px auto",}} src={mlIcon}></img>
-                  <h3 style={{margin: "10px -1px 0px 0px", fontSize: "22px",}}>MACHINE LEARNING</h3>
-                  <ul style={{listStyle: "none", paddingLeft: "0", textAlign: "center", fontSize:"16px",}}>
+                  <h3 style={{margin: "10px -1px 16px 0px", fontSize: "max(2vw, 22px)", fontWeight: "bold",}}>MACHINE LEARNING</h3>
+                  <ul style={{listStyle: "none", paddingLeft: "0", textAlign: "center", fontSize:"max(1.5vw, 16px)",}}>
                       <li>Natural Language Processing</li>
                       <li>Accurate Algorithms</li>
                       <li>Predictive Analytics</li>
@@ -181,8 +180,8 @@ class Education extends Component {
               </div>
               <div class="card">
                   <img style={{width: "40px", margin: "7px auto 11px auto",}} src={businessIcon}></img> 
-                  <h3 style={{margin: "12px -1px 5px 0px", fontSize: "22px",}}>BUSINESS INTELLIGENCE</h3>
-                  <ul style={{listStyle: "none", paddingLeft: "0", textAlign: "center", fontSize:"16px",}}>
+                  <h3 style={{margin: "12px -1px 16px 0px", fontSize: "max(2vw, 22px)", fontWeight: "bold",}}>BUSINESS INTELLIGENCE</h3>
+                  <ul style={{listStyle: "none", paddingLeft: "0", textAlign: "center", fontSize:"max(1.5vw, 16px)",}}>
                       <li>Customer Segmentation</li>
                       <li>Efficiency of Operations</li>
                       <li>Customer Churn</li>
@@ -193,8 +192,8 @@ class Education extends Component {
               </div>
               <div class="card">
                   <img style={{width: "40px", margin: "7px auto 10px auto",}} src={sweIcon}></img> 
-                  <h3 style={{margin: "12px -1px 5px 0px", fontSize: "22px",}}>SOFTWARE DEVELOPMENT</h3>
-                  <ul style={{listStyle: "none", paddingLeft: "0", textAlign: "center", fontSize:"16px",}}>
+                  <h3 style={{margin: "12px -1px 16px 0px", fontSize: "max(2vw, 22px)", fontWeight: "bold",}}>SOFTWARE DEVELOPMENT</h3>
+                  <ul style={{listStyle: "none", paddingLeft: "0", textAlign: "center", fontSize:"max(1.5vw, 16px)",}}>
                       <li>Data Warehousing</li>
                       <li>Systems Integration</li>
                       <li>Cloud Computing</li>
@@ -205,6 +204,7 @@ class Education extends Component {
               </div>
           </div>
           
+          <div style={{margin: "120px 0 0 0"}}></div>
           {/*Carousel*/}
           <CarouselPage />
       </div>
