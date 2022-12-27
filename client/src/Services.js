@@ -84,7 +84,6 @@ const whiteSpaceContainer = {
     width: "100%",
     height: "auto",
     gridColumn: "span 3",
-    margin: "0px 0px 4.3rem 0px",
 }
 
 const whiteSpaceText = {
@@ -164,7 +163,9 @@ class Education extends Component {
                       margin: "0vw 10vw 0vw 10vw",
                       }}>We partner with corporations and non-profit organizations to provide data-driven insights and actionable solutions through advanced analytical methods. We believe that the skills that we have learned in university can and should be applied to support and uplift communities equitably, not just for private tech and those who exclusively benefit from it. 
                   </p>
+                  <div style={{margin:"0 0 4.3rem 0",}}></div>
               </div>
+              
 
               <div class="card">
                   <img style={{width: "35px", margin: "3px auto 5px auto",}} src={mlIcon}></img>
@@ -203,10 +204,58 @@ class Education extends Component {
                   </ul>
               </div>
           </div>
-          
-          <div style={{margin: "120px 0 0 0"}}></div>
+
           {/*Carousel*/}
+          <div style={{margin: "120px 0 0 0"}}></div>
           <CarouselPage />
+
+          {/*Clients*/}
+          <div style={{margin: "40px 0 0 0"}}></div>
+          <div class="card-layout">
+              <div style={whiteSpaceContainer}>
+                  <p style={whiteSpaceText}>FEATURED PAST CLIENTS</p>
+                  <div style={{margin:"0 0 3rem 0",}}></div>
+              </div>
+              
+              {/*Row 1*/}
+              <div class="card">
+                  <img style={{width: "35px", margin: "3px auto 5px auto",}} src={mlIcon}></img>
+                  <h3 style={{margin: "10px -1px 16px 0px", fontSize: "max(2vw, 22px)", fontWeight: "bold",}}>MACHINE LEARNING</h3>
+                  <ul style={{listStyle: "none", paddingLeft: "0", textAlign: "center", fontSize:"max(1.5vw, 16px)",}}>
+                      <li>Natural Language Processing</li>
+                      <li>Accurate Algorithms</li>
+                      <li>Predictive Analytics</li>
+                      <li>Classification</li>
+                      <li>Computer Vision</li>
+                      <li>Data Mining</li>
+                  </ul>
+              </div>
+              <div class="card">
+                  <img style={{width: "40px", margin: "7px auto 11px auto",}} src={businessIcon}></img> 
+                  <h3 style={{margin: "12px -1px 16px 0px", fontSize: "max(2vw, 22px)", fontWeight: "bold",}}>BUSINESS INTELLIGENCE</h3>
+                  <ul style={{listStyle: "none", paddingLeft: "0", textAlign: "center", fontSize:"max(1.5vw, 16px)",}}>
+                      <li>Customer Segmentation</li>
+                      <li>Efficiency of Operations</li>
+                      <li>Customer Churn</li>
+                      <li>Marketing Effectiveness</li>
+                      <li>Visualizations and Dashboards</li>
+                      <li>Geospatial Mapping</li>
+                  </ul>
+              </div>
+              <div class="card">
+                  <img style={{width: "40px", margin: "7px auto 10px auto",}} src={sweIcon}></img> 
+                  <h3 style={{margin: "12px -1px 16px 0px", fontSize: "max(2vw, 22px)", fontWeight: "bold",}}>SOFTWARE DEVELOPMENT</h3>
+                  <ul style={{listStyle: "none", paddingLeft: "0", textAlign: "center", fontSize:"max(1.5vw, 16px)",}}>
+                      <li>Data Warehousing</li>
+                      <li>Systems Integration</li>
+                      <li>Cloud Computing</li>
+                      <li>Front-End Development</li>
+                      <li>Back-End Development</li>
+                      <li>Building End-End Data Pipelines</li>
+                  </ul>
+              </div>
+
+          </div>
       </div>
     );
   }
