@@ -94,6 +94,13 @@ class App extends Component {
             }}
           />
           <Route
+            path='/datathon'
+            component={() => {
+              window.location.href = "https://www.eventbrite.com/e/450550156647";
+              return null;
+            }}
+          />
+          <Route
             path='/tej'
             component={() => {
               window.location.href = "https://berkeley.zoom.us/j/9748494523";
@@ -150,13 +157,6 @@ class App extends Component {
             }}
           />
           <Route
-            path="/family"
-            component={() => {
-              window.location.href = "https://trusting-montalcini-b87ad0.netlify.app/";
-              return null;
-            }}
-          />
-          <Route
             path="/mailinglist"
             component={() => {
               window.location.href = "https://airtable.com/shr084vc5JtxBydJK";
@@ -191,27 +191,6 @@ class App extends Component {
                 <Footer></Footer>
               </div>
             )}
-          />
-          <Route
-            path="/coffee"
-            component={() => {
-              window.location.href = "https://dssberkeley.notion.site/DSS-Fall-2022-Coffee-Chat-Sign-ups-f70c6204f92542f3848283485d5876cb";
-              return null;
-            }}
-          />
-          <Route
-            path="/dsforum"
-            component={() => {
-              window.location.href = "https://www.eventbrite.com/e/berkeley-data-science-forum-2022-registration-298324987067";
-              return null;
-            }}
-          />
-          <Route
-            path="/dsforumfb"
-            component={() => {
-              window.location.href = "https://fb.me/e/1N6v2HPX3";
-              return null;
-            }}
           />
           {/* <Route
             exact
