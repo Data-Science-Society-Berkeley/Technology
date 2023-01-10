@@ -26,10 +26,15 @@ import serviceBanner from "."
 
 import CarouselPage from "./components/Carousel.js";
 
-import servicesBanner from './Services Images/servicesbanner.jpg'
-import mlIcon from './Services Images/mlIcon.jpg'
-import sweIcon from './Services Images/sweIcon.jpg'
-import businessIcon from './Services Images/businessIcon.jpg'
+import servicesBanner from './Services Images/servicesbanner.jpg';
+import mlIcon from './Services Images/mlIcon.jpg';
+import sweIcon from './Services Images/sweIcon.jpg';
+import businessIcon from './Services Images/businessIcon.jpg';
+
+// import company logos
+import mep from './Services Images/mep.png';
+
+
 
 //issue: the elements are manually formatted by vw from the top. (i.e. top: -32vw etc. because the image covers the text up if you don't space it downwards.)
 
@@ -57,7 +62,6 @@ const bannerText = {
     bottom: "1em",
     right: "1em",
     left: "1em",
-    background: "rgba($accent, .8)",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -218,42 +222,89 @@ class Education extends Component {
               </div>
               
               {/*Row 1*/}
-              <div class="card">
-                  <img style={{width: "35px", margin: "3px auto 5px auto",}} src={mlIcon}></img>
-                  <h3 style={{margin: "10px -1px 16px 0px", fontSize: "max(2vw, 22px)", fontWeight: "bold",}}>MACHINE LEARNING</h3>
-                  <ul style={{listStyle: "none", paddingLeft: "0", textAlign: "center", fontSize:"max(1.5vw, 16px)",}}>
-                      <li>Natural Language Processing</li>
-                      <li>Accurate Algorithms</li>
-                      <li>Predictive Analytics</li>
-                      <li>Classification</li>
-                      <li>Computer Vision</li>
-                      <li>Data Mining</li>
-                  </ul>
-              </div>
-              <div class="card">
-                  <img style={{width: "40px", margin: "7px auto 11px auto",}} src={businessIcon}></img> 
-                  <h3 style={{margin: "12px -1px 16px 0px", fontSize: "max(2vw, 22px)", fontWeight: "bold",}}>BUSINESS INTELLIGENCE</h3>
-                  <ul style={{listStyle: "none", paddingLeft: "0", textAlign: "center", fontSize:"max(1.5vw, 16px)",}}>
-                      <li>Customer Segmentation</li>
-                      <li>Efficiency of Operations</li>
-                      <li>Customer Churn</li>
-                      <li>Marketing Effectiveness</li>
-                      <li>Visualizations and Dashboards</li>
-                      <li>Geospatial Mapping</li>
-                  </ul>
-              </div>
-              <div class="card">
-                  <img style={{width: "40px", margin: "7px auto 10px auto",}} src={sweIcon}></img> 
-                  <h3 style={{margin: "12px -1px 16px 0px", fontSize: "max(2vw, 22px)", fontWeight: "bold",}}>SOFTWARE DEVELOPMENT</h3>
-                  <ul style={{listStyle: "none", paddingLeft: "0", textAlign: "center", fontSize:"max(1.5vw, 16px)",}}>
-                      <li>Data Warehousing</li>
-                      <li>Systems Integration</li>
-                      <li>Cloud Computing</li>
-                      <li>Front-End Development</li>
-                      <li>Back-End Development</li>
-                      <li>Building End-End Data Pipelines</li>
-                  </ul>
-              </div>
+              <figure class="fading-card">
+                  <img src={mep}></img>
+                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  </figcaption>
+              </figure>
+              <figure class="fading-card">
+                  <img src={mep}></img>
+                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  </figcaption>
+              </figure>
+              <figure class="fading-card">
+                  <img src={mep}></img>
+                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  </figcaption>
+              </figure>
+              
+              {/*Row 2*/}
+              <figure class="fading-card">
+                  <img src={mep}></img>
+                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  </figcaption>
+              </figure>
+              <figure class="fading-card">
+                  <img src={mep}></img>
+                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  </figcaption>
+              </figure>
+              <figure class="fading-card">
+                  <img src={mep}></img>
+                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  </figcaption>
+              </figure>
+
+              {/*Row 3*/}
+              <figure class="fading-card">
+                  <img src={mep}></img>
+                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  </figcaption>
+              </figure>
+              <figure class="fading-card">
+                  <img src={mep}></img>
+                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  </figcaption>
+              </figure>
+              <figure class="fading-card">
+                  <img src={mep}></img>
+                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  </figcaption>
+              </figure>
+
+              {/*Row 4*/}
+              <figure class="fading-card">
+                  <img src={mep}></img>
+                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  </figcaption>
+              </figure>
+              <figure class="fading-card">
+                  <img src={mep}></img>
+                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  </figcaption>
+              </figure>
+              <figure class="fading-card">
+                  <img src={mep}></img>
+                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  </figcaption>
+              </figure>
+
+              {/*Row 5*/}
+              <figure class="fading-card">
+                  <img src={mep}></img>
+                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  </figcaption>
+              </figure>
+              <figure class="fading-card">
+                  <img src={mep}></img>
+                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  </figcaption>
+              </figure>
+              <figure class="fading-card">
+                  <img src={mep}></img>
+                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  </figcaption>
+              </figure>
 
           </div>
       </div>
