@@ -14,16 +14,16 @@ import {
   Segment,
 } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+/*
 import berk from "./Decal Images/berkeleyischool-logo-alternate-blue-lg.png";
 import datacamp from "./Decal Images/datacamp-logo 1.png";
 import decal from "./Decal Images/decalberkeleylogo 1.png";
 import charlie from "./Leadership Headshots/charlie.jpg";
-
-import serviceBanner from "."
-// --------------
-
+*/
 //import ReactDOM from 'react-dom/client';
 
+import serviceBanner from "."
 import CarouselPage from "./components/Carousel.js";
 
 import servicesBanner from './Services Images/servicesbanner.jpg';
@@ -33,10 +33,24 @@ import businessIcon from './Services Images/businessIcon.jpg';
 
 // import company logos
 import mep from './Services Images/mep.png';
+import medic from './Services Images/medic.png';
+import tnc from './Services Images/tnc.png'; 
+import greenPeace from './Services Images/greenpeace.png';
+import techsoup from './Services Images/techsoup.png';
+import ctn from './Services Images/ctn.png'; 
+import paypal from './Services Images/paypal.png'; 
+import sofi from './Services Images/sofi.png'; 
+import monday from './Services Images/monday.png'; 
+import venmo from './Services Images/venmo.png'; 
+import oustlabs from './Services Images/oustlabs.png'; 
+import simmer from './Services Images/simmer.png'; 
+import edify from './Services Images/edify.png'; 
+import metromile from './Services Images/metromile.png'; 
+import deepnote from './Services Images/deepnote.png'; 
 
 
 
-//issue: the elements are manually formatted by vw from the top. (i.e. top: -32vw etc. because the image covers the text up if you don't space it downwards.)
+//issue: the elements are manually formatted by vw from the top. (i.e. top: -32vw etc. because the image covers the textimpor up if you don't space it downwards.)
 
 let endpoint = "http://localhost:8080";
 
@@ -228,85 +242,99 @@ class Education extends Component {
                   </figcaption>
               </figure>
               <figure class="fading-card">
-                  <img src={mep}></img>
-                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  <img src={medic}></img>
+                  <figcaption><p>Data collected by the CHT are sensitive and cannot be shared with partner organizations without signing DUAs/NDAs. Having artificial versions that resemble real datasets would allow Medic to share data with data science partners and/or publish them in open repositories. We Developed automated Python scripts converting form questions, probability distributions and data specifications into synthetic data used for pre-production testing on apps and models.</p>
                   </figcaption>
               </figure>
               <figure class="fading-card">
-                  <img src={mep}></img>
-                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  <img src={tnc}></img>
+                  <figcaption><p>Analyzed the trends and spatial distribution of water right applications by creating an interactive map using GeoPandas. Determined the most influential variables in approved applications through feature selection. Predicted the approval status of pending water right applications through the usage of a logistic regression model.</p>
                   </figcaption>
               </figure>
               
               {/*Row 2*/}
               <figure class="fading-card">
-                  <img src={mep}></img>
-                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  <img src={greenPeace}></img>
+                  <figcaption><p>The lead conversion program at Greenpeace is devoted to convert leads to making donations, but they had yet to look back and do a thorough analysis on what factors make a lead more likely to convert (to both one-time and monthly donors).<br></br>This project analyzed historical, demographic and other available data points in order to identify predictors for conversion and come up with a model that assigns a likelihood to conversion score for leads.</p>
                   </figcaption>
               </figure>
               <figure class="fading-card">
-                  <img src={mep}></img>
-                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  <img src={techsoup}></img>
+                  <figcaption><p>Our goal was to examine and analyze TechSoup’s business records from the past 15 years in order to provide insight and business directions on how its operation and revenue can be improved. TechSoup requested us to create cohorts of records based on each client organization’s budget range, fiscal year, and months. Based on the cohorts we created, we visualize and project the trends using several metrics, including revenue, amount, frequency, etc.</p>
                   </figcaption>
               </figure>
               <figure class="fading-card">
-                  <img src={mep}></img>
-                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  <img src={ctn}></img>
+                  <figcaption><p>Community Tech Network (CTN) is a non-profit organization which promotes digital literacy for senior citizens through various programs. For this project we performed data analysis and developed a tool which automatically produces visualizations and insights on the efficacy of their digital literacy program in helping senior citizens cope with loneliness by connecting them with loved ones.</p>
                   </figcaption>
               </figure>
 
               {/*Row 3*/}
               <figure class="fading-card">
-                  <img src={mep}></img>
-                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  <img src={paypal}></img>
+                  <figcaption><p>Improve employee engagement. Utilized regression models and NLP topic modeling on employee activity datasets to improve employee interaction within the existing system. Developed a Tableau dashboard for monitoring engagement and presented insights leading to the development of PayPal's Global Innovation Tournament.</p>
                   </figcaption>
               </figure>
               <figure class="fading-card">
-                  <img src={mep}></img>
-                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  <img src={sofi}></img>
+                  <figcaption><p>Created cash in, cash out and category spending visualizations for SoFi Relay. Used MCC codes to semi-manually tag 10k SoFi transactions as their proper SoFi category. Using NLP to categorize transaction using transaction amount, merchant name, description, etc.</p>
                   </figcaption>
               </figure>
               <figure class="fading-card">
-                  <img src={mep}></img>
-                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  <img src={monday}></img>
+                  <figcaption><p>Evaluate channel partners’ performance through customer satisfaction scores. Utilized NLP techniques like topic modeling and sentiment analysis. Combined most important customer satisfaction, metrics devised clear steps on how to obtain this data, and designed an experiment that Monday would be able to execute to determine if the score was an accurate indicator.</p>
                   </figcaption>
               </figure>
 
               {/*Row 4*/}
               <figure class="fading-card">
-                  <img src={mep}></img>
-                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  <img src={venmo}></img>
+                  <figcaption><p></p>
                   </figcaption>
               </figure>
               <figure class="fading-card">
-                  <img src={mep}></img>
-                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  <img src={oustlabs}></img>
+                  <figcaption><p>We built a contextual AI chatbot using Rasa NLU framework, implemented end-to-end architecture, deploying in GCP Firebase, Cloud Functions, App Engine. We also implemented BERT to automate heuristic for chatbot interactive training, tested flow with Facebook Messenger and Android with XMPP server.</p>
                   </figcaption>
               </figure>
               <figure class="fading-card">
-                  <img src={mep}></img>
-                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  <img src={simmer}></img>
+                  <figcaption><p>Churn Prediction. Generated statistical modeling-ready dataset from app session data and find useful features for predicting churn. Engineered additional metrics/features for measuring user behavior. Devised a scheme for labeling users as churned or active.</p>
                   </figcaption>
               </figure>
 
               {/*Row 5*/}
               <figure class="fading-card">
-                  <img src={mep}></img>
-                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  <img src={edify}></img>
+                  <figcaption><p>Predict whether or not a trucking trip would be vulnerable to a safety incident. Researched and implemented different models trained for this task including neural networks, random forests, and autoencoders as well as techniques to handle the class imbalance such as SMOTE and Near Miss. Compiled results and compared the different models based on precision and recall.</p>
                   </figcaption>
               </figure>
               <figure class="fading-card">
-                  <img src={mep}></img>
-                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  <img src={metromile}></img>
+                  <figcaption><p>Set up a foundation for Metromile to be able to explore models that are cannot be used in production for comparative purposes. Gathered relevant usage based data. Appended weather and accident rate data based on the time and location of trips. Performed baseline modeling, generated a final model-ready dataset for Metromile to use for exploratory purposes and identified avenues through which Metromile could take the explorations to commercial use.</p>
                   </figcaption>
               </figure>
               <figure class="fading-card">
-                  <img src={mep}></img>
-                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  <img src={deepnote}></img>
+                  <figcaption><p>We used anonymized data of Deepnote’s users, which consists of various actions they took in their first days of using the product, as well as which users were retained, and for how long. Using this data, we used machine learning to predict which actions are most correlated with user retention, as well as which are indicative of user churning.</p>
                   </figcaption>
               </figure>
-
           </div>
+
+          {/*Directors*/}
+          <u style={{position: "relative",
+            textAlign: "center",
+            width: "100%",
+            height: "auto",
+            display: "block",
+            margin: "80px 0px 20px 0px",
+            position: "relative",
+            color: "black",
+            fontSize: "max(3vw, 28px)",
+            fontWeight: "Bold",
+            fontFamily: "Montserrat", 
+            }}>Want to work with us?</u>
+          
       </div>
     );
   }
