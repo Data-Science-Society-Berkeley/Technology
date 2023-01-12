@@ -33,6 +33,8 @@ const clientText = {
     lineHeight: "max(2.7vw, 18px)",
 }
 
+// At the moment, this is just the services page carousel with values manually inputted; however, if needed elsewhere, it can be modified.
+
 export default function CarouselPage() {
 return (
 	<div>
