@@ -166,14 +166,28 @@ class App extends Component {
           <Route
             path="/applycommittee"
             component={() => {
-              window.location.href = "https://airtable.com/shrAQtHBreBD5Yrfm";
+              window.location.href = "https://airtable.com/shrRNcB5mOQLn4sb9";
               return null;
             }}
           />
           <Route
             path="/applydecal"
             component={() => {
-              window.location.href = "https://forms.gle/A2N9ZBhnHJH2nUvy8";
+              window.location.href = "https://tinyurl.com/dssdecalapp";
+              return null;
+            }}
+          />
+          <Route
+            path="/externalcalendar"
+            component={() => {
+              window.location.href = "https://calendar.google.com/calendar/u/0?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t";
+              return null;
+            }}
+          />
+          <Route
+            path="/coffee"
+            component={() => {
+              window.location.href = "https://www.notion.so/DSS-Spring-2023-Coffee-Chat-Sign-ups-f2f3665698de491988f6a6d64060ae69";
               return null;
             }}
           />
