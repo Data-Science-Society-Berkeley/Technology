@@ -17,13 +17,32 @@ import CustomTitle from "./components/CustomTitle.js";
 
 import edlyft from "./Leadership Headshots/edlyft-logo.jpg";
 import asuc from "./Leadership Headshots/asuc_logo.png";
-import berkeley from "./Leadership Headshots/berkeley_cdss_logo.png";
+
 import berkeley2 from "./Leadership Headshots/berkeley-eecs-logo.jpg";
 import wids from "./Leadership Headshots/wids-berkeley-logo.jpg";
 import sponsor1 from "./Leadership Headshots/dsnexus-logo.png";
 import sponsor2 from "./Leadership Headshots/leadcenter_logo.png";
-import sponsor3 from "./Leadership Headshots/haas-ds-club-logo.png";
-import deepnote from "./Leadership Headshots/deepnote.png";
+
+import deepnote from "./Sponsors/deepnote.png";
+import decal from "./Sponsors/decalberkeleylogo.png";
+
+import cdss from "./Leadership Headshots/berkeley_cdss_logo.png";
+import data8 from "./Collaborators/data8logo.png";
+import pcs from "./Collaborators/pcsberkeley.png";
+import cal from "./Collaborators/calactuarialleague.png";
+import eab from "./Collaborators/entrepeneursberk.png";
+import blueprint from "./Collaborators/blueprint.png";
+import uea from "./Collaborators/berkuea.png";
+import bids from "./Collaborators/Berkeley_Institute_for_Data_Science_-_Logo.png"
+import haasds from "./Leadership Headshots/haas-ds-club-logo.png";
+import saas from "./Collaborators/saaslogo_square.png";
+import hbsa from "./Collaborators/hbsa.png";
+import ascend from "./Collaborators/Ascend-Logo.png";
+import pbl from "./Collaborators/pbl.png";
+import mlab from "./Collaborators/mlabberkeley.png";
+import ecode from "./Collaborators/ecode.png";
+import nib from "./Collaborators/nib.png";
+
 import arnav from "./Leadership Headshots/arnav.jpeg";
 import sabrina from "./Leadership Headshots/sabrina.jpeg";
 import alina from "./Leadership Headshots/alina.jpeg";
@@ -50,11 +69,11 @@ import exec from "./About/exec.jpeg";
 import commit from "./About/CommitteeMember.jpg";
 import socgood from "./About/socgoodgroup.jpeg";
 import gen from "./About/GeneralMember.jpg";
-import decal from "./About/DeCal.png";
+// import decal from "./About/DeCal.png";
 import senior from "./About/SeniorAdvisor.png";
 import join from "./About/JoinUs.jpg";
 //import story from './About/OurStory.jpg'
-import story from "./About/OurStory-Compressed-min.jpg";
+import story from "./About/team.png";
 import popout from "./About/popoutDesign.png";
 import ret from "./About/RetreatPic.png";
 import datacamp from "./Decal Images/datacamp-logo 1.png";
@@ -715,7 +734,7 @@ class About extends Component {
           >
             <Grid.Column width={3} style={aboutlinks2}>
               <div onClick={this.scrollWho} style={aboutlinks}>
-                Who we are
+                Who We Are
               </div>
             </Grid.Column>
             <Grid.Column width={3} style={aboutlinks2}>
@@ -843,8 +862,6 @@ class About extends Component {
               </div>
             </Grid.Column>
           </Grid.Row>
-          <div id="mission">
-          </div>
           <Grid.Row centered columns={1} style={{ marginBottom: "7vw" }}>
           <div
             style={{
@@ -864,6 +881,8 @@ class About extends Component {
             }}
           >
           <span>Mission and Values</span>
+          </div>
+          <div id="mission">
           </div>
           <div
             centered
@@ -905,14 +924,14 @@ class About extends Component {
             style={{
               position: "absolute",
               textShadow: "none",
-              width: "45vw",
+              width: "50vw",
               top: "15vw",
-              left: "46vw",
+              left: "44vw",
               zIndex: "3",
               fontFamily: "Montserrat",
               fontStyle: "43vw",
               fontWeight: "bold",
-              fontSize: "2.5vw",
+              fontSize: "3vw",
               lineHeight: "4vw",
               color: "black",
               marginBottom: "7vw",
@@ -1069,9 +1088,10 @@ class About extends Component {
             
           </Grid>
           {/* <Grid.Row centered></Grid.Row> */}
-
           <Grid.Row centered width={12} style={{ marginTop: "40vw" }}>
             {/* {CustomTitle({ title: "Our Executive Team", id: "team" })} */}
+            <div id="team">
+            </div>
             <div
             style={{
               position: "absolute",
@@ -1083,7 +1103,7 @@ class About extends Component {
               fontFamily: "Montserrat",
               fontStyle: "43vw",
               fontWeight: "bold",
-              fontSize: "2.5vw",
+              fontSize: "3.5vw",
               lineHeight: "4vw",
               color: "black",
               marginBottom: "10vw",
@@ -1108,8 +1128,9 @@ class About extends Component {
             <Card.Group centered>{leadershipCards}</Card.Group>
             ``
           </Grid.Row>
-
           <Grid.Row style={{ marginTop: "7vw", marginLeft: "17vw" }}>
+          <div id="sponsors">
+          </div>
           <div
             style={{
               position: "absolute",
@@ -1121,7 +1142,7 @@ class About extends Component {
               fontFamily: "Montserrat",
               fontStyle: "43vw",
               fontWeight: "bold",
-              fontSize: "2.5vw",
+              fontSize: "3.5vw",
               lineHeight: "4vw",
               color: "black",
               marginBottom: "10vw",
@@ -1144,58 +1165,156 @@ class About extends Component {
             </Image>
             </div>
           </Grid.Row>
-          <Grid.Row
-
-            centered
-            style={
-              {
-                // marginTop: "4vw",
-              }
-            }
-          >
+          <Grid.Row centered>
             <Image.Group size={"medium"}>
               <Image
-                src={berkeley}
-                style={{ marginLeft: "-3px", width: "15vw", marginTop: "3vw" }}
-              ></Image>
-              <Image
-                src={berkeley2}
-                style={{
-                  marginLeft: "5vw",
-                  width: "15vw",
-                  marginTop: "-7vw",
+                src={deepnote}
+                style={{ 
+                  top: "-8vw",
+                  left: "-25vw",
+                  // marginLeft: "-3px", 
+                  width: "25vw", 
+                  // marginTop: "3vw" 
                 }}
               ></Image>
-
               <Image
-                src={asuc}
-                style={{ marginLeft: "5vw", width: "15vw" }}
-              ></Image>
-            </Image.Group>
-            <Image.Group>
-              <Image
-                src={datacamp}
-                style={{ marginLeft: "5vw", width: "15vw" }}
-              ></Image>
-              <Image
-                src={wids}
-                style={{ marginLeft: "5vw", width: "15vw" }}
-              ></Image>
-              <Image
-                src={micron}
-                style={{ marginLeft: "5vw", width: "15vw" }}
-              ></Image>
-              <Image
-                src={edlyft}
-                style={{ marginLeft: "5vw", width: "15vw" }}
-              ></Image>
-              <Image
-                src={deepnote}
-                style={{ marginLeft: "5vw", width: "15vw" }}
+                src={decal}
+                style={{
+                  top: "-8vw",
+                  left: "-18vw",
+                  // marginLeft: "5vw",
+                  width: "20vw",
+                  // marginTop: "-7vw",
+                }}
               ></Image>
             </Image.Group>
           </Grid.Row>
           {/* {CustomTitle({ title: "Our Partners", id: "partners" })} */}
+          <Grid.Row centered>
+            <div
+              style={{
+                position: "absolute",
+                textShadow: "none",
+                width: "60vw",
+                top: "0vw",
+                left: "39vw",
+                zIndex: "3",
+                fontFamily: "Montserrat",
+                fontStyle: "43vw",
+                fontWeight: "bold",
+                fontSize: "3.5vw",
+                lineHeight: "4vw",
+                color: "black",
+                marginBottom: "10vw",
+                marginTop: "10vw",
+                alignText: "center",
+              }}
+            >
+            <span>Current and Past Collaborators</span>
+            </div>
+            <div>
+              <Image src={rectangle}
+              style= {{
+                position: 'relative',
+                top: "15vw",
+                left: '1.5vw',
+                height: "0.75vw",
+                maxHeight: "1.5vw",
+                width: "66vw",
+                marginBottom: "17vw"
+              }}>
+              </Image>
+            </div>
+            </Grid.Row>
+            <Grid.Row centered>
+            <Image.Group
+              size={"medium"}
+              style={{ marginTop: "3vw", marginBottom: "0vw" }}
+            >
+              <Image
+                style={{ width: "15vw" }}
+                src={cdss}
+              ></Image>
+              <Image
+                style={{ marginLeft: "7vw", width: "15vw" }}
+                src={data8}
+              ></Image>
+              <Image
+                style={{ marginLeft: "7vw", width: "25vw" }}
+                src={pcs}
+              ></Image>
+              <Image
+                style={{ marginLeft: "7vw", width: "15vw" }}
+                src={cal}
+              ></Image>
+            </Image.Group>
+          </Grid.Row>
+          <Grid.Row centered>
+            <Image.Group
+              size={"medium"}
+            >
+              <Image
+                style={{ width: "15vw" }}
+                src={eab}
+              ></Image>
+              <Image
+                style={{ marginLeft: "7vw", width: "15vw" }}
+                src={blueprint}
+              ></Image>
+              <Image
+                style={{ marginLeft: "7vw", width: "25vw" }}
+                src={uea}
+              ></Image>
+              <Image
+                style={{ marginLeft: "7vw", width: "15vw" }}
+                src={bids}
+              ></Image>
+            </Image.Group>
+          </Grid.Row>
+          <Grid.Row centered>
+            <Image.Group
+              size={"medium"}
+            >
+              <Image
+                style={{ width: "15vw" }}
+                src={haasds}
+              ></Image>
+              <Image
+                style={{ marginLeft: "7vw", width: "18vw" }}
+                src={saas}
+              ></Image>
+              <Image
+                style={{ marginLeft: "7vw", width: "18vw" }}
+                src={hbsa}
+              ></Image>
+              <Image
+                style={{ marginLeft: "7vw", width: "20vw" }}
+                src={ascend}
+              ></Image>
+            </Image.Group>
+          </Grid.Row>
+          <Grid.Row centered>
+            <Image.Group
+              size={"medium"}
+            >
+              <Image
+                style={{ width: "15vw" }}
+                src={pbl}
+              ></Image>
+              <Image
+                style={{ marginLeft: "7vw", width: "20vw" }}
+                src={mlab}
+              ></Image>
+              <Image
+                style={{ marginLeft: "6vw", width: "18vw" }}
+                src={ecode}
+              ></Image>
+              <Image
+                style={{ left: "3vw", marginLeft: "2vw", width: "25vw" }}
+                src={nib}
+              ></Image>
+            </Image.Group>
+          </Grid.Row>
           <Grid.Row centered>
             <div
               style={{
@@ -1216,7 +1335,7 @@ class About extends Component {
                 alignText: "center",
               }}
             >
-            <span>Current and Past Collaborators</span>
+            <span>Where We Go</span>
             </div>
             <div>
               <Image src={rectangle}
@@ -1232,25 +1351,6 @@ class About extends Component {
               </Image>
             </div>
             </Grid.Row>
-            <Grid.Row centered>
-            <Image.Group
-              size={"medium"}
-              style={{ marginTop: "3vw", marginBottom: "7vw" }}
-            >
-              <Image
-                style={{ marginRight: "1vw", width: "15vw" }}
-                src={sponsor1}
-              ></Image>
-              <Image
-                style={{ marginLeft: "7vw", width: "15vw" }}
-                src={sponsor2}
-              ></Image>
-              <Image
-                style={{ marginLeft: "7vw", width: "15vw" }}
-                src={sponsor3}
-              ></Image>
-            </Image.Group>
-          </Grid.Row>
         </Grid>
       </div>
     );
