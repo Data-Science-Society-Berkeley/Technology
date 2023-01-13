@@ -33,7 +33,7 @@ import businessIcon from './Services Images/businessIcon.jpg';
 
 // import company logos
 import mep from './Services Images/mep.png';
-import medic from './Services Images/medic.png';
+import medic from './Services Images/Medic.png';
 import tnc from './Services Images/tnc.png'; 
 import greenPeace from './Services Images/greenpeace.png';
 import techsoup from './Services Images/techsoup.png';

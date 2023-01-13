@@ -55,7 +55,9 @@ ul li {
   opacity: 0;
   transition: opacity ease-in-out 300ms;
   border-radius: 10px;
-  padding: 30px;
+  padding: 5% 10%;
+  overflow-y: auto;
+
 }
 
 .fading-card > figcaption:hover { 
