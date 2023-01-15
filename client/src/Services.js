@@ -68,7 +68,7 @@ const banner = {
 //try having the bannerText take up a box worth of space or smth or try editing w/o the image first, so I don't have to manually input all these measurements
 const bannerText = {
     color: "white",
-    fontSize: "64px",
+    fontSize: "8vw",
     fontFamily: "Montserrat", 
     fontWeight: "600",
     position: "absolute",
@@ -105,7 +105,7 @@ const whiteSpaceContainer = {
 }
 
 const whiteSpaceText = {
-    margin: "50px 0px 20px 0px",
+    margin: "4vw 0px 4vw 0px",
     position: "relative",
     color: "black",
     fontSize: "max(3vw, 28px)",
@@ -224,11 +224,11 @@ class Education extends Component {
           </div>
 
           {/*Carousel*/}
-          <div style={{margin: "120px 0 0 0"}}></div>
+          <div style={{margin: "9vw 0 0 0"}}></div>
           <CarouselPage />
 
           {/*Clients*/}
-          <div style={{margin: "40px 0 0 0"}}></div>
+          <div style={{margin: "4vw 0 0 0"}}></div>
           <div class="card-layout">
               <div style={whiteSpaceContainer}>
                   <p style={whiteSpaceText}>FEATURED PAST CLIENTS</p>
