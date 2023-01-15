@@ -539,7 +539,7 @@ class App extends Component {
                   buttonClick={this.sendData.bind(this)}
                 />
                 <NavBar {...props} />
-                <Footer></Footer>
+                {/* <Footer></Footer> */}
               </div>
             )}
           />
