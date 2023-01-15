@@ -327,7 +327,7 @@ class Education extends Component {
             width: "100%",
             height: "auto",
             display: "block",
-            margin: "80px 0px 20px 0px",
+            margin: "8vw 0 2vw 0",
             position: "relative",
             color: "black",
             fontSize: "max(3vw, 28px)",
