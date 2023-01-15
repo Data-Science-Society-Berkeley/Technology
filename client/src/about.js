@@ -761,7 +761,7 @@ class About extends Component {
             width={16}
             columns={5}
             style={{
-              backgroundColor: "#8CD6D1",
+              backgroundColor: "#D2F2F0",
               width: "100vw",
               height: "7vw",
               marginTop: "-3vw",

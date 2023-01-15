@@ -61,6 +61,7 @@ class App extends Component {
       projectname: "Project Name",
       clientid: "Client Name",
       projectid: "Client Name",
+      currentpage: ""
     };
   }
   sendData(data) {
@@ -203,12 +204,12 @@ class App extends Component {
             path="/"
             render={(props) => (
               <div>
-                <NavBar {...props} />
                 <CentralText
                   style={{ paddingBottom: "500px" }}
                   {...props}
                   buttonClick={this.sendData.bind(this)}
                 />
+                <NavBar {...props} />
                 <Footer></Footer>
               </div>
             )}
@@ -555,12 +556,12 @@ class App extends Component {
             path="/"
             render={(props) => (
               <div>
-                <NavBar {...props} />
                 <CentralText
                   style={{ paddingBottom: "500px" }}
                   {...props}
                   buttonClick={this.sendData.bind(this)}
                 />
+                <NavBar {...props} />
                 <Footer></Footer>
               </div>
             )}
