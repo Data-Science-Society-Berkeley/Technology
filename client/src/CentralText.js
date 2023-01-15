@@ -25,10 +25,79 @@ import rectangleSingle from "./landing/rectangleSingle.png";
 import rectangleGroup from "./landing/rectangleGroup.png";
 import squiggly1 from "./landing/squiggly1.png";
 import squiggly2 from "./landing/squiggly2.png";
+import homepageBanner from './Homepage/homepage.jpg';
+import rightarrow from './Homepage/ArrowRight.png'
+import stats from './Homepage/stats.png'
+import gradientOne from './Homepage/homepagegradient1.png';
+import gradientTwo from './Homepage/homepagegradient2.png';
+import linesOne from './Homepage/linesOne.png';
+import linesTwo from './Homepage/linesTwo.png';
+import NavBar from './Menu.js'
+import mlIcon from './Services Images/mlIcon.jpg'
+import sweIcon from './Services Images/sweIcon.jpg'
+import businessIcon from './Services Images/businessIcon.jpg'
 
 import ocf from "./Backgrounds/ocf-hosted-penguin.svg";
 
 let endpoint = "https://dssberkeley.com/";
+const banner = {
+  //display: "inline-block",
+  position: "relative",
+  textAlign: "center",
+  width: "100%",
+  height: "auto",
+  gridColumn: "span 3",
+  margin: "0",
+}
+
+//try having the bannerText take up a box worth of space or smth or try editing w/o the image first, so I don't have to manually input all these measurements
+const bannerText = {
+  color: "white",
+  fontSize: "64px",
+  fontFamily: "Montserrat", 
+  fontWeight: "600",
+  position: "absolute",
+  top: "-7vw",
+  bottom: "1em",
+  right: "1em",
+  left: "1em",
+  background: "rgba($accent, .8)",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  resize: "none",
+
+  
+  //textShadow: "1px 0 0 #333333, 0 -1px 0 #333333, 0 1px 0 #333333, -1px 0 0 #333333"
+}
+
+
+const bannerImg = {
+  width: "100%",
+  height: "auto",
+  padding: "0",
+  gridColumn: "span 3",
+  marginTop: "-250px"
+}
+
+const whiteSpaceContainer = {
+  position: "relative",
+  textAlign: "center",
+  width: "100%",
+  height: "auto",
+  gridColumn: "span 3",
+}
+
+const whiteSpaceText = {
+  margin: "50px 0px 20px 0px",
+  position: "relative",
+  color: "black",
+  fontSize: "max(3vw, 28px)",
+  fontWeight: "Bold",
+  fontFamily: "Montserrat", 
+  gridColumn: "span 3",
+
+}
 const gridoffset = {
   marginLeft: "5vw",
   // marginTop: "5vw",
@@ -42,22 +111,47 @@ const mybigtext = {
   fontWeight: 600,
   lineHeight: "8vw",
   fontSize: "4vw",
-  color: "#FFFBFB",
+  color: "#000000",
   fontStyle: "normal",
   textAlign: "left",
   marginTop: "3vw",
-  marginLeft: "-2vw",
+  marginLeft: "3vw",
 };
 const mymidtext = {
   fontFamily: "Montserrat",
-  fontWeight: 600,
+  fontWeight: 300,
   lineHeight: "6vw",
   fontSize: "3vw",
-  color: "#FFFFFF",
+  color: "#000000",
   fontStyle: "normal",
   textAlign: "left",
-  marginTop: "-2vw",
-  marginLeft: "-2vw",
+  marginTop: "-3.5vw",
+  marginLeft: "3vw",
+};
+
+const mylittletext = {
+  fontFamily: "Montserrat",
+  fontWeight: 400,
+  lineHeight: "2vw",
+  fontSize: "2vw",
+  color: "#000000",
+  fontStyle: "normal",
+  textAlign: "left",
+  marginTop: "1vw",
+  marginLeft: "3vw",
+};
+
+const link = {
+  fontFamily: "Montserrat",
+  fontWeight: 400,
+  lineHeight: "2vw",
+  fontSize: "2vw",
+  color: "#77B8B3",
+  fontStyle: "italic",
+  textDecoration: 'none',
+  textAlign: "left",
+  marginTop: "3vw",
+  marginLeft: "1.5vw",
 };
 
 const overlaytext = {
@@ -338,105 +432,90 @@ class CentralText extends Component {
       <div style={{ marginTop: "1vw" }}>
         {/* <NavBar2 {...this.props} /> */}
         {/* <Segment style={{ padding: "8em 0em" }} vertical> */}
+                  {/*Services Banner + Intro*/}
+        <div>
+          <figure style={banner}>
+            {/**style={{display: "grid", gridTemplateColumns: "repeat(3, 1fr)", margin: "-8px -8px 1.3rem -8px", gap: "5px"} */}
+              <img style={bannerImg} src={homepageBanner}></img>
+              {/* <NavBar {...props} /> didn't work here :() */}
+          </figure>
+        </div>
         <Grid divided="vertically" style={gridoffset} className="pusher">
-          <Grid.Row columns={2} style={{ position: "relative" }}>
-            <Grid.Column width={9}>
-              <Header style={mybigtext}>Data Science Society</Header>
+          <Grid.Row columns={3} style={{ position: "relative" }}>
+            <Grid.Column width={8}>
+              <Header style={mybigtext}>DATA SCIENCE SOCIETY</Header>
               <Header as="h1" style={mymidtext}>
-                At Berkeley
+                AT BERKELEY
               </Header>
+              <Header style={mylittletext}>Berkeley’s first undergraduate data-science focused student organization. Actively fostering a strong data science community on campus via our consulting and educational initiatives.</Header>
+              <Header style={link}>
+                <Link to="/about" style={link}>About us</Link>
+                <Image
+                style={{
+                  position: "dynamic",
+                  left: "1%",
+                  width: "2vw",
+                  marginTop: "0vw",
+                }}
+                src={rightarrow}
+                onclick=""
+                ></Image>
+              </Header>
+              
+              <br></br>
+            </Grid.Column>
+            <Grid.Column width={8}>
               <Image
                 style={{
                   height: "25vw",
                   marginTop: "3vw",
-                  marginLeft: "-5vw",
-                  marginBottom: "-25vw",
+                  marginLeft: "1vw",
+                  position: "dynamic",
                 }}
                 floated="left"
-                src={bottomright}
+                src={stats}
               ></Image>
-
-              {/* <Image
-                style={{
-                  height: "25vw",
-                  marginTop: "-15vw",
-                    //marginBottom: "30vw",
-                  marginLeft: "10vw",
-                  
-                    // position: "absolute",
-                }}
-                floated="right"
-                src={recruitbanner}
-              ></Image> */}
 
             </Grid.Column>
-            
-            {/* <Grid.Column width={18}>
-              <Image
-                  style={{
-                    height: "30vw",
-                    marginTop: "10vw",
-                    //marginBottom: "30vw",
-                    marginRight: "60vw",
-                    marginLeft: "-20vw",
-                    // position: "absolute",
-                  }}
-                  
-                  src={recruitbanner}
-                ></Image>
-              </Grid.Column> */}
 
-            <Grid.Column
-              textAlign="center"
-              floated="right"
-              verticalAlign="top"
-              style={{ position: "absolute", left: "45%" }}
-            >
+            <Grid.Column width={15}>
               <Image
                 style={{
-                  height: "25vw",
-                  // marginTop: "-20vw",
-                  // marginBottom: "-10vw",
-                  // marginRight: "1.5vw",
-                  // marginLeft: "20vw",
-                  // position: "absolute",
+                  marginTop: "1vw",
+                  position: "absolute", 
+                  width: "100%",
+                  height: "40vw",
                 }}
-                floated="right"
-                src={topright}
-              ></Image>
-
-              {/* <Image
-                style={{
-                  //height: "30vw",
-                  marginTop: "-0.5vw",
-                    //marginBottom: "30vw",
-                  //marginLeft: "10vw",
-                  
-                    // position: "absolute",
-                }}
-                
-                src={recruitbanner}
-              ></Image> */}
-              
-
-              
-
-              <Button.Group
-                style={{
-                  marginTop: "10vw",
-                  // position: "absolute",
-                  top: "100%",
-                }}
+                src={gradientOne}
               >
-                <Link to="/joinus">
-                  <Button style={apply} circular>
-                    Join Us
-                  </Button>
-                </Link>
-                <Button onClick={this.moveAbout} style={learn} circular>
-                  Learn More{" "}
-                </Button>
-              </Button.Group>
+              </Image>
+              <Image
+                style={{
+                  marginTop: "1vw",
+                  position: "absolute", 
+                  width: "150%",
+                  marginBottom: "25vw"
+                }}
+                src={linesOne}
+                ></Image>
+                <Image
+                style={{
+                  marginTop: "20vw",
+                  position: "absolute", 
+                  width: "100%",
+                  height: "40vw",
+                }}
+                src={gradientTwo}
+              >
+              </Image>
+              <Image
+                style={{
+                  marginTop: "20vw",
+                  position: "absolute", 
+                  width: "150%",
+                }}
+                src={linesTwo}
+                ></Image>
             </Grid.Column>
           </Grid.Row>
         </Grid>
@@ -447,390 +526,7 @@ class CentralText extends Component {
             marginTop: "10vw",
           }}
         >
-          <Grid.Row>
-            <Grid.Column
-              id="about"
-              style={{
-                fontFamily: "Montserrat",
-                marginLeft: "7vw",
-                font: "Montserrat",
-                fontStyle: "normal",
-                fontWeight: "400",
-                fontSize: "5vw",
-                lineHeight: "5vw",
-                color: "#8CD6D1",
-                marginTop: "5vw",
-              }}
-            >
-              <div>About Us</div>
-              <div>
-                <Image
-                  src={rectangleGroup}
-                  style={{ width: "27vw", marginTop: "1vw" }}
-                ></Image>
-              </div>
-            </Grid.Column>
-          </Grid.Row>
-          <Grid.Row
-            style={{
-              fontFamily: "Montserrat",
-              fontWeight: "21vw",
-              fontSize: "2.5vw",
-              lineHeight: "3vw",
-              color: "#000000",
-              width: "77vw",
-              marginLeft: "7vw",
-              marginTop: "1.5vw",
-            }}
-          >
-            <Grid.Column width={9}>
-              Building the next generation of data science leaders, educators,
-              and change-makers.
-            </Grid.Column>
-          </Grid.Row>
-          <Grid.Row columns={1}>
-            <Grid.Column
-              width={6}
-              floated="right"
-              verticalAlign="middle"
-              style={{ height: "2.5vw", marginBottom: "4vw" }}
-            >
-              <Link
-                to="/about"
-                style={{
-                  fontFamily: "Montserrat",
-                  fontStyle: "normal",
-                  fontWeight: "42vw",
-                  fontSize: "2.5vw",
-                  lineHeight: "3vw",
-                  color: "#FFC54A",
-                  marginLeft: "10vw",
-                }}
-              >
-                Learn More 
-              </Link>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-        {/* Insert HERE */}
-        <Grid style={{ width: "110%" }}>
-          <Grid.Row
-            columns={2}
-            style={{
-              width: "143vw",
-              height: "29vw",
-              backgroundColor: "#8CD6D1",
-              backgroundSize: "100%",
-              zIndex: "1",
-              position: "relative",
-            }}
-          >
-            <Grid.Column
-              style={{
-                position: "absolute",
-                top: "50%",
-                transform: "translateY(-50%)",
-              }}
-            >
-              <Image
-                style={{
-                  marginLeft: "7vw",
-                  zIndex: "2",
-                  borderStyle: "solid",
-                  borderColor: "#EDE8C4",
-                  borderWidth: "1.25vw",
-                  backgroundColor: "#cccccc",
-                  width: "60vw",
-                }}
-                src={educate}
-              ></Image>
-            </Grid.Column>
 
-            <Grid.Column
-              width={6}
-              style={{
-                marginLeft: "5vw",
-                position: "absolute",
-                top: "45%",
-                left: "70%",
-                transform: "translate(-50%, -50%)",
-              }}
-            >
-              <div style={overlaytext}>educate.</div>
-              <div>
-                <Image
-                  src={rectangleSingle}
-                  style={{ width: "25vw", margin: "auto", marginTop: ".5vw" }}
-                ></Image>
-              </div>
-              <div style={underlaytext}>
-                <Link to="/acadev">
-                  {" "}
-                  <div
-                    style={{
-                      color: "#FFFFFF",
-                      fontWeight: 500,
-                      // marginRight: "5vw",
-                    }}
-                  >
-                    {" "}
-                    Learn more about our Academic Development programs >>{" "}
-                  </div>{" "}
-                </Link>
-                <Link to="/decal">
-                  {" "}
-                  <div
-                    style={{
-                      marginTop: "3vw",
-                      color: "#FFFFFF",
-                      fontWeight: 500,
-                    }}
-                  >
-                    Check out our DeCal >>
-                  </div>
-                </Link>
-              </div>
-            </Grid.Column>
-          </Grid.Row>
-
-          <Grid.Row
-            columns={2}
-            style={{
-              width: "100%",
-              height: "29vw",
-              backgroundColor: `#FFFFFF`,
-              backgroundSize: "100%",
-              position: "relative",
-            }}
-          >
-            <div>
-              <Image
-                src={squiggly1}
-                style={{
-                  left: "0%",
-                  width: "25vw",
-                  position: "absolute",
-                  top: "0%",
-                }}
-              ></Image>
-            </div>
-            <Grid.Column
-              width={6}
-              style={{
-                position: "absolute",
-                top: "40%",
-                transform: "translateY(-50%)",
-                marginLeft: "7vw",
-              }}
-            >
-              <div style={overlaytextCustom}>innovate.</div>
-              <div>
-                <Image
-                  src={rectangleSingle}
-                  style={{ width: "25vw", margin: "auto", marginTop: ".5vw" }}
-                ></Image>
-              </div>
-              <Link to="/consulting">
-                <div style={underlaytext}>
-                  Learn about our consulting projects >>
-                </div>
-              </Link>
-            </Grid.Column>
-            <Grid.Column
-              style={{
-                position: "absolute",
-                top: "50%",
-                left: "40%",
-                transform: "translateY(-50%)",
-              }}
-            >
-              <Image
-                style={{
-                  marginLeft: "7vw",
-                  zIndex: "2",
-                  borderStyle: "solid",
-                  borderColor: "#B6E5D7",
-                  borderWidth: "1.25vw",
-                  backgroundColor: "#cccccc",
-                  width: "50vw",
-                }}
-                src={innovate}
-              ></Image>
-            </Grid.Column>
-          </Grid.Row>
-
-          <Grid.Row
-            columns={2}
-            style={{
-              // width: "143vw",
-              height: "29vw",
-              backgroundColor: "#8CD6D1",
-              backgroundSize: "100%",
-              zIndex: "1",
-              position: "relative",
-            }}
-          >
-            <div>
-              <Image
-                src={squiggly2}
-                style={{
-                  left: "70%",
-                  width: "40vw",
-                  position: "absolute",
-                  top: "0%",
-                }}
-              ></Image>
-            </div>
-            <Grid.Column
-              style={{
-                position: "absolute",
-                top: "50%",
-                transform: "translateY(-50%)",
-              }}
-            >
-              <Image
-                style={{
-                  marginLeft: "7vw",
-                  zIndex: "2",
-                  borderStyle: "solid",
-                  borderColor: "#EDE8C4",
-                  borderWidth: "1.25vw",
-                  backgroundColor: "#cccccc",
-                  width: "60vw",
-                }}
-                src={engage}
-              ></Image>
-            </Grid.Column>
-
-            <Grid.Column
-              width={6}
-              style={{
-                marginLeft: "5vw",
-                position: "absolute",
-                top: "45%",
-                left: "70%",
-                transform: "translate(-50%, -50%)",
-              }}
-            >
-              <div style={overlaytext}>engage.</div>
-              <div>
-                <Image
-                  src={rectangleSingle}
-                  style={{ width: "25vw", margin: "auto", marginTop: "1vw" }}
-                ></Image>
-              </div>
-              <div style={underlaytext}>
-                <Link to="/acadev">
-                  {" "}
-                  <div
-                    style={{
-                      color: "#FFFFFF",
-                      fontWeight: 500,
-                      // marginRight: "5vw",
-                    }}
-                  >
-                    {" "}
-                    Learn more about our campus wide events >>{" "}
-                  </div>{" "}
-                </Link>
-              </div>
-            </Grid.Column>
-          </Grid.Row>
-
-          <Grid.Row columns={1} style={{ backgroundColor: "#FFFFFF" }}>
-            <Grid.Column
-              width={10}
-              style={{
-                marginLeft: "7vw",
-                fontFamily: "Montserrat",
-                fontStyle: "normal",
-                fontWeight: "400",
-                fontSize: "5vw",
-                lineHeight: "5vw",
-                color: "#8CD6D1",
-                paddingTop: "7vw",
-              }}
-            >
-              Work with Us
-            </Grid.Column>
-            <Grid.Column
-              width={12}
-              style={{
-                marginLeft: "7vw",
-                fontWeight: "300",
-                fontSize: "2.5vw",
-                lineHeight: "2vw",
-                fontFamily: "Montserrat",
-                marginTop: "3vw",
-              }}
-            >
-              Collaborate with us and grow our data science community!
-            </Grid.Column>
-            <Grid.Column textAlign="center">
-              <Card.Group centered style={{ marginTop: "6vw" }}>
-                {process}
-              </Card.Group>
-            </Grid.Column>
-            <Grid.Column
-              style={{
-                marginLeft: "7vw",
-                fontFamily: "Montserrat",
-                fontStyle: "normal",
-                fontWeight: "400",
-                fontSize: "5vw",
-                lineHeight: "5vw",
-                color: "#8CD6D1",
-                marginTop: "8vw",
-              }}
-            >
-              Join Our Mailing List!
-            </Grid.Column>
-            <Grid.Column
-              style={{
-                marginLeft: "7vw",
-                fontWeight: "300",
-                fontSize: "2.5vw",
-                lineHeight: "2vw",
-                fontFamily: "Montserrat",
-                marginTop: "3vw",
-              }}
-            >
-              Stay updated on our events, recruiting, and other on-campus
-              initiatives.{" "}
-            </Grid.Column>
-            <Grid.Column 
-              width={12}
-              style={{
-                marginLeft: "7vw",
-                fontWeight: "300",
-                fontSize: "2.5vw",
-                lineHeight: "2vw",
-                fontFamily: "Montserrat",
-                marginTop: "3vw",
-                marginBottom: "7vw" }}>
-              Join our mailing list <a href="https://airtable.com/shr084vc5JtxBydJK">here!</a>
-              {/* <Form success={this.state.success} style={{ marginTop: "7vw" }}>
-                <Form.Input
-                  onChange={this.onEChange}
-                  style={formStyle}
-                  placeholder={"E-mail"}
-                />
-                <Form.Button
-                  onClick={this.loginUser}
-                  rounded
-                  style={buttonStyle}
-                >
-                  Submit
-                </Form.Button>
-                <Message
-                  style={{ fontFamily: "Montserrat" }}
-                  success
-                  header="Form Completed"
-                  content="Thanks for signing up for our newsletter!"
-                />
-              </Form> */}
-            </Grid.Column>
-          </Grid.Row>
         </Grid>
         {/* </Segment> */}
       </div>

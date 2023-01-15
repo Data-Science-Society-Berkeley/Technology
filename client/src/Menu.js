@@ -17,8 +17,8 @@ import {
 } from "semantic-ui-react";
 import PasswordStrengthBar from "react-password-strength-bar";
 import validator from "validator";
-import logo from "./Backgrounds/DSS-logo-white.png";
-import logo2 from "./Backgrounds/DSS-logo-black-transparent.png";
+import logo from "./Backgrounds/dssblacklonglogo.png";
+import logo2 from "./Backgrounds/dsswhitelonglogo.png";
 
 let endpoint = "http://localhost:8080";
 
@@ -64,7 +64,8 @@ const link = {
   fontSize: "24px",
   fontWeight: 600,
   lineHeight: "37px",
-  color: "#FFFFFF",
+  color: "#8CD6D1",
+  textDecoration: 'none',
 };
 const link2 = {
   fontFamily: "Montserrat",
@@ -72,6 +73,7 @@ const link2 = {
   fontWeight: 600,
   lineHeight: "37px",
   color: "#8CD6D1",
+  textDecoration: 'none',
 };
 
 const greenBut = {
@@ -178,11 +180,11 @@ class NavBar extends Component {
     console.log(this.state.activeStyle);
     if (this.state.activeStyle) {
       return (
-        <Image style={{ width: "100px", height: "100px" }} src={logo2}></Image>
+        <Image src={logo}></Image>
       );
     } else {
       return (
-        <Image style={{ width: "100px", height: "100px" }} src={logo}></Image>
+        <Image src={logo2}></Image>
       );
     }
   }
@@ -219,6 +221,16 @@ class NavBar extends Component {
           </Menu.Item>
           <Menu.Menu position="right" style={{ marginLeft: "7vw" }}>
             <Menu.Item
+                name="home"
+                active={activeItem === "/"}
+                onClick={this.handleItemClick}
+                style={navbar}
+              >
+                <Link to="/" style={linkStyling}>
+                  home
+                </Link>
+              </Menu.Item>
+            <Menu.Item
               name="about"
               active={activeItem === "about"}
               onClick={this.handleItemClick}
@@ -229,41 +241,14 @@ class NavBar extends Component {
               </Link>
             </Menu.Item>
             <Menu.Item
-              name="committees"
-              active={activeItem === "committees"}
+              name="decal"
+              active={activeItem === "decal"}
               onClick={this.handleItemClick}
               style={navbar}
             >
-              <Dropdown style={linkStyling} item text="committees">
-                <Dropdown.Menu>
-                  <Link to="/acadev" style={linkStyling}>
-                    <Dropdown.Item icon="pencil" text="Acadev" />
-                  </Link>
-                  <Link to="/consulting" style={linkStyling}>
-                    <Dropdown.Item icon="exchange" text="Consulting" />
-                  </Link>
-                  <Link to="/socialgood" style={linkStyling}>
-                    <Dropdown.Item icon="like" text="Social Good" />
-                  </Link>
-                </Dropdown.Menu>
-              </Dropdown>
-            </Menu.Item>
-            <Menu.Item
-              name="education"
-              active={activeItem === "education"}
-              onClick={this.handleItemClick}
-              style={navbar}
-            >
-              <Dropdown style={linkStyling} item text="education">
-                <Dropdown.Menu>
-                  <Link to="/gm">
-                    <Dropdown.Item
-                      icon="bookmark"
-                      text="Decal Landing"
-                    ></Dropdown.Item>
-                  </Link>
-                </Dropdown.Menu>
-              </Dropdown>
+              <Link to="/gm" style={linkStyling}>
+                decal
+              </Link>
             </Menu.Item>
             <Menu.Item
               name="events"
