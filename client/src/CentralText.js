@@ -488,19 +488,19 @@ class CentralText extends Component {
                 }}
                 src={gradientOne}
               >
-                <Image
-                style={{
-                  marginTop: "1vw",
-                  position: "absolute", 
-                  marginLeft: "-50%",
-                  width: "150%",
-                }}
-                src={linesOne}
-                ></Image>
               </Image>
               <Image
                 style={{
                   marginTop: "1vw",
+                  position: "absolute", 
+                  width: "150%",
+                  marginBottom: "25vw"
+                }}
+                src={linesOne}
+                ></Image>
+                <Image
+                style={{
+                  marginTop: "20vw",
                   position: "absolute", 
                   width: "100%",
                   height: "40vw",
@@ -508,6 +508,14 @@ class CentralText extends Component {
                 src={gradientTwo}
               >
               </Image>
+              <Image
+                style={{
+                  marginTop: "20vw",
+                  position: "absolute", 
+                  width: "150%",
+                }}
+                src={linesTwo}
+                ></Image>
             </Grid.Column>
           </Grid.Row>
         </Grid>
