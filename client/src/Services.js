@@ -243,7 +243,7 @@ class Education extends Component {
               </figure>
               <figure class="fading-card">
                   <img src={medic}></img>
-                  <figcaption><p>Data collected by the CHT are sensitive and cannot be shared with partner organizations without signing DUAs/NDAs. Having artificial versions that resemble real datasets would allow Medic to share data with data science partners and/or publish them in open repositories. We Developed automated Python scripts converting form questions, probability distributions and data specifications into synthetic data used for pre-production testing on apps and models.</p>
+                  <figcaption><p>Data collected by the CHT are sensitive and cannot be shared with partner organizations without signing DUAs/NDAs. Having artificial versions that resemble real datasets would allow Medic to share data with data science partners and/or publish them in open repositories. We developed automated Python scripts converting form questions, probability distributions and data specifications into synthetic data used for pre-production testing on apps and models.</p>
                   </figcaption>
               </figure>
               <figure class="fading-card">
@@ -286,11 +286,9 @@ class Education extends Component {
                   </figcaption>
               </figure>
 
-              {/*Row 4*/}
+              {/*Row 4 -- Venmo has no description. */}
               <figure class="fading-card">
-                  <img src={venmo}></img>
-                  <figcaption><p></p>
-                  </figcaption>
+                  <img src={venmo}></img> 
               </figure>
               <figure class="fading-card">
                   <img src={oustlabs}></img>
@@ -334,6 +332,7 @@ class Education extends Component {
             fontWeight: "Bold",
             fontFamily: "Montserrat", 
             }}>Want to work with us?</u>
+          
           
       </div>
     );

@@ -8,8 +8,8 @@ ul li {
   margin: 4rem 7% 0px 7%; 
   gap: 8px;
   margin: 0 auto;
-  max-width: 1200px;
-  grid-gap: 0.9rem;
+  max-width: 1400px;
+  grid-gap: 1rem;
 }
 
 .card-layout .card {
@@ -19,14 +19,14 @@ ul li {
   font-size: 2vw;
   color: black;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 18px;
   overflow-wrap: break-word;
 }
 
 .fading-card {
   background-color: #F5F5F5;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 18px;
   overflow-wrap: break-word;
   margin: 0;
   padding: 0;
@@ -54,7 +54,7 @@ ul li {
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 300ms;
-  border-radius: 10px;
+  border-radius: 18px;
   padding: 5% 10%;
   overflow-y: auto;
 
@@ -62,10 +62,4 @@ ul li {
 
 .fading-card > figcaption:hover { 
   opacity: 0.87;
-}
-
-.fading-card > p {
-  text-transform: uppercase;
-  line-height: 1;
-  text-align: center;
 }
