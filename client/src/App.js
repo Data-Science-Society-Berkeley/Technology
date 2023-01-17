@@ -164,7 +164,7 @@ class App extends Component {
             }}
           />
           <Route
-            path="/applycommittee"
+            path="/apply"
             component={() => {
               window.location.href = "https://airtable.com/shrRNcB5mOQLn4sb9";
               return null;
