@@ -27,7 +27,7 @@ import squiggle3 from "./Consulting/squiggle3.png";
 import upright from "./Consulting/topRight.png";
 import bottomleft from "./Consulting/bottomLeft.png";
 import logo from "./Consulting/logo.png";
-import flyer from "./Backgrounds/fa22.png"
+import flyer from "./Backgrounds/sp23flyer.jpg"
 
 
 import down from "./Consulting/ClientTestimonials.png";
@@ -290,17 +290,17 @@ class Join extends Component {
         </h1> */}
 
         <div>
-          <Image style={{position: 'relative',
-          top: "5vw",
+          <Image style={{
+          display: "flex",
+          justifyContent: "center",
+          top: "1vw",
           // marginTop: '5vw',
-          left: "1.5vw",
-          right: "1.5vw",
           bottom: "15vw",
           // margin: 'auto',
           // margintop: "10vw",
-          marginBottom: '15vw',
-          height: "58vw",
-          maxHeight: "58vw",
+          marginBottom: '9vw',
+          height: "64vw",
+          maxHeight: "64vw",
           // width: "115vw",
           // maxWidth: "28vw",
           }}
@@ -457,14 +457,12 @@ class Join extends Component {
           </Grid.Row>
         </Grid> */}
 
-
         <Grid centered>
           <Grid.Row>
 
             <Grid.Row
               style={{
                 color: "#000000",
-                marginTop: "1vw",
                 marginBottom: "5vw",
                 textAlign: "center",
                 lineHeight: "4vw",
@@ -507,7 +505,7 @@ class Join extends Component {
               Apply to join a DSS committee if you are interested in working on Consulting/Social Good projects or are interested in helping facilitate the DSS Decal as an Academic Development committee member. Check out some of our committee pages to learn more about each committee.
               </div>
               <Button.Group centered>
-              <Link to="applycommittee" style={{marginRight: '4vw'}}>
+              <Link to="apply" style={{marginRight: '4vw'}}>
                 <Button onclick={"window.location='http://dssberkeley.com/applycommittee'"} style={{
                   background: "#FFFFFF",
                   border: "0.5vw solid #8CD6D1",
