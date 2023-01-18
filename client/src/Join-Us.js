@@ -301,6 +301,8 @@ class Join extends Component {
           marginBottom: '9vw',
           height: "64vw",
           maxHeight: "64vw",
+          objectFit: "contain",
+
           // width: "115vw",
           // maxWidth: "28vw",
           }}
