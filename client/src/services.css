@@ -19,14 +19,14 @@ ul li {
   font-size: 2vw;
   color: black;
   width: 100%;
-  border-radius: 18px;
+  border-radius: 16px;
   overflow-wrap: break-word;
 }
 
 .fading-card {
   background-color: #F5F5F5;
   text-align: center;
-  border-radius: 18px;
+  border-radius: 16px;
   overflow-wrap: break-word;
   margin: 0;
   padding: 0;
@@ -54,7 +54,7 @@ ul li {
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 300ms;
-  border-radius: 18px;
+  border-radius: 16px;
   padding: 5% 10%;
   overflow-y: auto;
 
