@@ -3,6 +3,7 @@ import axios from "axios";
 import './services.css';
 import {
   Image,
+  Reveal,
   Grid,
   Card,
   Header,
@@ -47,6 +48,8 @@ import simmer from './Services Images/simmer.png';
 import edify from './Services Images/edify.png'; 
 import metromile from './Services Images/metromile.png'; 
 import deepnote from './Services Images/deepnote.png'; 
+
+import marlon from "./Leadership Headshots/marlon.jpeg";
 
 
 
@@ -114,6 +117,39 @@ const whiteSpaceText = {
     gridColumn: "span 3",
 
 }
+
+
+const textstyle = {
+  fontFamily: "Montserrat",
+  fontWeight: 300,
+  fontSize: "3vw",
+  lineHeight: "3vw",
+  color: "#8CD6D1",
+  marginTop: ".5vw",
+};
+
+const imagestyle = {
+  height: "28vw",
+  maxHeight: "28vw",
+  width: "28vw",
+  maxWidth: "28vw",
+};
+
+const cardstyle = {
+  width: "28vw",
+  maxHeight: "56vw",
+  // height: "800px",
+  marginBottom: "1vw",
+  marginleft: "2vw",
+};
+
+const roleStyle = {
+  fontFamily: "Montserrat",
+  fontWeight: 300,
+  fontSize: "2vw",
+  lineHeight: "2vw",
+  color: "#000000",
+}; 
 
 class Education extends Component {
   constructor(props) {
@@ -332,8 +368,29 @@ class Education extends Component {
             fontWeight: "Bold",
             fontFamily: "Montserrat", 
             }}>Want to work with us?</u>
-          
-          
+
+          <Card.Group centered style = {{borderRadius: "16px",}}>
+            <Card>
+              <Image src={marlon}/>
+              <Card.Content>
+                <Card.Header>Marlon Fu</Card.Header>
+                <Card.Meta>
+                  <span style={roleStyle}>President</span>
+                </Card.Meta>
+
+              <div>
+                <a href="mailto:marlonfu@berkeley.edu">
+                  <Icon size="large" name="mail" />
+                </a>
+                <a href="https://www.linkedin.com/in/marlonfu/">
+                  <Icon size="large" name="linkedin" />
+                </a>
+              </div>
+              </Card.Content>
+              
+            </Card>
+          </Card.Group>
+
       </div>
     );
   }
