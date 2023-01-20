@@ -24,26 +24,19 @@ import sponsor1 from "./Leadership Headshots/dsnexus-logo.png";
 import sponsor2 from "./Leadership Headshots/leadcenter_logo.png";
 import sponsor3 from "./Leadership Headshots/haas-ds-club-logo.png";
 import deepnote from "./Leadership Headshots/deepnote.png";
-import arnav from "./Leadership Headshots/arnav.jpeg";
-import sabrina from "./Leadership Headshots/sabrina.jpeg";
-import alina from "./Leadership Headshots/alina.jpeg";
-import marlon from "./Leadership Headshots/marlon.jpeg";
-import pranati from "./Leadership Headshots/pranati.jpeg";
-import michelle from "./Leadership Headshots/michelle.jpeg";
-import siddhant from "./Leadership Headshots/siddhant.jpeg";
-import elton from "./Leadership Headshots/elton.jpeg";
-import angeline from "./Leadership Headshots/angeline.jpg";
-import andi from "./Leadership Headshots/andi.jpg";
-import savvy from "./Leadership Headshots/savvy.jpeg";
-import advait from "./Leadership Headshots/advait.jpeg";
-import wendy from "./PM Headshots/wendy.jpg"
-import preetha from "./Leadership Headshots/preetha.jpeg"
-import kuhu from "./Leadership Headshots/kuhu.jpg"
-import rachael from "./Leadership Headshots/rachael.jpeg"
-import bella from "./Leadership Headshots/bella.png"
-import tej from "./PM Headshots/tej.jpg";
-import paul from "./Leadership Headshots/paul.jpeg"
-import stephen from "./Leadership Headshots/stephen.jpg"
+import angeline from "./Leadership Headshots/Angeline1.jpg";
+import sumin from "./Leadership Headshots/Sumin.png";
+import sandya from "./Leadership Headshots/Sandya.jpg";
+import zack from "./Leadership Headshots/Zack.png";
+import vishali from "./Leadership Headshots/Vishali.png";
+import pranati from "./Leadership Headshots/Pranati.png";
+import tommy from "./Leadership Headshots/Tommy.jpg";
+import kathy from "./Leadership Headshots/Kathy.jpg";
+import tess from "./Leadership Headshots/Tess.png";
+import catherine from "./Leadership Headshots/Catherine.png";
+import paul from "./Leadership Headshots/Paul.jpg";
+import suparna from "./Leadership Headshots/Suparna.jpg";
+import manas from "./Leadership Headshots/Manas.png";
 
 import pm from "./About/pmgroup.jpeg";
 import exec from "./About/exec.jpeg";
@@ -71,6 +64,7 @@ const gridoffset = {
   marginTop: "3vw",
   textAlign: "center",
   fontFamily: "Montserrat",
+  gridTemplateColumns:"repeat(5, 1fr)",
 };
 
 const mybigtext = {
@@ -99,8 +93,7 @@ const cardstyle = {
 const imagestyle = {
   height: "28vw",
   maxHeight: "28vw",
-  width: "28vw",
-  maxWidth: "28vw",
+  objectFit: "cover",
 };
 const textstyle = {
   fontFamily: "Montserrat",
@@ -259,82 +252,11 @@ var circleStyle = {
 };
 const leadershipCards = [
   <Card style={cardstyle}>
-    <Image src={marlon} style={imagestyle} />
-    <Card.Content>
-      <Card.Header style={textstyle}>Marlon Fu</Card.Header>
-      <Card.Meta style={{ marginTop: "1vw" }}>
-        <span style={roleStyle}>President</span>
-      </Card.Meta>
-    </Card.Content>
-    <Card.Content extra>
-      <a href="mailto:marlonfu@berkeley.edu">
-        <Icon size="large" name="mail" />
-      </a>
-      <a href="https://www.linkedin.com/in/marlonfu/">
-        <Icon size="large" name="linkedin" />
-      </a>
-    </Card.Content>
-  </Card>,
-  <Card style={cardstyle}>
-    <Image src={savvy} style={imagestyle} />
-    <Card.Content>
-      <Card.Header style={textstyle}>Savannah Streitman</Card.Header>
-      <Card.Meta style={{ marginTop: "1vw" }}>
-        <span style={roleStyle}>Internal Vice President</span>
-      </Card.Meta>
-    </Card.Content>
-    <Card.Content extra>
-      <a href="mailto:sstreitman@berkeley.edu">
-        <Icon size="large" name="mail" />
-      </a>
-      <a href="www.linkedin.com/in/savannah-streitman">
-        <Icon size="large" name="linkedin" />
-      </a>
-    </Card.Content>
-  </Card>,
-  <Card style={cardstyle}>
-    {" "}
-    <Image src={preetha} style={imagestyle}/>
-    <Card.Content>
-      <Card.Header style={textstyle}>Preetha Kumar</Card.Header>
-      <Card.Meta style={{ marginTop: "1vw" }}>
-        <span style={roleStyle}>External Vice President</span>
-      </Card.Meta>
-    </Card.Content>
-    <Card.Content extra>
-      <a href="mailto:preethakumar@berkeley.edu">
-        <Icon size="large" name="mail" />
-      </a>
-      <a href="https://www.linkedin.com/in/preetha-kumar/">
-        <Icon size="large" name="linkedin" />
-      </a>
-    </Card.Content>
-  </Card>,
-  <Card style={cardstyle}>
-    {" "}
-    <Image style={imagestyle} src={kuhu} />
-    <Card.Content>
-      <Card.Header style={textstyle}>Kuhu Sharma</Card.Header>
-      <Card.Meta style={{ marginTop: "1vw" }}>
-        <span style={roleStyle}>VP of Technology</span>
-      </Card.Meta>
-    </Card.Content>
-    <Card.Content extra>
-      <a href="mailto:kuhusharma@berkeley.edu">
-        <Icon size="large" name="mail" />
-      </a>
-      <a href= "https://www.linkedin.com/in/kuhusharma/">
-        <Icon size="large" name="linkedin" />
-      </a>
-    </Card.Content>
-  </Card>,
-  <Card style={cardstyle}>
-    {" "}
-    <Image style={imagestyle} src={angeline} />
+    <Image src={angeline} style={imagestyle} />
     <Card.Content>
       <Card.Header style={textstyle}>Angeline Lee</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
-        <span style={roleStyle}>VP of Marketing</span>
+        <span style={roleStyle}>President</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
@@ -347,79 +269,168 @@ const leadershipCards = [
     </Card.Content>
   </Card>,
   <Card style={cardstyle}>
-    {" "}
-    <Image style={imagestyle} src={rachael} />
+    <Image src={sumin} style={imagestyle} />
     <Card.Content>
-      <Card.Header style={textstyle}>Rachael Lam</Card.Header>
+      <Card.Header style={textstyle}>Su Min Park</Card.Header>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>Internal Vice President</span>
+      </Card.Meta>
+    </Card.Content>
+    <Card.Content extra>
+      <a href="mailto:m.suminpark@berkeley.edu">
+        <Icon size="large" name="mail" />
+      </a>
+      <a href="https://www.linkedin.com/in/su-min-park-89a103220/">
+        <Icon size="large" name="linkedin" />
+      </a>
+    </Card.Content>
+  </Card>,
+  <Card style={cardstyle}>
+    {" "}
+    <Image src={sandya} style={imagestyle}/>
+    <Card.Content>
+      <Card.Header style={textstyle}>Sandya Wijaya</Card.Header>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>External Vice President</span>
+      </Card.Meta>
+    </Card.Content>
+    <Card.Content extra>
+      <a href="mailto:sandya.wijaya@berkeley.edu">
+        <Icon size="large" name="mail" />
+      </a>
+      <a href="https://www.linkedin.com/in/sandyawijaya/">
+        <Icon size="large" name="linkedin" />
+      </a>
+    </Card.Content>
+  </Card>,
+  <Card style={cardstyle}>
+    {" "}
+    <Image style={imagestyle} src={zack} />
+    <Card.Content>
+      <Card.Header style={textstyle}>Zackary Oon</Card.Header>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>VP of Technology</span>
+      </Card.Meta>
+    </Card.Content>
+    <Card.Content extra>
+      <a href="mailto:zackaryoon134@berkeley.edu>">
+        <Icon size="large" name="mail" />
+      </a>
+      <a href= "https://www.linkedin.com/in/zackary-oon-9693401b7/">
+        <Icon size="large" name="linkedin" />
+      </a>
+    </Card.Content>
+  </Card>,
+  <Card style={cardstyle}>
+    {" "}
+    <Image style={imagestyle} src={vishali} />
+    <Card.Content>
+      <Card.Header style={textstyle}>Vishali Kirthi Vallioor</Card.Header>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>VP of Marketing</span>
+      </Card.Meta>
+    </Card.Content>
+    <Card.Content extra>
+      <a href="mailto:vishalivallioor@berkeley.edu">
+        <Icon size="large" name="mail" />
+      </a>
+      <a href="https://www.linkedin.com/in/vishali-vallioor/">
+        <Icon size="large" name="linkedin" />
+      </a>
+    </Card.Content>
+  </Card>,
+  <Card style={cardstyle}>
+    {" "}
+    <Image style={imagestyle} src={pranati} />
+    <Card.Content>
+      <Card.Header style={textstyle}>Pranati Modumudi</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
         <span style={roleStyle}>VP of Culture</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:rachaellam@berkeley.edu">
+      <a href="mailto:pmodumudi@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/rachael-lam-2826711b2/">
+      <a href="https://www.linkedin.com/in/pranatimodumudi/">
+        <Icon size="large" name="linkedin" />
+      </a>
+    </Card.Content>
+  </Card>,
+  <Card style={cardstyle}>
+  {" "}
+    <Image style={imagestyle} src={tommy} />
+    <Card.Content>
+      <Card.Header style={textstyle}>Thomas Chen</Card.Header>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>VP of Culture</span>
+      </Card.Meta>
+    </Card.Content>
+    <Card.Content extra>
+      <a href="mailto:thomasychen@berkeley.edu">
+        <Icon size="large" name="mail" />
+      </a>
+      <a href="https://www.linkedin.com/in/thomas-y-chen/">
+        <Icon size="large" name="linkedin" />
+      </a>
+    </Card.Content>
+  </Card>,
+  <Card style={cardstyle}>
+  {" "}
+    <Image style={imagestyle} src={kathy} />
+    <Card.Content>
+      <Card.Header style={textstyle}>Kathy Fang</Card.Header>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>VP of Finance</span>
+      </Card.Meta>
+    </Card.Content>
+    <Card.Content extra>
+      <a href="mailto:kathyfangnz@berkeley.edu">
+        <Icon size="large" name="mail" />
+      </a>
+      <a href="https://www.linkedin.com/in/kathy-fang-35014321b/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={tej} />
+    <Image style={imagestyle} src={catherine} />
     <Card.Content>
-      <Card.Header style={textstyle}>Tej Sathe</Card.Header>
+      <Card.Header style={textstyle}>Catherine Chu</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
         <span style={roleStyle}>Director of Consulting</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:trs37@berkeley.edu">
+      <a href="mailto:catherine.chu@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/tej-sathe-910b18168">
+      <a href="https://www.linkedin.com/in/catherine-chu-139213220/ ">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={wendy} />
+    <Image style={imagestyle} src={tess} />
     <Card.Content>
-      <Card.Header style={textstyle}>Wendy Kim</Card.Header>
+      <Card.Header style={textstyle}>Tess U-Vongcharoen</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
         <span style={roleStyle}>Director of Social Good</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:wendykimm@berkeley.edu">
+      <a href="mailto:tess.uvongcharoen@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/wendysbkim/">
+      <a href="https://www.linkedin.com/in/tess-u-vongcharoen/ ">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
   </Card>,
   <Card style={cardstyle}>
-    {" "}
-    <Image style={imagestyle} src={bella} />
-    <Card.Content>
-      <Card.Header style={textstyle}>Bella Chang</Card.Header>
-      <Card.Meta style={{ marginTop: "1vw" }}>
-        <span style={roleStyle}>Director of Acadev</span>
-      </Card.Meta>
-    </Card.Content>
-    <Card.Content extra>
-      <a href="mailto:bellachang@berkeley.edu">
-        <Icon size="large" name="mail" />
-      </a>
-      <a href="https://www.linkedin.com/in/bellaachang/">
-        <Icon size="large" name="linkedin" />
-      </a>
-    </Card.Content>
-  </Card>,
-  <Card style={cardstyle}>
-    {" "}
+  {" "}
     <Image style={imagestyle} src={paul} />
     <Card.Content>
       <Card.Header style={textstyle}>Paul Jacobs</Card.Header>
@@ -438,18 +449,36 @@ const leadershipCards = [
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={stephen} />
+    <Image style={imagestyle} src={suparna} />
     <Card.Content>
-      <Card.Header style={textstyle}>Stephen Liu</Card.Header>
+      <Card.Header style={textstyle}>Suparna Kompalli</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
         <span style={roleStyle}>Director of Acadev</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:Stephen.liu@berkeley.edu">
+      <a href="mailto:skompalli@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/liu-stephen">
+      <a href="https://www.linkedin.com/in/suparna-kompalli-79463b229/">
+        <Icon size="large" name="linkedin" />
+      </a>
+    </Card.Content>
+  </Card>,
+  <Card style={cardstyle}>
+    {" "}
+    <Image style={imagestyle} src={manas} />
+    <Card.Content>
+      <Card.Header style={textstyle}>Manas Khatore</Card.Header>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>Director of Acadev</span>
+      </Card.Meta>
+    </Card.Content>
+    <Card.Content extra>
+      <a href="mailto:manaskhatore@berkeley.edu">
+        <Icon size="large" name="mail" />
+      </a>
+      <a href="https://www.linkedin.com/in/mank/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
@@ -1031,7 +1060,7 @@ class About extends Component {
             </Grid.Column>
           </Grid.Row>
           {CustomTitle({ title: "Our Exec Team", id: "team" })}
-          <Grid.Row centered width={12} style={{ marginTop: "7vw" }}>
+          <Grid.Row centered width={12} style={{ marginTop: "7vw",}}>
             <Card.Group centered>{leadershipCards}</Card.Group>
             ``
           </Grid.Row>
