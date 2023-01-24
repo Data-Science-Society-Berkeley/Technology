@@ -707,17 +707,36 @@ class Join extends Component {
 
 
 
-          {/* {CustomTitleBlack({ title: "Project Managers" })}
-          <Grid.Row>
-            <div
-              style={{
-                marginLeft: "4vw",
-                marginTop: "4vw",
-                marginRight: "4vw",
-              }}
-            >
+          {CustomTitleBlack({ title: "Resource Packet" })}
+          <div style= {{maxWidth: "50vw"}}>
+            <Image src={ClientLine}></Image>
+          </div>
+
+          <Grid.Row style={{ marginLeft: "5vw", marginRight: "5vw" }}>
+            <div style={consult}>
             </div>
-          </Grid.Row> */}
+          </Grid.Row>
+          <Grid.Row
+              style={{
+                color: "#000000",
+                marginTop: "-2vw",
+                marginBottom: "4vw",
+                textAlign: "center",
+                lineHeight: "4vw",
+                fontSize: "2vw",
+                fontWeight: "21vw",
+                position: "relative",
+                fontStyle: "normal",
+                fontFamily: "Montserrat",
+                marginLeft: "6vw",
+                marginRight: "6vw",
+              }}
+            ><a href="https://docs.google.com/document/d/1QLJPRuUDaDoadXAGhkP9pLX4dHvbdh8n8x9vluvw44s">
+            If you would like a better idea of how you can prep for the interviews, check out this resource packet!</a> 
+
+            </Grid.Row>
+          
+          
           {CustomTitleBlack({ title: "Frequently Asked Questions" })}
           <div style= {{maxWidth: "50vw"}}>
             <Image src={ClientLine}></Image>
