@@ -371,6 +371,7 @@ class App extends Component {
               </div>
             )}
           />
+          {/*
           <Route
             exact
             path="/decal"
@@ -400,6 +401,7 @@ class App extends Component {
               </div>
             )}
           />
+            */}
           <Route
             exact
             path="/socialgood"
