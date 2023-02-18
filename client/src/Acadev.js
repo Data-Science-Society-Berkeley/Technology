@@ -49,8 +49,10 @@ import angeline from "./Leadership Headshots/angeline.jpg";
 import pranati from "./Leadership Headshots/pranati.jpeg";
 import savvy from "./Leadership Headshots/savvy.jpeg";
 import bella from "./Leadership Headshots/bella.png"
-import paul from "./Leadership Headshots/paul.jpeg"
+import paul from "./Leadership Headshots/Paul.jpg"
 import stephen from "./Leadership Headshots/stephen.jpg"
+import suparna from "./Leadership Headshots/Suparna.jpg"
+import manas from "./Leadership Headshots/Manas.png"
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -117,8 +119,7 @@ const cardstyle = {
 const imagestyle = {
   height: "28vw",
   maxHeight: "28vw",
-  width: "28vw",
-  maxWidth: "28vw",
+  objectFit: "cover",
 };
 
 const textstyle = {
@@ -792,18 +793,18 @@ class Acadev extends Component {
             <Card.Group style={{ marginTop: "5vw" }}>
             <Card style={cardstyle}>
               {" "}
-              <Image style={imagestyle} src={bella} />
+              <Image style={imagestyle} src={suparna} />
               <Card.Content>
-                <Card.Header style={textstyle}>Bella Chang</Card.Header>
+                <Card.Header style={textstyle}>Suparna Kompalli</Card.Header>
                 <Card.Meta style={{ marginTop: "1vw" }}>
                   <span style={roleStyle}>Director of Acadev</span>
                 </Card.Meta>
               </Card.Content>
               <Card.Content extra>
-                <a href="mailto:bellachang@berkeley.edu">
+                <a href="mailto:skompalli@berkeley.edu">
                   <Icon size="large" name="mail" />
                 </a>
-                <a href="https://www.linkedin.com/in/bellaachang/">
+                <a href="https://www.linkedin.com/in/suparna-kompalli-79463b229/">
                   <Icon size="large" name="linkedin" />
                 </a>
               </Card.Content>
@@ -828,18 +829,18 @@ class Acadev extends Component {
             </Card>,
             <Card style={cardstyle}>
               {" "}
-              <Image style={imagestyle} src={stephen} />
+              <Image style={imagestyle} src={manas} />
               <Card.Content>
-                <Card.Header style={textstyle}>Stephen Liu</Card.Header>
+                <Card.Header style={textstyle}>Manas Khatore</Card.Header>
                 <Card.Meta style={{ marginTop: "1vw" }}>
                   <span style={roleStyle}>Director of Acadev</span>
                 </Card.Meta>
               </Card.Content>
               <Card.Content extra>
-                <a href="mailto:Stephen.liu@berkeley.edu">
+                <a href="mailto:manaskhatore@berkeley.edu">
                   <Icon size="large" name="mail" />
                 </a>
-                <a href="https://www.linkedin.com/in/liu-stephen">
+                <a href="https://www.linkedin.com/in/mank/">
                   <Icon size="large" name="linkedin" />
                 </a>
               </Card.Content>
