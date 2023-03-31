@@ -192,6 +192,13 @@ class App extends Component {
             }}
           />
           <Route
+            path="/forum"
+            component={() => {
+              window.location.href = "https://tinyurl.com/2p838txu";
+              return null;
+            }}
+          />
+          <Route
             exact
             path="/"
             render={(props) => (
