@@ -187,7 +187,7 @@ class NavBar extends Component {
       );
     } else {
       return (
-        <Image src={logo2}></Image>
+        <Image src={logo}></Image> // initially logo2, but we want logo since home will = the rest for now
       );
     }
   }
