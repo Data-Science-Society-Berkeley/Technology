@@ -31,7 +31,6 @@ const mynav = {
   lineHeight: "1.5vw",
   boxShadow: "none",
   border: "none",
-  marginTop: "3.5vw",
 };
 // since menu has 10 margin
 const form_formatting = {
@@ -52,12 +51,16 @@ const submit = {
 };
 
 const navbar = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
   fontFamily: "Montserrat",
   fontSize: "1.5vw",
   fontWeight: 600,
   lineHeight: "3vw",
   marginLeft: "1.5vw",
   color: "#FFFFFF",
+  marginBottom: "-3vw",
 };
 const link = {
   fontFamily: "Montserrat",

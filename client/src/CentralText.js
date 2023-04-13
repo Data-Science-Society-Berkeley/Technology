@@ -77,7 +77,6 @@ const bannerImg = {
   height: "auto",
   padding: "0",
   gridColumn: "span 3",
-  marginTop: "-250px"
 }
 
 const whiteSpaceContainer = {

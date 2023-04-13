@@ -71,12 +71,11 @@ const banner = {
 //try having the bannerText take up a box worth of space or smth or try editing w/o the image first, so I don't have to manually input all these measurements
 const bannerText = {
     color: "white",
-    fontSize: "8vw",
+    fontSize: "6vw",
     fontFamily: "Montserrat", 
-    fontWeight: "600",
+    fontWeight: "500",
     position: "absolute",
-    top: "-7vw",
-    bottom: "1em",
+    bottom: "18vw",
     right: "1em",
     left: "1em",
     display: "flex",
@@ -198,7 +197,7 @@ class Education extends Component {
     return (
       <div style={{fontSize: "max(2vw, 16px)", width: "100%", height: "100%",}}>
           {/*Services Banner + Intro*/}
-          <div style={{display: "grid", gridTemplateColumns: "repeat(3, 1fr)", margin: "-8px -8px 1.3rem -8px", gap: "5px"}}>
+          <div style={{display: "grid", gridTemplateColumns: "repeat(3, 1fr)", margin: "0 -8px 1.3rem -8px", gap: "5px"}}>
               <figure style={banner}>
                   <img style={bannerImg} src={servicesBanner}></img>
                   <figcaption style={bannerText}>
