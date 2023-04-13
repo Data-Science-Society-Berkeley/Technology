@@ -258,6 +258,7 @@ const value_card = {
   borderRadius: "1.5vw",
   marginLeft: "4vw",
 };
+
 class CentralText extends Component {
   constructor(props) {
     super(props);
@@ -428,106 +429,8 @@ class CentralText extends Component {
     console.log(this.state.height, this.state.width);
     let process = this.join();
     return (
-      <div style={{ marginTop: "1vw" }}>
-        {/* <NavBar2 {...this.props} /> */}
-        {/* <Segment style={{ padding: "8em 0em" }} vertical> */}
-                  {/*Services Banner + Intro*/}
-        <div>
-          <figure style={banner}>
-            {/**style={{display: "grid", gridTemplateColumns: "repeat(3, 1fr)", margin: "-8px -8px 1.3rem -8px", gap: "5px"} */}
-              <img style={bannerImg} src={homepageBanner}></img>
-              {/* <NavBar {...props} /> didn't work here :() */}
-          </figure>
-        </div>
-        <Grid divided="vertically" style={gridoffset} className="pusher">
-          <Grid.Row columns={3} style={{ position: "relative" }}>
-            <Grid.Column width={8}>
-              <Header style={mybigtext}>DATA SCIENCE SOCIETY</Header>
-              <Header as="h1" style={mymidtext}>
-                AT BERKELEY
-              </Header>
-              <Header style={mylittletext}>Berkeley’s first undergraduate data-science focused student organization. Actively fostering a strong data science community on campus via our consulting and educational initiatives.</Header>
-              <Header style={link}>
-                <Link to="/about" style={link}>About us</Link>
-                <Image
-                style={{
-                  position: "dynamic",
-                  left: "1%",
-                  width: "2vw",
-                  marginTop: "0vw",
-                }}
-                src={rightarrow}
-                onclick=""
-                ></Image>
-              </Header>
-              
-              <br></br>
-            </Grid.Column>
-            <Grid.Column width={8}>
-              <Image
-                style={{
-                  height: "25vw",
-                  marginTop: "3vw",
-                  marginLeft: "1vw",
-                  position: "dynamic",
-                }}
-                floated="left"
-                src={stats}
-              ></Image>
-
-            </Grid.Column>
-
-            <Grid.Column width={15}>
-              <Image
-                style={{
-                  marginTop: "1vw",
-                  position: "absolute", 
-                  width: "100%",
-                  height: "40vw",
-                }}
-                src={gradientOne}
-              >
-              </Image>
-              <Image
-                style={{
-                  marginTop: "1vw",
-                  position: "absolute", 
-                  width: "150%",
-                  marginBottom: "25vw"
-                }}
-                src={linesOne}
-                ></Image>
-                <Image
-                style={{
-                  marginTop: "20vw",
-                  position: "absolute", 
-                  width: "100%",
-                  height: "40vw",
-                }}
-                src={gradientTwo}
-              >
-              </Image>
-              <Image
-                style={{
-                  marginTop: "20vw",
-                  position: "absolute", 
-                  width: "150%",
-                }}
-                src={linesTwo}
-                ></Image>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-        <Grid
-          style={{
-            width: "110%",
-            backgroundColor: "white",
-            marginTop: "10vw",
-          }}
-        >
-
-        </Grid>
-        {/* </Segment> */}
+      <div>
+        
       </div>
     );
   }
