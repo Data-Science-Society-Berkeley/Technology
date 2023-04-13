@@ -183,12 +183,12 @@ class App extends Component {
             path="/"
             render={(props) => (
               <div>
+                <NavBar {...props} />
                 <CentralText
                   style={{ paddingBottom: "500px" }}
                   {...props}
                   buttonClick={this.sendData.bind(this)}
                 />
-                <NavBar {...props} />
                 <Footer></Footer>
               </div>
             )}
@@ -533,12 +533,15 @@ class App extends Component {
             path="/"
             render={(props) => (
               <div>
+                <Helmet
+                  bodyAttributes={{ style: "background-color : #ffffff" }}
+                />
+                <NavBar {...props} />
                 <CentralText
                   style={{ paddingBottom: "500px" }}
                   {...props}
                   buttonClick={this.sendData.bind(this)}
                 />
-                <NavBar {...props} />
                 {/* <Footer></Footer> */}
               </div>
             )}
