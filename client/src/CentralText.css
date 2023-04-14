@@ -73,7 +73,7 @@
 .gradient {
     font-weight: 900;
     font-size: 50px;
-    background-image: linear-gradient(to right, rgba(120, 214, 209, 1), rgba(140, 214, 209, 0));
+    background-image: linear-gradient(to right, rgba(120, 214, 209, 0.8), rgba(140, 214, 209, 0.2));
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -98,7 +98,7 @@ h1.boldish {
 
 .gradient-bg {
     background: linear-gradient(0turn, #DAFFFB, #ebf8e1, #FDFFF9);
-    margin: 3 0% 0% 0%;
+    margin: 2% 0% 0% 0%;
     padding: 5%;
-    padding-top: 0%;
+    padding-top: 2%;
 }
