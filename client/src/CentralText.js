@@ -445,7 +445,7 @@ class CentralText extends Component {
             </div>
             <div class="right">
               <div class="grid">
-                <p>hi</p>
+                <h1 class="gradient">hi</h1>
                 <p>hi</p>
                 <p>hi</p>
                 <p>hi</p>
@@ -463,7 +463,7 @@ class CentralText extends Component {
                 <div></div>
                 <div></div>
               </div>
-              <div class="right">
+              <div class="right1">
                 <img></img>
               </div>
             </div>
