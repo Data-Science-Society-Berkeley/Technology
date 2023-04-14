@@ -37,6 +37,8 @@ import mlIcon from './Services Images/mlIcon.jpg'
 import sweIcon from './Services Images/sweIcon.jpg'
 import businessIcon from './Services Images/businessIcon.jpg'
 
+import servicesBanner from './Services Images/servicesbanner.jpg';
+
 import "./CentralText.css"
 
 import ocf from "./Backgrounds/ocf-hosted-penguin.svg";
@@ -435,47 +437,117 @@ class CentralText extends Component {
         <img class="center-fit" src={homepageBanner}></img>
       
 
-        <div style={{margin:"0 5%"}}>
+        <div style={{margin:"3% 5% 0% 5%"}}>
           <div class="sub-banner">
             <div class="left">
               <h1 class="bold">DATA SCIENCE SOCIETY</h1>
               <h1 class="light">At Berkeley</h1>
               <p>Berkeley’s first undergraduate data-science focused student organization. Actively fostering a strong data science community on campus via our consulting and educational initiatives.</p>
-              <div></div>
+              <a href="./About">About us →</a>
             </div>
-            <div class="right">
+            <div class="right1">
               <div class="grid">
-                <h1 class="gradient">hi</h1>
-                <p>hi</p>
-                <p>hi</p>
-                <p>hi</p>
-                <p>hi</p>
-                <p>hi</p>
-              </div>
-            </div>
-          </div>
+                <div class="grid-tile">
+                  <h1 class="gradient">1000+</h1>
+                  <p class="italic">past decal students</p>
+                </div>
+                <div class="grid-tile">
+                  <h1 class="gradient">20</h1>
+                  <p class="italic">semesters of teaching</p>
+                </div>
+                <div class="grid-tile">
+                  <h1 class="gradient">48</h1>
+                  <p class="italic">client projects completed</p>
+                </div>
 
-          {/*Vector image here? Start gradient*/}
-          <div class="values">
-            <div class="value">
-              <div class="left">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-              <div class="right1">
-                <img></img>
-              </div>
+                <div class="grid-tile">
+                  <h1 class="gradient">300+</h1>
+                  <p class="italic">past datathon participants</p>
+                </div><div class="grid-tile">
+                  <h1 class="gradient">71</h1>
+                  <p class="italic">events hosted</p>
+                </div><div class="grid-tile">
+                  <h1 class="gradient">500+</h1>
+                  <p class="italic">camera duels</p>
+                </div>
+              </div>  
             </div>
-            
-          </div>
-
-          <div class="call-to-action">
-            <div></div>
-            <div></div>
-            <div></div>
           </div>
         </div>
+
+        <div class="gradient-bg">
+            {/*Vector image here? Start gradient*/}
+            <div class="values">
+              <div class="value">
+                <div class="left">
+                  <h1 class="boldish">IMPACT</h1>
+                  <h2 class="light">CONSULTING COMMITTEE</h2>
+                  <p>We leave an impact beyond Berkeley through partnering with companies from a variety of domains to create enterprise-level machine learning and analytics solutions.</p>
+                  <a href="./About">More about consulting →</a>
+                </div>
+                <div class="right1">
+                  <img src={servicesBanner}></img>
+                </div>
+              </div>
+              
+              <div class="value">
+                <div class="left">
+                  <h1 class="boldish">EDUCATE</h1>
+                  <h2 class="light">ACADEMIC DEVELOPMENT COMMITTEE</h2>
+                  <p>We lead & teach the DeCal course, “Introduction to Real World Data Science”, in addition to spearheading multiple data science educational iniatives on campus.</p>
+                  <a href="./About">More about education →</a>
+                </div>
+                <div class="right1">
+                  <img src={servicesBanner}></img>
+                </div>
+              </div>
+
+              <div class="value">
+                <div class="left">
+                  <h1 class="boldish">GIVE BACK</h1>
+                  <h2 class="light">SOCIAL GOOD COMMITTEE</h2>
+                  <p>We provide pro-bono support for non-profit organizations through developing advanced analytical insights to recognize uplifting initiatives around the globe.</p>
+                  <a href="./About">More about social good →</a>
+                </div>
+                <div class="right1">
+                  <img src={servicesBanner}></img>
+                </div>
+              </div>
+
+              <div class="value">
+                <div class="left">
+                  <h1 class="boldish">EMPOWER</h1>
+                  <h2 class="light">DATATHONS, PANELS & MORE EVENTS</h2>
+                  <p>We hold an annual datathon and other high-impact events, where we inspire students to make data-driven decisions and to incorporate data science in their professional lives.</p>
+                  <a href="./About">More about events →</a>
+                </div>
+                <div class="right1">
+                  <img src={servicesBanner}></img>
+                </div>
+              </div>
+
+              <div class="value">
+                <div class="left">
+                  <h1 class="boldish">LEARN</h1>
+                  <h2 class="light">RESOURCES</h2>
+                  <p>Resources are pog</p>
+                  <a href="./About">More about resources →</a>
+                </div>
+                <div class="right1">
+                  <img src={servicesBanner}></img>
+                </div>
+              </div>
+            </div>
+
+            <div class="call-to-action">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+
+          <div></div>
+          <div></div>
       </div>
     );
   }
