@@ -32,6 +32,8 @@ const mynav = {
   boxShadow: "none",
   border: "none",
 };
+
+
 // since menu has 10 margin
 const form_formatting = {
   marginLeft: "36px",
@@ -62,6 +64,20 @@ const navbar = {
   color: "#FFFFFF",
   marginBottom: "-3vw",
 };
+
+const navWrapperLeft= {
+  display: "flex",
+  flex: "1 2 0",
+  justifyContent: "space-between",
+  margin: "auto 0",
+}
+
+const navWrapperRight= {
+  display: "flex",
+  justifyContent: "space-between",
+  margin: "auto 0",
+}
+
 const link = {
   fontFamily: "Montserrat",
   fontSize: "24px",
@@ -218,73 +234,79 @@ class NavBar extends Component {
     let applystyle = this.setJoin();
     return (
       <div className="NavBar">
+
         <Menu style={mynav} borderless={true}>
-          <Menu.Item style={navbar} className=".ui.table">
-            <Link to="/">{logo}</Link>
-          </Menu.Item>
-          <Menu.Menu position="right" style={{ marginLeft: "7vw" }}>
-            <Menu.Item
-                name="home"
-                active={activeItem === "/"}
+          <div style={navWrapperLeft}>
+            <Menu.Item style={navbar} className=".ui.table">
+              <Link to="/">{logo}</Link>
+            </Menu.Item>
+          </div>
+
+          <div style={navWrapperRight}>
+            <Menu.Menu position="right" style={{ marginLeft: "7vw" }}>
+              <Menu.Item
+                  name="home"
+                  active={activeItem === "/"}
+                  onClick={this.handleItemClick}
+                  style={navbar}
+                >
+                  <Link to="/" style={linkStyling}>
+                    home
+                  </Link>
+                </Menu.Item>
+              <Menu.Item
+                name="about"
+                active={activeItem === "about"}
                 onClick={this.handleItemClick}
                 style={navbar}
               >
-                <Link to="/" style={linkStyling}>
-                  home
+                <Link to="about" style={linkStyling}>
+                  about
                 </Link>
               </Menu.Item>
-            <Menu.Item
-              name="about"
-              active={activeItem === "about"}
-              onClick={this.handleItemClick}
-              style={navbar}
-            >
-              <Link to="about" style={linkStyling}>
-                about
+              <Menu.Item
+                name="decal"
+                active={activeItem === "decal"}
+                onClick={this.handleItemClick}
+                style={navbar}
+              >
+                <Link to="/gm" style={linkStyling}>
+                  decal
+                </Link>
+              </Menu.Item>
+              <Menu.Item
+                name="events"
+                active={activeItem === "events"}
+                onClick={this.handleItemClick}
+                style={navbar}
+              >
+                <Link style={linkStyling} to="events">
+                  events
+                </Link>
+              </Menu.Item>
+              <Menu.Item
+                name="services"
+                active={activeItem === "services"}
+                onClick={this.handleItemClick}
+                style={navbar}
+              >
+                <Link style={linkStyling} to="services">
+                  services
+                </Link>
+              </Menu.Item>
+              <Menu.Item
+                name="join"
+                active={activeItem === "join"}
+                onClick={this.handleItemClick}
+                style={navbar}
+              >
+              <Link style={linkStyling} to="/joinus">
+                    join us
               </Link>
-            </Menu.Item>
-            <Menu.Item
-              name="decal"
-              active={activeItem === "decal"}
-              onClick={this.handleItemClick}
-              style={navbar}
-            >
-              <Link to="/gm" style={linkStyling}>
-                decal
-              </Link>
-            </Menu.Item>
-            <Menu.Item
-              name="events"
-              active={activeItem === "events"}
-              onClick={this.handleItemClick}
-              style={navbar}
-            >
-              <Link style={linkStyling} to="events">
-                events
-              </Link>
-            </Menu.Item>
-            <Menu.Item
-              name="services"
-              active={activeItem === "services"}
-              onClick={this.handleItemClick}
-              style={navbar}
-            >
-              <Link style={linkStyling} to="services">
-                services
-              </Link>
-            </Menu.Item>
-            <Menu.Item
-              name="join"
-              active={activeItem === "join"}
-              onClick={this.handleItemClick}
-              style={navbar}
-            >
-            <Link style={linkStyling} to="/joinus">
-                  join us
-            </Link>
-            </Menu.Item>
-            <Menu.Item header></Menu.Item>
-          </Menu.Menu>
+              </Menu.Item>
+              <Menu.Item header></Menu.Item>
+            </Menu.Menu>
+          </div>
         </Menu>
       </div>
     );

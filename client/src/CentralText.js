@@ -25,7 +25,7 @@ import rectangleSingle from "./landing/rectangleSingle.png";
 import rectangleGroup from "./landing/rectangleGroup.png";
 import squiggly1 from "./landing/squiggly1.png";
 import squiggly2 from "./landing/squiggly2.png";
-import homepageBanner from './Homepage/homepage.jpg';
+import homepageBanner from './Homepage/homepage.png';
 import rightarrow from './Homepage/ArrowRight.png'
 import stats from './Homepage/stats.png'
 import gradientOne from './Homepage/homepagegradient1.png';
@@ -36,6 +36,8 @@ import NavBar from './Menu.js'
 import mlIcon from './Services Images/mlIcon.jpg'
 import sweIcon from './Services Images/sweIcon.jpg'
 import businessIcon from './Services Images/businessIcon.jpg'
+
+import "./CentralText.css"
 
 import ocf from "./Backgrounds/ocf-hosted-penguin.svg";
 
@@ -429,8 +431,51 @@ class CentralText extends Component {
     console.log(this.state.height, this.state.width);
     let process = this.join();
     return (
-      <div>
-        
+      <div class="homepage-test">
+        <img class="center-fit" src={homepageBanner}></img>
+      
+
+        <div style={{margin:"0 5%"}}>
+          <div class="sub-banner">
+            <div class="left">
+              <h1 class="bold">DATA SCIENCE SOCIETY</h1>
+              <h1 class="light">At Berkeley</h1>
+              <p>Berkeley’s first undergraduate data-science focused student organization. Actively fostering a strong data science community on campus via our consulting and educational initiatives.</p>
+              <div></div>
+            </div>
+            <div class="right">
+              <div class="grid">
+                <p>hi</p>
+                <p>hi</p>
+                <p>hi</p>
+                <p>hi</p>
+                <p>hi</p>
+                <p>hi</p>
+              </div>
+            </div>
+          </div>
+
+          {/*Vector image here? Start gradient*/}
+          <div class="values">
+            <div class="value">
+              <div class="left">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="right">
+                <img></img>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="call-to-action">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
       </div>
     );
   }
