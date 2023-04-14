@@ -1,0 +1,49 @@
+
+.homepage-test {
+    border-color: red;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: auto;
+    margin: auto;
+}
+
+.sub-banner {
+    display: flex;
+
+    border-color: blue;
+    border-width: 3px;
+    border-style: solid;
+}
+
+
+.left {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+}
+
+.homepage-test > h1 {
+    font-size: 40px;
+}
+
+.bold {
+    font-weight: 900;
+    
+}
+
+.homepage-test > p {
+    font-size: 20px;
+}
+
+.right {
+    flex: 1 1 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+}
