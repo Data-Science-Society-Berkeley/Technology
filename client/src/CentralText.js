@@ -529,8 +529,7 @@ class CentralText extends Component {
               <div class="value">
                 <div class="left">
                   <h1 class="boldish">LEARN</h1>
-                  <h2 class="light">RESOURCES</h2>
-                  <p>Resources are pog</p>
+                  <p>Find out more about what we do</p>
                   <a href="./About">More about resources →</a>
                 </div>
                 <div class="right1">
