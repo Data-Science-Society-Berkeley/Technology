@@ -63,6 +63,16 @@ import bella from "./Leadership Headshots/bella.png"
 import tej from "./PM Headshots/tej.jpg";
 import paul from "./Leadership Headshots/paul.jpeg"
 import stephen from "./Leadership Headshots/stephen.jpg"
+import sumin from "./Leadership Headshots/Sumin.png"
+import sandya from "./Leadership Headshots/Sandya.jpg"
+import zack from "./Leadership Headshots/Zack.png"
+import vishali from "./Leadership Headshots/Vishali.png"
+import tommy from "./Leadership Headshots/Tommy.jpg"
+import kathy from "./Leadership Headshots/Kathy.jpg"
+import catherine from "./Leadership Headshots/Catherine.png"
+import tess from "./Leadership Headshots/Tess.png"
+import suparna from "./Leadership Headshots/Suparna.jpg"
+import manas from "./Leadership Headshots/Manas.png"
 
 import pm from "./About/pmgroup.jpeg";
 import exec from "./About/exec.jpeg";
