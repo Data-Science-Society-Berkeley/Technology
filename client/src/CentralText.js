@@ -437,7 +437,7 @@ class CentralText extends Component {
         <img class="center-fit" src={homepageBanner}></img>
       
 
-        <div style={{margin:"3% 5% 0% 5%"}}>
+        <div style={{margin:"3% 5% 0% 5%", background: "white" }}>
           <div class="sub-banner">
             <div class="left">
               <h1 class="bold">DATA SCIENCE SOCIETY</h1>
