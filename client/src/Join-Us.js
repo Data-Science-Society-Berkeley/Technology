@@ -27,7 +27,7 @@ import squiggle3 from "./Consulting/squiggle3.png";
 import upright from "./Consulting/topRight.png";
 import bottomleft from "./Consulting/bottomLeft.png";
 import logo from "./Consulting/logo.png";
-import flyer from "./Backgrounds/fa22.png"
+import flyer from "./About/fa2023_recruitment_timeline.png"
 
 
 import down from "./Consulting/ClientTestimonials.png";
@@ -291,14 +291,9 @@ class Join extends Component {
 
         <div>
           <Image style={{position: 'relative',
-          top: "5vw",
-          // marginTop: '5vw',
-          left: "1.5vw",
-          right: "1.5vw",
-          bottom: "15vw",
-          // margin: 'auto',
+          margin: 'auto',
           // margintop: "10vw",
-          marginBottom: '15vw',
+          marginBottom: '0vw',
           height: "58vw",
           maxHeight: "58vw",
           // width: "115vw",
@@ -465,23 +460,24 @@ class Join extends Component {
               style={{
                 color: "#000000",
                 marginTop: "1vw",
-                marginBottom: "5vw",
+                marginBottom: "1vw",
                 textAlign: "center",
                 lineHeight: "4vw",
                 fontSize: "2vw",
                 fontWeight: "21vw",
                 fontStyle: "normal",
                 fontFamily: "Montserrat",
-                marginLeft: "30vw",
-                marginRight: "30vw",
+                marginLeft: "50vw",
+                marginRight: "50vw",
+                width: "100vw",
               }}
             >
 
-            Hey there! Thank you so much for taking the time to learn about DSS. On this page you will find all the different ways you can get involved with DSS, as well as what our recruitment timeline will look like for the upcoming semester. To stay up to date with all our events, including our recruitment events, you can add <a href="https://calendar.google.com/calendar/u/2?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">our external calendar</a> to receive invites on everything. If you have any questions, feel free to reach out to us at <a href="mailto:info@dss.berkeley.edu">info@dss.berkeley.edu</a>. We hope to see you very soon!
+            Hey there! Thank you for taking the time to learn about DSS. On this page you will find all the different ways you can get involved with DSS, as well as what our recruitment timeline will look like for the upcoming semester. To stay up to date with all our events, including our recruitment events, you can add <a href="https://calendar.google.com/calendar/u/2?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">our external calendar</a> to receive invites on everything. If you have any questions, feel free to reach out to us at <a href="mailto:info@dss.berkeley.edu">info@dss.berkeley.edu</a>. We hope to see you very soon!
 
             </Grid.Row>
             <div>
-              <Image
+              {/* <Image
                 src={squiggle3}
                 style={{
                   left: "-10%",
@@ -490,7 +486,7 @@ class Join extends Component {
                   bottom: "7%",
                   position: "absolute"
                 }}
-              ></Image>
+              ></Image> */}
             </div>
           </Grid.Row>
 
@@ -622,7 +618,7 @@ class Join extends Component {
           </Card.Group>
 
           <Grid.Row centered columns={1} style={{marginTop: "6vw"}}>
-            <div>
+            {/* <div>
               <Image
                 src={squiggle2}
                 style={{
@@ -632,7 +628,7 @@ class Join extends Component {
                   top: "-100%",
                 }}
               ></Image>
-            </div>
+            </div> */}
             {/* <Button.Group centered>
               <Link style={{marginRight: '4vw'}}>
                 <Button onClick={this.testa} style={{

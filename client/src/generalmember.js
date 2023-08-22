@@ -386,62 +386,12 @@ class DecalLearn extends Component {
             </div>
           </Grid.Row>
 
-          <Grid.Row
-            width={10}
-            columns={4}
-            style={{
-              // backgroundColor: "#8CD6D1",
-              width: "40%",
-              height: "3vw",
-              marginTop: "17vw",
-              left: "10vw",
-              position: "relative",
-            }}
-          >
-            <Grid.Column width={1} style={aboutstats2}>
-              <div style={aboutstats}>
-                42
-              </div>
-              <div style={{height: "2vw"}}></div>
-              <div style={aboutstats3}>
-                Completed Client Projects
-              </div>
-            </Grid.Column>
-            <Grid.Column width={1} style={aboutstats2}>
-              <div style={aboutstats}>
-                68
-              </div>
-              <div style={{height: "2vw"}}></div>
-              <div style={aboutstats3}>
-                Past Workshops and Events Hosted
-              </div>
-            </Grid.Column>
-            <Grid.Column width={1} style={aboutstats2}>
-              <div style={aboutstats}>
-                300+
-              </div>
-              <div style={{height: "2vw"}}></div>
-              <div style={aboutstats3}>
-                Datathon Past Participants
-              </div>
-            </Grid.Column>
-            <Grid.Column width={1} style={aboutstats2}>
-              <div style={aboutstats}>
-                800+
-              </div>
-              <div style={{height: "2vw"}}></div>
-              <div style={aboutstats3}>
-                Past Members and DeCal Students
-              </div>
-            </Grid.Column>
-          </Grid.Row>
-
 
 
 
           <Grid.Row>
           <div style={{
-            marginTop: "20vw",
+            marginTop: "5vw",
             textAlign: "start",
             lineHeight: "3vw",
             fontSize: "2.3vw",
@@ -561,8 +511,8 @@ class DecalLearn extends Component {
               position: "relative",
               left: "10vw",
               right: "10vw"
-            }}>You can apply through the form linked below. Keep an eye out for our application 
-            deadline next semester to apply!
+            }}>Our application window will open soon. Visit the "Join Us" page and
+            keep an eye out for our on-campus and virtual events for our timeline!
             </div>
           </Grid.Row>
 
