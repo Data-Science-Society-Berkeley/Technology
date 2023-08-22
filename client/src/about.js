@@ -1263,10 +1263,10 @@ class About extends Component {
               style= {{
                 position: 'relative',
                 top: "15vw",
-                left: '1.5vw',
+                left: '50vw',
                 height: "0.75vw",
                 maxHeight: "1.5vw",
-                width: "66vw",
+                width: "40vw",
                 marginBottom: "17vw"
               }}>
               </Image>
@@ -1381,7 +1381,7 @@ class About extends Component {
                 alignText: "center",
               }}
             >
-            <span>Where We Go</span>
+            {/* <span>Where We Go</span>
             </div>
             <div>
               <Image src={rectangle}
@@ -1394,7 +1394,7 @@ class About extends Component {
                 width: "55vw",
                 marginBottom: "17vw"
               }}>
-              </Image>
+              </Image> */}
             </div>
             </Grid.Row>
         </Grid>
