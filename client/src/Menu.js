@@ -91,7 +91,7 @@ const link2 = {
   fontSize: "24px",
   fontWeight: 600,
   lineHeight: "37px",
-  color: "#8CD6D1",
+  color: "black",
   textDecoration: 'none',
 };
 
@@ -222,7 +222,7 @@ class NavBar extends Component {
     if (this.state.activeStyle) {
       return link2;
     } else {
-      return link;
+      return link2;
     }
   }
   render() {
