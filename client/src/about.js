@@ -13,6 +13,7 @@ import {
 } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CustomTitle from "./components/CustomTitle.js";
+import CustomTitleBlack from "./components/CustomTitleBlack.js";
 
 
 import edlyft from "./Leadership Headshots/edlyft-logo.jpg";
@@ -24,19 +25,21 @@ import sponsor1 from "./Leadership Headshots/dsnexus-logo.png";
 import sponsor2 from "./Leadership Headshots/leadcenter_logo.png";
 import sponsor3 from "./Leadership Headshots/haas-ds-club-logo.png";
 import deepnote from "./Leadership Headshots/deepnote.png";
-import angeline from "./Leadership Headshots/Angeline1.jpg";
-import sumin from "./Leadership Headshots/Sumin.png";
-import sandya from "./Leadership Headshots/Sandya.jpg";
-import zack from "./Leadership Headshots/Zack.png";
-import vishali from "./Leadership Headshots/Vishali.png";
-import pranati from "./Leadership Headshots/Pranati.png";
-import tommy from "./Leadership Headshots/Tommy.jpg";
-import kathy from "./Leadership Headshots/Kathy.jpg";
-import tess from "./Leadership Headshots/Tess.png";
-import catherine from "./Leadership Headshots/Catherine.png";
-import paul from "./Leadership Headshots/Paul.jpg";
+
+// Headshot cards
+import stephen from "./Leadership Headshots/stephen.jpg";
+import preetha from "./Leadership Headshots/preetha.jpeg";
+import medha from "./Leadership Headshots/medha.jpg";
+import james from "./Leadership Headshots/james.jpg";
+import arnav from "./Leadership Headshots/arnav_g.jpeg";
 import suparna from "./Leadership Headshots/Suparna.jpg";
-import manas from "./Leadership Headshots/Manas.png";
+import lillian from "./Leadership Headshots/lillian.jpeg";
+import natraj from "./Leadership Headshots/natraj.jpg";
+import erin from "./Leadership Headshots/erin.png";
+import sumin from "./Leadership Headshots/sumin.png";
+import ethan from "./Leadership Headshots/ethan.jpeg";
+import aarthi from "./Leadership Headshots/aarthi.jpg";
+import austin from "./Leadership Headshots/austin.jpeg";
 
 import pm from "./About/pmgroup.jpeg";
 import exec from "./About/exec.jpeg";
@@ -47,9 +50,9 @@ import decal from "./About/DeCal.png";
 import senior from "./About/SeniorAdvisor.png";
 import join from "./About/JoinUs.jpg";
 //import story from './About/OurStory.jpg'
-import story from "./About/OurStory-Compressed-min.jpg";
+import splash from "./About/about_splash.png";
 import popout from "./About/popoutDesign.png";
-import ret from "./About/RetreatPic.png";
+import retreat from "./About/RetreatPic.png";
 import datacamp from "./Decal Images/datacamp-logo 1.png";
 import youtubeback from "./About/youtubevideo-cover.jpg";
 import upright from "./About/cross_up.png";
@@ -57,14 +60,16 @@ import bottomleft from "./About/cross_down.png";
 import rectangle from "./About/rectangle.png";
 import micron from "./About/micron.png"
 
-
+// squiggly decals
+import landingSquiggle from "./landing/landing_squiggle.png";
+import landingSquiggle2 from "./landing/landing_squiggle2.png";
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
-  marginTop: "3vw",
   textAlign: "center",
   fontFamily: "Montserrat",
   gridTemplateColumns:"repeat(5, 1fr)",
+  background: "linear-gradient(160deg, #FFFFFF 0%, #FFFFFF 60%, #CCF6FA 100%)",
 };
 
 const mybigtext = {
@@ -80,7 +85,7 @@ const header = {
   fontWeight: 500,
   lineHeight: "78px",
   fontSize: "64px",
-  color: "#8CD6D1",
+  color: "#FFFFFF",
   fontStyle: "normal",
 };
 const cardstyle = {
@@ -197,11 +202,11 @@ const execstyle6 = {
 };
 const aboutlinks = {
   fontFamily: "Montserrat",
-  fontWeight: "normal",
+  fontWeight: "bold",
   fontSize: "2.5vw",
   lineHeight: "3vw",
   height: "3vw",
-  color: "#FFFFFF",
+  color: "#000000",
   whiteSpace: "nowrap",
   position: "absolute",
   top: "50%",
@@ -252,208 +257,118 @@ var circleStyle = {
 };
 const leadershipCards = [
   <Card style={cardstyle}>
-    <Image src={angeline} style={imagestyle} />
+    <Image src={stephen} style={imagestyle} />
     <Card.Content>
-      <Card.Header style={textstyle}>Angeline Lee</Card.Header>
+      <Card.Header style={textstyle}>Stephen Liu</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
         <span style={roleStyle}>President</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:angelinelyk@berkeley.edu">
+      <a href="mailto:stephen.liu@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/angelineleeyingkee/">
+      <a href="https://www.linkedin.com/in/liu-stephen/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
   </Card>,
   <Card style={cardstyle}>
-    <Image src={sumin} style={imagestyle} />
+    <Image src={preetha} style={imagestyle} />
     <Card.Content>
-      <Card.Header style={textstyle}>Su Min Park</Card.Header>
+      <Card.Header style={textstyle}>Preetha Kumar</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
         <span style={roleStyle}>Internal Vice President</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:m.suminpark@berkeley.edu">
+      <a href="mailto:preethakumar@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/su-min-park-89a103220/">
+      <a href="https://www.linkedin.com/in/preetha-kumar/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image src={sandya} style={imagestyle}/>
+    <Image src={medha} style={imagestyle}/>
     <Card.Content>
-      <Card.Header style={textstyle}>Sandya Wijaya</Card.Header>
+      <Card.Header style={textstyle}>Medha Iyer</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
         <span style={roleStyle}>External Vice President</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:sandya.wijaya@berkeley.edu">
+      <a href="mailto:medhaiyer@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/sandyawijaya/">
+      <a href="https://www.linkedin.com/in/medhaiyer/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={zack} />
+    <Image style={imagestyle} src={james} />
     <Card.Content>
-      <Card.Header style={textstyle}>Zackary Oon</Card.Header>
+      <Card.Header style={textstyle}>James Yang</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
         <span style={roleStyle}>VP of Technology</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:zackaryoon134@berkeley.edu>">
+      <a href="mailto:jamesyang02@berkeley.edu>">
         <Icon size="large" name="mail" />
       </a>
-      <a href= "https://www.linkedin.com/in/zackary-oon-9693401b7/">
+      <a href= "https://www.linkedin.com/in/jamesyang02/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={vishali} />
+    <Image style={imagestyle} src={lillian} />
     <Card.Content>
-      <Card.Header style={textstyle}>Vishali Kirthi Vallioor</Card.Header>
+      <Card.Header style={textstyle}>Lillian Jiang</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
         <span style={roleStyle}>VP of Marketing</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:vishalivallioor@berkeley.edu">
+      <a href="mailto:lillianjiang@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/vishali-vallioor/">
+      <a href="https://www.linkedin.com/in/lillianyjiang/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={pranati} />
+    <Image style={imagestyle} src={arnav} />
     <Card.Content>
-      <Card.Header style={textstyle}>Pranati Modumudi</Card.Header>
+      <Card.Header style={textstyle}>Arnav Gupta</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
         <span style={roleStyle}>VP of Culture</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:pmodumudi@berkeley.edu">
+      <a href="mailto:ag3304@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/pranatimodumudi/">
+      <a href="https://www.linkedin.com/in/arnav-gupta-4799b8210/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
   </Card>,
   <Card style={cardstyle}>
   {" "}
-    <Image style={imagestyle} src={tommy} />
-    <Card.Content>
-      <Card.Header style={textstyle}>Thomas Chen</Card.Header>
-      <Card.Meta style={{ marginTop: "1vw" }}>
-        <span style={roleStyle}>VP of Culture</span>
-      </Card.Meta>
-    </Card.Content>
-    <Card.Content extra>
-      <a href="mailto:thomasychen@berkeley.edu">
-        <Icon size="large" name="mail" />
-      </a>
-      <a href="https://www.linkedin.com/in/thomas-y-chen/">
-        <Icon size="large" name="linkedin" />
-      </a>
-    </Card.Content>
-  </Card>,
-  <Card style={cardstyle}>
-  {" "}
-    <Image style={imagestyle} src={kathy} />
-    <Card.Content>
-      <Card.Header style={textstyle}>Kathy Fang</Card.Header>
-      <Card.Meta style={{ marginTop: "1vw" }}>
-        <span style={roleStyle}>VP of Finance</span>
-      </Card.Meta>
-    </Card.Content>
-    <Card.Content extra>
-      <a href="mailto:kathyfangnz@berkeley.edu">
-        <Icon size="large" name="mail" />
-      </a>
-      <a href="https://www.linkedin.com/in/kathy-fang-35014321b/">
-        <Icon size="large" name="linkedin" />
-      </a>
-    </Card.Content>
-  </Card>,
-  <Card style={cardstyle}>
-    {" "}
-    <Image style={imagestyle} src={catherine} />
-    <Card.Content>
-      <Card.Header style={textstyle}>Catherine Chu</Card.Header>
-      <Card.Meta style={{ marginTop: "1vw" }}>
-        <span style={roleStyle}>Director of Consulting</span>
-      </Card.Meta>
-    </Card.Content>
-    <Card.Content extra>
-      <a href="mailto:catherine.chu@berkeley.edu">
-        <Icon size="large" name="mail" />
-      </a>
-      <a href="https://www.linkedin.com/in/catherine-chu-139213220/ ">
-        <Icon size="large" name="linkedin" />
-      </a>
-    </Card.Content>
-  </Card>,
-  <Card style={cardstyle}>
-    {" "}
-    <Image style={imagestyle} src={tess} />
-    <Card.Content>
-      <Card.Header style={textstyle}>Tess U-Vongcharoen</Card.Header>
-      <Card.Meta style={{ marginTop: "1vw" }}>
-        <span style={roleStyle}>Director of Social Good</span>
-      </Card.Meta>
-    </Card.Content>
-    <Card.Content extra>
-      <a href="mailto:tess.uvongcharoen@berkeley.edu">
-        <Icon size="large" name="mail" />
-      </a>
-      <a href="https://www.linkedin.com/in/tess-u-vongcharoen/ ">
-        <Icon size="large" name="linkedin" />
-      </a>
-    </Card.Content>
-  </Card>,
-  <Card style={cardstyle}>
-  {" "}
-    <Image style={imagestyle} src={paul} />
-    <Card.Content>
-      <Card.Header style={textstyle}>Paul Jacobs</Card.Header>
-      <Card.Meta style={{ marginTop: "1vw" }}>
-        <span style={roleStyle}>Director of Acadev</span>
-      </Card.Meta>
-    </Card.Content>
-    <Card.Content extra>
-      <a href="mailto:pauljacobs@berkeley.edu">
-        <Icon size="large" name="mail" />
-      </a>
-      <a href="https://www.linkedin.com/in/paul-jacobs-955422235/">
-        <Icon size="large" name="linkedin" />
-      </a>
-    </Card.Content>
-  </Card>,
-  <Card style={cardstyle}>
-    {" "}
     <Image style={imagestyle} src={suparna} />
     <Card.Content>
       <Card.Header style={textstyle}>Suparna Kompalli</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
-        <span style={roleStyle}>Director of Acadev</span>
+        <span style={roleStyle}>VP of Culture</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
@@ -466,19 +381,109 @@ const leadershipCards = [
     </Card.Content>
   </Card>,
   <Card style={cardstyle}>
-    {" "}
-    <Image style={imagestyle} src={manas} />
+  {" "}
+    <Image style={imagestyle} src={natraj} />
     <Card.Content>
-      <Card.Header style={textstyle}>Manas Khatore</Card.Header>
+      <Card.Header style={textstyle}>Natraj Vairavan</Card.Header>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>VP of Finance</span>
+      </Card.Meta>
+    </Card.Content>
+    <Card.Content extra>
+      <a href="mailto:natrajvairavan5@berkeley.edu">
+        <Icon size="large" name="mail" />
+      </a>
+      <a href="https://www.linkedin.com/in/natraj-vairavan/">
+        <Icon size="large" name="linkedin" />
+      </a>
+    </Card.Content>
+  </Card>,
+  <Card style={cardstyle}>
+    {" "}
+    <Image style={imagestyle} src={erin} />
+    <Card.Content>
+      <Card.Header style={textstyle}>Erin Tan</Card.Header>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>Director of Consulting</span>
+      </Card.Meta>
+    </Card.Content>
+    <Card.Content extra>
+      <a href="mailto:tane@berkeley.edu">
+        <Icon size="large" name="mail" />
+      </a>
+      <a href="https://www.linkedin.com/in/erin-tan-b41b6919b/">
+        <Icon size="large" name="linkedin" />
+      </a>
+    </Card.Content>
+  </Card>,
+  <Card style={cardstyle}>
+    {" "}
+    <Image style={imagestyle} src={sumin} />
+    <Card.Content>
+      <Card.Header style={textstyle}>Su Min Park</Card.Header>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>Director of Social Good</span>
+      </Card.Meta>
+    </Card.Content>
+    <Card.Content extra>
+      <a href="mailto:m.suminpark@berkeley.edu">
+        <Icon size="large" name="mail" />
+      </a>
+      <a href="https://www.linkedin.com/in/sumin-michelle-park/">
+        <Icon size="large" name="linkedin" />
+      </a>
+    </Card.Content>
+  </Card>,
+  <Card style={cardstyle}>
+  {" "}
+    <Image style={imagestyle} src={ethan} />
+    <Card.Content>
+      <Card.Header style={textstyle}>Ethan Chien</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
         <span style={roleStyle}>Director of Acadev</span>
       </Card.Meta>
     </Card.Content>
     <Card.Content extra>
-      <a href="mailto:manaskhatore@berkeley.edu">
+      <a href="mailto:ekchien0@berkeley.edu">
         <Icon size="large" name="mail" />
       </a>
-      <a href="https://www.linkedin.com/in/mank/">
+      <a href="https://www.linkedin.com/in/ethan-chien-091a1a206/">
+        <Icon size="large" name="linkedin" />
+      </a>
+    </Card.Content>
+  </Card>,
+  <Card style={cardstyle}>
+    {" "}
+    <Image style={imagestyle} src={aarthi} />
+    <Card.Content>
+      <Card.Header style={textstyle}>Aarthi Kannan</Card.Header>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>Director of Acadev</span>
+      </Card.Meta>
+    </Card.Content>
+    <Card.Content extra>
+      <a href="mailto:aarthikannan@berkeley.edu">
+        <Icon size="large" name="mail" />
+      </a>
+      <a href="https://www.linkedin.com/in/aarthikannan526/">
+        <Icon size="large" name="linkedin" />
+      </a>
+    </Card.Content>
+  </Card>,
+  <Card style={cardstyle}>
+    {" "}
+    <Image style={imagestyle} src={austin} />
+    <Card.Content>
+      <Card.Header style={textstyle}>Austin Nicola Ardisaputra</Card.Header>
+      <Card.Meta style={{ marginTop: "1vw" }}>
+        <span style={roleStyle}>Director of Acadev</span>
+      </Card.Meta>
+    </Card.Content>
+    <Card.Content extra>
+      <a href="mailto:ardisaputra@berkeley.edu">
+        <Icon size="large" name="mail" />
+      </a>
+      <a href="https://www.linkedin.com/in/aardisaputra/">
         <Icon size="large" name="linkedin" />
       </a>
     </Card.Content>
@@ -545,6 +550,9 @@ class About extends Component {
   scrollTeam() {
     document.getElementById("team").scrollIntoView();
   }
+  scrollSponsors() {
+    document.getElementById("sponsors").scrollIntoView();
+  }
 
   screenWidthBigEnough() {
     if (window.innerWidth < 500) {
@@ -568,8 +576,10 @@ class About extends Component {
     const screenInterMarginResult = this.screenWidthBigEnoughforInterMargin();
 
     return (
-      <div>
-        <div>
+      <div style={{
+        backgroundColor: "white",
+      }} >
+        {/* <div>
           <Image src={upright}
           style= {{
             right:"5vw",
@@ -581,8 +591,8 @@ class About extends Component {
             maxWidth: "30vw",
           }}>
           </Image>
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <Image src={rectangle}
           style= {{
             position: 'absolute',
@@ -594,14 +604,40 @@ class About extends Component {
             maxWidth: "17vw",
           }}>
           </Image>
+        </div> */}
+        {/* <div>
+          <Image src={rectangle}
+          style= {{
+            position: 'absolute',
+            top: "28vw",
+            left: '35vw',
+            height: "2.8vw",
+            maxHeight: "2.8vw",
+            width: "32vw",
+            maxWidth: "32vw",
+          }}>
+          </Image>
+        </div> */}
+        <div>
+          <Image style={{position: 'absolute',
+          top: "13vw",
+          left: "0vw",
+          width: "135vw",
+          maxWidth: "135vw",
+          height: "auto",
+          }}
+          src={splash}></Image>
         </div>
+        <div id="about_header_spacer" style={{
+          height: "55vw",
+        }}></div>
         <h1
           style={{
-          top:"20vw",
+          top:"17vw",
           width: "100%",
           height: "auto",
           textAlign: "center",
-          color: "black",
+          color: "white",
           margin: 'auto',
           // marginBottom:'10vw',
           //marginTop: "5vw",
@@ -614,93 +650,55 @@ class About extends Component {
         }}
         >About Us
         </h1>
-        <div>
-          <Image src={rectangle}
-          style= {{
-            position: 'absolute',
-            top: "28vw",
-            left: '35vw',
-            height: "2.8vw",
-            maxHeight: "2.8vw",
-            width: "32vw",
-            maxWidth: "32vw",
-          }}>
-          </Image>
-        </div>
-        <div>
-          <Image style={{position: 'relative',
-          top: "20vw",
-          // marginTop: '3vw',
-          left: "30vw",
-          right: "30vw",
-          bottom: "15vw",
-          // margin: 'auto',
-          // margintop: "10vw",
-          marginBottom: '15vw',
-          height: "38vw",
-          maxHeight: "38vw",
-          width: "71vw",
-          maxWidth: "71vw",
-          }}
-          src={story}></Image>
-        </div>
-        <div>
-          <Image src={bottomleft}
-          style= {{
-            left:"0vw",
-            top:"0vw",
-            position: "relative",
-            height: "18vw",
-            maxHeight: "18vw",
-            width: "30vw",
-            maxWidth: "30vw",
-          }}>
-          </Image>
-        </div>
         <Grid entered style={gridoffset}>
           <Grid.Row
-            width={16}
-            columns={4}
+            width={15}
+            columns={5}
             style={{
-              backgroundColor: "#8CD6D1",
+              backgroundColor: "#D2F2F0",
               width: "100%",
               height: "7vw",
-              marginTop: "-3vw",
-              position: "relative",
+              position: "absolute",
             }}
           >
-            <Grid.Column width={4}>
+            <Grid.Column width={3}>
               <div onClick={this.scrollWho} style={aboutlinks}>
-                Who we are
+                Who We Are
               </div>
             </Grid.Column>
-            <Grid.Column width={4} style={{ aboutlinks2 }}>
+            <Grid.Column width={3} style={{ aboutlinks2 }}>
               <div onClick={this.scrollJoin} style={aboutlinks}>
-                Why Join?
+                Mission & Values
               </div>
             </Grid.Column>
-            <Grid.Column width={4} style={{ aboutlinks2 }}>
+            <Grid.Column width={3} style={{ aboutlinks2 }}>
               <div onClick={this.scrollFind} style={aboutlinks}>
-                Find your place
+                Find Your Role
               </div>
             </Grid.Column>
-            <Grid.Column width={4} style={{ aboutlinks2 }}>
+            <Grid.Column width={3} style={{ aboutlinks2 }}>
               <div onClick={this.scrollTeam} style={aboutlinks}>
                 Our Team
               </div>
             </Grid.Column>
+            <Grid.Column width={3} style={{ aboutlinks2 }}>
+              <div onClick={this.scrollSponsors} style={aboutlinks}>
+                Our Sponsors
+              </div>
+            </Grid.Column>
           </Grid.Row>
-          {/* <div id="who"> */}
-          {CustomTitle({ title: "Who We Are", id: "who" })}
-          {/* </div> */}
-          <Grid.Row centered columns={1} style={{ marginBottom: "7vw" }}>
+          <div id="about_header_spacer_2" style={{
+          height: "5vw",
+          }}></div>
+          {CustomTitleBlack({ title: "Who We Are", id: "who" })}
+          <Grid.Row centered columns={1} style={{ marginBottom: "3vw" }}>
             <Grid.Column
               style={{
                 marginLeft: "12vw",
-                marginRight: "auto",
+                marginRight: "12vw",
               }}
             >
-              <div
+              {/* <div
                 style={{
                   fontSize: "2.5vw",
                   lineHeight: "3vw",
@@ -712,13 +710,12 @@ class About extends Component {
                 }}
               >
                 A family of passionate individuals looking to make a change.
-              </div>
+              </div> */}
               <div
                 style={{
-                  fontSize: "2vw",
+                  fontSize: "2.5vw",
                   lineHeight: "3vw",
                   fontWeight: "normal",
-                  marginTop: "4vw",
                   color: "#000000",
                   fontFamily: "Montserrat",
                   textAlign: "center",
@@ -734,81 +731,40 @@ class About extends Component {
               </div>
             </Grid.Column>
           </Grid.Row>
+          {CustomTitleBlack({ title: "Our Mission", id: "who" })}
           <Grid.Row>
-            <div
+            <Grid.Column
               style={{
-                zIndex: "1",
-                position: "relative",
-                marginBottom: "-25vw",
-              }}
+                marginLeft: "12vw",
+                marginRight: "12vw",
+            }}
             >
-              <Image
-                src={popout}
-                style={{ zIndex: "2", height: "35vw" }}
-              ></Image>
               <div
                 style={{
-                  position: "relative",
-                  textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-                  top: "-30vw",
-                  left: "-23vw",
-                  zIndex: "3",
+                  fontSize: "2.5vw",
+                  lineHeight: "3vw",
+                  fontWeight: "normal",
+                  color: "#000000",
                   fontFamily: "Montserrat",
-                  fontStyle: "43vw",
-                  fontWeight: "bold",
-                  fontSize: "5vw",
-                  lineHeight: "6vw",
-                  color: "#FFFFFF",
-                  marginBottom: "3vw",
+                  textAlign: "center",
+                  marginLeft: "10vw",
+                  marginRight: "10vw",
                 }}
               >
-                <span>Our mission</span>
-                <div
-                  style={{
-                    position: "relative",
-                    textShadow: "none",
-                    width: "61vw",
-                    top: "2.5vw",
-                    left: "30vw",
-                    zIndex: "4",
-                    fontFamily: "Montserrat",
-                    fontStyle: "normal",
-                    fontWeight: "normal",
-                    fontSize: "2vw",
-                    lineHeight: "2.5vw",
-                    color: "#FFFFFF",
-                    textAlign: "left",
-                  }}
-                >
-                  We aim to foster a strong data science community on campus by
-                  advocating data science education and practice through our
-                  various committees and internal and external programs. Our
-                  educational and consulting initiatives have impacted hundreds
-                  of students in a variety of majors across campus and given
-                  them the technical and soft skills needed to thrive in an
-                  increasingly data-centric world.
-                </div>
+                We aim to foster a strong data science community on campus by
+                advocating data science education and practice through our
+                various committees and internal and external programs. Our
+                educational and consulting initiatives have impacted hundreds
+                of students in a variety of majors across campus and given
+                them the technical and soft skills needed to thrive in an
+                increasingly data-centric world.
               </div>
-            </div>
+            </Grid.Column>
           </Grid.Row>
-          {CustomTitle({ title: "Why Join?", id: "join" })}
-          <Grid.Row width={12} centered>
-            <div
-              style={{
-                fontSize: "2.5vw",
-                lineHeight: "3vw",
-                fontWeight: "36vw",
-                color: "#B6E5D7",
-                fontFamily: "Montserrat",
-              }}
-            >
-              {" "}
-              Simple. To be a part of our family.
-            </div>
-          </Grid.Row>
+          {CustomTitleBlack({ title: "Our Values", id: "join" })}
           <Grid.Row>
             <Image
-              src={ret}
+              src={retreat}
               style={{
                 width: "100%",
                 maxWidth: "100%",
@@ -819,7 +775,7 @@ class About extends Component {
           </Grid.Row>
           <Grid.Row centered></Grid.Row>
 
-          <Grid.Row
+          {/* <Grid.Row
             centered
             style={{
               fontFamily: "Montserrat",
@@ -846,13 +802,13 @@ class About extends Component {
                 placeholder={youtubeback}
               />
             </div>
-          </Grid.Row>
-          {CustomTitle({ title: "Where Do You Fit In?", id: "place" })}
+          </Grid.Row> */}
+          {CustomTitleBlack({ title: "Find Your Role", id: "place" })}
           <Grid.Row
             centered
             columns={3}
             style={{
-              marginTop: "4vw",
+              marginTop: "1vw",
               marginRight: screenSizeResult,
               marginLeft: screenSizeResult,
             }}
@@ -861,16 +817,15 @@ class About extends Component {
               <div
                 style={{
                   textAlign: "center",
-                  borderStyle: "solid",
-                  borderColor: "#8CD6D1",
-                  borderWidth: ".5vw",
-                  borderRadius: "3vw",
+                  backgroundColor: "#D2F2F0",
+                  borderRadius: "2vw",
                   minWidth: "28vw",
+                  minHeight: "35vw",
                 }}
               >
                 <div
                   style={{
-                    fontSize: "2.5vw",
+                    fontSize: "2.2vw",
                     lineHeight: "5vw",
                   }}
                 >
@@ -878,12 +833,12 @@ class About extends Component {
                 </div>
                 <Image
                   src={exec}
-                  style={{ width: "25vw", margin: "2vw auto" }}
+                  style={{ width: "25vw", margin: "auto", borderRadius: "1vw" }}
                 ></Image>
                 <div
                   style={{
-                    fontSize: "2vw",
-                    lineHeight: "2.5vw",
+                    fontSize: "1.6vw",
+                    lineHeight: "2.2vw",
                     width: "25vw",
                     margin: "2vw auto",
                     alignText: "center",
@@ -899,17 +854,15 @@ class About extends Component {
               <div
                 style={{
                   textAlign: "center",
-                  borderStyle: "solid",
-                  borderColor: "#FFC54A",
-                  borderWidth: ".5vw",
-                  borderRadius: "3vw",
+                  backgroundColor: "#D2F2F0",
+                  borderRadius: "2vw",
                   minWidth: "28vw",
-                  // marginLeft: screenInterMarginResult,
+                  minHeight: "35vw",
                 }}
               >
                 <div
                   style={{
-                    fontSize: "2.5vw",
+                    fontSize: "2.2vw",
                     lineHeight: "5vw",
                   }}
                 >
@@ -917,12 +870,12 @@ class About extends Component {
                 </div>
                 <Image
                   src={pm}
-                  style={{ width: "25vw", margin: "2vw auto" }}
+                  style={{ width: "25vw", margin: "auto", borderRadius: "1vw" }}
                 ></Image>
                 <div
                   style={{
-                    fontSize: "2vw",
-                    lineHeight: "2.5vw",
+                    fontSize: "1.6vw",
+                    lineHeight: "2.2vw",
                     width: "25vw",
                     margin: "1.5vw auto",
                     alignText: "center",
@@ -938,16 +891,15 @@ class About extends Component {
               <div
                 style={{
                   textAlign: "center",
-                  borderStyle: "solid",
-                  borderColor: "#8CD6D1",
-                  borderWidth: ".5vw",
-                  borderRadius: "3vw",
+                  backgroundColor: "#D2F2F0",
+                  borderRadius: "2vw",
                   minWidth: "28vw",
+                  minHeight: "35vw",
                 }}
               >
                 <div
                   style={{
-                    fontSize: "2.5vw",
+                    fontSize: "2.2vw",
                     lineHeight: "5vw",
                   }}
                 >
@@ -955,16 +907,15 @@ class About extends Component {
                 </div>
                 <Image
                   src={socgood}
-                  style={{ width: "25vw", margin: "2vw auto" }}
+                  style={{ width: "25vw", margin: "auto", borderRadius: "1vw" }}
                 ></Image>
                 <div
                   style={{
-                    fontSize: "2vw",
-                    lineHeight: "2.5vw",
+                    fontSize: "1.6vw",
+                    lineHeight: "2.2vw",
                     width: "25vw",
-                    margin: "2vw auto",
+                    margin: "1.5vw auto",
                     alignText: "center",
-                    marginBottom: "3.5vw",
                   }}
                 >
                   CMs take charge of their committees: Academic Development,
@@ -977,7 +928,7 @@ class About extends Component {
             centered
             columns={3}
             style={{
-              marginTop: "5vw",
+              marginTop: "1vw",
               marginRight: screenSizeResult,
               marginLeft: screenSizeResult,
             }}
@@ -987,16 +938,15 @@ class About extends Component {
               <div
                 style={{
                   textAlign: "center",
-                  borderStyle: "solid",
-                  borderColor: "#8CD6D1",
-                  borderWidth: ".5vw",
-                  borderRadius: "3vw",
+                  backgroundColor: "#D2F2F0",
+                  borderRadius: "2vw",
                   minWidth: "28vw",
+                  minHeight: "35vw",
                 }}
               >
                 <div
                   style={{
-                    fontSize: "2.5vw",
+                    fontSize: "2.2vw",
                     lineHeight: "5vw",
                   }}
                 >
@@ -1004,12 +954,12 @@ class About extends Component {
                 </div>
                 <Image
                   src={decal}
-                  style={{ width: "25vw", margin: "2vw auto" }}
+                  style={{ width: "25vw", margin: "auto", borderRadius: "1vw" }}
                 ></Image>
                 <div
                   style={{
-                    fontSize: "2vw",
-                    lineHeight: "2.5vw",
+                    fontSize: "1.6vw",
+                    lineHeight: "2.2vw",
                     width: "25vw",
                     margin: "2.25vw auto",
                     alignText: "center",
@@ -1025,16 +975,15 @@ class About extends Component {
               <div
                 style={{
                   textAlign: "center",
-                  borderStyle: "solid",
-                  borderColor: "#FFC54A",
-                  borderWidth: ".5vw",
-                  borderRadius: "3vw",
+                  backgroundColor: "#D2F2F0",
+                  borderRadius: "2vw",
                   minWidth: "28vw",
+                  minHeight: "35vw",
                 }}
               >
                 <div
                   style={{
-                    fontSize: "2.5vw",
+                    fontSize: "2.2vw",
                     lineHeight: "5vw",
                   }}
                 >
@@ -1042,12 +991,12 @@ class About extends Component {
                 </div>
                 <Image
                   src={senior}
-                  style={{ width: "25vw", margin: "2vw auto" }}
+                  style={{ width: "25vw", margin: "auto", borderRadius: "1vw" }}
                 ></Image>
                 <div
                   style={{
-                    fontSize: "2vw",
-                    lineHeight: "2.5vw",
+                    fontSize: "1.6vw",
+                    lineHeight: "2.2vw",
                     width: "25vw",
                     margin: "2vw auto",
                     alignText: "center",
@@ -1059,8 +1008,8 @@ class About extends Component {
               </div>
             </Grid.Column>
           </Grid.Row>
-          {CustomTitle({ title: "Our Exec Team", id: "team" })}
-          <Grid.Row centered width={12} style={{ marginTop: "7vw",}}>
+          {CustomTitleBlack({ title: "Our Exec Team", id: "team" })}
+          <Grid.Row centered width={12}>
             <Card.Group centered>{leadershipCards}</Card.Group>
             ``
           </Grid.Row>
@@ -1068,7 +1017,7 @@ class About extends Component {
           {/* <Grid.Row style={{ marginTop: "7vw", marginLeft: "17vw" }}>
             <Header style={mybigtext}> Our Sponsors</Header>
           </Grid.Row> */}
-          {CustomTitle({ title: "Our Sponsors", id: "sponsors" })}
+          {CustomTitleBlack({ title: "Our Sponsors", id: "sponsors" })}
           <Grid.Row
             centered
             style={
@@ -1080,7 +1029,7 @@ class About extends Component {
             <Image.Group size={"medium"}>
               <Image
                 src={berkeley}
-                style={{ marginLeft: "-3px", width: "15vw", marginTop: "3vw" }}
+                style={{ marginLeft: "-3px", width: "15vw" }}
               ></Image>
               <Image
                 src={berkeley2}
@@ -1119,11 +1068,11 @@ class About extends Component {
               ></Image>
             </Image.Group>
           </Grid.Row>
-          {CustomTitle({ title: "Our Partners", id: "partners" })}
+          {CustomTitleBlack({ title: "Our Partners", id: "partners" })}
           <Grid.Row centered>
             <Image.Group
               size={"medium"}
-              style={{ marginTop: "3vw", marginBottom: "7vw" }}
+              style={{ marginBottom: "20vw" }}
             >
               <Image
                 style={{ marginRight: "1vw", width: "15vw" }}
@@ -1139,7 +1088,19 @@ class About extends Component {
               ></Image>
             </Image.Group>
           </Grid.Row>
+          <div id="aboutFooterSpacer" style = {{height: "12vw"}}></div>
         </Grid>
+        <Image 
+          src={landingSquiggle2}
+          style={{
+            minWidth: "160vw",
+            height: "50vw",
+            marginTop: "-27vw",
+            marginLeft: "-15vw",
+            position: "absolute",
+            zIndex: "2",
+          }}
+          ></Image>
       </div>
     );
   }

@@ -17,8 +17,6 @@ import CustomTitle from "./components/CustomTitle.js";
 
 import berk from "./Decal Images/berkeleyischool-logo-alternate-blue-lg.png";
 import datacamp from "./Decal Images/datacamp-logo 1.png";
-import atharva from "./Leadership Headshots/AtharvaHeadshot.png";
-import sabrina from "./Leadership Headshots/SabrinaHeadshot.jpeg";
 import proj1 from "./GM Proj Images/workforce-housing.png";
 import proj2 from "./GM Proj Images/word-complexity.jpg";
 import proj3 from "./GM Proj Images/forestfire.jpg";
@@ -34,12 +32,9 @@ import projLine from "./Acadev Images/projLine.png";
 import light from "./GM Proj Images/lightbulb.png";
 import upright from "./Acadev Images/upRight.png";
 import bottomleft from "./Acadev Images/bottomLeft.png";
-import angeline from "./Leadership Headshots/angeline.jpg";
-import pranati from "./Leadership Headshots/pranati.jpeg";
-import savvy from "./Leadership Headshots/savvy.jpeg";
-import bella from "./Leadership Headshots/bella.png"
-import paul from "./Leadership Headshots/paul.jpeg"
-import stephen from "./Leadership Headshots/stephen.jpg"
+import ethan from "./Leadership Headshots/ethan.jpeg";
+import aarthi from "./Leadership Headshots/aarthi.jpg";
+import austin from "./Leadership Headshots/austin.jpeg";
 import acadevdirs from "./Acadev Images/acadevdirs.jpeg";
 
 
@@ -351,7 +346,15 @@ class DecalLearn extends Component {
           fontSize: "3vw",
           lineHeight: "6vw",
           }}
-        >Decal | Spring 2022
+        >Decal | Fall 2023
+        <div style={{
+              textAlign: "center",
+              lineHeight: "3vw",
+              fontSize: "2vw",
+              fontWeight: "21.5vw",
+            }}>
+              Data 198: Introduction to Real-World Data Science
+            </div>
         </h1>
         <div>
           <Image src={bottomleft}
@@ -391,15 +394,14 @@ class DecalLearn extends Component {
               fontSize: "2vw",
               fontWeight: "21.5vw",
             }}>
-              Welcome to Data Science Society at Berkeley&rsquo;s Decal Program!
-              Our program tailored towards beginner data scientists (previously known as General Membership) is now a Decal!
-              This semester-long program is geared towards introducing students to essential data science skills through
+              Welcome to Data Science Society at Berkeley&rsquo;s Decal!
+              Our course is tailored towards beginner data scientists is geared towards introducing students to essential data science skills through
               project based learning. Our program takes a departure from the traditional classroom setting by allowing members
               to work collaboratively on an original data science project of their choosing.
 
               Members will have full creative control and will receive mentorship from our Academic Development committee members. We will cover every step of the
               data science lifecycle: from formulating a data-centric project idea, to extracting stories with exploratory data analysis,
-              to finally creating and evaluating machine learning models. Below is the schedule from last semester, this semester's schedule will be updated accordingly!
+              to finally creating and evaluating machine learning models.
 
               <Image
                 src={squiggly1}
@@ -430,14 +432,14 @@ class DecalLearn extends Component {
 
               <Grid.Column>
                 <div style={{ textAlign: "center", marginTop: "10vw",}}>
-                  {CustomTitleBlack({ title: "Schedule" })}
+                  {CustomTitleBlack({ title: "Example Schedule" })}
 
                   <div style={{margin: "0 auto", maxWidth: "22vw"}}>
                     <Image src={gmLine2}></Image>
                   </div>
 
                   <div style={{margin: "0 auto", maxWidth: "22vw"}}>
-                    <h1>(Fall 2021)</h1>
+                    <h1>(From Fall 2021)</h1>
                   </div>
                 </div>
 
@@ -493,9 +495,9 @@ class DecalLearn extends Component {
             <Card.Group centered>
               <Card style={cardstyle}>
                 {" "}
-                <Image style={imagestyle} src={bella} />
+                <Image style={imagestyle} src={ethan} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Bella Chang</Card.Header>
+                  <Card.Header style={textstyle}>Ethan Chien</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={{ roleStyle }}>
                       Director of Academic Development
@@ -503,19 +505,19 @@ class DecalLearn extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:bellachang@berkeley.edu">
+                  <a href="mailto:ekchien0@berkeley.edu">
                     <Icon name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/in/bellaachang/">
+                  <a href="https://www.linkedin.com/in/ethan-chien-091a1a206/">
                     <Icon name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
               <Card style={cardstyle}>
                 {" "}
-                <Image style={imagestyle} src={paul} />
+                <Image style={imagestyle} src={aarthi} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Paul Jacobs</Card.Header>
+                  <Card.Header style={textstyle}>Aarthi Kannan</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={{ roleStyle }}>
                       Director of Academic Development
@@ -523,19 +525,19 @@ class DecalLearn extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:pauljacobs@berkeley.edu">
+                  <a href="mailto:aarthikannan@berkeley.edu">
                     <Icon name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/in/paul-jacobs-955422235/">
+                  <a href="https://www.linkedin.com/in/aarthikannan526/">
                     <Icon name="linkedin" />
                   </a>
                 </Card.Content>
               </Card>
               <Card style={cardstyle}>
                 {" "}
-                <Image style={imagestyle} src={stephen} />
+                <Image style={imagestyle} src={austin} />
                 <Card.Content>
-                  <Card.Header style={textstyle}>Stephen Liu</Card.Header>
+                  <Card.Header style={textstyle}>Austin Nicola Ardisaputra</Card.Header>
                   <Card.Meta style={{ marginTop: "1vw" }}>
                     <span style={{ roleStyle }}>
                       Director of Academic Development
@@ -543,10 +545,10 @@ class DecalLearn extends Component {
                   </Card.Meta>
                 </Card.Content>
                 <Card.Content extra>
-                  <a href="mailto:stephen.liu@berkeley.edu">
+                  <a href="mailto:aardisaputra@berkeley.edu">
                     <Icon name="mail" />
                   </a>
-                  <a href="https://www.linkedin.com/in/liu-stephen">
+                  <a href="https://www.linkedin.com/in/aardisaputra/">
                     <Icon name="linkedin" />
                   </a>
                 </Card.Content>

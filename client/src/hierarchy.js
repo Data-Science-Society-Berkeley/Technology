@@ -25,7 +25,7 @@ import sponsor1 from "./Leadership Headshots/dsnexus-logo.png";
 import sponsor2 from "./Leadership Headshots/leadcenter_logo.png";
 import sponsor3 from "./Leadership Headshots/haas-ds-club-logo.png";
 import atharva from "./Leadership Headshots/atharva.jpeg";
-import arnav from "./Leadership Headshots/arnav.jpeg";
+import arnav from "./Leadership Headshots/arnav_p.jpeg";
 import cindy from "./Leadership Headshots/cindy.jpeg";
 import sabrina from "./Leadership Headshots/sabrina.jpeg";
 import labanya from "./Leadership Headshots/labanya.jpeg";

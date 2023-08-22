@@ -477,7 +477,7 @@ class Join extends Component {
               }}
             >
 
-            Hey there! Thank you so much for taking the time to learn about DSS. On this page you will find all the different ways you can get involved with DSS, as well as what our recruitment timeline will look like for the upcoming semester. To stay up to date with all our events, including our recruitment events, you can add <a href="https://calendar.google.com/calendar/u/2?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">our external calendar</a> to receive invites on everything. If you have any questions, feel free to reach out to us at <a href="mailto:info@dss.berkeley.edu">info@dss.berkeley.edu</a>. We hope to see you very soon!
+            Interested in joining us? On this page you will find all the different ways you can get involved with DSS, as well as what our recruitment timeline will look like for the upcoming semester. To stay up to date with all our events, including our recruitment events, you can add <a href="https://calendar.google.com/calendar/u/2?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">our external calendar</a> to receive invites on everything. If you have any questions, feel free to reach out to us at <a href="mailto:info@dss.berkeley.edu">info@dss.berkeley.edu</a>. We hope to see you very soon!
 
             </Grid.Row>
             <div>

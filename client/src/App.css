@@ -16,9 +16,9 @@ box-sizing: border-box;
   width: 771px;	
   background-color: #FFFFFF;	
   box-shadow: 0 2px 3px 0
-   rgba(0,0,0,0.2);}
+  rgba(0,0,0,0.2);}
 
-   #text::placeholder {
+#text::placeholder {
     color: #ffffff;
     font-family: Montserrat;
     font-style: normal;
@@ -354,7 +354,7 @@ extra info page attributes
   text-align: left;
 }
 .info-expand {
-	color: #black;
+	color: black;
 	font-family: Rubik;
 	font-size: 20px;
 	font-weight: 500;

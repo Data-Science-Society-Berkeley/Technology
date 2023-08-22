@@ -14,9 +14,9 @@ import {
 } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import edu from "./landing/AcaDev.png";
-import engage from "./landing/engage-opacity.png";
-import innovate from "./landing/innovate-opacity.png";
-import educate from "./landing/education-opacity.png";
+import engage from "./landing/engage.jpg";
+import innovate from "./landing/innovate.jpg";
+import educate from "./landing/educate.jpg";
 import topright from "./landing/WebsiteLandingPage-2.png";
 import bottomright from "./landing/WebsiteLandingPage-2rotate.png";
 import recruitbanner from "./landing/dssfall2021recruitment.png";
@@ -25,6 +25,9 @@ import rectangleSingle from "./landing/rectangleSingle.png";
 import rectangleGroup from "./landing/rectangleGroup.png";
 import squiggly1 from "./landing/squiggly1.png";
 import squiggly2 from "./landing/squiggly2.png";
+import frontsplash from "./landing/frontsplash.png";
+import landingSquiggle from "./landing/landing_squiggle.png";
+import landingSquiggle2 from "./landing/landing_squiggle2.png";
 
 import ocf from "./Backgrounds/ocf-hosted-penguin.svg";
 
@@ -41,11 +44,11 @@ const mybigtext = {
   fontFamily: "Montserrat",
   fontWeight: 600,
   lineHeight: "8vw",
-  fontSize: "4vw",
+  fontSize: "3.5vw",
   color: "#FFFBFB",
   fontStyle: "normal",
   textAlign: "left",
-  marginTop: "3vw",
+  marginTop: "-7vw",
   marginLeft: "-2vw",
 };
 const mymidtext = {
@@ -66,31 +69,18 @@ const overlaytext = {
   lineHeight: "5vw",
   fontWeight: 500,
   fontSize: "5vw",
-  color: "#FFFFFF",
+  color: "#000000",
   fontStyle: "normal",
   textAlign: "center",
   // marginLeft: "7vw",
   marginTop: "2vw",
 };
 
-const overlaytextCustom = {
-  fontFamily: "Montserrat",
-  fontWeight: "normal",
-  lineHeight: "5vw",
-  fontWeight: 500,
-  fontSize: "5vw",
-  color: "#8CD6D1",
-  fontStyle: "normal",
-  textAlign: "center",
-  // marginLeft: "7vw",
-  marginTop: "5vw",
-};
-
 const underlaytext = {
   fontFamily: "Montserrat",
   fontWeight: 300,
-  lineHeight: "2.5vw",
-  fontSize: "2.5vw",
+  lineHeight: "2.2vw",
+  fontSize: "2vw",
   color: "#000000",
   fontStyle: "normal",
   textAlign: "center",
@@ -100,25 +90,25 @@ const apply = {
   minWidth: "15vw",
   fontFamily: "Montserrat",
   fontWeight: 600,
-  lineHeight: "4vw",
+  lineHeight: "3vw",
   fontSize: "2.5vw",
-  borderRadius: "3vw",
-  color: "#FFC54A",
+  borderRadius: "1.5vw",
+  color: "#000000",
   fontStyle: "normal",
-  background: "#FFFFFF",
+  background: "#D2F2F0",
   marginLeft: "-7vw",
 };
 const learn = {
   maxWidth: "26vw",
   fontFamily: "Montserrat",
   fontWeight: 600,
-  lineHeight: "4vw",
+  lineHeight: "3vw",
   fontSize: "2.5vw",
-  borderRadius: "3vw",
-  color: "#FFC54A",
+  borderRadius: "1.5vw",
+  color: "#000000",
   fontStyle: "normal",
-  background: "#FFFFFF",
-  marginLeft: "5vw",
+  background: "#D2F2F0",
+  marginLeft: "2vw",
 };
 const formStyle = {
   width: "83vw",
@@ -258,7 +248,7 @@ class CentralText extends Component {
               marginLeft: "1vw",
             }}
           >
-            Like what we do? Sponsor us today!{" "}
+            Interested in what we do? Sponsor us!{" "}
           </Card.Description>
         </Link>
       </Card>,
@@ -335,17 +325,33 @@ class CentralText extends Component {
     console.log(this.state.height, this.state.width);
     let process = this.join();
     return (
+      
       <div style={{ marginTop: "1vw" }}>
+        <Image
+                style={{
+                  height: "25vw",
+                  position: "absolute",
+                  top: "0",
+                  width: "160vw",
+                  height: "auto",
+                  zIndex: "-1",
+                  margin: "auto",
+                }}
+                src={frontsplash}
+              ></Image>
         {/* <NavBar2 {...this.props} /> */}
         {/* <Segment style={{ padding: "8em 0em" }} vertical> */}
         <Grid divided="vertically" style={gridoffset} className="pusher">
-          <Grid.Row columns={2} style={{ position: "relative" }}>
+          <Grid.Row columns={2} style={{ 
+              position: "relative",
+              marginTop: "5vw",
+            }}>
             <Grid.Column width={9}>
               <Header style={mybigtext}>Data Science Society</Header>
               <Header as="h1" style={mymidtext}>
                 At Berkeley
               </Header>
-              <Image
+              {/* <Image
                 style={{
                   height: "25vw",
                   marginTop: "3vw",
@@ -354,7 +360,7 @@ class CentralText extends Component {
                 }}
                 floated="left"
                 src={bottomright}
-              ></Image>
+              ></Image> */}
 
               {/* <Image
                 style={{
@@ -394,7 +400,8 @@ class CentralText extends Component {
             >
               <Image
                 style={{
-                  height: "25vw",
+                  height: "22vw",
+                  opacity: "0",
                   // marginTop: "-20vw",
                   // marginBottom: "-10vw",
                   // marginRight: "1.5vw",
@@ -423,9 +430,9 @@ class CentralText extends Component {
 
               <Button.Group
                 style={{
-                  marginTop: "10vw",
-                  // position: "absolute",
-                  top: "100%",
+                  position: "absolute",
+                  top: "30vw",
+                  right: "3vw",
                 }}
               >
                 <Link to="/joinus">
@@ -440,10 +447,11 @@ class CentralText extends Component {
             </Grid.Column>
           </Grid.Row>
         </Grid>
+        {/* Beginning of segment after header image */}
         <Grid
           style={{
             width: "110%",
-            backgroundColor: "white",
+            background: "#FFFFFF",
             marginTop: "10vw",
           }}
         >
@@ -456,26 +464,25 @@ class CentralText extends Component {
                 font: "Montserrat",
                 fontStyle: "normal",
                 fontWeight: "400",
-                fontSize: "5vw",
-                lineHeight: "5vw",
-                color: "#8CD6D1",
-                marginTop: "5vw",
+                fontSize: "4vw",
+                lineHeight: "4vw",
+                color: "#000000",
+                marginTop: "3vw",
               }}
             >
-              <div>About Us</div>
-              <div>
+              <div>We are DSS.</div>
+              {/* <div>
                 <Image
                   src={rectangleGroup}
                   style={{ width: "27vw", marginTop: "1vw" }}
                 ></Image>
-              </div>
+              </div> */}
             </Grid.Column>
           </Grid.Row>
           <Grid.Row
             style={{
               fontFamily: "Montserrat",
-              fontWeight: "21vw",
-              fontSize: "2.5vw",
+              fontSize: "2.2vw",
               lineHeight: "3vw",
               color: "#000000",
               width: "77vw",
@@ -483,17 +490,20 @@ class CentralText extends Component {
               marginTop: "1.5vw",
             }}
           >
-            <Grid.Column width={9}>
-              Building the next generation of data science leaders, educators,
-              and change-makers.
+            <Grid.Column width={10}>
+              Data Science Society is Berkeley’s first undergraduate data science-focused 
+              student organization, building the next generation of data 
+              science leaders, educators, and changemakers. Our mission is
+              to actively foster a strong data science community on campus
+              via our educational and consulting initiatives.
             </Grid.Column>
           </Grid.Row>
           <Grid.Row columns={1}>
             <Grid.Column
               width={6}
-              floated="right"
+              floated="left"
               verticalAlign="middle"
-              style={{ height: "2.5vw", marginBottom: "4vw" }}
+              style={{ height: "2.5vw", marginBottom: "6vw" }}
             >
               <Link
                 to="/about"
@@ -502,9 +512,9 @@ class CentralText extends Component {
                   fontStyle: "normal",
                   fontWeight: "42vw",
                   fontSize: "2.5vw",
-                  lineHeight: "3vw",
-                  color: "#FFC54A",
-                  marginLeft: "10vw",
+                  lineHeight: "2vw",
+                  color: "#EFB53A",
+                  marginLeft: "7vw",
                 }}
               >
                 Learn More 
@@ -513,13 +523,29 @@ class CentralText extends Component {
           </Grid.Row>
         </Grid>
         {/* Insert HERE */}
-        <Grid style={{ width: "110%" }}>
+
+
+        <Image 
+          src={landingSquiggle}
+          style={{
+            minWidth: "160vw",
+            height: "25vw",
+            marginTop: "-7vw",
+            marginLeft: "-15vw",
+            position: "absolute",
+          }}
+          ></Image>
+        <Grid style={{ 
+          width: "110%",
+          background: "linear-gradient(150deg, #CCF6FA 0%, #FFFFFF 60%, #FFFFFF 75%, #FFEECC 100%)",
+          padding: "15vw 0vw 0vw 0vw"
+          }}>
           <Grid.Row
             columns={2}
             style={{
               width: "143vw",
               height: "29vw",
-              backgroundColor: "#8CD6D1",
+              backgroundColor: "#00000000",
               backgroundSize: "100%",
               zIndex: "1",
               position: "relative",
@@ -536,11 +562,8 @@ class CentralText extends Component {
                 style={{
                   marginLeft: "7vw",
                   zIndex: "2",
-                  borderStyle: "solid",
-                  borderColor: "#EDE8C4",
-                  borderWidth: "1.25vw",
                   backgroundColor: "#cccccc",
-                  width: "60vw",
+                  width: "70vw",
                 }}
                 src={educate}
               ></Image>
@@ -551,42 +574,60 @@ class CentralText extends Component {
               style={{
                 marginLeft: "5vw",
                 position: "absolute",
-                top: "45%",
+                top: "40%",
                 left: "70%",
                 transform: "translate(-50%, -50%)",
               }}
             >
-              <div style={overlaytext}>educate.</div>
-              <div>
+              <div style={{
+                fontFamily: "Montserrat",
+                marginLeft: "15vw",
+                font: "Montserrat",
+                fontStyle: "normal",
+                fontWeight: "400",
+                fontSize: "4vw",
+                lineHeight: "4vw",
+                color: "#000000",
+                marginTop: "5vw",
+              }}
+              >Educate.</div>
+              {/* <div>
                 <Image
                   src={rectangleSingle}
                   style={{ width: "25vw", margin: "auto", marginTop: ".5vw" }}
                 ></Image>
-              </div>
+              </div> */}
               <div style={underlaytext}>
                 <Link to="/acadev">
                   {" "}
                   <div
                     style={{
-                      color: "#FFFFFF",
-                      fontWeight: 500,
-                      // marginRight: "5vw",
+                      color: "#000000",
+                      marginRight: "5vw",
+                      marginBottom: "1vw",
                     }}
                   >
-                    {" "}
-                    Learn more about our Academic Development programs >>{" "}
-                  </div>{" "}
+                    Learn about our Academic Development committee 🡒
+                  </div>
                 </Link>
+                <div
+                  style={{
+                    color: "#000000",
+                    marginRight: "5vw",
+                    marginBottom: "1vw",
+                  }}
+                >
+                  or
+                </div>
                 <Link to="/decal">
                   {" "}
                   <div
                     style={{
-                      marginTop: "3vw",
-                      color: "#FFFFFF",
-                      fontWeight: 500,
+                      marginRight: "5vw",
+                      color: "#000000",
                     }}
                   >
-                    Check out our DeCal >>
+                    Learn about our DeCal 🡒
                   </div>
                 </Link>
               </div>
@@ -598,12 +639,12 @@ class CentralText extends Component {
             style={{
               width: "100%",
               height: "29vw",
-              backgroundColor: `#FFFFFF`,
+              backgroundColor: "#0000",
               backgroundSize: "100%",
               position: "relative",
             }}
           >
-            <div>
+            {/* <div>
               <Image
                 src={squiggly1}
                 style={{
@@ -613,7 +654,7 @@ class CentralText extends Component {
                   top: "0%",
                 }}
               ></Image>
-            </div>
+            </div> */}
             <Grid.Column
               width={6}
               style={{
@@ -623,16 +664,27 @@ class CentralText extends Component {
                 marginLeft: "7vw",
               }}
             >
-              <div style={overlaytextCustom}>innovate.</div>
-              <div>
+              <div style={{
+                fontFamily: "Montserrat",
+                marginLeft: "16vw",
+                font: "Montserrat",
+                fontStyle: "normal",
+                fontWeight: "400",
+                fontSize: "4vw",
+                lineHeight: "4vw",
+                color: "#000000",
+                marginTop: "5vw",
+              }}
+              >Innovate.</div>
+              {/* <div>
                 <Image
                   src={rectangleSingle}
                   style={{ width: "25vw", margin: "auto", marginTop: ".5vw" }}
                 ></Image>
-              </div>
+              </div> */}
               <Link to="/consulting">
                 <div style={underlaytext}>
-                  Learn about our consulting projects >>
+                  Learn about our consulting projects 🡒
                 </div>
               </Link>
             </Grid.Column>
@@ -646,13 +698,10 @@ class CentralText extends Component {
             >
               <Image
                 style={{
-                  marginLeft: "7vw",
+                  marginRight: "7vw",
                   zIndex: "2",
-                  borderStyle: "solid",
-                  borderColor: "#B6E5D7",
-                  borderWidth: "1.25vw",
                   backgroundColor: "#cccccc",
-                  width: "50vw",
+                  width: "70vw",
                 }}
                 src={innovate}
               ></Image>
@@ -664,13 +713,12 @@ class CentralText extends Component {
             style={{
               // width: "143vw",
               height: "29vw",
-              backgroundColor: "#8CD6D1",
               backgroundSize: "100%",
               zIndex: "1",
               position: "relative",
             }}
           >
-            <div>
+            {/* <div>
               <Image
                 src={squiggly2}
                 style={{
@@ -680,7 +728,7 @@ class CentralText extends Component {
                   top: "0%",
                 }}
               ></Image>
-            </div>
+            </div> */}
             <Grid.Column
               style={{
                 position: "absolute",
@@ -692,11 +740,8 @@ class CentralText extends Component {
                 style={{
                   marginLeft: "7vw",
                   zIndex: "2",
-                  borderStyle: "solid",
-                  borderColor: "#EDE8C4",
-                  borderWidth: "1.25vw",
                   backgroundColor: "#cccccc",
-                  width: "60vw",
+                  width: "70vw",
                 }}
                 src={engage}
               ></Image>
@@ -712,43 +757,53 @@ class CentralText extends Component {
                 transform: "translate(-50%, -50%)",
               }}
             >
-              <div style={overlaytext}>engage.</div>
-              <div>
+              <div style={{
+                fontFamily: "Montserrat",
+                marginLeft: "16vw",
+                font: "Montserrat",
+                fontStyle: "normal",
+                fontWeight: "400",
+                fontSize: "4vw",
+                lineHeight: "4vw",
+                color: "#000000",
+                marginTop: "3vw",
+              }}
+              >Engage.</div>
+              {/* <div>
                 <Image
                   src={rectangleSingle}
                   style={{ width: "25vw", margin: "auto", marginTop: "1vw" }}
                 ></Image>
-              </div>
+              </div> */}
               <div style={underlaytext}>
                 <Link to="/acadev">
                   {" "}
                   <div
                     style={{
-                      color: "#FFFFFF",
-                      fontWeight: 500,
-                      // marginRight: "5vw",
+                      color: "#000000",
+                      marginRight: "2vw",
                     }}
                   >
                     {" "}
-                    Learn more about our campus wide events >>{" "}
+                    Learn about our campus-wide events 🡒{" "}
                   </div>{" "}
                 </Link>
               </div>
             </Grid.Column>
           </Grid.Row>
 
-          <Grid.Row columns={1} style={{ backgroundColor: "#FFFFFF" }}>
+          <Grid.Row columns={1} >
             <Grid.Column
               width={10}
               style={{
                 marginLeft: "7vw",
+                marginTop: "4vw",
                 fontFamily: "Montserrat",
                 fontStyle: "normal",
                 fontWeight: "400",
-                fontSize: "5vw",
+                fontSize: "4vw",
                 lineHeight: "5vw",
-                color: "#8CD6D1",
-                paddingTop: "7vw",
+                color: "#000000",
               }}
             >
               Work with Us
@@ -758,45 +813,31 @@ class CentralText extends Component {
               style={{
                 marginLeft: "7vw",
                 fontWeight: "300",
-                fontSize: "2.5vw",
+                fontSize: "2vw",
                 lineHeight: "2vw",
                 fontFamily: "Montserrat",
-                marginTop: "3vw",
+                marginTop: "1vw",
               }}
             >
               Collaborate with us and grow our data science community!
             </Grid.Column>
             <Grid.Column textAlign="center">
-              <Card.Group centered style={{ marginTop: "6vw" }}>
+              <Card.Group centered style={{ marginTop: "1vw" }}>
                 {process}
               </Card.Group>
             </Grid.Column>
             <Grid.Column
               style={{
                 marginLeft: "7vw",
-                fontFamily: "Montserrat",
-                fontStyle: "normal",
-                fontWeight: "400",
-                fontSize: "5vw",
-                lineHeight: "5vw",
-                color: "#8CD6D1",
-                marginTop: "8vw",
-              }}
-            >
-              Join Our Mailing List!
-            </Grid.Column>
-            <Grid.Column
-              style={{
-                marginLeft: "7vw",
                 fontWeight: "300",
-                fontSize: "2.5vw",
+                fontSize: "2vw",
                 lineHeight: "2vw",
                 fontFamily: "Montserrat",
-                marginTop: "3vw",
+                marginTop: "2vw",
               }}
             >
-              Stay updated on our events, recruiting, and other on-campus
-              initiatives.{" "}
+              Want to stay updated on our events, recruiting, and other on-campus
+              initiatives?{" "}
             </Grid.Column>
             <Grid.Column 
               width={12}
@@ -831,7 +872,19 @@ class CentralText extends Component {
               </Form> */}
             </Grid.Column>
           </Grid.Row>
+          <div id="aboutFooterSpacer" style = {{height: "20vw"}}></div>
         </Grid>
+        <Image 
+          src={landingSquiggle2}
+          style={{
+            minWidth: "160vw",
+            height: "50vw",
+            marginTop: "-27vw",
+            marginLeft: "-15vw",
+            position: "absolute",
+            zIndex: "2",
+          }}
+          ></Image>
         {/* </Segment> */}
       </div>
     );
@@ -839,6 +892,7 @@ class CentralText extends Component {
 }
 export default CentralText;
 
+// what is this?? I don't know! hahaha please write comments - James
 {
   /* <Grid style={{ width: "110%", backgroundColor: "white" }}>
 <Grid.Row
