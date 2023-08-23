@@ -437,7 +437,9 @@ class CentralText extends Component {
     console.log(this.state.height, this.state.width);
     let process = this.join();
     return (
-      <div class="homepage-test">
+      <div class="homepage-test" style={{
+        background: "white",
+      }}>
         <img class="center-fit" src={homepageBanner}></img>
       
 
