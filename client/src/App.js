@@ -61,6 +61,7 @@ class App extends Component {
       projectname: "Project Name",
       clientid: "Client Name",
       projectid: "Client Name",
+      currentpage: ""
     };
   }
   sendData(data) {

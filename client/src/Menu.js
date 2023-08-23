@@ -17,8 +17,8 @@ import {
 } from "semantic-ui-react";
 import PasswordStrengthBar from "react-password-strength-bar";
 import validator from "validator";
-import logo from "./Backgrounds/DSS-logo-white.png";
-import logo2 from "./Backgrounds/DSS-logo-black-transparent.png";
+import logo from "./Backgrounds/dssblacklonglogo.png";
+import logo2 from "./Backgrounds/dsswhitelonglogo.png";
 
 let endpoint = "http://localhost:8080";
 
@@ -31,8 +31,9 @@ const mynav = {
   lineHeight: "1.5vw",
   boxShadow: "none",
   border: "none",
-  marginTop: "3.5vw",
 };
+
+
 // since menu has 10 margin
 const form_formatting = {
   marginLeft: "36px",
@@ -52,26 +53,46 @@ const submit = {
 };
 
 const navbar = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
   fontFamily: "Montserrat",
   fontSize: "1.5vw",
   fontWeight: 600,
   lineHeight: "3vw",
   marginLeft: "1.5vw",
   color: "#FFFFFF",
+  marginBottom: "-3vw",
 };
+
+const navWrapperLeft= {
+  display: "flex",
+  flex: "1 2 0",
+  justifyContent: "space-between",
+  margin: "auto 0",
+}
+
+const navWrapperRight= {
+  display: "flex",
+  justifyContent: "space-between",
+  margin: "auto 0",
+}
+
 const link = {
   fontFamily: "Montserrat",
   fontSize: "24px",
   fontWeight: 600,
   lineHeight: "37px",
-  color: "#FFFFFF",
+  color: "#8CD6D1",
+  textDecoration: 'none',
 };
 const link2 = {
   fontFamily: "Montserrat",
   fontSize: "24px",
   fontWeight: 600,
   lineHeight: "37px",
-  color: "#8CD6D1",
+  color: "black",
+  textDecoration: 'none',
 };
 
 const greenBut = {
@@ -178,11 +199,11 @@ class NavBar extends Component {
     console.log(this.state.activeStyle);
     if (this.state.activeStyle) {
       return (
-        <Image style={{ width: "100px", height: "100px" }} src={logo2}></Image>
+        <Image src={logo}></Image>
       );
     } else {
       return (
-        <Image style={{ width: "100px", height: "100px" }} src={logo}></Image>
+        <Image src={logo}></Image> // initially logo2, but we want logo since home will = the rest for now
       );
     }
   }
@@ -201,7 +222,7 @@ class NavBar extends Component {
     if (this.state.activeStyle) {
       return link2;
     } else {
-      return link;
+      return link2;
     }
   }
   render() {
@@ -213,90 +234,79 @@ class NavBar extends Component {
     let applystyle = this.setJoin();
     return (
       <div className="NavBar">
+
         <Menu style={mynav} borderless={true}>
-          <Menu.Item style={navbar} className=".ui.table">
-            <Link to="/">{logo}</Link>
-          </Menu.Item>
-          <Menu.Menu position="right" style={{ marginLeft: "7vw" }}>
-            <Menu.Item
-              name="about"
-              active={activeItem === "about"}
-              onClick={this.handleItemClick}
-              style={navbar}
-            >
-              <Link to="about" style={linkStyling}>
-                about
+          <div style={navWrapperLeft}>
+            <Menu.Item style={navbar} className=".ui.table">
+              <Link to="/">{logo}</Link>
+            </Menu.Item>
+          </div>
+
+          <div style={navWrapperRight}>
+            <Menu.Menu position="right" style={{ marginLeft: "7vw" }}>
+              <Menu.Item
+                  name="home"
+                  active={activeItem === "/"}
+                  onClick={this.handleItemClick}
+                  style={navbar}
+                >
+                  <Link to="/" style={linkStyling}>
+                    home
+                  </Link>
+                </Menu.Item>
+              <Menu.Item
+                name="about"
+                active={activeItem === "about"}
+                onClick={this.handleItemClick}
+                style={navbar}
+              >
+                <Link to="about" style={linkStyling}>
+                  about
+                </Link>
+              </Menu.Item>
+              <Menu.Item
+                name="decal"
+                active={activeItem === "decal"}
+                onClick={this.handleItemClick}
+                style={navbar}
+              >
+                <Link to="/gm" style={linkStyling}>
+                  decal
+                </Link>
+              </Menu.Item>
+              <Menu.Item
+                name="events"
+                active={activeItem === "events"}
+                onClick={this.handleItemClick}
+                style={navbar}
+              >
+                <Link style={linkStyling} to="events">
+                  events
+                </Link>
+              </Menu.Item>
+              <Menu.Item
+                name="services"
+                active={activeItem === "services"}
+                onClick={this.handleItemClick}
+                style={navbar}
+              >
+                <Link style={linkStyling} to="services">
+                  services
+                </Link>
+              </Menu.Item>
+              <Menu.Item
+                name="join"
+                active={activeItem === "join"}
+                onClick={this.handleItemClick}
+                style={navbar}
+              >
+              <Link style={linkStyling} to="/joinus">
+                    join us
               </Link>
-            </Menu.Item>
-            <Menu.Item
-              name="committees"
-              active={activeItem === "committees"}
-              onClick={this.handleItemClick}
-              style={navbar}
-            >
-              <Dropdown style={linkStyling} item text="committees">
-                <Dropdown.Menu>
-                  <Link to="/acadev" style={linkStyling}>
-                    <Dropdown.Item icon="pencil" text="Acadev" />
-                  </Link>
-                  <Link to="/consulting" style={linkStyling}>
-                    <Dropdown.Item icon="exchange" text="Consulting" />
-                  </Link>
-                  <Link to="/socialgood" style={linkStyling}>
-                    <Dropdown.Item icon="like" text="Social Good" />
-                  </Link>
-                </Dropdown.Menu>
-              </Dropdown>
-            </Menu.Item>
-            <Menu.Item
-              name="education"
-              active={activeItem === "education"}
-              onClick={this.handleItemClick}
-              style={navbar}
-            >
-              <Dropdown style={linkStyling} item text="education">
-                <Dropdown.Menu>
-                  <Link to="/gm">
-                    <Dropdown.Item
-                      icon="bookmark"
-                      text="Decal Landing"
-                    ></Dropdown.Item>
-                  </Link>
-                </Dropdown.Menu>
-              </Dropdown>
-            </Menu.Item>
-            <Menu.Item
-              name="events"
-              active={activeItem === "events"}
-              onClick={this.handleItemClick}
-              style={navbar}
-            >
-              <Link style={linkStyling} to="events">
-                events
-              </Link>
-            </Menu.Item>
-            <Menu.Item
-              name="services"
-              active={activeItem === "services"}
-              onClick={this.handleItemClick}
-              style={navbar}
-            >
-              <Link style={linkStyling} to="services">
-                services
-              </Link>
-            </Menu.Item>
-            <Menu.Item
-              name="join"
-              active={activeItem === "join"}
-              onClick={this.handleItemClick}
-              style={navbar}
-            >
-            <Link style={linkStyling} to="/joinus">
-                  join us
-            </Link>
-            </Menu.Item>
-            <Menu.Item header></Menu.Item>
-          </Menu.Menu>
+              </Menu.Item>
+              <Menu.Item header></Menu.Item>
+            </Menu.Menu>
+          </div>
         </Menu>
       </div>
     );

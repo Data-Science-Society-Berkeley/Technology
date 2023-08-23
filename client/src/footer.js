@@ -66,11 +66,11 @@ class Footer extends Component {
         <Container>
           <Grid divided inverted stackable>
             <Grid.Row>
-              <div style={{ marginLeft: "-20%", marginTop: "1.5vw" }}>
-                <Image inline src={logo} style={{ width: "5vw" }}></Image>
+              <div style={{ marginLeft: "-20%", marginTop: "1.5vw"}}>
+                <Image inline src={logo} style={{ width: "5vw",}}></Image>
                 <div
                   style={{
-                    marginLeft: "7vw",
+                    marginLeft:"6vw",
                     marginTop: "-3vw",
                     fontFamily: "Montserrat",
                     fontStyle: "normal",
