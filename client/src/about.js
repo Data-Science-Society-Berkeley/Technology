@@ -18,6 +18,23 @@ import CustomTitle from "./components/CustomTitle.js";
 import edlyft from "./Leadership Headshots/edlyft-logo.jpg";
 import asuc from "./Leadership Headshots/asuc_logo.png";
 
+import cdss from "./Leadership Headshots/berkeley_cdss_logo.png";
+import data8 from "./Collaborators/data8logo.png";
+import pcs from "./Collaborators/pcsberkeley.png";
+import cal from "./Collaborators/calactuarialleague.png";
+import eab from "./Collaborators/entrepeneursberk.png";
+import blueprint from "./Collaborators/blueprint.png";
+import uea from "./Collaborators/berkuea.png";
+import bids from "./Collaborators/Berkeley_Institute_for_Data_Science_-_Logo.png"
+import haasds from "./Leadership Headshots/haas-ds-club-logo.png";
+import saas from "./Collaborators/saaslogo_square.png";
+import hbsa from "./Collaborators/hbsa.png";
+import ascend from "./Collaborators/Ascend-Logo.png";
+import pbl from "./Collaborators/pbl.png";
+import mlab from "./Collaborators/mlabberkeley.png";
+import ecode from "./Collaborators/ecode.png";
+import nib from "./Collaborators/nib.png";
+
 import berkeley2 from "./Leadership Headshots/berkeley-eecs-logo.jpg";
 import wids from "./Leadership Headshots/wids-berkeley-logo.jpg";
 import sponsor1 from "./Leadership Headshots/dsnexus-logo.png";
@@ -46,7 +63,7 @@ import exec from "./About/exec.jpeg";
 import commit from "./About/CommitteeMember.jpg";
 import socgood from "./About/socgoodgroup.jpeg";
 import gen from "./About/GeneralMember.jpg";
-// import decal from "./About/DeCal.png";
+import decal from "./Decal Images/decalberkeleylogo 1.png";
 import senior from "./About/SeniorAdvisor.png";
 import join from "./About/JoinUs.jpg";
 //import story from './About/OurStory.jpg'
@@ -961,7 +978,9 @@ class About extends Component {
               left: '49vw',
               height: "0.75vw",
               maxHeight: "1.5vw",
-              width: "40vw"
+              width: "40vw",
+              // dated design, adjusting opacity instead of deleting to maintain space
+              opacity: "0",
             }}>
             </Image>
           </div>
@@ -1134,7 +1153,9 @@ class About extends Component {
               height: "0.75vw",
               maxHeight: "1.5vw",
               width: "40vw",
-              marginBottom: "10vw"
+              marginBottom: "10vw",
+              // dated design, adjusting opacity instead of deleting to maintain space
+              opacity: "0",
             }}>
             </Image>
           </div>
@@ -1173,18 +1194,19 @@ class About extends Component {
               height: "0.75vw",
               maxHeight: "1.5vw",
               width: "40vw",
-              marginBottom: "10vw"
+              marginBottom: "10vw",
+              // dated design, adjusting opacity instead of deleting to maintain space
+              opacity: "0",
             }}>
             </Image>
             </div>
           </Grid.Row>
-          <Grid.Row centered>
+          <Grid.Row>
             <Image.Group size={"medium"}>
               <Image
                 src={deepnote}
                 style={{ 
                   top: "-8vw",
-                  left: "-25vw",
                   // marginLeft: "-3px", 
                   width: "25vw", 
                   // marginTop: "3vw" 
@@ -1194,7 +1216,6 @@ class About extends Component {
                 src={decal}
                 style={{
                   top: "-8vw",
-                  left: "-18vw",
                   // marginLeft: "5vw",
                   width: "20vw",
                   // marginTop: "-7vw",
@@ -1206,20 +1227,15 @@ class About extends Component {
           <Grid.Row centered>
             <div
               style={{
-                position: "absolute",
                 textShadow: "none",
                 width: "60vw",
-                top: "0vw",
-                left: "39vw",
-                zIndex: "3",
                 fontFamily: "Montserrat",
                 fontStyle: "43vw",
                 fontWeight: "bold",
                 fontSize: "3.5vw",
                 lineHeight: "4vw",
                 color: "black",
-                marginBottom: "10vw",
-                marginTop: "10vw",
+                margin: "auto",
                 alignText: "center",
               }}
             >
@@ -1234,7 +1250,8 @@ class About extends Component {
                 height: "0.75vw",
                 maxHeight: "1.5vw",
                 width: "40vw",
-                marginBottom: "17vw"
+                // dated design, adjusting opacity instead of deleting to maintain space
+                opacity: "0",
               }}>
               </Image>
             </div>
