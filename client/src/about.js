@@ -76,6 +76,9 @@ import upright from "./About/cross_up.png";
 import bottomleft from "./About/cross_down.png";
 import rectangle from "./About/rectangle.png";
 import micron from "./About/micron.png"
+import linesOne from "./Homepage/linesOne.png"
+import linesTwo from "./Homepage/linesTwo.png"
+import gradient2 from "./Homepage/homepagegradient2.png"
 
 
 
@@ -661,7 +664,10 @@ class About extends Component {
     const screenInterMarginResult = this.screenWidthBigEnoughforInterMargin();
 
     return (
-      <div>
+      <div class="wrapper" style={{
+        background: "linear-gradient(180deg, #FFFFFF 0%, #D2F2F0 11%, #FFFFFF 15%, #FFFFFF 30%, #CCF0E5 50%, #DFF7F2 60%, #FFFFFF 80%)",
+        width: "133vw",
+      }}>
         {/* <div>
           <Image src={upright}
           style= {{
@@ -816,7 +822,18 @@ class About extends Component {
                 alignText: "center",
               }}
             >
-            <span>Who We Are</span>
+            <div style={{
+              height: "20vw",
+              width: "100vw",
+            }}>
+              <img src={linesOne} style={{
+                position: "absolute",
+                left: "-10vw",
+                width: "160vw",
+                height: "20vw",
+              }}></img>
+            </div>
+            <span id="whoWeAre">Who We Are</span>
             </div>
             <div
               centered
@@ -1001,7 +1018,7 @@ class About extends Component {
             alignText: "center",
           }}
         >
-        <span>Academic Development</span>
+        <span id="academicDevelopment">Academic Development Committee</span>
         </div>
         <div
           centered
@@ -1025,6 +1042,13 @@ class About extends Component {
             The academic development committee directs our decal program open to
             all skill levels and students and hosts a variety of educational workshops for the
             greater campus community.
+            <br></br>
+            <br></br>
+            <a href="./joinus" style={{
+              color: "#77B8B3",
+              fontStyle: "italic",
+              textDecoration: "none",
+            }}>Join Acadev →</a>
         </div>
         <div
           style={{
@@ -1043,7 +1067,7 @@ class About extends Component {
             alignText: "center",
           }}
         >
-        <span>Social Good</span>
+        <span id="socialGood">Social Good Committee</span>
         </div>
         <div
           centered
@@ -1067,6 +1091,13 @@ class About extends Component {
             We are passionate about contributing to tech for good by identifying 
             data-driven insights and actionable solutions for the missions of 
             non-profit organizations.
+            <br></br>
+            <br></br>
+            <a href="./joinus" style={{
+              color: "#77B8B3",
+              fontStyle: "italic",
+              textDecoration: "none",
+            }}>Join Social Good →</a>
         </div>
         <div
           style={{
@@ -1085,7 +1116,7 @@ class About extends Component {
             alignText: "center",
           }}
         >
-        <span>Consulting</span>
+        <span id="consulting">Consulting Committee</span>
         </div>
         <div
           centered
@@ -1109,6 +1140,13 @@ class About extends Component {
             We are passionate about working with non-profit organizations 
             to provide data-driven insights and actionable solutions through 
             advanced analytical methods.
+            <br></br>
+            <br></br>
+            <a href="./joinus" style={{
+              color: "#77B8B3",
+              fontStyle: "italic",
+              textDecoration: "none",
+            }}>Join Consulting →</a>
         </div>
         </Grid.Row>
           <Grid
@@ -1128,9 +1166,9 @@ class About extends Component {
             style={{
               position: "absolute",
               textShadow: "none",
-              width: "45vw",
+              width: "61vw",
               top: "0vw",
-              left: "46vw",
+              left: "38vw",
               zIndex: "3",
               fontFamily: "Montserrat",
               fontStyle: "43vw",
@@ -1138,11 +1176,11 @@ class About extends Component {
               fontSize: "3.5vw",
               lineHeight: "4vw",
               color: "black",
-              marginBottom: "10vw",
+              marginBottom: "5vw",
               alignText: "center",
             }}
           >
-          <span>Our Executive Team</span>
+            <span>Meet Our Executive Team</span>
           </div>
           <div>
             <Image src={rectangle}
@@ -1382,6 +1420,18 @@ class About extends Component {
             </div>
             </Grid.Row>
         </Grid>
+        <div style={{
+              height: "35vw",
+            }}>
+              <img src={linesTwo} style={{
+                position: "absolute",
+                width: "180vw",
+                left: "-10vw",
+                marginTop: "0vw",
+                zIndex: "2",
+                height: "40vw",
+              }}></img>
+            </div>
       </div>
     );
   }

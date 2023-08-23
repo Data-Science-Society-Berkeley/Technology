@@ -38,6 +38,10 @@ import sweIcon from './Services Images/sweIcon.jpg'
 import businessIcon from './Services Images/businessIcon.jpg'
 
 import servicesBanner from './Services Images/servicesbanner.jpg';
+import educateBanner from './landing/educatebanner.jpg';
+import empowerBanner from './landing/empowerbanner.jpg';
+import giveBackBanner from './landing/givebackbanner.jpg';
+import learnBanner from './landing/learnbanner.jpg';
 
 import "./CentralText.css"
 
@@ -477,13 +481,23 @@ class CentralText extends Component {
 
         <div class="gradient-bg">
             {/*Vector image here? Start gradient*/}
+            <div style={{
+              height: "5vw",
+            }}>
+              <img src={linesOne} style={{
+                position: "absolute",
+                width: "170vw",
+                left: "-30vw",
+                marginTop: "-10vw",
+              }}></img>
+            </div>
             <div class="values">
               <div class="value">
                 <div class="left">
                   <h1 class="boldish">IMPACT</h1>
                   <h2 class="light">CONSULTING COMMITTEE</h2>
                   <p>We leave an impact beyond Berkeley through partnering with companies from a variety of domains to create enterprise-level machine learning and analytics solutions.</p>
-                  <a href="./About">More about consulting →</a>
+                  <a href="./About#consulting">More about consulting →</a>
                 </div>
                 <div class="right1">
                   <img src={servicesBanner}></img>
@@ -495,10 +509,10 @@ class CentralText extends Component {
                   <h1 class="boldish">EDUCATE</h1>
                   <h2 class="light">ACADEMIC DEVELOPMENT COMMITTEE</h2>
                   <p>We lead & teach the DeCal course, “Introduction to Real World Data Science”, in addition to spearheading multiple data science educational iniatives on campus.</p>
-                  <a href="./About">More about education →</a>
+                  <a href="./About#academicDevelopment">More about education →</a>
                 </div>
                 <div class="right1">
-                  <img src={servicesBanner}></img>
+                  <img src={educateBanner}></img>
                 </div>
               </div>
 
@@ -507,10 +521,10 @@ class CentralText extends Component {
                   <h1 class="boldish">GIVE BACK</h1>
                   <h2 class="light">SOCIAL GOOD COMMITTEE</h2>
                   <p>We provide pro-bono support for non-profit organizations through developing advanced analytical insights to recognize uplifting initiatives around the globe.</p>
-                  <a href="./About">More about social good →</a>
+                  <a href="./About#socialGood">More about social good →</a>
                 </div>
                 <div class="right1">
-                  <img src={servicesBanner}></img>
+                  <img src={giveBackBanner}></img>
                 </div>
               </div>
 
@@ -519,29 +533,41 @@ class CentralText extends Component {
                   <h1 class="boldish">EMPOWER</h1>
                   <h2 class="light">DATATHONS, PANELS & MORE EVENTS</h2>
                   <p>We hold an annual datathon and other high-impact events, where we inspire students to make data-driven decisions and to incorporate data science in their professional lives.</p>
-                  <a href="./About">More about events →</a>
+                  <a href="./events">More about events →</a>
                 </div>
                 <div class="right1">
-                  <img src={servicesBanner}></img>
+                  <img src={empowerBanner}></img>
                 </div>
               </div>
 
               <div class="value">
                 <div class="left">
                   <h1 class="boldish">LEARN</h1>
-                  <p>Find out more about what we do</p>
-                  <a href="./About">More about resources →</a>
+                  <p>Find out more about what we do and how to join us.</p>
+                  <a href="./joinus">More about resources →</a>
+                  {/* extra line space to make the last image the same height as the others... idk where we set the height */}
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <br></br>
                 </div>
                 <div class="right1">
-                  <img src={servicesBanner}></img>
+                  <img src={learnBanner}></img>
                 </div>
               </div>
             </div>
 
-            <div class="call-to-action">
-              <div></div>
-              <div></div>
-              <div></div>
+            <div style={{
+              height: "30vw",
+            }}>
+              <img src={linesTwo} style={{
+                position: "absolute",
+                width: "180vw",
+                left: "-10vw",
+                marginTop: "0vw",
+                zIndex: "2",
+                height: "40vw",
+              }}></img>
             </div>
           </div>
 
