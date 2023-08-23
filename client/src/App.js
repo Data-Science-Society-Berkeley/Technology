@@ -179,16 +179,19 @@ class App extends Component {
             }}
           />
           <Route
+            exact
             path="/externalcalendar"
             component={() => {
-              window.location.href = "https://calendar.google.com/calendar/u/0?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t";
+              window.location.href = "https://calendar.google.com/calendar/u/2?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t";
+              
               return null;
             }}
           />
           <Route
+            exact
             path="/coffee"
             component={() => {
-              window.location.href = "https://www.notion.so/DSS-Spring-2023-Coffee-Chat-Sign-ups-f2f3665698de491988f6a6d64060ae69";
+              window.location.href = "https://www.notion.so/dssberkeley/DSS-Fall-23-Coffee-Chat-Sign-ups-833234c054534e1fa8740e272cc55eb7";
               return null;
             }}
           />

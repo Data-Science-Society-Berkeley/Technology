@@ -522,7 +522,10 @@ class CentralText extends Component {
                 <div class="left">
                   <h1 class="boldish">GIVE BACK</h1>
                   <h2 class="light">SOCIAL GOOD COMMITTEE</h2>
-                  <p>We provide pro-bono support for non-profit organizations through developing advanced analytical insights to recognize uplifting initiatives around the globe.</p>
+                  <p>We provide pro-bono support for non-profit
+                    organizations through developing advanced analytical insights to recognize
+                    uplifting initiatives around the globe.
+                  </p>
                   <a href="./About#socialGood">More about social good →</a>
                 </div>
                 <div class="right1">

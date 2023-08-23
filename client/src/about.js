@@ -1090,7 +1090,8 @@ class About extends Component {
           >
             We are passionate about contributing to tech for good by identifying 
             data-driven insights and actionable solutions for the missions of 
-            non-profit organizations.
+            non-profit organizations. The Social Good committee acts as a consulting
+            committee for nonprofits with social good initiatives.
             <br></br>
             <br></br>
             <a href="./joinus" style={{

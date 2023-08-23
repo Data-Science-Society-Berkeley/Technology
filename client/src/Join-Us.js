@@ -27,7 +27,7 @@ import squiggle3 from "./Consulting/squiggle3.png";
 import upright from "./Consulting/topRight.png";
 import bottomleft from "./Consulting/bottomLeft.png";
 import logo from "./Consulting/logo.png";
-import flyer from "./About/fa2023_recruitment_timeline.png"
+import flyer from "./Backgrounds/fa23flyer.jpg"
 
 
 import down from "./Consulting/ClientTestimonials.png";
@@ -458,7 +458,7 @@ class Join extends Component {
             <Grid.Row
               style={{
                 color: "#000000",
-                marginTop: "1vw",
+                marginTop: "4vw",
                 marginBottom: "1vw",
                 textAlign: "center",
                 lineHeight: "4vw",
@@ -471,8 +471,26 @@ class Join extends Component {
                 width: "100vw",
               }}
             >
-
-            Hey there! Thank you for taking the time to learn about DSS. On this page you will find all the different ways you can get involved with DSS, as well as what our recruitment timeline will look like for the upcoming semester. To stay up to date with all our events, including our recruitment events, you can add <a href="https://calendar.google.com/calendar/u/2?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">our external calendar</a> to receive invites on everything. If you have any questions, feel free to reach out to us at <a href="mailto:info@dss.berkeley.edu">info@dss.berkeley.edu</a>. We hope to see you very soon!
+            <p style={{ display: "inline-block" }}>
+              Hey there! Thank you for taking the time to learn about DSS. On this page you will 
+              find all the different ways you can get involved with DSS, as well as what our 
+              recruitment timeline will look like for the upcoming semester. To stay up to date 
+              with all our events, including our recruitment events, you can add
+              <a href="./externalcalendar" style={{
+                display: "inline-block",
+                textDecoration: "none",
+                color: "#77B8B3",
+              }}>&nbsp;our external calendar&nbsp;</a>
+              {/* &nbsp; is the HTML extended character code for non-breaking space */}
+              to receive notifications. If you have any questions, feel free 
+              to reach out to us at
+            <a href="mailto:info@dss.berkeley.edu" style={{
+              display: "inline-block",
+              textDecoration: "none",
+              color: "#77B8B3",
+            }}>&nbsp;info@dss.berkeley.edu</a>
+              . We hope to see you very soon!
+            </p>
 
             </Grid.Row>
             <div>
@@ -489,17 +507,28 @@ class Join extends Component {
             </div>
           </Grid.Row>
 
-          {CustomTitleBlack({ title: "How To Get Involved" })}
-          <div style= {{maxWidth: "30vw"}}>
+          {CustomTitleBlack({ title: "How To Apply" })}
+          {/* <div style= {{maxWidth: "30vw"}}>
             <Image src={ExpertiseLine}></Image>
-          </div>
+          </div> */}
 
           <Card.Group centered>
             <Card style={overlayboxes}>
               {/* <Image style={cardImageSyle} src={MLImage}></Image> */}
               <Card.Header style={cardHeader}>Apply to a committee</Card.Header>
               <div style={cardDescription}>
-              Apply to join a DSS committee if you are interested in working on Consulting/Social Good projects or are interested in helping facilitate the DSS Decal as an Academic Development committee member. Check out some of our committee pages to learn more about each committee.
+                <p>
+                  Apply to join a DSS committee if you are interested in working on
+                  Consulting/Social Good projects or are interested in helping facilitate 
+                  the DSS Decal as an Academic Development committee member.
+                  Learn more about each committee
+                  <a href="./About#academicDevelopment" style={{
+                    display: "inline-block",
+                    textDecoration: "none",
+                    color: "#77B8B3",
+                  }}>&nbsp;here</a>
+                  .
+                </p>
               </div>
               <Button.Group centered>
               <Link to="apply" style={{marginRight: '4vw'}}>
@@ -726,8 +755,15 @@ class Join extends Component {
                 marginLeft: "6vw",
                 marginRight: "6vw",
               }}
-            ><a href="https://docs.google.com/document/d/1QLJPRuUDaDoadXAGhkP9pLX4dHvbdh8n8x9vluvw44s">
-            If you would like a better idea of how you can prep for the interviews, check out this resource packet!</a> 
+            >
+              <p>
+                If you would like a better idea of how you can prep for the interviews,
+                <a href="https://docs.google.com/document/d/1QLJPRuUDaDoadXAGhkP9pLX4dHvbdh8n8x9vluvw44s" style={{
+                  display: "inline-block",
+                  textDecoration: "none",
+                  color: "#77B8B3",
+                }}>&nbsp;check out this resource packet!</a> 
+              </p>
 
             </Grid.Row>
           
@@ -846,7 +882,14 @@ class Join extends Component {
                 Are there ways to get involved apart from applying to a committee or registering for the DeCal?
               </Accordion.Title>
               <Accordion.Content active={activeIndex === 5} style={{ fontSize: "2vw" }}>
-              <p>Every semester we host a variety of events open to the public, which are great ways to mingle with other data science students! We have an upcoming data science focused career fair, Datathon for Social Good, and more! Add our <a href="https://calendar.google.com/calendar/u/2?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">external event calendar</a> to obtain calendar invites to all our upcoming events, and subscribe to <a href="https://dssberkeley.com/mailinglist">the mailing list</a> for updates as events come up!</p>
+              <p>Every semester we host a variety of events open to the public, which are
+                great ways to mingle with other data science students! We have an upcoming
+                data science focused career fair, Datathon for Social Good, and more! Add our
+                <a href="https://calendar.google.com/calendar/u/2?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">external event calendar</a>
+                to obtain calendar invites to all our upcoming events, and subscribe to
+                <a href="https://dssberkeley.com/mailinglist">the mailing list</a>
+                for updates as events come up!
+              </p>
               </Accordion.Content> 
 
               <Accordion.Title

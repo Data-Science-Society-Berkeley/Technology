@@ -3,7 +3,7 @@ import { Grid } from "semantic-ui-react";
 
 function CustomTitleBlack(props) {
   return (
-    <Grid.Row id={props.id} style={{ marginTop: "6vw" }} centered>
+    <Grid.Row id={props.id} style={{ marginTop: "4vw" }} centered>
       <Grid.Column
         style={{
           fontFamily: "Montserrat",
