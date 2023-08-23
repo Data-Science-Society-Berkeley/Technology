@@ -49,7 +49,7 @@ import edify from './Services Images/edify.png';
 import metromile from './Services Images/metromile.png'; 
 import deepnote from './Services Images/deepnote.png'; 
 
-import marlon from "./Leadership Headshots/marlon.jpeg";
+import stephen from "./Leadership Headshots/stephen.jpg";
 
 
 
@@ -370,18 +370,18 @@ class Education extends Component {
 
           <Card.Group centered style = {{borderRadius: "16px",}}>
             <Card>
-              <Image src={marlon}/>
+              <Image src={stephen}/>
               <Card.Content>
-                <Card.Header>Marlon Fu</Card.Header>
+                <Card.Header>Stephen Liu</Card.Header>
                 <Card.Meta>
                   <span style={roleStyle}>President</span>
                 </Card.Meta>
 
               <div>
-                <a href="mailto:marlonfu@berkeley.edu">
+                <a href="mailto:stephen.liu@berkeley.edu">
                   <Icon size="large" name="mail" />
                 </a>
-                <a href="https://www.linkedin.com/in/marlonfu/">
+                <a href="https://www.linkedin.com/in/liu-stephen/">
                   <Icon size="large" name="linkedin" />
                 </a>
               </div>
