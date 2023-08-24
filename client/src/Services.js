@@ -72,19 +72,17 @@ const banner = {
 const bannerText = {
     color: "white",
     fontSize: "6vw",
-    fontFamily: "Montserrat", 
-    fontWeight: "500",
+    fontFamily: "Lato", 
+    fontWeight: "bold",
     position: "absolute",
-    bottom: "18vw",
+    top: "2vw",
     right: "1em",
     left: "1em",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     resize: "none",
-
-    
-    //textShadow: "1px 0 0 #333333, 0 -1px 0 #333333, 0 1px 0 #333333, -1px 0 0 #333333"
+    textShadow: "0 0 2vw #333333",
 }
 
 //opacity: "0",
@@ -112,14 +110,14 @@ const whiteSpaceText = {
     color: "black",
     fontSize: "max(3vw, 28px)",
     fontWeight: "Bold",
-    fontFamily: "Montserrat", 
+    fontFamily: "Lato", 
     gridColumn: "span 3",
 
 }
 
 
 const textstyle = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   fontSize: "3vw",
   lineHeight: "3vw",
@@ -143,7 +141,7 @@ const cardstyle = {
 };
 
 const roleStyle = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   fontSize: "2vw",
   lineHeight: "2vw",
@@ -195,13 +193,18 @@ class Education extends Component {
   render() {
     const { activeIndex } = this.state;
     return (
-      <div style={{fontSize: "max(2vw, 16px)", width: "100%", height: "100%",}}>
+      <div class="wrapper" style={{
+        background: "linear-gradient(180deg, #FFFFFF 0%, #FDFFF9 20%, #EBF8E1 50%, #DAFFFB 75%, #FFFFFF 100%)",
+        fontSize: "max(2vw, 16px)",
+        width: "100%",
+        height: "100%",
+      }}>
           {/*Services Banner + Intro*/}
           <div style={{display: "grid", gridTemplateColumns: "repeat(3, 1fr)", margin: "0 -8px 1.3rem -8px", gap: "5px"}}>
               <figure style={banner}>
                   <img style={bannerImg} src={servicesBanner}></img>
                   <figcaption style={bannerText}>
-                      <p>Our Services</p>
+                      <p>SERVICES</p>
                   </figcaption>
               </figure>
           </div>
@@ -365,7 +368,7 @@ class Education extends Component {
             color: "black",
             fontSize: "max(3vw, 28px)",
             fontWeight: "Bold",
-            fontFamily: "Montserrat", 
+            fontFamily: "Lato", 
             }}>Want to work with us?</u>
 
           <Card.Group centered style = {{borderRadius: "16px",}}>
@@ -378,10 +381,14 @@ class Education extends Component {
                 </Card.Meta>
 
               <div>
-                <a href="mailto:stephen.liu@berkeley.edu">
+                <a href="mailto:stephen.liu@berkeley.edu" style={{
+                  textDecoration: "none",
+                }}>
                   <Icon size="large" name="mail" />
                 </a>
-                <a href="https://www.linkedin.com/in/liu-stephen/">
+                <a href="https://www.linkedin.com/in/liu-stephen/" style={{
+                  textDecoration: "none",
+                }}>
                   <Icon size="large" name="linkedin" />
                 </a>
               </div>
@@ -402,11 +409,11 @@ export default Education;
 const gridoffset = {
   marginTop: "24px",
   textAlign: "center",
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
 };
 
 const mybigtext = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "normal",
   lineHeight: "7vw",
   fontSize: "4.5vw",
@@ -419,7 +426,7 @@ const mybigtext = {
 };
 
 const button = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   lineHeight: "29px",
   fontSize: "24px",
@@ -430,7 +437,7 @@ const button = {
   marginLeft: "70px",
 };
 const textstyle = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   fontSize: "37px",
   color: "#8CD6D1",
@@ -448,7 +455,7 @@ const imagestyle = {
   maxWidth: "400px",
 };
 const mymidtext = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "normal",
   lineHeight: "7vw",
   fontSize: "3.5vw",
@@ -460,7 +467,7 @@ const mymidtext = {
   marginTop: "3vw",
 };
 const link = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   lineHeight: "2vw",
   fontSize: "2vw",
@@ -472,7 +479,7 @@ const link = {
   marginTop: "1vw",
 };
 const link2 = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   lineHeight: "2vw",
   fontSize: "2vw",
@@ -547,7 +554,7 @@ return (
           width: "40vw",
           border: "1px solid #000000",
           boxSizing: "borderBox",
-          font: "Montserrat",
+          font: "Lato",
           borderRadius: "1vw",
           marginRight: "4vw",
         }}
@@ -571,7 +578,7 @@ return (
           width: "40vw",
           border: "1px solid #000000",
           boxSizing: "borderBox",
-          font: "Montserrat",
+          font: "Lato",
           borderRadius: "1vw",
         }}
       >

@@ -29,6 +29,7 @@ import bottomleft from "./Consulting/bottomLeft.png";
 import logo from "./Consulting/logo.png";
 import flyer from "./Backgrounds/fa23flyer.png"
 
+import linesTwo from "./Homepage/linesTwo.png";
 
 import down from "./Consulting/ClientTestimonials.png";
 import workwus from "./Consulting/WorkWithUs.png";
@@ -140,7 +141,7 @@ const mybigtext = {
   fontWeight: 600,
   lineHeight: "97px",
   fontSize: "64px",
-  color: "#8CD6D1",
+  color: "#000000",
   width: "438px",
   fontStyle: "normal",
   textAlign: "left",
@@ -268,7 +269,9 @@ class Join extends Component {
   render() {
     const { activeIndex } = this.state;
     return (
-      <div>
+      <div class="wrapper" style={{
+        background: "linear-gradient(160deg, #DAFFFB 0%, #EBF8E1 33%, #FDFFF9 66%, #DAFFFB 100%)",
+      }}>
         {/* <h1
           style={{
           top:"20vw",
@@ -288,7 +291,8 @@ class Join extends Component {
         }}
         >Join Us
         </h1> */}
-
+        <div class="headerSpacer" style={{height: '1vw'}}></div>
+        <Header style={mybigtext}> APPLY </Header>
         <div>
           <Image style={{position: 'relative',
           margin: 'auto',
@@ -301,157 +305,7 @@ class Join extends Component {
           }}
           src={flyer}></Image>
         </div>
-        {/* <div>
-          <Image src={bottomleft}
-          style= {{
-            left:"5vw",
-            top:"55vw",
-            position: "absolute",
-            height: "18vw",
-            maxHeight: "18vw",
-            width: "30vw",
-            maxWidth: "30vw",
-          }}>
-          </Image>
-        </div> */}
-        {/* <div>
-          <Image src={squiggle2}
-          style= {{
-            left:"-5vw",
-            bottom:"-35vw",
-            position: "relative",
-            height: "15vw",
-            maxHeight: "18vw",
-            width: "40vw",
-            maxWidth: "40vw",
-          }}>
-          </Image>
-        </div> */}
-        {/* <Grid centered>
-        <Grid.Row centered style={headerbox}>
-            <Card.Group centered>
-              <div
-                style={{
-                  background: "#FFFFFF",
-                  // border: "5px solid #8CD6D1",
-                  boxSizing: "border-box",
-                  borderRadius: "5vw",
-                  width: "10%",
-                  height: "14vw",
-                  // marginTop: "10vw",
-                  marginLeft: "0",
-                  marginRight: "0",
-                  // fontSize: "2vw",
-                  // lineHeight: "2vw",
-                  // fontWeight: "21.5vw",
-                  fontFamily: "Lato",
-                  margintop: "10vw"
-                }}
-              >
-                <div
-                  style={{
-                    marginTop: "4vw",
-                    // marginLeft: "8%",
-                    marginRight: "0",
-                    fontSize: "8vw",
-                    lineHeight: "8vw",
-                    color: '#8CD6D1',
-                    fontWeight: "501",
-
-                  }}
-                >
-                  4
-                </div>
-              </div>
-              <div
-                style={{
-                  background: "#FFFFFF",
-                  // border: "5px solid #8CD6D1",
-                  boxSizing: "border-box",
-                  // borderRadius: "3vw",
-                  width: "25%",
-                  height: "14vw",
-                  marginLeft: "0%",
-                  marginRight: "7.5vw",
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: "3.5vw",
-                    lineHeight: "4vw",
-                    fontWeight: "21vw",
-                    fontFamily: "Lato",
-                    marginTop: "4vw",
-                    // marginLeft: "2vw",
-                    // marginRight: "2vw",
-                    color: '#8CD6D1',
-                  }}
-                >Ongoing Projects
-                </div>
-              </div>
-              <div
-                style={{
-                  background: "#FFFFFF",
-                  // border: "5px solid #8CD6D1",
-                  boxSizing: "border-box",
-                  // borderRadius: "3vw",
-                  width: "30%",
-                  height: "14vw",
-                  // marginLeft: "8%",
-                  // marginRight: "5%",
-                  // fontSize: "2vw",
-                  // lineHeight: "2vw",
-                  // fontWeight: "21.5vw",
-                  fontFamily: "Lato",
-                }}
-              >
-                <div
-                  style={{
-                    marginTop: "4vw",
-                    left:"20vw",
-                    marginLeft: "30%",
-                    marginRight: "0",
-                    fontSize: "8vw",
-                    lineHeight: "8vw",
-                    color: '#8CD6D1',
-                    fontWeight: "501",
-
-                  }}
-                >
-                  38
-                </div>
-              </div>
-              <div
-                style={{
-                  background: "#FFFFFF",
-                  // border: "5px solid #8CD6D1",
-                  boxSizing: "border-box",
-                  // borderRadius: "3vw",
-                  width: "20%",
-                  height: "14vw",
-                  // marginLeft: "8%",
-                  marginRight: "3vw",
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: "3.5vw",
-                    lineHeight: "4vw",
-                    fontWeight: "21vw",
-                    fontFamily: "Lato",
-                    marginTop: "4vw",
-                    // marginLeft: "3vw",
-                    // marginRight: "2vw",
-                    color: '#8CD6D1',
-                  }}
-                >
-                  Completed Projects
-                </div>
-              </div>
-            </Card.Group>
-          </Grid.Row>
-        </Grid> */}
-
+        
         <Grid centered>
           <Grid.Row>
 
@@ -904,6 +758,13 @@ class Join extends Component {
             </Accordion>
           </Grid.Row>
         </Grid>
+        <div class="footerSpacer" style={{
+          height: "40vw",
+        }}>
+          <img src={linesTwo} style={{
+            width: "160vw",
+          }}></img>
+        </div>
       </div>
     );
   }

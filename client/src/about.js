@@ -726,7 +726,7 @@ class About extends Component {
         </div>
         <h1
           style={{
-          top:"23vw",
+          top:"15vw",
           width: "100%",
           height: "auto",
           textAlign: "center",

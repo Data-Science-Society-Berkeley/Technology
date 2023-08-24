@@ -26,7 +26,10 @@ ul li {
 .fading-card {
   background-color: #F5F5F5;
   text-align: center;
+  border-style: solid;
+  border-color: #CCCCCC;
   border-radius: 16px;
+  border-width: 1px;
   overflow-wrap: break-word;
   margin: 0;
   padding: 0;

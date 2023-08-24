@@ -313,55 +313,17 @@ class Work extends Component {
               </Grid.Column>
             </Grid.Row>
             <div class="footerSpacer" style={{
-              height: "40vw",
-            }}></div>
-            {/* <Grid.Row centered>
-              <div
-                style={{
-                  width: "33vw",
-                  height: "9vw",
-                  background: "#8CD6D1",
-                  marginTop: "8vw",
-                }}
-              >
-                <div
-                  style={{
-                    fontFamily: "Lato",
-                    fontStyle: "normal",
-                    fontWeight: "normal",
-                    fontSize: "1vw",
-                    lineHeight: "1.5vw",
-                    textAlign: "center",
-                    color: "#FFFFFF",
-                    marginTop: "1.5vw",
-                    marginLeft: "1vw",
-                  }}
-                >
-                  The Past Events section is still in development.
-                  <br />
-                  <br />
-                  Check out our{" "}
-                  <u>
-                    <a
-                      href="https://www.facebook.com/dssberkeley/events/"
-                      style={{ color: "#EDE8C4" }}
-                    >
-                      {" "}
-                      Facebook
-                    </a>
-                  </u>{" "}
-                  to learn more about what we have hosted in the past!
-                </div>
-              </div>
-            </Grid.Row> */}
-          </Grid>
-        </div>
-        <img src={linesOne} style={{
+              height: "50vw",
+            }}>
+              <img src={linesOne} style={{
                 position: "absolute",
                 width: "170vw",
                 left: "-30vw",
-                marginTop: "-25vw",
+                marginTop: "15vw",
               }}></img>
+            </div>
+          </Grid>
+        </div>
       </div>
     );
   }

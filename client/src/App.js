@@ -377,7 +377,6 @@ class App extends Component {
                 />
                 <NavBar {...props} />
                 <GeneralMember></GeneralMember>
-                <div style={{ marginTop: "100px" }}></div>
                 <Footer></Footer>
               </div>
             )}
@@ -452,16 +451,6 @@ class App extends Component {
                 />
                 <NavBar {...props} />
                 <Service></Service>
-                <div
-                  style={{
-                    backgroundColor: "#8CD6D1",
-                    marginRight: "-500px",
-                    marginTop: "0px",
-                    paddingBottom: "150px",
-                  }}
-                >
-                  <Contact></Contact>
-                </div>
 
                 <div
                   style={{
@@ -684,7 +673,6 @@ class App extends Component {
                 />
                 <NavBar {...props} />
                 <GeneralMember></GeneralMember>
-                <div style={{ marginTop: "100px" }}></div>
                 <Footer></Footer>
               </div>
             )}

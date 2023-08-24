@@ -47,6 +47,8 @@ import austin from "./Leadership Headshots/austin.jpeg"
 import mentors from "./Decal Images/acadevmentors_fall22.png";
 import acadevdirs from "./Acadev Images/acadevdirs.jpeg";
 
+import linesTwo from "./Homepage/linesTwo.png";
+
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -295,7 +297,6 @@ class DecalLearn extends Component {
           // marginTop: '3vw',
           left: "0vw",
           right: "30vw",
-          bottom: "15vw",
           // margin: 'auto',
           // margintop: "10vw",
           // marginBottom: '0vw',
@@ -306,377 +307,339 @@ class DecalLearn extends Component {
           }}
           src={mentors}></Image>
         </div>
-
-        <Grid entered style={gridoffset}>
-          <Grid.Row
-            width={16}
-            columns={5}
-            style={{
-              //backgroundColor: "#8CD6D1",
-              width: "80vw",
-              height: "7vw",
-              marginTop: "3vw",
-              position: "relative",
-            }}
-          >
-          <div
-          style={{
-          top:"2vw",
-          //width: "100%",
-          //height: "auto",
-          textAlign: "start",
-          color: "black",
-          //textIndent: "5vw",
-          //margin: 'auto',
-          // marginBottom:'5vw',
-          //marginTop: "5vw",
-          position: "relative",
-          //transform: "translate(-50%, -50%)",
-          fontFamily: "Lato",
-          fontWeight: "bold",
-          fontSize: "5vw",
-          lineHeight: "6vw",
-          left: "10vw"
-          }}
-        >DeCal
-        
-
-        </div>
-        </Grid.Row>
-          <Grid.Row>
-          <div style={{
-            /*
-            top:"25vw",
-            width: "100%",
-            height: "auto",
-            textAlign: "center",
-            color: "black",
-            marginTop: "30vw",
-            margin: 'auto',
-            marginBottom:'5vw',
-            position: "absolute",
-            transform: "translate(-50%, -50%)",
-            fontFamily: "Lato",
-            fontSize: "2vw",
-            lineHeight: "6vw",
-            fontWeight: "bold"*/
-            marginTop: "3vw",
-            textAlign: "start",
-            lineHeight: "3vw",
-            fontSize: "2.3vw",
-            fontWeight: "21.5vw",
-            position: "relative",
-            left: "10vw"
-          }}
-        >Data 198: <i>Intro to Real World Data Science</i>
-            </div>
-
-            <div style={{
-              marginTop: "5vw",
-              marginRight: "20vw",
-              paddingRight:"10vw",
-              textAlign: "start",
-              lineHeight: "3vw",
-              fontSize: "2vw",
-              fontWeight: "21.5vw",
-              position: "relative",
-              left: "10vw"
-            }}>
-              The goal of our DeCal is to provide <b>data science education</b> and <b>experience</b> for students with little to no prior 
-              knowledge of the field. Our course focuses on practical tools not otherwise emphasized in Berkeley’s academic curricula, 
-              and allows for students to explore their domain interests in a semester-long project.
-
-            </div>
-          </Grid.Row>
-
-
-
-
-          <Grid.Row>
-          <div style={{
-            marginTop: "5vw",
-            textAlign: "start",
-            lineHeight: "3vw",
-            fontSize: "2.3vw",
-            fontWeight: "21.5vw",
-            fontWeight: "bold",
-            position: "relative",
-            left: "10vw"
-          }}
-        >What will you learn in the DeCal?
-            </div>
+        <div class="wrapper" style={{
+          background: "linear-gradient(180deg, #FFFFFF 0%, #FDFFF9 33%, #EBF8E1 66%, #DAFFFB 100%)",
+        }}>
+          <Grid entered style={gridoffset}>
+            <Grid.Row
+              width={16}
+              columns={5}
+              style={{
+                //backgroundColor: "#8CD6D1",
+                width: "80vw",
+                height: "7vw",
+                marginTop: "3vw",
+                position: "relative",
+              }}>
+              <div
+                style={{
+                top:"2vw",
+                //width: "100%",
+                //height: "auto",
+                textAlign: "start",
+                color: "black",
+                //textIndent: "5vw",
+                //margin: 'auto',
+                // marginBottom:'5vw',
+                //marginTop: "5vw",
+                position: "relative",
+                //transform: "translate(-50%, -50%)",
+                fontFamily: "Lato",
+                fontWeight: "bold",
+                fontSize: "5vw",
+                lineHeight: "6vw",
+                left: "10vw"
+                }}>
+                DeCal
+              </div>
             </Grid.Row>
             <Grid.Row>
-            <div style={{
-              marginTop: "0vw",
-              width: "95vw",
-              textAlign: "start",
-              lineHeight: "3vw",
-              fontSize: "2vw",
-              fontWeight: "21.5vw",
-              position: "relative",
-              left: "10vw",
-              //alignText: "center"
-            }}>This semester-long course focuses on introducing students to essential data science skills in an interactive setting. 
-            As a DeCal student, you will learn every step of the data science lifecycle: from formulating a data-centric project idea, 
-            to extracting stories with exploratory data analysis, and finally creating and evaluating predictive models.
-            <br />
-            <br />
-            Using your new skills and knowledge, you will have the opportunity to develop a project of your choosing with other 
-            undergraduate students under a DSS mentor. You will also be able to present your findings and final project at Berkeley’s 
-            semesterly Data Science Research Symposium and publish your project on DSS’s website.
-            </div>
-          </Grid.Row>
+              <div style={{
+                /*
+                top:"25vw",
+                width: "100%",
+                height: "auto",
+                textAlign: "center",
+                color: "black",
+                marginTop: "30vw",
+                margin: 'auto',
+                marginBottom:'5vw',
+                position: "absolute",
+                transform: "translate(-50%, -50%)",
+                fontFamily: "Lato",
+                fontSize: "2vw",
+                lineHeight: "6vw",
+                fontWeight: "bold"*/
+                marginTop: "3vw",
+                textAlign: "start",
+                lineHeight: "3vw",
+                fontSize: "2.3vw",
+                fontWeight: "21.5vw",
+                position: "relative",
+                left: "10vw"
+              }}>Data 198: <i>Intro to Real World Data Science</i>
+              </div>
 
-          <Grid.Row>
-          <div style={{
-            marginTop: "7vw",
-            textAlign: "start",
-            lineHeight: "3vw",
-            fontSize: "2.5vw",
-            fontWeight: "21.5vw",
-            fontWeight: "bold",
-            position: "relative",
-            left: "10vw",
-            //alignText: "center"
-          }}>What project do you work on?
+              <div style={{
+                marginTop: "5vw",
+                marginRight: "20vw",
+                paddingRight:"10vw",
+                textAlign: "start",
+                lineHeight: "3vw",
+                fontSize: "2vw",
+                fontWeight: "21.5vw",
+                position: "relative",
+                left: "10vw"
+              }}>
+                The goal of our DeCal is to provide <b>data science education</b> and <b>experience</b> for students with little to no prior 
+                knowledge of the field. Our course focuses on practical tools not otherwise emphasized in Berkeley’s academic curricula, 
+                and allows for students to explore their domain interests in a semester-long project.
+
+              </div>
+            </Grid.Row>
+
+
+
+
+            <Grid.Row>
+              <div style={{
+                marginTop: "5vw",
+                textAlign: "start",
+                lineHeight: "3vw",
+                fontSize: "2.3vw",
+                fontWeight: "21.5vw",
+                fontWeight: "bold",
+                position: "relative",
+                left: "10vw"
+              }}>What will you learn in the DeCal?
+              </div>
+            </Grid.Row>
+            <Grid.Row>
+              <div style={{
+                marginTop: "0vw",
+                width: "95vw",
+                textAlign: "start",
+                lineHeight: "3vw",
+                fontSize: "2vw",
+                fontWeight: "21.5vw",
+                position: "relative",
+                left: "10vw",
+                //alignText: "center"
+              }}>This semester-long course focuses on introducing students to essential data science skills in an interactive setting. 
+              As a DeCal student, you will learn every step of the data science lifecycle: from formulating a data-centric project idea, 
+              to extracting stories with exploratory data analysis, and finally creating and evaluating predictive models.
+              <br />
+              <br />
+              Using your new skills and knowledge, you will have the opportunity to develop a project of your choosing with other 
+              undergraduate students under a DSS mentor. You will also be able to present your findings and final project at Berkeley’s 
+              semesterly Data Science Research Symposium and publish your project on DSS’s website.
+              </div>
+            </Grid.Row>
+
+            <Grid.Row>
+              <div style={{
+                marginTop: "7vw",
+                textAlign: "start",
+                lineHeight: "3vw",
+                fontSize: "2.5vw",
+                fontWeight: "21.5vw",
+                fontWeight: "bold",
+                position: "relative",
+                left: "10vw",
+                //alignText: "center"
+              }}>What project do you work on?
+              </div>
+            </Grid.Row>
+            <Grid.Row>
+              <div style={{
+                  marginTop: "0vw",
+                  textAlign: "start",
+                  lineHeight: "3vw",
+                  fontSize: "2vw",
+                  fontWeight: "21.5vw",
+                  width:"95vw",
+                  position: "relative",
+                  left: "10vw",
+                  right: "10vw"
+              }}>You may chooes your own project! Decal students in past semesters have worked on projects related to various 
+                different disciplines like Economics, Public Health, Linguistics, Biology, and much more! Feel free to look at 
+                previous projects below for some inspiration. Be creative! 
+              </div>
+            </Grid.Row>
+            <Grid.Row>
+              <div style={{
+                marginTop: "7vw",
+                textAlign: "start",
+                lineHeight: "3vw",
+                fontSize: "2.5vw",
+                fontWeight: "21.5vw",
+                fontWeight: "bold",
+                position: "relative",
+                left: "10vw"
+              }}>Who can take the DeCal?
+              </div>
+            </Grid.Row>
+            <Grid.Row>
+              <div style={{
+                  marginTop: "0vw",
+                  textAlign: "start",
+                  lineHeight: "3vw",
+                  fontSize: "2vw",
+                  fontWeight: "21.5vw",
+                  width:"95vw",
+                  position: "relative",
+                  left: "10vw",
+                  right: "10vw"
+              }}>There are no formal prerequisites for this course. However, it is recommended to have some level of basic programming 
+                experience in Python; many of our past students have taken this DeCal concurrently or after DATA 8. Above all, we are looking for beginners in 
+                data science who are passionate about learning more about the field and willing to dedicate themselves to the required semester-long project.
+              </div>
+            </Grid.Row>
+            <Grid.Row>
+              <div style={{
+                marginTop: "7vw",
+                textAlign: "start",
+                lineHeight: "3vw",
+                fontSize: "2.5vw",
+                fontWeight: "21.5vw",
+                fontWeight: "bold",
+                position: "relative",
+                left: "10vw",
+                right: "10vw"
+              }}>How can you apply?
+              </div>
+            </Grid.Row>
+            <Grid.Row>
+              <div style={{
+                marginTop: "0vw",
+                textAlign: "start",
+                lineHeight: "3vw",
+                fontSize: "2vw",
+                fontWeight: "21.5vw",
+                width:"95vw",
+                position: "relative",
+                left: "10vw",
+                right: "10vw"
+              }}>Our application window will open soon. Visit the "Join Us" page and
+              keep an eye out for our on-campus and virtual events for our timeline!
+              </div>
+            </Grid.Row>
+            <Grid.Row>
+              <div style={{
+                marginTop: "7vw",
+                textAlign: "start",
+                lineHeight: "3vw",
+                fontSize: "2.5vw",
+                fontWeight: "21.5vw",
+                fontWeight: "bold",
+                position: "relative",
+                left: "10vw",
+              }}>Further details
+              </div>
+            </Grid.Row>
+            <Grid.Row>
+              <div style={{
+                marginTop: "0vw",
+                textAlign: "start",
+                lineHeight: "3vw",
+                fontSize: "2vw",
+                fontWeight: "21.5vw",
+                width:"95vw",
+                position: "relative",
+                left: "10vw",
+                right: "10vw"
+              }}>The DeCal is 2 units (P/NP) and there is a mandatory lecture on Tuesdays from 6:30-8:30pm. We allow two unexcused absences 
+              before it affects your grade. The commitments for this course include: homeworks graded on completion, a final project and symposium presentations.
+              </div>
+            </Grid.Row>
+            <Grid.Row>
+              <div style={{
+                marginTop: "5vw",
+                marginBottom: "2vw",
+                textAlign: "start",
+                lineHeight: "3vw",
+                fontSize: "3vw",
+                fontWeight: "21.5vw",
+                fontWeight: "bold",
+                position: "relative",
+                left: "54vw"
+              }}>Our Directors
+              </div>
+            </Grid.Row>
+
+            <Grid.Row>
+              <div style={{
+                textAlign: "center"
+              }}>
+                <Card.Group centered>
+                  <Card style={cardstyle}>
+                    {" "}
+                    <Image style={imagestyle} src={ethan} />
+                    <Card.Content>
+                      <Card.Header style={textstyle}>Ethan Chien</Card.Header>
+                      <Card.Meta style={{ marginTop: "1vw" }}>
+                        <span style={{ roleStyle }}>
+                          Director of Academic Development
+                        </span>
+                      </Card.Meta>
+                    </Card.Content>
+                    <Card.Content extra>
+                      <a href="mailto:ekchien0@berkeley.edu">
+                        <Icon name="mail" />
+                      </a>
+                      <a href="https://www.linkedin.com/in/ethan-chien-091a1a206/">
+                        <Icon name="linkedin" />
+                      </a>
+                    </Card.Content>
+                  </Card>
+                  <Card style={cardstyle}>
+                    {" "}
+                    <Image style={imagestyle} src={aarthi} />
+                    <Card.Content>
+                      <Card.Header style={textstyle}>Aarthi Kannan</Card.Header>
+                      <Card.Meta style={{ marginTop: "1vw" }}>
+                        <span style={{ roleStyle }}>
+                          Director of Academic Development
+                        </span>
+                      </Card.Meta>
+                    </Card.Content>
+                    <Card.Content extra>
+                      <a href="mailto:aarthikannan@berkeley.edu">
+                        <Icon name="mail" />
+                      </a>
+                      <a href="https://www.linkedin.com/in/aarthikannan526/">
+                        <Icon name="linkedin" />
+                      </a>
+                    </Card.Content>
+                  </Card>
+                  <Card style={cardstyle}>
+                    {" "}
+                    <Image style={imagestyle} src={austin} />
+                    <Card.Content>
+                      <Card.Header style={textstyle}>Austin Nicola Ardisaputra</Card.Header>
+                      <Card.Meta style={{ marginTop: "1vw" }}>
+                        <span style={{ roleStyle }}>
+                          Director of Academic Development
+                        </span>
+                      </Card.Meta>
+                    </Card.Content>
+                    <Card.Content extra>
+                      <a href="mailto:aardisaputra@berkeley.edu">
+                        <Icon name="mail" />
+                      </a>
+                      <a href="https://www.linkedin.com/in/aardisaputra/">
+                        <Icon name="linkedin" />
+                      </a>
+                    </Card.Content>
+                  </Card>
+                </Card.Group>
+              </div>
+            </Grid.Row>
+          </Grid>
+          <div class="footerSpacer" style={{
+            height: "40vw",
+          }}>
+            <img src={linesTwo} style={{
+              position: "absolute",
+              width: "180vw",
+              left: "-10vw",
+              marginTop: "5vw",
+              zIndex: "2",
+              height: "40vw",
+            }}></img>
           </div>
-          </Grid.Row>
-          <Grid.Row>
-          <div style={{
-              marginTop: "0vw",
-              textAlign: "start",
-              lineHeight: "3vw",
-              fontSize: "2vw",
-              fontWeight: "21.5vw",
-              width:"95vw",
-              position: "relative",
-              left: "10vw",
-              right: "10vw"
-            }}>You may chooes your own project! Decal students in past semesters have worked on projects related to various 
-            different disciplines like Economics, Public Health, Linguistics, Biology, and much more! Feel free to look at 
-            previous projects below for some inspiration. Be creative! 
-            </div>
-          </Grid.Row>
-
-          <Grid.Row>
-          <div style={{
-            marginTop: "7vw",
-            textAlign: "start",
-            lineHeight: "3vw",
-            fontSize: "2.5vw",
-            fontWeight: "21.5vw",
-            fontWeight: "bold",
-            position: "relative",
-            left: "10vw"
-          }}>Who can take the DeCal?
-          </div>
-          </Grid.Row>
-          <Grid.Row>
-          <div style={{
-              marginTop: "0vw",
-              textAlign: "start",
-              lineHeight: "3vw",
-              fontSize: "2vw",
-              fontWeight: "21.5vw",
-              width:"95vw",
-              position: "relative",
-              left: "10vw",
-              right: "10vw"
-            }}>There are no formal prerequisites for this course. However, it is recommended to have some level of basic programming 
-            experience in Python; many of our past students have taken this DeCal concurrently or after DATA 8. Above all, we are looking for beginners in 
-            data science who are passionate about learning more about the field and willing to dedicate themselves to the required semester-long project.
-            </div>
-          </Grid.Row>
-
-          <Grid.Row>
-          <div style={{
-            marginTop: "7vw",
-            textAlign: "start",
-            lineHeight: "3vw",
-            fontSize: "2.5vw",
-            fontWeight: "21.5vw",
-            fontWeight: "bold",
-            position: "relative",
-            left: "10vw",
-            right: "10vw"
-          }}>How can you apply?
-          </div>
-          </Grid.Row>
-          <Grid.Row>
-          <div style={{
-              marginTop: "0vw",
-              textAlign: "start",
-              lineHeight: "3vw",
-              fontSize: "2vw",
-              fontWeight: "21.5vw",
-              width:"95vw",
-              position: "relative",
-              left: "10vw",
-              right: "10vw"
-            }}>Our application window will open soon. Visit the "Join Us" page and
-            keep an eye out for our on-campus and virtual events for our timeline!
-            </div>
-          </Grid.Row>
-
-
-          <Grid.Row>
-          <div style={{
-            marginTop: "7vw",
-            textAlign: "start",
-            lineHeight: "3vw",
-            fontSize: "2.5vw",
-            fontWeight: "21.5vw",
-            fontWeight: "bold",
-            position: "relative",
-            left: "10vw",
-          }}>Further details
-          </div>
-          </Grid.Row>
-          <Grid.Row>
-          <div style={{
-              marginTop: "0vw",
-              textAlign: "start",
-              lineHeight: "3vw",
-              fontSize: "2vw",
-              fontWeight: "21.5vw",
-              width:"95vw",
-              position: "relative",
-              left: "10vw",
-              right: "10vw"
-            }}>The DeCal is 2 units (P/NP) and there is a mandatory lecture on Tuesdays from 6:30-8:30pm. We allow two unexcused absences 
-            before it affects your grade. The commitments for this course include: homeworks graded on completion, a final project and symposium presentations.
-            </div>
-          </Grid.Row>
-
-
-          <Grid.Row>
-          <div style={{
-            marginTop: "5vw",
-            marginBottom: "2vw",
-            textAlign: "start",
-            lineHeight: "3vw",
-            fontSize: "3vw",
-            fontWeight: "21.5vw",
-            fontWeight: "bold",
-            position: "relative",
-            left: "54vw"
-          }}>Our Directors
-          </div>
-          </Grid.Row>
-
-              {/*<Grid.Column>
-                <div style={{ textAlign: "center", marginTop: "10vw",}}>
-                  {CustomTitleBlack({ title: "Schedule" })}
-
-                  <div style={{margin: "0 auto", maxWidth: "22vw"}}>
-                    <Image src={gmLine2}></Image>
-                  </div>
-
-                  <div style={{margin: "0 auto", maxWidth: "22vw"}}>
-                    <h1>(Fall 2021)</h1>
-                  </div>
-                </div>
-
-          </Grid.Column>
-
-              <Grid.Column>
-
-                <Image
-                  src={light}
-                  style={{
-                    top: "10%",
-                    left: "62%",
-                    marginTop: "-1vw",
-                  //down: "30%",
-                  //marginTop: "10vw",
-                  }}>
-                </Image>
-              </Grid.Column>*/}
-          
-
-
-
-          {/*<Grid.Row style={{ marginTop: "6vw", textAlign: "start", marginBottom: "4vw" }}>
-          {CustomTitleBlack({ title: "Course Staff" })}
-
-
-            </Grid.Row>*/}
-          
-          <Grid.Row>
-          <div style={{
-            textAlign: "center"
-          }}
-          >
-          
-            <Card.Group centered>
-              <Card style={cardstyle}>
-                {" "}
-                <Image style={imagestyle} src={ethan} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Ethan Chien</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={{ roleStyle }}>
-                      Director of Academic Development
-                    </span>
-                  </Card.Meta>
-                </Card.Content>
-                <Card.Content extra>
-                  <a href="mailto:ekchien0@berkeley.edu">
-                    <Icon name="mail" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/ethan-chien-091a1a206/">
-                    <Icon name="linkedin" />
-                  </a>
-                </Card.Content>
-              </Card>
-              <Card style={cardstyle}>
-                {" "}
-                <Image style={imagestyle} src={aarthi} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Aarthi Kannan</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={{ roleStyle }}>
-                      Director of Academic Development
-                    </span>
-                  </Card.Meta>
-                </Card.Content>
-                <Card.Content extra>
-                  <a href="mailto:aarthikannan@berkeley.edu">
-                    <Icon name="mail" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/aarthikannan526/">
-                    <Icon name="linkedin" />
-                  </a>
-                </Card.Content>
-              </Card>
-              <Card style={cardstyle}>
-                {" "}
-                <Image style={imagestyle} src={austin} />
-                <Card.Content>
-                  <Card.Header style={textstyle}>Austin Nicola Ardisaputra</Card.Header>
-                  <Card.Meta style={{ marginTop: "1vw" }}>
-                    <span style={{ roleStyle }}>
-                      Director of Academic Development
-                    </span>
-                  </Card.Meta>
-                </Card.Content>
-                <Card.Content extra>
-                  <a href="mailto:aardisaputra@berkeley.edu">
-                    <Icon name="mail" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/aardisaputra/">
-                    <Icon name="linkedin" />
-                  </a>
-                </Card.Content>
-              </Card>
-            </Card.Group>
-            
-            </div>
-          </Grid.Row>
-          
-      </Grid>
-    </div>
+        </div>
+      </div>
     );
   }
 }
