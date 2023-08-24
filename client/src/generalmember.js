@@ -53,7 +53,7 @@ const gridoffset = {
   marginLeft: "62px",
   marginTop: "42px",
   textAlign: "center",
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
 };
 
 // Lecture list
@@ -69,7 +69,7 @@ const gridoffset = {
 
 // Styles
 const mybigtext = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "normal",
   lineHeight: "7vw",
   fontSize: "4.5vw",
@@ -81,7 +81,7 @@ const mybigtext = {
 };
 
 const button = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   lineHeight: "29px",
   fontSize: "24px",
@@ -104,7 +104,7 @@ const imagestyle = {
   maxWidth: "28vw",
 };
 const textstyle = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   fontSize: "3vw",
   lineHeight: "3vw",
@@ -113,7 +113,7 @@ const textstyle = {
 };
 
 const roleStyle = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   fontSize: "2vw",
   lineHeight: "2vw",
@@ -121,14 +121,14 @@ const roleStyle = {
 };
 const mymidtext = {
   marginBottom: "3.5vw",
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontStyle: "normal",
   fontWeight: "600",
   fontSize: "1.5vw",
   lineHeight: "2vw",
 };
 const link = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   lineHeight: "6vw",
   fontSize: "3vw",
@@ -137,7 +137,7 @@ const link = {
   textAlign: "center",
 };
 const headTextStyle = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   fontSize: "2vw",
   lineHeight: "2vw",
@@ -146,7 +146,7 @@ const headTextStyle = {
   //fontWeight: "bold",
 };
 const inTextLink = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "bold",
   lineHeight: "2vw",
   fontSize: "2vw",
@@ -156,7 +156,7 @@ const inTextLink = {
 
 };
 const titletext = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "bold",
   lineHeight: "3vw",
   fontSize: "3vw",
@@ -169,7 +169,7 @@ const titletext = {
 };
 
 const aboutstats = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "bold",
   fontSize: "4.8vw",
   lineHeight: "3vw",
@@ -185,7 +185,7 @@ const aboutstats = {
 };
 
 const aboutstats2 = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "bold",
   fontSize: "4.8vw",
   color: "#FFC54A",
@@ -195,7 +195,7 @@ const aboutstats2 = {
 };
 
 const aboutstats3 = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "normal",
   fontSize: "2vw",
   lineHeight: "3vw",
@@ -212,7 +212,7 @@ const aboutstats3 = {
 };
 
 const aboutstats4 = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "normal",
   fontSize: "2vw",
   color: "000000",
@@ -332,7 +332,7 @@ class DecalLearn extends Component {
           //marginTop: "5vw",
           position: "relative",
           //transform: "translate(-50%, -50%)",
-          fontFamily: "Montserrat",
+          fontFamily: "Lato",
           fontWeight: "bold",
           fontSize: "5vw",
           lineHeight: "6vw",
@@ -356,7 +356,7 @@ class DecalLearn extends Component {
             marginBottom:'5vw',
             position: "absolute",
             transform: "translate(-50%, -50%)",
-            fontFamily: "Montserrat",
+            fontFamily: "Lato",
             fontSize: "2vw",
             lineHeight: "6vw",
             fontWeight: "bold"*/
@@ -408,7 +408,7 @@ class DecalLearn extends Component {
             </Grid.Row>
             <Grid.Row>
             <div style={{
-              marginTop: "3w",
+              marginTop: "0vw",
               width: "95vw",
               textAlign: "start",
               lineHeight: "3vw",
@@ -430,7 +430,7 @@ class DecalLearn extends Component {
 
           <Grid.Row>
           <div style={{
-            marginTop: "10vw",
+            marginTop: "7vw",
             textAlign: "start",
             lineHeight: "3vw",
             fontSize: "2.5vw",
@@ -444,7 +444,7 @@ class DecalLearn extends Component {
           </Grid.Row>
           <Grid.Row>
           <div style={{
-              marginTop: "3vw",
+              marginTop: "0vw",
               textAlign: "start",
               lineHeight: "3vw",
               fontSize: "2vw",
@@ -461,7 +461,7 @@ class DecalLearn extends Component {
 
           <Grid.Row>
           <div style={{
-            marginTop: "10vw",
+            marginTop: "7vw",
             textAlign: "start",
             lineHeight: "3vw",
             fontSize: "2.5vw",
@@ -474,7 +474,7 @@ class DecalLearn extends Component {
           </Grid.Row>
           <Grid.Row>
           <div style={{
-              marginTop: "3vw",
+              marginTop: "0vw",
               textAlign: "start",
               lineHeight: "3vw",
               fontSize: "2vw",
@@ -491,7 +491,7 @@ class DecalLearn extends Component {
 
           <Grid.Row>
           <div style={{
-            marginTop: "10vw",
+            marginTop: "7vw",
             textAlign: "start",
             lineHeight: "3vw",
             fontSize: "2.5vw",
@@ -505,7 +505,7 @@ class DecalLearn extends Component {
           </Grid.Row>
           <Grid.Row>
           <div style={{
-              marginTop: "3vw",
+              marginTop: "0vw",
               textAlign: "start",
               lineHeight: "3vw",
               fontSize: "2vw",
@@ -522,7 +522,7 @@ class DecalLearn extends Component {
 
           <Grid.Row>
           <div style={{
-            marginTop: "10vw",
+            marginTop: "7vw",
             textAlign: "start",
             lineHeight: "3vw",
             fontSize: "2.5vw",
@@ -535,7 +535,7 @@ class DecalLearn extends Component {
           </Grid.Row>
           <Grid.Row>
           <div style={{
-              marginTop: "3vw",
+              marginTop: "0vw",
               textAlign: "start",
               lineHeight: "3vw",
               fontSize: "2vw",
@@ -556,11 +556,11 @@ class DecalLearn extends Component {
             marginBottom: "2vw",
             textAlign: "start",
             lineHeight: "3vw",
-            fontSize: "2.5vw",
+            fontSize: "3vw",
             fontWeight: "21.5vw",
             fontWeight: "bold",
             position: "relative",
-            left: "56vw"
+            left: "54vw"
           }}>Our Directors
           </div>
           </Grid.Row>

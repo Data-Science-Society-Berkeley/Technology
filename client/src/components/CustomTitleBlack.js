@@ -6,7 +6,7 @@ function CustomTitleBlack(props) {
     <Grid.Row id={props.id} style={{ marginTop: "4vw" }} centered>
       <Grid.Column
         style={{
-          fontFamily: "Montserrat",
+          fontFamily: "Lato",
           fontWeight: 900,
           lineHeight: "5.5vw",
           fontSize: "4vw",

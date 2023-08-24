@@ -62,7 +62,7 @@ const banner = {
 const bannerText = {
   color: "white",
   fontSize: "64px",
-  fontFamily: "Montserrat", 
+  fontFamily: "Lato", 
   fontWeight: "600",
   position: "absolute",
   top: "-7vw",
@@ -101,7 +101,7 @@ const whiteSpaceText = {
   color: "black",
   fontSize: "max(3vw, 28px)",
   fontWeight: "Bold",
-  fontFamily: "Montserrat", 
+  fontFamily: "Lato", 
   gridColumn: "span 3",
 
 }
@@ -109,12 +109,12 @@ const gridoffset = {
   marginLeft: "5vw",
   // marginTop: "5vw",
   textAlign: "center",
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   position: "relative",
   marginBottom: "33vw",
 };
 const mybigtext = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 600,
   lineHeight: "8vw",
   fontSize: "4vw",
@@ -125,7 +125,7 @@ const mybigtext = {
   marginLeft: "3vw",
 };
 const mymidtext = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   lineHeight: "6vw",
   fontSize: "3vw",
@@ -137,7 +137,7 @@ const mymidtext = {
 };
 
 const mylittletext = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 400,
   lineHeight: "2vw",
   fontSize: "2vw",
@@ -149,7 +149,7 @@ const mylittletext = {
 };
 
 const link = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 400,
   lineHeight: "2vw",
   fontSize: "2vw",
@@ -162,7 +162,7 @@ const link = {
 };
 
 const overlaytext = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "normal",
   lineHeight: "5vw",
   fontWeight: 500,
@@ -175,7 +175,7 @@ const overlaytext = {
 };
 
 const overlaytextCustom = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "normal",
   lineHeight: "5vw",
   fontWeight: 500,
@@ -188,7 +188,7 @@ const overlaytextCustom = {
 };
 
 const underlaytext = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   lineHeight: "2.5vw",
   fontSize: "2.5vw",
@@ -199,7 +199,7 @@ const underlaytext = {
 };
 const apply = {
   minWidth: "15vw",
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 600,
   lineHeight: "4vw",
   fontSize: "2.5vw",
@@ -211,7 +211,7 @@ const apply = {
 };
 const learn = {
   maxWidth: "26vw",
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 600,
   lineHeight: "4vw",
   fontSize: "2.5vw",
@@ -235,7 +235,7 @@ const formStyle = {
 const buttonStyle = {
   width: "21vw",
   height: "5vw",
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   lineHeight: "2.5vw",
   fontSize: "1.5vw",
@@ -252,7 +252,7 @@ const value_card = {
   height: "22vw",
   width: "22vw",
   // minHeight: "20vw",
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   lineHeight: "4vw",
   fontSize: "2.5vw",
@@ -301,7 +301,7 @@ class CentralText extends Component {
       <Card style={value_card}>
         <Card.Header
           style={{
-            fontFamily: "Montserrat",
+            fontFamily: "Lato",
             fontStyle: "normal",
             fontWeight: "45vw",
             fontSize: "4vw",
@@ -315,7 +315,7 @@ class CentralText extends Component {
         <Link to="/services">
           <Card.Description
             style={{
-              fontFamily: "Montserrat",
+              fontFamily: "Lato",
               fontStyle: "normal",
               fontWeight: "40vw",
               fontSize: "2vw",
@@ -334,7 +334,7 @@ class CentralText extends Component {
       <Card style={value_card}>
         <Card.Header
           style={{
-            fontFamily: "Montserrat",
+            fontFamily: "Lato",
             fontStyle: "normal",
             fontWeight: "45vw",
             fontSize: "4vw",
@@ -348,7 +348,7 @@ class CentralText extends Component {
         <Link to="/services">
           <Card.Description
             style={{
-              fontFamily: "Montserrat",
+              fontFamily: "Lato",
               fontStyle: "normal",
               fontWeight: "40vw",
               fontSize: "2vw",
@@ -367,7 +367,7 @@ class CentralText extends Component {
       <Card style={value_card}>
         <Card.Header
           style={{
-            fontFamily: "Montserrat",
+            fontFamily: "Lato",
             fontStyle: "normal",
             fontWeight: "45vw",
             fontSize: "4vw",
@@ -381,7 +381,7 @@ class CentralText extends Component {
         <Link to="/services">
           <Card.Description
             style={{
-              fontFamily: "Montserrat",
+              fontFamily: "Lato",
               fontStyle: "normal",
               fontWeight: "40vw",
               fontSize: "2vw",

@@ -86,12 +86,12 @@ let endpoint = "http://localhost:8080";
 const gridoffset = {
   marginTop: "3vw",
   textAlign: "center",
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   gridTemplateColumns:"repeat(5, 1fr)",
 };
 
 const mybigtext = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 500,
   lineHeight: "78px",
   fontSize: "64px",
@@ -99,7 +99,7 @@ const mybigtext = {
   fontStyle: "normal",
 };
 const header = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 500,
   lineHeight: "78px",
   fontSize: "64px",
@@ -119,7 +119,7 @@ const imagestyle = {
   objectFit: "cover",
 };
 const textstyle = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   fontSize: "3vw",
   lineHeight: "3vw",
@@ -128,7 +128,7 @@ const textstyle = {
 };
 
 const roleStyle = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   fontSize: "2vw",
   lineHeight: "2vw",
@@ -136,7 +136,7 @@ const roleStyle = {
 };
 
 const execstyle1 = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "normal",
   fontSize: "2.5vw",
   lineHeight: "3vw",
@@ -153,7 +153,7 @@ const execstyle1 = {
   // objectFit: "cover",
 };
 const execstyle2 = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "normal",
   fontSize: "2.5vw",
   lineHeight: "3vw",
@@ -167,7 +167,7 @@ const execstyle2 = {
   backgroundSize: "contain",
 };
 const execstyle3 = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "normal",
   fontSize: "2.5vw",
   lineHeight: "3vw",
@@ -180,7 +180,7 @@ const execstyle3 = {
   backgroundSize: "contain",
 };
 const execstyle4 = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "normal",
   fontSize: "2.5vw",
   lineHeight: "3vw",
@@ -193,7 +193,7 @@ const execstyle4 = {
   backgroundSize: "contain",
 };
 const execstyle5 = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "normal",
   fontSize: "2.5vw",
   lineHeight: "3vw",
@@ -206,7 +206,7 @@ const execstyle5 = {
   backgroundSize: "contain",
 };
 const execstyle6 = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "normal",
   fontSize: "2.5vw",
   lineHeight: "3vw",
@@ -219,7 +219,7 @@ const execstyle6 = {
   backgroundSize: "contain",
 };
 const aboutlinks = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "600",
   fontSize: "2vw",
   lineHeight: "3vw",
@@ -234,7 +234,7 @@ const aboutlinks = {
 };
 
 const aboutlinks2 = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "600",
   fontSize: "2.5vw",
   color: "black",
@@ -245,7 +245,7 @@ const aboutlinks2 = {
 };
 
 const aboutlinks3 = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "600",
   fontSize: "2vw",
   lineHeight: "3vw",
@@ -260,7 +260,7 @@ const aboutlinks3 = {
 };
 
 const aboutstats = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "bold",
   fontSize: "4.8vw",
   lineHeight: "3vw",
@@ -276,7 +276,7 @@ const aboutstats = {
 };
 
 const aboutstats2 = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "bold",
   fontSize: "4.8vw",
   color: "#FFC54A",
@@ -286,7 +286,7 @@ const aboutstats2 = {
 };
 
 const aboutstats3 = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "normal",
   fontSize: "2vw",
   lineHeight: "3vw",
@@ -303,7 +303,7 @@ const aboutstats3 = {
 };
 
 const aboutstats4 = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "normal",
   fontSize: "2vw",
   color: "000000",
@@ -322,7 +322,7 @@ const overlayboxes = {
   width: "284px",
   marginLeft: "150px",
   marginBottom: "70px",
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontSize: "20px",
 };
 
@@ -335,7 +335,7 @@ var circleStyle = {
   borderRadius: "50%",
   width: 100,
   height: 100,
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontStyle: "normal",
   fontWeight: "600",
   fontSize: "72px",
@@ -580,7 +580,7 @@ const leadershipCards = [
 ];
 
 const mymidtext = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   lineHeight: "73px",
   fontSize: "48px",
@@ -736,12 +736,12 @@ class About extends Component {
           //marginTop: "5vw",
           position: "absolute",
           // transform: "translate(-50%, -50%)",
-          fontFamily: "Montserrat",
+          fontFamily: "Lato",
           fontWeight: "bold",
           fontSize: "6vw",
           lineHeight: "6vw",
         }}
-        >About Us
+        >ABOUT US
         </h1>
         {/* <div>
           <Image src={bottomleft}
@@ -812,7 +812,7 @@ class About extends Component {
                 top: "25vw",
                 left: "1vw",
                 zIndex: "3",
-                fontFamily: "Montserrat",
+                fontFamily: "Lato",
                 fontStyle: "43vw",
                 fontWeight: "bold",
                 fontSize: "2vw",
@@ -844,9 +844,9 @@ class About extends Component {
                 top: "22vw",
                 left: "23vw",
                 zIndex: "4",
-                fontFamily: "Montserrat",
+                fontFamily: "Lato",
                 fontStyle: "normal",
-                fontWeight: "normal",
+                fontWeight: "400",
                 fontSize: "2.1vw",
                 lineHeight: "2.5vw",
                 color: "black",
@@ -917,7 +917,7 @@ class About extends Component {
               top: "15vw",
               left: "1vw",
               zIndex: "3",
-              fontFamily: "Montserrat",
+              fontFamily: "Lato",
               fontStyle: "43vw",
               fontWeight: "bold",
               fontSize: "2vw",
@@ -940,7 +940,7 @@ class About extends Component {
               top: "13vw",
               left: "23vw",
               zIndex: "4",
-              fontFamily: "Montserrat",
+              fontFamily: "Lato",
               fontStyle: "normal",
               fontWeight: "normal",
               fontSize: "2.1vw",
@@ -975,7 +975,7 @@ class About extends Component {
               top: "15vw",
               left: "44vw",
               zIndex: "3",
-              fontFamily: "Montserrat",
+              fontFamily: "Lato",
               fontStyle: "43vw",
               fontWeight: "bold",
               fontSize: "3vw",
@@ -1008,7 +1008,7 @@ class About extends Component {
             top: "50vw",
             left: "1.5vw",
             zIndex: "3",
-            fontFamily: "Montserrat",
+            fontFamily: "Lato",
             fontStyle: "43vw",
             fontWeight: "bold",
             fontSize: "2vw",
@@ -1029,7 +1029,7 @@ class About extends Component {
             top: "50vw",
             left: "28vw",
             zIndex: "4",
-            fontFamily: "Montserrat",
+            fontFamily: "Lato",
             fontStyle: "normal",
             fontWeight: "normal",
             fontSize: "2.1vw",
@@ -1057,7 +1057,7 @@ class About extends Component {
             top: "50vw",
             left: "1vw",
             zIndex: "3",
-            fontFamily: "Montserrat",
+            fontFamily: "Lato",
             fontStyle: "43vw",
             fontWeight: "bold",
             fontSize: "2vw",
@@ -1078,7 +1078,7 @@ class About extends Component {
             top: "50vw",
             left: "26vw",
             zIndex: "4",
-            fontFamily: "Montserrat",
+            fontFamily: "Lato",
             fontStyle: "normal",
             fontWeight: "normal",
             fontSize: "2.1vw",
@@ -1107,7 +1107,7 @@ class About extends Component {
             top: "50vw",
             left: "1vw",
             zIndex: "3",
-            fontFamily: "Montserrat",
+            fontFamily: "Lato",
             fontStyle: "43vw",
             fontWeight: "bold",
             fontSize: "2vw",
@@ -1128,7 +1128,7 @@ class About extends Component {
             top: "50vw",
             left: "26vw",
             zIndex: "4",
-            fontFamily: "Montserrat",
+            fontFamily: "Lato",
             fontStyle: "normal",
             fontWeight: "normal",
             fontSize: "2.1vw",
@@ -1171,7 +1171,7 @@ class About extends Component {
               top: "0vw",
               left: "38vw",
               zIndex: "3",
-              fontFamily: "Montserrat",
+              fontFamily: "Lato",
               fontStyle: "43vw",
               fontWeight: "bold",
               fontSize: "3.5vw",
@@ -1212,7 +1212,7 @@ class About extends Component {
               top: "0vw",
               left: "29vw",
               zIndex: "3",
-              fontFamily: "Montserrat",
+              fontFamily: "Lato",
               fontStyle: "43vw",
               fontWeight: "bold",
               fontSize: "3.5vw",
@@ -1268,7 +1268,7 @@ class About extends Component {
               style={{
                 textShadow: "none",
                 width: "60vw",
-                fontFamily: "Montserrat",
+                fontFamily: "Lato",
                 fontStyle: "43vw",
                 fontWeight: "bold",
                 fontSize: "3.5vw",
@@ -1393,7 +1393,7 @@ class About extends Component {
                 top: "0vw",
                 left: "46vw",
                 zIndex: "3",
-                fontFamily: "Montserrat",
+                fontFamily: "Lato",
                 fontStyle: "43vw",
                 fontWeight: "bold",
                 fontSize: "2.5vw",

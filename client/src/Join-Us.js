@@ -43,7 +43,7 @@ const gridoffset = {
   marginLeft: "62px",
   marginTop: "42px",
   textAlign: "center",
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
 };
 
 const headerbox = {
@@ -90,7 +90,7 @@ const overlayboxes2 = {
 };
 
 const cardHeader = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 500,
   lineHeight: "3vw",
   fontSize: "2.5vw",
@@ -104,7 +104,7 @@ const cardDescription = {
   // marginBottom: "10vw",
   marginLeft: "1.5vw",
   marginRight: "1.5vw",
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontSize: "1.5vw",
   lineHeight: "2vw",
   textAlign: "center",
@@ -126,7 +126,7 @@ var circleStyle = {
   borderRadius: "50%",
   width: "8vw",
   height: "8vw",
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontStyle: "normal",
   fontWeight: "43vw",
   fontSize: "5vw",
@@ -136,7 +136,7 @@ var circleStyle = {
 };
 
 const mybigtext = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 600,
   lineHeight: "97px",
   fontSize: "64px",
@@ -149,7 +149,7 @@ const mybigtext = {
 };
 
 const mymidtext = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   lineHeight: "44px",
   fontSize: "36px",
@@ -158,7 +158,7 @@ const mymidtext = {
   marginTop: "19px",
 };
 const consult = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   lineHeight: "2vw",
   fontSize: "1.5vw",
@@ -170,7 +170,7 @@ const consult = {
   verticalAlign: "middle",
 };
 const smallconsult = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   lineHeight: "22px",
   fontSize: "18px",
@@ -194,7 +194,7 @@ const imagestyle = {
   maxWidth: "28vw",
 };
 const textstyle = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   fontSize: "3vw",
   lineHeight: "3vw",
@@ -203,7 +203,7 @@ const textstyle = {
 };
 
 const roleStyle = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   fontSize: "2vw",
   lineHeight: "2vw",
@@ -211,7 +211,7 @@ const roleStyle = {
 };
 
 const link = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   lineHeight: "78px",
   fontSize: "64px",
@@ -281,7 +281,7 @@ class Join extends Component {
           //marginTop: "5vw",
           position: "absolute",
           // transform: "translate(-50%, -50%)",
-          fontFamily: "Montserrat",
+          fontFamily: "Lato",
           fontWeight: "bold",
           fontSize: "6vw",
           lineHeight: "6vw",
@@ -344,7 +344,7 @@ class Join extends Component {
                   // fontSize: "2vw",
                   // lineHeight: "2vw",
                   // fontWeight: "21.5vw",
-                  fontFamily: "Montserrat",
+                  fontFamily: "Lato",
                   margintop: "10vw"
                 }}
               >
@@ -380,7 +380,7 @@ class Join extends Component {
                     fontSize: "3.5vw",
                     lineHeight: "4vw",
                     fontWeight: "21vw",
-                    fontFamily: "Montserrat",
+                    fontFamily: "Lato",
                     marginTop: "4vw",
                     // marginLeft: "2vw",
                     // marginRight: "2vw",
@@ -402,7 +402,7 @@ class Join extends Component {
                   // fontSize: "2vw",
                   // lineHeight: "2vw",
                   // fontWeight: "21.5vw",
-                  fontFamily: "Montserrat",
+                  fontFamily: "Lato",
                 }}
               >
                 <div
@@ -438,7 +438,7 @@ class Join extends Component {
                     fontSize: "3.5vw",
                     lineHeight: "4vw",
                     fontWeight: "21vw",
-                    fontFamily: "Montserrat",
+                    fontFamily: "Lato",
                     marginTop: "4vw",
                     // marginLeft: "3vw",
                     // marginRight: "2vw",
@@ -465,7 +465,7 @@ class Join extends Component {
                 fontSize: "2vw",
                 fontWeight: "21vw",
                 fontStyle: "normal",
-                fontFamily: "Montserrat",
+                fontFamily: "Lato",
                 marginLeft: "50vw",
                 marginRight: "50vw",
                 width: "100vw",
@@ -539,19 +539,18 @@ class Join extends Component {
                   borderRadius: "1.5vw",
                   width: "100%",
                   height: "5vw",
-                  marginTop: "8vw",
+                  marginTop: "11vw",
                   // marginBottom: "1%",
                   marginLeft: "50%",
                   marginRight: "1vw",
                   fontSize: "2.5vw",
                   lineHeight: "2vw",
                   fontWeight: 200,
-                  fontFamily: "Montserrat",
+                  fontFamily: "Lato",
                 }}>
                   <div
                     style={{
-                      marginTop: "-0.5vw",
-                      marginBottom: "-0.5vw",
+                      marginTop: "-1vw",
                       marginLeft: "0vw",
                       marginRight: "0vw",
                     }}
@@ -576,22 +575,21 @@ class Join extends Component {
                   background: "#FFFFFF",
                   border: "0.5vw solid #FFC54A",
                   boxSizing: "border-box",
-                  borderRadius: "3vw",
+                  borderRadius: "1.5vw",
                   width: "100%",
                   height: "5vw",
-                  marginTop: "4vw",
+                  marginTop: "6vw",
                   // marginBottom: "1%",
                   marginLeft: "50%",
                   marginRight: "1vw",
                   fontSize: "2.5vw",
                   lineHeight: "2vw",
                   fontWeight: 200,
-                  fontFamily: "Montserrat",
+                  fontFamily: "Lato",
                 }}>
                   <div
                     style={{
-                      marginTop: "-0.5vw",
-                      marginBottom: "-0.5vw",
+                      marginTop: "-1vw",
                       marginLeft: "0vw",
                       marginRight: "0vw",
                     }}
@@ -616,7 +614,7 @@ class Join extends Component {
                   background: "#FFFFFF",
                   border: "0.5vw solid #8CD6D1",
                   boxSizing: "border-box",
-                  borderRadius: "3vw",
+                  borderRadius: "1.5vw",
                   position: "relative",
                   width: "100%",
                   height: "5vw",
@@ -627,12 +625,11 @@ class Join extends Component {
                   fontSize: "2.5vw",
                   lineHeight: "2vw",
                   fontWeight: 200,
-                  fontFamily: "Montserrat",
+                  fontFamily: "Lato",
                 }}>
                   <div
                     style={{
-                      marginTop: "-0.5vw",
-                      marginBottom: "-0.5vw",
+                      marginTop: "-1vw",
                       marginLeft: "0vw",
                       marginRight: "0vw",
                     }}
@@ -673,7 +670,7 @@ class Join extends Component {
                   fontSize: "2.5vw",
                   lineHeight: "2vw",
                   fontWeight: 200,
-                  fontFamily: "Montserrat",
+                  fontFamily: "Lato",
                 }}>
                   <div
                     style={{
@@ -701,7 +698,7 @@ class Join extends Component {
                   fontSize: "2.5vw",
                   lineHeight: "2vw",
                   fontWeight: 200,
-                  fontFamily: "Montserrat",
+                  fontFamily: "Lato",
                 }}>
                   <div
                     style={{
@@ -733,7 +730,7 @@ class Join extends Component {
 
           {CustomTitleBlack({ title: "Resource Packet" })}
           <div style= {{maxWidth: "50vw"}}>
-            <Image src={ClientLine}></Image>
+            {/* <Image src={ClientLine}></Image> */}
           </div>
 
           <Grid.Row style={{ marginLeft: "5vw", marginRight: "5vw" }}>
@@ -751,7 +748,7 @@ class Join extends Component {
                 fontWeight: "21vw",
                 position: "relative",
                 fontStyle: "normal",
-                fontFamily: "Montserrat",
+                fontFamily: "Lato",
                 marginLeft: "6vw",
                 marginRight: "6vw",
               }}
@@ -770,7 +767,7 @@ class Join extends Component {
           
           {CustomTitleBlack({ title: "Frequently Asked Questions" })}
           <div style= {{maxWidth: "50vw"}}>
-            <Image src={ClientLine}></Image>
+            {/* <Image src={ClientLine}></Image> */}
           </div>
 
           <Grid.Row style={{ marginLeft: "5vw", marginRight: "5vw" }}>
@@ -788,7 +785,7 @@ class Join extends Component {
                 fontWeight: "21vw",
                 position: "relative",
                 fontStyle: "normal",
-                fontFamily: "Montserrat",
+                fontFamily: "Lato",
                 marginLeft: "6vw",
                 marginRight: "6vw",
               }}

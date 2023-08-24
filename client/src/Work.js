@@ -20,13 +20,16 @@ import event4 from "./Events/dssdatathon-img.jpg";
 import event3 from "./Events/dssdatathon-crop.jpg";
 import event2 from "./Events/operationanalytics-img.jpg";
 import event1 from "./Events/operationanalyticseventbannerdss.jpg";
+
+import linesOne from "./Homepage/linesOne.png";
+
 const localizer = momentLocalizer(moment);
 let endpoint = "http://localhost:8080";
 const gridoffset = {
   marginLeft: "62px",
   marginTop: "42px",
   textAlign: "center",
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
 };
 
 const ColoredDateCellWrapper = ({ children }) =>
@@ -41,41 +44,41 @@ const bluediv = {
   background: "#8CD6D1",
 };
 const rightcol = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontStyle: "normal",
-  fontWeight: "300",
-  fontSize: "1vw",
-  lineHeight: "1.5vw",
+  fontWeight: "normal",
+  fontSize: "1.7vw",
+  lineHeight: "2.2vw",
   color: "#000000",
   textAlign: "left",
   marginRight: "20%",
   marginLeft: "14%",
 };
 const mybigtext = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: "normal",
   lineHeight: "7vw",
   fontSize: "4.5vw",
-  color: "#8CD6D1",
+  color: "#000000",
   fontStyle: "normal",
   textAlign: "left",
   marginLeft: "5vw",
-  marginBottom: "3vw",
+  marginBottom: "1vw",
 };
 
 const mymidtext = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   lineHeight: "4vw",
   fontSize: "3vw",
-  color: "#8CD6D1",
+  color: "#000000",
   fontStyle: "normal",
   textAlign: "center",
   marginLeft: "2.5vw",
   marginTop: "1vw",
 };
 const link = {
-  fontFamily: "Montserrat",
+  fontFamily: "Lato",
   fontWeight: 300,
   lineHeight: "2vw",
   fontSize: "1.5vw",
@@ -145,7 +148,9 @@ class Work extends Component {
   }
   render() {
     return (
-      <div>
+      <div style={{
+        background: "linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 10%, #FFFFFF 30%, #EFFFF0 70%, #DAFFFB 100%)",
+      }}>
         <Header style={mybigtext}> EVENTS </Header>
         <Header style={mymidtext}> External Calendar </Header>
         <a href="https://calendar.google.com/calendar?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
@@ -154,12 +159,13 @@ class Work extends Component {
               background: "#FBFBFB",
               border: "border: 3px solid #E5E5E5",
               color: "#8CD6D1",
-              fontFamily: "Montserrat",
+              fontFamily: "Lato",
               fontStyle: "normal",
               fontWeight: "500",
-              fontSize: "1vw",
-              lineHeight: "1vw",
-              marginLeft: "79.5%",
+              fontSize: "1.5vw",
+              lineHeight: "1.5vw",
+              marginLeft: "96vw",
+              marginBottom: "2vw",
             }}
           >
             Subscribe to this Calendar
@@ -188,16 +194,15 @@ class Work extends Component {
           <Grid>
             <Grid.Row
               style={{
-                width: "46vw",
-                height: "18vw",
+                width: "100vw",
                 marginLeft: "6vw",
                 marginBottom: "2vw",
               }}
             >
-              <Grid.Column style={{ width: "46vw", height: "18vw" }}>
+              <Grid.Column style={{ width: "66vw" }}>
                 <Image
                   src={event1}
-                  style={{ width: "46vw", height: "18vw" }}
+                  style={{ width: "66vw", height: "auto" }}
                 ></Image>
                 {/* <Image
                   src={event2}
@@ -233,16 +238,15 @@ class Work extends Component {
             <Grid.Row
               style={{
                 width: "47vw",
-                height: "18vw",
                 marginLeft: "6vw",
                 marginBottom: "3vw",
                 marginTop: "5vw",
               }}
             >
-              <Grid.Column style={{ width: "46vw", height: "22vw" }}>
+              <Grid.Column style={{ width: "66vw" }}>
                 <Image
                   src={event3}
-                  style={{ width: "46vw", height: "22vw" }}
+                  style={{ width: "66vw", height: "auto" }}
                 ></Image>
                 {/* <Image
                   src={event4}
@@ -272,17 +276,17 @@ class Work extends Component {
             {/* <div style={bluediv}></div> */}
             <Grid.Row
               style={{
-                width: "46vw",
+                width: "66vw",
                 marginLeft: "6vw",
                 height: "18vw",
                 marginTop: "8vw",
                 marginBottom: "5vw",
               }}
             >
-              <Grid.Column style={{ width: "46vw", height: "24vw" }}>
+              <Grid.Column style={{ width: "66vw" }}>
                 <Image
                   src={event5}
-                  style={{ width: "46vw", height: "24vw" }}
+                  style={{ width: "66vw", height: "auto" }}
                 ></Image>
               </Grid.Column>
               <Grid.Column width={7}>
@@ -308,7 +312,10 @@ class Work extends Component {
                 </div>
               </Grid.Column>
             </Grid.Row>
-            <Grid.Row centered>
+            <div class="footerSpacer" style={{
+              height: "40vw",
+            }}></div>
+            {/* <Grid.Row centered>
               <div
                 style={{
                   width: "33vw",
@@ -319,7 +326,7 @@ class Work extends Component {
               >
                 <div
                   style={{
-                    fontFamily: "Montserrat",
+                    fontFamily: "Lato",
                     fontStyle: "normal",
                     fontWeight: "normal",
                     fontSize: "1vw",
@@ -346,9 +353,15 @@ class Work extends Component {
                   to learn more about what we have hosted in the past!
                 </div>
               </div>
-            </Grid.Row>
+            </Grid.Row> */}
           </Grid>
         </div>
+        <img src={linesOne} style={{
+                position: "absolute",
+                width: "170vw",
+                left: "-30vw",
+                marginTop: "-25vw",
+              }}></img>
       </div>
     );
   }
