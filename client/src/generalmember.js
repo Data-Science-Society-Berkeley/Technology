@@ -544,7 +544,7 @@ class DecalLearn extends Component {
               position: "relative",
               left: "10vw",
               right: "10vw"
-            }}>The DeCal is 2 units (P/NP) and there is a mandatory lecture on Wednesdays from 6-8pm. We allow two unexcused absences 
+            }}>The DeCal is 2 units (P/NP) and there is a mandatory lecture on Tuesdays from 6:30-8:30pm. We allow two unexcused absences 
             before it affects your grade. The commitments for this course include: homeworks graded on completion, a final project and symposium presentations.
             </div>
           </Grid.Row>
