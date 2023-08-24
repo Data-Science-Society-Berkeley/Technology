@@ -167,14 +167,14 @@ class App extends Component {
           <Route
             path="/apply"
             component={() => {
-              window.location.href = "https://airtable.com/shrRNcB5mOQLn4sb9";
+              window.location.href = "https://airtable.com/appP7nPUKGUj414WI/shr3AKnzbwVhslzcd";
               return null;
             }}
           />
           <Route
             path="/applydecal"
             component={() => {
-              window.location.href = "https://tinyurl.com/dssdecalapp";
+              window.location.href = "https://forms.gle/gQz9xDGNwLS3wFYQA";
               return null;
             }}
           />
