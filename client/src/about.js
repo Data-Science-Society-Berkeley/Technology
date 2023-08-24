@@ -757,6 +757,7 @@ class About extends Component {
           </Image>
         </div> */}
         <Grid entered style={gridoffset}>
+          {/* onClick scroll handlers are redundant, consider removing */}
           <Grid.Row
             width={16}
             columns={5}
@@ -770,27 +771,52 @@ class About extends Component {
           >
             <Grid.Column width={3} style={aboutlinks2}>
               <div onClick={this.scrollWho} style={aboutlinks}>
-                Who We Are
+                <a href="#who" style= {{
+                  color: "#000000",
+                  textDecoration: "none",
+                }}>
+                  Who We Are
+                </a>
               </div>
             </Grid.Column>
             <Grid.Column width={3} style={aboutlinks2}>
               <div onClick={this.scrollMission} style={aboutlinks}>
-                Mission & Values
+                <a href="#mission" style= {{
+                  color: "#000000",
+                  textDecoration: "none",
+                }}>
+                  Mission & Values
+                </a>
               </div>
             </Grid.Column>
             <Grid.Column width={3} style={aboutlinks2}>
               <div onClick={this.scrollCommittee} style={aboutlinks}>
-                Our Committees
+                <a href="#committees" style= {{
+                  color: "#000000",
+                  textDecoration: "none",
+                }}>
+                  Our Committees
+                </a>
               </div>
             </Grid.Column>
             <Grid.Column width={3} style={aboutlinks2}>
               <div onClick={this.scrollTeam} style={aboutlinks}>
-                Executive Team
+                <a href="#team" style= {{
+                  color: "#000000",
+                  textDecoration: "none",
+                }}>
+                  Executive Team
+                </a>
               </div>
             </Grid.Column>
             <Grid.Column width={3} style={aboutlinks2}>
               <div onClick={this.scrollSponsor} style={aboutlinks3}>
-                Sponsors & Collaborators
+                <a href="#sponsors" style= {{
+                  color: "#000000",
+                  textDecoration: "none",
+                }}>
+                  Sponsors & Collaborators
+                </a>
               </div>
             </Grid.Column>
           </Grid.Row>
@@ -1158,17 +1184,18 @@ class About extends Component {
           >
             
           </Grid>
-          {/* <Grid.Row centered></Grid.Row> */}
-          <Grid.Row centered width={12} style={{ marginTop: "40vw" }}>
-            {/* {CustomTitle({ title: "Our Executive Team", id: "team" })} */}
-            <div id="team">
+          <Grid.Row centered width={12} style={{ marginTop: "35vw" }}>
+            <div id="team" style={{
+              height: "5vw",
+            }}>
             </div>
+            {/* {CustomTitle({ title: "Our Executive Team", id: "team" })} */}
             <div
             style={{
               position: "absolute",
               textShadow: "none",
               width: "61vw",
-              top: "0vw",
+              top: "5vw",
               left: "38vw",
               zIndex: "3",
               fontFamily: "Lato",
@@ -1201,9 +1228,9 @@ class About extends Component {
             <Card.Group centered>{leadershipCards}</Card.Group>
             ``
           </Grid.Row>
-          <Grid.Row style={{ marginTop: "7vw", marginLeft: "17vw" }}>
           <div id="sponsors">
           </div>
+          <Grid.Row style={{ marginTop: "7vw", marginLeft: "17vw" }}>
           <div
             style={{
               position: "absolute",
