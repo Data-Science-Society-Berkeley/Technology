@@ -313,6 +313,18 @@ class App extends Component {
           />
           <Route
             exact
+            path="/blog"
+            component={() => {
+              window.open(
+                'https://medium.com/@dssberkeley',
+                '_blank' // Open Medium in a new tab.
+              );
+              window.location.href = "./"; // TODO: Redirect back to last page. Currently redirects to home page regardless of where you are.
+              return null;
+            }}
+          />
+          <Route
+            exact
             path="/commitees"
             render={(props) => (
               <div>
@@ -536,7 +548,8 @@ class App extends Component {
               window.location.href = "https://berkeley.zoom.us/j/92287537123";
               return null;
             }}
-          /><Route
+          />
+          <Route
           path="/family"
           component={() => {
             window.location.href = "https://trusting-montalcini-b87ad0.netlify.app/";

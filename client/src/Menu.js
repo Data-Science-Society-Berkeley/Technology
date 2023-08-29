@@ -295,6 +295,16 @@ class NavBar extends Component {
                 </Link>
               </Menu.Item>
               <Menu.Item
+                name="blog"
+                active={activeItem === "blog"}
+                onClick={this.handleItemClick}
+                style={navbar}
+              >
+                <Link style={linkStyling} to="blog">
+                  blog
+                </Link>
+              </Menu.Item>
+              <Menu.Item
                 name="join"
                 active={activeItem === "join"}
                 onClick={this.handleItemClick}

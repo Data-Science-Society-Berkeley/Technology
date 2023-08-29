@@ -537,7 +537,7 @@ class CentralText extends Component {
                 <div class="left">
                   <h1 class="boldish">EMPOWER</h1>
                   <h2 class="light">DATATHONS, PANELS & MORE EVENTS</h2>
-                  <p>We hold an annual datathon and other high-impact events, where we inspire students to make data-driven decisions and to incorporate data science in their professional lives.</p>
+                  <p>We host an annual datathon and UCB's annual Data Science Forum, inspiring students to make data-driven decisions and to incorporate data science in their professional lives.</p>
                   <a href="./events">More about events →</a>
                 </div>
                 <div class="right1">
@@ -548,6 +548,8 @@ class CentralText extends Component {
               <div class="value">
                 <div class="left">
                   <h1 class="boldish">LEARN</h1>
+                  <p>Read our educational articles on Medium, written by members.</p>
+                  <a href="https://medium.com/@dssberkeley">Check out the DSS Medium →</a>
                   <p>Find out more about what we do and how to join us.</p>
                   <a href="./joinus">More about resources →</a>
                   {/* extra line space to make the last image the same height as the others... idk where we set the height */}
