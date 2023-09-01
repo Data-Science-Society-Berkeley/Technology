@@ -1164,7 +1164,7 @@ class About extends Component {
             alignText: "center",
           }}
           >
-            We are passionate about working with non-profit organizations 
+            We are passionate about working with corporate clients 
             to provide data-driven insights and actionable solutions through 
             advanced analytical methods.
             <br></br>
