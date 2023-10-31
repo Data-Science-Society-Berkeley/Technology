@@ -376,7 +376,7 @@ class Datathon extends Component {
           }}>
             <Image src={datathon_mascot} style={{
               maxWidth: "40vw",
-              marginBottom: "-1vw",
+              marginBottom: "0vw",
             }}></Image>
           </div>
           <div style={{
@@ -417,7 +417,7 @@ class Datathon extends Component {
             <p style={{textAlign: "left"}}>
               We aim to guide students in challenging themselves and gaining a deeper 
               understanding of global development through data. We hope to establish a 
-              Datathon where both beginner and experienced hackers can apply data science 
+              Datathon where both beginners and experienced hackers can apply data science 
               techniques to solve real-world problems and will contribute to the field 
               of data science. Our values include:
             </p>
@@ -431,25 +431,25 @@ class Datathon extends Component {
               textAlign: "center",
             }}>
               <div class="valueCard" style={{...valueCard}}>
-                👋🏽<i>Accessibility</i>
+                👋🏽<i><b>Accessibility</b></i>
                 <br></br>
                 We are dedicated towards public service and the 
                 education of our community.
               </div>
               <div class="valueCard" style={{...valueCard}}>
-                🌎<i>Diversity</i>
+                🌎<i><b>Diversity</b></i>
                 <br></br>
                 We believe that diversity in background and in thought 
-                is a conduit of understanding.
+                is the greatest conduit of understanding.
               </div>
               <div class="valueCard" style={{...valueCard}}>
-                🤝<i>Collaboration</i>
+                🤝<i><b>Collaboration</b></i>
                 <br></br>
-                We work together to serve our community strive to 
-                create meaningful impact through group-led efforts. 
+                We work together to serve our community and strive to 
+                create impact through group-led efforts. 
               </div>
               <div class="valueCard" style={{...valueCard}}>
-                🧠<i>Integrity</i>
+                🧠<i><b>Integrity</b></i>
                 <br></br>
                 We hold each other accountable and encourage others to 
                 speak to their experiences and values.
