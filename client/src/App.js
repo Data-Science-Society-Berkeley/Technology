@@ -49,7 +49,7 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 ReactGA.initialize("UA-175785074-1");
 WebFont.load({
   google: {
-    families: ["Montserrat:300,400,700", "sans-serif"],
+    families: ["Montserrat:300,400,700", "Oswald:300,400,700", "sans-serif"],
   },
 });
 
@@ -1109,9 +1109,10 @@ class App extends Component {
           <Route
             path="/datathon"
             render={(props) => (
-              <div>
+              <div style={{
+                fontSize: "1.8vw",
+              }}>
                 <Datathon/>
-                <Footer></Footer>
               </div>
             )}
           />

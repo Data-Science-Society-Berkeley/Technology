@@ -8,7 +8,10 @@ import axios from "axios";
 // image/asset import
 import datathon_mascot from "./Datathon/datathon_mascot.png";
 import down_arrow from "./Datathon/down_arrow.png";
-import register_button from "./Datathon/register_button.png";
+import dss_logo from "./Backgrounds/DSS-logo-white.png";
+import bdab_logo from "./Datathon/bdab_logo.png";
+import saas_logo from "./Datathon/saas_logo.png";
+import csua_logo from "./Datathon/csua_logo.png";
 
 // countdown timer script stolen from w3schools
 var x = setInterval(function() {
@@ -36,12 +39,7 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-const title = {
 
-}
-const h1 = {
-  fontFamily: "Montserrat, sans-serif",
-}
 const wrapper = {
   width: "100%",
   maxWidth: "100%",
@@ -63,6 +61,12 @@ const header = {
   fontSize: "3em",
   fontWeight: "bold",
 }
+const clubRow = {
+  width: "100%",
+  margin: "0",
+  padding: "0 0 1em 0",
+  textAlign: "left",
+}
 const blurbContainer = {
   width: "100%",
   margin: "0 auto",
@@ -71,7 +75,7 @@ const blurbContainer = {
 }
 const intro = {
   width: "100%",
-  backgroundColor: "#5f5f5f",
+  backgroundColor: "#20302bDF",
   padding: "5% 20% 5% 20%",
   fontSize: "1em",
   textAlign: "left",
@@ -84,16 +88,16 @@ const subtitle = {
 }
 const valueCard = {
   display: "inline-block",
-  width: "40vh",
-  maxWidth: "40vw",
-  height: "40vh",
-  maxHeight: "40vw",
-  margin: "20px",
-  padding: "3vh",
+  width: "13em",
+  maxWidth: "40%",
+  height: "13em",
+  margin: "1%",
+  padding: "2.5vh",
   borderRadius: "20px",
-  backgroundColor: "#44444499",
+  backgroundColor: "#20302b99",
   overflow: "hidden",
   textAlign: "center",
+  fontSize: "1em",
 }
 const statCard = {
   display: "inline-block",
@@ -106,9 +110,9 @@ const statCard = {
 }
 const statCardWide = {
   display: "inline-block",
-  width: "50%",
+  width: "15em",
   maxWidth: "50%",
-  height: "40vh",
+  height: "12em",
   maxHeight: "40vw",
   textAlign: "right",
 }
@@ -117,7 +121,7 @@ const statCardInner = {
   height: "90%",
   fontSize: "1.5em",
   fontWeight: "bold",
-  backgroundColor: "#ededed",
+  backgroundColor: "#dedede",
   color: "#222222",
   borderRadius: "2vh",
   padding: "3vw 0 0 2vw",
@@ -127,14 +131,36 @@ const statCardInner = {
 const statCardInnerWide = {
   width: "95%",
   height: "95%",
+  minHeight: "10vh",
   fontSize: "1.5em",
   fontWeight: "bold",
-  backgroundColor: "#ededed",
+  backgroundColor: "#dededeEF",
   color: "#222222",
   borderRadius: "2vh",
   padding: "3vw 2vw 0 0",
   boxShadow: "20px 20px 20px #00000044",
   overflow: "hidden",
+}
+const statNum = {
+  fontFamily: "Oswald, sans-serif",
+  fontSize: "3em",
+  fontWeight: "bold",
+  margin: "0",
+  padding: "0",
+  lineHeight: "1.2em",
+  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
+  WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent",
+}
+const statDesc = {
+  fontFamily: "Oswald, sans-serif",
+  fontSize: "1.2em",
+  fontWeight: "bold",
+  margin: "0",
+  padding: "0",
+  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
+  WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent",
 }
 const faqQ = {
   fontSize: "1.2em",
@@ -145,13 +171,32 @@ const faqA = {
   padding: "0 0 1vw 0",
   marginLeft: "2vw",
 }
+const countdownContainer = {
+  width: "85%",
+  height: "100%",
+  margin: "0 auto",
+  textAlign: "center",
+  padding: "2em 0 2em 0",
+  background: "#dededeDF",
+  borderRadius: "1em",
+  boxShadow: "10px 20px 20px #00000044",
+}
+const countdown = {
+  width: "100%",
+  margin: "0 auto",
+  backgroundColor: "#eeeeee",
+  padding: "2vh 0 2vh 0",
+  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
+  WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent",
+}
 const countdownTimer = {
   width: "100%",
   maxWidth: "1200px",
   margin: "0 auto",
   padding: "0",
-  textAlign: "center",
-  fontSize: "4em",
+  fontSize: "3em",
+  color: "#222222",
 }
 
 const spacer = {
@@ -216,16 +261,45 @@ class Datathon extends Component {
   render() {
     return (
       <div class="wrapper" style={{...wrapper}}>
-
         <div class="header" style={{...header}}>
-          <div style={{
+          <div class="titleText" style={{
             maxWidth: "60%",
             width: "60%",
             fontSize: "6vw",
             margin: "0 auto",
-            padding: "7% 0% 0 0",
+            padding: "1% 0% 0 0",
             display: "inline-block",
           }}>
+            <div class="clubRow" style={{...clubRow}}>
+              <Link to="https://dssberkeley.com/">
+                <Image src={dss_logo} style={{
+                  display: "inline-block",
+                  width: "0.55em",
+                  margin: "0.05em 0.2em 0 2em",
+                }}/>
+              </Link>
+              <Link to="https://bd.berkeley.edu/">
+                <Image src={bdab_logo} style={{
+                  display: "inline-block",
+                  width: "0.8em",
+                  margin: "0.05em 0.2em 0 0",
+                }}/>
+              </Link>
+              <Link to="https://saas.berkeley.edu/">
+                <Image src={saas_logo} style={{
+                  display: "inline-block",
+                  width: "0.85em",
+                  margin: "0.05em 0.2em 0 0",
+                }}/>
+              </Link>
+              <Link to="https://www.csua.berkeley.edu/">
+                <Image src={csua_logo} style={{
+                  display: "inline-block",
+                  width: "0.5em",
+                  margin: "0.05em 0.2em 0 0",
+                }}/>
+              </Link>
+            </div>
             <p>5th Annual
               <br></br>
               Datathon for
@@ -235,7 +309,7 @@ class Datathon extends Component {
             <p style={{
               fontSize: "0.3em",
             }}>
-              November 11th-12th, 2023 &mdash; UC Berkeley Corey Hall
+              November 11th-12th, 2023 &mdash; UC Berkeley Cory Hall
               <br></br>
               Co-hosted by DSS, BDAB, SAAS, and CSUA
             </p>
@@ -249,7 +323,7 @@ class Datathon extends Component {
                 textDecoration: "none",
               }}>
                 <div style={{
-                  backgroundColor: "#eeeeee",
+                  backgroundColor: "#eeeeeeDF",
                   maxWidth: "40vw",
                   width: "40vw",
                   height: "5vw",
@@ -270,7 +344,7 @@ class Datathon extends Component {
           }}>
             <Image src={datathon_mascot} style={{
               maxWidth: "40vw",
-              paddingBottom: "0%",
+              marginBottom: "-1vw",
             }}></Image>
           </div>
           <div style={{
@@ -316,236 +390,85 @@ class Datathon extends Component {
               of data science. Our values include:
             </p>
             <div class="spacer" style={{...spacer}}></div>
-
-            <div>
-              <div class="valueCards" style={{
-                maxWidth: "100%",
-                textAlign: "center",
-              }}>
-                <div class="valueCard" style={{...valueCard}}>
-                  👋🏽<i>Accessibility</i>
-                  <br></br>
-                  We are dedicated towards public service and the 
-                  education of our community.
-                </div>
-                <div class="valueCard" style={{...valueCard}}>
-                  🌎<i>Diversity</i>
-                  <br></br>
-                  We believe that diversity in background and in thought 
-                  is a conduit of understanding.
-                </div>
-                <div class="valueCard" style={{...valueCard}}>
-                  🤝<i>Collaboration</i>
-                  <br></br>
-                  We work together to serve our community strive to 
-                  create meaningful impact through group-led efforts. 
-                </div>
-                <div class="valueCard" style={{...valueCard}}>
-                  🧠<i>Integrity</i>
-                  <br></br>
-                  We hold each other accountable and encourage others to 
-                  speak to their experiences and values.
-                </div>
+          </div>
+        </div>
+        <div class="datathonValues">
+          <div>
+            <div class="valueCards" style={{
+              maxWidth: "100%",
+              textAlign: "center",
+            }}>
+              <div class="valueCard" style={{...valueCard}}>
+                👋🏽<i>Accessibility</i>
+                <br></br>
+                We are dedicated towards public service and the 
+                education of our community.
+              </div>
+              <div class="valueCard" style={{...valueCard}}>
+                🌎<i>Diversity</i>
+                <br></br>
+                We believe that diversity in background and in thought 
+                is a conduit of understanding.
+              </div>
+              <div class="valueCard" style={{...valueCard}}>
+                🤝<i>Collaboration</i>
+                <br></br>
+                We work together to serve our community strive to 
+                create meaningful impact through group-led efforts. 
+              </div>
+              <div class="valueCard" style={{...valueCard}}>
+                🧠<i>Integrity</i>
+                <br></br>
+                We hold each other accountable and encourage others to 
+                speak to their experiences and values.
               </div>
             </div>
           </div>
+        </div>
 
+        <div class="spacer" style={{...spacer}}></div>
+
+        <div class="stats" style={{
+          textAlign: "center",
+          maxWidth: "90%",
+          margin: "0 auto",
+        }}>
+          <p class="subtitle" style={{...subtitle}}>In the past we've hosted...</p>
           <div class="spacer" style={{...spacer}}></div>
 
-          <div class="stats" style={{
-            textAlign: "center",
-          }}>
-            <div class="statCardWide" style={{...statCardWide}}>
-              <div class="statCardInnerWide" style={{...statCardInnerWide}}>
-                <p style={{
-                  fontFamily: "Impact, sans-serif",
-                  fontSize: "3em",
-                  fontWeight: "normal",
-                  margin: "0",
-                  padding: "0",
-                  lineHeight: "1.2em",
-                  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}>4</p>
-                <p style={{
-                  fontFamily: "Impact, sans-serif",
-                  fontSize: "1.7em",
-                  fontWeight: "normal",
-                  margin: "0",
-                  padding: "0",
-                  lineHeight: "1.2em",
-                  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}>Past Datathons</p>
-              </div>
+          <div class="statCardWide" style={{...statCardWide}}>
+            <div class="statCardInnerWide" style={{...statCardInnerWide}}>
+              <p style={{...statNum}}>4</p>
+              <p style={{...statDesc}}>Past Datathons</p>
             </div>
-            <div class="statCardWide" style={{...statCardWide}}>
-              <div class="statCardInnerWide" style={{...statCardInnerWide}}>
-                <p style={{
-                  fontFamily: "Impact, sans-serif",
-                  fontSize: "3em",
-                  fontWeight: "normal",
-                  margin: "0",
-                  padding: "0",
-                  lineHeight: "1.2em",
-                  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}>200+</p>
-                <p style={{
-                  fontFamily: "Impact, sans-serif",
-                  fontSize: "2em",
-                  fontWeight: "normal",
-                  margin: "0",
-                  padding: "0",
-                  lineHeight: "1.2em",
-                  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}>Attendees</p>
-              </div>
-            </div>
-            <div class="statCardWide" style={{...statCardWide}}>
-              <div class="statCardInnerWide" style={{...statCardInnerWide}}>
-                <p style={{
-                  fontFamily: "Impact, sans-serif",
-                  fontSize: "3em",
-                  fontWeight: "normal",
-                  margin: "0",
-                  padding: "0",
-                  lineHeight: "1.2em",
-                  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}>60+</p>
-                <p style={{
-                  fontFamily: "Impact, sans-serif",
-                  fontSize: "2em",
-                  fontWeight: "normal",
-                  margin: "0",
-                  padding: "0",
-                  lineHeight: "1.2em",
-                  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}>Projects</p>
-              </div>
-            </div>
-
-            <div class="statCardWide" style={{...statCardWide}}>
-              <div class="statCardInnerWide" style={{...statCardInnerWide}}>
-                <p style={{
-                  fontFamily: "Impact, sans-serif",
-                  fontSize: "3em",
-                  fontWeight: "normal",
-                  margin: "0",
-                  padding: "0",
-                  lineHeight: "1.2em",
-                  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}>20+</p>
-                <p style={{
-                  fontFamily: "Impact, sans-serif",
-                  fontSize: "2em",
-                  fontWeight: "normal",
-                  margin: "0",
-                  padding: "0",
-                  lineHeight: "1.2em",
-                  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}>Companies</p>
-              </div>
-            </div>
-{/*
-            <div class="statCard" style={{...statCard}}>
-              <div class="statCardInner" style={{...statCardInner}}>
-                <p style={{
-                  fontFamily: "Impact, sans-serif",
-                  fontSize: "1.2em",
-                  fontWeight: "normal",
-                  margin: "0",
-                  padding: "0",
-                  lineHeight: "1.2em",
-                }}>60+</p>
-                <p style={{
-                  fontFamily: "Impact, sans-serif",
-                  fontSize: "1.2em",
-                  fontWeight: "normal",
-                  margin: "0",
-                  padding: "0",
-                  lineHeight: "1.2em",
-                }}>Projects</p>
-              </div>
-            </div>
-            <div class="statCard" style={{...statCard}}>
-              <div class="statCardInner" style={{...statCardInner}}>
-                <p style={{
-                  fontFamily: "Impact, sans-serif",
-                  fontSize: "1.2em",
-                  fontWeight: "normal",
-                  margin: "0",
-                  padding: "0",
-                  lineHeight: "1.2em",
-                }}>50+</p>
-                <p style={{
-                  fontFamily: "Impact, sans-serif",
-                  fontSize: "1.2em",
-                  fontWeight: "normal",
-                  margin: "0",
-                  padding: "0",
-                  lineHeight: "1.2em",
-                }}>Mentors</p>
-              </div>
-            </div>
-            <div class="statCard" style={{...statCard}}>
-              <div class="statCardInner" style={{...statCardInner}}>
-                <p style={{
-                  fontFamily: "Impact, sans-serif",
-                  fontSize: "1.2em",
-                  fontWeight: "normal",
-                  margin: "0",
-                  padding: "0",
-                  lineHeight: "1.2em",
-                }}>20+</p>
-                <p style={{
-                  fontFamily: "Impact, sans-serif",
-                  fontSize: "1.2em",
-                  fontWeight: "normal",
-                  margin: "0",
-                  padding: "0",
-                  lineHeight: "1.2em",
-                }}>Companies</p>
-              </div>
-            </div>
-            <div class="statCard" style={{...statCard}}>
-              <div class="statCardInner" style={{...statCardInner}}>
-                <p style={{
-                  fontFamily: "Impact, sans-serif",
-                  fontSize: "1.2em",
-                  fontWeight: "normal",
-                  margin: "0",
-                  padding: "0",
-                  lineHeight: "1.2em",
-                }}>20+</p>
-                <p style={{
-                  fontFamily: "Impact, sans-serif",
-                  fontSize: "1.2em",
-                  fontWeight: "normal",
-                  margin: "0",
-                  padding: "0",
-                  lineHeight: "1.2em",
-                }}>Workshops</p>
-              </div>
-            </div> */}
-          
-            </div>
-          <div class="spacer" style={{...spacer}}>
-
           </div>
+          <div class="statCardWide" style={{...statCardWide}}>
+            <div class="statCardInnerWide" style={{...statCardInnerWide}}>
+              <p style={{...statNum}}>200+</p>
+              <p style={{...statDesc}}>Attendees</p>
+            </div>
+          </div>
+          <div class="statCardWide" style={{...statCardWide}}>
+            <div class="statCardInnerWide" style={{...statCardInnerWide}}>
+              <p style={{...statNum}}>60+</p>
+              <p style={{...statDesc}}>Projects</p>
+            </div>
+          </div>
+
+          <div class="statCardWide" style={{...statCardWide}}>
+            <div class="statCardInnerWide" style={{...statCardInnerWide}}>
+              <p style={{...statNum}}>20+</p>
+              <p style={{...statDesc}}>Companies</p>
+            </div>
+          </div>
+
+          <br></br>
+          <br></br>
+          <p style={{fontSize: "1.2em"}}>Now it's your turn to participate in Datathon!</p>
+        </div>
+          
+        <div class="blurbContainer" style={{...blurbContainer}}>
+          <div class="spacer" style={{...spacer}}></div>
 
           <div class="theme">
             <p style={{...subtitle}}>This year's theme is...</p>
@@ -628,8 +551,6 @@ class Datathon extends Component {
             </div>
           </div>
 
-          <div class="spacer" style={{...spacer}}></div>
-
           {/*
           <div class="speakers">
             <h2>Speakers</h2>
@@ -653,24 +574,30 @@ class Datathon extends Component {
             </p>
           </div>
           */}
+        </div>
+        <div class="spacer" style={{...spacer}}></div>
 
-          <div class="spacer" style={{...spacer}}></div>
-
-          <div class="countdown">
+        <div class="countdownContainer" style={{...countdownContainer}}>
+          <div class="countdown" style={{...countdown}}>
             <p style={{
               textAlign: "center",
+              color: "black",
               ...subtitle}}>Ready to jump in?</p>
-            <p style={{textAlign: "center"}}>Kickoff in:</p>
+            <p style={{
+              textAlign: "center",
+              fontSize: "1.5em",
+              color: "black",
+            }}>Kickoff is in:</p>
             {
               //Stolen from w3schools
               //Display the countdown timer in an element
             }
             <p id="countdownTimer" style={{...countdownTimer}}></p>
           </div>
-
-          <div class="bigSpacer" style={{...bigSpacer}}></div>
-
         </div>
+
+        <div class="bigSpacer" style={{...bigSpacer}}></div>
+        <div class="bigSpacer" style={{...bigSpacer}}></div>
 
       </div>
     );
