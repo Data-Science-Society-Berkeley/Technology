@@ -88,9 +88,9 @@ const subtitle = {
 }
 const valueCard = {
   display: "inline-block",
-  width: "13em",
+  width: "12em",
   maxWidth: "40%",
-  height: "13em",
+  height: "14em",
   margin: "1%",
   padding: "2.5vh",
   borderRadius: "20px",
@@ -110,7 +110,7 @@ const statCard = {
 }
 const statCardWide = {
   display: "inline-block",
-  width: "15em",
+  width: "25em",
   maxWidth: "50%",
   height: "12em",
   maxHeight: "40vw",
@@ -307,7 +307,7 @@ class Datathon extends Component {
               Social Good
             </p>
             <p style={{
-              fontSize: "0.3em",
+              fontSize: "0.35em",
             }}>
               November 11th-12th, 2023 &mdash; UC Berkeley Cory Hall
               <br></br>
@@ -316,24 +316,56 @@ class Datathon extends Component {
             <div class="registerButton" style={{
               margin: "3vw 0 0 0",
             }}>
-              <Link style={{
+              <a href="https://www.eventbrite.com/e/5th-annual-datathon-for-social-good-tickets-748231991027?aff=oddtdtcreator" style={{
+                display: "inline-block",
                 color: "#222222",
-                fontSize: "0.4em",
+                fontSize: "0.5em",
                 fontWeight: "bold",
                 textDecoration: "none",
               }}>
                 <div style={{
                   backgroundColor: "#eeeeeeDF",
                   maxWidth: "40vw",
-                  width: "40vw",
+                  width: "30vw",
+                  height: "5vw",
+                  margin: "0 1vw 0 0",
+                  borderRadius: "4vw",
+                  padding: "0.3vw 0 0 0",
+                }}>
+                  <div style={{
+                    backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}>
+                    Register Now
+                  </div>
+                </div>
+              </a>
+              <a href="https://tinyurl.com/Datathon2023TeamFormation" style={{
+                display: "inline-block",
+                color: "#222222",
+                fontSize: "0.5em",
+                fontWeight: "bold",
+                textDecoration: "none",
+              }}>
+                <div style={{
+                  backgroundColor: "#eeeeeeDF",
+                  maxWidth: "40vw",
+                  width: "25vw",
                   height: "5vw",
                   margin: "0 auto",
                   borderRadius: "4vw",
-                  padding: "0.7vw 0 0 0",
+                  padding: "0.3vw 0 0 0",
                 }}>
-                  Register Now
+                  <div style={{
+                    backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                  }}>
+                    Find a Team
+                  </div>
                 </div>
-              </Link>
+              </a>
             </div>
           </div>
           <div style={{
@@ -436,33 +468,39 @@ class Datathon extends Component {
           <p class="subtitle" style={{...subtitle}}>In the past we've hosted...</p>
           <div class="spacer" style={{...spacer}}></div>
 
-          <div class="statCardWide" style={{...statCardWide}}>
-            <div class="statCardInnerWide" style={{...statCardInnerWide}}>
-              <p style={{...statNum}}>4</p>
-              <p style={{...statDesc}}>Past Datathons</p>
+          {/* row 1 */}
+          <div>
+            <div class="statCardWide" style={{...statCardWide}}>
+              <div class="statCardInnerWide" style={{...statCardInnerWide}}>
+                <p style={{...statNum}}>4</p>
+                <p style={{...statDesc}}>Past Datathons</p>
+              </div>
             </div>
-          </div>
-          <div class="statCardWide" style={{...statCardWide}}>
-            <div class="statCardInnerWide" style={{...statCardInnerWide}}>
-              <p style={{...statNum}}>200+</p>
-              <p style={{...statDesc}}>Attendees</p>
-            </div>
-          </div>
-          <div class="statCardWide" style={{...statCardWide}}>
-            <div class="statCardInnerWide" style={{...statCardInnerWide}}>
-              <p style={{...statNum}}>60+</p>
-              <p style={{...statDesc}}>Projects</p>
+            <div class="statCardWide" style={{...statCardWide}}>
+              <div class="statCardInnerWide" style={{...statCardInnerWide}}>
+                <p style={{...statNum}}>200+</p>
+                <p style={{...statDesc}}>Attendees</p>
+              </div>
             </div>
           </div>
 
-          <div class="statCardWide" style={{...statCardWide}}>
-            <div class="statCardInnerWide" style={{...statCardInnerWide}}>
-              <p style={{...statNum}}>20+</p>
-              <p style={{...statDesc}}>Companies</p>
+          {/* row 2 */}
+          <div>
+            <div class="statCardWide" style={{...statCardWide}}>
+              <div class="statCardInnerWide" style={{...statCardInnerWide}}>
+                <p style={{...statNum}}>60+</p>
+                <p style={{...statDesc}}>Projects</p>
+              </div>
+            </div>
+
+            <div class="statCardWide" style={{...statCardWide}}>
+              <div class="statCardInnerWide" style={{...statCardInnerWide}}>
+                <p style={{...statNum}}>20+</p>
+                <p style={{...statDesc}}>Companies</p>
+              </div>
             </div>
           </div>
 
-          <br></br>
           <br></br>
           <p style={{fontSize: "1.2em"}}>Now it's your turn to participate in Datathon!</p>
         </div>
