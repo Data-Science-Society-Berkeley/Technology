@@ -271,34 +271,34 @@ class Datathon extends Component {
             display: "inline-block",
           }}>
             <div class="clubRow" style={{...clubRow}}>
-              <Link to="https://dssberkeley.com/">
+              <a href="https://dssberkeley.com/">
                 <Image src={dss_logo} style={{
                   display: "inline-block",
                   width: "0.55em",
                   margin: "0.05em 0.2em 0 2em",
                 }}/>
-              </Link>
-              <Link to="https://bd.berkeley.edu/">
+              </a>
+              <a href="https://bd.berkeley.edu/">
                 <Image src={bdab_logo} style={{
                   display: "inline-block",
                   width: "0.8em",
                   margin: "0.05em 0.2em 0 0",
                 }}/>
-              </Link>
-              <Link to="https://saas.berkeley.edu/">
+              </a>
+              <a href="https://saas.berkeley.edu/">
                 <Image src={saas_logo} style={{
                   display: "inline-block",
                   width: "0.85em",
                   margin: "0.05em 0.2em 0 0",
                 }}/>
-              </Link>
-              <Link to="https://www.csua.berkeley.edu/">
+              </a>
+              <a href="https://www.csua.berkeley.edu/">
                 <Image src={csua_logo} style={{
                   display: "inline-block",
                   width: "0.5em",
                   margin: "0.05em 0.2em 0 0",
                 }}/>
-              </Link>
+              </a>
             </div>
             <p>5th Annual
               <br></br>
