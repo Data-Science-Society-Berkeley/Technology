@@ -473,7 +473,7 @@ class Datathon extends Component {
             <div class="statCardWide" style={{...statCardWide}}>
               <div class="statCardInnerWide" style={{...statCardInnerWide}}>
                 <p style={{...statNum}}>4</p>
-                <p style={{...statDesc}}>Past Datathons</p>
+                <p style={{...statDesc}}>Datathons</p>
               </div>
             </div>
             <div class="statCardWide" style={{...statCardWide}}>
