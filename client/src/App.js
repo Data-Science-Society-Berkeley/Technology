@@ -22,6 +22,7 @@ import GeneralMember from "./generalmember.js";
 import Hierarchy from "./hierarchy";
 import Join from "./Join-Us"
 import Culture from "./Culture.js";
+import Datathon from "./Datathon";
 
 import Footer from "./footer";
 import MobileMenu from "./mobilemenu.js";
@@ -95,11 +96,14 @@ class App extends Component {
             }}
           />
           <Route
-            path='/datathon'
-            component={() => {
-              window.location.href = "https://www.eventbrite.com/e/450550156647";
-              return null;
-            }}
+            exact
+            path="/datathon"
+            render={(props) => (
+              <div>
+                <Datathon/>
+                <Footer></Footer>
+              </div>
+            )}
           />
           <Route
             path='/tej'
@@ -870,6 +874,23 @@ class App extends Component {
             path="/register"
             render={(props) => <Registration {...props} />}
           />
+          <Route
+            exact
+            path="/datathon"
+            render={(props) => (
+              <div
+                style={{
+                  marginTop: "0px",
+                  marginRight: "0px",
+                  background: "#F6F7F6",
+                  width: "1450px",
+                }}
+              >
+                <Datathon/>
+                <Footer></Footer>
+              </div>
+            )}
+          />
         </Switch>
       );
     }
@@ -1081,6 +1102,23 @@ class App extends Component {
                 />
                 <NavBar2 {...props} componentid={Join} />
                 {/* <Footer></Footer> */}
+              </div>
+            )}
+          />
+
+          <Route
+            path="/datathon"
+            render={(props) => (
+              <div
+                style={{
+                  marginTop: "0px",
+                  marginRight: "0px",
+                  background: "#000000",
+                  width: "1450px",
+                }}
+              >
+                <Datathon/>
+                <Footer></Footer>
               </div>
             )}
           />

@@ -302,7 +302,6 @@ extra info page attributes
 	font-weight: 300;
 	letter-spacing: 2.14px;
   line-height: 36px;
- 
 }
 .info-exit {
 	height: 48px;
@@ -354,7 +353,7 @@ extra info page attributes
   text-align: left;
 }
 .info-expand {
-	color: #black;
+	color: black;
 	font-family: Rubik;
 	font-size: 20px;
 	font-weight: 500;
