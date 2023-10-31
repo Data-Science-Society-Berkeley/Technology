@@ -1109,14 +1109,7 @@ class App extends Component {
           <Route
             path="/datathon"
             render={(props) => (
-              <div
-                style={{
-                  marginTop: "0px",
-                  marginRight: "0px",
-                  background: "#000000",
-                  width: "1450px",
-                }}
-              >
+              <div>
                 <Datathon/>
                 <Footer></Footer>
               </div>

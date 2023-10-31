@@ -66,7 +66,6 @@ import gen from "./About/GeneralMember.jpg";
 import decal from "./Decal Images/decalberkeleylogo 1.png";
 import senior from "./About/SeniorAdvisor.png";
 import join from "./About/JoinUs.jpg";
-//import story from './About/OurStory.jpg'
 import story from "./About/team.png";
 import popout from "./About/popoutDesign.png";
 import ret from "./About/RetreatPic.png";
