@@ -71,7 +71,7 @@ const blurbContainer = {
 }
 const intro = {
   width: "100%",
-  backgroundColor: "#666666",
+  backgroundColor: "#5f5f5f",
   padding: "5% 20% 5% 20%",
   fontSize: "1em",
   textAlign: "left",
@@ -318,7 +318,10 @@ class Datathon extends Component {
             <div class="spacer" style={{...spacer}}></div>
 
             <div>
-              <div>
+              <div class="valueCards" style={{
+                maxWidth: "100%",
+                textAlign: "center",
+              }}>
                 <div class="valueCard" style={{...valueCard}}>
                   👋🏽<i>Accessibility</i>
                   <br></br>
@@ -349,7 +352,9 @@ class Datathon extends Component {
 
           <div class="spacer" style={{...spacer}}></div>
 
-          <div class="stats">
+          <div class="stats" style={{
+            textAlign: "center",
+          }}>
             <div class="statCardWide" style={{...statCardWide}}>
               <div class="statCardInnerWide" style={{...statCardInnerWide}}>
                 <p style={{
@@ -359,6 +364,9 @@ class Datathon extends Component {
                   margin: "0",
                   padding: "0",
                   lineHeight: "1.2em",
+                  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
                 }}>4</p>
                 <p style={{
                   fontFamily: "Impact, sans-serif",
@@ -367,6 +375,9 @@ class Datathon extends Component {
                   margin: "0",
                   padding: "0",
                   lineHeight: "1.2em",
+                  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
                 }}>Past Datathons</p>
               </div>
             </div>
@@ -379,6 +390,9 @@ class Datathon extends Component {
                   margin: "0",
                   padding: "0",
                   lineHeight: "1.2em",
+                  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
                 }}>200+</p>
                 <p style={{
                   fontFamily: "Impact, sans-serif",
@@ -387,6 +401,9 @@ class Datathon extends Component {
                   margin: "0",
                   padding: "0",
                   lineHeight: "1.2em",
+                  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
                 }}>Attendees</p>
               </div>
             </div>
@@ -399,6 +416,9 @@ class Datathon extends Component {
                   margin: "0",
                   padding: "0",
                   lineHeight: "1.2em",
+                  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
                 }}>60+</p>
                 <p style={{
                   fontFamily: "Impact, sans-serif",
@@ -407,6 +427,9 @@ class Datathon extends Component {
                   margin: "0",
                   padding: "0",
                   lineHeight: "1.2em",
+                  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
                 }}>Projects</p>
               </div>
             </div>
@@ -420,6 +443,9 @@ class Datathon extends Component {
                   margin: "0",
                   padding: "0",
                   lineHeight: "1.2em",
+                  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
                 }}>20+</p>
                 <p style={{
                   fontFamily: "Impact, sans-serif",
@@ -428,6 +454,9 @@ class Datathon extends Component {
                   margin: "0",
                   padding: "0",
                   lineHeight: "1.2em",
+                  backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
                 }}>Companies</p>
               </div>
             </div>
@@ -537,7 +566,7 @@ class Datathon extends Component {
 
           <div class="spacer" style={{...spacer}}></div>
 
-          <div class="theme">
+          <div class="faq">
             <p style={{...subtitle}}>FAQ</p>
             <div>
               <p style={{...faqQ}}>
