@@ -171,7 +171,7 @@ const sponsorContainer = {
   display: "inline-block",
   width: "45%",
   maxWidth: "15em",
-  height: "7em",
+  height: "18vh",
   margin: "1%",
   padding: "0",
   background: "#edededdf",
@@ -181,7 +181,7 @@ const sponsorContainer = {
 }
 const sponsorLogo = {
   maxWidth: "100%",
-  maxHeight: "7em",
+  maxHeight: "18vh",
 }
 const trackCard = {
   width: "100%",
@@ -189,7 +189,7 @@ const trackCard = {
 }
 const trackCardInner = {
   width: "90%",
-  height: "17em",
+  height: "50vh",
   margin: "3vw",
   padding: "2.5vh",
   borderRadius: "20px",
