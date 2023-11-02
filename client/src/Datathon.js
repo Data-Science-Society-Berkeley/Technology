@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {
-  Image,
+  Image, SegmentInline,
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -12,6 +12,11 @@ import dss_logo from "./Backgrounds/DSS-logo-white.png";
 import bdab_logo from "./Datathon/bdab_logo.png";
 import saas_logo from "./Datathon/saas_logo.png";
 import csua_logo from "./Datathon/csua_logo.png";
+import caldata_logo from "./Datathon/caldata_logo.png";
+import clight_technologies_logo from "./Datathon/clight_technologies_logo.png";
+import doordash_logo from "./Datathon/doordash_logo.png";
+import primerica_logo from "./Datathon/primerica_logo.png";
+import singlestore_logo from "./Datathon/singlestore_logo.png";
 
 // countdown timer script stolen from w3schools
 var x = setInterval(function() {
@@ -161,6 +166,35 @@ const statDesc = {
   backgroundImage: "linear-gradient(90deg, rgba(78,97,53,1) 47%, rgba(18,101,86,1) 85%, rgba(8,69,55,1) 100%)",
   WebkitBackgroundClip: "text",
   WebkitTextFillColor: "transparent",
+}
+const sponsorContainer = {
+  display: "inline-block",
+  width: "45%",
+  maxWidth: "15em",
+  height: "7em",
+  margin: "1%",
+  padding: "0",
+  background: "#edededdf",
+  borderRadius: "20px",
+  overflow: "hidden",
+  boxShadow: "10px 15px 15px #00000044",
+}
+const sponsorLogo = {
+  maxWidth: "100%",
+  maxHeight: "7em",
+}
+const trackCard = {
+  width: "100%",
+  margin: "auto",
+}
+const trackCardInner = {
+  width: "90%",
+  height: "17em",
+  margin: "3vw",
+  padding: "2.5vh",
+  borderRadius: "20px",
+  background: "linear-gradient(160deg, rgba(142,73,73,0.3) 0%, rgba(18,101,90,0.6) 37%, rgba(68, 87, 23,0.3) 100%)",
+  boxShadow: "15px 20px 20px #00000044",
 }
 const faqQ = {
   fontSize: "1.2em",
@@ -512,7 +546,7 @@ class Datathon extends Component {
             <p style={{...subtitle}}>This year's theme is...</p>
             <p style={{
               fontSize: "2em",
-            }}><i>Healthcare and Public Health</i></p>
+            }}><i>Public Health and Healthcare</i></p>
             <p>
               As we navigate a rapidly changing world, the significance of public 
               well-being has never been more profound.
@@ -523,6 +557,113 @@ class Datathon extends Component {
               year's Datathon invites you to explore the vast landscape of healthcare 
               and public health, using data as the compass for change.
             </p>
+          </div>
+
+          <div class="spacer" style={{...spacer}}></div>
+
+          <div class="sponsors">
+            <p style={{...subtitle}}>Sponsors</p>
+            <p style={{textAlign: "center"}}>
+              We are grateful to our sponsors for their support of
+              the Datathon for Social Good.
+            </p>
+              <div style={{
+                width: "100%",
+                margin: "2em auto 2em auto",
+                textAlign: "center",
+              }}>
+                {/* Rows of 2 sponsors each, but size up to one per row for mobile */}
+                <div class="sponsorLogo" style={{...sponsorContainer}}>
+                  <a href="https://innovation.ca.gov/who-we-are/caldata/">
+                    <img src={caldata_logo} style={{
+                      maxWidth: "50%",
+                      ...sponsorLogo
+                      }}></img>
+                  </a>
+                </div>
+                <div class="sponsorLogo" style={{...sponsorContainer}}>
+                  <a href="https://www.clighttechnologies.com/">
+                    <img src={clight_technologies_logo} style={{...sponsorLogo}}></img>
+                  </a>
+                </div>
+                <div class="sponsorLogo" style={{...sponsorContainer}}>
+                  <a href="https://www.doordash.com/">
+                    <img src={doordash_logo} style={{...sponsorLogo}}></img>
+                  </a>
+                </div>
+                <div class="sponsorLogo" style={{...sponsorContainer}}>
+                  <a href="https://www.primerica.com/public/">
+                    <img src={primerica_logo} style={{...sponsorLogo}}></img>
+                  </a>
+                </div>
+                <div class="sponsorLogo" style={{...sponsorContainer}}>
+                  <a href="https://www.singlestore.com/">
+                    <img src={singlestore_logo} style={{...sponsorLogo}}></img>
+                  </a>
+                </div>
+              </div>
+            <p style={{textAlign: "center"}}>
+              Interested in sponsoring Datathon? Please contact us at
+              <br></br>
+              <a href="mailto:dss.berkeley@gmail.com" style={{
+                color: "#eeeeee",
+              }}>
+                <b><i> dss.berkeley@gmail.com</i></b>
+              </a>
+              .
+            </p>
+          </div>
+
+          <div class="spacer" style={{...spacer}}></div>
+
+          <div class="tracks">
+            <p style={{...subtitle}}>Tracks</p>
+            <p>
+              This year, our datathon features two tracks: Public Health and Healthcare.
+              Read more about them both below:
+            </p>
+            <div class="trackCard" style={{...trackCard}}>
+              <div class="trackCardInner" style={{...trackCardInner}}>
+                <p style={{
+                  fontSize: "1.6em",
+                }}><i>Public Health</i></p>
+                <p>
+                  Our Public Health track focuses on the health of populations and communities.
+                  Datasets for this track have been graciously provided by our sponsor CalData.
+                </p>
+                <div style={{
+                    margin: "0 auto",
+                    textAlign: "center",
+                  }}>
+                  <a href="https://innovation.ca.gov/who-we-are/caldata/" target="_blank" rel="noopener noreferrer">
+                    <img src={caldata_logo} alt="CalData" style={{...sponsorLogo}}></img>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="trackCard" style={{...trackCard}}>
+              <div class="trackCardInner" style={{...trackCardInner}}>
+                <p style={{
+                  fontSize: "1.6em",
+                }}><i>Healthcare</i></p>
+                <p>
+                  Our Healthcare track focuses on the health of individuals and on patient care.
+                  Datasets for this track have been graciously provided by our sponsor
+                  C. Light Technologies.
+                </p>
+                <div style={{
+                    margin: "0 auto",
+                    textAlign: "center",
+                  }}>
+                  <a href="https://www.clighttechnologies.com/" target="_blank" rel="noopener noreferrer">
+                    <img src={clight_technologies_logo} alt="C. Light Technologies" style={{...sponsorLogo}}></img>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
           </div>
 
           <div class="spacer" style={{...spacer}}></div>
