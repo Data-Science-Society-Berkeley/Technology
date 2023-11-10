@@ -341,9 +341,11 @@ class Datathon extends Component {
               Social Good
             </p>
             <p style={{
-              fontSize: "0.35em",
+              fontSize: "0.32em",
             }}>
-              November 11th-12th, 2023 &mdash; UC Berkeley Cory Hall
+              November 11th and 12th, 2023 &mdash; UC Berkeley Cory Hall
+              <br></br>
+              10:00 AM - 6:00 PM PST
               <br></br>
               Co-hosted by DSS, BDAB, SAAS, and CSUA
             </p>
