@@ -143,6 +143,7 @@ h1.boldish {
         flex-direction: column;
         margin-bottom: 40px;
         max-width: 93%;
+        text-align: center;
     }
 
     .grid-tile {
