@@ -143,9 +143,7 @@ h1.boldish {
         flex-direction: column;
         margin-bottom: 40px;
         flex-wrap: wrap;
-        width: 95%; /* Set the width to 95% of the parent container's width */
-        margin: 0 auto;
-        margin-bottom: 40px;
+        max-width: 90%;
     }
 
     .grid-tile {
