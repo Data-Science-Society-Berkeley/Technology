@@ -445,7 +445,7 @@ class CentralText extends Component {
 
         <div style={{margin: "0", padding: "3% 5% 3% 5%", background: "white"}}>
           <div class="sub-banner">
-            <div class="left">
+            <div class="leftnew">
               <h1 class="bold">DATA SCIENCE SOCIETY</h1>
               <h1 class="light">At Berkeley</h1>
               <p>Berkeley’s first undergraduate data-science focused student organization. Actively fostering a strong data science community on campus via our consulting and educational initiatives.</p>
@@ -553,10 +553,6 @@ class CentralText extends Component {
                   <p>Find out more about what we do and how to join us.</p>
                   <a href="./joinus">More about resources →</a>
                   {/* extra line space to make the last image the same height as the others... idk where we set the height */}
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  <br></br>
                 </div>
                 <div class="right1">
                   <img src={learnBanner}></img>

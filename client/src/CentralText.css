@@ -16,6 +16,13 @@
     gap: 10px;
 }
 
+.leftnew {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .homepage-test h1 {
     font-size: 50px;
 }
@@ -58,6 +65,8 @@
 .right1 img {
     width: 100%;
     border-radius: 10px;
+    height: auto;
+    white-space: wrap;
 }
 
 .grid-tile {
@@ -102,3 +111,43 @@ h1.boldish {
     padding: 5%;
     padding-top: 2%;
 }
+
+.flex-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    justify-content: space-between; /* Space between text and image */
+  }
+  
+  .text-content {
+    flex: 1; /* Adjust as needed for text section width */
+    padding-right: 20px; /* Space between text and image */
+  }
+  
+  .image-content {
+    flex: 1; /* Adjust as needed for image section width */
+    max-height: 30px;
+  }
+  
+  @media (max-width: 600px) { /* Adjust the max-width as needed */
+    .value {
+        display: flex;
+        gap: 10%;
+        flex-direction: column;
+    }
+    .leftnew {
+        display: flex;
+        flex-direction: column;
+    }
+    .sub-banner {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .grid-tile {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    
+  }
