@@ -144,6 +144,15 @@ h1.boldish {
         margin-bottom: 40px;
     }
 
+    .right1 .grid {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: 1fr min-content;
+        text-align: center;
+    }
+
     .grid-tile {
         display: flex;
         flex-direction: column;
