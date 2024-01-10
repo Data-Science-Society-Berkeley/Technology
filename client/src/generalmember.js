@@ -40,9 +40,9 @@ import savvy from "./Leadership Headshots/savvy.jpeg";
 import bella from "./Leadership Headshots/bella2.png"
 import paul from "./Leadership Headshots/paul2.png"
 import stephen from "./Leadership Headshots/stephen2.png"
-import ethan from "./Leadership Headshots/ethan.jpeg"
-import aarthi from "./Leadership Headshots/aarthi.jpg"
-import austin from "./Leadership Headshots/austin.jpeg"
+import james from "./Leadership Headshots/JamesG.jpg"
+import steven from "./Leadership Headshots/Steven2.jpg"
+import joseph from "./Leadership Headshots/Joseph.jpg"
 
 import mentors from "./Decal Images/acadevmentors_fall22.png";
 import acadevdirs from "./Acadev Images/acadevdirs.jpeg";
@@ -564,9 +564,9 @@ class DecalLearn extends Component {
                 <Card.Group centered>
                   <Card style={cardstyle}>
                     {" "}
-                    <Image style={imagestyle} src={ethan} />
+                    <Image style={imagestyle} src={steven} />
                     <Card.Content>
-                      <Card.Header style={textstyle}>Ethan Chien</Card.Header>
+                      <Card.Header style={textstyle}>Steven Zeng</Card.Header>
                       <Card.Meta style={{ marginTop: "1vw" }}>
                         <span style={{ roleStyle }}>
                           Director of Academic Development
@@ -574,19 +574,19 @@ class DecalLearn extends Component {
                       </Card.Meta>
                     </Card.Content>
                     <Card.Content extra>
-                      <a href="mailto:ekchien0@berkeley.edu">
+                      <a href="mailto:k1519632@berkeley.edu@berkeley.edu">
                         <Icon name="mail" />
                       </a>
-                      <a href="https://www.linkedin.com/in/ethan-chien-091a1a206/">
+                      <a href="https://www.linkedin.com/in/zengsteven/">
                         <Icon name="linkedin" />
                       </a>
                     </Card.Content>
                   </Card>
                   <Card style={cardstyle}>
                     {" "}
-                    <Image style={imagestyle} src={aarthi} />
+                    <Image style={imagestyle} src={james} />
                     <Card.Content>
-                      <Card.Header style={textstyle}>Aarthi Kannan</Card.Header>
+                      <Card.Header style={textstyle}>James Geronimo</Card.Header>
                       <Card.Meta style={{ marginTop: "1vw" }}>
                         <span style={{ roleStyle }}>
                           Director of Academic Development
@@ -594,19 +594,19 @@ class DecalLearn extends Component {
                       </Card.Meta>
                     </Card.Content>
                     <Card.Content extra>
-                      <a href="mailto:aarthikannan@berkeley.edu">
-                        <Icon name="mail" />
-                      </a>
-                      <a href="https://www.linkedin.com/in/aarthikannan526/">
-                        <Icon name="linkedin" />
-                      </a>
+                    <a href="mailto:jegeronimo@berkeley.edu">
+                      <Icon size="large" name="mail" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/james-geronimo/">
+                      <Icon size="large" name="linkedin" />
+                    </a>
                     </Card.Content>
                   </Card>
                   <Card style={cardstyle}>
                     {" "}
-                    <Image style={imagestyle} src={austin} />
+                    <Image style={imagestyle} src={joseph} />
                     <Card.Content>
-                      <Card.Header style={textstyle}>Austin Nicola Ardisaputra</Card.Header>
+                      <Card.Header style={textstyle}>Joseph Zhai</Card.Header>
                       <Card.Meta style={{ marginTop: "1vw" }}>
                         <span style={{ roleStyle }}>
                           Director of Academic Development
@@ -614,12 +614,12 @@ class DecalLearn extends Component {
                       </Card.Meta>
                     </Card.Content>
                     <Card.Content extra>
-                      <a href="mailto:aardisaputra@berkeley.edu">
-                        <Icon name="mail" />
-                      </a>
-                      <a href="https://www.linkedin.com/in/aardisaputra/">
-                        <Icon name="linkedin" />
-                      </a>
+                    <a href="mailto:josephzhai@berkeley.edu">
+                    <Icon size="large" name="mail" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/josephzhai/">
+                    <Icon size="large" name="linkedin" />
+                  </a>
                     </Card.Content>
                   </Card>
                 </Card.Group>
