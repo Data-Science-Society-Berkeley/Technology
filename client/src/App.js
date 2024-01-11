@@ -178,7 +178,7 @@ class App extends Component {
           <Route
             path="/applydecal"
             component={() => {
-              window.location.href = "https://forms.gle/gQz9xDGNwLS3wFYQA";
+              window.location.href = "https://forms.gle/zUr8Vp7NRTap7NM48";
               return null;
             }}
           />
@@ -195,7 +195,7 @@ class App extends Component {
             exact
             path="/coffee"
             component={() => {
-              window.location.href = "https://www.notion.so/dssberkeley/DSS-Fall-23-Coffee-Chat-Sign-ups-833234c054534e1fa8740e272cc55eb7";
+              window.location.href = "https://dssberkeley.notion.site/DSS-Spring-2024-Coffee-Chat-Sign-Ups-e8c1d224a1814704adccd03d768e2300?pvs=4";
               return null;
             }}
           />
