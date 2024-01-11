@@ -590,7 +590,7 @@ const leadershipCards = [
   <Card.Content>
     <Card.Header style={textstyle}>Michael Florip</Card.Header>
     <Card.Meta style={{ marginTop: "1vw" }}>
-      <span style={roleStyle}>Director of Sourcing</span>
+      <span style={roleStyle}>VP of Sourcing</span>
     </Card.Meta>
   </Card.Content>
   <Card.Content extra>
