@@ -27,27 +27,26 @@ let endpoint = "http://localhost:8080/test";
 const footer = {
   color: "#000000",
   fontFamily: "Montserrat",
-  fontSize: "1vw",
+  fontSize: "12px",
   fontStyle: "normal",
-  lineHeight: "1.5vw",
 };
 const iconDesc = {
   color: "#000000",
   fontFamily: "Montserrat",
-  fontSize: "1vw",
+  fontSize: "12px",
   fontStyle: "normal",
-  lineHeight: "1.5vw",
   marginLeft: "1.5vw",
   marginTop: "0px",
+  lineHeight: "3vh",
   verticalAlign: "middle",
 };
 const link = {
   color: "#000000",
   fontFamily: "Montserrat",
-  fontSize: "1vw",
+  fontSize: "12px",
   fontStyle: "normal",
-  lineHeight: "1.5vw",
   fontWeight: "600",
+  margin: "-5px",
 };
 class Footer extends Component {
   constructor(props) {
@@ -59,32 +58,33 @@ class Footer extends Component {
         vertical
         style={{
           width: "100%",
-          height: "43vw",
+          height: "auto",
           background: "#E5E5E5",
         }}
       >
         <Container>
-          <Grid divided inverted stackable>
+          <Grid divided inverted>
             <Grid.Row>
-              <div style={{ marginLeft: "-20%", marginTop: "1.5vw"}}>
-                <Image inline src={logo} style={{ width: "5vw",}}></Image>
-                <div
-                  style={{
-                    marginLeft:"6vw",
-                    marginTop: "-3vw",
-                    fontFamily: "Montserrat",
-                    fontStyle: "normal",
-                    fontWeight: "21vw",
-                    fontSize: "1.5vw",
-                    lineHeight: "2vw",
-                  }}
-                >
-                  DATA SCIENCE SOCIETY
+              <Grid.Column width={16}>
+                <div style={{ marginLeft: "-2vw", marginTop: "1.5vw", marginBottom: "1.5vw" }}>
+                  <Image inline src={logo} style={{ width: "5vw",}}></Image>
+                  <div
+                    style={{
+                      marginLeft:"6vw",
+                      marginTop: "-3vw",
+                      fontFamily: "Montserrat",
+                      fontStyle: "normal",
+                      fontWeight: "21vw",
+                      fontSize: "1.5vw",
+                    }}
+                  >
+                    DATA SCIENCE SOCIETY
+                  </div>
                 </div>
-              </div>
+              </Grid.Column>
             </Grid.Row>
-            <Grid.Row style={{ marginBottom: "1vw", marginTop: "1.5vw" }}>
-              <Grid.Column width={8}>
+            <Grid.Row style={{ marginBottom: "1vw" }}>
+              <Grid.Column width={4}>
                 {/* <Icon.Group size="huge" style={{ marginLeft: "-20%" }}> */}
                 <div style={{ fontSize: "3vw" }}>
                   <a href="mailto:info@dss.berkeley.edu">
@@ -147,7 +147,7 @@ class Footer extends Component {
                 <br />
                 {/* </Icon.Group> */}
               </Grid.Column>
-              <Grid.Column width={2}>
+              <Grid.Column width={4}>
                 <div style={link}>General</div>
                 <List link inverted>
                   <Link to="/about">
@@ -157,21 +157,21 @@ class Footer extends Component {
                       About us{" "}
                     </List.Item>
                   </Link>
-                  <br /> <br />
+                  <br />
                   <Link to="/acadev">
                     <List.Item as="a" style={footer}>
                       {" "}
                       AcaDev
                     </List.Item>
                   </Link>
-                  <br /> <br />
+                  <br />
                   <Link to="/consulting">
                     <List.Item as="a" style={footer}>
                       {" "}
-                      Consulting{" "}
+                      Consulting
                     </List.Item>
                   </Link>
-                  <br /> <br />
+                  <br />
                   {/* <Link to="/decal">
                     {" "}
                     <List.Item as="a" style={footer}>
@@ -179,7 +179,7 @@ class Footer extends Component {
                       DeCal{" "}
                     </List.Item>
                   </Link>
-                  <br /> <br /> */}
+                  <br /> */}
                   <Link to="socialgood">
                     {" "}
                     <List.Item as="a" style={footer}>
@@ -187,7 +187,7 @@ class Footer extends Component {
                       Social Good{" "}
                     </List.Item>
                   </Link>
-                  <br /> <br />
+                  <br />
                   <Link to="/services">
                     {" "}
                     <List.Item as="a" style={footer}>
@@ -197,7 +197,7 @@ class Footer extends Component {
                   </Link>
                 </List>
               </Grid.Column>
-              <Grid.Column width={2}>
+              <Grid.Column width={3}>
                 <div style={link}>Past Work </div>
                 <List link inverted>
                   <Link to="/consulting">
@@ -207,31 +207,24 @@ class Footer extends Component {
                     </List.Item>{" "}
                   </Link>{" "}
                   <br />
-                  <br />
                   <Link to="/events">
                     <List.Item as="a" style={footer}>
                       Events
                     </List.Item>{" "}
                   </Link>
-                  <br /> <br />
+                  <br />
                   {/* <Link to="/education">
                     {" "}
                     <List.Item as="a" style={footer}>
                       Workshops
                     </List.Item>
                   </Link>
-                  <br /> <br /> */}
-                  <Link to="/gm">
-                    {" "}
-                    <List.Item as="a" style={footer}>
-                      GM Projects
-                    </List.Item>{" "}
-                  </Link>
+                  <br /> */}
                 </List>
               </Grid.Column>
               <Grid.Column width={2}>
                 <div style={link}>
-                  <div style={{ width: "15vw" }}>Program Pages </div>
+                  <div style={{ width: "15vw" }}>Programs </div>
                 </div>
                 <List link inverted>
                   <Link to="/gm">
@@ -240,7 +233,7 @@ class Footer extends Component {
                       General Membership{" "}
                     </List.Item>
                   </Link>
-                  {/* <br /> <br />
+                  {/* <br />
                   <Link to="/decallearn">
                     <List.Item as="a" style={footer}>
                       DeCal Course{" "}
@@ -251,17 +244,16 @@ class Footer extends Component {
                 </List>
               </Grid.Column>
               <Grid.Column
-                width={2}
+                width={3}
                 style={{ marginRight: "-7vw", marginLeft: "3vw" }}
               >
                 <Link to="/services">
                   {" "}
-                  <div style={link}>Contact Us </div>{" "}
+                  <div style={link}>Contact Us</div>
                 </Link>
                 <List link inverted>
                   <Link to="/join">
                     <List.Item as="a" style={link}>
-                      {" "}
                       Join Us{" "}
                     </List.Item>
                   </Link>
