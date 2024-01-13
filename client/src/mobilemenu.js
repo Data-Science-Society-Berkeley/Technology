@@ -318,7 +318,10 @@ class NavBar2 extends Component {
               color: "#8CD6D1	",
             }}
           >
-            DSS
+            <img src={logo} style={{
+              width: "15vw",
+              padding: "3vw 0vw 0vw 0vw",
+            }}></img>
           </Menu.Item>
           <Menu.Item as="a">
             <Link to="/" onClick={this.handleSettingVisibleToFalse}>
@@ -370,7 +373,8 @@ class NavBar2 extends Component {
             </Link>
           </Menu.Item>
 
-          <Menu.Item as="a" style={{ textAlign: "right" }}>
+          {/* DEPRECATED COMMITTEE PAGES */}
+          {/* <Menu.Item as="a" style={{ textAlign: "right" }}>
             {this.generateExpandableCommitteesMenuItem()}
             <Dropdown
               style={{ fontSize: "7vw", color: "#FFC54A" }}
@@ -449,9 +453,34 @@ class NavBar2 extends Component {
               </Dropdown.Menu>
             </Dropdown>
           </Menu.Item>
-          {/* </Link> */}
+          </Link> */}
 
-          {/* <Link to="/about"> */}
+          <Menu.Item as="a">
+            <Link to="/gm" onClick={this.handleSettingVisibleToFalse}>
+              <div style={{ marginTop: "2vw", marginBottom: "2vw" }}>
+                <div>
+                  <div
+                    style={{ fontSize: "5vw", color: "#8CD6D1" }}
+                    direction="right"
+                  >
+                    <Icon name="book" />
+                  </div>
+                  <div
+                    direction="left"
+                    style={{
+                      fontSize: "3vw",
+                      marginTop: "1vw",
+                      color: "#000000",
+                    }}
+                  >
+                    DeCal
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </Menu.Item>
+
+          {/* <Link to="/events"> */}
           <Menu.Item as="a">
             <Link to="events" onClick={this.handleSettingVisibleToFalse}>
               <div style={{ marginTop: "2vw", marginBottom: "2vw" }}>
@@ -504,7 +533,7 @@ class NavBar2 extends Component {
           </Menu.Item>
 
           <Menu.Item as="a">
-            <Link to="/joinus" onClick={this.handleSettingVisibleToFalse}>
+            <Link to="/blog" onClick={this.handleSettingVisibleToFalse}>
               <div style={{ marginTop: "2vw", marginBottom: "2vw" }}>
                 <div>
                   <div
@@ -512,6 +541,31 @@ class NavBar2 extends Component {
                     direction="right"
                   >
                     <Icon name="pencil" />
+                  </div>
+                  <div
+                    direction="left"
+                    style={{
+                      fontSize: "3vw",
+                      marginTop: "1vw",
+                      color: "#000000",
+                    }}
+                  >
+                    Blog
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </Menu.Item>
+
+          <Menu.Item as="a">
+            <Link to="/joinus" onClick={this.handleSettingVisibleToFalse}>
+              <div style={{ marginTop: "2vw", marginBottom: "2vw" }}>
+                <div>
+                  <div
+                    style={{ fontSize: "5vw", color: "#8CD6D1" }}
+                    direction="right"
+                  >
+                    <Icon name="heart" />
                   </div>
                   <div
                     direction="left"
@@ -533,13 +587,19 @@ class NavBar2 extends Component {
           onClick={this.handleSettingVisibleToFalse}
           // style={{ minHeight: "75vw" }}
         >
-          <Segment basic>
+          <Segment basic style={{
+            minHeight: "75vw",
+            backgroundColor: "#FFFFFF",
+            padding: "0px",
+          }}>
             <Menu
               // fixed="top"
               // inverted
               style={{
                 backgroundColor: backgroundColor,
                 position: "relative",
+                borderRadius: "0px",
+                margin: "0px",
               }}
             >
               <div style={{ margin: "auto", width: "30vw" }}>

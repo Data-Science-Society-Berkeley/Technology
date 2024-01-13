@@ -233,10 +233,14 @@ const aboutlinks = {
   lineHeight: "3vw",
   height: "0vw",
   color: "black",
+  height: "0vw",
+  color: "black",
   whiteSpace: "nowrap",
   position: "absolute",
   top: "20%",
+  top: "20%",
   left: "50%",
+  textAlign: "center",
   textAlign: "center",
   transform: "translate(-50%, -50%)",
 };
@@ -667,6 +671,9 @@ class About extends Component {
   scrollMission() {
     document.getElementById("mission").scrollIntoView();
   }
+  scrollMission() {
+    document.getElementById("mission").scrollIntoView();
+  }
 
   screenWidthBigEnough() {
     if (window.innerWidth < 500) {
@@ -708,6 +715,8 @@ class About extends Component {
           </Image>
         </div> */}
         {/* <div>
+        </div> */}
+        {/* <div>
           <Image src={rectangle}
           style= {{
             position: 'absolute',
@@ -719,6 +728,8 @@ class About extends Component {
             maxWidth: "17vw",
           }}>
           </Image>
+        </div> */}
+        {/* <div>
         </div> */}
         {/* <div>
           <Image src={rectangle}
@@ -736,12 +747,19 @@ class About extends Component {
         <div>
           <Image style={{position: 'relative',
           top: "0vw",
+          top: "0vw",
           // marginTop: '3vw',
+          left: "0vw",
           left: "0vw",
           right: "30vw",
           bottom: "15vw",
           // margin: 'auto',
           // margintop: "10vw",
+          // marginBottom: '0vw',
+          // height: "70vw",
+          // maxHeight: "80vw",
+          width: "100%",
+          maxWidth: "100%",
           // marginBottom: '0vw',
           // height: "70vw",
           // maxHeight: "80vw",
@@ -788,6 +806,8 @@ class About extends Component {
             width={16}
             columns={5}
             style={{
+              backgroundColor: "#D2F2F0",
+              width: "100vw",
               backgroundColor: "#D2F2F0",
               width: "100vw",
               height: "7vw",
@@ -1011,15 +1031,15 @@ class About extends Component {
         <div id="committees">
           </div>
         <Grid.Row centered columns={1} style={{ marginBottom: "7vw" }}>
-        <div
-          style={{
-            zIndex: "1",
-            position: "relative",
-            marginBottom: "-25vw",
-          }}
-          >
-        </div>
-        <div
+          <div
+            style={{
+              zIndex: "1",
+              position: "relative",
+              marginBottom: "-25vw",
+            }}
+            >
+          </div>
+          <div
             style={{
               position: "absolute",
               textShadow: "none",
@@ -1053,7 +1073,7 @@ class About extends Component {
             }}>
             </Image>
           </div>
-        <div
+          <div
           style={{
             position: "relative",
             textShadow: "none",
@@ -1069,27 +1089,27 @@ class About extends Component {
             marginBottom: "2.5vw",
             alignText: "center",
           }}
-        >
-        <span id="academicDevelopment">Academic Development Committee</span>
-        </div>
-        <div
-          centered
-          style={{
-            position: "relative",
-            textShadow: "none",
-            width: "82vw",
-            top: "50vw",
-            left: "28vw",
-            zIndex: "4",
-            fontFamily: "Lato",
-            fontStyle: "normal",
-            fontWeight: "normal",
-            fontSize: "2.1vw",
-            lineHeight: "2.5vw",
-            color: "black",
-            marginBottom: "5vw",
-            alignText: "center",
-          }}
+          >
+          <span id="academicDevelopment">Academic Development Committee</span>
+          </div>
+          <div
+            centered
+            style={{
+              position: "relative",
+              textShadow: "none",
+              width: "82vw",
+              top: "50vw",
+              left: "28vw",
+              zIndex: "4",
+              fontFamily: "Lato",
+              fontStyle: "normal",
+              fontWeight: "normal",
+              fontSize: "2.1vw",
+              lineHeight: "2.5vw",
+              color: "black",
+              marginBottom: "5vw",
+              alignText: "center",
+            }}
           >
             The academic development committee directs our decal program open to
             all skill levels and students and hosts a variety of educational workshops for the
@@ -1101,106 +1121,106 @@ class About extends Component {
               fontStyle: "italic",
               textDecoration: "none",
             }}>Join Acadev →</a>
-        </div>
-        <div
-          style={{
-            position: "relative",
-            textShadow: "none",
-            top: "50vw",
-            left: "1vw",
-            zIndex: "3",
-            fontFamily: "Lato",
-            fontStyle: "43vw",
-            fontWeight: "bold",
-            fontSize: "2vw",
-            lineHeight: "6vw",
-            color: "black",
-            marginBottom: "2.5vw",
-            alignText: "center",
-          }}
-        >
-        <span id="socialGood">Social Good Committee</span>
-        </div>
-        <div
-          centered
-          style={{
-            position: "relative",
-            textShadow: "none",
-            width: "87vw",
-            top: "50vw",
-            left: "26vw",
-            zIndex: "4",
-            fontFamily: "Lato",
-            fontStyle: "normal",
-            fontWeight: "normal",
-            fontSize: "2.1vw",
-            lineHeight: "2.5vw",
-            color: "black",
-            marginBottom: "5vw",
-            alignText: "center",
-          }}
+          </div>
+          <div
+            style={{
+              position: "relative",
+              textShadow: "none",
+              top: "50vw",
+              left: "1vw",
+              zIndex: "3",
+              fontFamily: "Lato",
+              fontStyle: "43vw",
+              fontWeight: "bold",
+              fontSize: "2vw",
+              lineHeight: "6vw",
+              color: "black",
+              marginBottom: "2.5vw",
+              alignText: "center",
+            }}
           >
-            We are passionate about contributing to tech for good by identifying 
-            data-driven insights and actionable solutions for the missions of 
-            non-profit organizations. The Social Good committee acts as a consulting
-            committee for nonprofits with social good initiatives.
-            <br></br>
-            <br></br>
-            <a href="./joinus" style={{
-              color: "#77B8B3",
-              fontStyle: "italic",
-              textDecoration: "none",
-            }}>Join Social Good →</a>
-        </div>
-        <div
-          style={{
-            position: "relative",
-            textShadow: "none",
-            top: "50vw",
-            left: "1vw",
-            zIndex: "3",
-            fontFamily: "Lato",
-            fontStyle: "43vw",
-            fontWeight: "bold",
-            fontSize: "2vw",
-            lineHeight: "6vw",
-            color: "black",
-            marginBottom: "2.5vw",
-            alignText: "center",
-          }}
-        >
-        <span id="consulting">Consulting Committee</span>
-        </div>
-        <div
-          centered
-          style={{
-            position: "relative",
-            textShadow: "none",
-            width: "85vw",
-            top: "50vw",
-            left: "26vw",
-            zIndex: "4",
-            fontFamily: "Lato",
-            fontStyle: "normal",
-            fontWeight: "normal",
-            fontSize: "2.1vw",
-            lineHeight: "2.5vw",
-            color: "black",
-            marginBottom: "10vw",
-            alignText: "center",
-          }}
+          <span id="socialGood">Social Good Committee</span>
+          </div>
+          <div
+            centered
+            style={{
+              position: "relative",
+              textShadow: "none",
+              width: "87vw",
+              top: "50vw",
+              left: "26vw",
+              zIndex: "4",
+              fontFamily: "Lato",
+              fontStyle: "normal",
+              fontWeight: "normal",
+              fontSize: "2.1vw",
+              lineHeight: "2.5vw",
+              color: "black",
+              marginBottom: "5vw",
+              alignText: "center",
+            }}
+            >
+              We are passionate about contributing to tech for good by identifying 
+              data-driven insights and actionable solutions for the missions of 
+              non-profit organizations. The Social Good committee acts as a consulting
+              committee for nonprofits with social good initiatives.
+              <br></br>
+              <br></br>
+              <a href="./joinus" style={{
+                color: "#77B8B3",
+                fontStyle: "italic",
+                textDecoration: "none",
+              }}>Join Social Good →</a>
+          </div>
+          <div
+            style={{
+              position: "relative",
+              textShadow: "none",
+              top: "50vw",
+              left: "1vw",
+              zIndex: "3",
+              fontFamily: "Lato",
+              fontStyle: "43vw",
+              fontWeight: "bold",
+              fontSize: "2vw",
+              lineHeight: "6vw",
+              color: "black",
+              marginBottom: "2.5vw",
+              alignText: "center",
+            }}
           >
-            We are passionate about working with corporate clients 
-            to provide data-driven insights and actionable solutions through 
-            advanced analytical methods.
-            <br></br>
-            <br></br>
-            <a href="./joinus" style={{
-              color: "#77B8B3",
-              fontStyle: "italic",
-              textDecoration: "none",
-            }}>Join Consulting →</a>
-        </div>
+          <span id="consulting">Consulting Committee</span>
+          </div>
+          <div
+            centered
+            style={{
+              position: "relative",
+              textShadow: "none",
+              width: "85vw",
+              top: "50vw",
+              left: "26vw",
+              zIndex: "4",
+              fontFamily: "Lato",
+              fontStyle: "normal",
+              fontWeight: "normal",
+              fontSize: "2.1vw",
+              lineHeight: "2.5vw",
+              color: "black",
+              marginBottom: "10vw",
+              alignText: "center",
+            }}
+            >
+              We are passionate about working with corporate clients 
+              to provide data-driven insights and actionable solutions through 
+              advanced analytical methods.
+              <br></br>
+              <br></br>
+              <a href="./joinus" style={{
+                color: "#77B8B3",
+                fontStyle: "italic",
+                textDecoration: "none",
+              }}>Join Consulting →</a>
+          </div>
         </Grid.Row>
           <Grid
             container
@@ -1275,22 +1295,22 @@ class About extends Component {
               alignText: "center",
             }}
           >
-          <span>Sponsors</span>
-          </div>
-          <div>
-            <Image src={rectangle}
-            style= {{
-              position: 'relative',
-              top: "4vw",
-              left: '31vw',
-              height: "0.75vw",
-              maxHeight: "1.5vw",
-              width: "40vw",
-              marginBottom: "10vw",
-              // dated design, adjusting opacity instead of deleting to maintain space
-              opacity: "0",
-            }}>
-            </Image>
+            <span>Sponsors</span>
+            </div>
+            <div>
+              <Image src={rectangle}
+              style= {{
+                position: 'relative',
+                top: "4vw",
+                left: '31vw',
+                height: "0.75vw",
+                maxHeight: "1.5vw",
+                width: "40vw",
+                marginBottom: "10vw",
+                // dated design, adjusting opacity instead of deleting to maintain space
+                opacity: "0",
+              }}>
+              </Image>
             </div>
           </Grid.Row>
           <Grid.Row>
@@ -1369,6 +1389,10 @@ class About extends Component {
                 style={{ marginLeft: "7vw", width: "15vw" }}
                 src={cal}
               ></Image>
+              <Image
+                style={{ marginLeft: "7vw", width: "15vw" }}
+                src={cal}
+              ></Image>
             </Image.Group>
           </Grid.Row>
           <Grid.Row centered>
@@ -1397,9 +1421,27 @@ class About extends Component {
             <Image.Group
               size={"medium"}
             >
+            </Image.Group>
+          </Grid.Row>
+          <Grid.Row centered>
+            <Image.Group
+              size={"medium"}
+            >
               <Image
                 style={{ width: "15vw" }}
                 src={haasds}
+              ></Image>
+              <Image
+                style={{ marginLeft: "7vw", width: "18vw" }}
+                src={saas}
+              ></Image>
+              <Image
+                style={{ marginLeft: "7vw", width: "18vw" }}
+                src={hbsa}
+              ></Image>
+              <Image
+                style={{ marginLeft: "7vw", width: "20vw" }}
+                src={ascend}
               ></Image>
               <Image
                 style={{ marginLeft: "7vw", width: "18vw" }}
@@ -1430,6 +1472,10 @@ class About extends Component {
               <Image
                 style={{ marginLeft: "6vw", width: "18vw" }}
                 src={ecode}
+              ></Image>
+              <Image
+                style={{ left: "3vw", marginLeft: "2vw", width: "25vw" }}
+                src={nib}
               ></Image>
               <Image
                 style={{ left: "3vw", marginLeft: "2vw", width: "25vw" }}
