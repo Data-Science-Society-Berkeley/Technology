@@ -367,7 +367,7 @@ class DecalLearn extends Component {
                 fontWeight: "21.5vw",
                 position: "relative",
                 left: "10vw"
-              }}>Data 198: <i>Intro to Real World Data Science</i>
+              }}>Data 198: <i>Intro to Real World Data Science</i> <a href = "https://jegeronimo.github.io/dss-data-198/"> (DeCal Website Link)</a>
               </div>
 
               <div style={{
