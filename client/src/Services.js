@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
 import './services.css';
-import './services.css';
 import {
   Image,
-  Reveal,
   Reveal,
   Grid,
   Card,
