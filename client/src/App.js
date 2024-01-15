@@ -171,7 +171,7 @@ class App extends Component {
           <Route
             path="/apply"
             component={() => {
-              window.location.href = "https://airtable.com/appP7nPUKGUj414WI/shr3AKnzbwVhslzcd";
+              window.location.href = "https://airtable.com/appKnoH5lNfaQ8dQe/shrV6AL4ZXX2A7hJ2";
               return null;
             }}
           />
