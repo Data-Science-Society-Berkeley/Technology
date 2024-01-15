@@ -919,7 +919,7 @@ class App extends Component {
             render={(props) => (
               <div>
                 <NavBar2 {...props} componentid={CentralText} />
-                {/* <Footer></Footer> */}
+                <Footer></Footer>
               </div>
             )}
           />
@@ -933,7 +933,7 @@ class App extends Component {
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar2 {...props} componentid={About} />
-                {/* <Footer></Footer> */}
+                <Footer></Footer>
               </div>
             )}
           />
@@ -947,7 +947,7 @@ class App extends Component {
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar2 {...props} componentid={Committees} />
-                {/* <Footer></Footer> */}
+                <Footer></Footer>
               </div>
             )}
           />
@@ -961,7 +961,7 @@ class App extends Component {
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar2 {...props} componentid={Consulting} />
-                {/* <Footer></Footer> */}
+                <Footer></Footer>
               </div>
             )}
           />
@@ -975,7 +975,7 @@ class App extends Component {
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar2 {...props} componentid={Acadev} />
-                {/* <Footer></Footer> */}
+                <Footer></Footer>
               </div>
             )}
           />
@@ -989,7 +989,7 @@ class App extends Component {
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar2 {...props} componentid={GeneralMember} />
-                {/* <Footer></Footer> */}
+                <Footer></Footer>
               </div>
             )}
           />
@@ -1003,7 +1003,7 @@ class App extends Component {
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar2 {...props} componentid={Decal} />
-                {/* <Footer></Footer> */}
+                <Footer></Footer>
               </div>
             )}
           />
@@ -1017,7 +1017,7 @@ class App extends Component {
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar2 {...props} componentid={DecalLearn} />
-                {/* <Footer></Footer> */}
+                <Footer></Footer>
               </div>
             )}
           />
@@ -1031,7 +1031,7 @@ class App extends Component {
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar2 {...props} componentid={Social} />
-                {/* <Footer></Footer> */}
+                <Footer></Footer>
               </div>
             )}
           />
@@ -1045,7 +1045,7 @@ class App extends Component {
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar2 {...props} componentid={Work} />
-                {/* <Footer></Footer> */}
+                <Footer></Footer>
               </div>
             )}
           />
@@ -1059,7 +1059,7 @@ class App extends Component {
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar2 {...props} componentid={"services"} />
-                {/* <Footer></Footer> */}
+                <Footer></Footer>
               </div>
             )}
           />
@@ -1073,9 +1073,22 @@ class App extends Component {
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar2 {...props} componentid={Education} />
-                {/* <Footer></Footer> */}
+                <Footer></Footer>
               </div>
             )}
+          />
+
+          <Route
+            exact
+            path="/blog"
+            component={() => {
+              window.open(
+                'https://medium.com/@dssberkeley',
+                '_blank' // Open Medium in a new tab.
+              );
+              window.location.href = "./"; // TODO: Redirect back to last page. Currently redirects to home page regardless of where you are.
+              return null;
+            }}
           />
 
           <Route
@@ -1087,7 +1100,7 @@ class App extends Component {
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar2 {...props} componentid={Registration} />
-                {/* <Footer></Footer> */}
+                <Footer></Footer>
               </div>
             )}
           />
@@ -1101,7 +1114,7 @@ class App extends Component {
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar2 {...props} componentid={Join} />
-                {/* <Footer></Footer> */}
+                <Footer></Footer>
               </div>
             )}
           />
