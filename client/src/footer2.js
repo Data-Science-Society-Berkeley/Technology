@@ -157,7 +157,7 @@ class Footer extends Component {
                 <br />
                 {/* </Icon.Group> */}
               </Grid.Column>
-              <Grid.Column width={4}>
+              <Grid.Column width={3}>
                 <div style={link}>General</div>
                 <List link inverted>
                   <Link to="/about">
@@ -232,35 +232,22 @@ class Footer extends Component {
                   <br /> */}
                 </List>
               </Grid.Column>
-              <Grid.Column width={2}>
-                <div style={link}>
-                  <div style={{ width: "15vw" }}>Programs </div>
-                </div>
-                <List link inverted>
-                  <Link to="/gm">
-                    <List.Item as="a" style={footer}>
-                      {" "}
-                      DeCal{" "}
-                    </List.Item>
-                  </Link>
-                  {/* <br />
-                  <Link to="/decallearn">
-                    <List.Item as="a" style={footer}>
-                      DeCal Course{" "}
-                    </List.Item>
-                  </Link>{" "} */}
-                  <br />
-                  <br />
-                </List>
-              </Grid.Column>
               <Grid.Column
                 width={3}
                 style={{ marginRight: "-7vw", marginLeft: "3vw" }}
               >
+                 <Link to="/gm">
+                    <List.Item as="a" style={link}>
+                      {" "}
+                      DeCal{" "}
+                    </List.Item>
+                  </Link>
+                  <List link inverted>
                 <Link to="/services">
                   {" "}
                   <div style={link}>Contact Us</div>
                 </Link>
+                </List>
                 <List link inverted>
                   <Link to="/join">
                     <List.Item as="a" style={link}>
