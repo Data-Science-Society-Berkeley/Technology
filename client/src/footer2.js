@@ -60,7 +60,6 @@ class Footer extends Component {
           width: "100%",
           height: "auto",
           background: "#E5E5E5",
-          marginLeft: "50px"
         }}
       >
         <Container>
@@ -100,7 +99,7 @@ class Footer extends Component {
                       }}
                     ></Icon>
                     <span style={iconDesc}>
-                      <span style={{ marginLeft: ".5vw" }}>     Email</span>{" "}
+                      <span style={{ marginLeft: ".5vw" }}>   <br /> Email</span>{" "}
                     </span>
                   </a>
                   <br />
