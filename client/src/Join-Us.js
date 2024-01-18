@@ -27,7 +27,7 @@ import squiggle3 from "./Consulting/squiggle3.png";
 import upright from "./Consulting/topRight.png";
 import bottomleft from "./Consulting/bottomLeft.png";
 import logo from "./Consulting/logo.png";
-import flyer from "./Backgrounds/fa23flyer.png"
+import flyer from "./Backgrounds/sp24flyer.png"
 
 import linesTwo from "./Homepage/linesTwo.png";
 
