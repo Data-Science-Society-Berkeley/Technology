@@ -609,7 +609,7 @@ class Join extends Component {
             >
               <p>
                 If you would like a better idea of how you can prep for the interviews,
-                <a href="https://docs.google.com/document/d/1QLJPRuUDaDoadXAGhkP9pLX4dHvbdh8n8x9vluvw44s" style={{
+                <a href="https://docs.google.com/document/d/1SuvPHEXtFqpsyBNdgt-pKFBAvdOWBmcExDCYey02L8M/edit?usp=sharing" style={{
                   display: "inline-block",
                   textDecoration: "none",
                   color: "#77B8B3",
@@ -646,7 +646,7 @@ class Join extends Component {
             >
 
             In past semesters, our members have reported these questions as being most frequently asked. 
-            If you have further questions, email info@dss.berkeley.edu or schedule a coffee chat at dssberkeley.com/coffee. 
+            If you have further questions, email dss.berkeley@gmail.com or schedule a coffee chat at dssberkeley.com/coffee. 
 
             </Grid.Row>
         </Grid>
@@ -753,7 +753,7 @@ class Join extends Component {
                 When is the DeCal? Does the class allow conflicts?
               </Accordion.Title>
               <Accordion.Content active={activeIndex === 6} style={{ fontSize: "1.5vw", width: "100vw" }}>
-              <p>The DeCal will be Wednesdays from 6-8PM. We will not allow time conflicts and attendance will be mandatory because you will be working in groups on your projects!</p>
+              <p>The DeCal will be Mondays from 6:30-8:30 PM. We will not allow time conflicts and attendance will be mandatory because you will be working in groups on your projects!</p>
               </Accordion.Content> 
             </Accordion>
           </Grid.Row>
