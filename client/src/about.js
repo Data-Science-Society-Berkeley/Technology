@@ -1222,10 +1222,9 @@ class About extends Component {
               textShadow: "none",
               width: "61vw",
               top: "5vw",
-              left: "38vw",
+              left: "40vw",
               zIndex: "3",
               fontFamily: "Lato",
-              fontStyle: "43vw",
               fontWeight: "bold",
               fontSize: "3.5vw",
               lineHeight: "4vw",
@@ -1251,7 +1250,9 @@ class About extends Component {
             }}>
             </Image>
           </div>
-            <Card.Group centered>{leadershipCards}</Card.Group>
+            <Card.Group centered style={{
+              marginLeft: "15px", // in px for slight differences in mobile and desktop rendering
+            }}>{leadershipCards}</Card.Group>
             ``
           </Grid.Row>
           <div id="sponsors">

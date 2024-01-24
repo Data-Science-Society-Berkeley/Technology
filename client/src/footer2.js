@@ -60,22 +60,22 @@ class Footer extends Component {
           width: "100%",
           height: "auto",
           background: "#E5E5E5",
+          marginLeft: "4vw",
         }}
       >
         <Container>
           <Grid divided inverted>
             <Grid.Row>
               <Grid.Column width={16}>
-                <div style={{ marginLeft: "-2vw", marginTop: "1.5vw", marginBottom: "1.5vw" }}>
-                  <Image inline src={logo} style={{ width: "5vw",}}></Image>
+                <div style={{ marginLeft: "2vw", marginTop: "1.5vw", marginBottom: "1.5vw" }}>
+                  <Image inline src={logo} style={{ width: "7vw",}}></Image>
                   <div
                     style={{
-                      marginLeft:"6vw",
-                      marginTop: "-3vw",
+                      marginLeft:"9vw",
+                      marginTop: "-3vh",
                       fontFamily: "Montserrat",
                       fontStyle: "normal",
-                      fontWeight: "21vw",
-                      fontSize: "1.5vw",
+                      fontSize: "1em",
                     }}
                   >
                     DATA SCIENCE SOCIETY
@@ -83,25 +83,24 @@ class Footer extends Component {
                 </div>
               </Grid.Column>
             </Grid.Row>
-            <Grid.Row style={{ marginBottom: "1vw" }}>
-              <Grid.Column width={4}>
+            <Grid.Row style={{ 
+              marginBottom: "1vw",
+              marginLeft: "5vw",
+            }}>
+              <Grid.Column width={5}>
                 {/* <Icon.Group size="huge" style={{ marginLeft: "-20%" }}> */}
-                <div style={{ fontSize: "3vw" }}>
+                <div style={{ 
+                  fontSize: "6vw",
+                }}>
                   <a href="mailto:info@dss.berkeley.edu" style={{
                     textDecoration: "none",
                   }}>
                     <Icon
                       name="mail outline"
-                      style={{
-                        marginBottom: "1vw",
-                        color: "#8CD6D1",
-                        width: "3vw",
-                      }}
+                      style={{ marginBottom: "1vw", color: "#8CD6D1" }}
                     ></Icon>
-                    <span style={iconDesc}>
-                      <span style={{ marginLeft: ".5vw" }}>   <br /> Email</span>{" "}
-                    </span>
-                  </a>
+                    <span style={iconDesc}> Email</span>
+                  </a>{" "}
                   <br />
                   <a href="https://www.instagram.com/dssberkeley/" style={{
                     textDecoration: "none",
@@ -183,7 +182,7 @@ class Footer extends Component {
                     </List.Item>
                   </Link>
                   <br />
-                   <Link to="/decal">
+                  <Link to="/decal">
                     {" "}
                     <List.Item as="a" style={footer}>
                       {" "}
@@ -240,22 +239,15 @@ class Footer extends Component {
                 width={3}
                 style={{ marginRight: "-7vw", marginLeft: "3vw" }}
               >
-                 <Link to="/gm">
-                    <List.Item as="a" style={link}>
-                      {" "}
-                      DeCal{" "}
-                    </List.Item>
-                  </Link>
-                  <List link inverted>
                 <Link to="/services">
                   {" "}
-                  <div style={link}>Contact Us</div>
+                  <div style={link}>Contact Us </div>{" "}
                 </Link>
-                </List>
                 <List link inverted>
                   <Link to="/join">
                     <List.Item as="a" style={link}>
-                      Join Us{" "}
+                      {" "}
+                      Join Us
                     </List.Item>
                   </Link>
                 </List>

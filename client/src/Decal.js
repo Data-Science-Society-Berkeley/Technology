@@ -170,22 +170,21 @@ class Decal extends Component {
   render() {
     return (
       <div>
-          <h1
-           style={{
-             display: "flex",
-             justifyContent: "center",
-             top: "20vw",
-             width: "100%",
-             height: "auto",
-             textAlign: "center",
-             color: "black",
-             position: "absolute",
-             fontFamily: "Montserrat",
-             fontWeight: "bold",
-             fontSize: "6vw",
-             lineHeight: "6vw"
-           }}>
-             Decal
+          <h1 style={{
+            display: "flex",
+            justifyContent: "center",
+            top: "20vw",
+            width: "100%",
+            height: "auto",
+            textAlign: "center",
+            color: "black",
+            position: "absolute",
+            fontFamily: "Montserrat",
+            fontWeight: "bold",
+            fontSize: "6vw",
+            lineHeight: "6vw"
+          }}>
+              Decal
           </h1>
           
           <div>

@@ -52,8 +52,8 @@ import linesTwo from "./Homepage/linesTwo.png";
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
-  marginLeft: "62px",
-  marginTop: "42px",
+  margin: "auto",
+  paddingLeft: "10vw",
   textAlign: "center",
   fontFamily: "Lato",
 };
@@ -310,7 +310,7 @@ class DecalLearn extends Component {
         <div class="wrapper" style={{
           background: "linear-gradient(180deg, #FFFFFF 0%, #FDFFF9 33%, #EBF8E1 66%, #DAFFFB 100%)",
         }}>
-          <Grid entered style={gridoffset}>
+          <Grid style={gridoffset}>
             <Grid.Row
               width={16}
               columns={5}
@@ -371,15 +371,14 @@ class DecalLearn extends Component {
               </div>
 
               <div style={{
-                marginTop: "5vw",
-                marginRight: "20vw",
-                paddingRight:"10vw",
+                marginTop: "1vw",
+                width: "95vw",
                 textAlign: "start",
                 lineHeight: "3vw",
                 fontSize: "2vw",
                 fontWeight: "21.5vw",
                 position: "relative",
-                left: "10vw"
+                left: "10vw",
               }}>
                 The goal of our DeCal is to provide <b>data science education</b> and <b>experience</b> for students with little to no prior 
                 knowledge of the field. Our course focuses on practical tools not otherwise emphasized in Berkeley’s academic curricula, 
@@ -552,7 +551,7 @@ class DecalLearn extends Component {
                 fontWeight: "21.5vw",
                 fontWeight: "bold",
                 position: "relative",
-                left: "54vw"
+                left: "46vw",
               }}>Our Directors
               </div>
             </Grid.Row>
@@ -561,7 +560,9 @@ class DecalLearn extends Component {
               <div style={{
                 textAlign: "center"
               }}>
-                <Card.Group centered>
+                <Card.Group centered style={{
+                  marginLeft: "-7vw",
+                }}>
                   <Card style={cardstyle}>
                     {" "}
                     <Image style={imagestyle} src={steven} />

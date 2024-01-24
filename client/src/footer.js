@@ -296,7 +296,7 @@ class Footer extends Component {
         </Container>
         </Responsive>
         <Responsive as={Grid} maxWidth={768} divided inverted>
-       <AltFooter/>
+        <AltFooter/>
         </Responsive>
       </Segment>
     );

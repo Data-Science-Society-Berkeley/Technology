@@ -151,7 +151,7 @@ class Work extends Component {
       <div style={{
         background: "linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 10%, #FFFFFF 30%, #EFFFF0 70%, #DAFFFB 100%)",
       }}>
-        <Header style={mybigtext}> EVENTS </Header>
+        <Header style={mybigtext}> <br></br>EVENTS </Header>
         <Header style={mymidtext}> External Calendar </Header>
         <a href="https://calendar.google.com/calendar?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
           <Button
