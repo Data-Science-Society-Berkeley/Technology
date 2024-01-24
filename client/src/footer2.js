@@ -168,6 +168,7 @@ class Footer extends Component {
                     </List.Item>
                   </Link>
                   <br />
+                  {/*
                   <Link to="/acadev">
                     <List.Item as="a" style={footer}>
                       {" "}
@@ -182,14 +183,14 @@ class Footer extends Component {
                     </List.Item>
                   </Link>
                   <br />
-                  {/* <Link to="/decal">
+                   <Link to="/decal">
                     {" "}
                     <List.Item as="a" style={footer}>
                       {" "}
                       DeCal{" "}
                     </List.Item>
                   </Link>
-                  <br /> */}
+                  <br /> 
                   <Link to="socialgood">
                     {" "}
                     <List.Item as="a" style={footer}>
@@ -198,6 +199,7 @@ class Footer extends Component {
                     </List.Item>
                   </Link>
                   <br />
+                  */}
                   <Link to="/services">
                     {" "}
                     <List.Item as="a" style={footer}>
@@ -210,6 +212,7 @@ class Footer extends Component {
               <Grid.Column width={3}>
                 <div style={link}>Past Work </div>
                 <List link inverted>
+                  {/*
                   <Link to="/consulting">
                     <List.Item as="a" style={footer}>
                       {" "}
@@ -217,6 +220,7 @@ class Footer extends Component {
                     </List.Item>{" "}
                   </Link>{" "}
                   <br />
+                */}
                   <Link to="/events">
                     <List.Item as="a" style={footer}>
                       Events
