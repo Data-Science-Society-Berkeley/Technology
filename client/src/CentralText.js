@@ -36,6 +36,7 @@ import NavBar from './Menu.js'
 import mlIcon from './Services Images/mlIcon.jpg'
 import sweIcon from './Services Images/sweIcon.jpg'
 import businessIcon from './Services Images/businessIcon.jpg'
+import Datathon from './landing/datathon.jpg';
 
 import servicesBanner from './Services Images/servicesbanner.jpg';
 import educateBanner from './landing/educatebanner.jpg';
@@ -541,7 +542,7 @@ class CentralText extends Component {
                   <a href="./events">More about events →</a>
                 </div>
                 <div class="right1">
-                  <img src={empowerBanner}></img>
+                  <img src={Datathon}></img>
                 </div>
               </div>
 

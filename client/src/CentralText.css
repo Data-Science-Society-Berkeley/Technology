@@ -66,6 +66,7 @@
     width: 100%;
     border-radius: 10px;
     height: auto;
+    max-height: 400px;
     white-space: wrap;
 }
 
