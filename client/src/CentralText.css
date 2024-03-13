@@ -63,11 +63,15 @@
 }
 
 .right1 img {
-    width: 100%;
+    /* width: 100%;
     border-radius: 10px;
     height: auto;
     max-height: 400px;
-    white-space: wrap;
+    white-space: wrap; */
+    width: 800px; /* Set your desired width */
+    height: 400px; /* Set your desired height */
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 .grid-tile {
