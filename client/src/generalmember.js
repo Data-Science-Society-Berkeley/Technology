@@ -95,7 +95,6 @@ const button = {
 };
 const cardstyle = {
   width: "28vw",
-  maxHeight: "56vw",
   // height: "800px",
   marginBottom: "1vw",
   marginleft: "10vw",
@@ -119,7 +118,7 @@ const roleStyle = {
   fontWeight: 300,
   fontSize: "2vw",
   lineHeight: "2vw",
-  color: "#000000",
+  color: "#777777",
 };
 const mymidtext = {
   marginBottom: "3.5vw",
@@ -316,7 +315,7 @@ class DecalLearn extends Component {
               columns={5}
               style={{
                 //backgroundColor: "#8CD6D1",
-                width: "80vw",
+                width: "100%",
                 height: "7vw",
                 marginTop: "3vw",
                 position: "relative",
@@ -336,7 +335,7 @@ class DecalLearn extends Component {
                 //transform: "translate(-50%, -50%)",
                 fontFamily: "Lato",
                 fontWeight: "bold",
-                fontSize: "5vw",
+                fontSize: "6vw",
                 lineHeight: "6vw",
                 left: "10vw"
                 }}>
@@ -450,7 +449,7 @@ class DecalLearn extends Component {
                   position: "relative",
                   left: "10vw",
                   right: "10vw"
-              }}>You may chooes your own project! Decal students in past semesters have worked on projects related to various 
+              }}>You may choose your own project! Decal students in past semesters have worked on projects related to various 
                 different disciplines like Economics, Public Health, Linguistics, Biology, and much more! Feel free to look at 
                 previous projects below for some inspiration. Be creative! 
               </div>
@@ -569,7 +568,7 @@ class DecalLearn extends Component {
                     <Card.Content>
                       <Card.Header style={textstyle}>Steven Zeng</Card.Header>
                       <Card.Meta style={{ marginTop: "1vw" }}>
-                        <span style={{ roleStyle }}>
+                        <span style={roleStyle}>
                           Director of Academic Development
                         </span>
                       </Card.Meta>
@@ -589,7 +588,7 @@ class DecalLearn extends Component {
                     <Card.Content>
                       <Card.Header style={textstyle}>James Geronimo</Card.Header>
                       <Card.Meta style={{ marginTop: "1vw" }}>
-                        <span style={{ roleStyle }}>
+                        <span style={roleStyle}>
                           Director of Academic Development
                         </span>
                       </Card.Meta>
@@ -609,7 +608,7 @@ class DecalLearn extends Component {
                     <Card.Content>
                       <Card.Header style={textstyle}>Joseph Zhai</Card.Header>
                       <Card.Meta style={{ marginTop: "1vw" }}>
-                        <span style={{ roleStyle }}>
+                        <span style={roleStyle}>
                           Director of Academic Development
                         </span>
                       </Card.Meta>
