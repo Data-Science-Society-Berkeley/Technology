@@ -50,7 +50,7 @@ import metromile from './Services Images/metromile.png';
 import deepnote from './Services Images/deepnote.png'; 
 
 import preetha from "./Leadership Headshots/Preetha2.jpg";
-
+import michael from "./Leadership Headshots/Michael.jpg";
 
 
 //issue: the elements are manually formatted by vw from the top. (i.e. top: -32vw etc. because the image covers the textimpor up if you don't space it downwards.)
@@ -128,14 +128,12 @@ const textstyle = {
 const imagestyle = {
   height: "28vw",
   maxHeight: "28vw",
-  width: "28vw",
-  maxWidth: "28vw",
+  objectFit: "cover",
 };
 
 const cardstyle = {
   width: "28vw",
   maxHeight: "56vw",
-  // height: "800px",
   marginBottom: "1vw",
   marginleft: "2vw",
 };
@@ -215,7 +213,7 @@ class Education extends Component {
                   <p style={whiteSpaceText}>WHAT WE OFFER</p>
                   <p style ={{
                       position: "relative",
-                      textAlign: "left",
+                      textAlign: "justify",
                       margin: "0vw 10vw 0vw 10vw",
                       }}>We partner with corporations and non-profit organizations to provide data-driven insights and actionable solutions through advanced analytical methods. We believe that the skills that we have learned in university can and should be applied to support and uplift communities equitably, not just for private tech and those who exclusively benefit from it. 
                   </p>
@@ -358,7 +356,7 @@ class Education extends Component {
           </div>
 
           {/*Directors*/}
-          <u style={{position: "relative",
+          <div style={{position: "relative",
             textAlign: "center",
             width: "100%",
             height: "auto",
@@ -369,31 +367,43 @@ class Education extends Component {
             fontSize: "max(3vw, 28px)",
             fontWeight: "Bold",
             fontFamily: "Lato", 
-            }}>Want to work with us?</u>
+            }}><i>Want to work with us?</i></div>
 
           <Card.Group centered style = {{borderRadius: "16px",}}>
-            <Card>
-              <Image src={preetha}/>
+            <Card style={cardstyle}>
+              <Image src={preetha} style={imagestyle}/>
               <Card.Content>
-                <Card.Header>Preetha Kumar</Card.Header>
-                <Card.Meta>
+                <Card.Header style={textstyle}>Preetha Kumar</Card.Header>
+                <Card.Meta style={{ marginTop: "1vw" }}>
                   <span style={roleStyle}>President</span>
                 </Card.Meta>
-
-              <div>
-                <a href="mailto:preethakumar@berkeley.edu" style={{
-                  textDecoration: "none",
-                }}>
+              </Card.Content>
+              <Card.Content extra>
+                <a href="mailto:preethakumar@berkeley.edu">
                   <Icon size="large" name="mail" />
                 </a>
-                <a href="https://www.linkedin.com/in/preetha-kumar/" style={{
-                  textDecoration: "none",
-                }}>
+                <a href="https://www.linkedin.com/in/preetha-kumar/">
                   <Icon size="large" name="linkedin" />
                 </a>
-              </div>
               </Card.Content>
-              
+            </Card>
+            <Card style={cardstyle}>
+              {" "}
+              <Image style={imagestyle} src={michael} />
+              <Card.Content>
+                <Card.Header style={textstyle}>Michael Florip</Card.Header>
+                <Card.Meta style={{ marginTop: "1vw" }}>
+                  <span style={roleStyle}>VP of Sourcing</span>
+                </Card.Meta>
+              </Card.Content>
+              <Card.Content extra>
+                <a href="mailto:michaelflorip@berkeley.edu">
+                  <Icon size="large" name="mail" />
+                </a>
+                <a href="https://www.linkedin.com/in/michaelflorip/">
+                  <Icon size="large" name="linkedin" />
+                </a>
+              </Card.Content>
             </Card>
           </Card.Group>
 

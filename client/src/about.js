@@ -92,10 +92,8 @@ import gradient2 from "./Homepage/homepagegradient2.png"
 
 let endpoint = "http://localhost:8080";
 const gridoffset = {
-  marginTop: "3vw",
   textAlign: "center",
   fontFamily: "Lato",
-  gridTemplateColumns:"repeat(5, 1fr)",
 };
 
 const mybigtext = {
@@ -271,24 +269,23 @@ const aboutstats = {
   fontFamily: "Lato",
   fontWeight: "bold",
   fontSize: "4.8vw",
-  lineHeight: "3vw",
-  width: "10vw",
-  height: "3vw",
-  color: "#FFC54A",
-  position: "absolute",
-  top: "20%",
-  left: "100%",
   textAlign: "center",
-  marginBottom: "3vw",
-  transform: "translate(-50%, -50%)"
+  minWidth: "100%",
+  height: "auto",
+  margin: "auto",
+  color: "#FFC54A",
+  position: "relative",
+  textAlign: "center",
 };
 
 const aboutstats2 = {
   fontFamily: "Lato",
   fontWeight: "bold",
-  fontSize: "4.8vw",
+  minWidth: "15%",
+  padding: "0",
+  height: "auto",
+  margin: "auto",
   color: "#FFC54A",
-  marginLeft: "14vw",
   textAlign: "center",
   position: "relative",
 };
@@ -298,16 +295,11 @@ const aboutstats3 = {
   fontWeight: "normal",
   fontSize: "2vw",
   lineHeight: "3vw",
+  margin: "auto",
   width: "20vw",
-  height: "3vw",
   color: "black",
   position: "relative",
-  top: "20%",
-  left: "80%",
   textAlign: "center",
-  transform: "translate(-50%, -50%)",
-  marginTop: "65px",
-  marginLeft: "35px"
 };
 
 const aboutstats4 = {
@@ -784,14 +776,11 @@ class About extends Component {
         </div> */}
         <Grid entered style={gridoffset}>
           {/* onClick scroll handlers are redundant, consider removing */}
-          <Grid.Row
-            width={16}
-            columns={5}
+          <Grid.Row centered width={16} columns={5}
             style={{
               backgroundColor: "#D2F2F0",
-              width: "100vw",
+              width: "100%",
               height: "7vw",
-              marginTop: "-3vw",
               position: "relative",
             }}
           >
@@ -862,39 +851,37 @@ class About extends Component {
                 position: "relative",
                 textShadow: "none",
                 top: "25vw",
-                left: "1vw",
                 zIndex: "3",
                 fontFamily: "Lato",
                 fontStyle: "43vw",
                 fontWeight: "bold",
-                fontSize: "2vw",
+                fontSize: "2.5vw",
                 lineHeight: "6vw",
                 color: "black",
                 marginBottom: "3vw",
-                alignText: "center",
+                textAlign: "center",
               }}
             >
-            <div style={{
-              height: "20vw",
-              width: "100vw",
-            }}>
-              <img src={linesOne} style={{
-                position: "absolute",
-                left: "-10vw",
-                width: "160vw",
+              <div style={{
                 height: "20vw",
-              }}></img>
-            </div>
-            <span id="whoWeAre">Who We Are</span>
+                width: "100vw",
+              }}>
+                <img src={linesOne} style={{
+                  position: "absolute",
+                  left: "-10vw",
+                  width: "160vw",
+                  height: "19vw",
+                }}></img>
+              </div>
+              <span id="whoWeAre">Who We Are</span>
             </div>
             <div
-              centered
               style={{
                 position: "relative",
                 textShadow: "none",
+                margin: "auto",
                 width: "89vw",
                 top: "22vw",
-                left: "23vw",
                 zIndex: "4",
                 fontFamily: "Lato",
                 fontStyle: "normal",
@@ -902,7 +889,7 @@ class About extends Component {
                 fontSize: "2.1vw",
                 lineHeight: "2.5vw",
                 color: "black",
-                alignText: "center",
+                textAlign: "justify",
               }}
             >
               Data Science Society is UC Berkeley's first student-run, not-for-profit organization 
@@ -912,23 +899,19 @@ class About extends Component {
           </div>
           </Grid.Row>
           {/* <Grid entered style={gridoffset}> */}
-          <Grid.Row
-            width={10}
-            columns={4}
+          <Grid.Row centered width={4} columns={4}
             style={{
               // backgroundColor: "#8CD6D1",
-              width: "50%",
-              height: "3vw",
+              width: "60%",
               marginTop: "17vw",
-              left: "10vw",
               position: "relative",
+              textAlign: "center",
             }}
           >
             <Grid.Column width={1} style={aboutstats2}>
               <div style={aboutstats}>
                 42
               </div>
-              <div style={{height: "2vw"}}></div>
               <div style={aboutstats3}>
                 Completed Client Projects
               </div>
@@ -937,7 +920,6 @@ class About extends Component {
               <div style={aboutstats}>
                 68
               </div>
-              <div style={{height: "2vw"}}></div>
               <div style={aboutstats3}>
                 Past Workshops and Events Hosted
               </div>
@@ -946,7 +928,6 @@ class About extends Component {
               <div style={aboutstats}>
                 300+
               </div>
-              <div style={{height: "2vw"}}></div>
               <div style={aboutstats3}>
                 Datathon Past Participants
               </div>
@@ -955,42 +936,36 @@ class About extends Component {
               <div style={aboutstats}>
                 800+
               </div>
-              <div style={{height: "2vw"}}></div>
               <div style={aboutstats3}>
                 Past Members and DeCal Students
               </div>
             </Grid.Column>
           </Grid.Row>
-          <Grid.Row centered columns={1} style={{ marginBottom: "7vw" }}>
+          <Grid.Row centered columns={1}>
           <div
             style={{
               position: "relative",
               textShadow: "none",
-              top: "15vw",
-              left: "1vw",
               zIndex: "3",
               fontFamily: "Lato",
               fontStyle: "43vw",
               fontWeight: "bold",
-              fontSize: "2vw",
+              fontSize: "2.5vw",
               lineHeight: "6vw",
               color: "black",
-              marginBottom: "3vw",
-              alignText: "center",
+              textAlign: "center",
             }}
           >
-          <span>Mission and Values</span>
+            <span>Mission and Values</span>
           </div>
           <div id="mission">
           </div>
           <div
-            centered
             style={{
               position: "relative",
               textShadow: "none",
+              margin: "auto",
               width: "92vw",
-              top: "13vw",
-              left: "23vw",
               zIndex: "4",
               fontFamily: "Lato",
               fontStyle: "normal",
@@ -998,7 +973,7 @@ class About extends Component {
               fontSize: "2.1vw",
               lineHeight: "2.5vw",
               color: "black",
-              alignText: "center",
+              textAlign: "justify",
             }}
             >
               Our mission is to foster a strong data science community on campus by advocating
@@ -1008,57 +983,32 @@ class About extends Component {
               increasingly data-centric world.`
           </div>
         </Grid.Row>
-        <div id="committees">
-          </div>
-        <Grid.Row centered columns={1} style={{ marginBottom: "7vw" }}>
-        <div
-          style={{
-            zIndex: "1",
-            position: "relative",
-            marginBottom: "-25vw",
-          }}
-          >
+        <div id="committees" style={{
+          marginTop: "7vw",
+        }}>
         </div>
+        <Grid.Row centered columns={1}>
         <div
             style={{
-              position: "absolute",
+              position: "relative",
               textShadow: "none",
-              width: "50vw",
-              top: "15vw",
-              left: "44vw",
               zIndex: "3",
               fontFamily: "Lato",
               fontStyle: "43vw",
               fontWeight: "bold",
-              fontSize: "3vw",
-              lineHeight: "4vw",
+              fontSize: "2.5vw",
+              lineHeight: "6vw",
               color: "black",
-              marginBottom: "7vw",
-              alignText: "center",
+              marginBottom: "3vw",
+              textAlign: "center",
             }}
           >
-          <span>How We Achieve This Mission: Our Committees</span>
-          </div>
-          <div>
-            <Image src={rectangle}
-            style= {{
-              position: 'relative',
-              top: "48vw",
-              left: '49vw',
-              height: "0.75vw",
-              maxHeight: "1.5vw",
-              width: "40vw",
-              // dated design, adjusting opacity instead of deleting to maintain space
-              opacity: "0",
-            }}>
-            </Image>
-          </div>
+          <span><i>How We Achieve This Mission: Our Committees</i></span>
+        </div>
         <div
           style={{
             position: "relative",
             textShadow: "none",
-            top: "50vw",
-            left: "1.5vw",
             zIndex: "3",
             fontFamily: "Lato",
             fontStyle: "43vw",
@@ -1066,20 +1016,17 @@ class About extends Component {
             fontSize: "2vw",
             lineHeight: "6vw",
             color: "black",
-            marginBottom: "2.5vw",
-            alignText: "center",
+            textAlign: "center",
           }}
         >
         <span id="academicDevelopment">Academic Development Committee</span>
         </div>
         <div
-          centered
           style={{
             position: "relative",
             textShadow: "none",
-            width: "82vw",
-            top: "50vw",
-            left: "28vw",
+            margin: "auto",
+            width: "87vw",
             zIndex: "4",
             fontFamily: "Lato",
             fontStyle: "normal",
@@ -1088,7 +1035,7 @@ class About extends Component {
             lineHeight: "2.5vw",
             color: "black",
             marginBottom: "5vw",
-            alignText: "center",
+            textAlign: "justify",
           }}
           >
             The academic development committee directs our decal program open to
@@ -1096,18 +1043,20 @@ class About extends Component {
             greater campus community.
             <br></br>
             <br></br>
-            <a href="./joinus" style={{
-              color: "#77B8B3",
-              fontStyle: "italic",
-              textDecoration: "none",
-            }}>Join Acadev →</a>
+            <div style={{
+              textAlign: "center",
+            }}>
+              <a href="./joinus" style={{
+                color: "#77B8B3",
+                fontStyle: "italic",
+                textDecoration: "none",
+              }}>Join Acadev →</a>
+            </div>
         </div>
         <div
           style={{
             position: "relative",
             textShadow: "none",
-            top: "50vw",
-            left: "1vw",
             zIndex: "3",
             fontFamily: "Lato",
             fontStyle: "43vw",
@@ -1115,20 +1064,17 @@ class About extends Component {
             fontSize: "2vw",
             lineHeight: "6vw",
             color: "black",
-            marginBottom: "2.5vw",
-            alignText: "center",
+            textAlign: "center",
           }}
         >
         <span id="socialGood">Social Good Committee</span>
         </div>
         <div
-          centered
           style={{
             position: "relative",
             textShadow: "none",
+            margin: "auto",
             width: "87vw",
-            top: "50vw",
-            left: "26vw",
             zIndex: "4",
             fontFamily: "Lato",
             fontStyle: "normal",
@@ -1137,7 +1083,7 @@ class About extends Component {
             lineHeight: "2.5vw",
             color: "black",
             marginBottom: "5vw",
-            alignText: "center",
+            textAlign: "justify",
           }}
           >
             We are passionate about contributing to tech for good by identifying 
@@ -1146,18 +1092,20 @@ class About extends Component {
             committee for nonprofits with social good initiatives.
             <br></br>
             <br></br>
-            <a href="./joinus" style={{
-              color: "#77B8B3",
-              fontStyle: "italic",
-              textDecoration: "none",
-            }}>Join Social Good →</a>
+            <div style={{
+              textAlign: "center",
+            }}>
+              <a href="./joinus" style={{
+                color: "#77B8B3",
+                fontStyle: "italic",
+                textDecoration: "none",
+              }}>Join Social Good →</a>
+            </div>
         </div>
         <div
           style={{
             position: "relative",
             textShadow: "none",
-            top: "50vw",
-            left: "1vw",
             zIndex: "3",
             fontFamily: "Lato",
             fontStyle: "43vw",
@@ -1165,20 +1113,17 @@ class About extends Component {
             fontSize: "2vw",
             lineHeight: "6vw",
             color: "black",
-            marginBottom: "2.5vw",
-            alignText: "center",
+            textAlign: "center",
           }}
         >
         <span id="consulting">Consulting Committee</span>
         </div>
         <div
-          centered
           style={{
             position: "relative",
             textShadow: "none",
-            width: "85vw",
-            top: "50vw",
-            left: "26vw",
+            margin: "auto",
+            width: "87vw",
             zIndex: "4",
             fontFamily: "Lato",
             fontStyle: "normal",
@@ -1187,7 +1132,7 @@ class About extends Component {
             lineHeight: "2.5vw",
             color: "black",
             marginBottom: "10vw",
-            alignText: "center",
+            textAlign: "justify",
           }}
           >
             We are passionate about working with corporate clients 
@@ -1195,66 +1140,43 @@ class About extends Component {
             advanced analytical methods.
             <br></br>
             <br></br>
-            <a href="./joinus" style={{
-              color: "#77B8B3",
-              fontStyle: "italic",
-              textDecoration: "none",
-            }}>Join Consulting →</a>
+            <div style={{
+              textAlign: "center",
+            }}>
+              <a href="./joinus" style={{
+                color: "#77B8B3",
+                fontStyle: "italic",
+                textDecoration: "none",
+              }}>Join Consulting →</a>
+            </div>
         </div>
         </Grid.Row>
-          <Grid
-            container
-            direction="row"
-            justifyContent="center"
-            alignItems="center"
-          >
-            
-          </Grid>
-          <Grid.Row centered width={12} style={{ marginTop: "35vw" }}>
-            <div id="team" style={{
-              height: "5vw",
-            }}>
-            </div>
-            {/* {CustomTitle({ title: "Our Executive Team", id: "team" })} */}
-            <div
-            style={{
-              position: "absolute",
-              textShadow: "none",
-              width: "61vw",
-              top: "5vw",
-              left: "40vw",
-              zIndex: "3",
-              fontFamily: "Lato",
-              fontWeight: "bold",
-              fontSize: "3.5vw",
-              lineHeight: "4vw",
-              color: "black",
-              marginBottom: "5vw",
-              alignText: "center",
-            }}
-          >
-            <span>Meet Our Executive Team</span>
-          </div>
-          <div>
-            <Image src={rectangle}
-            style= {{
-              position: 'relative',
-              top: "4vw",
-              left: '1.5vw',
-              height: "0.75vw",
-              maxHeight: "1.5vw",
-              width: "40vw",
-              marginBottom: "10vw",
-              // dated design, adjusting opacity instead of deleting to maintain space
-              opacity: "0",
-            }}>
-            </Image>
-          </div>
-            <Card.Group centered style={{
-              marginLeft: "15px", // in px for slight differences in mobile and desktop rendering
-            }}>{leadershipCards}</Card.Group>
-            ``
-          </Grid.Row>
+        <Grid.Row centered>
+          {/* {CustomTitle({ title: "Our Executive Team", id: "team" })} */}
+          <div id="team"
+          style={{
+            position: "relative",
+            textShadow: "none",
+            zIndex: "3",
+            fontFamily: "Lato",
+            fontStyle: "43vw",
+            fontWeight: "bold",
+            fontSize: "2.5vw",
+            lineHeight: "6vw",
+            color: "black",
+            marginBottom: "3vw",
+            textAlign: "center",
+            // bad practice but I have no idea where the misalignment comes from
+            paddingLeft: "3vw",
+          }}
+        >
+          <span>Meet Our Executive Team</span>
+        </div>
+        <Card.Group centered style={{
+            marginLeft: "15px", // in px for slight differences in mobile and desktop rendering
+          }}>{leadershipCards}</Card.Group>
+          ``
+        </Grid.Row>
           <div id="sponsors">
           </div>
           <Grid.Row style={{ marginTop: "7vw", marginLeft: "17vw" }}>
@@ -1273,7 +1195,7 @@ class About extends Component {
               lineHeight: "4vw",
               color: "black",
               marginBottom: "10vw",
-              alignText: "center",
+              textAlign: "center",
             }}
           >
           <span>Sponsors</span>
@@ -1329,7 +1251,7 @@ class About extends Component {
                 lineHeight: "4vw",
                 color: "black",
                 margin: "auto",
-                alignText: "center",
+                textAlign: "center",
               }}
             >
             <span>Current and Past Collaborators</span>
@@ -1455,7 +1377,7 @@ class About extends Component {
                 color: "black",
                 marginBottom: "10vw",
                 marginTop: "10vw",
-                alignText: "center",
+                textAlign: "center",
               }}
             >
             {/* <span>Where We Go</span>
