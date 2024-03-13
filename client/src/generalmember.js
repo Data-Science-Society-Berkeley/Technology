@@ -53,8 +53,6 @@ import linesTwo from "./Homepage/linesTwo.png";
 let endpoint = "http://localhost:8080";
 const gridoffset = {
   margin: "auto",
-  paddingLeft: "10vw",
-  textAlign: "center",
   fontFamily: "Lato",
 };
 
@@ -95,7 +93,6 @@ const button = {
 };
 const cardstyle = {
   width: "28vw",
-  maxHeight: "56vw",
   // height: "800px",
   marginBottom: "1vw",
   marginleft: "10vw",
@@ -119,7 +116,7 @@ const roleStyle = {
   fontWeight: 300,
   fontSize: "2vw",
   lineHeight: "2vw",
-  color: "#000000",
+  color: "#777777",
 };
 const mymidtext = {
   marginBottom: "3.5vw",
@@ -310,13 +307,13 @@ class DecalLearn extends Component {
         <div class="wrapper" style={{
           background: "linear-gradient(180deg, #FFFFFF 0%, #FDFFF9 33%, #EBF8E1 66%, #DAFFFB 100%)",
         }}>
-          <Grid style={gridoffset}>
+          <Grid centered style={gridoffset}>
             <Grid.Row
               width={16}
               columns={5}
               style={{
                 //backgroundColor: "#8CD6D1",
-                width: "80vw",
+                width: "100%",
                 height: "7vw",
                 marginTop: "3vw",
                 position: "relative",
@@ -328,17 +325,13 @@ class DecalLearn extends Component {
                 //height: "auto",
                 textAlign: "start",
                 color: "black",
-                //textIndent: "5vw",
-                //margin: 'auto',
-                // marginBottom:'5vw',
-                //marginTop: "5vw",
                 position: "relative",
-                //transform: "translate(-50%, -50%)",
                 fontFamily: "Lato",
                 fontWeight: "bold",
-                fontSize: "5vw",
+                fontSize: "6vw",
                 lineHeight: "6vw",
-                left: "10vw"
+                width: "95vw",
+                position: "relative",
                 }}>
                 DeCal
               </div>
@@ -360,13 +353,13 @@ class DecalLearn extends Component {
                 fontSize: "2vw",
                 lineHeight: "6vw",
                 fontWeight: "bold"*/
-                marginTop: "3vw",
+                marginTop: "1vw",
+                width: "95vw",
                 textAlign: "start",
                 lineHeight: "3vw",
-                fontSize: "2.3vw",
+                fontSize: "2vw",
                 fontWeight: "21.5vw",
                 position: "relative",
-                left: "10vw"
               }}>Data 198: <i>Intro to Real World Data Science</i> <a href = "https://jegeronimo.github.io/dss-data-198/"> (DeCal Website Link)</a>
               </div>
 
@@ -378,7 +371,6 @@ class DecalLearn extends Component {
                 fontSize: "2vw",
                 fontWeight: "21.5vw",
                 position: "relative",
-                left: "10vw",
               }}>
                 The goal of our DeCal is to provide <b>data science education</b> and <b>experience</b> for students with little to no prior 
                 knowledge of the field. Our course focuses on practical tools not otherwise emphasized in Berkeley’s academic curricula, 
@@ -393,13 +385,13 @@ class DecalLearn extends Component {
             <Grid.Row>
               <div style={{
                 marginTop: "5vw",
+                width: "95vw",
                 textAlign: "start",
                 lineHeight: "3vw",
                 fontSize: "2.3vw",
                 fontWeight: "21.5vw",
                 fontWeight: "bold",
                 position: "relative",
-                left: "10vw"
               }}>What will you learn in the DeCal?
               </div>
             </Grid.Row>
@@ -412,7 +404,6 @@ class DecalLearn extends Component {
                 fontSize: "2vw",
                 fontWeight: "21.5vw",
                 position: "relative",
-                left: "10vw",
                 //alignText: "center"
               }}>This semester-long course focuses on introducing students to essential data science skills in an interactive setting. 
               As a DeCal student, you will learn every step of the data science lifecycle: from formulating a data-centric project idea, 
@@ -428,13 +419,13 @@ class DecalLearn extends Component {
             <Grid.Row>
               <div style={{
                 marginTop: "7vw",
+                width: "95vw",
                 textAlign: "start",
                 lineHeight: "3vw",
                 fontSize: "2.5vw",
                 fontWeight: "21.5vw",
                 fontWeight: "bold",
                 position: "relative",
-                left: "10vw",
                 //alignText: "center"
               }}>What project do you work on?
               </div>
@@ -448,9 +439,7 @@ class DecalLearn extends Component {
                   fontWeight: "21.5vw",
                   width:"95vw",
                   position: "relative",
-                  left: "10vw",
-                  right: "10vw"
-              }}>You may chooes your own project! Decal students in past semesters have worked on projects related to various 
+              }}>You may choose your own project! Decal students in past semesters have worked on projects related to various 
                 different disciplines like Economics, Public Health, Linguistics, Biology, and much more! Feel free to look at 
                 previous projects below for some inspiration. Be creative! 
               </div>
@@ -458,13 +447,13 @@ class DecalLearn extends Component {
             <Grid.Row>
               <div style={{
                 marginTop: "7vw",
+                width: "95vw",
                 textAlign: "start",
                 lineHeight: "3vw",
                 fontSize: "2.5vw",
                 fontWeight: "21.5vw",
                 fontWeight: "bold",
                 position: "relative",
-                left: "10vw"
               }}>Who can take the DeCal?
               </div>
             </Grid.Row>
@@ -477,8 +466,6 @@ class DecalLearn extends Component {
                   fontWeight: "21.5vw",
                   width:"95vw",
                   position: "relative",
-                  left: "10vw",
-                  right: "10vw"
               }}>There are no formal prerequisites for this course. However, it is recommended to have some level of basic programming 
                 experience in Python; many of our past students have taken this DeCal concurrently or after DATA 8. Above all, we are looking for beginners in 
                 data science who are passionate about learning more about the field and willing to dedicate themselves to the required semester-long project.
@@ -487,28 +474,25 @@ class DecalLearn extends Component {
             <Grid.Row>
               <div style={{
                 marginTop: "7vw",
+                width: "95vw",
                 textAlign: "start",
                 lineHeight: "3vw",
                 fontSize: "2.5vw",
                 fontWeight: "21.5vw",
                 fontWeight: "bold",
                 position: "relative",
-                left: "10vw",
-                right: "10vw"
               }}>How can you apply?
               </div>
             </Grid.Row>
             <Grid.Row>
               <div style={{
                 marginTop: "0vw",
+                width: "95vw",
                 textAlign: "start",
                 lineHeight: "3vw",
                 fontSize: "2vw",
                 fontWeight: "21.5vw",
-                width:"95vw",
                 position: "relative",
-                left: "10vw",
-                right: "10vw"
               }}>Our application window will open soon. Visit the "Join Us" page and
               keep an eye out for our on-campus and virtual events for our timeline!
               </div>
@@ -516,13 +500,13 @@ class DecalLearn extends Component {
             <Grid.Row>
               <div style={{
                 marginTop: "7vw",
+                width: "95vw",
                 textAlign: "start",
                 lineHeight: "3vw",
                 fontSize: "2.5vw",
                 fontWeight: "21.5vw",
                 fontWeight: "bold",
                 position: "relative",
-                left: "10vw",
               }}>Further details
               </div>
             </Grid.Row>
@@ -535,23 +519,20 @@ class DecalLearn extends Component {
                 fontWeight: "21.5vw",
                 width:"95vw",
                 position: "relative",
-                left: "10vw",
-                right: "10vw"
               }}>The DeCal is 1 unit (P/NP) and there is a mandatory lecture on Mondays from 6:30-8:30pm in SOCS 20. We allow two unexcused absences 
               before it affects your grade. The commitments for this course include: homeworks graded on completion, a final project and symposium presentations.
               </div>
             </Grid.Row>
             <Grid.Row>
               <div style={{
-                marginTop: "5vw",
-                marginBottom: "2vw",
-                textAlign: "start",
+                margin: "auto",
+                padding: "5vw",
+                textAlign: "center",
                 lineHeight: "3vw",
                 fontSize: "3vw",
                 fontWeight: "21.5vw",
                 fontWeight: "bold",
                 position: "relative",
-                left: "46vw",
               }}>Our Directors
               </div>
             </Grid.Row>
@@ -560,16 +541,14 @@ class DecalLearn extends Component {
               <div style={{
                 textAlign: "center"
               }}>
-                <Card.Group centered style={{
-                  marginLeft: "-7vw",
-                }}>
+                <Card.Group centered>
                   <Card style={cardstyle}>
                     {" "}
                     <Image style={imagestyle} src={steven} />
                     <Card.Content>
                       <Card.Header style={textstyle}>Steven Zeng</Card.Header>
                       <Card.Meta style={{ marginTop: "1vw" }}>
-                        <span style={{ roleStyle }}>
+                        <span style={roleStyle}>
                           Director of Academic Development
                         </span>
                       </Card.Meta>
@@ -589,7 +568,7 @@ class DecalLearn extends Component {
                     <Card.Content>
                       <Card.Header style={textstyle}>James Geronimo</Card.Header>
                       <Card.Meta style={{ marginTop: "1vw" }}>
-                        <span style={{ roleStyle }}>
+                        <span style={roleStyle}>
                           Director of Academic Development
                         </span>
                       </Card.Meta>
@@ -609,7 +588,7 @@ class DecalLearn extends Component {
                     <Card.Content>
                       <Card.Header style={textstyle}>Joseph Zhai</Card.Header>
                       <Card.Meta style={{ marginTop: "1vw" }}>
-                        <span style={{ roleStyle }}>
+                        <span style={roleStyle}>
                           Director of Academic Development
                         </span>
                       </Card.Meta>
