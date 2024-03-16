@@ -171,4 +171,11 @@ h1.boldish {
         border-radius: 10px;
     }
     
+    .right1 img {
+        width: 500px; /* Set your desired width */
+        height: 250px; /* Set your desired height */
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
   }
