@@ -15,11 +15,11 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import event5 from "./Events/quoratechtalk.jpg";
+import event5 from "./Events/forumsp23.jpg";
 import event4 from "./Events/dssdatathon-img.jpg";
-import event3 from "./Events/dssdatathon-crop.jpg";
+import event3 from "./Events/fairfa23.jpg";
 import event2 from "./Events/operationanalytics-img.jpg";
-import event1 from "./Events/operationanalyticseventbannerdss.jpg";
+import event1 from "./Events/datathonfa23.jpg";
 
 import linesOne from "./Homepage/linesOne.png";
 
@@ -212,24 +212,21 @@ class Work extends Component {
               <Grid.Column width={7}>
                 <div style={rightcol}>
                   <strong>
-                    Operation: Analytics, a Tech & Business Industry Speaker
-                    Series{" "}
+                    5th Annual Datathon for Social Good: Healthcare & Public Health{" "}
                   </strong>
                   <br />
-                  Thursday, February 27, 2020
+                  November 2023, Cory & Soda Hall
                   <br />
-                  6:00 PM - 8:30 PM <br />
-                  C230 Cheit Hall
-                  <br />
-                  <br />
-                  A series of tech talks by product scientists, data scientists,
-                  operations managers, and project managers from a variety of
-                  industry-leading companies (Google, Amazon, Uber, Indeed,
-                  Nike, Eaze, Goodera).
+                  This year’s Datathon theme was An Exploration into Healthcare and Public Health. 
                   <br />
                   <br />
-                  - 100+ in attendance! <br />
-                  - 8 industry speakers
+                  - 200+ participants 
+                  <br />
+                  - Sponsored by SingleStore, Primerica, C.LIGHT Technologies
+                  <br />
+                  - Partners include Doordash and CalData
+                  <br />
+                  - Co-hosted with SAAS, BDAB, CSUA
                   <br />
                 </div>
               </Grid.Column>
@@ -255,21 +252,18 @@ class Work extends Component {
               </Grid.Column>
               <Grid.Column width={7}>
                 <div style={rightcol}>
-                  <strong> DSS Datathon for Social Good</strong> <br />
-                  Start: Friday, Nov 8, 2019 at 5:00 PM <br />
-                  End: Saturday, Nov 9, 2019 at 5:00 PM <br />
-                  Chou Hall N500, Faculty Building F320 <br />
+                  <strong> World of Data Career Fair</strong> 
                   <br />
-                  Come participate in UC Berkeley’s first social-good focused
-                  datathon hosted by IBM, Data Science Society and Latinx
-                  Business Club, to create intriguing visualizations to
-                  highlight a problem in the Bay Area, or come up with a
-                  solution to an existing problem. <br />
+                  September 2023, Pauley Ballroom
                   <br />
-                  Sponsored by IBM. Co-Hosted with Latinx Business Club. <br />
-                  <br />- 16 projects presented and judged by the end of
-                  competition! <br />
-                  - 215+ attendees with 3 team winners! <br />
+                  World of Data is an in-person, data science-focused dedicated to showcasing the interdisciplinary applications of data science across various industries. 
+                  The event offers networking and recruiting opportunities for data science/machine learning and full-time positions for Summer 2024 and beyond. 
+                  <br />
+                  <br />
+                  - Companies in attendance: OpenCV, Kaiser Permanente, American Heart Association, Uniphore, Hayden AI, and Plume Design!
+                  <br />
+                  - Co-hosted with SAAS, BDAB
+                  <br />
                 </div>
               </Grid.Column>
             </Grid.Row>
@@ -291,23 +285,24 @@ class Work extends Component {
               </Grid.Column>
               <Grid.Column width={7}>
                 <div style={rightcol}>
-                  <strong>Quora Tech Talk </strong>
+                  <strong>5th Annual Data Science Forum: Tech for Social Good </strong>
                   <br />
-                  Thursday, September 12, 2019 <br />
-                  8:00 PM
+                  April 2023, Dwinelle Hall
                   <br />
-                  Hearst Field Annex A1
+                  This year’s Forum theme was Tech for Social Good — the intersection of data and social impact. 
+                  The goal of the event was to educate the UC Berkeley community on 
+                  how to carry social good values in tech work and/or use tech to drive solutions to societal issues. 
+                  To show that this intersection comes in a spectrum, speakers came from a wide variety of different 
+                  industries — NPO, big tech, startup, research, government, and so on. The event started off with 4 speaker presentations, then broke off to a lunch break before 
+                  reconvening again for a speaker panel. Other than learning, the event provided other benefits such as resume drops, networking sessions, free food, 
+                  and also gave away a raffle prize of a JBL speaker!
                   <br />
                   <br />
-                  Come learn about Internship / New Grad opportunities at Quora
-                  while also listening to Data Scientists talk about how they
-                  use data at the company!
+                  - 400+ audience 
                   <br />
+                  - 10 professionals in attendance
                   <br />
-                  - 180+ in attendance ; 870+ Facebook RSVPs
-                  <br />
-                  - Follow-up Mountain View headquarters tour + lunch with Quora
-                  Data Science team for DSS members
+                  - Co-hosted with SAAS, BDAB
                   <br />
                 </div>
               </Grid.Column>

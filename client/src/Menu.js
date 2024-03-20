@@ -17,7 +17,8 @@ import {
 } from "semantic-ui-react";
 import PasswordStrengthBar from "react-password-strength-bar";
 import validator from "validator";
-import logo from "./Backgrounds/dssblacklonglogo.png";
+import logo from "./Backgrounds/dss-logo-title-black-small.png";
+/* import logo from "./Backgrounds/dssblacklonglogo.png"; */
 import logo2 from "./Backgrounds/dsswhitelonglogo.png";
 
 let endpoint = "http://localhost:8080";
@@ -135,6 +136,10 @@ const join2 = {
   lineHeight: "37px",
   marginLeft: "24px",
   color: "#FFC54A",
+};
+const logo_size = {
+  width: "10%",
+  height: "10%",
 };
 
 class NavBar extends Component {
@@ -270,7 +275,7 @@ class NavBar extends Component {
                 onClick={this.handleItemClick}
                 style={navbar}
               >
-                <Link to="/gm" style={linkStyling}>
+                <Link to="decal" style={linkStyling}>
                   decal
                 </Link>
               </Menu.Item>

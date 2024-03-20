@@ -38,14 +38,13 @@ import sweIcon from './Services Images/sweIcon.jpg'
 import businessIcon from './Services Images/businessIcon.jpg'
 import Datathon from './landing/datathon.jpg';
 
-import servicesBanner from './Services Images/servicesbanner.jpg';
-import educateBanner from './landing/educatebanner.jpg';
+import servicesBanner from './landing/servicesbanner_fa22.jpg';
+import educateBanner from './landing/educatebanner_fa23.jpg';
 import empowerBanner from './landing/empowerbanner.jpg';
-import giveBackBanner from './landing/givebackbanner.jpg';
-import learnBanner from './landing/learnbanner.jpg';
+import giveBackBanner from './landing/givebackbanner_fa23.jpg';
+import learnBanner from './landing/medium_mar24.png';
 
 import "./CentralText.css"
-
 import ocf from "./Backgrounds/ocf-hosted-penguin.svg";
 
 let endpoint = "https://dssberkeley.com/";

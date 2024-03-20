@@ -456,7 +456,7 @@ class NavBar2 extends Component {
           </Link> */}
 
           <Menu.Item as="a">
-            <Link to="/gm" onClick={this.handleSettingVisibleToFalse}>
+            <Link to="/decal" onClick={this.handleSettingVisibleToFalse}>
               <div style={{ marginTop: "2vw", marginBottom: "2vw" }}>
                 <div>
                   <div
