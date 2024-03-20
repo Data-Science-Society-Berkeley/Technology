@@ -385,7 +385,7 @@ class App extends Component {
           />
           <Route
             exact
-            path="/gm"
+            path="/decal"
             render={(props) => (
               <div>
                 <Helmet
@@ -959,7 +959,7 @@ class App extends Component {
 
           <Route
             exact
-            path="/gm"
+            path="/decal"
             render={(props) => (
               <div>
                 <Helmet
@@ -973,16 +973,11 @@ class App extends Component {
 
           <Route
             exact
-            path="/decal"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar2 {...props} componentid={Decal} />
-                <Footer></Footer>
-              </div>
-            )}
+            path="/data-198"
+            component={() => {
+              window.location.href = "https://jegeronimo.github.io/dss-data-198/";
+              return null;
+            }}
           />
 
           <Route
