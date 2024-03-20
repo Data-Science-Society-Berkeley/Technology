@@ -25,7 +25,7 @@ let endpoint = "http://localhost:8080";
 
 const mynav = {
   background: "inherit",
-  height: "75%",
+  height: "50%",
   fontFamily: "Overpass",
   fontSize: "1vw",
   fontWeight: 600,
@@ -63,20 +63,19 @@ const navbar = {
   lineHeight: "3vw",
   marginLeft: "1.5vw",
   color: "#FFFFFF",
-  marginBottom: "-3vw",
+  marginBottom: "-1vw",
+  paddingBottom: "0",
 };
 
 const navWrapperLeft= {
   display: "flex",
   flex: "1 2 0",
   justifyContent: "space-between",
-  margin: "auto 0",
 }
 
 const navWrapperRight= {
   display: "flex",
   justifyContent: "space-between",
-  margin: "auto 0",
 }
 
 const link = {
@@ -238,7 +237,7 @@ class NavBar extends Component {
     var logo = this.setCircle();
     let applystyle = this.setJoin();
     return (
-      <div className="NavBar">
+      <div className="NavBar" style={{height: "90px"}}>
 
         <Menu style={mynav} borderless={true}>
           <div style={navWrapperLeft}>
