@@ -275,7 +275,7 @@ class NavBar extends Component {
                 onClick={this.handleItemClick}
                 style={navbar}
               >
-                <Link to="/gm" style={linkStyling}>
+                <Link to="decal" style={linkStyling}>
                   decal
                 </Link>
               </Menu.Item>
