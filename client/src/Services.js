@@ -50,6 +50,7 @@ import metromile from './Services Images/metromile.png';
 import deepnote from './Services Images/deepnote.png'; 
 
 import preetha from "./Leadership Headshots/Preetha2.jpg";
+import michael from "./Leadership Headshots/Michael.jpg";
 
 
 
@@ -387,6 +388,29 @@ class Education extends Component {
                   <Icon size="large" name="mail" />
                 </a>
                 <a href="https://www.linkedin.com/in/preetha-kumar/" style={{
+                  textDecoration: "none",
+                }}>
+                  <Icon size="large" name="linkedin" />
+                </a>
+              </div>
+              </Card.Content>
+              
+            </Card>
+            <Card>
+              <Image src={michael}/>
+              <Card.Content>
+                <Card.Header>Michael Florip</Card.Header>
+                <Card.Meta>
+                  <span style={roleStyle}>VP of Sourcing</span>
+                </Card.Meta>
+
+              <div>
+                <a href="mailto:michaelflorip@berkeley.edu" style={{
+                  textDecoration: "none",
+                }}>
+                  <Icon size="large" name="mail" />
+                </a>
+                <a href="https://www.linkedin.com/in/michaelflorip/" style={{
                   textDecoration: "none",
                 }}>
                   <Icon size="large" name="linkedin" />
