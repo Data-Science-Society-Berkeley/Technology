@@ -405,29 +405,6 @@ class Education extends Component {
                 </a>
               </Card.Content>
             </Card>
-            <Card>
-              <Image src={michael}/>
-              <Card.Content>
-                <Card.Header>Michael Florip</Card.Header>
-                <Card.Meta>
-                  <span style={roleStyle}>VP of Sourcing</span>
-                </Card.Meta>
-
-              <div>
-                <a href="mailto:michaelflorip@berkeley.edu" style={{
-                  textDecoration: "none",
-                }}>
-                  <Icon size="large" name="mail" />
-                </a>
-                <a href="https://www.linkedin.com/in/michaelflorip/" style={{
-                  textDecoration: "none",
-                }}>
-                  <Icon size="large" name="linkedin" />
-                </a>
-              </div>
-              </Card.Content>
-              
-            </Card>
           </Card.Group>
 
       </div>
