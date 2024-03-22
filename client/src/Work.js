@@ -20,6 +20,7 @@ import event4 from "./Events/dssdatathon-img.jpg";
 import event3 from "./Events/fairfa23.jpg";
 import event2 from "./Events/operationanalytics-img.jpg";
 import event1 from "./Events/datathonfa23.jpg";
+import event6 from "./Events/startupcareerfair.jpeg";
 
 import linesOne from "./Homepage/linesOne.png";
 
@@ -152,41 +153,63 @@ class Work extends Component {
         background: "linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 10%, #FFFFFF 30%, #EFFFF0 70%, #DAFFFB 100%)",
       }}>
         <Header style={mybigtext}> <br></br>EVENTS </Header>
-        <Header style={mymidtext}> External Calendar </Header>
-        <a href="https://calendar.google.com/calendar?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
-          <Button
-            style={{
-              background: "#FBFBFB",
-              border: "border: 3px solid #E5E5E5",
-              color: "#8CD6D1",
-              fontFamily: "Lato",
-              fontStyle: "normal",
-              fontWeight: "500",
-              fontSize: "1.5vw",
-              lineHeight: "1.5vw",
-              marginLeft: "96vw",
-              marginBottom: "2vw",
-            }}
-          >
-            Subscribe to this Calendar
-          </Button>
-        </a>
-        <Calendar
-          localizer={localizer}
-          startAccessor="start"
-          endAccessor="end"
-          events={this.state.events}
-          components={{
-            timeSlotWrapper: ColoredDateCellWrapper,
-          }}
-          style={{ marginLeft: "14vw", height: "57vw", marginRight: "14vw" }}
-        />
+        
+        <div style={{ textAlign: "center", marginTop: "4vw" }}>
+          <div style={{ marginBottom: "4vw" }}>
+            <div style={mymidtext}> Upcoming Events </div>
+          </div>
 
-        <div style={link}>
-          Subscribe to our external calendar above to keep up to date on all of
-          our public events via Google Calendar!{" "}
-        </div>
-        <div style={{ textAlign: "center", marginTop: "8vw" }}>
+          <Grid>
+            <Grid.Row
+              style={{
+                width: "100vw",
+                marginLeft: "6vw",
+                marginBottom: "2vw",
+              }}
+            >
+              <Grid.Column style={{ width: "66vw" }}>
+                <Image
+                  src={event6}
+                  style={{ width: "66vw", height: "auto" }}
+                ></Image>
+                {/* <Image
+                  src={event2}
+                  style={{ width: "46vw", height: "18vw" }}
+                ></Image> */}
+              </Grid.Column>
+              <Grid.Column width={7}>
+                <div style={rightcol}>
+                  <strong>
+                    Start-up Career Fair{" "}
+                  </strong>
+                  <br />
+                  Monday, March 18th, 2024
+                  <br />
+                  2:00 PM - 5:00 PM <br />
+                  East Pauley Ballroom
+                  <br />
+                  <br />
+                  Are you still looking for an internship this summer or full-time role? 💼
+
+                  Come out to the Start-Up Career Fair on March 18th at East Pauley Ballroom in MLK from 2-5pm to meet some super cool rising startups and learn about their various STEM and software opportunities. This is a great in person networking opportunity for those looking for a job, so make sure to bring your resume! 👩‍💻👨‍💻
+                  <br />
+                </div>
+              </Grid.Column>
+            </Grid.Row>
+            {/* <div style={bluediv}></div> */}
+            
+            <div class="footerSpacer" style={{
+              height: "50vw",
+            }}>
+              <img src={linesOne} style={{
+                position: "absolute",
+                width: "170vw",
+                left: "-30vw",
+                marginTop: "15vw",
+              }}></img>
+            </div>
+          </Grid>
+
           <div style={{ marginBottom: "4vw" }}>
             <div style={mymidtext}> Past Events </div>
           </div>
