@@ -37,7 +37,7 @@ const clientText = {
 
 export default function CarouselPage() {
 return (
-	<div>
+    <div>
 	<Carousel>
 		<Carousel.Item interval={8000}>
             <img

@@ -262,8 +262,12 @@ class Education extends Component {
           </div>
 
           {/*Carousel*/}
-          <div style={{margin: "9vw 0 0 0"}}></div>
-          <CarouselPage />
+          <div style={{
+            margin: "9vw 0 0 0",
+            height: "auto"
+          }}>
+              <CarouselPage />
+          </div>
 
           {/*Clients*/}
           <div style={{margin: "4vw 0 0 0"}}></div>

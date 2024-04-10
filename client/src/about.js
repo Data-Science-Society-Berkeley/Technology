@@ -272,15 +272,12 @@ const aboutstats = {
   fontWeight: "bold",
   fontSize: "4.8vw",
   lineHeight: "3vw",
-  width: "10vw",
-  height: "3vw",
   color: "#FFC54A",
   position: "absolute",
-  top: "20%",
-  left: "100%",
   textAlign: "center",
-  marginBottom: "3vw",
-  transform: "translate(-50%, -50%)"
+  margin: "auto",
+  width: "100%",
+  height: "7vw",
 };
 
 const aboutstats2 = {
@@ -288,9 +285,10 @@ const aboutstats2 = {
   fontWeight: "bold",
   fontSize: "4.8vw",
   color: "#FFC54A",
-  marginLeft: "14vw",
   textAlign: "center",
   position: "relative",
+  flexGrow: "1",
+  padding: "0",
 };
 
 const aboutstats3 = {
@@ -298,16 +296,9 @@ const aboutstats3 = {
   fontWeight: "normal",
   fontSize: "2vw",
   lineHeight: "3vw",
-  width: "20vw",
-  height: "3vw",
+  width: "100%",
   color: "black",
-  position: "relative",
-  top: "20%",
-  left: "80%",
   textAlign: "center",
-  transform: "translate(-50%, -50%)",
-  marginTop: "65px",
-  marginLeft: "35px"
 };
 
 const aboutstats4 = {
@@ -782,7 +773,7 @@ class About extends Component {
           }}>
           </Image>
         </div> */}
-        <Grid entered style={gridoffset}>
+        <Grid centered style={gridoffset}>
           {/* onClick scroll handlers are redundant, consider removing */}
           <Grid.Row
             width={16}
@@ -861,8 +852,7 @@ class About extends Component {
               style={{
                 position: "relative",
                 textShadow: "none",
-                top: "25vw",
-                left: "1vw",
+                top: "22vw",
                 zIndex: "3",
                 fontFamily: "Lato",
                 fontStyle: "43vw",
@@ -870,8 +860,8 @@ class About extends Component {
                 fontSize: "2vw",
                 lineHeight: "6vw",
                 color: "black",
-                marginBottom: "3vw",
-                alignText: "center",
+                margin: "auto",
+                width: "100vw",
               }}
             >
             <div style={{
@@ -880,9 +870,9 @@ class About extends Component {
             }}>
               <img src={linesOne} style={{
                 position: "absolute",
-                left: "-10vw",
-                width: "160vw",
-                height: "20vw",
+                left: "-40vw",
+                width: "190vw",
+                height: "15vw",
               }}></img>
             </div>
             <span id="whoWeAre">Who We Are</span>
@@ -913,22 +903,22 @@ class About extends Component {
           </Grid.Row>
           {/* <Grid entered style={gridoffset}> */}
           <Grid.Row
-            width={10}
+            width={4}
             columns={4}
             style={{
               // backgroundColor: "#8CD6D1",
-              width: "50%",
-              height: "3vw",
               marginTop: "17vw",
-              left: "10vw",
               position: "relative",
+              flexDirection: "row",
+              maxWidth: "80%",
+              padding: "0",
+              height: "auto",
             }}
           >
             <Grid.Column width={1} style={aboutstats2}>
               <div style={aboutstats}>
                 42
               </div>
-              <div style={{height: "2vw"}}></div>
               <div style={aboutstats3}>
                 Completed Client Projects
               </div>
@@ -937,7 +927,6 @@ class About extends Component {
               <div style={aboutstats}>
                 68
               </div>
-              <div style={{height: "2vw"}}></div>
               <div style={aboutstats3}>
                 Past Workshops and Events Hosted
               </div>
@@ -946,7 +935,6 @@ class About extends Component {
               <div style={aboutstats}>
                 300+
               </div>
-              <div style={{height: "2vw"}}></div>
               <div style={aboutstats3}>
                 Datathon Past Participants
               </div>
