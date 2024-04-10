@@ -25,7 +25,8 @@ import rectangleSingle from "./landing/rectangleSingle.png";
 import rectangleGroup from "./landing/rectangleGroup.png";
 import squiggly1 from "./landing/squiggly1.png";
 import squiggly2 from "./landing/squiggly2.png";
-import homepageBanner from './Homepage/homepage.png';
+/* import homepageBanner from './Homepage/homepage.png'; */
+import homepageBanner from './Homepage/landing_photo_sp24_3.jpg';
 import rightarrow from './Homepage/ArrowRight.png'
 import stats from './Homepage/stats.png'
 import gradientOne from './Homepage/homepagegradient1.png';
