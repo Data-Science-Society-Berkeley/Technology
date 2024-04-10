@@ -1,6 +1,7 @@
 
 .NavBar{
     height: 150px;
+    color: #ffffff;
 }
 .ui.table tr td { border-top: 0px !important; }
 .ui.table tr th {
