@@ -17,14 +17,15 @@ import {
 } from "semantic-ui-react";
 import PasswordStrengthBar from "react-password-strength-bar";
 import validator from "validator";
-import logo from "./Backgrounds/dssblacklonglogo.png";
+import logo from "./Backgrounds/dss-logo-title-black-small.png";
+/* import logo from "./Backgrounds/dssblacklonglogo.png"; */
 import logo2 from "./Backgrounds/dsswhitelonglogo.png";
 
 let endpoint = "http://localhost:8080";
 
 const mynav = {
   background: "inherit",
-  height: "75%",
+  height: "50%",
   fontFamily: "Overpass",
   fontSize: "1vw",
   fontWeight: 600,
@@ -62,20 +63,19 @@ const navbar = {
   lineHeight: "3vw",
   marginLeft: "1.5vw",
   color: "#FFFFFF",
-  marginBottom: "-3vw",
+  marginBottom: "-1vw",
+  paddingBottom: "0",
 };
 
 const navWrapperLeft= {
   display: "flex",
   flex: "1 2 0",
   justifyContent: "space-between",
-  margin: "auto 0",
 }
 
 const navWrapperRight= {
   display: "flex",
   justifyContent: "space-between",
-  margin: "auto 0",
 }
 
 const link = {
@@ -135,6 +135,10 @@ const join2 = {
   lineHeight: "37px",
   marginLeft: "24px",
   color: "#FFC54A",
+};
+const logo_size = {
+  width: "10%",
+  height: "10%",
 };
 
 class NavBar extends Component {
@@ -233,7 +237,7 @@ class NavBar extends Component {
     var logo = this.setCircle();
     let applystyle = this.setJoin();
     return (
-      <div className="NavBar">
+      <div className="NavBar" style={{height: "90px"}}>
 
         <Menu style={mynav} borderless={true}>
           <div style={navWrapperLeft}>
@@ -270,7 +274,7 @@ class NavBar extends Component {
                 onClick={this.handleItemClick}
                 style={navbar}
               >
-                <Link to="/decal" style={linkStyling}>
+                <Link to="decal" style={linkStyling}>
                   decal
                 </Link>
               </Menu.Item>
