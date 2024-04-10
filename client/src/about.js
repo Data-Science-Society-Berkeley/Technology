@@ -268,38 +268,35 @@ const aboutlinks3 = {
 const aboutstats = {
   fontFamily: "Lato",
   fontWeight: "bold",
-  fontSize: "4.8vw",
-  lineHeight: "3vw",
+  fontSize: "6vw",
   color: "#FFC54A",
   position: "absolute",
   textAlign: "center",
   margin: "auto",
   width: "100%",
-  height: "7vw",
+  flexGrow: "1",
+  position: "relative",
 };
 
 const aboutstats2 = {
   fontFamily: "Lato",
   fontWeight: "bold",
   minWidth: "15%",
-  padding: "0",
-  height: "auto",
   margin: "auto",
   color: "#FFC54A",
   textAlign: "center",
   position: "relative",
   flexGrow: "1",
-  padding: "0",
 };
 
 const aboutstats3 = {
   fontFamily: "Lato",
   fontWeight: "normal",
-  fontSize: "2vw",
-  lineHeight: "3vw",
+  fontSize: "2.2vw",
   width: "100%",
   color: "black",
   textAlign: "center",
+  flexGrow: "1",
 };
 
 const aboutstats4 = {
@@ -904,12 +901,12 @@ class About extends Component {
             columns={4}
             style={{
               // backgroundColor: "#8CD6D1",
-              marginTop: "17vw",
+              marginTop: "13vw",
               position: "relative",
               flexDirection: "row",
               maxWidth: "80%",
               padding: "0",
-              height: "auto",
+              height: "22vw",
             }}
           >
             <Grid.Column width={1} style={aboutstats2}>
@@ -988,7 +985,7 @@ class About extends Component {
           </div>
         </Grid.Row>
         <div id="committees" style={{
-          marginTop: "7vw",
+          marginTop: "3vw",
         }}>
         </div>
         <Grid.Row centered columns={1}>
@@ -1001,7 +998,6 @@ class About extends Component {
               fontStyle: "43vw",
               fontWeight: "bold",
               fontSize: "2.5vw",
-              lineHeight: "6vw",
               color: "black",
               marginBottom: "3vw",
               textAlign: "center",
