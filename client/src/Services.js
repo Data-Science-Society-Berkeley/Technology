@@ -48,6 +48,8 @@ import simmer from './Services Images/simmer.png';
 import edify from './Services Images/edify.png'; 
 import metromile from './Services Images/metromile.png'; 
 import deepnote from './Services Images/deepnote.png'; 
+import walmart from './Services Images/walmart.png'; 
+import qualcomm from './Services Images/qualcomm.png'; 
 
 import preetha from "./Leadership Headshots/Preetha2.jpg";
 import michael from "./Leadership Headshots/Michael.jpg";
@@ -277,25 +279,25 @@ class Education extends Component {
               
               {/*Row 1*/}
               <figure class="fading-card">
-                  <img src={mep}></img>
-                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
+                  <img src={paypal}></img>
+                  <figcaption><p>Improve employee engagement. Utilized regression models and NLP topic modeling on employee activity datasets to improve employee interaction within the existing system. Developed a Tableau dashboard for monitoring engagement and presented insights leading to the development of PayPal's Global Innovation Tournament.</p>
                   </figcaption>
               </figure>
               <figure class="fading-card">
-                  <img src={medic}></img>
-                  <figcaption><p>Data collected by the CHT are sensitive and cannot be shared with partner organizations without signing DUAs/NDAs. Having artificial versions that resemble real datasets would allow Medic to share data with data science partners and/or publish them in open repositories. We developed automated Python scripts converting form questions, probability distributions and data specifications into synthetic data used for pre-production testing on apps and models.</p>
+                  <img src={walmart}></img>
+                  <figcaption><p> Built LLM interface to allow non-technical queries to input human text and automatically translate into SQL, find relevant data, and return results along with the corresponding SQL code.</p>
                   </figcaption>
               </figure>
-              <figure class="fading-card">
-                  <img src={tnc}></img>
-                  <figcaption><p>Analyzed the trends and spatial distribution of water right applications by creating an interactive map using GeoPandas. Determined the most influential variables in approved applications through feature selection. Predicted the approval status of pending water right applications through the usage of a logistic regression model.</p>
-                  </figcaption>
+                <figure class="fading-card">
+                <img src={qualcomm}></img>
+                <figcaption><p>Performed web scraping to obtain media data about qualcomm and its competitors and built NLP model utilizing GLDA to perform topic modelling and sentiment analysis, helping qualcomm's marketing team come up with and improve marketing strategies</p>
+                </figcaption>
               </figure>
               
               {/*Row 2*/}
-              <figure class="fading-card">
-                  <img src={greenPeace}></img>
-                  <figcaption><p>The lead conversion program at Greenpeace is devoted to convert leads to making donations, but they had yet to look back and do a thorough analysis on what factors make a lead more likely to convert (to both one-time and monthly donors).<br></br>This project analyzed historical, demographic and other available data points in order to identify predictors for conversion and come up with a model that assigns a likelihood to conversion score for leads.</p>
+                <figure class="fading-card">
+                  <img src={tnc}></img>
+                  <figcaption><p>Analyzed the trends and spatial distribution of water right applications by creating an interactive map using GeoPandas. Determined the most influential variables in approved applications through feature selection. Predicted the approval status of pending water right applications through the usage of a logistic regression model.</p>
                   </figcaption>
               </figure>
               <figure class="fading-card">
@@ -311,8 +313,8 @@ class Education extends Component {
 
               {/*Row 3*/}
               <figure class="fading-card">
-                  <img src={paypal}></img>
-                  <figcaption><p>Improve employee engagement. Utilized regression models and NLP topic modeling on employee activity datasets to improve employee interaction within the existing system. Developed a Tableau dashboard for monitoring engagement and presented insights leading to the development of PayPal's Global Innovation Tournament.</p>
+                  <img src={mep}></img>
+                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
                   </figcaption>
               </figure>
               <figure class="fading-card">

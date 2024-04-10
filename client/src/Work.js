@@ -170,7 +170,7 @@ class Work extends Component {
               <Grid.Column style={{ width: "66vw" }}>
                 <Image
                   src={event6}
-                  style={{ width: "66vw", height: "auto" }}
+                  style={{ width: "66vw", height: "80%" }}
                 ></Image>
                 {/* <Image
                   src={event2}
@@ -225,7 +225,7 @@ class Work extends Component {
               <Grid.Column style={{ width: "66vw" }}>
                 <Image
                   src={event1}
-                  style={{ width: "66vw", height: "auto" }}
+                  style={{ width: "66vw", height: "80%" }}
                 ></Image>
                 {/* <Image
                   src={event2}
@@ -266,7 +266,7 @@ class Work extends Component {
               <Grid.Column style={{ width: "66vw" }}>
                 <Image
                   src={event3}
-                  style={{ width: "66vw", height: "auto" }}
+                  style={{ width: "66vw", height: "80%" }}
                 ></Image>
                 {/* <Image
                   src={event4}
@@ -303,12 +303,12 @@ class Work extends Component {
               <Grid.Column style={{ width: "66vw" }}>
                 <Image
                   src={event5}
-                  style={{ width: "66vw", height: "auto" }}
+                  style={{ width: "66vw", height: "80%" }}
                 ></Image>
               </Grid.Column>
               <Grid.Column width={7}>
                 <div style={rightcol}>
-                  <strong>5th Annual Data Science Forum: Tech for Social Good </strong>
+                  <strong>5th Annual Data Science Forum: Tech for Social Good</strong>
                   <br />
                   April 2023, Dwinelle Hall
                   <br />
