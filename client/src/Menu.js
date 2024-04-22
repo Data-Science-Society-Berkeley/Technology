@@ -34,6 +34,19 @@ const mynav = {
   border: "none",
 };
 
+const loginStyle = {
+  fontFamily: "Montserrat",
+  fontSize: "1.5vw",
+  fontWeight: 700, // Bolder than other links
+  lineHeight: "3vw",
+  color: "#FFFFFF", // White text color
+  background: "#007BFF", // Bootstrap primary blue for prominence
+  padding: "10px 15px",
+  borderRadius: "5px",
+  textDecoration: 'none',
+};
+
+
 
 // since menu has 10 margin
 const form_formatting = {
@@ -318,6 +331,16 @@ class NavBar extends Component {
                     join us
               </Link>
               </Menu.Item>
+              <Menu.Item
+              name="login"
+              active={activeItem === "login"}
+              onClick={this.handleItemClick}
+              style={navbar}
+            >
+              <a href="https://floating-tor-01392-a251bb952f37.herokuapp.com/" style={loginStyle}>
+              login
+              </a>
+            </Menu.Item>
               <Menu.Item header></Menu.Item>
             </Menu.Menu>
           </div>
