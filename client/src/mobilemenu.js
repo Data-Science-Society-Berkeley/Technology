@@ -581,6 +581,31 @@ class NavBar2 extends Component {
               </div>
             </Link>
           </Menu.Item>
+
+          <Menu.Item as="a">
+              <a href="https://floating-tor-01392-a251bb952f37.herokuapp.com/" onClick={this.handleSettingVisibleToFalse}>
+                <div style={{ marginTop: "2vw", marginBottom: "2vw" }}>
+                  <div>
+                    <div
+                      style={{ fontSize: "5vw", color: "#8CD6D1" }}
+                      direction="right"
+                    >
+                      <Icon name="sign-in" />
+                    </div>
+                    <div
+                      direction="left"
+                      style={{
+                        fontSize: "3vw",
+                        marginTop: "1vw",
+                        color: "#000000",
+                      }}
+                    >
+                      Login
+                    </div>
+                  </div>
+                </div>
+              </a>
+              </Menu.Item>
         </Sidebar>
         <Sidebar.Pusher
           dimmed={this.state.visible}
