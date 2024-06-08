@@ -10,7 +10,6 @@ import {
   List,
   Segment,
   Container,
-  Responsive,
   Grid,
   Image,
 } from "semantic-ui-react";
@@ -65,15 +64,15 @@ class Footer extends Component {
           background: "#E5E5E5",
         }}
       >
-         <Responsive as={Grid} minWidth={767} divided inverted>
+        {/* <Responsive as={Grid} minWidth={767} divided inverted> */}
         <Container>
           <Grid divided inverted stackable>
             <Grid.Row>
-              <div style={{ marginLeft: "-20%", marginTop: "1.5vw"}}>
-                <Image inline src={logo} style={{ width: "5vw",}}></Image>
+              <div style={{ marginLeft: "-20%", marginTop: "1.5vw" }}>
+                <Image inline src={logo} style={{ width: "5vw" }}></Image>
                 <div
                   style={{
-                    marginLeft:"6vw",
+                    marginLeft: "6vw",
                     marginTop: "-3vw",
                     fontFamily: "Montserrat",
                     fontStyle: "normal",
@@ -90,9 +89,12 @@ class Footer extends Component {
               <Grid.Column width={8}>
                 {/* <Icon.Group size="huge" style={{ marginLeft: "-20%" }}> */}
                 <div style={{ fontSize: "3vw" }}>
-                  <a href="mailto:info@dss.berkeley.edu" style={{
-                    textDecoration: "none",
-                  }}>
+                  <a
+                    href="mailto:info@dss.berkeley.edu"
+                    style={{
+                      textDecoration: "none",
+                    }}
+                  >
                     <Icon
                       name="mail outline"
                       style={{
@@ -106,9 +108,12 @@ class Footer extends Component {
                     </span>
                   </a>
                   <br />
-                  <a href="https://www.instagram.com/dssberkeley/" style={{
-                    textDecoration: "none",
-                  }}>
+                  <a
+                    href="https://www.instagram.com/dssberkeley/"
+                    style={{
+                      textDecoration: "none",
+                    }}
+                  >
                     {" "}
                     <Icon
                       name="instagram"
@@ -117,9 +122,12 @@ class Footer extends Component {
                     <span style={iconDesc}> Instagram</span>
                   </a>{" "}
                   <br />
-                  <a href="https://www.facebook.com/dssberkeley" style={{
-                    textDecoration: "none",
-                  }}>
+                  <a
+                    href="https://www.facebook.com/dssberkeley"
+                    style={{
+                      textDecoration: "none",
+                    }}
+                  >
                     {" "}
                     <Icon
                       name="facebook"
@@ -128,9 +136,12 @@ class Footer extends Component {
                     <span style={iconDesc}> Facebook</span>
                   </a>
                   <br />
-                  <a href="https://www.linkedin.com/company/data-science-society-at-berkeley/" style={{
-                    textDecoration: "none",
-                  }}>
+                  <a
+                    href="https://www.linkedin.com/company/data-science-society-at-berkeley/"
+                    style={{
+                      textDecoration: "none",
+                    }}
+                  >
                     {" "}
                     <Icon
                       name="linkedin"
@@ -139,9 +150,12 @@ class Footer extends Component {
                     <span style={iconDesc}> LinkedIn</span>
                   </a>
                   <br />
-                  <a href="https://www.youtube.com/channel/UCBj7xVI8e_jlEAznyVetWIQ/" style={{
-                    textDecoration: "none",
-                  }}>
+                  <a
+                    href="https://www.youtube.com/channel/UCBj7xVI8e_jlEAznyVetWIQ/"
+                    style={{
+                      textDecoration: "none",
+                    }}
+                  >
                     {" "}
                     <Icon
                       name="youtube"
@@ -294,10 +308,10 @@ class Footer extends Component {
             </Grid.Row>
           </Grid>
         </Container>
-        </Responsive>
-        <Responsive as={Grid} maxWidth={768} divided inverted>
-        <AltFooter/>
-        </Responsive>
+        {/* </Responsive> */}
+        {/* <Responsive as={Grid} maxWidth={768} divided inverted> */}
+        <AltFooter />
+        {/* </Responsive> */}
       </Segment>
     );
   }
