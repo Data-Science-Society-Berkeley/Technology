@@ -2,26 +2,18 @@ import React, { Fragment, Component } from "react";
 import "./App.css";
 import { Button, Container, Menu, Image, Header } from "semantic-ui-react";
 import Login from "./Login";
-import Registration from "./Register";
 import About from "./about";
-import Committees from "./committees";
 import CentralText from "./CentralText";
 import Decal from "./Decal";
-import DecalLearn from "./DecalLearn.js";
+import Work from "./Work";
 import apply from "./Backgrounds/dssfall2020-recruitmentbanner.png";
 
-import Acadev from "./Acadev";
 import Consulting from "./Consulting";
-import Work from "./Work";
 import Contact from "./Contact";
 import Cookies from "js-cookie";
-import Social from "./Social.js";
-import Education from "./Education.js";
 import Service from "./Services.js";
 import GeneralMember from "./generalmember.js";
-import Hierarchy from "./hierarchy";
 import Join from "./Join-Us";
-import Culture from "./Culture.js";
 import Datathon from "./Datathon";
 
 import Footer from "./footer";
@@ -38,7 +30,6 @@ import {
 } from "react-router-dom";
 import NavBar from "./Menu";
 import NavBar2 from "./mobilemenu";
-import InMenu from "./inMen";
 import { Helmet } from "react-helmet";
 import WebFont from "webfontloader";
 import ReactGA from "react-ga";
@@ -85,6 +76,7 @@ class App extends Component {
   }
   culture() {
     let value = Cookies.get("session_token");
+    console.log(value);
     if (!value) {
       return (
         <Switch>
@@ -231,20 +223,6 @@ class App extends Component {
           />
           <Route
             exact
-            path="/acadev"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <Acadev></Acadev>
-                <Footer></Footer>
-              </div>
-            )}
-          />
-          <Route
-            exact
             path="/decal"
             render={(props) => (
               <div>
@@ -265,20 +243,6 @@ class App extends Component {
                 "https://jegeronimo.github.io/dss-data-198/";
               return null;
             }}
-          />
-          <Route
-            exact
-            path="/socialgood"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <Social></Social>
-                <Footer></Footer>
-              </div>
-            )}
           />
           <Route
             exact
@@ -326,21 +290,6 @@ class App extends Component {
           />
           <Route
             exact
-            path="/education"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <Education></Education>
-                <div style={{ marginTop: "100px" }}></div>
-                <Footer></Footer>
-              </div>
-            )}
-          />
-          <Route
-            exact
             path="/login"
             render={(props) => (
               <div
@@ -373,12 +322,6 @@ class App extends Component {
               ></div>
             )}
           />
-          <Route path="/client/project:id" render={(props) => <div></div>} />
-          <Route
-            exact
-            path="/register"
-            render={(props) => <Registration {...props} />}
-          />
         </Switch>
       );
     } else {
@@ -388,14 +331,6 @@ class App extends Component {
             path="/zoom"
             component={() => {
               window.location.href = "https://berkeley.zoom.us/j/92287537123";
-              return null;
-            }}
-          />
-          <Route
-            path="/family"
-            component={() => {
-              window.location.href =
-                "https://trusting-montalcini-b87ad0.netlify.app/";
               return null;
             }}
           />
@@ -416,21 +351,6 @@ class App extends Component {
           />
           <Route
             exact
-            path="/joinus"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <Acadev></Acadev>
-                <Footer></Footer>
-              </div>
-            )}
-          />
-          {Culture}
-          <Route
-            exact
             path="/about"
             render={(props) => (
               <div>
@@ -445,20 +365,6 @@ class App extends Component {
           />
           <Route
             exact
-            path="/commitees"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <Committees></Committees>
-                <Footer></Footer>
-              </div>
-            )}
-          />
-          <Route
-            exact
             path="/consulting"
             render={(props) => (
               <div>
@@ -467,20 +373,6 @@ class App extends Component {
                 />
                 <NavBar {...props} />
                 <Consulting></Consulting>
-                <Footer></Footer>
-              </div>
-            )}
-          />
-          <Route
-            exact
-            path="/acadev"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <Acadev></Acadev>
                 <Footer></Footer>
               </div>
             )}
@@ -525,48 +417,6 @@ class App extends Component {
                 <NavBar {...props} />
                 <Decal></Decal>
                 <Footer></Footer>
-              </div>
-            )}
-          />
-          <Route
-            exact
-            path="/decallearn"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <DecalLearn></DecalLearn>
-                <div style={{ marginTop: "100px" }}></div>
-                <Footer></Footer>
-              </div>
-            )}
-          />
-          <Route
-            exact
-            path="/socialgood"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <Social></Social>
-                <Footer></Footer>
-              </div>
-            )}
-          />
-          <Route
-            exact
-            path="/culture"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <InMenu {...props} />
-                <Culture {...props}></Culture>
               </div>
             )}
           />
@@ -626,21 +476,6 @@ class App extends Component {
           />
           <Route
             exact
-            path="/education"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <Education></Education>
-                <div style={{ marginTop: "100px" }}></div>
-                <Footer></Footer>
-              </div>
-            )}
-          />
-          <Route
-            exact
             path="/login"
             render={(props) => (
               <div
@@ -674,11 +509,6 @@ class App extends Component {
             )}
           />
           <Route path="/client/project:id" render={(props) => <div></div>} />
-          <Route
-            exact
-            path="/register"
-            render={(props) => <Registration {...props} />}
-          />
           <Route
             exact
             path="/datathon"
@@ -758,20 +588,6 @@ class App extends Component {
 
           <Route
             exact
-            path="/acadev"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar2 {...props} componentid={Acadev} />
-                <Footer></Footer>
-              </div>
-            )}
-          />
-
-          <Route
-            exact
             path="/decal"
             render={(props) => (
               <div>
@@ -793,21 +609,6 @@ class App extends Component {
               return null;
             }}
           />
-
-          <Route
-            exact
-            path="/socialgood"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar2 {...props} componentid={Social} />
-                <Footer></Footer>
-              </div>
-            )}
-          />
-
           <Route
             exact
             path="/events"
@@ -846,20 +647,6 @@ class App extends Component {
               window.location.href = "./"; // TODO: Redirect back to last page. Currently redirects to home page regardless of where you are.
               return null;
             }}
-          />
-
-          <Route
-            exact
-            path="/register"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar2 {...props} componentid={Registration} />
-                <Footer></Footer>
-              </div>
-            )}
           />
 
           <Route

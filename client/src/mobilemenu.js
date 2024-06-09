@@ -27,24 +27,16 @@ import CentralText from "./CentralText";
 import { isThisTypeNode, transform } from "typescript";
 
 import Login from "./Login";
-import Registration from "./Register";
 import About from "./about";
-import Committees from "./committees";
 import Decal from "./Decal";
-import DecalLearn from "./DecalLearn.js";
 import apply from "./Backgrounds/dssfall2020-recruitmentbanner.png";
 
-import Acadev from "./Acadev";
 import Consulting from "./Consulting";
-import Work from "./Work";
 import Contact from "./Contact";
 import Cookies from "js-cookie";
-import Social from "./Social.js";
-import Education from "./Education.js";
 import Service from "./Services.js";
 import GeneralMember from "./generalmember.js";
-import Culture from "./Culture.js";
-import Join from "./Join-Us.js"
+import Join from "./Join-Us.js";
 
 import Footer from "./footer";
 import MobileMenu from "./mobilemenu.js";
@@ -318,10 +310,13 @@ class NavBar2 extends Component {
               color: "#8CD6D1	",
             }}
           >
-            <img src={logo} style={{
-              width: "15vw",
-              padding: "3vw 0vw 0vw 0vw",
-            }}></img>
+            <img
+              src={logo}
+              style={{
+                width: "15vw",
+                padding: "3vw 0vw 0vw 0vw",
+              }}
+            ></img>
           </Menu.Item>
           <Menu.Item as="a">
             <Link to="/" onClick={this.handleSettingVisibleToFalse}>
@@ -583,40 +578,46 @@ class NavBar2 extends Component {
           </Menu.Item>
 
           <Menu.Item as="a">
-              <a href="https://floating-tor-01392-a251bb952f37.herokuapp.com/" onClick={this.handleSettingVisibleToFalse}>
-                <div style={{ marginTop: "2vw", marginBottom: "2vw" }}>
-                  <div>
-                    <div
-                      style={{ fontSize: "5vw", color: "#8CD6D1" }}
-                      direction="right"
-                    >
-                      <Icon name="sign-in" />
-                    </div>
-                    <div
-                      direction="left"
-                      style={{
-                        fontSize: "3vw",
-                        marginTop: "1vw",
-                        color: "#000000",
-                      }}
-                    >
-                      Login
-                    </div>
+            <a
+              href="https://floating-tor-01392-a251bb952f37.herokuapp.com/"
+              onClick={this.handleSettingVisibleToFalse}
+            >
+              <div style={{ marginTop: "2vw", marginBottom: "2vw" }}>
+                <div>
+                  <div
+                    style={{ fontSize: "5vw", color: "#8CD6D1" }}
+                    direction="right"
+                  >
+                    <Icon name="sign-in" />
+                  </div>
+                  <div
+                    direction="left"
+                    style={{
+                      fontSize: "3vw",
+                      marginTop: "1vw",
+                      color: "#000000",
+                    }}
+                  >
+                    Login
                   </div>
                 </div>
-              </a>
-              </Menu.Item>
+              </div>
+            </a>
+          </Menu.Item>
         </Sidebar>
         <Sidebar.Pusher
           dimmed={this.state.visible}
           onClick={this.handleSettingVisibleToFalse}
           // style={{ minHeight: "75vw" }}
         >
-          <Segment basic style={{
-            minHeight: "75vw",
-            backgroundColor: "#FFFFFF",
-            padding: "0px",
-          }}>
+          <Segment
+            basic
+            style={{
+              minHeight: "75vw",
+              backgroundColor: "#FFFFFF",
+              padding: "0px",
+            }}
+          >
             <Menu
               // fixed="top"
               // inverted
