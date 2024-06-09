@@ -20,6 +20,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 import logo from "./Backgrounds/DSS-logo-black-transparent.png";
 import ocf from "./Backgrounds/ocf-hosted-penguin.svg";
 import AltFooter from "./footer2";
@@ -50,21 +51,20 @@ const link = {
   lineHeight: "1.5vw",
   fontWeight: "600",
 };
-class Footer extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <Segment
-        vertical
-        style={{
-          width: "100%",
-          height: "43vw",
-          background: "#E5E5E5",
-        }}
-      >
-        {/* <Responsive as={Grid} minWidth={767} divided inverted> */}
+
+const Footer = () => {
+  const isDesktop = useMediaQuery({ minWidth: 767 });
+
+  return (
+    <Segment
+      vertical
+      style={{
+        width: "100%",
+        height: "43vw",
+        background: "#E5E5E5",
+      }}
+    >
+      {isDesktop ? (
         <Container>
           <Grid divided inverted stackable>
             <Grid.Row>
@@ -186,37 +186,37 @@ class Footer extends Component {
                   </Link>
                   <br /> <br />
                   {/*
-                  <Link to="/acadev">
-                    <List.Item as="a" style={footer}>
-                      {" "}
-                      AcaDev
-                    </List.Item>
-                  </Link>
-                  <br /> <br />
-                  <Link to="/consulting">
-                    <List.Item as="a" style={footer}>
-                      {" "}
-                      Consulting{" "}
-                    </List.Item>
-                  </Link>
-                  <br /> <br />
-                  {/* <Link to="/decal">
+                <Link to="/acadev">
+                  <List.Item as="a" style={footer}>
                     {" "}
-                    <List.Item as="a" style={footer}>
-                      {" "}
-                      DeCal{" "}
-                    </List.Item>
-                  </Link>
-                  <br /> <br /> 
-                  <Link to="socialgood">
+                    AcaDev
+                  </List.Item>
+                </Link>
+                <br /> <br />
+                <Link to="/consulting">
+                  <List.Item as="a" style={footer}>
                     {" "}
-                    <List.Item as="a" style={footer}>
-                      {" "}
-                      Social Good{" "}
-                    </List.Item>
-                  </Link>
-                  <br /> <br />
-                    */}
+                    Consulting{" "}
+                  </List.Item>
+                </Link>
+                <br /> <br />
+                {/* <Link to="/decal">
+                  {" "}
+                  <List.Item as="a" style={footer}>
+                    {" "}
+                    DeCal{" "}
+                  </List.Item>
+                </Link>
+                <br /> <br /> 
+                <Link to="socialgood">
+                  {" "}
+                  <List.Item as="a" style={footer}>
+                    {" "}
+                    Social Good{" "}
+                  </List.Item>
+                </Link>
+                <br /> <br />
+                  */}
                   <Link to="/services">
                     {" "}
                     <List.Item as="a" style={footer}>
@@ -230,15 +230,15 @@ class Footer extends Component {
                 <div style={link}>Past Work </div>
                 <List link inverted>
                   {/*
-                  <Link to="/consulting">
-                    <List.Item as="a" style={footer}>
-                      {" "}
-                      Consulting
-                    </List.Item>{" "}
-                  </Link>{" "}
-                  <br />
-                  <br />
-                  */}
+                <Link to="/consulting">
+                  <List.Item as="a" style={footer}>
+                    {" "}
+                    Consulting
+                  </List.Item>{" "}
+                </Link>{" "}
+                <br />
+                <br />
+                */}
                   <Link to="/events">
                     <List.Item as="a" style={footer}>
                       Events
@@ -246,12 +246,12 @@ class Footer extends Component {
                   </Link>
                   <br /> <br />
                   {/* <Link to="/education">
-                    {" "}
-                    <List.Item as="a" style={footer}>
-                      Workshops
-                    </List.Item>
-                  </Link>
-                  <br /> <br /> */}
+                  {" "}
+                  <List.Item as="a" style={footer}>
+                    Workshops
+                  </List.Item>
+                </Link>
+                <br /> <br /> */}
                   <Link to="/gm">
                     {" "}
                     <List.Item as="a" style={footer}>
@@ -272,11 +272,11 @@ class Footer extends Component {
                     </List.Item>
                   </Link>
                   {/* <br /> <br />
-                  <Link to="/decallearn">
-                    <List.Item as="a" style={footer}>
-                      DeCal Course{" "}
-                    </List.Item>
-                  </Link>{" "} */}
+                <Link to="/decallearn">
+                  <List.Item as="a" style={footer}>
+                    DeCal Course{" "}
+                  </List.Item>
+                </Link>{" "} */}
                   <br />
                   <br />
                 </List>
@@ -308,12 +308,11 @@ class Footer extends Component {
             </Grid.Row>
           </Grid>
         </Container>
-        {/* </Responsive> */}
-        {/* <Responsive as={Grid} maxWidth={768} divided inverted> */}
+      ) : (
         <AltFooter />
-        {/* </Responsive> */}
-      </Segment>
-    );
-  }
-}
+      )}
+    </Segment>
+  );
+};
+
 export default Footer;
