@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import axios from "axios";
 import {
   Image,
   Grid,
@@ -7,60 +6,6 @@ import {
   Icon,
 } from "semantic-ui-react";
 
-import cdss from "./Leadership Headshots/berkeley_cdss_logo.png";
-import data8 from "./Collaborators/data8logo.png";
-import pcs from "./Collaborators/pcsberkeley.png";
-import cal from "./Collaborators/calactuarialleague.png";
-import eab from "./Collaborators/entrepeneursberk.png";
-import blueprint from "./Collaborators/blueprint.png";
-import uea from "./Collaborators/berkuea.png";
-import bids from "./Collaborators/Berkeley_Institute_for_Data_Science_-_Logo.png";
-import haasds from "./Leadership Headshots/haas-ds-club-logo.png";
-import saas from "./Collaborators/saaslogo_square.png";
-import hbsa from "./Collaborators/hbsa.png";
-import ascend from "./Collaborators/Ascend-Logo.png";
-import pbl from "./Collaborators/pbl.png";
-import mlab from "./Collaborators/mlabberkeley.png";
-import ecode from "./Collaborators/ecode.png";
-import nib from "./Collaborators/nib.png";
-import deepnote from "./Leadership Headshots/deepnote.png";
-
-import steven from "./Leadership Headshots/Steven2.jpg";
-import preetha from "./Leadership Headshots/Preetha2.jpg";
-import james from "./Leadership Headshots/JamesG.jpg";
-import erin from "./Leadership Headshots/Erin.jpg";
-import austin from "./Leadership Headshots/austin.jpeg";
-import harshit from "./Leadership Headshots/Harshit2.jpeg";
-import joseph from "./Leadership Headshots/Joseph.jpg";
-import lucy from "./Leadership Headshots/Lucy.jpg";
-import christina from "./Leadership Headshots/Christina.jpg";
-import kristen from "./Leadership Headshots/Kristen.jpg";
-import michael from "./Leadership Headshots/Michael.jpg";
-import sid from "./Leadership Headshots/Sid.jpg";
-import tommy from "./Leadership Headshots/Tommy.jpg";
-import rahul from "./Leadership Headshots/rahul.jpeg";
-
-import pm from "./About/pmgroup.jpeg";
-import exec from "./About/exec.jpeg";
-import socgood from "./About/socgoodgroup.jpeg";
-import gen from "./About/GeneralMember.jpg";
-import decal from "./Decal Images/decalberkeleylogo 1.png";
-import senior from "./About/SeniorAdvisor.png";
-import join from "./About/JoinUs.jpg";
-import story from "./About/team.png";
-import popout from "./About/popoutDesign.png";
-import ret from "./About/RetreatPic.png";
-import datacamp from "./Decal Images/datacamp-logo 1.png";
-import youtubeback from "./About/youtubevideo-cover.jpg";
-import upright from "./About/cross_up.png";
-import bottomleft from "./About/cross_down.png";
-import rectangle from "./About/rectangle.png";
-import micron from "./About/micron.png";
-import linesOne from "./Homepage/linesOne.png";
-import linesTwo from "./Homepage/linesTwo.png";
-import gradient2 from "./Homepage/homepagegradient2.png";
-
-let endpoint = "http://localhost:8080";
 const gridoffset = {
   textAlign: "center",
   fontFamily: "Lato",
@@ -68,12 +13,11 @@ const gridoffset = {
 const cardstyle = {
   width: "28vw",
   maxHeight: "56vw",
-  // height: "800px",
   marginBottom: "1vw",
   marginleft: "2vw",
 };
 const imagestyle = {
-  height: "28vw",
+  height:  "28vw",
   maxHeight: "28vw",
   objectFit: "cover",
 };
@@ -85,7 +29,6 @@ const textstyle = {
   color: "#8CD6D1",
   marginTop: ".5vw",
 };
-
 const roleStyle = {
   fontFamily: "Lato",
   fontWeight: 300,
@@ -107,7 +50,6 @@ const aboutlinks = {
   textAlign: "center",
   transform: "translate(-50%, -50%)",
 };
-
 const aboutlinks2 = {
   fontFamily: "Lato",
   fontWeight: "600",
@@ -118,7 +60,6 @@ const aboutlinks2 = {
   textAlign: "center",
   position: "relative",
 };
-
 const aboutlinks3 = {
   fontFamily: "Lato",
   fontWeight: "600",
@@ -133,20 +74,17 @@ const aboutlinks3 = {
   textAlign: "center",
   transform: "translate(-50%, -50%)",
 };
-
 const aboutstats = {
   fontFamily: "Lato",
   fontWeight: "bold",
   fontSize: "6vw",
   color: "#FFC54A",
-  position: "absolute",
   textAlign: "center",
   margin: "auto",
   width: "100%",
   flexGrow: "1",
   position: "relative",
 };
-
 const aboutstats2 = {
   fontFamily: "Lato",
   fontWeight: "bold",
@@ -157,7 +95,6 @@ const aboutstats2 = {
   position: "relative",
   flexGrow: "1",
 };
-
 const aboutstats3 = {
   fontFamily: "Lato",
   fontWeight: "normal",
@@ -167,10 +104,9 @@ const aboutstats3 = {
   textAlign: "center",
   flexGrow: "1",
 };
-
 const leadershipCards = [
   <Card style={cardstyle}>
-    <Image src={preetha} style={imagestyle} />
+    <Image src={"/Leadership/Austin.jpg"} style={imagestyle} />
     <Card.Content>
       <Card.Header style={textstyle}>Preetha Kumar</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
@@ -187,7 +123,7 @@ const leadershipCards = [
     </Card.Content>
   </Card>,
   <Card style={cardstyle}>
-    <Image src={tommy} style={imagestyle} />
+    <Image src={"/Leadership/Austin.jpg"} style={imagestyle} />
     <Card.Content>
       <Card.Header style={textstyle}>Thomas Chen</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
@@ -205,7 +141,7 @@ const leadershipCards = [
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image src={christina} style={imagestyle} />
+    <Image src={"/Leadership/Austin.jpg"} style={imagestyle} />
     <Card.Content>
       <Card.Header style={textstyle}>Christina Kim</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
@@ -223,7 +159,7 @@ const leadershipCards = [
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={harshit} />
+    <Image style={imagestyle} src={"/Leadership/Austin.jpg"} />
     <Card.Content>
       <Card.Header style={textstyle}>Harshit Jain</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
@@ -241,7 +177,7 @@ const leadershipCards = [
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={lucy} />
+    <Image style={imagestyle} src={"/Leadership/Austin.jpg"} />
     <Card.Content>
       <Card.Header style={textstyle}>Lucy Yue</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
@@ -259,7 +195,7 @@ const leadershipCards = [
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={austin} />
+    <Image style={imagestyle} src={"/Leadership/Austin.jpg"} />
     <Card.Content>
       <Card.Header style={textstyle}>Austin Ardisaputra</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
@@ -277,7 +213,7 @@ const leadershipCards = [
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={rahul} />
+    <Image style={imagestyle} src={"/Leadership/Austin.jpg"} />
     <Card.Content>
       <Card.Header style={textstyle}>Rahul Ravishankar</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
@@ -295,7 +231,7 @@ const leadershipCards = [
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={erin} />
+    <Image style={imagestyle} src={"/Leadership/Austin.jpg"} />
     <Card.Content>
       <Card.Header style={textstyle}>Erin Tan</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
@@ -313,7 +249,7 @@ const leadershipCards = [
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={sid} />
+    <Image style={imagestyle} src={"/Leadership/Austin.jpg"} />
     <Card.Content>
       <Card.Header style={textstyle}>Siddharth Ramshankar</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
@@ -331,7 +267,7 @@ const leadershipCards = [
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={kristen} />
+    <Image style={imagestyle} src={"/Leadership/Austin.jpg"} />
     <Card.Content>
       <Card.Header style={textstyle}>Kristen Vitolo</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
@@ -349,7 +285,7 @@ const leadershipCards = [
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={steven} />
+    <Image style={imagestyle} src={"/Leadership/Austin.jpg"} />
     <Card.Content>
       <Card.Header style={textstyle}>Steven Zeng</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
@@ -367,7 +303,7 @@ const leadershipCards = [
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={james} />
+    <Image style={imagestyle} src={"/Leadership/Austin.jpg"} />
     <Card.Content>
       <Card.Header style={textstyle}>James Geronimo</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
@@ -385,7 +321,7 @@ const leadershipCards = [
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={joseph} />
+    <Image style={imagestyle} src={"/Leadership/Austin.jpg"} />
     <Card.Content>
       <Card.Header style={textstyle}>Joseph Zhai</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
@@ -403,7 +339,7 @@ const leadershipCards = [
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={michael} />
+    <Image style={imagestyle} src={"/Leadership/Austin.jpg"} />
     <Card.Content>
       <Card.Header style={textstyle}>Michael Florip</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
@@ -421,90 +357,8 @@ const leadershipCards = [
   </Card>,
 ];
 
-const mymidtext = {
-  fontFamily: "Lato",
-  fontWeight: 300,
-  lineHeight: "73px",
-  fontSize: "48px",
-  color: "#8CD6D1",
-  width: "300px",
-  fontStyle: "normal",
-  textAlign: "center",
-  marginLeft: "130px",
-  marginBottom: "35px",
-};
-
 class About extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: "",
-    };
-    this.join = this.join.bind(this);
-  }
-  updateEmail = (value) => {
-    // TODO if its an invalid email we can prompt them for an error later
-    this.setState({ email: value.target.value });
-  };
-  join() {
-    console.log(14);
-    let email = this.state.email;
-    axios
-      .post(
-        endpoint + "/api/joinnow",
-        {
-          email,
-        },
-        {
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-          },
-        }
-      )
-      .then((res) => {
-        console.log(res);
-      });
-  }
-  sendData(data) {
-    this.props.buttonClick(data);
-  }
-  scrollSponsor() {
-    document.getElementById("sponsors").scrollIntoView();
-  }
-  scrollWho() {
-    document.getElementById("who").scrollIntoView();
-  }
-  scrollCommittee() {
-    document.getElementById("committees").scrollIntoView();
-  }
-  scrollTeam() {
-    document.getElementById("team").scrollIntoView();
-  }
-  scrollMission() {
-    document.getElementById("mission").scrollIntoView();
-  }
-
-  screenWidthBigEnough() {
-    if (window.innerWidth < 500) {
-      return "1vw";
-    } else {
-      return "10vw";
-    }
-  }
-
-  screenWidthBigEnoughforInterMargin() {
-    if (window.innerWidth < 500) {
-      return "10vw";
-    } else {
-      return "auto";
-    }
-  }
-
   render() {
-    const screenSizeResult = this.screenWidthBigEnough();
-
-    const screenInterMarginResult = this.screenWidthBigEnoughforInterMargin();
-
     return (
       <div
         class="wrapper"
@@ -525,7 +379,7 @@ class About extends Component {
               width: "100%",
               maxWidth: "100%",
             }}
-            src={story}
+            src={"/Group Pics/Team.png"}
           ></Image>
         </div>
         <h1
@@ -559,7 +413,7 @@ class About extends Component {
             }}
           >
             <Grid.Column width={3} style={aboutlinks2}>
-              <div onClick={this.scrollWho} style={aboutlinks}>
+              <div style={aboutlinks}>
                 <a
                   href="#who"
                   style={{
@@ -572,7 +426,7 @@ class About extends Component {
               </div>
             </Grid.Column>
             <Grid.Column width={3} style={aboutlinks2}>
-              <div onClick={this.scrollMission} style={aboutlinks}>
+              <div style={aboutlinks}>
                 <a
                   href="#mission"
                   style={{
@@ -585,7 +439,7 @@ class About extends Component {
               </div>
             </Grid.Column>
             <Grid.Column width={3} style={aboutlinks2}>
-              <div onClick={this.scrollCommittee} style={aboutlinks}>
+              <div style={aboutlinks}>
                 <a
                   href="#committees"
                   style={{
@@ -598,7 +452,7 @@ class About extends Component {
               </div>
             </Grid.Column>
             <Grid.Column width={3} style={aboutlinks2}>
-              <div onClick={this.scrollTeam} style={aboutlinks}>
+              <div style={aboutlinks}>
                 <a
                   href="#team"
                   style={{
@@ -611,7 +465,7 @@ class About extends Component {
               </div>
             </Grid.Column>
             <Grid.Column width={3} style={aboutlinks2}>
-              <div onClick={this.scrollSponsor} style={aboutlinks3}>
+              <div style={aboutlinks3}>
                 <a
                   href="#sponsors"
                   style={{
@@ -656,13 +510,14 @@ class About extends Component {
                 }}
               >
                 <img
-                  src={linesOne}
+                  src={"Shapes/LinesOne.png"}
                   style={{
                     position: "absolute",
                     left: "-40vw",
                     width: "190vw",
                     height: "15vw",
                   }}
+                  alt="Line Pattern"
                 ></img>
               </div>
               <span id="whoWeAre">Who We Are</span>
@@ -1015,7 +870,7 @@ class About extends Component {
             </div>
             <div>
               <Image
-                src={rectangle}
+                src={"/Shapes/Rectangle.png"}
                 style={{
                   position: "relative",
                   top: "4vw",
@@ -1033,7 +888,7 @@ class About extends Component {
           <Grid.Row>
             <Image.Group size={"medium"}>
               <Image
-                src={deepnote}
+                src={"/Leadership/Austin.jpg"}
                 style={{
                   top: "-8vw",
                   // marginLeft: "-3px",
@@ -1042,7 +897,7 @@ class About extends Component {
                 }}
               ></Image>
               <Image
-                src={decal}
+                src={"/Partners/Decal.png"}
                 style={{
                   top: "-8vw",
                   // marginLeft: "5vw",
@@ -1072,7 +927,7 @@ class About extends Component {
             </div>
             <div>
               <Image
-                src={rectangle}
+                src={"/Shapes/Rectangle.png"}
                 style={{
                   position: "relative",
                   top: "15vw",
@@ -1091,69 +946,69 @@ class About extends Component {
               size={"medium"}
               style={{ marginTop: "3vw", marginBottom: "0vw" }}
             >
-              <Image style={{ width: "15vw" }} src={cdss}></Image>
+              <Image style={{ width: "15vw" }} src={"/Leadership/Austin.jpg"}></Image>
               <Image
                 style={{ marginLeft: "7vw", width: "15vw" }}
-                src={data8}
+                src={"/Leadership/Austin.jpg"}
               ></Image>
               <Image
                 style={{ marginLeft: "7vw", width: "25vw" }}
-                src={pcs}
+                src={"/Leadership/Austin.jpg"}
               ></Image>
               <Image
                 style={{ marginLeft: "7vw", width: "15vw" }}
-                src={cal}
+                src={"/Leadership/Austin.jpg"}
               ></Image>
             </Image.Group>
           </Grid.Row>
           <Grid.Row centered>
             <Image.Group size={"medium"}>
-              <Image style={{ width: "15vw" }} src={eab}></Image>
+              <Image style={{ width: "15vw" }} src={"/Leadership/Austin.jpg"}></Image>
               <Image
                 style={{ marginLeft: "7vw", width: "15vw" }}
-                src={blueprint}
+                src={"/Leadership/Austin.jpg"}
               ></Image>
               <Image
                 style={{ marginLeft: "7vw", width: "25vw" }}
-                src={uea}
+                src={"/Leadership/Austin.jpg"}
               ></Image>
               <Image
                 style={{ marginLeft: "7vw", width: "15vw" }}
-                src={bids}
+                src={"/Leadership/Austin.jpg"}
               ></Image>
             </Image.Group>
           </Grid.Row>
           <Grid.Row centered>
             <Image.Group size={"medium"}>
-              <Image style={{ width: "15vw" }} src={haasds}></Image>
+              <Image style={{ width: "15vw" }} src={"/Leadership/Austin.jpg"}></Image>
               <Image
                 style={{ marginLeft: "7vw", width: "18vw" }}
-                src={saas}
+                src={"/Leadership/Austin.jpg"}
               ></Image>
               <Image
                 style={{ marginLeft: "7vw", width: "18vw" }}
-                src={hbsa}
+                src={"/Leadership/Austin.jpg"}
               ></Image>
               <Image
                 style={{ marginLeft: "7vw", width: "20vw" }}
-                src={ascend}
+                src={"/Leadership/Austin.jpg"}
               ></Image>
             </Image.Group>
           </Grid.Row>
           <Grid.Row centered>
             <Image.Group size={"medium"}>
-              <Image style={{ width: "15vw" }} src={pbl}></Image>
+              <Image style={{ width: "15vw" }} src={"/Leadership/Austin.jpg"}></Image>
               <Image
                 style={{ marginLeft: "7vw", width: "20vw" }}
-                src={mlab}
+                src={"/Leadership/Austin.jpg"}
               ></Image>
               <Image
                 style={{ marginLeft: "6vw", width: "18vw" }}
-                src={ecode}
+                src={"/Leadership/Austin.jpg"}
               ></Image>
               <Image
                 style={{ left: "3vw", marginLeft: "2vw", width: "25vw" }}
-                src={nib}
+                src={"/Leadership/Austin.jpg"}
               ></Image>
             </Image.Group>
           </Grid.Row>
@@ -1177,20 +1032,6 @@ class About extends Component {
                 textAlign: "center",
               }}
             >
-              {/* <span>Where We Go</span>
-            </div>
-            <div>
-              <Image src={rectangle}
-              style= {{
-                position: 'relative',
-                top: "15vw",
-                left: '1.5vw',
-                height: "0.75vw",
-                maxHeight: "1.5vw",
-                width: "55vw",
-                marginBottom: "17vw"
-              }}>
-              </Image> */}
             </div>
           </Grid.Row>
         </Grid>
@@ -1200,7 +1041,7 @@ class About extends Component {
           }}
         >
           <img
-            src={linesTwo}
+            src={"Shapes/LinesTwo.png"}
             style={{
               position: "absolute",
               width: "180vw",
@@ -1215,4 +1056,5 @@ class About extends Component {
     );
   }
 }
+
 export default About;

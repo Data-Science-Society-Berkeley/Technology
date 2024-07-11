@@ -15,7 +15,6 @@ import CustomTitle from "./components/CustomTitle.js";
 
 import berk from "./Decal Images/berkeleyischool-logo-alternate-blue-lg.png";
 import datacamp from "./Decal Images/datacamp-logo 1.png";
-import decal from "./Decal Images/decalberkeleylogo 1.png";
 import story from "./Decal Images/DecalHeader-compress-min.JPG";
 import daily from "./Decal Images/dailyactivity.jpg";
 import decal1 from "./Decal Images/decal-imageleft.jpg";
@@ -642,7 +641,7 @@ class Decal extends Component {
               >
                 <Image
                   style={{ marginRight: "5vw", height: "15vw" }}
-                  src={decal}
+                  src={"/Partners/Decal.png"}
                 ></Image>
                 <Image
                   style={{ marginRight: "3vw", height: "15vw" }}

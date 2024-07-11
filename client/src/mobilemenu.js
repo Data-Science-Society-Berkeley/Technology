@@ -27,7 +27,7 @@ import CentralText from "./CentralText";
 import { isThisTypeNode, transform } from "typescript";
 
 import Login from "./Login";
-import About from "./about";
+import About from "./About.js";
 import Decal from "./Decal";
 import apply from "./Backgrounds/dssfall2020-recruitmentbanner.png";
 

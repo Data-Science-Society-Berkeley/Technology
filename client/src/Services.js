@@ -16,14 +16,6 @@ import {
 } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-/*
-import berk from "./Decal Images/berkeleyischool-logo-alternate-blue-lg.png";
-import datacamp from "./Decal Images/datacamp-logo 1.png";
-import decal from "./Decal Images/decalberkeleylogo 1.png";
-import charlie from "./Leadership Headshots/charlie.jpg";
-*/
-//import ReactDOM from 'react-dom/client';
-
 import serviceBanner from "."
 import CarouselPage from "./components/Carousel.js";
 
@@ -50,9 +42,6 @@ import metromile from './Services Images/metromile.png';
 import deepnote from './Services Images/deepnote.png'; 
 import walmart from './Services Images/walmart.png'; 
 import qualcomm from './Services Images/qualcomm.png'; 
-
-import preetha from "./Leadership Headshots/Preetha2.jpg";
-import michael from "./Leadership Headshots/Michael.jpg";
 
 
 //issue: the elements are manually formatted by vw from the top. (i.e. top: -32vw etc. because the image covers the textimpor up if you don't space it downwards.)
@@ -377,7 +366,7 @@ class Education extends Component {
 
           <Card.Group centered style = {{borderRadius: "16px",}}>
             <Card style={cardstyle}>
-              <Image src={preetha} style={imagestyle}/>
+              <Image src={"/Leadership/Austin.jpg"} style={imagestyle}/>
               <Card.Content>
                 <Card.Header style={textstyle}>Preetha Kumar</Card.Header>
                 <Card.Meta style={{ marginTop: "1vw" }}>
@@ -395,7 +384,7 @@ class Education extends Component {
             </Card>
             <Card style={cardstyle}>
               {" "}
-              <Image style={imagestyle} src={michael} />
+              <Image style={imagestyle} src={"/Leadership/Austin.jpg"} />
               <Card.Content>
                 <Card.Header style={textstyle}>Michael Florip</Card.Header>
                 <Card.Meta style={{ marginTop: "1vw" }}>

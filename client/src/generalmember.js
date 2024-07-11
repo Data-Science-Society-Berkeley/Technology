@@ -32,14 +32,9 @@ import projLine from "./Acadev Images/projLine.png";
 import light from "./GM Proj Images/lightbulb.png";
 import upright from "./Acadev Images/upRight.png";
 import bottomleft from "./Acadev Images/bottomLeft.png";
-import james from "./Leadership Headshots/JamesG.jpg"
-import steven from "./Leadership Headshots/Steven2.jpg"
-import joseph from "./Leadership Headshots/Joseph.jpg"
 
 import mentors from "./Decal Images/acadevmentors_fall22.png";
 import acadevdirs from "./Acadev Images/acadevdirs.jpeg";
-
-import linesTwo from "./Homepage/linesTwo.png";
 
 
 let endpoint = "http://localhost:8080";
@@ -536,7 +531,7 @@ class DecalLearn extends Component {
                 <Card.Group centered>
                   <Card style={cardstyle}>
                     {" "}
-                    <Image style={imagestyle} src={steven} />
+                    <Image style={imagestyle} src={"/Leadership/Austin.jpg"} />
                     <Card.Content>
                       <Card.Header style={textstyle}>Steven Zeng</Card.Header>
                       <Card.Meta style={{ marginTop: "1vw" }}>
@@ -556,7 +551,7 @@ class DecalLearn extends Component {
                   </Card>
                   <Card style={cardstyle}>
                     {" "}
-                    <Image style={imagestyle} src={james} />
+                    <Image style={imagestyle} src={"/Leadership/Austin.jpg"} />
                     <Card.Content>
                       <Card.Header style={textstyle}>James Geronimo</Card.Header>
                       <Card.Meta style={{ marginTop: "1vw" }}>
@@ -576,7 +571,7 @@ class DecalLearn extends Component {
                   </Card>
                   <Card style={cardstyle}>
                     {" "}
-                    <Image style={imagestyle} src={joseph} />
+                    <Image style={imagestyle} src={"/Leadership/Austin.jpg"} />
                     <Card.Content>
                       <Card.Header style={textstyle}>Joseph Zhai</Card.Header>
                       <Card.Meta style={{ marginTop: "1vw" }}>
@@ -601,7 +596,7 @@ class DecalLearn extends Component {
           <div class="footerSpacer" style={{
             height: "40vw",
           }}>
-            <img src={linesTwo} style={{
+            <img src={"Shapes/LinesTwo.png"} style={{
               position: "absolute",
               width: "180vw",
               left: "-10vw",
