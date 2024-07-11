@@ -16,9 +16,6 @@ import CustomTitle from "./components/CustomTitle.js";
 import berk from "./Decal Images/berkeleyischool-logo-alternate-blue-lg.png";
 import datacamp from "./Decal Images/datacamp-logo 1.png";
 import decal from "./Decal Images/decalberkeleylogo 1.png";
-import kate from "./Leadership Headshots/kate.jpg";
-import uma from "./Leadership Headshots/uma.png";
-import gaya from "./Leadership Headshots/gayatri.png";
 import story from "./Decal Images/DecalHeader-compress-min.JPG";
 import daily from "./Decal Images/dailyactivity.jpg";
 import decal1 from "./Decal Images/decal-imageleft.jpg";
@@ -538,7 +535,7 @@ class Decal extends Component {
               <Card.Group centered>
                 <Card style={cardstyle}>
                   {" "}
-                  <Image style={imagestyle} src={kate} />
+                  <Image style={imagestyle} src={datalab} />
                   <Card.Content>
                     <Card.Header style={textstyle}>Kate Miller</Card.Header>
                     <Card.Meta style={{ marginTop: "1vw" }}>
@@ -556,7 +553,7 @@ class Decal extends Component {
                 </Card>
                 <Card style={cardstyle}>
                   {" "}
-                  <Image style={imagestyle} src={uma} />
+                  <Image style={imagestyle} src={datalab} />
                   <Card.Content>
                     <Card.Header style={textstyle}>Uma K</Card.Header>
                     <Card.Meta style={{ marginTop: "1vw" }}>
@@ -574,7 +571,7 @@ class Decal extends Component {
                 </Card>
                 <Card style={cardstyle}>
                   {" "}
-                  <Image style={imagestyle} src={gaya} />
+                  <Image style={imagestyle} src={datalab} />
                   <Card.Content>
                     <Card.Header style={textstyle}>Gayatri Babel</Card.Header>
                     <Card.Meta style={{ marginTop: "1vw" }}>

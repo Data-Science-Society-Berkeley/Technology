@@ -17,8 +17,6 @@ import CustomTitle from "./components/CustomTitle.js";
 
 import berk from "./Decal Images/berkeleyischool-logo-alternate-blue-lg.png";
 import datacamp from "./Decal Images/datacamp-logo 1.png";
-import atharva from "./Leadership Headshots/AtharvaHeadshot.png";
-import sabrina from "./Leadership Headshots/SabrinaHeadshot.jpeg";
 import proj1 from "./GM Proj Images/workforce-housing.png";
 import proj2 from "./GM Proj Images/word-complexity.jpg";
 import proj3 from "./GM Proj Images/forestfire.jpg";
@@ -34,12 +32,6 @@ import projLine from "./Acadev Images/projLine.png";
 import light from "./GM Proj Images/lightbulb.png";
 import upright from "./Acadev Images/upRight.png";
 import bottomleft from "./Acadev Images/bottomLeft.png";
-import angeline from "./Leadership Headshots/angeline.jpg";
-import pranati from "./Leadership Headshots/pranati.jpeg";
-import savvy from "./Leadership Headshots/savvy.jpeg";
-import bella from "./Leadership Headshots/bella2.png"
-import paul from "./Leadership Headshots/paul2.png"
-import stephen from "./Leadership Headshots/stephen2.png"
 import james from "./Leadership Headshots/JamesG.jpg"
 import steven from "./Leadership Headshots/Steven2.jpg"
 import joseph from "./Leadership Headshots/Joseph.jpg"
