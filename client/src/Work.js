@@ -22,8 +22,6 @@ import event2 from "./Events/operationanalytics-img.jpg";
 import event1 from "./Events/datathonfa23.jpg";
 import event6 from "./Events/startupcareerfair.jpeg";
 
-import linesOne from "./Homepage/linesOne.png";
-
 const localizer = momentLocalizer(moment);
 let endpoint = "http://localhost:8080";
 const gridoffset = {
@@ -201,7 +199,7 @@ class Work extends Component {
             <div class="footerSpacer" style={{
               height: "50vw",
             }}>
-              <img src={linesOne} style={{
+              <img src={"Shapes/LinesOne.png"} style={{
                 position: "absolute",
                 width: "170vw",
                 left: "-30vw",
@@ -333,7 +331,7 @@ class Work extends Component {
             <div class="footerSpacer" style={{
               height: "50vw",
             }}>
-              <img src={linesOne} style={{
+              <img src={"Shapes/LinesOne.png"} style={{
                 position: "absolute",
                 width: "170vw",
                 left: "-30vw",

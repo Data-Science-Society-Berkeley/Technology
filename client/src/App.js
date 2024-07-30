@@ -2,26 +2,18 @@ import React, { Fragment, Component } from "react";
 import "./App.css";
 import { Button, Container, Menu, Image, Header } from "semantic-ui-react";
 import Login from "./Login";
-import Registration from "./Register";
-import About from "./about";
-import Committees from "./committees";
+import About from "./about.js";
 import CentralText from "./CentralText";
 import Decal from "./Decal";
-import DecalLearn from "./DecalLearn.js";
+import Work from "./Work";
 import apply from "./Backgrounds/dssfall2020-recruitmentbanner.png";
 
-import Acadev from "./Acadev";
 import Consulting from "./Consulting";
-import Work from "./Work";
 import Contact from "./Contact";
 import Cookies from "js-cookie";
-import Social from "./Social.js";
-import Education from "./Education.js";
 import Service from "./Services.js";
 import GeneralMember from "./generalmember.js";
-import Hierarchy from "./hierarchy";
-import Join from "./Join-Us"
-import Culture from "./Culture.js";
+import Join from "./Join-Us";
 import Datathon from "./Datathon";
 
 import Footer from "./footer";
@@ -38,7 +30,6 @@ import {
 } from "react-router-dom";
 import NavBar from "./Menu";
 import NavBar2 from "./mobilemenu";
-import InMenu from "./inMen";
 import { Helmet } from "react-helmet";
 import WebFont from "webfontloader";
 import ReactGA from "react-ga";
@@ -62,7 +53,7 @@ class App extends Component {
       projectname: "Project Name",
       clientid: "Client Name",
       projectid: "Client Name",
-      currentpage: ""
+      currentpage: "",
     };
   }
   sendData(data) {
@@ -85,6 +76,7 @@ class App extends Component {
   }
   culture() {
     let value = Cookies.get("session_token");
+    console.log(value);
     if (!value) {
       return (
         <Switch>
@@ -100,59 +92,10 @@ class App extends Component {
             path="/datathon"
             render={(props) => (
               <div>
-                <Datathon/>
+                <Datathon />
                 <Footer></Footer>
               </div>
             )}
-          />
-          <Route
-            path='/tej'
-            component={() => {
-              window.location.href = "https://berkeley.zoom.us/j/9748494523";
-              return null;
-            }}
-          />
-          <Route
-            path='/shoutouts'
-            component={() => {
-              window.location.href = "https://airtable.com/shr5OyNH5Rv7RastW";
-              return null;
-            }}
-          />
-          <Route
-            path='/preetha'
-            component={() => {
-              window.location.href = "https://berkeley.zoom.us/j/4802333671";
-              return null;
-            }}
-          />
-          <Route
-            path='/nicole'
-            component={() => {
-              window.location.href = "https://berkeley.zoom.us/my/nicolepark";
-              return null;
-            }}
-          />
-          <Route
-            path='/technotes'
-            component={() => {
-              window.location.href = "https://www.notion.so/dssberkeley/FALL-2022-Notes-a1e7ebcf7e0e46d2ae623fbfe5cf9c24";
-              return null;
-            }}
-          />
-          <Route
-            path='/kuhu'
-            component={() => {
-              window.location.href = "https://berkeley.zoom.us/my/kuhusharma";
-              return null;
-            }}
-          />
-          <Route
-            path='/marlon'
-            component={() => {
-              window.location.href = "https://berkeley.zoom.us/my/marflon";
-              return null;
-            }}
           />
           <Route
             path="/join"
@@ -171,7 +114,8 @@ class App extends Component {
           <Route
             path="/apply"
             component={() => {
-              window.location.href = "https://airtable.com/appKnoH5lNfaQ8dQe/shrV6AL4ZXX2A7hJ2";
+              window.location.href =
+                "https://airtable.com/appKnoH5lNfaQ8dQe/shrV6AL4ZXX2A7hJ2";
               return null;
             }}
           />
@@ -186,8 +130,9 @@ class App extends Component {
             exact
             path="/externalcalendar"
             component={() => {
-              window.location.href = "https://calendar.google.com/calendar/u/2?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t";
-              
+              window.location.href =
+                "https://calendar.google.com/calendar/u/2?cid=Y185Y3JuZnBpdWR1Z2RjdGZoa3JxMmFiZHR0Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t";
+
               return null;
             }}
           />
@@ -195,7 +140,8 @@ class App extends Component {
             exact
             path="/coffee"
             component={() => {
-              window.location.href = "https://dssberkeley.notion.site/DSS-Spring-2024-Coffee-Chat-Sign-Ups-e8c1d224a1814704adccd03d768e2300?pvs=4";
+              window.location.href =
+                "https://dssberkeley.notion.site/DSS-Spring-2024-Coffee-Chat-Sign-Ups-e8c1d224a1814704adccd03d768e2300?pvs=4";
               return null;
             }}
           />
@@ -221,86 +167,6 @@ class App extends Component {
               </div>
             )}
           />
-          {/* <Route
-            exact
-            path="/join"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-
-                <div
-                  style={{
-                    color: "#000000",
-                    textAlign: "center",
-                    lineHeight: "59px",
-                    fontSize: "48px",
-                    fontWeight: "300",
-                    fontFamily: "Montserrat",
-                    marginTop: "56px",
-                    marginBottom: "56px",
-                    marginLeft: "180px",
-                    marginRight: "180px",
-                  }}
-                >
-                  Applications for Spring 2022 are now closed. Please check back at the beginning of next semester!
-                  <br />
-                  <br />
-                </div>
-              </div>
-            )}
-          /> */}
-
-          <Route
-            exact
-            path="/shoutouts"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
-
-                <iframe
-                  class="airtable-embed"
-                  src="https://airtable.com/embed/shraY96qjV1X6O09w?"
-                  frameborder="0" onmousewheel="" width="100%" height="2849"
-
-                  style={{
-                    background: "transparent",
-                    border: "1px solid #ccc",
-                  }}>
-                  </iframe>
-              </div>
-            )}
-          />
-          <Route
-            exact
-            path="/dares"
-            render={(props) => (
-              <div>
-                {/* makes background white on page you're going to*/}
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
-                <iframe
-                  class="airtable-embed"
-                  src="https://airtable.com/embed/shraY96qjV1X6O09w?"
-                  frameborder="0" onmousewheel="" width="100%" height="2849"
-
-                  style={{
-                    background: "transparent",
-                    border: "1px solid #ccc",
-                  }}>
-                  </iframe>
-              </div>
-            )}
-          />
           <Route
             exact
             path="/about"
@@ -320,26 +186,12 @@ class App extends Component {
             path="/blog"
             component={() => {
               window.open(
-                'https://medium.com/@dssberkeley',
-                '_blank' // Open Medium in a new tab.
+                "https://medium.com/@dssberkeley",
+                "_blank" // Open Medium in a new tab.
               );
               window.location.href = "./"; // TODO: Redirect back to last page. Currently redirects to home page regardless of where you are.
               return null;
             }}
-          />
-          <Route
-            exact
-            path="/commitees"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <Committees></Committees>
-                <Footer></Footer>
-              </div>
-            )}
           />
           <Route
             exact
@@ -371,20 +223,6 @@ class App extends Component {
           />
           <Route
             exact
-            path="/acadev"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <Acadev></Acadev>
-                <Footer></Footer>
-              </div>
-            )}
-          />
-          <Route
-            exact
             path="/decal"
             render={(props) => (
               <div>
@@ -401,23 +239,10 @@ class App extends Component {
             exact
             path="/data-198"
             component={() => {
-              window.location.href = "https://jegeronimo.github.io/dss-data-198/";
+              window.location.href =
+                "https://jegeronimo.github.io/dss-data-198/";
               return null;
             }}
-          />
-          <Route
-            exact
-            path="/socialgood"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <Social></Social>
-                <Footer></Footer>
-              </div>
-            )}
           />
           <Route
             exact
@@ -465,21 +290,6 @@ class App extends Component {
           />
           <Route
             exact
-            path="/education"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <Education></Education>
-                <div style={{ marginTop: "100px" }}></div>
-                <Footer></Footer>
-              </div>
-            )}
-          />
-          <Route
-            exact
             path="/login"
             render={(props) => (
               <div
@@ -512,12 +322,6 @@ class App extends Component {
               ></div>
             )}
           />
-          <Route path="/client/project:id" render={(props) => <div></div>} />
-          <Route
-            exact
-            path="/register"
-            render={(props) => <Registration {...props} />}
-          />
         </Switch>
       );
     } else {
@@ -530,13 +334,6 @@ class App extends Component {
               return null;
             }}
           />
-          <Route
-          path="/family"
-          component={() => {
-            window.location.href = "https://trusting-montalcini-b87ad0.netlify.app/";
-            return null;
-          }}
-        />
           <Route
             exact
             path="/"
@@ -552,55 +349,6 @@ class App extends Component {
               </div>
             )}
           />
-          {/* <Route
-            exact
-            path="/join"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <Image src={apply} style={{ height: "300px" }}></Image>
-
-                <div
-                  style={{
-                    color: "#000000",
-                    textAlign: "center",
-                    lineHeight: "59px",
-                    fontSize: "48px",
-                    fontWeight: "300",
-                    fontFamily: "Montserrat",
-                    marginTop: "56px",
-                    marginBottom: "56px",
-                    marginLeft: "180px",
-                    marginRight: "180px",
-                  }}
-                >
-                  Applications open Thursday, August 27, 2020 at 12:00 Pacific
-                  Standard Time. Follow our socials to stay updated!
-                  <br />
-                  <br />
-                  Join our Discord at discord.gg/nrSntva !
-                </div>
-              </div>
-            )}
-          /> */}
-          <Route
-            exact
-            path="/joinus"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <Acadev></Acadev>
-                <Footer></Footer>
-              </div>
-            )}
-          />
-          {Culture}
           <Route
             exact
             path="/about"
@@ -617,20 +365,6 @@ class App extends Component {
           />
           <Route
             exact
-            path="/commitees"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <Committees></Committees>
-                <Footer></Footer>
-              </div>
-            )}
-          />
-          <Route
-            exact
             path="/consulting"
             render={(props) => (
               <div>
@@ -639,20 +373,6 @@ class App extends Component {
                 />
                 <NavBar {...props} />
                 <Consulting></Consulting>
-                <Footer></Footer>
-              </div>
-            )}
-          />
-          <Route
-            exact
-            path="/acadev"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <Acadev></Acadev>
                 <Footer></Footer>
               </div>
             )}
@@ -697,48 +417,6 @@ class App extends Component {
                 <NavBar {...props} />
                 <Decal></Decal>
                 <Footer></Footer>
-              </div>
-            )}
-          />
-          <Route
-            exact
-            path="/decallearn"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <DecalLearn></DecalLearn>
-                <div style={{ marginTop: "100px" }}></div>
-                <Footer></Footer>
-              </div>
-            )}
-          />
-          <Route
-            exact
-            path="/socialgood"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <Social></Social>
-                <Footer></Footer>
-              </div>
-            )}
-          />
-          <Route
-            exact
-            path="/culture"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <InMenu {...props} />
-                <Culture {...props}></Culture>
               </div>
             )}
           />
@@ -798,21 +476,6 @@ class App extends Component {
           />
           <Route
             exact
-            path="/education"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar {...props} />
-                <Education></Education>
-                <div style={{ marginTop: "100px" }}></div>
-                <Footer></Footer>
-              </div>
-            )}
-          />
-          <Route
-            exact
             path="/login"
             render={(props) => (
               <div
@@ -848,11 +511,6 @@ class App extends Component {
           <Route path="/client/project:id" render={(props) => <div></div>} />
           <Route
             exact
-            path="/register"
-            render={(props) => <Registration {...props} />}
-          />
-          <Route
-            exact
             path="/datathon"
             render={(props) => (
               <div
@@ -863,7 +521,7 @@ class App extends Component {
                   width: "1450px",
                 }}
               >
-                <Datathon/>
+                <Datathon />
                 <Footer></Footer>
               </div>
             )}
@@ -914,21 +572,6 @@ class App extends Component {
               </div>
             )}
           />
-
-          <Route
-            exact
-            path="/commitees"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar2 {...props} componentid={Committees} />
-                <Footer></Footer>
-              </div>
-            )}
-          />
-
           <Route
             exact
             path="/consulting"
@@ -938,20 +581,6 @@ class App extends Component {
                   bodyAttributes={{ style: "background-color : #ffffff" }}
                 />
                 <NavBar2 {...props} componentid={Consulting} />
-                <Footer></Footer>
-              </div>
-            )}
-          />
-
-          <Route
-            exact
-            path="/acadev"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar2 {...props} componentid={Acadev} />
                 <Footer></Footer>
               </div>
             )}
@@ -975,39 +604,11 @@ class App extends Component {
             exact
             path="/data-198"
             component={() => {
-              window.location.href = "https://jegeronimo.github.io/dss-data-198/";
+              window.location.href =
+                "https://jegeronimo.github.io/dss-data-198/";
               return null;
             }}
           />
-
-          <Route
-            exact
-            path="/decallearn"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar2 {...props} componentid={DecalLearn} />
-                <Footer></Footer>
-              </div>
-            )}
-          />
-
-          <Route
-            exact
-            path="/socialgood"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar2 {...props} componentid={Social} />
-                <Footer></Footer>
-              </div>
-            )}
-          />
-
           <Route
             exact
             path="/events"
@@ -1035,46 +636,17 @@ class App extends Component {
               </div>
             )}
           />
-
-          <Route
-            exact
-            path="/education"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar2 {...props} componentid={Education} />
-                <Footer></Footer>
-              </div>
-            )}
-          />
-
           <Route
             exact
             path="/blog"
             component={() => {
               window.open(
-                'https://medium.com/@dssberkeley',
-                '_blank' // Open Medium in a new tab.
+                "https://medium.com/@dssberkeley",
+                "_blank" // Open Medium in a new tab.
               );
               window.location.href = "./"; // TODO: Redirect back to last page. Currently redirects to home page regardless of where you are.
               return null;
             }}
-          />
-
-          <Route
-            exact
-            path="/register"
-            render={(props) => (
-              <div>
-                <Helmet
-                  bodyAttributes={{ style: "background-color : #ffffff" }}
-                />
-                <NavBar2 {...props} componentid={Registration} />
-                <Footer></Footer>
-              </div>
-            )}
           />
 
           <Route
@@ -1094,10 +666,12 @@ class App extends Component {
           <Route
             path="/datathon"
             render={(props) => (
-              <div style={{
-                fontSize: "1.8vw",
-              }}>
-                <Datathon/>
+              <div
+                style={{
+                  fontSize: "1.8vw",
+                }}
+              >
+                <Datathon />
               </div>
             )}
           />

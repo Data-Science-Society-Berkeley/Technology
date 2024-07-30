@@ -29,8 +29,6 @@ import bottomleft from "./Consulting/bottomLeft.png";
 import logo from "./Consulting/logo.png";
 import flyer from "./Backgrounds/sp24flyer.png"
 
-import linesTwo from "./Homepage/linesTwo.png";
-
 import down from "./Consulting/ClientTestimonials.png";
 import workwus from "./Consulting/WorkWithUs.png";
 
@@ -761,7 +759,7 @@ class Join extends Component {
         <div class="footerSpacer" style={{
           height: "40vw",
         }}>
-          <img src={linesTwo} style={{
+          <img src={"Shapes/LinesTwo.png"} style={{
             width: "160vw",
           }}></img>
         </div>
@@ -770,17 +768,3 @@ class Join extends Component {
   }
 }
 export default Join;
-
-
-{/* <Accordion.Title
-active={activeIndex === 0}
-index={0}
-onClick={this.handleClick}
-style={{ fontSize: "2vw" }}
->
-<Icon name="dropdown" />
-q1
-</Accordion.Title>
-<Accordion.Content active={activeIndex === 0} style={{ fontSize: "1.5vw" }}>
-<p>TBD</p>
-</Accordion.Content> */}

@@ -10,7 +10,6 @@ import {
   List,
   Segment,
   Container,
-  Responsive,
   Grid,
   Image,
 } from "semantic-ui-react";
@@ -21,6 +20,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 import logo from "./Backgrounds/DSS-logo-black-transparent.png";
 import ocf from "./Backgrounds/ocf-hosted-penguin.svg";
 import AltFooter from "./footer2";
@@ -51,29 +51,28 @@ const link = {
   lineHeight: "1.5vw",
   fontWeight: "600",
 };
-class Footer extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <Segment
-        vertical
-        style={{
-          width: "100%",
-          height: "43vw",
-          background: "#E5E5E5",
-        }}
-      >
-         <Responsive as={Grid} minWidth={767} divided inverted>
+
+const Footer = () => {
+  const isDesktop = useMediaQuery({ minWidth: 767 });
+
+  return (
+    <Segment
+      vertical
+      style={{
+        width: "100%",
+        height: "43vw",
+        background: "#E5E5E5",
+      }}
+    >
+      {isDesktop ? (
         <Container>
           <Grid divided inverted stackable>
             <Grid.Row>
-              <div style={{ marginLeft: "-20%", marginTop: "1.5vw"}}>
-                <Image inline src={logo} style={{ width: "5vw",}}></Image>
+              <div style={{ marginLeft: "-20%", marginTop: "1.5vw" }}>
+                <Image inline src={logo} style={{ width: "5vw" }}></Image>
                 <div
                   style={{
-                    marginLeft:"6vw",
+                    marginLeft: "6vw",
                     marginTop: "-3vw",
                     fontFamily: "Montserrat",
                     fontStyle: "normal",
@@ -90,9 +89,12 @@ class Footer extends Component {
               <Grid.Column width={8}>
                 {/* <Icon.Group size="huge" style={{ marginLeft: "-20%" }}> */}
                 <div style={{ fontSize: "3vw" }}>
-                  <a href="mailto:info@dss.berkeley.edu" style={{
-                    textDecoration: "none",
-                  }}>
+                  <a
+                    href="mailto:info@dss.berkeley.edu"
+                    style={{
+                      textDecoration: "none",
+                    }}
+                  >
                     <Icon
                       name="mail outline"
                       style={{
@@ -106,9 +108,12 @@ class Footer extends Component {
                     </span>
                   </a>
                   <br />
-                  <a href="https://www.instagram.com/dssberkeley/" style={{
-                    textDecoration: "none",
-                  }}>
+                  <a
+                    href="https://www.instagram.com/dssberkeley/"
+                    style={{
+                      textDecoration: "none",
+                    }}
+                  >
                     {" "}
                     <Icon
                       name="instagram"
@@ -117,9 +122,12 @@ class Footer extends Component {
                     <span style={iconDesc}> Instagram</span>
                   </a>{" "}
                   <br />
-                  <a href="https://www.facebook.com/dssberkeley" style={{
-                    textDecoration: "none",
-                  }}>
+                  <a
+                    href="https://www.facebook.com/dssberkeley"
+                    style={{
+                      textDecoration: "none",
+                    }}
+                  >
                     {" "}
                     <Icon
                       name="facebook"
@@ -128,9 +136,12 @@ class Footer extends Component {
                     <span style={iconDesc}> Facebook</span>
                   </a>
                   <br />
-                  <a href="https://www.linkedin.com/company/data-science-society-at-berkeley/" style={{
-                    textDecoration: "none",
-                  }}>
+                  <a
+                    href="https://www.linkedin.com/company/data-science-society-at-berkeley/"
+                    style={{
+                      textDecoration: "none",
+                    }}
+                  >
                     {" "}
                     <Icon
                       name="linkedin"
@@ -139,9 +150,12 @@ class Footer extends Component {
                     <span style={iconDesc}> LinkedIn</span>
                   </a>
                   <br />
-                  <a href="https://www.youtube.com/channel/UCBj7xVI8e_jlEAznyVetWIQ/" style={{
-                    textDecoration: "none",
-                  }}>
+                  <a
+                    href="https://www.youtube.com/channel/UCBj7xVI8e_jlEAznyVetWIQ/"
+                    style={{
+                      textDecoration: "none",
+                    }}
+                  >
                     {" "}
                     <Icon
                       name="youtube"
@@ -172,37 +186,37 @@ class Footer extends Component {
                   </Link>
                   <br /> <br />
                   {/*
-                  <Link to="/acadev">
-                    <List.Item as="a" style={footer}>
-                      {" "}
-                      AcaDev
-                    </List.Item>
-                  </Link>
-                  <br /> <br />
-                  <Link to="/consulting">
-                    <List.Item as="a" style={footer}>
-                      {" "}
-                      Consulting{" "}
-                    </List.Item>
-                  </Link>
-                  <br /> <br />
-                  {/* <Link to="/decal">
+                <Link to="/acadev">
+                  <List.Item as="a" style={footer}>
                     {" "}
-                    <List.Item as="a" style={footer}>
-                      {" "}
-                      DeCal{" "}
-                    </List.Item>
-                  </Link>
-                  <br /> <br /> 
-                  <Link to="socialgood">
+                    AcaDev
+                  </List.Item>
+                </Link>
+                <br /> <br />
+                <Link to="/consulting">
+                  <List.Item as="a" style={footer}>
                     {" "}
-                    <List.Item as="a" style={footer}>
-                      {" "}
-                      Social Good{" "}
-                    </List.Item>
-                  </Link>
-                  <br /> <br />
-                    */}
+                    Consulting{" "}
+                  </List.Item>
+                </Link>
+                <br /> <br />
+                {/* <Link to="/decal">
+                  {" "}
+                  <List.Item as="a" style={footer}>
+                    {" "}
+                    DeCal{" "}
+                  </List.Item>
+                </Link>
+                <br /> <br /> 
+                <Link to="socialgood">
+                  {" "}
+                  <List.Item as="a" style={footer}>
+                    {" "}
+                    Social Good{" "}
+                  </List.Item>
+                </Link>
+                <br /> <br />
+                  */}
                   <Link to="/services">
                     {" "}
                     <List.Item as="a" style={footer}>
@@ -216,15 +230,15 @@ class Footer extends Component {
                 <div style={link}>Past Work </div>
                 <List link inverted>
                   {/*
-                  <Link to="/consulting">
-                    <List.Item as="a" style={footer}>
-                      {" "}
-                      Consulting
-                    </List.Item>{" "}
-                  </Link>{" "}
-                  <br />
-                  <br />
-                  */}
+                <Link to="/consulting">
+                  <List.Item as="a" style={footer}>
+                    {" "}
+                    Consulting
+                  </List.Item>{" "}
+                </Link>{" "}
+                <br />
+                <br />
+                */}
                   <Link to="/events">
                     <List.Item as="a" style={footer}>
                       Events
@@ -232,12 +246,12 @@ class Footer extends Component {
                   </Link>
                   <br /> <br />
                   {/* <Link to="/education">
-                    {" "}
-                    <List.Item as="a" style={footer}>
-                      Workshops
-                    </List.Item>
-                  </Link>
-                  <br /> <br /> */}
+                  {" "}
+                  <List.Item as="a" style={footer}>
+                    Workshops
+                  </List.Item>
+                </Link>
+                <br /> <br /> */}
                   <Link to="/gm">
                     {" "}
                     <List.Item as="a" style={footer}>
@@ -258,11 +272,11 @@ class Footer extends Component {
                     </List.Item>
                   </Link>
                   {/* <br /> <br />
-                  <Link to="/decallearn">
-                    <List.Item as="a" style={footer}>
-                      DeCal Course{" "}
-                    </List.Item>
-                  </Link>{" "} */}
+                <Link to="/decallearn">
+                  <List.Item as="a" style={footer}>
+                    DeCal Course{" "}
+                  </List.Item>
+                </Link>{" "} */}
                   <br />
                   <br />
                 </List>
@@ -294,12 +308,11 @@ class Footer extends Component {
             </Grid.Row>
           </Grid>
         </Container>
-        </Responsive>
-        <Responsive as={Grid} maxWidth={768} divided inverted>
-        <AltFooter/>
-        </Responsive>
-      </Segment>
-    );
-  }
-}
+      ) : (
+        <AltFooter />
+      )}
+    </Segment>
+  );
+};
+
 export default Footer;

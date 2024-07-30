@@ -51,7 +51,6 @@ import openride from "./Consulting/openride.png";
 import down from "./Consulting/ClientTestimonials.png";
 import workwus from "./Consulting/WorkWithUs.png";
 
-import alina from "./Leadership Headshots/alina.jpeg";
 import anita from "./PM Headshots/anita.jpeg";
 import advait from "./PM Headshots/advait.jpeg";
 import pranav from "./PM Headshots/pranav.jpeg";

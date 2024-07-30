@@ -32,8 +32,6 @@ import rightarrow from './Homepage/ArrowRight.png'
 import stats from './Homepage/stats.png'
 import gradientOne from './Homepage/homepagegradient1.png';
 import gradientTwo from './Homepage/homepagegradient2.png';
-import linesOne from './Homepage/linesOne.png';
-import linesTwo from './Homepage/linesTwo.png';
 import NavBar from './Menu.js'
 import mlIcon from './Services Images/mlIcon.jpg'
 import sweIcon from './Services Images/sweIcon.jpg'
@@ -488,7 +486,7 @@ class CentralText extends Component {
             <div style={{
               height: "5vw",
             }}>
-              <img src={linesOne} style={{
+              <img src={"Shapes/LinesOne.png"} style={{
                 position: "absolute",
                 width: "170vw",
                 left: "-30vw",
@@ -565,7 +563,7 @@ class CentralText extends Component {
             <div style={{
               height: "30vw",
             }}>
-              <img src={linesTwo} style={{
+              <img src={"Shapes/LinesTwo.png"} style={{
                 position: "absolute",
                 width: "180vw",
                 left: "-10vw",
