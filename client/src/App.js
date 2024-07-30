@@ -2,7 +2,7 @@ import React, { Fragment, Component } from "react";
 import "./App.css";
 import { Button, Container, Menu, Image, Header } from "semantic-ui-react";
 import Login from "./Login";
-import About from "./about";
+import About from "./About";
 import CentralText from "./CentralText";
 import Decal from "./Decal";
 import Work from "./Work";
