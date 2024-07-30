@@ -1038,6 +1038,7 @@ class About extends Component {
               zIndex: "2",
               height: "40vw",
             }}
+            alt="Decorative lines"
           ></img>
         </div>
       </div>
