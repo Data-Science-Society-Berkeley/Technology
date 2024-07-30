@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import './services.css';
+import "./services.css";
 import {
   Image,
   Reveal,
@@ -16,33 +16,32 @@ import {
 } from "semantic-ui-react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import serviceBanner from "."
+import serviceBanner from ".";
 import CarouselPage from "./components/Carousel.js";
 
-import servicesBanner from './Services Images/servicesbanner.jpg';
-import mlIcon from './Services Images/mlIcon.jpg';
-import sweIcon from './Services Images/sweIcon.jpg';
-import businessIcon from './Services Images/businessIcon.jpg';
+import servicesBanner from "./Services Images/servicesbanner.jpg";
+import mlIcon from "./Services Images/mlIcon.jpg";
+import sweIcon from "./Services Images/sweIcon.jpg";
+import businessIcon from "./Services Images/businessIcon.jpg";
 
 // import company logos
-import mep from './Services Images/mep.png';
-import medic from './Services Images/Medic.png';
-import tnc from './Services Images/tnc.png'; 
-import greenPeace from './Services Images/greenpeace.png';
-import techsoup from './Services Images/techsoup.png';
-import ctn from './Services Images/ctn.png'; 
-import paypal from './Services Images/paypal.png'; 
-import sofi from './Services Images/sofi.png'; 
-import monday from './Services Images/monday.png'; 
-import venmo from './Services Images/venmo.png'; 
-import oustlabs from './Services Images/oustlabs.png'; 
-import simmer from './Services Images/simmer.png'; 
-import edify from './Services Images/edify.png'; 
-import metromile from './Services Images/metromile.png'; 
-import deepnote from './Services Images/deepnote.png'; 
-import walmart from './Services Images/walmart.png'; 
-import qualcomm from './Services Images/qualcomm.png'; 
-
+import mep from "./Services Images/mep.png";
+import medic from "./Services Images/Medic.png";
+import tnc from "./Services Images/tnc.png";
+import greenPeace from "./Services Images/greenpeace.png";
+import techsoup from "./Services Images/techsoup.png";
+import ctn from "./Services Images/ctn.png";
+import paypal from "./Services Images/paypal.png";
+import sofi from "./Services Images/sofi.png";
+import monday from "./Services Images/monday.png";
+import venmo from "./Services Images/venmo.png";
+import oustlabs from "./Services Images/oustlabs.png";
+import simmer from "./Services Images/simmer.png";
+import edify from "./Services Images/edify.png";
+import metromile from "./Services Images/metromile.png";
+import deepnote from "./Services Images/deepnote.png";
+import walmart from "./Services Images/walmart.png";
+import qualcomm from "./Services Images/qualcomm.png";
 
 //issue: the elements are manually formatted by vw from the top. (i.e. top: -32vw etc. because the image covers the textimpor up if you don't space it downwards.)
 
@@ -50,62 +49,60 @@ let endpoint = "http://localhost:8080";
 
 //`url(${servicesBanner})`
 const banner = {
-    //display: "inline-block",
-    position: "relative",
-    textAlign: "center",
-    width: "100%",
-    height: "auto",
-    gridColumn: "span 3",
-    margin: "0",
-}
+  //display: "inline-block",
+  position: "relative",
+  textAlign: "center",
+  width: "100%",
+  height: "auto",
+  gridColumn: "span 3",
+  margin: "0",
+};
 
 //try having the bannerText take up a box worth of space or smth or try editing w/o the image first, so I don't have to manually input all these measurements
 const bannerText = {
-    color: "white",
-    fontSize: "6vw",
-    fontFamily: "Lato", 
-    fontWeight: "bold",
-    position: "absolute",
-    top: "2vw",
-    right: "1em",
-    left: "1em",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    resize: "none",
-    textShadow: "0 0 2vw #333333",
-}
+  color: "white",
+  fontSize: "6vw",
+  fontFamily: "Lato",
+  fontWeight: "bold",
+  position: "absolute",
+  top: "2vw",
+  right: "1em",
+  left: "1em",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  resize: "none",
+  textShadow: "0 0 2vw #333333",
+};
 
 //opacity: "0",
-    //transition: "opacity ese-in-out 300ms",
+//transition: "opacity ese-in-out 300ms",
 
 const bannerImg = {
-    width: "100%",
-    height: "auto",
-    margin: "0",
-    padding: "0",
-    gridColumn: "span 3",
-}
+  width: "100%",
+  height: "auto",
+  margin: "0",
+  padding: "0",
+  gridColumn: "span 3",
+};
 
 const whiteSpaceContainer = {
-    position: "relative",
-    textAlign: "center",
-    width: "100%",
-    height: "auto",
-    gridColumn: "span 3",
-}
+  position: "relative",
+  textAlign: "center",
+  width: "100%",
+  height: "auto",
+  gridColumn: "span 3",
+};
 
 const whiteSpaceText = {
-    margin: "4vw 0px 4vw 0px",
-    position: "relative",
-    color: "black",
-    fontSize: "max(3vw, 28px)",
-    fontWeight: "Bold",
-    fontFamily: "Lato", 
-    gridColumn: "span 3",
-
-}
-
+  margin: "4vw 0px 4vw 0px",
+  position: "relative",
+  color: "black",
+  fontSize: "max(3vw, 28px)",
+  fontWeight: "Bold",
+  fontFamily: "Lato",
+  gridColumn: "span 3",
+};
 
 const textstyle = {
   fontFamily: "Lato",
@@ -135,7 +132,7 @@ const roleStyle = {
   fontSize: "2vw",
   lineHeight: "2vw",
   color: "#000000",
-}; 
+};
 
 class Education extends Component {
   constructor(props) {
@@ -182,176 +179,361 @@ class Education extends Component {
   render() {
     const { activeIndex } = this.state;
     return (
-      <div class="wrapper" style={{
-        background: "linear-gradient(180deg, #FFFFFF 0%, #FDFFF9 20%, #EBF8E1 50%, #DAFFFB 75%, #FFFFFF 100%)",
-        fontSize: "max(2vw, 16px)",
-        width: "100%",
-        height: "100%",
-      }}>
-          {/*Services Banner + Intro*/}
-          <div style={{display: "grid", gridTemplateColumns: "repeat(3, 1fr)", margin: "0 -8px 1.3rem -8px", gap: "5px"}}>
-              <figure style={banner}>
-                  <img style={bannerImg} src={servicesBanner}></img>
-                  <figcaption style={bannerText}>
-                      <p>SERVICES</p>
-                  </figcaption>
-              </figure>
+      <div
+        class="wrapper"
+        style={{
+          background:
+            "linear-gradient(180deg, #FFFFFF 0%, #FDFFF9 20%, #EBF8E1 50%, #DAFFFB 75%, #FFFFFF 100%)",
+          fontSize: "max(2vw, 16px)",
+          width: "100%",
+          height: "100%",
+        }}
+      >
+        {/*Services Banner + Intro*/}
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+            margin: "0 -8px 1.3rem -8px",
+            gap: "5px",
+          }}
+        >
+          <figure style={banner}>
+            <img style={bannerImg} src={servicesBanner}></img>
+            <figcaption style={bannerText}>
+              <p>SERVICES</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        {/*ML, Business Intel, Software Dev*/}
+        <div class="card-layout">
+          <div style={whiteSpaceContainer}>
+            <p style={whiteSpaceText}>WHAT WE OFFER</p>
+            <p
+              style={{
+                position: "relative",
+                textAlign: "justify",
+                margin: "0vw 10vw 0vw 10vw",
+              }}
+            >
+              We partner with corporations and non-profit organizations to
+              provide data-driven insights and actionable solutions through
+              advanced analytical methods. We believe that the skills that we
+              have learned in university can and should be applied to support
+              and uplift communities equitably, not just for private tech and
+              those who exclusively benefit from it.
+            </p>
+            <div style={{ margin: "0 0 4.3rem 0" }}></div>
           </div>
 
-          {/*ML, Business Intel, Software Dev*/}
-          <div class="card-layout">
-              <div style={whiteSpaceContainer}>
-                  <p style={whiteSpaceText}>WHAT WE OFFER</p>
-                  <p style ={{
-                      position: "relative",
-                      textAlign: "justify",
-                      margin: "0vw 10vw 0vw 10vw",
-                      }}>We partner with corporations and non-profit organizations to provide data-driven insights and actionable solutions through advanced analytical methods. We believe that the skills that we have learned in university can and should be applied to support and uplift communities equitably, not just for private tech and those who exclusively benefit from it. 
-                  </p>
-                  <div style={{margin:"0 0 4.3rem 0",}}></div>
-              </div>
-              
-
-              <div class="card">
-                  <img style={{width: "35px", margin: "3px auto 5px auto",}} src={mlIcon}></img>
-                  <h3 style={{margin: "10px -1px 16px 0px", fontSize: "max(2vw, 22px)", fontWeight: "bold",}}>MACHINE LEARNING</h3>
-                  <ul style={{listStyle: "none", paddingLeft: "0", textAlign: "center", fontSize:"max(1.5vw, 16px)",}}>
-                      <li>Natural Language Processing</li>
-                      <li>Accurate Algorithms</li>
-                      <li>Predictive Analytics</li>
-                      <li>Classification</li>
-                      <li>Computer Vision</li>
-                      <li>Data Mining</li>
-                  </ul>
-              </div>
-              <div class="card">
-                  <img style={{width: "40px", margin: "7px auto 11px auto",}} src={businessIcon}></img> 
-                  <h3 style={{margin: "12px -1px 16px 0px", fontSize: "max(2vw, 22px)", fontWeight: "bold",}}>BUSINESS INTELLIGENCE</h3>
-                  <ul style={{listStyle: "none", paddingLeft: "0", textAlign: "center", fontSize:"max(1.5vw, 16px)",}}>
-                      <li>Customer Segmentation</li>
-                      <li>Efficiency of Operations</li>
-                      <li>Customer Churn</li>
-                      <li>Marketing Effectiveness</li>
-                      <li>Visualizations and Dashboards</li>
-                      <li>Geospatial Mapping</li>
-                  </ul>
-              </div>
-              <div class="card">
-                  <img style={{width: "40px", margin: "7px auto 10px auto",}} src={sweIcon}></img> 
-                  <h3 style={{margin: "12px -1px 16px 0px", fontSize: "max(2vw, 22px)", fontWeight: "bold",}}>SOFTWARE DEVELOPMENT</h3>
-                  <ul style={{listStyle: "none", paddingLeft: "0", textAlign: "center", fontSize:"max(1.5vw, 16px)",}}>
-                      <li>Data Warehousing</li>
-                      <li>Systems Integration</li>
-                      <li>Cloud Computing</li>
-                      <li>Front-End Development</li>
-                      <li>Back-End Development</li>
-                      <li>Building End-End Data Pipelines</li>
-                  </ul>
-              </div>
+          <div class="card">
+            <img
+              style={{ width: "35px", margin: "3px auto 5px auto" }}
+              src={mlIcon}
+            ></img>
+            <h3
+              style={{
+                margin: "10px -1px 16px 0px",
+                fontSize: "max(2vw, 22px)",
+                fontWeight: "bold",
+              }}
+            >
+              MACHINE LEARNING
+            </h3>
+            <ul
+              style={{
+                listStyle: "none",
+                paddingLeft: "0",
+                textAlign: "center",
+                fontSize: "max(1.5vw, 16px)",
+              }}
+            >
+              <li>Natural Language Processing</li>
+              <li>Accurate Algorithms</li>
+              <li>Predictive Analytics</li>
+              <li>Classification</li>
+              <li>Computer Vision</li>
+              <li>Data Mining</li>
+            </ul>
           </div>
+          <div class="card">
+            <img
+              style={{ width: "40px", margin: "7px auto 11px auto" }}
+              src={businessIcon}
+            ></img>
+            <h3
+              style={{
+                margin: "12px -1px 16px 0px",
+                fontSize: "max(2vw, 22px)",
+                fontWeight: "bold",
+              }}
+            >
+              BUSINESS INTELLIGENCE
+            </h3>
+            <ul
+              style={{
+                listStyle: "none",
+                paddingLeft: "0",
+                textAlign: "center",
+                fontSize: "max(1.5vw, 16px)",
+              }}
+            >
+              <li>Customer Segmentation</li>
+              <li>Efficiency of Operations</li>
+              <li>Customer Churn</li>
+              <li>Marketing Effectiveness</li>
+              <li>Visualizations and Dashboards</li>
+              <li>Geospatial Mapping</li>
+            </ul>
+          </div>
+          <div class="card">
+            <img
+              style={{ width: "40px", margin: "7px auto 10px auto" }}
+              src={sweIcon}
+            ></img>
+            <h3
+              style={{
+                margin: "12px -1px 16px 0px",
+                fontSize: "max(2vw, 22px)",
+                fontWeight: "bold",
+              }}
+            >
+              SOFTWARE DEVELOPMENT
+            </h3>
+            <ul
+              style={{
+                listStyle: "none",
+                paddingLeft: "0",
+                textAlign: "center",
+                fontSize: "max(1.5vw, 16px)",
+              }}
+            >
+              <li>Data Warehousing</li>
+              <li>Systems Integration</li>
+              <li>Cloud Computing</li>
+              <li>Front-End Development</li>
+              <li>Back-End Development</li>
+              <li>Building End-End Data Pipelines</li>
+            </ul>
+          </div>
+        </div>
 
-          {/*Carousel*/}
-          <div style={{
+        {/*Carousel*/}
+        <div
+          style={{
             margin: "9vw 0 0 0",
-            height: "auto"
-          }}>
-              <CarouselPage />
+            height: "auto",
+          }}
+        >
+          <CarouselPage />
+        </div>
+
+        {/*Clients*/}
+        <div style={{ margin: "4vw 0 0 0" }}></div>
+        <div class="card-layout">
+          <div style={whiteSpaceContainer}>
+            <p style={whiteSpaceText}>FEATURED PAST CLIENTS</p>
+            <div style={{ margin: "0 0 3rem 0" }}></div>
           </div>
 
-          {/*Clients*/}
-          <div style={{margin: "4vw 0 0 0"}}></div>
-          <div class="card-layout">
-              <div style={whiteSpaceContainer}>
-                  <p style={whiteSpaceText}>FEATURED PAST CLIENTS</p>
-                  <div style={{margin:"0 0 3rem 0",}}></div>
-              </div>
-              
-              {/*Row 1*/}
-              <figure class="fading-card">
-                  <img src={paypal}></img>
-                  <figcaption><p>Improve employee engagement. Utilized regression models and NLP topic modeling on employee activity datasets to improve employee interaction within the existing system. Developed a Tableau dashboard for monitoring engagement and presented insights leading to the development of PayPal's Global Innovation Tournament.</p>
-                  </figcaption>
-              </figure>
-              <figure class="fading-card">
-                  <img src={walmart}></img>
-                  <figcaption><p> Built LLM interface to allow non-technical queries to input human text and automatically translate into SQL, find relevant data, and return results along with the corresponding SQL code.</p>
-                  </figcaption>
-              </figure>
-                <figure class="fading-card">
-                <img src={qualcomm}></img>
-                <figcaption><p>Performed web scraping to obtain media data about qualcomm and its competitors and built NLP model utilizing GLDA to perform topic modelling and sentiment analysis, helping qualcomm's marketing team come up with and improve marketing strategies</p>
-                </figcaption>
-              </figure>
-              
-              {/*Row 2*/}
-                <figure class="fading-card">
-                  <img src={tnc}></img>
-                  <figcaption><p>Analyzed the trends and spatial distribution of water right applications by creating an interactive map using GeoPandas. Determined the most influential variables in approved applications through feature selection. Predicted the approval status of pending water right applications through the usage of a logistic regression model.</p>
-                  </figcaption>
-              </figure>
-              <figure class="fading-card">
-                  <img src={techsoup}></img>
-                  <figcaption><p>Our goal was to examine and analyze TechSoup’s business records from the past 15 years in order to provide insight and business directions on how its operation and revenue can be improved. TechSoup requested us to create cohorts of records based on each client organization’s budget range, fiscal year, and months. Based on the cohorts we created, we visualize and project the trends using several metrics, including revenue, amount, frequency, etc.</p>
-                  </figcaption>
-              </figure>
-              <figure class="fading-card">
-                  <img src={ctn}></img>
-                  <figcaption><p>Community Tech Network (CTN) is a non-profit organization which promotes digital literacy for senior citizens through various programs. For this project we performed data analysis and developed a tool which automatically produces visualizations and insights on the efficacy of their digital literacy program in helping senior citizens cope with loneliness by connecting them with loved ones.</p>
-                  </figcaption>
-              </figure>
+          {/*Row 1*/}
+          <figure class="fading-card">
+            <img src={paypal}></img>
+            <figcaption>
+              <p>
+                Improve employee engagement. Utilized regression models and NLP
+                topic modeling on employee activity datasets to improve employee
+                interaction within the existing system. Developed a Tableau
+                dashboard for monitoring engagement and presented insights
+                leading to the development of PayPal's Global Innovation
+                Tournament.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="fading-card">
+            <img src={walmart}></img>
+            <figcaption>
+              <p>
+                {" "}
+                Built LLM interface to allow non-technical queries to input
+                human text and automatically translate into SQL, find relevant
+                data, and return results along with the corresponding SQL code.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="fading-card">
+            <img src={qualcomm}></img>
+            <figcaption>
+              <p>
+                Performed web scraping to obtain media data about qualcomm and
+                its competitors and built NLP model utilizing GLDA to perform
+                topic modelling and sentiment analysis, helping qualcomm's
+                marketing team come up with and improve marketing strategies
+              </p>
+            </figcaption>
+          </figure>
 
-              {/*Row 3*/}
-              <figure class="fading-card">
-                  <img src={mep}></img>
-                  <figcaption><p>MEP envisions the existence of a stable elephant population co-existing peacefully with people across the Greater Mara Ecosystem. Their collaborative approach of boots on the ground rangers and applied research has disrupted poaching in the region and combatted conflict and habitat loss.</p>
-                  </figcaption>
-              </figure>
-              <figure class="fading-card">
-                  <img src={sofi}></img>
-                  <figcaption><p>Created cash in, cash out and category spending visualizations for SoFi Relay. Used MCC codes to semi-manually tag 10k SoFi transactions as their proper SoFi category. Using NLP to categorize transaction using transaction amount, merchant name, description, etc.</p>
-                  </figcaption>
-              </figure>
-              <figure class="fading-card">
-                  <img src={monday}></img>
-                  <figcaption><p>Evaluate channel partners’ performance through customer satisfaction scores. Utilized NLP techniques like topic modeling and sentiment analysis. Combined most important customer satisfaction, metrics devised clear steps on how to obtain this data, and designed an experiment that Monday would be able to execute to determine if the score was an accurate indicator.</p>
-                  </figcaption>
-              </figure>
+          {/*Row 2*/}
+          <figure class="fading-card">
+            <img src={tnc}></img>
+            <figcaption>
+              <p>
+                Analyzed the trends and spatial distribution of water right
+                applications by creating an interactive map using GeoPandas.
+                Determined the most influential variables in approved
+                applications through feature selection. Predicted the approval
+                status of pending water right applications through the usage of
+                a logistic regression model.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="fading-card">
+            <img src={techsoup}></img>
+            <figcaption>
+              <p>
+                Our goal was to examine and analyze TechSoup’s business records
+                from the past 15 years in order to provide insight and business
+                directions on how its operation and revenue can be improved.
+                TechSoup requested us to create cohorts of records based on each
+                client organization’s budget range, fiscal year, and months.
+                Based on the cohorts we created, we visualize and project the
+                trends using several metrics, including revenue, amount,
+                frequency, etc.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="fading-card">
+            <img src={ctn}></img>
+            <figcaption>
+              <p>
+                Community Tech Network (CTN) is a non-profit organization which
+                promotes digital literacy for senior citizens through various
+                programs. For this project we performed data analysis and
+                developed a tool which automatically produces visualizations and
+                insights on the efficacy of their digital literacy program in
+                helping senior citizens cope with loneliness by connecting them
+                with loved ones.
+              </p>
+            </figcaption>
+          </figure>
 
-              {/*Row 4 -- Venmo has no description. */}
-              <figure class="fading-card">
-                  <img src={venmo}></img> 
-              </figure>
-              <figure class="fading-card">
-                  <img src={oustlabs}></img>
-                  <figcaption><p>We built a contextual AI chatbot using Rasa NLU framework, implemented end-to-end architecture, deploying in GCP Firebase, Cloud Functions, App Engine. We also implemented BERT to automate heuristic for chatbot interactive training, tested flow with Facebook Messenger and Android with XMPP server.</p>
-                  </figcaption>
-              </figure>
-              <figure class="fading-card">
-                  <img src={simmer}></img>
-                  <figcaption><p>Churn Prediction. Generated statistical modeling-ready dataset from app session data and find useful features for predicting churn. Engineered additional metrics/features for measuring user behavior. Devised a scheme for labeling users as churned or active.</p>
-                  </figcaption>
-              </figure>
+          {/*Row 3*/}
+          <figure class="fading-card">
+            <img src={mep}></img>
+            <figcaption>
+              <p>
+                MEP envisions the existence of a stable elephant population
+                co-existing peacefully with people across the Greater Mara
+                Ecosystem. Their collaborative approach of boots on the ground
+                rangers and applied research has disrupted poaching in the
+                region and combatted conflict and habitat loss.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="fading-card">
+            <img src={sofi}></img>
+            <figcaption>
+              <p>
+                Created cash in, cash out and category spending visualizations
+                for SoFi Relay. Used MCC codes to semi-manually tag 10k SoFi
+                transactions as their proper SoFi category. Using NLP to
+                categorize transaction using transaction amount, merchant name,
+                description, etc.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="fading-card">
+            <img src={monday}></img>
+            <figcaption>
+              <p>
+                Evaluate channel partners’ performance through customer
+                satisfaction scores. Utilized NLP techniques like topic modeling
+                and sentiment analysis. Combined most important customer
+                satisfaction, metrics devised clear steps on how to obtain this
+                data, and designed an experiment that Monday would be able to
+                execute to determine if the score was an accurate indicator.
+              </p>
+            </figcaption>
+          </figure>
 
-              {/*Row 5*/}
-              <figure class="fading-card">
-                  <img src={edify}></img>
-                  <figcaption><p>Predict whether or not a trucking trip would be vulnerable to a safety incident. Researched and implemented different models trained for this task including neural networks, random forests, and autoencoders as well as techniques to handle the class imbalance such as SMOTE and Near Miss. Compiled results and compared the different models based on precision and recall.</p>
-                  </figcaption>
-              </figure>
-              <figure class="fading-card">
-                  <img src={metromile}></img>
-                  <figcaption><p>Set up a foundation for Metromile to be able to explore models that are cannot be used in production for comparative purposes. Gathered relevant usage based data. Appended weather and accident rate data based on the time and location of trips. Performed baseline modeling, generated a final model-ready dataset for Metromile to use for exploratory purposes and identified avenues through which Metromile could take the explorations to commercial use.</p>
-                  </figcaption>
-              </figure>
-              <figure class="fading-card">
-                  <img src={deepnote}></img>
-                  <figcaption><p>We used anonymized data of Deepnote’s users, which consists of various actions they took in their first days of using the product, as well as which users were retained, and for how long. Using this data, we used machine learning to predict which actions are most correlated with user retention, as well as which are indicative of user churning.</p>
-                  </figcaption>
-              </figure>
-          </div>
+          {/*Row 4 -- Venmo has no description. */}
+          <figure class="fading-card">
+            <img src={venmo}></img>
+          </figure>
+          <figure class="fading-card">
+            <img src={oustlabs}></img>
+            <figcaption>
+              <p>
+                We built a contextual AI chatbot using Rasa NLU framework,
+                implemented end-to-end architecture, deploying in GCP Firebase,
+                Cloud Functions, App Engine. We also implemented BERT to
+                automate heuristic for chatbot interactive training, tested flow
+                with Facebook Messenger and Android with XMPP server.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="fading-card">
+            <img src={simmer}></img>
+            <figcaption>
+              <p>
+                Churn Prediction. Generated statistical modeling-ready dataset
+                from app session data and find useful features for predicting
+                churn. Engineered additional metrics/features for measuring user
+                behavior. Devised a scheme for labeling users as churned or
+                active.
+              </p>
+            </figcaption>
+          </figure>
 
-          {/*Directors*/}
-          <div style={{position: "relative",
+          {/*Row 5*/}
+          <figure class="fading-card">
+            <img src={edify}></img>
+            <figcaption>
+              <p>
+                Predict whether or not a trucking trip would be vulnerable to a
+                safety incident. Researched and implemented different models
+                trained for this task including neural networks, random forests,
+                and autoencoders as well as techniques to handle the class
+                imbalance such as SMOTE and Near Miss. Compiled results and
+                compared the different models based on precision and recall.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="fading-card">
+            <img src={metromile}></img>
+            <figcaption>
+              <p>
+                Set up a foundation for Metromile to be able to explore models
+                that are cannot be used in production for comparative purposes.
+                Gathered relevant usage based data. Appended weather and
+                accident rate data based on the time and location of trips.
+                Performed baseline modeling, generated a final model-ready
+                dataset for Metromile to use for exploratory purposes and
+                identified avenues through which Metromile could take the
+                explorations to commercial use.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="fading-card">
+            <img src={deepnote}></img>
+            <figcaption>
+              <p>
+                We used anonymized data of Deepnote’s users, which consists of
+                various actions they took in their first days of using the
+                product, as well as which users were retained, and for how long.
+                Using this data, we used machine learning to predict which
+                actions are most correlated with user retention, as well as
+                which are indicative of user churning.
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+
+        {/*Directors*/}
+        <div
+          style={{
+            position: "relative",
             textAlign: "center",
             width: "100%",
             height: "auto",
@@ -361,47 +543,49 @@ class Education extends Component {
             color: "black",
             fontSize: "max(3vw, 28px)",
             fontWeight: "Bold",
-            fontFamily: "Lato", 
-            }}><i>Want to work with us?</i></div>
+            fontFamily: "Lato",
+          }}
+        >
+          <i>Want to work with us?</i>
+        </div>
 
-          <Card.Group centered style = {{borderRadius: "16px",}}>
-            <Card style={cardstyle}>
-              <Image src={"/Leadership/Austin.jpg"} style={imagestyle}/>
-              <Card.Content>
-                <Card.Header style={textstyle}>Preetha Kumar</Card.Header>
-                <Card.Meta style={{ marginTop: "1vw" }}>
-                  <span style={roleStyle}>President</span>
-                </Card.Meta>
-              </Card.Content>
-              <Card.Content extra>
-                <a href="mailto:preethakumar@berkeley.edu">
-                  <Icon size="large" name="mail" />
-                </a>
-                <a href="https://www.linkedin.com/in/preetha-kumar/">
-                  <Icon size="large" name="linkedin" />
-                </a>
-              </Card.Content>
-            </Card>
-            <Card style={cardstyle}>
-              {" "}
-              <Image style={imagestyle} src={"/Leadership/Austin.jpg"} />
-              <Card.Content>
-                <Card.Header style={textstyle}>Michael Florip</Card.Header>
-                <Card.Meta style={{ marginTop: "1vw" }}>
-                  <span style={roleStyle}>VP of Sourcing</span>
-                </Card.Meta>
-              </Card.Content>
-              <Card.Content extra>
-                <a href="mailto:michaelflorip@berkeley.edu">
-                  <Icon size="large" name="mail" />
-                </a>
-                <a href="https://www.linkedin.com/in/michaelflorip/">
-                  <Icon size="large" name="linkedin" />
-                </a>
-              </Card.Content>
-            </Card>
-          </Card.Group>
-
+        <Card.Group centered style={{ borderRadius: "16px" }}>
+          <Card style={cardstyle}>
+            <Image src={"/Leadership/Sid.jpg"} style={imagestyle} />
+            <Card.Content>
+              <Card.Header style={textstyle}>Siddharth Ramshankar</Card.Header>
+              <Card.Meta style={{ marginTop: "1vw" }}>
+                <span style={roleStyle}>President</span>
+              </Card.Meta>
+            </Card.Content>
+            <Card.Content extra>
+              <a href="mailto:siddharthr@berkeley.edu">
+                <Icon size="large" name="mail" />
+              </a>
+              <a href="https://www.linkedin.com/in/siddharth-ramshankar1/">
+                <Icon size="large" name="linkedin" />
+              </a>
+            </Card.Content>
+          </Card>
+          <Card style={cardstyle}>
+            {" "}
+            <Image style={imagestyle} src={"/Leadership/Michael.jpg"} />
+            <Card.Content>
+              <Card.Header style={textstyle}>Michael Florip</Card.Header>
+              <Card.Meta style={{ marginTop: "1vw" }}>
+                <span style={roleStyle}>External Vice President</span>
+              </Card.Meta>
+            </Card.Content>
+            <Card.Content extra>
+              <a href="mailto:michaelflorip@berkeley.edu">
+                <Icon size="large" name="mail" />
+              </a>
+              <a href="https://www.linkedin.com/in/michaelflorip/">
+                <Icon size="large" name="linkedin" />
+              </a>
+            </Card.Content>
+          </Card>
+        </Card.Group>
       </div>
     );
   }
@@ -501,7 +685,6 @@ const banner = {
   color: white,
 }
 */
-
 
 //Old Education class
 /*
