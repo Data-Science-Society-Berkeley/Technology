@@ -1,6 +1,3 @@
-import Navbar from "../components/Navbar.js";
-import Footer from "../components/Footer.js";
-
 function About() {
   return (
     <div className="bg-gradient-to-b from-white to-[#8CD6D1]">

@@ -1,4 +1,3 @@
-import Navbar from "./components/Navbar.js";
 import Footer from "./components/Footer.js";
 import About from "./subpages/About.js";
 import Home from "./subpages/Home.js";
@@ -11,7 +10,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <div className="App bg-gradient-to-b from-white to-[#8CD6D1]">
         <Routes>
           <Route path="/" element={<Home />} />
