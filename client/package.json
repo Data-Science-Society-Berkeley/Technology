@@ -1,42 +1,30 @@
 {
-  "name": "client",
+  "name": "main-site",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.23.0",
-    "bootstrap": "^5.2.3",
-    "carousel": "^0.0.3",
-    "dependencies": "^0.0.1",
-    "gapi-script": "^1.0.2",
-    "html-react-parser": "^5",
-    "js-cookie": "^2.2.1",
-    "moment": "^2.27.0",
-    "react": "^18.3",
-    "react-big-calendar": "^1.12",
-    "react-bootstrap": "^2.7.0",
-    "react-dom": "^18",
-    "react-ga": "^3.1.2",
-    "react-google-calendar-api": "^1.1.0",
-    "react-helmet": "^5.2.1",
-    "react-icons": "^4.1.0",
-    "react-password-strength-bar": "^0.4.1",
-    "react-responsive": "^10.0.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.0.1",
-    "semantic-ui-react": "^2.1.5",
-    "superagent": "^6.0.0",
-    "typescript": "^3.7.4",
-    "validator": "^12.1.0",
-    "webfontloader": "^1.6.28"
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.3.1",
+    "react-router-dom": "^6.25.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object":"^7.21.11"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
