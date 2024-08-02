@@ -56,12 +56,14 @@ function Home() {
           <br />
           About us →
         </div>
-        <div className="bg-green-500 m-2 text-white flex-1 min-w-[20em]">
+        <div className="m-2 text-black flex-1 min-w-[20em]">
           <div className="grid grid-cols-3 gap-4 p-4">
             {headlineStats.map((item) => (
-              <div className="flex flex-col">
-                <div className="bg-gray-200 p-1">TEST</div>
-                <div className="bg-gray-200">{item.name}</div>
+              <div className="flex flex-col items-center">
+                <div className="p-1 text-3xl text-black font-lato font-bold">
+                  {item.num}
+                </div>
+                <div className="">{item.name}</div>
               </div>
             ))}
           </div>
@@ -70,7 +72,7 @@ function Home() {
       <img src={"/pattern1.png"} alt="Landing Photo" />
       {landingPageIndex.map((item) => (
         <div className="flex flex-row items-center justify-center flex-wrap">
-          <div className="p-4 m-2 text-black text-left font-lato flex-grow max-w-[60em]">
+          <div className="p-4 m-2 text-black text-left font-lato flex-grow max-w-[30em]">
             <div className="text-4xl font-bold">IMPACT</div>
             <br />
             <div className="text-xl font-bold">CONSULTING COMMITTEE</div>
