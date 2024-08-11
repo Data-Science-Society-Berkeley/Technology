@@ -1,5 +1,4 @@
 import ServiceCard from "../components/ServiceCard";
-import ServiceCarousel from "../components/ServiceCarousel";
 
 const services = [
   {
@@ -41,7 +40,6 @@ function Services() {
           <ServiceCard />
         ))}
       </div>
-      <ServiceCarousel />
     </div>
   );
 }
