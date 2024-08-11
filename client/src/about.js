@@ -154,7 +154,7 @@ const leadershipCards = [
   </Card>,
   <Card style={cardstyle}>
     {" "}
-    <Image style={imagestyle} src={"/Leadership/Austin.jpg"} />
+    <Image style={imagestyle} src={"/Leadership/Austin.png"} />
     <Card.Content>
       <Card.Header style={textstyle}>Austin Ardisaputra</Card.Header>
       <Card.Meta style={{ marginTop: "1vw" }}>
