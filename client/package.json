@@ -16,7 +16,8 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "daisyui": "^4.12.10"
   },
   "scripts": {
     "start": "react-scripts start",
