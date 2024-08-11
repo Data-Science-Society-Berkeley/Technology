@@ -1,5 +1,7 @@
 import ServiceCard from "../components/ServiceCard";
 import ServicesCarousel from "../components/ServicesCarousel";
+import CompanyCard from "../components/CompanyCard";
+import ProfileCard from "../components/ProfileCard";
 
 const services = [
   {
@@ -49,6 +51,18 @@ function Services() {
         ))}
       </div>
       <ServicesCarousel slides={slides} />
+      <div className="mx-[5em]">
+        <CompanyCard />
+
+        <div className="text-center">Want to work with us?</div>
+        <div className="flex flex-row flex-wrap justify-center">
+          <ProfileCard />
+          <ProfileCard />
+        </div>
+        <div className="text-center">
+          You can also reach us through our email or social medias listed below.
+        </div>
+      </div>
     </div>
   );
 }

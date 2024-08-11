@@ -3,6 +3,7 @@ import {
   BsFillArrowRightCircleFill,
   BsFillArrowLeftCircleFill,
 } from "react-icons/bs";
+
 export default function ServicesCarousel({ slides }) {
   let [current, setCurrent] = useState(0);
 
