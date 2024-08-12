@@ -55,7 +55,7 @@ const landingPageIndex = [
 function Home() {
   return (
     <div>
-      <img src={"/landingphoto.png"} alt="Landing Photo" />
+      <img src={"/landingphoto.png"} alt="Landing" />
       <div className="flex flex-row flex-wrap items-center justify-center">
         <div className="p-4 mx-[4em] mt-[2em] text-black text-left font-lato flex-1 min-w-[20em]">
           <div className="text-4xl font-bold">DATA SCIENCE SOCIETY</div>
@@ -83,7 +83,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <img src={"/pattern1.png"} alt="Landing Photo" />
+      <img src={"/pattern1.png"} alt="Pattern 1" />
       {landingPageIndex.map((item) => (
         <div className="flex flex-row items-center justify-center flex-wrap">
           <div className="p-4 m-2 text-black text-left font-lato flex-grow max-w-[30em]">
@@ -98,11 +98,11 @@ function Home() {
             </Link>
           </div>
           <div className="p-4 m-2 text-white">
-            <img className="max-w-[30em]" src={item.img} alt="Landing Photo" />
+            <img className="max-w-[30em]" src={item.img} alt={item.img} />
           </div>
         </div>
       ))}
-      <img src={"/pattern2.png"} alt="Landing Photo" />
+      <img src={"/pattern2.png"} alt="Pattern 2" />
     </div>
   );
 }
