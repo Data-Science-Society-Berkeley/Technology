@@ -141,13 +141,13 @@ function About() {
           united students from a wide range of disciplines behind our shared
           passion for all things data.
         </div>
-        <div className="flex flex-row mx-[10em] justify-between">
+        <div className="flex flex-row mx-[10em] justify-between flex-wrap w-100">
           {headlineStats.map((item) => (
-            <div className="flex flex-col text-center my-[2em]">
+            <div className="flex flex-col text-center my-[2em] mx-auto">
               <div className="text-[#ffc54a] text-5xl font-bold">
                 {item.num}
               </div>
-              <div className="text-xl mx-[1em]">{item.name}</div>
+              <div className="text-xl mx-[5em]">{item.name}</div>
             </div>
           ))}
         </div>
