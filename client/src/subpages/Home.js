@@ -98,7 +98,11 @@ function Home() {
             </Link>
           </div>
           <div className="p-4 m-2 text-white">
-            <img className="max-w-[30em]" src={item.img} alt={item.img} />
+            <img
+              className="md:w-[30em] w-[15em]"
+              src={item.img}
+              alt={item.img}
+            />
           </div>
         </div>
       ))}

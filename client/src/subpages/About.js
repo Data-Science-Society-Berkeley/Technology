@@ -130,8 +130,18 @@ function About() {
   return (
     <div>
       <div className="bg-gradient-to-b from-white to-[#8CD6D1] font-lato">
-        <img src={"/aboutUs.png"} alt="About Us" />
-        <div className="mx-[10em] font-lato text-xl">
+        <div className="w-full">
+          <img
+            class="h-full w-full object-cover"
+            src={"/aboutUs.png"}
+            alt="About Us"
+          />
+          <h1 className="top-[5vw] font-lato w-[100vw] text-white font-bold text-6xl text-center">
+            {/* ABOUT US */}
+          </h1>
+        </div>
+
+        <div className="mx-[5em] md:mx-[10em] font-lato text-xl">
           <div className="text-center font-bold text-3xl my-[1em]">
             Who We Are
           </div>
@@ -141,7 +151,7 @@ function About() {
           united students from a wide range of disciplines behind our shared
           passion for all things data.
         </div>
-        <div className="flex flex-row mx-[10em] justify-between flex-wrap w-100">
+        <div className="flex flex-row sm:mx-[1em] md:mx-0 lg:mx-[10em] justify-between flex-wrap w-100">
           {headlineStats.map((item) => (
             <div className="flex flex-col text-center my-[2em] mx-auto">
               <div className="text-[#ffc54a] text-5xl font-bold">
@@ -151,7 +161,7 @@ function About() {
             </div>
           ))}
         </div>
-        <div className="mx-[10em] font-lato text-xl">
+        <div className="mx-[5em] md:mx-[10em] font-lato text-xl">
           <div className="text-center font-bold text-3xl my-[1em]">
             Mission and Values
           </div>
@@ -162,7 +172,7 @@ function About() {
           and given them the technical and soft skills needed to thrive in an
           increasingly data-centric world.`
         </div>
-        <div className="mx-[10em] font-lato text-xl">
+        <div className="mx-[5em] md:mx-[10em] font-lato text-xl">
           <div className="text-center font-bold text-3xl my-[1em] italic">
             How We Achieve This Mission: Our Committees
           </div>
@@ -203,11 +213,6 @@ function About() {
         </div>
       </div>
       <div className="bg-gradient-to-b from-[#8CD6D1] to-white font-lato">
-        <div className="w-[100vw] text-center">
-          <h1 className="top-[10vw] font-lato absolute w-[100vw] text-white font-bold text-6xl">
-            ABOUT US
-          </h1>
-        </div>
         <div className="mx-[5em]">
           <div className="text-center font-bold text-3xl py-[1em]">
             Meet Our Executive Team

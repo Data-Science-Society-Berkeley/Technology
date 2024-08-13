@@ -16,7 +16,7 @@ const ServicesCarousel = ({ items }) => {
   };
 
   return (
-    <div className="relative w-full h-[20rem] overflow-hidden">
+    <div className="relative w-full h-[40rem] md:h-[20rem] sm:h-[30rem] overflow-hidden">
       <div
         className="flex transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}

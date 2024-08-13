@@ -28,18 +28,13 @@ const items = [
   <div className="bg-gray-500 w-full h-full flex items-center text-white flex-col font-lato py-[2em]">
     <div className="text-2xl font-bold">CLIENT TESTIMONIALS</div>
     <br />
-    <div className="text-m mx-[10em]">
+    <div className="text-s md:text-m mx-[7em]">
       “Over the past semester, the Data Science Society volunteers helped Medic
       develop a tool to synthesize datasets from scratch, given only a Community
-      Health Toolkit app's configuration code. This type of tool can give us a
-      playground to test aspects of our apps and models, ensuring we're building
-      high quality apps for community health and allowing us to start designing
-      our analyses faster. This was a challenging project, and the team really
-      stepped up, delivering a fully functional dataset generator in just a few
-      months. I looked forward to our check-ins, where everyone participated
-      enthusiastically in our discussions and blew me away with the pace of
-      their progress. I'm looking forward to future Data Science Society / Medic
-      collaborations!”
+      Health Toolkit app's configuration code. This was a challenging project,
+      and the team really stepped up, delivering a fully functional dataset
+      generator in just a few months. I'm looking forward to future Data Science
+      Society / Medic collaborations!”
     </div>
     <br />
     <div className="text-m text-center">
@@ -51,13 +46,13 @@ const items = [
   <div className="bg-gray-500 w-full h-full flex items-center text-white flex-col font-lato py-[2em]">
     <div className="text-2xl font-bold">CLIENT TESTIMONIALS</div>
     <br />
-    <div className="text-m mx-[10em]">
+    <div className="text-s md:text-m mx-[7em]">
       “Working with DSS gave us great and immediately actionable insight into a
       new Blockchain project we had launched. I really hope we can work with DSS
       again on our next big project!”
     </div>
     <br />
-    <div className="text-m text-center">
+    <div className="text-m text-center mx-[5rem]">
       - Michael Todasco, Senior Director of Innovation at PayPal
     </div>
     <br />
@@ -66,7 +61,7 @@ const items = [
   <div className="bg-gray-500 w-full h-full flex items-center text-white flex-col font-lato py-[2em]">
     <div className="text-2xl font-bold">CLIENT TESTIMONIALS</div>
     <br />
-    <div className="text-m mx-[10em]">
+    <div className="text-s md:text-m mx-[7em]">
       “My company hired DSS to analyze data in the winter of 2019 and fall of
       2020, and they did an amazing job. They took the project seriously and I
       greatly appreciated the professional manner in which they handled it. Most
@@ -82,7 +77,7 @@ const items = [
   <div className="bg-gray-500 w-full h-full flex items-center text-white flex-col font-lato py-[2em]">
     <div className="text-2xl font-bold">CLIENT TESTIMONIALS</div>
     <br />
-    <div className="text-m mx-[10em]">
+    <div className="text-s md:text-m mx-[7em]">
       “Our team worked with DSS to analyze and model our member behavior. The
       consultants delivered high quality presentations of their insights. Their
       metrics, visualizations, and model provided new perspectives for us to
@@ -90,7 +85,7 @@ const items = [
       skilled, and they were a pleasure to work with.”
     </div>
     <br />
-    <div className="text-m text-center">
+    <div className="text-m text-center mx-[5rem]">
       - Michelle Leahy, Business Operations Manager, Data & Engineering at SoFi
     </div>
     <br />
@@ -99,15 +94,14 @@ const items = [
   <div className="bg-gray-500 w-full h-full flex items-center text-white flex-col font-lato py-[2em]">
     <div className="text-2xl font-bold">CLIENT TESTIMONIALS</div>
     <br />
-    <div className="text-m mx-[10em]">
+    <div className="text-s mx-[6em]">
       “I have never worked with students more competent than my analysts at
       DSS... The first thing that impressed me was their process, which was
       clearly documented and thorough, but not cumbersome on the client... My
-      team used machine learning models to understand churn-user behavior and
-      label users as churned or active. When COVID-19 hit mid-project, I fully
-      anticipated these students to take a step back. Instead, they doubled
-      down. My team exceeded the original parameters of the projects. I'm
-      chomping at the bit to hire them back.”
+      team used ML models to understand churn-user behavior. When COVID-19 hit
+      mid-project, I anticipated these students to take a step back. Instead,
+      they doubled down. My team exceeded the original parameters of the
+      projects. I'm chomping at the bit to hire them back.”
     </div>
     <br />
     <div className="text-m text-center">- Richard Wu, CEO, Simmer (YC S19)</div>
@@ -202,13 +196,13 @@ function Services() {
       <img src={"/Services/ServicesLanding.jpg"} alt="Photo" />
       <div className="w-[100vw] text-center">
         <h1 className="top-[10vw] font-lato absolute w-[100vw] text-white font-bold text-6xl">
-          SERVICES
+          {/* SERVICES */}
         </h1>
-        <div className="mx-[10em]">
-          <div className="font-lato text-3xl">
+        <div className="mx-[1em] md:mx-[10em]">
+          <div className="font-lato text-xl md:text-3xl">
             <div className="text-center font-bold my-[1em]">WHAT WE OFFER</div>
           </div>
-          <div className="text-xl mx-[5em] text-justify">
+          <div className="text-s sm:text-xl mx-[5em] text-justify">
             We partner with corporations and non-profit organizations to provide
             data-driven insights and actionable solutions through advanced
             analytical methods. We believe that the skills that we have learned
@@ -220,7 +214,7 @@ function Services() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row flex-wrap justify-center">
+      <div className="flex flex-row flex-wrap justify-center gap-5">
         {services.map((service) => (
           <ServiceCard
             name={service.name}

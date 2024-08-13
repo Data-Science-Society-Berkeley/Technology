@@ -28,11 +28,15 @@ const directors = [
 function Decal() {
   return (
     <div className="bg-gradient-to-b from-white to-[#8CD6D1] font-lato">
-      <img src={"/DecalLanding.png"} alt="Landing" />
+      <img
+        class="h-full w-full object-cover"
+        src={"/DecalLanding.png"}
+        alt="Landing"
+      />
       <div className="font-lato text-xl">
         <div className="text-center font-bold text-5xl my-[1em]">DeCal</div>
       </div>
-      <div className="mx-[10em] text-xl">
+      <div className="mx-[2em] md:mx-[10em] text-m md:text-xl">
         Data 198: Intro to Real World Data Science{" "}
         <Link
           className="text-[#77b8b3]"
@@ -50,11 +54,11 @@ function Decal() {
       </div>
 
       {/* Section 1 */}
-      <div className="mx-[10em] text-xl font-bold">
+      <div className="mx-[2em] md:mx-[10em] text-m md:text-xl font-bold">
         <br />
         What will you learn in the DeCal?
       </div>
-      <div className="mx-[10em] text-xl">
+      <div className="mx-[2em] md:mx-[10em] text-m md:text-xl">
         This semester-long course focuses on introducing students to essential
         data science skills in an interactive setting. As a DeCal student, you
         will learn every step of the data science lifecycle: from formulating a
@@ -69,11 +73,11 @@ function Decal() {
       </div>
 
       {/* Section 2 */}
-      <div className="mx-[10em] text-xl font-bold">
+      <div className="mx-[2em] md:mx-[10em] text-m md:text-xl font-bold">
         <br />
         What project do you work on?
       </div>
-      <div className="mx-[10em] text-xl">
+      <div className="mx-[2em] md:mx-[10em] text-m md:text-xl">
         You may choose your own project! Decal students in past semesters have
         worked on projects related to various different disciplines like
         Economics, Public Health, Linguistics, Biology, and much more! Feel free
@@ -81,11 +85,11 @@ function Decal() {
       </div>
 
       {/* Section 3 */}
-      <div className="mx-[10em] text-xl font-bold">
+      <div className="mx-[2em] md:mx-[10em] text-m md:text-xl font-bold">
         <br />
         Who can take the DeCal?
       </div>
-      <div className="mx-[10em] text-xl">
+      <div className="mx-[2em] md:mx-[10em] text-m md:text-xl">
         There are no formal prerequisites for this course. However, it is
         recommended to have some level of basic programming experience in
         Python; many of our past students have taken this DeCal concurrently or
@@ -95,28 +99,28 @@ function Decal() {
       </div>
 
       {/* Section 4 */}
-      <div className="mx-[10em] text-xl font-bold">
+      <div className="mx-[2em] md:mx-[10em] text-m md:text-xl font-bold">
         <br />
         How can you apply?
       </div>
-      <div className="mx-[10em] text-xl">
+      <div className="mx-[2em] md:mx-[10em] text-m md:text-xl">
         Our application window will open soon. Visit the "Join Us" page and keep
         an eye out for our on-campus and virtual events for our timeline!
       </div>
 
       {/* Section 5 */}
-      <div className="mx-[10em] text-xl font-bold">
+      <div className="mx-[2em] md:mx-[10em] text-m md:text-xl font-bold">
         <br />
         Further details
       </div>
-      <div className="mx-[10em] text-xl">
+      <div className="mx-[2em] md:mx-[10em] text-m md:text-xl">
         The DeCal is 1 unit (P/NP) and there is a mandatory lecture on Mondays
         from 6:30-8:30pm in SOCS 20. We allow two unexcused absences before it
         affects your grade. The commitments for this course include: homeworks
         graded on completion, a final project and symposium presentations.
       </div>
 
-      <div className="mx-[5em]">
+      <div className="mx-[2em] md:mx-[10em] text-m md:text-xl">
         <div className="text-center font-bold text-3xl py-[1em]">
           Our Directors
         </div>
