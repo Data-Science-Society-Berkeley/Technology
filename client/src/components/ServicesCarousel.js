@@ -1,59 +1,53 @@
-import { useState } from "react";
-import {
-  BsFillArrowRightCircleFill,
-  BsFillArrowLeftCircleFill,
-} from "react-icons/bs";
+import React, { useState } from "react";
 
-export default function ServicesCarousel({ slides }) {
-  let [current, setCurrent] = useState(0);
+const ServicesCarousel = ({ items }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  let previousSlide = () => {
-    if (current === 0) setCurrent(slides.length - 1);
-    else setCurrent(current - 1);
+  const goToPrevious = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? items.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
   };
 
-  let nextSlide = () => {
-    if (current === slides.length - 1) setCurrent(0);
-    else setCurrent(current + 1);
+  const goToNext = () => {
+    const isLastSlide = currentIndex === items.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
   };
 
   return (
-    <div className="overflow-hidden relative">
+    <div className="relative w-full h-[20rem] overflow-hidden">
       <div
-        className={`flex transition ease-out duration-40`}
-        style={{
-          transform: `translateX(-${current * 100}%)`,
-        }}
+        className="flex transition-transform duration-500 ease-in-out"
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
-        {slides.map((s) => {
-          return <img src={s} />;
-        })}
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className="min-w-full flex justify-center items-center"
+          >
+            {item}
+          </div>
+        ))}
       </div>
 
-      <div className="absolute top-0 h-full w-full justify-between items-center flex text-white px-10 text-3xl">
-        <button onClick={previousSlide}>
-          <BsFillArrowLeftCircleFill />
-        </button>
-        <button onClick={nextSlide}>
-          <BsFillArrowRightCircleFill />
-        </button>
-      </div>
+      {/* Left Arrow */}
+      <button
+        onClick={goToPrevious}
+        className="absolute top-1/2 left-[4em] transform -translate-y-1/2 text-white p-2 bg-black bg-opacity-50 rounded-full"
+      >
+        &#10094;
+      </button>
 
-      <div className="absolute bottom-0 py-4 flex justify-center gap-3 w-full">
-        {slides.map((s, i) => {
-          return (
-            <div
-              onClick={() => {
-                setCurrent(i);
-              }}
-              key={"circle" + i}
-              className={`rounded-full w-5 h-5 cursor-pointer  ${
-                i == current ? "bg-white" : "bg-gray-500"
-              }`}
-            ></div>
-          );
-        })}
-      </div>
+      {/* Right Arrow */}
+      <button
+        onClick={goToNext}
+        className="absolute top-1/2 right-[4em] transform -translate-y-1/2 text-white p-2 bg-black bg-opacity-50 rounded-full"
+      >
+        &#10095;
+      </button>
     </div>
   );
-}
+};
+
+export default ServicesCarousel;
