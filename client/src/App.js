@@ -7,6 +7,15 @@ import Events from "./subpages/Events.js";
 import Services from "./subpages/Services.js";
 import JoinUs from "./subpages/JoinUs.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+
+function RedirectToExternal({ url }) {
+  useEffect(() => {
+    window.location.href = url;
+  }, [url]);
+
+  return null; // This component doesn't render anything
+}
 
 function App() {
   return (
@@ -20,6 +29,20 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/joinus" element={<JoinUs />} />
           <Route path="/services" element={<Services />} />
+          {/* Deprecate soon plz */}
+          <Route path="/apply" element={<JoinUs />} />
+          <Route
+            path="/applydecal"
+            element={
+              <RedirectToExternal url="https://forms.gle/2xteSjbushfj41HT6" />
+            }
+          />
+          <Route
+            path="/coffee"
+            element={
+              <RedirectToExternal url="https://forms.gle/2xteSjbushfj41HT6" />
+            }
+          />
         </Routes>
       </div>
       <Footer />

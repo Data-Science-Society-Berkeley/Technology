@@ -40,7 +40,7 @@ function Decal() {
         Data 198: Intro to Real World Data Science{" "}
         <Link
           className="text-[#77b8b3]"
-          to="https://jegeronimo.github.io/dss-data-198/"
+          to="https://dss-data198.github.io/Data198/"
         >
           (DeCal Website Link)
         </Link>
