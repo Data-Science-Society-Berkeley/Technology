@@ -6,6 +6,7 @@ import Decal from "./subpages/Decal.js";
 import Events from "./subpages/Events.js";
 import Services from "./subpages/Services.js";
 import JoinUs from "./subpages/JoinUs.js";
+import ScrollToTop from "./components/ScrollToTop.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -20,6 +21,7 @@ function RedirectToExternal({ url }) {
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <div className="App bg-gradient-to-b from-white to-[#8CD6D1]">
         <Routes>
@@ -41,6 +43,12 @@ function App() {
             path="/coffee"
             element={
               <RedirectToExternal url="https://forms.gle/2xteSjbushfj41HT6" />
+            }
+          />
+          <Route
+            path="/mailinglist"
+            element={
+              <RedirectToExternal url="https://airtable.com/applSUum77sFQuQsM/shr084vc5JtxBydJK" />
             }
           />
         </Routes>
