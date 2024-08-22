@@ -7,7 +7,7 @@ export default function Footer() {
         <nav class="flex flex-wrap justify-center -mx-5 -my-2">
           <div class="px-5 py-2">
             <Link
-              to="/"
+              to="/#"
               class="text-base leading-6 text-gray-500 hover:text-gray-900"
             >
               Home
@@ -15,7 +15,7 @@ export default function Footer() {
           </div>
           <div class="px-5 py-2">
             <Link
-              to="/about"
+              to="/about#"
               class="text-base leading-6 text-gray-500 hover:text-gray-900"
             >
               About
@@ -23,7 +23,7 @@ export default function Footer() {
           </div>
           <div class="px-5 py-2">
             <Link
-              to="/decal"
+              to="/decal#"
               class="text-base leading-6 text-gray-500 hover:text-gray-900"
             >
               Decal
@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
           <div class="px-5 py-2">
             <Link
-              to="/events"
+              to="/events#"
               class="text-base leading-6 text-gray-500 hover:text-gray-900"
             >
               Events
@@ -39,7 +39,7 @@ export default function Footer() {
           </div>
           <div class="px-5 py-2">
             <Link
-              to="/services"
+              to="/services#"
               class="text-base leading-6 text-gray-500 hover:text-gray-900"
             >
               Services
@@ -55,7 +55,7 @@ export default function Footer() {
           </div>
           <div class="px-5 py-2">
             <Link
-              to="/joinus"
+              to="/joinus#"
               class="text-base leading-6 text-gray-500 hover:text-gray-900"
             >
               Join Us

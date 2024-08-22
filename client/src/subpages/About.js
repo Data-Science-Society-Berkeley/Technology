@@ -10,7 +10,7 @@ const headlineStats = [
 
 const execMembers = [
   {
-    name: "Sid Ramshankar",
+    name: "Siddharth Ramshankar",
     role: "President",
     linkedin: "https://www.linkedin.com/in/siddharth-ramshankar1/",
     email: "mailto:siddharthr@berkeley.edu",
@@ -184,7 +184,7 @@ function About() {
             all skill levels and students and hosts a variety of educational
             workshops for the greater campus community.
           </div>
-          <Link to="/joinus" className="text-[#77b8b3] w-[100vw]">
+          <Link to="/joinus" className="text-[#3a78dd] w-[100vw]">
             <div className="text-center mb-[3em]">Join Acadev →</div>
           </Link>
           <div className="text-center font-bold text-2xl my-[1em]">
@@ -195,7 +195,7 @@ function About() {
             data-driven insights and actionable solutions through advanced
             analytical methods.
           </div>
-          <Link to="/joinus" className="text-[#77b8b3] w-[100vw]">
+          <Link to="/joinus" className="text-[#3a78dd] w-[100vw]">
             <div className="text-center mb-[3em]">Join Consulting →</div>
           </Link>
           <div className="text-center font-bold text-2xl my-[1em]">
@@ -207,7 +207,7 @@ function About() {
             non-profit organizations. The Social Good committee acts as a
             consulting committee for nonprofits with social good initiatives.
           </div>
-          <Link to="/joinus" className="text-[#77b8b3] w-[100vw]">
+          <Link to="/joinus" className="text-[#3a78dd] w-[100vw]">
             <div className="text-center pb-[3em]">Join Social Good →</div>
           </Link>
         </div>

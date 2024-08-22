@@ -16,7 +16,7 @@ const landingPageIndex = [
     desc: "We leave an impact beyond Berkeley through partnering with companies from a variety of domains to create enterprise-level machine learning and analytics solutions.",
     link: "More about consulting →",
     img: "/consulting.jpg",
-    url: "/about",
+    url: "/about#",
   },
   {
     keyword: "EDUCATE",
@@ -40,7 +40,7 @@ const landingPageIndex = [
     desc: "We host an annual datathon and UCB's annual Data Science Forum, inspiring students to make data-driven decisions and to incorporate data science in their professional lives.",
     link: "More about events →",
     img: "/datathons.jpg",
-    url: "/about",
+    url: "/events#",
   },
   {
     keyword: "LEARN",
@@ -55,7 +55,11 @@ const landingPageIndex = [
 function Home() {
   return (
     <div>
-      <img src={"/landingphoto.png"} alt="Landing" />
+      <img
+        class="h-full w-full object-cover"
+        src={"/landingphoto.png"}
+        alt="Landing"
+      />
       <div className="flex flex-row flex-wrap items-center justify-center">
         <div className="p-4 mx-[4em] mt-[2em] text-black text-left font-lato flex-1 min-w-[20em]">
           <div className="text-4xl font-bold">DATA SCIENCE SOCIETY</div>
