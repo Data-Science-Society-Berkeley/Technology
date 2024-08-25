@@ -51,6 +51,12 @@ function App() {
               <RedirectToExternal url="https://airtable.com/applSUum77sFQuQsM/shr084vc5JtxBydJK" />
             }
           />
+          <Route
+            path="/data-198"
+            element={
+              <RedirectToExternal url="https://dss-data198.github.io/Data198/" />
+            }
+          />
         </Routes>
       </div>
       <Footer />
