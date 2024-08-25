@@ -21,7 +21,7 @@ const directors = [
     role: "Director of Acadev",
     linkedin: "https://www.linkedin.com/in/ryan-stevenson-315926252/",
     email: "mailto:ryanstevenson@berkeley.edu",
-    img: "/Leadership/Ryan.jpeg",
+    img: "/Leadership/Ryan.jpg",
   },
 ];
 
