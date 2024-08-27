@@ -57,6 +57,12 @@ function App() {
               <RedirectToExternal url="https://dss-data198.github.io/Data198/" />
             }
           />
+          <Route
+            path="/coffee"
+            element={
+              <RedirectToExternal url="https://dssberkeley.notion.site/DSS-Fall-2024-Coffee-Chat-Sign-Ups-be8830b0f4b141d787049d63389c7ccb" />
+            }
+          />
         </Routes>
       </div>
       <Footer />
