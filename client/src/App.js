@@ -27,7 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/decal" element={<Decal />} />
+          <Route path="/decalpage" element={<Decal />} />
           <Route path="/events" element={<Events />} />
           <Route path="/joinus" element={<JoinUs />} />
           <Route path="/services" element={<Services />} />
@@ -55,6 +55,18 @@ function App() {
             path="/data-198"
             element={
               <RedirectToExternal url="https://dss-data198.github.io/Data198/" />
+            }
+          />
+          <Route
+            path="/decal"
+            element={
+              <RedirectToExternal url="https://drive.google.com/file/d/1hWbepIm6o2TfZ4lbKNMXm6cDuk_xUkgt/view" />
+            }
+          />
+          <Route
+            path="/zoom"
+            element={
+              <RedirectToExternal url="https://berkeley.zoom.us/j/4802333671" />
             }
           />
         </Routes>
