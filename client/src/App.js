@@ -42,7 +42,7 @@ function App() {
           <Route
             path="/coffee"
             element={
-              <RedirectToExternal url="https://forms.gle/2xteSjbushfj41HT6" />
+              <RedirectToExternal url="https://dssberkeley.notion.site/DSS-Fall-2024-Coffee-Chat-Sign-Ups-be8830b0f4b141d787049d63389c7ccb" />
             }
           />
           <Route
@@ -55,12 +55,6 @@ function App() {
             path="/data-198"
             element={
               <RedirectToExternal url="https://dss-data198.github.io/Data198/" />
-            }
-          />
-          <Route
-            path="/coffee"
-            element={
-              <RedirectToExternal url="https://dssberkeley.notion.site/DSS-Fall-2024-Coffee-Chat-Sign-Ups-be8830b0f4b141d787049d63389c7ccb" />
             }
           />
         </Routes>
