@@ -49,7 +49,7 @@ const execMembers = [
     role: "VP of Culture",
     linkedin: "https://www.linkedin.com/in/josephzhai/",
     email: "mailto:josephzhai@berkeley.edu",
-    img: "/Leadership/Joseph.jpg",
+    img: "/Leadership/Joseph.jpeg",
   },
   {
     name: "Shreeya Sethuraman",

@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Decal", href: "/decal" },
+  { name: "Decal", href: "/decalpage" },
   { name: "Events", href: "/events" },
   { name: "Services", href: "/services" },
   { name: "Blog", href: "https://medium.com/@dssberkeley" },

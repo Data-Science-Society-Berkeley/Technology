@@ -27,7 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/decal" element={<Decal />} />
+          <Route path="/decalpage" element={<Decal />} />
           <Route path="/events" element={<Events />} />
           <Route path="/joinus" element={<JoinUs />} />
           <Route path="/services" element={<Services />} />
@@ -39,12 +39,12 @@ function App() {
               <RedirectToExternal url="https://forms.gle/2xteSjbushfj41HT6" />
             }
           />
-          <Route
+          {/* <Route
             path="/coffee"
             element={
               <RedirectToExternal url="https://dssberkeley.notion.site/DSS-Fall-2024-Coffee-Chat-Sign-Ups-be8830b0f4b141d787049d63389c7ccb" />
             }
-          />
+          /> */}
           <Route
             path="/mailinglist"
             element={
@@ -55,6 +55,18 @@ function App() {
             path="/data-198"
             element={
               <RedirectToExternal url="https://dss-data198.github.io/Data198/" />
+            }
+          />
+          <Route
+            path="/decal"
+            element={
+              <RedirectToExternal url="https://drive.google.com/file/d/1hWbepIm6o2TfZ4lbKNMXm6cDuk_xUkgt/view" />
+            }
+          />
+          <Route
+            path="/zoom"
+            element={
+              <RedirectToExternal url="https://berkeley.zoom.us/j/4802333671" />
             }
           />
         </Routes>
