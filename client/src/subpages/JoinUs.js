@@ -60,7 +60,7 @@ function JoinUs() {
           upcoming semester. To stay up to date with all our events, including
           our recruitment events, you can add our external calendar to receive
           notifications. If you have any questions, feel free to reach out to us
-          at info@dss.berkeley.edu. We hope to see you very soon!
+          at dss.berkeley@gmail.com. We hope to see you very soon!
         </div>
         <h1 className="top-[10vw] font-lato w-[100vw] text-black font-bold text-4xl my-[1em]">
           GET INVOLVED
