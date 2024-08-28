@@ -91,7 +91,7 @@ const execMembers = [
     role: "Director of Acadev",
     linkedin: "https://www.linkedin.com/in/lynn-chien-772747113/",
     email: "mailto:lchien8@berkeley.edu",
-    img: "/Leadership/Lynn.jpeg",
+    img: "/Leadership/Lynn.jpg",
   },
   {
     name: "Ryan Stevenson",

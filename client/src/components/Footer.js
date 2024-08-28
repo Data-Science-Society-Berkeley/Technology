@@ -63,7 +63,7 @@ export default function Footer() {
           </div>
           <div class="px-5 py-2">
             <Link
-              to="mailto:info@dss.berkeley.edu"
+              to="mailto:dss.berkeley@gmail.com"
               class="text-base leading-6 text-gray-500 hover:text-gray-900"
             >
               Email
