@@ -70,7 +70,7 @@ function JoinUs() {
             {/* Content inside the box */}
             <p>
               Apply to a committee{" "}
-              <Link to="/about" className="text-blue-400">
+              <Link to="/apply" className="text-blue-400">
                 here!
               </Link>
             </p>
