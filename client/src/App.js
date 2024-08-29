@@ -32,7 +32,12 @@ function App() {
           <Route path="/joinus" element={<JoinUs />} />
           <Route path="/services" element={<Services />} />
           {/* Deprecate soon plz */}
-          <Route path="/apply" element={<JoinUs />} />
+          <Route
+            path="/apply"
+            element={
+              <RedirectToExternal url="https://docs.google.com/forms/d/e/1FAIpQLSfTRD7Rtkrt1RBn_dikLj1JziyFoLo03WWRhRpNfPzWOjRIzQ/viewform" />
+            }
+          />
           <Route
             path="/applydecal"
             element={
