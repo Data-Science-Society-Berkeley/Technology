@@ -2,10 +2,10 @@ import ProfileCard from "../components/ProfileCard";
 import { Link } from "react-router-dom";
 
 const headlineStats = [
-  { name: "Completed Client Projects", num: "42" },
+  { name: "Completed Client Projects", num: "50+" },
   { name: "Past Workshops and Events Hosted", num: "68" },
   { name: "Datathon Past Participants", num: "300+" },
-  { name: "Past Members and DeCal Students", num: "800+" },
+  { name: "Past Members", num: "800+" },
 ];
 
 const execMembers = [
@@ -63,7 +63,7 @@ const execMembers = [
     role: "VP of Finance",
     linkedin: "https://www.linkedin.com/in/fionacch/",
     email: "mailto:fionac@berkeley.edu",
-    img: "/Leadership/Fiona.jpeg",
+    img: "/Leadership/Fiona.jpg",
   },
   {
     name: "Madeleine Larson",

@@ -6,7 +6,7 @@ const headlineStats = [
   { name: "client projects completed", num: "50+" },
   { name: "past datathon participants", num: "300+" },
   { name: "events hosted", num: "71" },
-  { name: "camera duels", num: "500+" },
+  { name: "past members", num: "800+" },
 ];
 
 const landingPageIndex = [
@@ -78,7 +78,7 @@ function Home() {
           <div className="grid grid-cols-3 gap-4 p-4">
             {headlineStats.map((item) => (
               <div className="flex flex-col items-center">
-                <div className="p-1 text-3xl text-[#77b8b3] font-lato font-bold">
+                <div className="p-1 sm:text-5xl text-3xl text-[#77b8b3] font-lato font-bold">
                   {item.num}
                 </div>
                 <div className="text-center">{item.name}</div>
@@ -97,7 +97,7 @@ function Home() {
             <br />
             <div className="text-m">{item.desc}</div>
             <br />
-            <Link to={item.url} className="text-[#77b8b3]">
+            <Link to={item.url} className="text-blue-500">
               {item.link}
             </Link>
           </div>

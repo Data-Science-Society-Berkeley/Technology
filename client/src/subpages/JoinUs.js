@@ -61,6 +61,11 @@ function JoinUs() {
           our recruitment events, you can add our external calendar to receive
           notifications. If you have any questions, feel free to reach out to us
           at dss.berkeley@gmail.com. We hope to see you very soon!
+          <br />
+          <br />☕ Coffee chat us{" "}
+          <Link to="/coffee" className="text-blue-400">
+            here! ☕
+          </Link>
         </div>
         <h1 className="top-[10vw] font-lato w-[100vw] text-black font-bold text-4xl my-[1em]">
           GET INVOLVED
