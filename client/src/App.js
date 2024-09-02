@@ -77,7 +77,7 @@ function App() {
           <Route
             path="/zoom"
             element={
-              <RedirectToExternal url="https://berkeley.zoom.us/j/4802333671" />
+              <RedirectToExternal url="https://berkeley.zoom.us/j/98049362210" />
             }
           />
           <Route
