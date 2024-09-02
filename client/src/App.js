@@ -80,6 +80,12 @@ function App() {
               <RedirectToExternal url="https://berkeley.zoom.us/j/4802333671" />
             }
           />
+          <Route
+            path="/resource"
+            element={
+              <RedirectToExternal url="https://docs.google.com/document/d/1SuvPHEXtFqpsyBNdgt-pKFBAvdOWBmcExDCYey02L8M/edit?usp=sharing" />
+            }
+          />
         </Routes>
       </div>
       <Footer />

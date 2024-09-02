@@ -108,10 +108,7 @@ function JoinUs() {
         <div className="text-xl">
           If you would like a better idea of how you can prep for the
           interviews, check out this{" "}
-          <Link
-            className="text-blue-500"
-            to="https://docs.google.com/document/d/1SuvPHEXtFqpsyBNdgt-pKFBAvdOWBmcExDCYey02L8M/edit?usp=sharing"
-          >
+          <Link className="text-blue-500" to="/resource">
             {" "}
             resource packet!
           </Link>
