@@ -84,7 +84,7 @@ function JoinUs() {
             {/* Content inside the box */}
             <p>
               Enroll in our{" "}
-              <Link to="/decalpage" className="text-blue-400">
+              <Link to="/decalapply" className="text-blue-400">
                 Decal!
               </Link>
             </p>
