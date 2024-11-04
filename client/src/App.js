@@ -86,6 +86,12 @@ function App() {
               <RedirectToExternal url="https://docs.google.com/document/d/1SuvPHEXtFqpsyBNdgt-pKFBAvdOWBmcExDCYey02L8M/edit?usp=sharing" />
             }
           />
+          <Route
+            path="/datathon"
+            element={
+              <RedirectToExternal url="https://dssberkeley.notion.site/6th-Annual-Datathon-for-Social-Good-Human-Rights-5283b32b5692405b896938bdc2f35978?pvs=4" />
+            }
+          />
         </Routes>
       </div>
       <Footer />
