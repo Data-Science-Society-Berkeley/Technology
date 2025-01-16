@@ -51,6 +51,7 @@ function JoinUs() {
           src={"/recruitmentFlyer.png"}
           width={800}
           className="mx-auto rounded-lg shadow-xl border-solid border-gray-400 border-2"
+          alt="Flyer"
         />
         <div className="mx-[2em] sm:mx-[5em] my-[2em] text-xl">
           Hey there! Thank you for taking the time to learn about DSS. On this
@@ -123,7 +124,7 @@ function JoinUs() {
         <br />
         <br />
 
-        <img src={"/pattern2.png"} alt="Landing Photo" />
+        <img src={"/pattern2.png"} alt="Landing pattern" />
       </div>
     </div>
   );

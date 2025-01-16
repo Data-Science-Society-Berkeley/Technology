@@ -257,7 +257,7 @@ function About() {
             ))}
           </div>
         </div>
-        <img src={"/pattern2.png"} alt="Landing Photo" />
+        <img src={"/pattern2.png"} alt="Landing pattern" />
       </div>
     </div>
   );

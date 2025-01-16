@@ -68,7 +68,7 @@ function Events() {
             <img
               className="max-w-[20em]"
               src={pastEvent.path}
-              alt="Landing Photo"
+              alt="Landing pattern"
             />
           </div>
           <div className="p-4 m-2 text-black text-left font-lato flex-grow max-w-[30em]">
@@ -78,7 +78,7 @@ function Events() {
           </div>
         </div>
       ))}
-      <img src={"/pattern2.png"} alt="Landing Photo" />
+      <img src={"/pattern2.png"} alt="Landing pattern" />
     </div>
   );
 }
