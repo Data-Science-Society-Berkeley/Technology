@@ -30,17 +30,15 @@ function App() {
             path="/"
             element={<RedirectToExternal url="https://www.dssberkeley.org/" />}
           />
-          <Route path="/about" element={<About />} />
+          {/* <Route path="/about" element={<About />} />
           <Route path="/decalpage" element={<Decal />} />
           <Route path="/events" element={<Events />} />
           <Route path="/joinus" element={<JoinUs />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/services" element={<Services />} /> */}
           {/* Deprecate soon plz */}
           <Route
             path="/apply"
-            element={
-              <RedirectToExternal url="https://docs.google.com/forms/d/e/1FAIpQLSfTRD7Rtkrt1RBn_dikLj1JziyFoLo03WWRhRpNfPzWOjRIzQ/viewform" />
-            }
+            element={<RedirectToExternal url="https://www.dssberkeley.org/" />}
           />
           <Route
             path="/applydecal"
