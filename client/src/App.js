@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar.js";
 import Footer from "./components/Footer.js";
 import About from "./subpages/About.js";
-import Home from "./subpages/Home.js";
+// import Home from "./subpages/Home.js";
 import Decal from "./subpages/Decal.js";
 import Events from "./subpages/Events.js";
 import Services from "./subpages/Services.js";
@@ -30,11 +30,11 @@ function App() {
             path="/"
             element={<RedirectToExternal url="https://www.dssberkeley.org/" />}
           />
-          {/* <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About />} />
           <Route path="/decalpage" element={<Decal />} />
           <Route path="/events" element={<Events />} />
           <Route path="/joinus" element={<JoinUs />} />
-          <Route path="/services" element={<Services />} /> */}
+          <Route path="/services" element={<Services />} />
           {/* Deprecate soon plz */}
           <Route
             path="/apply"
