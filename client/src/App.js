@@ -1,7 +1,7 @@
-import Navbar from "./components/Navbar.js";
-import Footer from "./components/Footer.js";
+// import Navbar from "./components/Navbar.js";
+// import Footer from "./components/Footer.js";
 import About from "./subpages/About.js";
-// import Home from "./subpages/Home.js";
+import Home from "./subpages/Home.js";
 import Decal from "./subpages/Decal.js";
 import Events from "./subpages/Events.js";
 import Services from "./subpages/Services.js";
@@ -22,14 +22,14 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Navbar />
-      <div className="App bg-gradient-to-b from-white to-[#8CD6D1]">
+      {/* <Navbar /> */}
+      <div className="App">
         <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
-          <Route
+          <Route path="/" element={<Home />} />
+          {/* <Route
             path="/"
             element={<RedirectToExternal url="https://www.dssberkeley.org/" />}
-          />
+          /> */}
           <Route path="/about" element={<About />} />
           <Route path="/decalpage" element={<Decal />} />
           <Route path="/events" element={<Events />} />
@@ -96,7 +96,7 @@ function App() {
           />
         </Routes>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }
