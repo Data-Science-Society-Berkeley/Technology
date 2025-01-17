@@ -65,9 +65,9 @@ function Home() {
           <div className="text-4xl font-bold">DATA SCIENCE SOCIETY</div>
           <br />
           <div className="text-m">
-            Berkeley’s first undergraduate data-science focused student
-            organization. Actively fostering a strong data science community on
-            campus via our consulting and educational initiatives.
+            Berkeley’s undergraduate data-science focused student organization.
+            Actively fostering a strong data science community on campus via our
+            consulting and educational initiatives.
           </div>
           <br />
           <Link to="/about" className="text-[#77b8b3]">
