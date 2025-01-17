@@ -69,6 +69,7 @@ function Home() {
             organization. Actively fostering a strong data science community on
             campus via our consulting and educational initiatives.
           </div>
+          <div>the f</div>
           <br />
           <Link to="/about" className="text-[#77b8b3]">
             About us →
