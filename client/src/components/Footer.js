@@ -107,7 +107,7 @@ export default function Footer() {
               ></path>
             </svg>
           </a>
-          <a href="#" class="text-gray-400 hover:text-gray-500">
+          {/* <a href="#" class="text-gray-400 hover:text-gray-500">
             <span class="sr-only">LinkedIn</span>
             <svg
               class="w-6 h-6"
@@ -121,7 +121,7 @@ export default function Footer() {
                 clip-rule="evenodd"
               ></path>
             </svg>
-          </a>
+          </a> */}
         </div>
         <p class="mt-8 text-base leading-6 text-center text-gray-400">
           Data Science Society at Berkeley

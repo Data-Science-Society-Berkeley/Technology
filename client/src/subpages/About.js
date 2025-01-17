@@ -145,11 +145,11 @@ function About() {
           <div className="text-center font-bold text-3xl my-[1em]">
             Who We Are
           </div>
-          Data Science Society is UC Berkeley's first student-run,
+          {/* Data Science Society is UC Berkeley's first student-run,
           not-for-profit organization focused on data science and its
           interdisciplinary applications. Since our founding in 2016, we have
           united students from a wide range of disciplines behind our shared
-          passion for all things data.
+          passion for all things data. */}
         </div>
         <div className="flex flex-row sm:mx-[1em] md:mx-0 lg:mx-[10em] justify-between flex-wrap w-100">
           {headlineStats.map((item) => (
@@ -257,7 +257,7 @@ function About() {
             ))}
           </div>
         </div>
-        <img src={"/pattern2.png"} alt="Landing Photo" />
+        <img src={"/pattern2.png"} alt="Landing pattern" />
       </div>
     </div>
   );
