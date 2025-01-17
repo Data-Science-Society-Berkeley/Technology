@@ -25,11 +25,7 @@ function App() {
       <Navbar />
       <div className="App bg-gradient-to-b from-white to-[#8CD6D1]">
         <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
-          <Route
-            path="/"
-            element={<RedirectToExternal url="https://www.dssberkeley.org/" />}
-          />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/decalpage" element={<Decal />} />
           <Route path="/events" element={<Events />} />
