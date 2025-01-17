@@ -9,7 +9,8 @@ const faqItems = [
   },
   {
     question: "Do I need experience to join?",
-    answer: "Yes",
+    answer:
+      "DeCal: Nope! We will teach you data science from the ground up. Just come prepared with an open mind and lots of creativity; Committee: Knowledge of Python and data science libraries at the CS61A and Data 8 levels is highly recommended. For the Academic Development Committee, prior experience in teaching and mentorship is also preferred.Taking our DeCal is a great way to learn some of the concepts we use in our Committees!",
   },
   {
     question:
