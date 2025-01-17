@@ -9,7 +9,6 @@ import JoinUs from "./subpages/JoinUs.js";
 import ScrollToTop from "./components/ScrollToTop.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
-import Redirect from "./subpages/Redirect.js";
 
 function RedirectToExternal({ url }) {
   useEffect(() => {
@@ -28,7 +27,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/redirect" element={<Redirect />} />
           <Route path="/decalpage" element={<Decal />} />
           <Route path="/events" element={<Events />} />
           <Route path="/joinus" element={<JoinUs />} />
