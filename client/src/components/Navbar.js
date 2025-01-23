@@ -65,10 +65,10 @@ export default function Navbar() {
           </div>
         </div>
         <div className="text-3xl bg-[#ff0000] p-6 rounded-md text-center">
-        Thank you for your interest in <b>Data Science Society at Berkeley</b>! 
-        <br />
-        Please head on over to our <i>new website</i> at <a href="https://www.dssberkeley.org/" className="text-white font-bold underline"> dssberkeley.org</a> to see the latest information about our organization.
-      </div>
+          Thank you for your interest in <b>Data Science Society at Berkeley</b>! 
+          <br />
+          Please head on over to our <i>new website</i> at <a href="https://www.dssberkeley.org/" className="text-white font-bold underline"> dssberkeley.org</a> to see the latest information about our organization.
+        </div>
       </div>
 
       <DisclosurePanel className="lg:hidden">
