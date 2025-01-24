@@ -13,3 +13,5 @@ Fall 2022 | Kuhu Sharma | kuhusharma@
 Spring 2023 | Zackary Oon | zackaryoon134@
 Fall 2023 | James Yang | jamesyang02@
 Spring 2024 | Harshit Jain | harshitjain153@
+Fall 2024 | Austin Ardisaputra | ardisaputra@
+Spring 2025 | Yumin Kim | yuminkim@
