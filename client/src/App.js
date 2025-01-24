@@ -23,7 +23,7 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Navbar />
-      <div className="App bg-gradient-to-b from-white to-[#8CD6D1]">
+      <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
