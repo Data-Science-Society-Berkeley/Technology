@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf node_modules package-lock.json && npm install && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
