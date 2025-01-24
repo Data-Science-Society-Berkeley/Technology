@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"  # Adjust this if your build command is different
+  publish = "build"  # Adjust this to your output directory
+
+[build.environment]
+  NODE_VERSION = "23.3.0"
+  NPM_VERSION = "10.9.0"
+
+[[redirects]]
+  from = "/*"
+  to = "https://dssberkeley.org"
+  status = 301
+  force = true
