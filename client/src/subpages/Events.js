@@ -27,7 +27,7 @@ const pastEvents = [
 
 function Events() {
   return (
-    <div className="bg-gradient-to-b from-white to-[#8CD6D1]">
+    <div className="bg-gradient-to-b from-white to-[#8CD6E6]">
       {/* <div className="w-[100vw] text-center">Upcoming Events</div> */}
 
       {/* <div className="flex flex-row items-center justify-center flex-wrap">

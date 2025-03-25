@@ -42,7 +42,7 @@ const faqItems = [
 
 function JoinUs() {
   return (
-    <div className="bg-gradient-to-b from-white to-[#8CD6D1] font-lato">
+    <div className="bg-gradient-to-b from-white to-[#8CD6E6] font-lato">
       <div className="w-[100vw] text-center">
         <h1 className="top-[10vw] font-lato w-[100vw] text-black font-bold text-4xl py-[2em]">
           JOIN US

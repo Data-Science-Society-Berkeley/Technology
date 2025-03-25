@@ -70,7 +70,7 @@ function Home() {
             campus via our consulting and educational initiatives.
           </div>
           <br />
-          <Link to="/about" className="text-[#77b8b3]">
+          <Link to="/about" className="text-[#77b8c8]">
             About us →
           </Link>
         </div>
@@ -78,7 +78,7 @@ function Home() {
           <div className="grid grid-cols-3 gap-4 p-4">
             {headlineStats.map((item) => (
               <div className="flex flex-col items-center">
-                <div className="p-1 sm:text-5xl text-3xl text-[#77b8b3] font-lato font-bold">
+                <div className="p-1 sm:text-5xl text-3xl text-[#77b8c8] font-lato font-bold">
                   {item.num}
                 </div>
                 <div className="text-center">{item.name}</div>

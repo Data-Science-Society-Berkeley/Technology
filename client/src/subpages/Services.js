@@ -192,7 +192,7 @@ const people = [
 
 function Services() {
   return (
-    <div className="bg-gradient-to-b from-white to-[#8CD6D1]">
+    <div className="bg-gradient-to-b from-white to-[#8CD6E6]">
       <img src={"/Services/ServicesLanding.jpg"} alt="Photo" />
       <div className="w-[100vw] text-center">
         <h1 className="top-[10vw] font-lato absolute w-[100vw] text-white font-bold text-6xl">

@@ -27,7 +27,7 @@ const directors = [
 
 function Decal() {
   return (
-    <div className="bg-gradient-to-b from-white to-[#8CD6D1] font-lato">
+    <div className="bg-gradient-to-b from-white to-[#8CD6E6] font-lato">
       <img
         class="h-full w-full object-cover"
         src={"/DecalLanding.png"}
