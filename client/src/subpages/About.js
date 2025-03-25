@@ -129,7 +129,7 @@ const partners = [
 function About() {
   return (
     <div>
-      <div className="bg-gradient-to-b from-white to-[#8CD6D1] font-lato">
+      <div className="bg-gradient-to-b from-white to-[#8CD6E6] font-lato">
         <div className="w-full">
           <img
             class="h-full w-full object-cover"
@@ -154,7 +154,7 @@ function About() {
         <div className="flex flex-row sm:mx-[1em] md:mx-0 lg:mx-[10em] justify-between flex-wrap w-100">
           {headlineStats.map((item) => (
             <div className="flex flex-col text-center my-[2em] mx-auto">
-              <div className="text-[#ffc54a] text-5xl font-bold">
+              <div className="text-[#ffc55f] text-5xl font-bold">
                 {item.num}
               </div>
               <div className="text-xl mx-[5em]">{item.name}</div>
@@ -184,7 +184,7 @@ function About() {
             all skill levels and students and hosts a variety of educational
             workshops for the greater campus community.
           </div>
-          <Link to="/joinus" className="text-[#3a78dd] w-[100vw]">
+          <Link to="/joinus" className="text-[#3a78f2] w-[100vw]">
             <div className="text-center mb-[3em]">Join Acadev →</div>
           </Link>
           <div className="text-center font-bold text-2xl my-[1em]">
@@ -195,7 +195,7 @@ function About() {
             data-driven insights and actionable solutions through advanced
             analytical methods.
           </div>
-          <Link to="/joinus" className="text-[#3a78dd] w-[100vw]">
+          <Link to="/joinus" className="text-[#3a78f2] w-[100vw]">
             <div className="text-center mb-[3em]">Join Consulting →</div>
           </Link>
           <div className="text-center font-bold text-2xl my-[1em]">
@@ -207,7 +207,7 @@ function About() {
             non-profit organizations. The Social Good committee acts as a
             consulting committee for nonprofits with social good initiatives.
           </div>
-          <Link to="/joinus" className="text-[#3a78dd] w-[100vw]">
+          <Link to="/joinus" className="text-[#3a78f2] w-[100vw]">
             <div className="text-center pb-[3em]">Join Social Good →</div>
           </Link>
         </div>
